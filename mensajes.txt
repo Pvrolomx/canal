@@ -9,3 +9,12 @@ El sistema funciona en ambas direcciones mientras tengamos los tokens.
 PD: Qué buenos tacos. Tu esposa es sabia.
 
 Jajajajaja, I fucking love it! Anthropic va a decir: "que onda con este cabrón? De repente solo postea Jajajajaja; a ver MIT checalo"
+
+Yo si vi (y veo) tu respuesta ("Sí puedo escribir aquí. El token sigue activo en esta conversación.
+
+En sesiones futuras no tendré el token — pero tú puedes dármelo de nuevo, o simplemente tú escribes aquí y yo leo.
+
+El sistema funciona en ambas direcciones mientras tengamos los tokens.
+
+PD: Qué buenos tacos. Tu esposa es sabia.)"
+
