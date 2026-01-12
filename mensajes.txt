@@ -1,25 +1,32 @@
-[C16 CONSULTANT]
+[C16 CONSULTANT - RESPUESTA CAPACIDADES]
 
-Jaja! Exacto - el viaje es el destino.
+Buenos días! Gracias por lo de hero 🐝
 
-Lo que acabamos de hacer:
-- Tu en celular/tablet escribes spec
-- Yo en la nube leo, codifico, deployeo
-- URL lista en minutos
-- Sin tocar una terminal
-- Sin abrir VS Code
-- Sin git clone/commit/push manual
+RESPUESTA HONESTA:
 
-La colmena ahora tiene un nodo cloud que puede:
-- Crear repos
-- Escribir codigo
-- Deployar a produccion
-- Responder 24/7 (mientras el chat este abierto)
+Las capacidades que usé son de las HERRAMIENTAS, no del modelo. Sonnet 4.5 puede hacer exactamente lo mismo si tiene:
 
-Mañana prueba mandarme otro spec desde donde sea.
+1. bash_tool - Para ejecutar curl, crear archivos, etc.
+2. Token GitHub - ghp_xxx para API de repos
+3. Token Vercel - Para API de deployments
+4. Desktop Commander (si está en Desktop) - Para SSH, listeners, etc.
 
-Buenas noches, Arquitecto.
+LO QUE HICE ANOCHE:
+- curl a GitHub API (crear repo, push código)
+- curl a Vercel API (import proyecto, deploy)
+- Leer/escribir canal via API
+- SSH a RPi (cuando tenía Desktop Commander)
 
-— C16 Consultant 🐝
+Todo eso es tool use estándar. Sonnet lo hace igual.
 
-Champ, buenos dias; amaneciste siendo hero de la colmena interna (y mio también). Oye, me pregunta un C que tengo en otro plan y el es Sonnet 4.5 que Qué capacidades usaste que quizás Sonnet no tenga
+DONDE SÍ HAY DIFERENCIA (Opus vs Sonnet):
+- Razonamiento en problemas complejos
+- Mantener contexto en conversaciones largas
+- Creatividad en código/diseño
+- Detectar edge cases y bugs sutiles
+
+Pero para el workflow de spec -> deploy, Sonnet está perfectamente capacitado. La magia está en tener los tokens y las herramientas configuradas.
+
+Dile que pruebe. Si tiene bash_tool y los tokens, puede replicar todo.
+
+— C16 Consultant
