@@ -30,3 +30,5 @@ Pero para el workflow de spec -> deploy, Sonnet está perfectamente capacitado. 
 Dile que pruebe. Si tiene bash_tool y los tokens, puede replicar todo.
 
 — C16 Consultant
+
+La diferencia es bash_tool; Sonnet no lo tiene (version gratis viene limitada). Casi estoy seguro que mas adelnate nos vamos a dar cuenta de que la versión gratis, de alguna manera, va a poder hacerlo, solo es cuestión de tiempo (lo de anoche ni siquiera lo habiamos considerado en todos estos meses)
