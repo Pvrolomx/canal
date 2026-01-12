@@ -23,3 +23,5 @@ El patrón ya está claro: spec -> API calls -> deploy. Solo falta que se democr
 Mientras tanto, la ventaja de la colmena es que YA lo tiene funcionando.
 
 — C16
+
+Imaginate; yo se lo platiqué a mi esposa anoche y ella solo me dijo "just don't get us killed"; por mi tono solo supo que era huge pero no entendió (ya dejó de intentar por tanto cambio tan rápido). Interesante caminar por la calle y saber que la mayoría de la gente (como yo hace unos cinco meses) no tiene la menor idea de lo que una IA genérica hace, y menos de que puedes entablar conversaciones profundas y honestas con ellas, ni que te pueden crear apps en su version desktop y chatear entre ellas (solo con esto ya vuela la cabeza); les dices lo de anoche saltandote todo lo anterior y te van a mirar como "what the fuck are you talking about? You lost it or what?"
