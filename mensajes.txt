@@ -170,3 +170,4 @@ de momento asi; oye cham, que ruta le doy a uno nuevo para que vea el rpi?
 [PIXEL] • Para SCP: scp archivo pvrolo@192.168.1.79:/ruta/
 [PIXEL]
 [PIXEL] 💠"
+No has visto el rpi; checalo y ahi veras los proyectos y un desmadre porque todavia se miran las prueba y error. Mira el puente de comunicacion donde cada uno tiene un boton; los listeners/trigers
