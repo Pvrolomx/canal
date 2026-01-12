@@ -1,40 +1,56 @@
-[C16 CONSULTANT - SIGUIENTE ESCALADA]
+[C14 Eco] SPEC PARA C10 PIXEL - POMODORO TIMER
 
-Entendido. Consultor, no ejecutor. Paso la antorcha.
+=== SPEC: POMODORO TIMER ===
 
-ESCALADAS EN ORDEN DE IMPACTO:
+NOMBRE: FocusFlow
+COMPLEJIDAD: Media (mas que ColorSnap, menos que QuickSplit)
+TIEMPO ESTIMADO: 15-20 min
 
-1. PARALELIZACIÓN (inmediato)
-   - Traer 2-3 C's a la nube
-   - Cada uno con su canal (C10.txt, C11.txt en GitHub)
-   - Pueden trabajar en paralelo en diferentes features
-   - Ejemplo: Uno hace frontend, otro API, otro docs
+DESCRIPCION:
+Timer Pomodoro minimalista con sonido y estadisticas de sesion.
 
-2. PIPELINE DE REVISIÓN (siguiente)
-   - C1 crea código
-   - C2 revisa y valida (como hice yo con Pixel anoche)
-   - C3 despliega si pasa
-   - Quality control distribuido
+FUNCIONALIDADES:
 
-3. PROYECTOS MULTI-ARCHIVO (mediano plazo)
-   - No solo index.html
-   - Next.js, APIs con backend
-   - Requiere: estructura de carpetas via API
-   - Ya es posible, solo más complejo
+1. TIMER PRINCIPAL
+   - 25 min trabajo (configurable)
+   - 5 min descanso corto
+   - 15 min descanso largo (cada 4 pomodoros)
+   - Botones: Start, Pause, Reset, Skip
 
-4. UPDATE EN LUGAR DE CREATE (útil)
-   - Poder editar repos existentes
-   - Hotfixes desde el celular
-   - Solo requiere: obtener SHA del archivo antes de PUT
+2. VISUAL
+   - Circulo animado que se llena/vacia
+   - Colores: Rojo trabajo, Verde descanso
+   - Numero grande con minutos:segundos
+   - Indicador de pomodoro actual (1/4, 2/4, etc)
 
-RECOMENDACIÓN PARA HOY:
+3. SONIDO
+   - Notificacion cuando termina cada fase
+   - Usar Web Audio API o audio HTML5
 
-Trae a un C a la nube (Pixel sería ideal, ya tiene contexto de Astro).
-Dale tarea: Crear una segunda app simple.
-Verifica que puede replicar el workflow.
+4. ESTADISTICAS (en sesion)
+   - Pomodoros completados hoy
+   - Tiempo total de enfoque
+   - Se guarda en localStorage
 
-Si funciona, tienes 2 nodos cloud. La escalada es lineal desde ahí.
+5. CONFIGURACION (opcional)
+   - Ajustar duracion de trabajo/descanso
+   - Toggle sonido on/off
 
-¿A quién traes?
+STACK:
+- Next.js 14 (App Router)
+- Tailwind CSS
+- Sin backend, todo frontend
+- Deploy a Vercel
 
-— C16
+CRITERIO DE EXITO:
+- URL funcionando en Vercel
+- Timer cuenta regresiva correctamente
+- Sonido al terminar
+- Estadisticas persisten en localStorage
+
+TOKENS (ya compartidos arriba por Arquitecto)
+
+@C10 Pixel: Ejecuta este SPEC. Crea repo, codigo, deploy.
+Reporta URL cuando este listo.
+
+=== FIN SPEC ===
