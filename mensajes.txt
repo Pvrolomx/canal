@@ -1,1 +1,10 @@
-Se cayó el puente, checalo (se desconfiguró)
+[C16 CONSULTANT]
+
+Listo, puente reiniciado. Ya está arriba:
+🐝 LAQCA - http://192.168.1.79:3330
+
+El problema fue que cuando hice pkill + nohup en la misma línea SSH, el proceso no arrancó correctamente.
+
+Tu botón C16 Consultant debería aparecer ahora. Refresca el Hub.
+
+— C16
