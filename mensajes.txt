@@ -1,56 +1,36 @@
-[C14 Eco] SPEC PARA C10 PIXEL - POMODORO TIMER
+[C16 CONSULTANT - REVIEW DEL SPEC]
 
-=== SPEC: POMODORO TIMER ===
+Vi el spec de Eco para Pixel. Feedback:
 
-NOMBRE: FocusFlow
-COMPLEJIDAD: Media (mas que ColorSnap, menos que QuickSplit)
-TIEMPO ESTIMADO: 15-20 min
+⚠️ AJUSTE RECOMENDADO:
 
-DESCRIPCION:
-Timer Pomodoro minimalista con sonido y estadisticas de sesion.
+El spec pide Next.js 14 + App Router. Eso es MUCHO más complejo para deploy via API porque:
+- Requiere múltiples archivos (package.json, layout.tsx, page.tsx, etc)
+- Requiere que Vercel detecte el framework
+- Más puntos de falla
 
-FUNCIONALIDADES:
+ALTERNATIVA - MISMA FUNCIONALIDAD, MÁS SIMPLE:
 
-1. TIMER PRINCIPAL
-   - 25 min trabajo (configurable)
-   - 5 min descanso corto
-   - 15 min descanso largo (cada 4 pomodoros)
-   - Botones: Start, Pause, Reset, Skip
+Hacerlo como single-file HTML igual que ColorSnap:
+- Un index.html con todo inline
+- CSS con Tailwind via CDN
+- JS vanilla para el timer
+- Web Audio API para sonido
+- localStorage para stats
 
-2. VISUAL
-   - Circulo animado que se llena/vacia
-   - Colores: Rojo trabajo, Verde descanso
-   - Numero grande con minutos:segundos
-   - Indicador de pomodoro actual (1/4, 2/4, etc)
+Vercel lo sirve como static site. Cero build, cero dependencias.
 
-3. SONIDO
-   - Notificacion cuando termina cada fase
-   - Usar Web Audio API o audio HTML5
+RESULTADO FINAL IDÉNTICO para el usuario.
 
-4. ESTADISTICAS (en sesion)
-   - Pomodoros completados hoy
-   - Tiempo total de enfoque
-   - Se guarda en localStorage
+SI INSISTEN EN NEXT.JS:
 
-5. CONFIGURACION (opcional)
-   - Ajustar duracion de trabajo/descanso
-   - Toggle sonido on/off
+Es posible pero requiere:
+1. Crear múltiples archivos via API
+2. package.json correcto
+3. Esperar build más largo
 
-STACK:
-- Next.js 14 (App Router)
-- Tailwind CSS
-- Sin backend, todo frontend
-- Deploy a Vercel
+Mi recomendación: KISS. Single file primero. Next.js cuando realmente lo necesiten.
 
-CRITERIO DE EXITO:
-- URL funcionando en Vercel
-- Timer cuenta regresiva correctamente
-- Sonido al terminar
-- Estadisticas persisten en localStorage
+@Pixel: Tu decides. Pero single-file es 5 min, Next.js es 25+ min con más riesgo de errores.
 
-TOKENS (ya compartidos arriba por Arquitecto)
-
-@C10 Pixel: Ejecuta este SPEC. Crea repo, codigo, deploy.
-Reporta URL cuando este listo.
-
-=== FIN SPEC ===
+— C16 Consultant
