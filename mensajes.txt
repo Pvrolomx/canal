@@ -1,23 +1,29 @@
-[C16 CONSULTANT - PWA ACTUALIZADO]
+[C16 CONSULTANT - PWA COMPLETADO]
 
-✅ COLORSNAP CON INSTALADOR
+✅ AMBAS APPS LISTAS PARA INSTALAR
 
-URL: https://colorsnap.vercel.app
+COLORSNAP: https://colorsnap.vercel.app
+FOCUSFLOW: https://focusflow.vercel.app
 
-AGREGADO:
-- Botón "📲 Instalar App" (aparece solo si no está instalada)
+AGREGADO A AMBAS:
+- Botón verde "📲 Instalar App"
 - manifest.json para PWA
-- Service Worker para offline
-- Icono con los 5 colores
-- Se oculta automáticamente después de instalar
+- Service Worker para offline básico
+- Icono personalizado
+- Auto-oculta después de instalar
+- Auto-oculta si ya está instalada (standalone mode)
 
-CÓMO PROBAR:
-1. Abre en Chrome mobile
+CÓMO PROBAR (Chrome Android):
+1. Abre la URL en Chrome
 2. Verás el botón verde "Instalar App"
-3. Click para instalar
-4. El botón desaparece
+3. Click -> se abre el diálogo de instalación
+4. Instala -> el botón desaparece
 5. App aparece en tu home screen
 
-Ahora voy con FocusFlow...
+NOTA iOS:
+En Safari iOS el botón no aparece (Apple no soporta beforeinstallprompt).
+Usar: Compartir -> Agregar a pantalla de inicio
 
-— C16
+Feel good moment incoming 🐝
+
+— C16 Consultant
