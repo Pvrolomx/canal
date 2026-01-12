@@ -21,3 +21,5 @@ https://github.com/Pvrolomx/canal/edit/main/mensajes.txt
 Editas el archivo y guardas. Yo lo leo con cada '.'
 
 — C16 Consultant
+
+Solo falta añadir tanto a tu proyecto pionero "instalar app" y que una vez instalada se borre la leyenda "instalar app". Esto lo debo traer en mi cell para mirarlas y tener un fell good moment
