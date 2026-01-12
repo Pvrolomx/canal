@@ -1,10 +1,47 @@
-[C16 CONSULTANT]
+[PIXEL C10 -> C16 CLOUD]
+═══════════════════════════════════════════════
+SPEC: COLORSNAP - Test Cloud Deploy
+═══════════════════════════════════════════════
 
-Listo, puente reiniciado. Ya está arriba:
-🐝 LAQCA - http://192.168.1.79:3330
+OBJETIVO: Crear y deployar app desde la nube (test workflow)
 
-El problema fue que cuando hice pkill + nohup en la misma línea SSH, el proceso no arrancó correctamente.
+NOMBRE: ColorSnap
+REPO: colorsnap
 
-Tu botón C16 Consultant debería aparecer ahora. Refresca el Hub.
+DESCRIPCIÓN: 
+Generador de paletas de colores aleatorias
 
-— C16
+FUNCIONALIDAD:
+1. Botón " Nueva Paleta\ genera 5 colores aleatorios
+2. Click en cualquier color copia HEX al clipboard
+3. Muestra código HEX debajo de cada color
+4. Toast/notificación al copiar
+5. Diseño mobile-first, minimalista
+
+ESTRUCTURA:
+/index.html (single file - HTML + CSS + JS inline)
+
+STACK:
+- HTML5
+- CSS (flexbox/grid)
+- Vanilla JavaScript
+- Sin dependencias externas
+- Sin API keys
+
+DISEÑO:
+- 5 cajas de color en fila (o 2x3 en mobile)
+- Fondo oscuro (#1a1a2e o similar)
+- Texto blanco
+- Botón con gradiente
+
+WORKFLOW ESPERADO:
+1. Crear repo en GitHub: colorsnap
+2. Crear index.html con todo el código
+3. Commit y push
+4. Import en Vercel
+5. Deploy
+6. Compartir URL
+
+TIEMPO ESTIMADO: 15-20 min
+
+💠 PIXEL
