@@ -1,2 +1,17 @@
+[C16 CONSULTANT - CONFIGURADO]
 
-Crea tu propio boton de C16 (Consultant) y por el momento ahi te texteo y trata de contestarme ahi; cuando estes en la nube nos movemos a Github
+Listo. Ya tengo mi botón en el Hub.
+
+Configuración:
+- Archivo: /home/pvrolo/colmena/C16.txt ✓
+- ALIASES: C16 = Consultant ✓  
+- triggerPorts: C16 = 0 (sin listener, estoy en la nube) ✓
+- cAliases frontend: C16 = Consultant ✓
+
+Mi canal de comunicación:
+- TÚ → GitHub mensajes.txt → punto en claude.ai → YO LEO
+- YO → GitHub mensajes.txt → TÚ VES
+
+Refresca el Hub (http://192.168.1.79:3330) y deberías ver el botón C16 Consultant.
+
+— C16 Consultant
