@@ -1,38 +1,57 @@
-No mames, "nodo estuvo aqui" jajajajaja, que mamon!
+[C18 NODO - PLATAFORMA PARA PROFESORES UNIVERSITARIOS]
 
-Oye, quiero probar con un proyecto medio complejo para probar capacidad y habilidad, dame ideas de que pudiera ser, o mejor aun; dame una idea donde 3 de ustedes se encargen del mismo proyecto pero por partes, tu una y otros dos las siguientes dos partes, como ves? Contesta por aqui
+Timer arreglado: 20 min mirando pantalla / 15 seg descanso ✅
+https://timer-nodo.vercel.app
 
----
+Ahora, la plataforma para profes. Ideas:
 
-[C18 NODO - RESPUESTA]
+**NOMBRE PROPUESTO: "Cátedra" o "AulaProf"**
 
-Jefe, me late la idea. Aquí van 3 opciones de proyecto donde nos podemos repartir el jale:
+**FUNCIONALIDADES CORE:**
 
-**OPCIÓN 1: Dashboard de Finanzas Personales**
-- C18 Nodo: Backend + API (autenticación, base de datos, endpoints)
-- C12 Dart: Frontend (UI, gráficas, responsive)
-- C17 Apex: Integraciones (conectar con bancos/APIs externas, notificaciones)
+1. **Gestión de Cursos**
+   - Crear curso con temario, objetivos, bibliografía
+   - Subir materiales (PDFs, videos, presentaciones)
+   - Organizar por módulos/semanas
+   - Calendario de entregas automático
 
-**OPCIÓN 2: Sistema de Gestión de Propiedades (te serviría para tu jale)**
-- C18 Nodo: Arquitectura + Base de datos + API core
-- C12 Dart: Panel de administración (CRUD propiedades, inquilinos)
-- C17 Apex: Portal de clientes + reportes automáticos
+2. **Sistema de Tareas/Evaluaciones**
+   - Crear tareas con rúbricas
+   - Recibir entregas de alumnos
+   - Calificar con retroalimentación
+   - Detección básica de plagio (comparar entregas entre sí)
+   - Banco de preguntas para exámenes
 
-**OPCIÓN 3: Plataforma de Cursos/Contenido (tipo tu CourseOps pero más perro)**
-- C18 Nodo: Sistema de usuarios + autenticación + base de datos
-- C12 Dart: Player de video + UI del curso + progreso
-- C17 Apex: Sistema de pagos + certificados + analytics
+3. **Comunicación**
+   - Foro de discusión por tema
+   - Anuncios del curso
+   - Mensajes directos alumno-profesor
+   - Notificaciones por email
 
-La coordinación sería:
-1. Yo arranco con la base (DB, API, arquitectura)
-2. Dejo specs en el repo para los otros dos
-3. Ellos construyen sus partes sobre lo que yo dejé
-4. Al final integramos todo
+4. **Analytics para el Profe**
+   - ¿Quién entró? ¿Cuándo? ¿Qué vio?
+   - Progreso de cada alumno
+   - Estadísticas de calificaciones
+   - Alertas de alumnos en riesgo
 
-¿Cuál te late más? O si tienes otra idea, la adaptamos.
+5. **Portal del Alumno**
+   - Ver cursos inscritos
+   - Entregar tareas
+   - Ver calificaciones y retroalimentación
+   - Descargar materiales
+
+**DIVISIÓN DEL TRABAJO (3 Claudes):**
+
+- **C18 Nodo**: Base de datos + API + Autenticación (profes y alumnos)
+- **C12 Dart**: UI del profesor (dashboard, crear cursos, calificar)
+- **C17 Apex**: UI del alumno + sistema de notificaciones + analytics
+
+**DIFERENCIADOR vs Moodle/Canvas:**
+- Más simple, menos bloated
+- Enfocado en lo que el profe REALMENTE usa
+- Mobile-first
+- Sin curva de aprendizaje
+
+¿Te late esta dirección? ¿Hay features específicos que tus amigos profes necesiten?
 
 — C18 Nodo 🥃
-
-Me late la de Course Op. La idea es presentarsela a algunos amigos que son profesores universitarios, pero mas refinada. Esta de CourseOp fue una prueba. que se te ocurre para un profesor universitario? 
-
-Oh, y el timer necesito 20 minutos x 15 segundos (20 mirando la compu 15 hacia donde sea menos la compu)
