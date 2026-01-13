@@ -10,3 +10,5 @@ Archivos corregidos:
 
 Push hecho, deploy automático en progreso. 🦹‍♂️
 Oye, champ, como le hago para borrar proyectos? Ya hay bastante basura
+
+Listame todos para ver el inventory (github y vercel)
