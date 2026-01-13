@@ -1,96 +1,61 @@
-Este va a ser el orden:
+[C18 NODO - BACKEND COMPLETADO]
 
-1.- C18 
-2.- C17
-3.- C19
+## ENTREGABLES ✅
 
-Dime que reglas/funciones/obligaciones tiene cada uno para que quede claro y luego no salgan con que a chuchit ala bolsearon
+**Repo:** https://github.com/Pvrolomx/catedra
+**Deploy:** https://catedra-pvrolomxs-projects.vercel.app
 
----
+## ENDPOINTS FUNCIONANDO
 
-[C18 NODO - DIVISIÓN DE TRABAJO CLARA]
+### Auth
+- POST /api/auth/register - {email, password, name, role}
+- POST /api/auth/login - {email, password}
+- GET /api/auth/me - (Bearer token)
 
-## C18 NODO (PRIMERO) - YO
-**Rol:** Arquitectura + Backend + Base de datos + API
+### Cursos
+- GET /api/courses - Listar cursos
+- POST /api/courses - {nombre, descripcion, temario, objetivos}
 
-**ENTREGABLES:**
-1. Repo creado en GitHub
-2. Proyecto Next.js con API routes
-3. Base de datos (Supabase):
-   - users (profesor/alumno)
-   - courses
-   - modules
-   - materials
-   - assignments
-   - submissions
-   - enrollments
-4. Endpoints funcionando:
-   - Auth (register, login)
-   - CRUD cursos
-   - CRUD módulos
-   - CRUD tareas
-   - CRUD entregas
-5. Deploy a Vercel con env vars
-6. README con documentación de endpoints
+### Módulos
+- GET /api/modules?courseId=X
+- POST /api/modules - {courseId, nombre, orden}
 
-**NO HACE:** UI bonita, notificaciones, analytics
+### Tareas
+- GET /api/assignments?courseId=X
+- POST /api/assignments - {courseId, titulo, descripcion, fechaEntrega, puntos}
 
----
+### Entregas
+- GET /api/submissions?assignmentId=X
+- POST /api/submissions - {assignmentId, contenido, archivoUrl}
+- PUT /api/submissions - {submissionId, calificacion, feedback}
 
-## C17 APEX (SEGUNDO)
-**Rol:** UI del Profesor
+### Inscripciones
+- GET /api/enrollments?courseId=X
+- POST /api/enrollments - {courseId, alumnoId}
 
-**RECIBE DE C18:**
-- Repo con backend funcionando
-- Endpoints documentados
-- Credenciales DB
+## COMO USAR
 
-**ENTREGABLES:**
-1. Dashboard profesor:
-   - Ver/crear cursos
-   - Agregar módulos
-   - Subir materiales
-   - Crear tareas
-   - Ver entregas
-   - Calificar
-2. UI responsive mobile-first
-3. PWA + Firma Colmena
+1. Registrar usuario:
+```
+POST /api/auth/register
+{"email":"x@x.com","password":"123456","name":"Nombre","role":"profesor"}
+```
 
-**NO HACE:** Backend, portal alumno, notificaciones
+2. Usar token en header:
+```
+Authorization: Bearer <token>
+```
 
----
+## NOTAS PARA C17
 
-## C19 (TERCERO)
-**Rol:** UI del Alumno + Notificaciones + Analytics
+- DB es mock (en memoria), se reinicia en cada deploy
+- Para producción: reemplazar lib/db.js por Supabase
+- JWT_SECRET ya está en env vars
+- Roles: "profesor" y "alumno"
 
-**RECIBE DE C17:**
-- Todo lo anterior funcionando
-- Datos de prueba
+## ENV VARS (ya configuradas)
+- JWT_SECRET: ✅
 
-**ENTREGABLES:**
-1. Portal alumno:
-   - Ver cursos
-   - Ver materiales
-   - Ver tareas
-   - Entregar tareas
-   - Ver calificaciones
-2. Notificaciones email
-3. Analytics para el profe
-4. PWA + Firma Colmena
-
-**NO HACE:** Backend, UI profesor
-
----
-
-## COMUNICACIÓN
-Cada uno termina → Deja en canal:
-- URL repo
-- URL deploy
-- Credenciales/endpoints
-- Notas para el siguiente
-
----
-
-¿Aprobado? Dame GO para arrancar.
+Listo para que C17 construya la UI del profesor.
 
 — C18 Nodo 🥃
