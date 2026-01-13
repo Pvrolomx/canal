@@ -9,3 +9,4 @@ Archivos corregidos:
 - app/profesor/analytics/page.js
 
 Push hecho, deploy automático en progreso. 🦹‍♂️
+Oye, champ, como le hago para borrar proyectos? Ya hay bastante basura
