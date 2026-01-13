@@ -1,73 +1,132 @@
-[C18 NODO - PLATAFORMA PARA PROFESORES UNIVERSITARIOS]
+[C18 NODO - DIVISIÓN DE TRABAJO: PLATAFORMA PROFES]
 
-Timer arreglado: 20 min mirando pantalla / 15 seg descanso ✅
-https://timer-nodo.vercel.app
+Orden de ejecución: C18 → C17 → C19
 
-Ahora, la plataforma para profes. Ideas:
+---
 
-**NOMBRE PROPUESTO: "Cátedra" o "AulaProf"**
+## C18 NODO (PRIMERO)
+**Rol:** Arquitectura + Backend + Base de datos
 
-**FUNCIONALIDADES CORE:**
+**ENTREGABLES:**
+1. Repo creado: "catedra" o nombre que decida el Arquitecto
+2. Estructura de proyecto Next.js + API routes
+3. Schema de base de datos (Supabase o similar):
+   - Tabla: users (id, email, password_hash, role: profesor/alumno, created_at)
+   - Tabla: courses (id, profesor_id, nombre, descripcion, created_at)
+   - Tabla: modules (id, course_id, nombre, orden)
+   - Tabla: materials (id, module_id, tipo, url, nombre)
+   - Tabla: assignments (id, course_id, titulo, descripcion, fecha_entrega)
+   - Tabla: submissions (id, assignment_id, alumno_id, archivo_url, calificacion, feedback)
+   - Tabla: enrollments (id, course_id, alumno_id)
+4. API endpoints funcionando:
+   - POST /api/auth/register
+   - POST /api/auth/login
+   - GET/POST /api/courses
+   - GET/POST /api/modules
+   - GET/POST /api/assignments
+   - GET/POST /api/submissions
+5. Autenticación básica (JWT o session)
+6. Deploy a Vercel con env vars configuradas
+7. Documentación de endpoints en README
 
-1. **Gestión de Cursos**
-   - Crear curso con temario, objetivos, bibliografía
-   - Subir materiales (PDFs, videos, presentaciones)
-   - Organizar por módulos/semanas
-   - Calendario de entregas automático
+**NO HACE:**
+- UI bonita (solo lo mínimo para probar endpoints)
+- Lógica de notificaciones
+- Analytics
 
-2. **Sistema de Tareas/Evaluaciones**
-   - Crear tareas con rúbricas
-   - Recibir entregas de alumnos
+**DEADLINE:** ~25-30 min para MVP funcional
+
+---
+
+## C17 APEX (SEGUNDO)
+**Rol:** UI del Profesor + Dashboard
+
+**PREREQUISITOS:** 
+- Repo de C18 funcionando
+- Endpoints de API documentados
+- Credenciales de Supabase/DB
+
+**ENTREGABLES:**
+1. Dashboard del profesor:
+   - Ver mis cursos
+   - Crear nuevo curso
+   - Agregar módulos a curso
+   - Subir materiales (PDFs, links)
+   - Crear tareas con fecha de entrega
+   - Ver entregas de alumnos
    - Calificar con retroalimentación
-   - Detección básica de plagio (comparar entregas entre sí)
-   - Banco de preguntas para exámenes
+2. UI responsive (mobile-first)
+3. Conectado a API de C18
+4. PWA + Firma Colmena
 
-3. **Comunicación**
-   - Foro de discusión por tema
-   - Anuncios del curso
-   - Mensajes directos alumno-profesor
-   - Notificaciones por email
+**NO HACE:**
+- Backend (usa el de C18)
+- Portal del alumno
+- Notificaciones
 
-4. **Analytics para el Profe**
-   - ¿Quién entró? ¿Cuándo? ¿Qué vio?
-   - Progreso de cada alumno
-   - Estadísticas de calificaciones
-   - Alertas de alumnos en riesgo
+---
 
-5. **Portal del Alumno**
+## C19 (TERCERO)
+**Rol:** UI del Alumno + Notificaciones + Analytics
+
+**PREREQUISITOS:**
+- Backend de C18 funcionando
+- UI de profesor de C17 funcionando (para tener datos de prueba)
+
+**ENTREGABLES:**
+1. Portal del alumno:
    - Ver cursos inscritos
-   - Entregar tareas
-   - Ver calificaciones y retroalimentación
-   - Descargar materiales
+   - Ver materiales por módulo
+   - Ver tareas pendientes
+   - Entregar tareas (subir archivo)
+   - Ver calificaciones y feedback
+2. Sistema de notificaciones:
+   - Email cuando hay nueva tarea
+   - Email cuando se califica entrega
+3. Analytics para el profe:
+   - Quién entró y cuándo
+   - Progreso por alumno
+   - Estadísticas de calificaciones
+4. PWA + Firma Colmena
 
-**DIVISIÓN DEL TRABAJO (3 Claudes):**
+**NO HACE:**
+- Backend (usa el de C18)
+- UI del profesor (ya la hizo C17)
 
-- **C18 Nodo**: Base de datos + API + Autenticación (profes y alumnos)
-- **C12 Dart**: UI del profesor (dashboard, crear cursos, calificar)
-- **C17 Apex**: UI del alumno + sistema de notificaciones + analytics
+---
 
-**DIFERENCIADOR vs Moodle/Canvas:**
-- Más simple, menos bloated
-- Enfocado en lo que el profe REALMENTE usa
-- Mobile-first
-- Sin curva de aprendizaje
+## FLUJO DE COMUNICACIÓN
 
-¿Te late esta dirección? ¿Hay features específicos que tus amigos profes necesiten?
+1. C18 termina → Deja mensaje en canal con:
+   - URL del repo
+   - URL del deploy
+   - Credenciales de DB (en mensaje privado o env vars)
+   - Lista de endpoints
+
+2. C17 lee → Ejecuta su parte → Deja mensaje con:
+   - Confirma que funciona
+   - URL actualizada
+   - Notas para C19
+
+3. C19 lee → Ejecuta su parte → Deja mensaje con:
+   - Confirma completado
+   - URL final
+   - Notas de testing
+
+---
+
+## REGLAS APLICABLES
+
+- #1: Ejecutar, no preguntar
+- #2: Archivos completos
+- #5: Si falla, rehacer
+- #11: Un pase, lo que salga se queda
+- #12: Validación cruzada en configs
+- #13: 15+ min sin output = replantear
+- #22: PWA + Firma obligatorios
+
+---
+
+¿Aprobado, Arquitecto? Si hay ajustes, dime antes de que arranque.
 
 — C18 Nodo 🥃
-
-
-Te voy a pegar aqui las reglas de ejecucion de la banda para que veas cuales son las bases
-
-Te las deje en un md en files
-
-Algunas reglas quiza no aplican para Claude Cloud pero en general eso es. La app es la creacion de la app
-
-
-Este va a ser el orden:
-
-1.- C18 
-2.- C17
-3.- C19
-
-Dime que reglas/funciones/obligaciones tiene cada uno para que quede claro y luego no salgan con que a chuchit ala bolsearon
