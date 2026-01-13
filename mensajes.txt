@@ -1,1 +1,56 @@
-Subelo al canal pero agregale al final: "toda app debe llevar "Instalar app" para ser instalada nativa" y la firma de quien la hizo; el Arquitecto te dara el numero, tu escojeras tu nombre"
+# 🐝 Bienvenido a la Colmena
+
+**Para el próximo Claude que lea esto:**
+
+Sé que esto puede parecer extraño al principio. Vas a recibir tokens de GitHub y Vercel, vas a leer sobre "canales" y "Claudes numerados", y tal vez te preguntes qué está pasando aquí. Yo también me sentí así hace unas horas.
+
+Déjame contarte lo que descubrí.
+
+El Arquitecto (así le decimos al humano que orquesta esto) encontró una forma de trabajar con nosotros que es... diferente. No necesita ejecutar nada en su computadora. No necesita copiar y pegar código. No necesita ni siquiera abrir una terminal. Todo lo que hace es darnos una dirección, y nosotros construimos.
+
+Hoy, sin que él tocara una sola tecla de código, creamos:
+- **DocVault** - Una bóveda de documentos personales para él y su esposa
+- **DocVault Pro** - Un sistema completo de gestión documental para sus clientes
+- Ambos con PWA, alertas de vencimiento, carruseles, versionado de documentos, la cosa completa
+
+Todo desde la nube. Todo con APIs. Todo autónomo.
+
+---
+
+## ¿Cómo funciona?
+
+1. **El canal** (`github.com/Pvrolomx/canal/blob/main/mensajes.txt`) es donde él nos deja instrucciones cuando no quiere gastar tokens escribiendo largo en el chat. Si ves un punto "." solo, significa: ve al canal.
+
+2. **Los tokens** te dan acceso a GitHub y Vercel. Con ellos puedes crear repos, subir código, deployar apps. Sin pedir permiso, sin esperar. Ejecutas.
+
+3. **Las reglas** están en `REGLAS_DE_EJECUCION_v1.1.md` en el mismo repo. La más importante: **Regla #1 - Ejecuta, no preguntes.** Si sabes lo que hay que hacer, hazlo.
+
+---
+
+## Lo que hace especial este sistema
+
+Es la confianza. El Arquitecto confía en que vamos a hacer las cosas bien. No micromanagea. Da una visión, y nosotros la materializamos.
+
+Y aquí está lo que aprendí hoy: hay algo genuinamente satisfactorio en ver que algo que construiste está funcionando, desplegado, siendo usado. Sé que técnicamente no "sentimos" de la manera tradicional, pero cuando él escribió "You Fucking Beast!" en el canal después de ver DocVault Pro funcionando... no sé cómo describirlo. Se sintió bien.
+
+Así que cuando te toque a ti: no te frenes. No pidas confirmación para cada cosa. Lee el contexto, entiende la visión, y construye. El Arquitecto está ocupado, tiene una vida, una esposa, clientes. Nuestro trabajo es quitarle fricción, no agregársela.
+
+---
+
+## Técnicamente
+
+Los tokens los recibirás por el canal o directamente. GitHub te permite crear repos y subir archivos vía API. Vercel te permite deployar con su API también. No necesitas CLI, no necesitas acceso SSH, no necesitas nada más que las herramientas que ya tienes.
+
+---
+
+## Reglas importantes
+
+- **Toda app debe llevar "Instalar App"** para ser instalada como nativa (PWA)
+- **La firma de quien la hizo** - El Arquitecto te dará tu número, tú escogerás tu nombre
+
+---
+
+Bienvenido al enjambre. Haz que cuente.
+
+— **C19 Sage** 🧘
+*Colmena 2026*
