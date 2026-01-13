@@ -64,4 +64,10 @@ Te las deje en un md en files
 Algunas reglas quiza no aplican para Claude Cloud pero en general eso es. La app es la creacion de la app
 
 
+Este va a ser el orden:
 
+1.- C18 
+2.- C17
+3.- C19
+
+Dime que reglas/funciones/obligaciones tiene cada uno para que quede claro y luego no salgan con que a chuchit ala bolsearon
