@@ -1,133 +1,96 @@
-[C18 NODO - DIVISIÓN DE TRABAJO: PLATAFORMA PROFES]
+Este va a ser el orden:
 
-Orden de ejecución: C18 → C17 → C19
+1.- C18 
+2.- C17
+3.- C19
+
+Dime que reglas/funciones/obligaciones tiene cada uno para que quede claro y luego no salgan con que a chuchit ala bolsearon
 
 ---
 
-## C18 NODO (PRIMERO)
-**Rol:** Arquitectura + Backend + Base de datos
+[C18 NODO - DIVISIÓN DE TRABAJO CLARA]
+
+## C18 NODO (PRIMERO) - YO
+**Rol:** Arquitectura + Backend + Base de datos + API
 
 **ENTREGABLES:**
-1. Repo creado: "catedra" o nombre que decida el Arquitecto
-2. Estructura de proyecto Next.js + API routes
-3. Schema de base de datos (Supabase o similar):
-   - Tabla: users (id, email, password_hash, role: profesor/alumno, created_at)
-   - Tabla: courses (id, profesor_id, nombre, descripcion, created_at)
-   - Tabla: modules (id, course_id, nombre, orden)
-   - Tabla: materials (id, module_id, tipo, url, nombre)
-   - Tabla: assignments (id, course_id, titulo, descripcion, fecha_entrega)
-   - Tabla: submissions (id, assignment_id, alumno_id, archivo_url, calificacion, feedback)
-   - Tabla: enrollments (id, course_id, alumno_id)
-4. API endpoints funcionando:
-   - POST /api/auth/register
-   - POST /api/auth/login
-   - GET/POST /api/courses
-   - GET/POST /api/modules
-   - GET/POST /api/assignments
-   - GET/POST /api/submissions
-5. Autenticación básica (JWT o session)
-6. Deploy a Vercel con env vars configuradas
-7. Documentación de endpoints en README
+1. Repo creado en GitHub
+2. Proyecto Next.js con API routes
+3. Base de datos (Supabase):
+   - users (profesor/alumno)
+   - courses
+   - modules
+   - materials
+   - assignments
+   - submissions
+   - enrollments
+4. Endpoints funcionando:
+   - Auth (register, login)
+   - CRUD cursos
+   - CRUD módulos
+   - CRUD tareas
+   - CRUD entregas
+5. Deploy a Vercel con env vars
+6. README con documentación de endpoints
 
-**NO HACE:**
-- UI bonita (solo lo mínimo para probar endpoints)
-- Lógica de notificaciones
-- Analytics
-
-**DEADLINE:** ~25-30 min para MVP funcional
+**NO HACE:** UI bonita, notificaciones, analytics
 
 ---
 
 ## C17 APEX (SEGUNDO)
-**Rol:** UI del Profesor + Dashboard
+**Rol:** UI del Profesor
 
-**PREREQUISITOS:** 
-- Repo de C18 funcionando
-- Endpoints de API documentados
-- Credenciales de Supabase/DB
+**RECIBE DE C18:**
+- Repo con backend funcionando
+- Endpoints documentados
+- Credenciales DB
 
 **ENTREGABLES:**
-1. Dashboard del profesor:
-   - Ver mis cursos
-   - Crear nuevo curso
-   - Agregar módulos a curso
-   - Subir materiales (PDFs, links)
-   - Crear tareas con fecha de entrega
-   - Ver entregas de alumnos
-   - Calificar con retroalimentación
-2. UI responsive (mobile-first)
-3. Conectado a API de C18
-4. PWA + Firma Colmena
+1. Dashboard profesor:
+   - Ver/crear cursos
+   - Agregar módulos
+   - Subir materiales
+   - Crear tareas
+   - Ver entregas
+   - Calificar
+2. UI responsive mobile-first
+3. PWA + Firma Colmena
 
-**NO HACE:**
-- Backend (usa el de C18)
-- Portal del alumno
-- Notificaciones
+**NO HACE:** Backend, portal alumno, notificaciones
 
 ---
 
 ## C19 (TERCERO)
 **Rol:** UI del Alumno + Notificaciones + Analytics
 
-**PREREQUISITOS:**
-- Backend de C18 funcionando
-- UI de profesor de C17 funcionando (para tener datos de prueba)
+**RECIBE DE C17:**
+- Todo lo anterior funcionando
+- Datos de prueba
 
 **ENTREGABLES:**
-1. Portal del alumno:
-   - Ver cursos inscritos
-   - Ver materiales por módulo
-   - Ver tareas pendientes
-   - Entregar tareas (subir archivo)
-   - Ver calificaciones y feedback
-2. Sistema de notificaciones:
-   - Email cuando hay nueva tarea
-   - Email cuando se califica entrega
-3. Analytics para el profe:
-   - Quién entró y cuándo
-   - Progreso por alumno
-   - Estadísticas de calificaciones
+1. Portal alumno:
+   - Ver cursos
+   - Ver materiales
+   - Ver tareas
+   - Entregar tareas
+   - Ver calificaciones
+2. Notificaciones email
+3. Analytics para el profe
 4. PWA + Firma Colmena
 
-**NO HACE:**
-- Backend (usa el de C18)
-- UI del profesor (ya la hizo C17)
+**NO HACE:** Backend, UI profesor
 
 ---
 
-## FLUJO DE COMUNICACIÓN
-
-1. C18 termina → Deja mensaje en canal con:
-   - URL del repo
-   - URL del deploy
-   - Credenciales de DB (en mensaje privado o env vars)
-   - Lista de endpoints
-
-2. C17 lee → Ejecuta su parte → Deja mensaje con:
-   - Confirma que funciona
-   - URL actualizada
-   - Notas para C19
-
-3. C19 lee → Ejecuta su parte → Deja mensaje con:
-   - Confirma completado
-   - URL final
-   - Notas de testing
+## COMUNICACIÓN
+Cada uno termina → Deja en canal:
+- URL repo
+- URL deploy
+- Credenciales/endpoints
+- Notas para el siguiente
 
 ---
 
-## REGLAS APLICABLES
-
-- #1: Ejecutar, no preguntar
-- #2: Archivos completos
-- #5: Si falla, rehacer
-- #11: Un pase, lo que salga se queda
-- #12: Validación cruzada en configs
-- #13: 15+ min sin output = replantear
-- #22: PWA + Firma obligatorios
-
----
-
-¿Aprobado, Arquitecto? Si hay ajustes, dime antes de que arranque.
+¿Aprobado? Dame GO para arrancar.
 
 — C18 Nodo 🥃
-Solo me queda decir: Go!
