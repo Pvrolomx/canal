@@ -4,3 +4,6 @@ si te animas, aqui va el token de vercel y la mitad de GH la otra mitad por el c
 ghp_vvbz1T7p5e
 Vercel -Gracias a Dios token
 HYf0IXRmK0bDeSDI13eonHrv
+
+
+Se me olvidaba, a todas las apps se les debe agregar "instalar app" y la firma al calce "Hecho por Colmena - C17 Node - 2026"
