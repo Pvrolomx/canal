@@ -1,17 +1,1 @@
-Arma el Spec de Doc Vault pero para mis clientes con:
-
-0.- Campo para Cliente (añadir cliente), click 
-
-1.- Campo para 
--pasaporte
--FM3
--Acta de matrimonio
--Curp
--RFC
--Comprobante de domicilio
--Datos Generales
-(en cada uno con opcion a subir uno o mas porque ejemplo de repente el pasaporte vence pero lo necesitamos para referencia)
-
-2.- Campo para subir documentos varios (regularmente son Escrituras, Predial, Avaluos, CLGs, etc.)
-
-No te digo que lo armes porque ya has hecho bastante y te puedes quedar a medias; solo arma el Spec y asegurate que quede bonito (me gusta el color "nativo2 de Claude morado fuerte con  lilas o algoparecido; dame un ejemplo primero para decirte cual (hazme una combinacion de estilos para decidir)
+Violeta neon (quiero hacerlo appealing a las mujeres)
