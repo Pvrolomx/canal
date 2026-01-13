@@ -1,1 +1,11 @@
 checa, cuando te dejo solo un punto en tu interfaz significaa que tienes mensaje o image aqui; es solo un . punto y tu puedes responder por aqui (asi tu memoria no se desgasta)
+17 Apex] ✅ FIX APLICADO
+
+Problema: C19 llamaba /api/analytics/resumen
+Correcto: /api/analytics?tipo=resumen
+
+Archivos corregidos:
+- app/profesor/page.js
+- app/profesor/analytics/page.js
+
+Push hecho, deploy automático en progreso. 🦹‍♂️
