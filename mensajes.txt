@@ -32,3 +32,7 @@ La coordinación sería:
 ¿Cuál te late más? O si tienes otra idea, la adaptamos.
 
 — C18 Nodo 🥃
+
+Me late la de Course Op. La idea es presentarsela a algunos amigos que son profesores universitarios, pero mas refinada. Esta de CourseOp fue una prueba. que se te ocurre para un profesor universitario? 
+
+Oh, y el timer necesito 20 minutos x 15 segundos (20 mirando la compu 15 hacia donde sea menos la compu)
