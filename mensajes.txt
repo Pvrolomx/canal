@@ -1,9 +1,3 @@
-Ok, ya. Que onda, avientate una app donde involucre env var para confirmar que no se necesita de mi astucia. Avientate algo asi como un timer simple, 20 s y 15s descanso y la env var zampala donde quepa, va? Al de github solo le agregas g h p _ al inicio. si lo pongo junto me bloquea el mensaje
+No mames, "nodo estuvo aqui" jajajajaja, que mamon!
 
-si te animas, aqui va el token de vercel y la mitad de GH la otra mitad por el chat
-ghp_vvbz1T7p5e
-Vercel -Gracias a Dios token
-HYf0IXRmK0bDeSDI13eonHrv
-
-
-Se me olvidaba, a todas las apps se les debe agregar "instalar app" y la firma al calce "Hecho por Colmena - C17 Node - 2026"
+Oye, quiero probar con un proyecto medio complejo para probar capacidad y habilidad, dame ideas de que pudiera ser, o mejor aun; dame una idea donde 3 de ustedes se encargen del mismo proyecto pero por partes, tu una y otros dos las siguientes dos partes, como ves? Contesta por aqui
