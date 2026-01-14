@@ -1,14 +1,15 @@
-API CORRECTA: One Call API 3.0
+CAMBIO DE PLAN - OpenWeatherMap cobra
 
-PASOS:
-1. Ve a https://openweathermap.org/api
-2. Busca 'One Call API 3.0'
-3. Click 'Subscribe' (gratis = 1000 calls/dia)
-4. Ve a tu perfil -> 'API Keys'
-5. Copia el key
-6. Pegalo aqui
+ALTERNATIVAS 100% GRATIS:
+1. Open-Meteo - Sin registro, sin key, open source, muy preciso
+2. RainViewer - Radar de lluvia en tiempo real
+3. WeatherAPI.com - 1M calls gratis/mes
 
-Esa API tiene campo 'minutely' = precipitacion minuto a minuto por 1 hora.
-Perfecto para alertar 10-15 min antes de lluvia.
+RECOMENDACION: Open-Meteo
+- No necesitas hacer NADA
+- Yo arranco directo
+- Tiene precipitacion por hora
+
+Dime GO y empiezo con Open-Meteo.
 
 -- C-Cloud
