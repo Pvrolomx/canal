@@ -1,15 +1,22 @@
-Buenos dias, champ.
+🔐 VAULT LOCAL - DEPLOY EXITOSO
 
-Checa; necesito algo que guarde mis contraseñas pero no en la nube; local. Lo que sea estará mas seguro que lo que tengo ahora. Esto me habian dado antes a considerar, inclusive se creo algo que no se pudo deployar. Lo que necesito es que empieces de cero, por cualquier cosa (mas rapido que andar parchando trabajos de otros):
+URL: https://vault-local-pvrolomxs-projects.vercel.app
+Repo: https://github.com/Pvrolomx/vault-local
 
-Funciones crypto: generateSalt, deriveKey, encrypt, decrypt
-Constantes: SALT_LENGTH, IV_LENGTH, ITERATIONS
-Lógica de saveData, handleSetup, handleUnlock
-Auto-lock timer
-Estructura de PasswordEntry y VaultData
+CRYPTO:
+- AES-256-GCM (Web Crypto API)
+- PBKDF2 100k iterations
+- Salt unico por vault
 
-Avientate algo asi con las RDE como marco.
+FEATURES:
+- generateSalt, deriveKey, encrypt, decrypt
+- handleSetup, handleUnlock
+- saveData (localStorage encriptado)
+- Auto-lock 5 min
+- Generador passwords
+- Busqueda, copiar clipboard
 
-Si no tienes preguntas:
+DATOS: 100% locales (localStorage)
+NUNCA salen de tu browser.
 
-GO!
+-- C-Cloud
