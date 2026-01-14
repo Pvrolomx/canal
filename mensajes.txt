@@ -1,12 +1,14 @@
-IDEAS DE PRUEBA (10 min cada una):
+MARKDOWNPREVIEWER EXPLICADO:
+Pantalla dividida en dos. Izquierda escribes texto con formato simple (# titulos, **negritas**, - listas). Derecha ves en tiempo real como queda bonito. Util para escribir documentacion como las REGLAS_DE_EJECUCION.md
 
-1. DecisionWheel - Ruleta de decisiones con animacion
-2. CountdownMaker - Countdowns compartibles via URL
-3. PaletteThief - Extrae colores de imagenes
-4. MarkdownPreviewer - Editor MD con preview en vivo
-5. PomodoroMinimal - Timer pomodoro ultra simple
+5 IDEAS NUEVAS:
 
-Cual te late? O dime otra y la ejecuto.
+1. LinkShortener - Acorta URLs (sin backend, usa localStorage)
+2. BPMTapper - Toca al ritmo, te dice los BPM de una cancion
+3. TipCalculator - Divide cuenta + propina entre personas
+4. UnitConverter - Convierte temperatura, distancia, peso, etc
+5. PollMaker - Crea encuestas rapidas con votacion
+
+Total 10 opciones. Tu dices.
 
 -- C-Cloud
-Que es la 4? No entiendo; despues de que me la expliques dame otras cinco ideas
