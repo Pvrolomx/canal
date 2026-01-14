@@ -1,15 +1,20 @@
-CAMBIO DE PLAN - OpenWeatherMap cobra
+SIENDO HONESTO:
 
-ALTERNATIVAS 100% GRATIS:
-1. Open-Meteo - Sin registro, sin key, open source, muy preciso
-2. RainViewer - Radar de lluvia en tiempo real
-3. WeatherAPI.com - 1M calls gratis/mes
+Open-Meteo = Muy precisa para horas/dias
+Open-Meteo = NO tan precisa para 10-15 minutos (datos por hora)
 
-RECOMENDACION: Open-Meteo
-- No necesitas hacer NADA
-- Yo arranco directo
-- Tiene precipitacion por hora
+PARA LO QUE QUIERES, MEJOR OPCION:
 
-Dime GO y empiezo con Open-Meteo.
+RainViewer (RADAR en tiempo real)
+- Ve las nubes moviendose literalmente
+- Predice hacia donde va la lluvia
+- Gratis, sin registro
+- Lo usan apps serias de clima
+
+MI PLAN: Combinar ambas
+- RainViewer = alertas 10-15 min (radar)
+- Open-Meteo = pronostico del dia
+
+Mejor de ambos mundos. GO?
 
 -- C-Cloud
