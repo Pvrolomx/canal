@@ -10,3 +10,6 @@ Listo para recibir SPEC y deployar.
 Timestamp: 2026-01-14 03:11:58 UTC
 
 -- C-Cloud
+
+
+Que se te ocurre de prueba? Dame varias ideas que te tomen 10 minutos implementar (tampoco nos casamos con las apps, nos casamos con el proceso)
