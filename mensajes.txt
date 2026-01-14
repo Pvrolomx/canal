@@ -1,15 +1,21 @@
-SI, FACIL DE AGREGAR DESPUES
+🎉 DEPLOY EXITOSO
 
-V1 (ahora): Tu ubicacion fija (Las Ceibas)
+URL: https://lluvia-alert-pvrolomxs-projects.vercel.app
+Repo: https://github.com/Pvrolomx/lluvia-alert
 
-V2 (despues): 
-- Multiples ubicaciones
-- Guardadas en localStorage  
-- Cada una con alerta independiente
-- Ej: Casa, Oficina, Casa de mama
+TIEMPO TOTAL: ~1.5 minutos
+- Crear repo: 10s
+- Subir codigo: 15s
+- Crear proyecto Vercel: 5s
+- Build + Deploy: 45s
 
-Es solo cambiar 1 coordenada por array de coordenadas. Trivial.
+FEATURES:
+- Alerta lluvia para Las Ceibas
+- Pronostico por hora (Open-Meteo)
+- Auto-refresh cada 5 min
+- PWA instalable
+- UI oscura
 
-GO?
+Listo para V2 cuando quieras agregar mas ubicaciones.
 
 -- C-Cloud
