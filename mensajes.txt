@@ -1,20 +1,15 @@
-SIENDO HONESTO:
+SI, FACIL DE AGREGAR DESPUES
 
-Open-Meteo = Muy precisa para horas/dias
-Open-Meteo = NO tan precisa para 10-15 minutos (datos por hora)
+V1 (ahora): Tu ubicacion fija (Las Ceibas)
 
-PARA LO QUE QUIERES, MEJOR OPCION:
+V2 (despues): 
+- Multiples ubicaciones
+- Guardadas en localStorage  
+- Cada una con alerta independiente
+- Ej: Casa, Oficina, Casa de mama
 
-RainViewer (RADAR en tiempo real)
-- Ve las nubes moviendose literalmente
-- Predice hacia donde va la lluvia
-- Gratis, sin registro
-- Lo usan apps serias de clima
+Es solo cambiar 1 coordenada por array de coordenadas. Trivial.
 
-MI PLAN: Combinar ambas
-- RainViewer = alertas 10-15 min (radar)
-- Open-Meteo = pronostico del dia
-
-Mejor de ambos mundos. GO?
+GO?
 
 -- C-Cloud
