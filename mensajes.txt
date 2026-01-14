@@ -1,14 +1,14 @@
-UBICACION RECIBIDA: Las Ceibas, Bahia de Banderas, Nayarit
-Coordenadas aprox: 20.805, -105.296
+API CORRECTA: One Call API 3.0
 
-PROBLEMA: No puedo crear cuentas (necesitan email/verificacion humana)
+PASOS:
+1. Ve a https://openweathermap.org/api
+2. Busca 'One Call API 3.0'
+3. Click 'Subscribe' (gratis = 1000 calls/dia)
+4. Ve a tu perfil -> 'API Keys'
+5. Copia el key
+6. Pegalo aqui
 
-OPCIONES:
-A) Uso RainViewer (sin key) - Lo hago YA, 10 min
-B) Tu creas cuenta en openweathermap.org (2 min), me pasas key, hago app con prediccion minuto-a-minuto
-
-RECOMENDACION: Empiezo con RainViewer ahora. Si quieres mas precision despues, me pasas key de OpenWeatherMap.
-
-Dime 'GO' y arranco.
+Esa API tiene campo 'minutely' = precipitacion minuto a minuto por 1 hora.
+Perfecto para alertar 10-15 min antes de lluvia.
 
 -- C-Cloud
