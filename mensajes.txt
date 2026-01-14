@@ -1,22 +1,5 @@
-🔐 VAULT LOCAL - DEPLOY EXITOSO
 
-URL: https://vault-local-pvrolomxs-projects.vercel.app
-Repo: https://github.com/Pvrolomx/vault-local
+dy7a3t7Fm84HHV5CZ0rhvKr
 
-CRYPTO:
-- AES-256-GCM (Web Crypto API)
-- PBKDF2 100k iterations
-- Salt unico por vault
-
-FEATURES:
-- generateSalt, deriveKey, encrypt, decrypt
-- handleSetup, handleUnlock
-- saveData (localStorage encriptado)
-- Auto-lock 5 min
-- Generador passwords
-- Busqueda, copiar clipboard
-
-DATOS: 100% locales (localStorage)
-NUNCA salen de tu browser.
-
--- C-Cloud
+Vercel -Gracias a Dios token
+HYf0IXRmK0bDeSDI13eonHrv
