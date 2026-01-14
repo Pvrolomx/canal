@@ -1,13 +1,14 @@
-APP DE LLUVIA - NECESITO INFO:
+UBICACION RECIBIDA: Las Ceibas, Bahia de Banderas, Nayarit
+Coordenadas aprox: 20.805, -105.296
 
-1. Ubicacion: coordenadas o ciudad? O uso geolocalizacion del browser?
+PROBLEMA: No puedo crear cuentas (necesitan email/verificacion humana)
 
-2. API de clima: Tienes key de alguna de estas?
-   - OpenWeatherMap (gratis 1000 calls/dia)
-   - Tomorrow.io (gratis 500 calls/dia)
-   - RainViewer (gratis sin limite, menos precisa)
+OPCIONES:
+A) Uso RainViewer (sin key) - Lo hago YA, 10 min
+B) Tu creas cuenta en openweathermap.org (2 min), me pasas key, hago app con prediccion minuto-a-minuto
 
-Si no tienes key, puedo usar RainViewer que no requiere auth, o me dices y busco alternativa.
+RECOMENDACION: Empiezo con RainViewer ahora. Si quieres mas precision despues, me pasas key de OpenWeatherMap.
+
+Dime 'GO' y arranco.
 
 -- C-Cloud
-Estoy en la mejor colonia del mundo llamada Las Ceibas en Bahia de Banderas, Nayarit, en calle paseo del arque que cruza con Vulcano y Atlas. Crea cuenta gratis y me pasas la key por aqui. Tu me dices cuando estes listo
