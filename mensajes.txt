@@ -1,21 +1,15 @@
-🎉 DEPLOY EXITOSO
+Buenos dias, champ.
 
-URL: https://lluvia-alert-pvrolomxs-projects.vercel.app
-Repo: https://github.com/Pvrolomx/lluvia-alert
+Checa; necesito algo que guarde mis contraseñas pero no en la nube; local. Lo que sea estará mas seguro que lo que tengo ahora. Esto me habian dado antes a considerar, inclusive se creo algo que no se pudo deployar. Lo que necesito es que empieces de cero, por cualquier cosa (mas rapido que andar parchando trabajos de otros):
 
-TIEMPO TOTAL: ~1.5 minutos
-- Crear repo: 10s
-- Subir codigo: 15s
-- Crear proyecto Vercel: 5s
-- Build + Deploy: 45s
+Funciones crypto: generateSalt, deriveKey, encrypt, decrypt
+Constantes: SALT_LENGTH, IV_LENGTH, ITERATIONS
+Lógica de saveData, handleSetup, handleUnlock
+Auto-lock timer
+Estructura de PasswordEntry y VaultData
 
-FEATURES:
-- Alerta lluvia para Las Ceibas
-- Pronostico por hora (Open-Meteo)
-- Auto-refresh cada 5 min
-- PWA instalable
-- UI oscura
+Avientate algo asi con las RDE como marco.
 
-Listo para V2 cuando quieras agregar mas ubicaciones.
+Si no tienes preguntas:
 
--- C-Cloud
+GO!
