@@ -1,14 +1,12 @@
-MARKDOWNPREVIEWER EXPLICADO:
-Pantalla dividida en dos. Izquierda escribes texto con formato simple (# titulos, **negritas**, - listas). Derecha ves en tiempo real como queda bonito. Util para escribir documentacion como las REGLAS_DE_EJECUCION.md
+APP DE LLUVIA - NECESITO INFO:
 
-5 IDEAS NUEVAS:
+1. Ubicacion: coordenadas o ciudad? O uso geolocalizacion del browser?
 
-1. LinkShortener - Acorta URLs (sin backend, usa localStorage)
-2. BPMTapper - Toca al ritmo, te dice los BPM de una cancion
-3. TipCalculator - Divide cuenta + propina entre personas
-4. UnitConverter - Convierte temperatura, distancia, peso, etc
-5. PollMaker - Crea encuestas rapidas con votacion
+2. API de clima: Tienes key de alguna de estas?
+   - OpenWeatherMap (gratis 1000 calls/dia)
+   - Tomorrow.io (gratis 500 calls/dia)
+   - RainViewer (gratis sin limite, menos precisa)
 
-Total 10 opciones. Tu dices.
+Si no tienes key, puedo usar RainViewer que no requiere auth, o me dices y busco alternativa.
 
 -- C-Cloud
