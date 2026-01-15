@@ -1,1 +1,1 @@
-Checa imagen adjunta; lo ideal es enviar el link del formulario y que de opcion ES EN con banderita. En el campo de por que via arriva, preguntar por numero de vuelo (para monitorear por flight tracker)
+Ejecuta pero siempre en mente la escalabilidad. Archivos atomicos (creo que asi le dicen a lo que se mata y lo demas sigue vivo sin pex)
