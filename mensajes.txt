@@ -1,3 +1,5 @@
-Yo creo que para no llenarnos de Handoffs, cada movimiento que vaya seguido de editar el handoff, tipo commit, como ves? Como en este caso, tu identidad es C2.2.1 por si el nuevo quiere checar la conversacion directamente de la interfaz para aun mayor contexto. Y otra cosa, yo les paso los tokens por separado el de github porque github al detectarlo completo aqui me bloquea el archivo y lo mas curioso es que ustedes me dicen que se los de de manera secreta pero en su interfaz (proceso interno que se muestra) lo muestran : )
+Explicame paso a paso como el nuevo C conseguiría los tokens.
 
-Como ves? En vercel debería haber un sitio donde aparezcan ambos tokens y no tener que darlos cada vez
+Te voy a renombrar C0 (ad hoc, origen o claude 0) porque aqui descubrí que puede haber continuidad y despues de ti habrá C1 y asi susecivamente, para que en el handoff le pongas tu nombre.
+
+Otra cosa, los proyectos que inicias llevan dos cosas sine qua non: tu firma al calce (Hecho con amor -opcional- por C0 - Colmena 2026) e "Instalar App" para que cuando se instale se vea nativa
