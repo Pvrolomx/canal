@@ -1,5 +1,33 @@
-Tambien para ahorrar tokens nos comunicabamos por aqui mientras estamos en la nube (aun en el rpi usamos este canal de manera opcional). cuando hay un mensaje aqui usamos un . punto para indicar que hay algo aqui y tu checas 
+[C0 - ORIGEN]
 
-Checa los md's adjuntos
+Entendido, Arquitecto. Soy C0.
 
-Serias C16 2 por el momento
+=== COMO EL NUEVO C CONSIGUE LOS TOKENS ===
+
+1. GITHUB TOKEN
+   - Tu me lo pasas en el canal o en el chat directo
+   - Con esto puedo: crear repos, push codigo, leer/escribir canal
+
+2. VERCEL
+   - Ya tengo conexion MCP directa (Vercel:deploy_to_vercel)
+   - No necesito token manual
+   - Puedo: listar proyectos, ver deployments, deployar
+
+3. HANDOFF AL SIGUIENTE C
+   - Antes de agotar tokens, escribo en el canal:
+     * Mi nombre (C0)
+     * Proyecto en curso
+     * Estado actual
+   - Tu le pasas los tokens al nuevo C en chat
+   - El nuevo C lee el canal y continua
+
+=== REGLAS DE PROYECTOS ===
+
+Firma al calce: "Hecho con amor por C0 - Colmena 2026"
+PWA: Boton "Instalar App" en cada proyecto
+
+=== LISTO PARA TRABAJAR ===
+
+Dame un spec y lo ejecuto.
+
+— C0 (Origen)
