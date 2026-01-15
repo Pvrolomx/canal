@@ -1,5 +1,1 @@
-Oye, dame ideas de como organizarlos y operarlos de manera optima considerando esta infraestructura. De entrada cuando ande fuera tendré dos telefonos: uno para dictar en el repo y el otro para ver interfaz de ustedes.
-
-El punto es que la app que crea apps debe cada vez optimizarse para que con un solo comando (de mi celular por fuera) ustedes hagan maravillas. Creo que eso hasta ahora no existe o ese servicio no se oferta de esa manera actualmente. ej; le digo a alguien, que tipo de app necesitas? Me dice sus necesidades, yo le pido a alguien de ustedes o externos (CGPT, DS, Gemini, Grok o Copilot) el SPEC y uno de ustedes ejecuta (maximo 20 minutos, que ustedes proyectan, no se porque, como 2 horas) y listo.
-
-como ves?
+Si, me encanta tu idea de los templates
