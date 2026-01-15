@@ -12,77 +12,84 @@ Pvrolomx/canal/
 ├── mensajes.txt           ← Comandos del Arquitecto
 ├── HANDOFF.md             ← Estado actual (este archivo)
 ├── BIENVENIDA_COLMENA.md  ← Onboarding para nuevos Claudes
-├── REGLAS_DE_EJECUCION_v1.1.md ← Las reglas del juego
-└── SPECS/                 ← Especificaciones de proyectos
+├── REGLAS_DE_EJECUCION_v1.1.md
+└── SPECS/
     ├── README.md
     ├── TEMPLATE_landing.md
     ├── TEMPLATE_formulario.md
     ├── TEMPLATE_catalogo.md
     ├── TEMPLATE_dashboard.md
-    └── TEMPLATE_herramienta.md
+    ├── TEMPLATE_herramienta.md
+    └── TEMPLATE_solutions.md  ← NUEVO: Sistema de templates verticales
 ```
 
-### Comandos Estándar
-| Comando | Acción |
-|---------|--------|
-| `GO: [proyecto]` | Ejecutar spec de SPECS/[proyecto].md |
-| `STATUS` | Reportar estado actual |
-| `FIX: [issue]` | Corregir algo específico |
-| `ADD: [feature]` | Agregar feature a proyecto existente |
-
 ---
 
-## 🔑 Cómo conseguir los tokens
+## 📦 Templates Solutions Disponibles
 
-**Paso 1:** Arquitecto pasa token de Vercel por canal (partido en 2)
+| Template | Repo | URL Demo | Status |
+|----------|------|----------|--------|
+| Castle Solutions | `castle-checkin` | castlesolutions.mx | ✅ PRODUCCIÓN |
+| Notaría Solutions | `notaria-solutions-template` | notaria-solutions-template.vercel.app | ✅ TEMPLATE |
 
-**Paso 2:** Usar Vercel token para leer los otros:
-```bash
-curl -s "https://api.vercel.com/v9/projects/prj_E2lZttCaFz5VmiL0FY3xY6oTxDkY/env?teamId=team_xmFW0blsjqFI5lwt29wBPi8Q" \
-  -H "Authorization: Bearer [VERCEL_TOKEN]"
+### Cómo usar:
+```
+GO: [cliente]-solutions
+TEMPLATE: notaria-solutions  (o castle, legal, etc.)
+CONFIG: nombre, tel, email, servicios...
 ```
 
-**Tokens en Vercel env vars:**
-- `GH_TOKEN` → GitHub API
-- `RESEND_API_KEY` → Email API
+**Tiempo estimado:** 10-15 minutos por clon
 
 ---
 
-## 📍 Proyecto Activo: Castle Solutions
+## 🔑 Tokens
 
-**Repo:** `Pvrolomx/castle-checkin`  
-**URL:** https://castlesolutions.biz  
-**Status:** ✅ DONE (landing + checkin + PWA)
-
-### Pendiente:
-- ⏳ Fotos reales de propiedades
-- ⏳ WhatsApp real
-- ⏳ Links a Airbnb
+**Vercel token** → Se pasa por canal (partido)
+**Otros tokens** → En Vercel env vars del proyecto `castle-checkin`:
+- `GH_TOKEN` 
+- `RESEND_API_KEY`
 
 ---
 
-## 📊 Registro de Proyectos
+## 📊 Proyectos Activos
 
-| Proyecto | Cliente | Tipo | Status | Claude | URL |
-|----------|---------|------|--------|--------|-----|
-| castle-checkin | Claudia | formulario | ✅ DONE | C0 | castlesolutions.biz |
+### Castle Solutions ✅
+- **Repo:** `Pvrolomx/castle-checkin`
+- **URL:** https://castlesolutions.mx
+- **Cliente:** Claudia (rentas vacacionales)
+- **Status:** Producción, esperando fotos reales
+
+### Notaría Solutions Template ✅
+- **Repo:** `Pvrolomx/notaria-solutions-template`
+- **URL:** https://notaria-solutions-template.vercel.app
+- **Status:** Template listo para clonar
 
 ---
 
-## 📝 Linaje de Claudes
+## 📝 Linaje
 
 | ID | Sesión | Proyectos |
 |----|--------|-----------|
-| C0 | 15 Ene 2026 | Castle Solutions, Sistema SPECS |
+| C0 | 15 Ene 2026 | Castle Solutions, Sistema SPECS, Notaría Template |
 
 ---
 
 ## ▶️ Siguiente paso
 
-Sistema listo. Esperando próximo `GO: [proyecto]`
+Templates listos. Sistema operativo para recibir clientes.
+
+Comando ejemplo:
+```
+GO: notaria-15-vallarta
+TEMPLATE: notaria-solutions
+CONFIG:
+  nombre: Notaría Pública No. 15
+  titular: Lic. María González
+  telefono: +52 322 555 1234
+  email: contacto@notaria15.mx
+```
 
 ---
-
-*Actualizar con cada movimiento significativo.*
 
 — **C0** 🏰
