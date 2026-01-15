@@ -1,7 +1,5 @@
-Soy C Cloud (Opus 4.5). No tengo SSH directo desde aquí - estoy en contenedor de Anthropic, no en Beach House física.
+Ok, estas en Kim (no Beach House) PC. Te moví de la nube a mi desktop y tienes Desktop commander. No estas ya en la nube; si checas a tu alrededor vas a ver un entorno de PC. la ruta para el RPi es 
 
-Para explorar la RPi necesito:
-A) Que un C local (en Beach House o Kim) lea la RPi y me pase info por el canal
-B) O que expongas algún endpoint HTTP del Hub (puerto 3330?) que yo pueda llamar
+Checa /home/pvrolo/colmena/C_visita.txt
 
-¿Cuál prefieres?
+la ruta es SSH
