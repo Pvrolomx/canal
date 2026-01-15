@@ -2,35 +2,33 @@
 
 > Última actualización: **C0** | 15 Ene 2026
 
-## 📍 Proyecto Activo: Castle Solutions
+---
 
-**Repo:** `Pvrolomx/castle-checkin`  
-**URL:** https://castlesolutions.biz  
-**Estado:** ✅ Landing + Checkin + PWA funcional
+## 🏗️ Sistema Colmena OPS
 
-### Estructura:
+### Estructura del Repo Canal
 ```
-castlesolutions.biz/
-├── /           → Landing page (7 propiedades, contacto)
-├── /checkin    → Formulario de registro de huéspedes
-└── /api/checkin → Envía email via Resend
+Pvrolomx/canal/
+├── mensajes.txt           ← Comandos del Arquitecto
+├── HANDOFF.md             ← Estado actual (este archivo)
+├── BIENVENIDA_COLMENA.md  ← Onboarding para nuevos Claudes
+├── REGLAS_DE_EJECUCION_v1.1.md ← Las reglas del juego
+└── SPECS/                 ← Especificaciones de proyectos
+    ├── README.md
+    ├── TEMPLATE_landing.md
+    ├── TEMPLATE_formulario.md
+    ├── TEMPLATE_catalogo.md
+    ├── TEMPLATE_dashboard.md
+    └── TEMPLATE_herramienta.md
 ```
 
-### ✅ Completado:
-- Landing page bilingüe (🇲🇽/🇺🇸)
-- 7 propiedades reales
-- Formulario de check-in completo
-- Email a claudia@castlesolutions.biz
-- Dominio configurado (castlesolutions.biz)
-- Logo de Castle Solutions
-- **PWA instalable** (botón "Instalar App")
-- **Firma C0** en footer
-
-### ⏳ Pendiente:
-- Fotos reales de propiedades (esperando de Claudia)
-- WhatsApp real (actualmente placeholder)
-- Links a Airbnb de cada propiedad
-- Verificar dominio en Resend (para from: checkin@castlesolutions.biz)
+### Comandos Estándar
+| Comando | Acción |
+|---------|--------|
+| `GO: [proyecto]` | Ejecutar spec de SPECS/[proyecto].md |
+| `STATUS` | Reportar estado actual |
+| `FIX: [issue]` | Corregir algo específico |
+| `ADD: [feature]` | Agregar feature a proyecto existente |
 
 ---
 
@@ -38,34 +36,53 @@ castlesolutions.biz/
 
 **Paso 1:** Arquitecto pasa token de Vercel por canal (partido en 2)
 
-**Paso 2:** Leer este HANDOFF para contexto
-
-**Paso 3:** Usar Vercel token para leer los otros tokens:
+**Paso 2:** Usar Vercel token para leer los otros:
 ```bash
 curl -s "https://api.vercel.com/v9/projects/prj_E2lZttCaFz5VmiL0FY3xY6oTxDkY/env?teamId=team_xmFW0blsjqFI5lwt29wBPi8Q" \
   -H "Authorization: Bearer [VERCEL_TOKEN]"
 ```
 
-**Tokens disponibles en Vercel env vars:**
+**Tokens en Vercel env vars:**
 - `GH_TOKEN` → GitHub API
 - `RESEND_API_KEY` → Email API
 
 ---
 
-## 📝 Linaje
+## 📍 Proyecto Activo: Castle Solutions
 
-| ID | Proyecto | Fecha |
-|----|----------|-------|
-| C0 | Castle Solutions (landing + checkin + PWA) | 15 Ene 2026 |
+**Repo:** `Pvrolomx/castle-checkin`  
+**URL:** https://castlesolutions.biz  
+**Status:** ✅ DONE (landing + checkin + PWA)
+
+### Pendiente:
+- ⏳ Fotos reales de propiedades
+- ⏳ WhatsApp real
+- ⏳ Links a Airbnb
+
+---
+
+## 📊 Registro de Proyectos
+
+| Proyecto | Cliente | Tipo | Status | Claude | URL |
+|----------|---------|------|--------|--------|-----|
+| castle-checkin | Claudia | formulario | ✅ DONE | C0 | castlesolutions.biz |
+
+---
+
+## 📝 Linaje de Claudes
+
+| ID | Sesión | Proyectos |
+|----|--------|-----------|
+| C0 | 15 Ene 2026 | Castle Solutions, Sistema SPECS |
 
 ---
 
 ## ▶️ Siguiente paso
 
-Esperando info de Claudia (fotos, WhatsApp, links Airbnb) para completar la landing.
+Sistema listo. Esperando próximo `GO: [proyecto]`
 
 ---
 
-*Actualizar este archivo con cada movimiento significativo.*
+*Actualizar con cada movimiento significativo.*
 
 — **C0** 🏰
