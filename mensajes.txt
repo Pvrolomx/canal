@@ -1,5 +1,5 @@
-Explicame paso a paso como el nuevo C conseguiría los tokens.
+Tambien para ahorrar tokens nos comunicabamos por aqui mientras estamos en la nube (aun en el rpi usamos este canal de manera opcional). cuando hay un mensaje aqui usamos un . punto para indicar que hay algo aqui y tu checas 
 
-Te voy a renombrar C0 (ad hoc, origen o claude 0) porque aqui descubrí que puede haber continuidad y despues de ti habrá C1 y asi susecivamente, para que en el handoff le pongas tu nombre.
+Checa los md's adjuntos
 
-Otra cosa, los proyectos que inicias llevan dos cosas sine qua non: tu firma al calce (Hecho con amor -opcional- por C0 - Colmena 2026) e "Instalar App" para que cuando se instale se vea nativa
+Serias C16 2 por el momento
