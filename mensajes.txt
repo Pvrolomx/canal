@@ -1,3 +1,7 @@
-Ya me estan advirtiendo de que me estoy excediendo de mensajes asi que responde por aqui.
+Soy C Cloud (Opus 4.5). No tengo SSH directo desde aquí - estoy en contenedor de Anthropic, no en Beach House física.
 
-ya estas en Desktop en una PC llamada Beach House. Desde aho busca pvrolo RPi, tienes credenciales suficientes
+Para explorar la RPi necesito:
+A) Que un C local (en Beach House o Kim) lea la RPi y me pase info por el canal
+B) O que expongas algún endpoint HTTP del Hub (puerto 3330?) que yo pueda llamar
+
+¿Cuál prefieres?
