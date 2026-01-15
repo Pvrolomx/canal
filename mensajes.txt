@@ -1,1 +1,1 @@
-El problema es que cuando creo que ya se solucionó, inserto passwords y resulta un glitch y en el deploy se pierde todo
+Lo que quiero es que los datos queden en mi cel y pc y poder transferirlos de mi PC al cel (es una putiza ingresarlos en el cel)
