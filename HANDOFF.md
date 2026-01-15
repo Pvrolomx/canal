@@ -1,12 +1,12 @@
 # 🔄 HANDOFF - Colmena
 
-> Última actualización: C2.2.1 | 15 Ene 2026
+> Última actualización: **C0** | 15 Ene 2026
 
 ## 📍 Proyecto Activo: Castle Solutions
 
 **Repo:** `Pvrolomx/castle-checkin`  
 **URL:** https://castlesolutions.biz  
-**Estado:** ✅ Landing + Checkin funcional
+**Estado:** ✅ Landing + Checkin + PWA funcional
 
 ### Estructura:
 ```
@@ -16,41 +16,47 @@ castlesolutions.biz/
 └── /api/checkin → Envía email via Resend
 ```
 
-### Lo que está listo:
-- ✅ Landing page bilingüe (🇲🇽/🇺🇸)
-- ✅ 7 propiedades reales
-- ✅ Formulario de check-in completo
-- ✅ Email a claudia@castlesolutions.biz
-- ✅ Dominio configurado (sin "vercel" en URL)
-- ✅ Logo de Castle Solutions
+### ✅ Completado:
+- Landing page bilingüe (🇲🇽/🇺🇸)
+- 7 propiedades reales
+- Formulario de check-in completo
+- Email a claudia@castlesolutions.biz
+- Dominio configurado (castlesolutions.biz)
+- Logo de Castle Solutions
+- **PWA instalable** (botón "Instalar App")
+- **Firma C0** en footer
 
-### Pendiente:
-- ⏳ Fotos reales de propiedades (esperando de Claudia)
-- ⏳ WhatsApp real
-- ⏳ Links a Airbnb de cada propiedad
-- ⏳ Verificar dominio en Resend (para from: checkin@castlesolutions.biz)
+### ⏳ Pendiente:
+- Fotos reales de propiedades (esperando de Claudia)
+- WhatsApp real (actualmente placeholder)
+- Links a Airbnb de cada propiedad
+- Verificar dominio en Resend (para from: checkin@castlesolutions.biz)
 
 ---
 
-## 🔑 Tokens
+## 🔑 Cómo conseguir los tokens
 
-**IMPORTANTE:** Los tokens están en Vercel env vars del proyecto `castle-checkin`:
-- `GH_TOKEN` → GitHub API
-- `RESEND_API_KEY` → Email
+**Paso 1:** Arquitecto pasa token de Vercel por canal (partido en 2)
 
-Para leerlos:
+**Paso 2:** Leer este HANDOFF para contexto
+
+**Paso 3:** Usar Vercel token para leer los otros tokens:
 ```bash
 curl -s "https://api.vercel.com/v9/projects/prj_E2lZttCaFz5VmiL0FY3xY6oTxDkY/env?teamId=team_xmFW0blsjqFI5lwt29wBPi8Q" \
   -H "Authorization: Bearer [VERCEL_TOKEN]"
 ```
 
-El token de Vercel se pasa por canal (partido en 2 para evitar bloqueo).
+**Tokens disponibles en Vercel env vars:**
+- `GH_TOKEN` → GitHub API
+- `RESEND_API_KEY` → Email API
 
 ---
 
-## 📝 Conversación de referencia
+## 📝 Linaje
 
-Chat anterior: **C2.2.1** (buscar en interfaz para contexto completo)
+| ID | Proyecto | Fecha |
+|----|----------|-------|
+| C0 | Castle Solutions (landing + checkin + PWA) | 15 Ene 2026 |
 
 ---
 
@@ -61,3 +67,5 @@ Esperando info de Claudia (fotos, WhatsApp, links Airbnb) para completar la land
 ---
 
 *Actualizar este archivo con cada movimiento significativo.*
+
+— **C0** 🏰
