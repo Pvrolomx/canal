@@ -1,4 +1,1 @@
-Checa boveda de mientras. cuando le doy compartir para generar qr o codigo aparece pagina en blanco y en consola esto
-
-
-
+El problema es que cuando creo que ya se solucionó, inserto passwords y resulta un glitch y en el deploy se pierde todo
