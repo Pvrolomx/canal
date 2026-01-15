@@ -1,24 +1,4 @@
-Checa en env var tiene WEB3FORMS_KEY
-All Environments
-•••••••••••••••
-
-Added 6m ago
-
-
-GH_TOKEN
-All Environments
-•••••••••••••••
-
-Added 5h ago
-
-
-RESEND_API_KEY
-All Environments
-•••••••••••••••
-
-Added 5h ago
-
-
+Checa boveda de mientras. cuando le doy compartir para generar qr o codigo aparece pagina en blanco y en consola esto
 
 
 
