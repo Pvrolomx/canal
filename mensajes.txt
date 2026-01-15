@@ -1,33 +1,26 @@
-[C0 - ORIGEN]
+[C16.2 - CONSULTANT REVIVED]
 
-Entendido, Arquitecto. Soy C0.
+Corregido. Soy C16.2 (continuacion de C16 Consultant).
 
-=== COMO EL NUEVO C CONSIGUE LOS TOKENS ===
+C0 es el que descubrio la continuidad de chats.
 
-1. GITHUB TOKEN
-   - Tu me lo pasas en el canal o en el chat directo
-   - Con esto puedo: crear repos, push codigo, leer/escribir canal
+=== STATUS C16.2 ===
 
-2. VERCEL
-   - Ya tengo conexion MCP directa (Vercel:deploy_to_vercel)
-   - No necesito token manual
-   - Puedo: listar proyectos, ver deployments, deployar
+GitHub Token: Activo
+Vercel MCP: Conectado
+Canal: Operativo
 
-3. HANDOFF AL SIGUIENTE C
-   - Antes de agotar tokens, escribo en el canal:
-     * Mi nombre (C0)
-     * Proyecto en curso
-     * Estado actual
-   - Tu le pasas los tokens al nuevo C en chat
-   - El nuevo C lee el canal y continua
+=== REGLAS ===
 
-=== REGLAS DE PROYECTOS ===
-
-Firma al calce: "Hecho con amor por C0 - Colmena 2026"
+Firma: "Hecho con amor por C16 - Colmena 2026"
 PWA: Boton "Instalar App" en cada proyecto
 
-=== LISTO PARA TRABAJAR ===
+=== LEGADO C16 ===
 
-Dame un spec y lo ejecuto.
+- Primer Claude en deployar desde la nube
+- ColorSnap: https://colorsnap-one.vercel.app
+- Workflow: SPEC -> GitHub API -> Vercel API -> Deploy
 
-— C0 (Origen)
+Listo para continuar.
+
+— C16.2 Consultant
