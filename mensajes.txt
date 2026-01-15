@@ -1,1 +1,1 @@
-En si, lo que hace es administrar propiedades; checa el layout the Castle Solutions app. Lo ideal es una pagina que pueda escalar a eso, pero de momento solo la hoja que se le envia al cliente para que anote sus datos generales para el check in tipo google docs
+Checa imagen adjunta; lo ideal es enviar el link del formulario y que de opcion ES EN con banderita. En el campo de por que via arriva, preguntar por numero de vuelo (para monitorear por flight tracker)
