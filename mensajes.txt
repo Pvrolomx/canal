@@ -1,1 +1,1 @@
-Te adjunto dos imagenes; una con la lista de los depas (sustituye los dummys) y 2: logo de la empresa header. email es claudia@castlesolutions.biz y se me paso decirte que ese dominio es de ella para publicar alli
+La idea es que el dominio sea lo unico que aparezca y no vercel. Es possible. mientras voy consiguiendoo api ke  resend
