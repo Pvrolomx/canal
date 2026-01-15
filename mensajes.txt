@@ -147,3 +147,49 @@ la funcion handleSetup puede estar generando un nuevo user_id.
 ?Quieres que revise el codigo para encontrar el bug?
 
 ? C16
+
+A este proceso se planteo la solucion siguiente:
+
+El usuario quiere un sistema de exportar/importar contraseñas via QR en lugar del sync automático con Supabase. Esto es más simple y directo.
+El flujo sería:
+
+PC: Botón "Exportar" → genera QR con datos encriptados
+Cel: Escanea QR → pide master password → descifra e importa
+
+Pero hay un problema: los QR tienen límite de datos (~3KB para nivel L, menos para M/H). Si tiene muchas contraseñas, no cabrán en un solo QR.
+Opciones:
+
+Comprimir los datos con algo como lz-string
+Dividir en múltiples QRs
+Usar un formato más compacto
+
+Voy a implementar:
+
+Exportar: encripta las entradas con el master password actual, comprime, genera QR
+Importar: escanea QR, pide master password, descifra, mergea/reemplaza entradas
+
+Necesito agregar lz-string para compresión o usar base64 simple y ver si cabe.
+En realidad, puedo hacer algo más simple:
+
+El QR contiene los datos encriptados (ya están encriptados en localStorage)
+El cel escanea, guarda en su localStorage, y al desbloquear usa la misma contraseña
+
+Pero el problema del salt sigue... cada dispositivo tiene su salt.
+Mejor enfoque:
+
+Exportar: genera un paquete con {salt, encrypted_data}
+Importar: guarda ese paquete en localStorage del cel
+Al desbloquear: usa el salt incluido para descifrar
+
+Esto debería funcionar porque:
+
+PC tiene salt_A + encrypted_with_salt_A
+Exporta ambos en el QR
+Cel importa ambos
+Cel usa salt_A + password para descifrar = funciona!
+
+Así que el celular puede descifrar los datos usando el salt exportado junto con la contraseña maestra. Voy a proceder con esta implementación.
+
+
+
+Checa todo esto de Boveda. dime si necesitas mas datos para dictamen tuyo
