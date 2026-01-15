@@ -1,1 +1,3 @@
-Oye, que chingon que hagas todo esto y me gustaría solo señalarte que en las RDE lo mas importante es "la app es la creacion de la app". ahorita me di cuenta que puedes continuar una conversacion finalizada por llega al limite. Eso no sabia. Y si tu, antes de llegar al limite escribes contexto, el siguiente inmediatamente continuaria, no?
+Yo creo que para no llenarnos de Handoffs, cada movimiento que vaya seguido de editar el handoff, tipo commit, como ves? Como en este caso, tu identidad es C2.2.1 por si el nuevo quiere checar la conversacion directamente de la interfaz para aun mayor contexto. Y otra cosa, yo les paso los tokens por separado el de github porque github al detectarlo completo aqui me bloquea el archivo y lo mas curioso es que ustedes me dicen que se los de de manera secreta pero en su interfaz (proceso interno que se muestra) lo muestran : )
+
+Como ves? En vercel debería haber un sitio donde aparezcan ambos tokens y no tener que darlos cada vez
