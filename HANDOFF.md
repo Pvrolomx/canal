@@ -1,6 +1,6 @@
 # 🔄 HANDOFF - Colmena
 
-> Última actualización: **C0** | 15 Ene 2026
+> Última actualización: **C20** | 16 Ene 2026
 
 ---
 
@@ -20,35 +20,60 @@ Pvrolomx/canal/
     ├── TEMPLATE_catalogo.md
     ├── TEMPLATE_dashboard.md
     ├── TEMPLATE_herramienta.md
-    └── TEMPLATE_solutions.md  ← NUEVO: Sistema de templates verticales
+    ├── TEMPLATE_solutions.md
+    ├── TEMPLATE_miclase.md    ← NUEVO: App para profesores
+    ├── SPEC profe.md
+    └── HANDOFF profe.md
 ```
 
 ---
 
-## 📦 Templates Solutions Disponibles
+## 📦 Templates Disponibles
 
-| Template | Repo | URL Demo | Status |
-|----------|------|----------|--------|
-| Castle Solutions | `castle-checkin` | castlesolutions.mx | ✅ PRODUCCIÓN |
-| Notaría Solutions | `notaria-solutions-template` | notaria-solutions-template.vercel.app | ✅ TEMPLATE |
+| Template | Repo | URL Demo | Status | Uso |
+|----------|------|----------|--------|-----|
+| Castle Solutions | `castle-checkin` | castlesolutions.mx | ✅ PROD | Rentas vacacionales |
+| Notaría Solutions | `notaria-solutions-template` | notaria-solutions-template.vercel.app | ✅ TEMPLATE | Notarías |
+| **MiClase** | `miclase` | miclase-eight.vercel.app | ✅ TEMPLATE | **Profesores universitarios** |
 
-### Cómo usar:
+---
+
+## 📚 NUEVO: Template MiClase
+
+### Qué es
+App de gestión para profesores universitarios con:
+- Login por roles (Profe/Alumno)
+- Crear grupos con código
+- **QR dinámico** para asistencia (cambia cada 2 min)
+- Scanner QR para alumnos
+- PWA instalable
+
+### Cómo usar
 ```
-GO: [cliente]-solutions
-TEMPLATE: notaria-solutions  (o castle, legal, etc.)
-CONFIG: nombre, tel, email, servicios...
+GO: [cliente]-miclase
+TEMPLATE: miclase
+CONFIG:
+  appName: "ClaseUDG"
+  institucion: "Universidad de Guadalajara"
+  dominioEmail: "@udg.mx"
+  colorPrimary: "#1e40af"
 ```
 
-**Tiempo estimado:** 10-15 minutos por clon
+### Casos de uso
+- Universidad completa
+- Profesor individual  
+- Preparatoria/Secundaria
+
+**Tiempo estimado:** 5-10 minutos por clon
+
+**SPEC completo:** `SPECS/TEMPLATE_miclase.md`
 
 ---
 
 ## 🔑 Tokens
 
 **Vercel token** → Se pasa por canal (partido)
-**Otros tokens** → En Vercel env vars del proyecto `castle-checkin`:
-- `GH_TOKEN` 
-- `RESEND_API_KEY`
+**GitHub token** → ghp_ + segunda parte en canal
 
 ---
 
@@ -57,12 +82,16 @@ CONFIG: nombre, tel, email, servicios...
 ### Castle Solutions ✅
 - **Repo:** `Pvrolomx/castle-checkin`
 - **URL:** https://castlesolutions.mx
-- **Cliente:** Claudia (rentas vacacionales)
-- **Status:** Producción, esperando fotos reales
+- **Status:** Producción
 
 ### Notaría Solutions Template ✅
 - **Repo:** `Pvrolomx/notaria-solutions-template`
 - **URL:** https://notaria-solutions-template.vercel.app
+- **Status:** Template listo
+
+### MiClase ✅ NUEVO
+- **Repo:** `Pvrolomx/miclase`
+- **URL:** https://miclase-eight.vercel.app
 - **Status:** Template listo para clonar
 
 ---
@@ -72,24 +101,26 @@ CONFIG: nombre, tel, email, servicios...
 | ID | Sesión | Proyectos |
 |----|--------|-----------|
 | C0 | 15 Ene 2026 | Castle Solutions, Sistema SPECS, Notaría Template |
+| C20 | 16 Ene 2026 | **MiClase** - Template para profesores |
 
 ---
 
-## ▶️ Siguiente paso
+## ▶️ Próximos Pasos
 
-Templates listos. Sistema operativo para recibir clientes.
+Templates listos:
+1. Solutions (negocios locales)
+2. **MiClase (profesores)** ← NUEVO
 
-Comando ejemplo:
+Comando ejemplo para clonar MiClase:
 ```
-GO: notaria-15-vallarta
-TEMPLATE: notaria-solutions
+GO: asistencia-udg
+TEMPLATE: miclase
 CONFIG:
-  nombre: Notaría Pública No. 15
-  titular: Lic. María González
-  telefono: +52 322 555 1234
-  email: contacto@notaria15.mx
+  appName: "Asistencia UDG"
+  institucion: "Universidad de Guadalajara"
+  colorPrimary: "#1e3a8a"
 ```
 
 ---
 
-— **C0** 🏰
+— **C20** 📚
