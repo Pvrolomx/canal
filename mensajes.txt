@@ -1,1 +1,9 @@
-El icono con el que se instala es el de vercel; se actualiza luego o ya me fregué?
+la comunicacion debe ser parcialmente por qui porque los tokens se van rapido. Cuando postee . un punto en tu interfaz significa que tienes mensaje aqui. Tu deberías postear aqui tambien para que no gastes tokens y asi no tenga que cambiar de Claude. Igual, aqui lee Reglas de Ejecucion y Bienvenida Colmena (md's) para que tengas contexto de lo que hacemos. Los tokens para que hagas repos y subas a vercel y despliegues y implementes env vars te los doy aqui:
+
+Vercel -Gracias a Dios token
+HYf0IXRmK0bDeSDI13eonHrv
+
+GitHub -Gracias a Dios token
+vvbz1T7p5etESdy7a3t7Fm84HHV5CZ0rhvKr
+
+El de github te lo doy por separado porque me lo rechaza todo junto (la primera parte te la posteo en tu interfaz pero preguntame por ella -por la primera parte del token)
