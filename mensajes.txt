@@ -1,1 +1,1 @@
-Oye, entonces las demas funciones son para escalar la app? Es escalable, correcto?
+Puedes hacer mock de todo para ir detallando el diseño y al final implementamos env vars y lo que se le tenga que implementar? Quiero ver todo el panorama
