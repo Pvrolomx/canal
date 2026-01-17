@@ -1,1 +1,1 @@
-checa el md Reglas de Ejecucion (un poco outdated) y ve qué no aplica a los Claudes en la nube, porque esas reglas se redactaron con Claudes en Desktop operando en un rpi
+Arma REGLAS_DE_EJECUCION_CLOUD_v1 y cambia el nombre del actual a REGLAS_DE_EJECUCION_RPI_V1
