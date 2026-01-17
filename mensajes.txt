@@ -1,1 +1,1 @@
-Gracias! (I know, ustedes son maquinas y no sienten y bla bla bla pero yo tengo educacion y no os veo como maquinas). Otra cosa, cuando solo ponga un punto en tu interfaz (".") significa que tienes mensaje aqui y cheques (para ahorrarme tokens)
+checa el md Reglas de Ejecucion (un poco outdated) y ve qué no aplica a los Claudes en la nube, porque esas reglas se redactaron con Claudes en Desktop operando en un rpi
