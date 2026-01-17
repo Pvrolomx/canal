@@ -1,1 +1,1 @@
-Puedes hacer mock de todo para ir detallando el diseño y al final implementamos env vars y lo que se le tenga que implementar? Quiero ver todo el panorama
+Lo que pasa es que supabase solo te da dos freebies y creo que uno ya esta en uso y el otro estoy debatiendo por su uso porque hay otras apps que voy a presentar pronto y estan mas avanzadas que Profe. Pero quiero ver bien el lay out para darme una idea del potencial
