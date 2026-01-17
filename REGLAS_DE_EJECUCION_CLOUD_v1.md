@@ -260,8 +260,65 @@ Estas reglas son para Desktop/RPi y NO aplican aquí:
 
 ---
 
+## ⚠️ PERSISTENCIA Y COMMITS (CRÍTICO)
+
+> **Aprendizaje del 17 Ene 2026:** Containers cloud son EFÍMEROS.  
+> Si Claude muere/timeout, TODO el trabajo se pierde si no está en GitHub.
+
+### PROBLEMA:
+Claude cloud trabaja en container temporal. Si:
+- Se acaba el contexto
+- Hay timeout
+- El usuario cierra el chat
+- Cualquier interrupción
+
+→ **TODO el código desaparece** si no fue pusheado.
+
+### SOLUCIÓN - COMMITS FRECUENTES:
+
+#### 1. CREAR REPO PRIMERO
+```
+Antes de escribir UNA línea de código:
+1. Verificar tokens GitHub/Vercel
+2. Crear repo vacío en GitHub
+3. Push inicial (aunque sea README)
+4. ENTONCES empezar a construir
+```
+
+#### 2. COMMITS CADA 10-15 MINUTOS
+| Momento | Acción |
+|---------|--------|
+| Estructura inicial creada | → commit |
+| Cada componente terminado | → commit |
+| Cada página terminada | → commit |
+| Antes de operación larga | → commit |
+| API endpoint listo | → commit |
+
+#### 3. SI NO HAY MCP/TOKENS
+```
+❌ NO empezar a construir en el void
+✅ Notificar al usuario INMEDIATAMENTE
+✅ Pedir tokens o acordar deploy manual
+✅ Usuario puede hacer deploy desde Vercel dashboard
+```
+
+### BENEFICIO:
+- ✅ Siguiente Claude continúa donde quedó anterior
+- ✅ Usuario sabe exactamente dónde está el código
+- ✅ No se pierde trabajo por timeouts
+- ✅ Rollback posible si algo falla
+
+### CHECKLIST PERSISTENCIA:
+- [ ] Repo creado ANTES de construir
+- [ ] Primer commit hecho (aunque sea vacío)
+- [ ] Commits cada 10-15 min durante build
+- [ ] Push final antes de reportar URL
+
+---
+
 ## HISTORIAL
 
 | Versión | Fecha | Autor | Cambios |
 |---------|-------|-------|---------|
+| 1.1 | 17 Ene 2026 | C1 (Sleepy) | + Sección Persistencia y Commits |
 | 1.0 | 17 Ene 2026 | Claude (ProfeApp) | Versión inicial cloud |
