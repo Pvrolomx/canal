@@ -1,1 +1,1 @@
-Arma REGLAS_DE_EJECUCION_CLOUD_v1 y cambia el nombre del actual a REGLAS_DE_EJECUCION_RPI_V1
+Oye, entonces las demas funciones son para escalar la app? Es escalable, correcto?
