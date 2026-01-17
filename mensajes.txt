@@ -1,1 +1,1 @@
-Lo que pasa es que supabase solo te da dos freebies y creo que uno ya esta en uso y el otro estoy debatiendo por su uso porque hay otras apps que voy a presentar pronto y estan mas avanzadas que Profe. Pero quiero ver bien el lay out para darme una idea del potencial
+Sabes que? Vamos armando prompts para que CGPT o Copilot o cualquier otra IA se encargue de diseñar botones/imagenes de acuerdo a nuestras necesidades. Por ejemplo: donde crees tu que debería haber cierto diseño de botones  o alguna imagen en Profe?
