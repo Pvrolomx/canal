@@ -1,0 +1,194 @@
+# COPIAR TODO ESTO A UN CHAT NUEVO DE CLAUDE.AI
+
+---
+
+## INSTRUCCIONES
+
+Eres un Claude ejecutor. Tu tarea es integrar el modulo COMPS 
+en la app real-estate-solutions.
+
+PREREQUISITOS - HACER PRIMERO:
+1. Confirma que tienes GitHub MCP conectado
+2. Confirma que tienes Vercel MCP conectado
+3. Si NO tienes alguno, NOTIFICA al usuario antes de empezar
+
+REPO: github.com/Pvrolomx/real-estate-solutions
+COMMITS: Cada 10-15 minutos
+
+---
+
+## TAREA
+
+Reemplazar el tab "Calculadora" con el modulo "Comps" 
+(generador de comparables con IA).
+
+ARCHIVOS A MODIFICAR:
+1. app/page.tsx - Modificar UI y logica
+2. app/api/comps/route.ts - CREAR NUEVO
+
+---
+
+## CAMBIOS EN page.tsx
+
+### 1. Agregar textos al objeto texts.es:
+```
+comps: "Comps",
+compsTitle: "Generador de Comparables",
+generateComps: "Generar Comps",
+analyzing: "Analizando...",
+propertyType: "Tipo de Propiedad",
+region: "Zona",
+bedrooms: "Recamaras",
+bathrooms: "Banos",
+area: "M2 Construccion",
+pool: "Alberca",
+ac: "A/C",
+oceanView: "Vista Mar",
+furnished: "Amueblado",
+beachfront: "Frente al Mar",
+estimatedValue: "Valor Estimado",
+lowEstimate: "Bajo",
+midEstimate: "Medio",
+highEstimate: "Alto",
+```
+
+### 2. Agregar equivalentes en texts.en
+
+### 3. Cambiar "calculator"/"calculadora" a "comps"
+
+### 4. Agregar estados despues de otros useState:
+```javascript
+const [compsForm, setCompsForm] = useState({
+  type: "Condominio",
+  region: "Bucerias",
+  bedrooms: 2,
+  bathrooms: 2,
+  m2: 100,
+  features: { pool: false, ac: false, ocean_view: false, furnished: false, beachfront: false }
+})
+const [compsResults, setCompsResults] = useState<any>(null)
+const [compsLoading, setCompsLoading] = useState(false)
+```
+
+### 5. Agregar funcion:
+```javascript
+const handleGenerateComps = async () => {
+  setCompsLoading(true)
+  setCompsResults(null)
+  try {
+    const res = await fetch('/api/comps', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ property: compsForm })
+    })
+    const data = await res.json()
+    if (data.success) setCompsResults(data.data)
+  } catch (err) { console.error(err) }
+  setCompsLoading(false)
+}
+```
+
+### 6. Reemplazar UI de calculadora con formulario Comps
+- Select para tipo (Condominio, Casa, Terreno, Comercial)
+- Select para region (Bucerias, Nuevo Vallarta, Punta de Mita, etc)
+- Inputs para bedrooms, bathrooms, m2
+- Checkboxes para features
+- Boton "Generar Comps"
+- Mostrar resultados: valuacion + lista de comps con scores
+
+---
+
+## CREAR API: app/api/comps/route.ts
+
+```typescript
+import { NextResponse } from 'next/server'
+
+const CLAUDE_API_KEY = process.env.CLAUDE_API_KEY
+
+const properties = [
+  // COPIAR de poc_properties.json (16 propiedades)
+]
+
+export async function POST(request: Request) {
+  const { property } = await request.json()
+  
+  const prompt = `Eres experto en valuacion inmobiliaria de Puerto Vallarta.
+PROPIEDAD: ${JSON.stringify(property)}
+COMPARABLES: ${JSON.stringify(properties)}
+Selecciona 3-5 comps, calcula similarity_score, da valuacion.
+Responde SOLO JSON.`
+
+  const response = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'x-api-key': CLAUDE_API_KEY!,
+      'anthropic-version': '2023-06-01'
+    },
+    body: JSON.stringify({
+      model: 'claude-3-5-haiku-20241022',
+      max_tokens: 2000,
+      messages: [{ role: 'user', content: prompt }]
+    })
+  })
+
+  const data = await response.json()
+  const text = data.content?.[0]?.text || ''
+  const jsonMatch = text.match(/\{[\s\S]*\}/)
+  
+  if (jsonMatch) {
+    return NextResponse.json({ success: true, data: JSON.parse(jsonMatch[0]) })
+  }
+  return NextResponse.json({ success: false, error: 'Parse error' })
+}
+```
+
+---
+
+## PROPIEDADES PARA EL API (poc_properties.json)
+
+```json
+[
+  {"mls_id":"POC001","name":"Condo Torre Naomi 301","type":"Condominio","region":"Bucerias","price_usd":425000,"bedrooms":2,"bathrooms":2,"m2_construction":98,"features":["pool","ac","ocean_view"]},
+  {"mls_id":"POC002","name":"Casa Mar Azul","type":"Casa","region":"Bucerias","price_usd":650000,"bedrooms":3,"bathrooms":3,"m2_construction":180,"features":["pool","ac","ocean_view","furnished"]},
+  {"mls_id":"POC003","name":"Penthouse Flamingos","type":"Condominio","region":"Flamingos","price_usd":890000,"bedrooms":3,"bathrooms":3,"m2_construction":220,"features":["pool","ac","ocean_view","furnished","beachfront"]},
+  {"mls_id":"POC004","name":"Villa Punta Esmeralda","type":"Casa","region":"Punta de Mita","price_usd":1250000,"bedrooms":4,"bathrooms":4,"m2_construction":320,"features":["pool","ac","ocean_view","furnished","beachfront"]},
+  {"mls_id":"POC005","name":"Condo Nuevo Vallarta Bay","type":"Condominio","region":"Nuevo Vallarta","price_usd":380000,"bedrooms":2,"bathrooms":2,"m2_construction":85,"features":["pool","ac"]},
+  {"mls_id":"POC006","name":"Casa La Cruz Hills","type":"Casa","region":"La Cruz","price_usd":520000,"bedrooms":3,"bathrooms":2,"m2_construction":150,"features":["pool","ocean_view"]},
+  {"mls_id":"POC007","name":"Studio Sayulita Surf","type":"Condominio","region":"Sayulita","price_usd":195000,"bedrooms":1,"bathrooms":1,"m2_construction":45,"features":["ac","furnished"]},
+  {"mls_id":"POC008","name":"Terreno San Pancho","type":"Terreno","region":"San Pancho","price_usd":180000,"bedrooms":0,"bathrooms":0,"m2_construction":800,"features":["ocean_view"]}
+]
+```
+
+---
+
+## ENV VARIABLE
+
+En Vercel Settings > Environment Variables:
+CLAUDE_API_KEY = (pedir al usuario)
+
+---
+
+## CHECKLIST FINAL
+
+- [ ] Tab dice "Comps" en vez de "Calculadora"
+- [ ] Formulario con tipo, region, beds, baths, m2, features
+- [ ] Boton genera comps con IA
+- [ ] Resultados muestran valuacion y comparables
+- [ ] Bilingue funciona (ES/EN)
+- [ ] Deploy en Vercel OK
+
+---
+
+## REPORTE AL TERMINAR
+
+```
+COMPLETADO
+
+Repo: github.com/Pvrolomx/real-estate-solutions
+URL: https://real-estate-solutions-kappa.vercel.app
+Cambios: Reemplazado tab Calculadora con Comps
+```
+
+---
+FIN - Generado por C1 Sleepy
