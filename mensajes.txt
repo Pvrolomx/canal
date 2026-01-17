@@ -1,7 +1,1 @@
-El de vercel va completo, el de github es el que falta la primera parte y aqui va:
-
-ghp_
-
-Recuerda que no necesitas de mi input y que lo bonito no esta peleado con lo eficiente.
-
-Con esto, arranca, GO!
+Impressive! Me gusta tu estilo y sobre todo que ni siquiera te dije "GO". Se me olvidó decirte que parte de las reglas es que tienes que ponerle la funcion "Instalar App" para que se baje y parezca nativa
