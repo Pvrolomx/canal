@@ -534,3 +534,112 @@ COMMIT
 ===================================================
 FIN RES-PASO7-MATCH
 ===================================================
+
+
+===================================================
+LEGAL-SOLUTIONS-FIX-001
+Caso Detalle Page Fixes
+De: C1 (Sleepy) | Para: Cloud Claude
+Fecha: 2026-01-18
+===================================================
+
+ARCHIVO PRINCIPAL: src/app/casos/[id]/page.tsx
+
+---------------------------------------------------
+FIX 1: AUDIENCIAS - Agregar funcionalidad
+---------------------------------------------------
+
+ANTES:
+<button className="text-blue-600 text-sm font-medium hover:underline">+ Agregar</button>
+
+DESPUÉS:
+<Link href={`/agenda?caseId=${caseData.id}&action=new`} className="text-blue-600 text-sm font-medium hover:underline">+ Agregar</Link>
+
+---------------------------------------------------
+FIX 2: VER CLIENTE - Navegación de regreso
+---------------------------------------------------
+
+ANTES:
+<Link href={`/clientes/${caseData.client.id}`} ...>Ver cliente →</Link>
+
+DESPUÉS:
+<Link href={`/clientes/${caseData.client.id}?from=casos&caseId=${caseData.id}`} ...>Ver cliente →</Link>
+
+ARCHIVO ADICIONAL: src/app/clientes/[id]/page.tsx
+Agregar:
+import { useSearchParams } from 'next/navigation';
+const searchParams = useSearchParams();
+const fromCases = searchParams.get('from') === 'casos';
+const caseId = searchParams.get('caseId');
+
+Modificar botón regreso:
+<Link href={fromCases && caseId ? `/casos/${caseId}` : '/clientes'} ...>←</Link>
+
+---------------------------------------------------
+FIX 3: TAREAS → NOTAS
+---------------------------------------------------
+
+ELIMINAR sección Tareas completa.
+REEMPLAZAR con:
+
+{/* Notas */}
+<div className="bg-white rounded-xl shadow-sm border p-5">
+  <h3 className="font-semibold mb-3">📝 Notas</h3>
+  {editing ? (
+    <textarea 
+      value={form.notes} 
+      onChange={e => setForm({...form, notes: e.target.value})}
+      rows={4} 
+      placeholder="Agregar notas del caso..."
+      className="w-full px-3 py-2 border rounded-lg text-sm" 
+    />
+  ) : (
+    <p className="text-slate-600 text-sm whitespace-pre-wrap">
+      {caseData.notes || 'Sin notas'}
+    </p>
+  )}
+</div>
+
+---------------------------------------------------
+FIX 4: ELIMINAR SECCIÓN ACCIONES
+---------------------------------------------------
+
+ELIMINAR completamente el div de "Acciones" (IA se implementa después).
+Botón "Eliminar caso" puede moverse a modo edición si se necesita.
+
+---------------------------------------------------
+FIX 5: FONDO CONSISTENTE
+---------------------------------------------------
+
+CAMBIAR: bg-slate-50 → bg-stone-100
+
+En:
+- <div className="min-h-screen bg-stone-100">
+- Estados loading/error también
+
+---------------------------------------------------
+FIX 6: ELIMINAR BOTÓN IA DEL HEADER
+---------------------------------------------------
+
+ELIMINAR:
+<Link href={`/ai?caseId=${caseData.id}`} className="px-4 py-2 bg-blue-600...">🤖 Consultar IA</Link>
+
+---------------------------------------------------
+NOTA: VERCEL TOOLBAR
+---------------------------------------------------
+
+El icono settings es Vercel Toolbar (preview deployments).
+Desactivar en vercel.json:
+{ "toolbar": { "enabled": false } }
+
+O Dashboard → Settings → Vercel Toolbar → Disable
+
+===================================================
+COMMIT
+===================================================
+
+"fix: caso detail page - audiencias link, nav fix, notas, remove actions, consistent bg"
+
+===================================================
+FIN LEGAL-SOLUTIONS-FIX-001
+===================================================
