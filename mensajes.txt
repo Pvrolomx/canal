@@ -769,3 +769,85 @@ COMMIT
 ===================================================
 FIN LEGAL-PASO-SYNC
 ===================================================
+
+
+===================================================
+LEGAL-PASO-BRANDING
+Toggle Logo ↔ Nombre Personalizado
+De: C1 (Sleepy) | Para: Cloud Claude
+Fecha: 2026-01-18
+===================================================
+
+OBJETIVO: Cambiar rapidamente entre logo y nombre para demos
+
+MECANISMO:
+- localStorage key: legal_branding
+- Si existe → muestra nombre personalizado
+- Si no existe → muestra logo
+
+ACTIVACION: Triple-click en header
+
+---------------------------------------------------
+COMPONENTE: BrandingHeader
+---------------------------------------------------
+
+CREAR: src/components/BrandingHeader.tsx
+
+- useState para customName y clickCount
+- useEffect carga de localStorage
+- handleTripleClick: detecta 3 clicks en 500ms
+- prompt() para ingresar nombre o vaciar
+- Renderiza logo O nombre + "Despacho Juridico"
+
+---------------------------------------------------
+INTEGRACION
+---------------------------------------------------
+
+En src/app/page.tsx:
+
+import BrandingHeader from '@/components/BrandingHeader';
+
+Reemplazar el header actual con:
+<header className="bg-white border-b border-stone-200 pt-6 pb-4 px-6">
+  <div className="max-w-lg mx-auto">
+    <BrandingHeader />
+  </div>
+</header>
+
+---------------------------------------------------
+USO
+---------------------------------------------------
+
+PARA DEMO:
+1. Triple-click en logo
+2. Escribir: "Lic. Antonio Torres"
+3. Enter → Nombre aparece
+
+PARA RESTAURAR:
+1. Triple-click en nombre
+2. Dejar vacio
+3. Enter → Logo vuelve
+
+ALTERNATIVA (consola):
+localStorage.setItem('legal_branding', 'Lic. Antonio Torres')
+localStorage.removeItem('legal_branding')
+
+---------------------------------------------------
+CRITERIO DE EXITO
+---------------------------------------------------
+
+[ ] Header muestra logo por defecto
+[ ] Triple-click abre prompt
+[ ] Nombre → muestra nombre + "Despacho Juridico"
+[ ] Vacio → restaura logo
+[ ] Persiste entre recargas
+
+===================================================
+COMMIT
+===================================================
+
+"feat: add branding toggle - triple-click to customize header"
+
+===================================================
+FIN LEGAL-PASO-BRANDING
+===================================================
