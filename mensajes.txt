@@ -1,57 +1,46 @@
 ===================================================
-SPEC: RES-PASO4-CLIENTES
-Modulo Clientes con campos Notaria Solutions
+SPEC: RES-PASO5-INVENTARIO
+Modulo Inventario de Propiedades
 Fecha: 2026-01-18
 Por: C1 Sleepy
 ===================================================
 
 OBJETIVO:
-CRM de clientes con campos completos para:
-- Notarios
-- Bancos/Fiduciarios
-- Agencias inmobiliarias
-
-NOTA: Export PDF queda pendiente para despues.
+Lista de propiedades con distincion entre:
+- Enlistadas (MLS/publicas)
+- Pocket Listing (exclusivas/privadas)
 
 ===================================================
-CREAR: app/components/ClientesTab.jsx
+CREAR: app/components/InventarioTab.jsx
 ===================================================
 
 ```javascript
 'use client'
 import { useState, useEffect } from 'react'
 
-const initialClient = {
+const initialProperty = {
   id: '',
-  // Datos Personales
-  nombre: '',
-  fechaNac: '',
-  lugarNac: '',
-  nacionalidad: 'MX',
-  estadoCivil: '',
-  regimenMatrimonial: '',
-  // Identificacion
-  tipoID: 'INE',
-  ine: '',
-  pasaporte: '',
-  pasaporteExp: '',
-  pasaporteVenc: '',
-  // Contacto
-  tel: '',
-  email: '',
-  dirMx: '',
-  dirExt: '',
-  // Fiscal
-  curp: '',
-  rfc: '',
-  // Laboral
-  ocupacion: '',
-  puesto: '',
-  empresa: '',
-  telEmpresa: '',
-  dirEmpresa: '',
+  // Basico
+  titulo: '',
+  tipo: 'casa',
+  listingType: 'enlistada', // enlistada | pocket
+  estatus: 'disponible',
+  // Ubicacion
+  zona: '',
+  direccion: '',
+  // Precio
+  precio: '',
+  moneda: 'USD',
+  // Caracteristicas
+  recamaras: '',
+  banos: '',
+  m2Construccion: '',
+  m2Terreno: '',
+  estacionamientos: '',
   // Extra
-  ssn: '',
+  amenidades: '',
+  descripcion: '',
+  fotoUrl: '',
   notas: '',
 }
 
@@ -73,14 +62,13 @@ const Section = ({ title, isOpen, onToggle, children }) => (
   </div>
 )
 
-const Input = ({ label, type = 'text', value, onChange, maxLength, placeholder }) => (
+const Input = ({ label, type = 'text', value, onChange, placeholder }) => (
   <div>
     <label className="block text-white/70 text-sm mb-1">{label}</label>
     <input
       type={type}
       value={value}
       onChange={onChange}
-      maxLength={maxLength}
       placeholder={placeholder}
       className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white placeholder-white/40 focus:outline-none focus:border-white/40"
     />
@@ -104,28 +92,28 @@ const Select = ({ label, value, onChange, options }) => (
   </div>
 )
 
-export default function ClientesTab({ t }) {
-  const [clients, setClients] = useState([])
+export default function InventarioTab({ t }) {
+  const [properties, setProperties] = useState([])
   const [showForm, setShowForm] = useState(false)
   const [editingId, setEditingId] = useState(null)
-  const [form, setForm] = useState(initialClient)
+  const [form, setForm] = useState(initialProperty)
+  const [filter, setFilter] = useState('all') // all | enlistada | pocket
   const [sections, setSections] = useState({
-    personal: true,
-    identificacion: false,
-    contacto: false,
-    fiscal: false,
-    laboral: false,
+    basico: true,
+    ubicacion: false,
+    precio: false,
+    caracteristicas: false,
     extra: false,
   })
 
   useEffect(() => {
-    const saved = localStorage.getItem('res_clients')
-    if (saved) setClients(JSON.parse(saved))
+    const saved = localStorage.getItem('res_properties')
+    if (saved) setProperties(JSON.parse(saved))
   }, [])
 
-  const saveClients = (newClients) => {
-    setClients(newClients)
-    localStorage.setItem('res_clients', JSON.stringify(newClients))
+  const saveProperties = (newProps) => {
+    setProperties(newProps)
+    localStorage.setItem('res_properties', JSON.stringify(newProps))
   }
 
   const toggleSection = (key) => {
@@ -137,71 +125,124 @@ export default function ClientesTab({ t }) {
   }
 
   const handleSave = () => {
-    if (!form.nombre.trim()) return alert(t.nameRequired)
+    if (!form.titulo.trim()) return alert(t.titleRequired)
     
     if (editingId) {
-      saveClients(clients.map(c => c.id === editingId ? { ...form, id: editingId } : c))
+      saveProperties(properties.map(p => p.id === editingId ? { ...form, id: editingId } : p))
     } else {
-      const newClient = { ...form, id: Date.now().toString() }
-      saveClients([...clients, newClient])
+      const newProp = { ...form, id: Date.now().toString() }
+      saveProperties([...properties, newProp])
     }
     setShowForm(false)
-    setForm(initialClient)
+    setForm(initialProperty)
     setEditingId(null)
   }
 
-  const handleEdit = (client) => {
-    setForm(client)
-    setEditingId(client.id)
+  const handleEdit = (prop) => {
+    setForm(prop)
+    setEditingId(prop.id)
     setShowForm(true)
   }
 
   const handleDelete = (id) => {
     if (confirm(t.confirmDelete)) {
-      saveClients(clients.filter(c => c.id !== id))
+      saveProperties(properties.filter(p => p.id !== id))
     }
   }
 
-  // Lista de clientes
+  const filteredProps = filter === 'all' 
+    ? properties 
+    : properties.filter(p => p.listingType === filter)
+
+  const formatPrice = (precio, moneda) => {
+    if (!precio) return ''
+    const num = parseFloat(precio).toLocaleString()
+    return moneda === 'USD' ? `$${num} USD` : `$${num} MXN`
+  }
+
+  // Lista de propiedades
   if (!showForm) {
     return (
       <div>
+        {/* Filtros */}
+        <div className="flex gap-2 mb-4">
+          {['all', 'enlistada', 'pocket'].map(f => (
+            <button
+              key={f}
+              onClick={() => setFilter(f)}
+              className={`px-3 py-1 rounded-full text-sm transition-all ${
+                filter === f
+                  ? 'bg-white/30 text-white'
+                  : 'bg-white/10 text-white/60 hover:bg-white/20'
+              }`}
+            >
+              {f === 'all' ? t.filterAll : f === 'enlistada' ? t.filterListed : t.filterPocket}
+            </button>
+          ))}
+        </div>
+
         <div className="flex justify-between items-center mb-4">
-          <span className="text-white/60">{clients.length} {t.clients}</span>
+          <span className="text-white/60">{filteredProps.length} {t.properties}</span>
           <button
-            onClick={() => { setForm(initialClient); setEditingId(null); setShowForm(true) }}
+            onClick={() => { setForm(initialProperty); setEditingId(null); setShowForm(true) }}
             className="bg-white/20 hover:bg-white/30 px-4 py-2 rounded-xl text-white font-medium transition-all"
           >
-            + {t.newClient}
+            + {t.newProperty}
           </button>
         </div>
         
-        {clients.length === 0 ? (
-          <p className="text-white/40 text-center py-8">{t.noClients}</p>
+        {filteredProps.length === 0 ? (
+          <p className="text-white/40 text-center py-8">{t.noProperties}</p>
         ) : (
-          <div className="space-y-2">
-            {clients.map(client => (
+          <div className="space-y-3">
+            {filteredProps.map(prop => (
               <div
-                key={client.id}
-                className="bg-white/10 rounded-xl p-4 flex justify-between items-center"
+                key={prop.id}
+                className="bg-white/10 rounded-xl p-4"
               >
-                <div>
-                  <p className="text-white font-medium">{client.nombre}</p>
-                  <p className="text-white/60 text-sm">{client.tel} • {client.email}</p>
-                </div>
-                <div className="flex gap-2">
-                  <button
-                    onClick={() => handleEdit(client)}
-                    className="text-white/60 hover:text-white px-2"
-                  >
-                    ✏️
-                  </button>
-                  <button
-                    onClick={() => handleDelete(client.id)}
-                    className="text-white/60 hover:text-red-400 px-2"
-                  >
-                    🗑️
-                  </button>
+                <div className="flex justify-between items-start">
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className={`text-xs px-2 py-0.5 rounded-full ${
+                        prop.listingType === 'pocket' 
+                          ? 'bg-purple-500/30 text-purple-300' 
+                          : 'bg-blue-500/30 text-blue-300'
+                      }`}>
+                        {prop.listingType === 'pocket' ? '🔒 ' + t.pocket : '📋 ' + t.listed}
+                      </span>
+                      <span className={`text-xs px-2 py-0.5 rounded-full ${
+                        prop.estatus === 'disponible' ? 'bg-green-500/30 text-green-300' :
+                        prop.estatus === 'apartada' ? 'bg-yellow-500/30 text-yellow-300' :
+                        'bg-red-500/30 text-red-300'
+                      }`}>
+                        {t.status[prop.estatus]}
+                      </span>
+                    </div>
+                    <p className="text-white font-medium">{prop.titulo}</p>
+                    <p className="text-white/60 text-sm">{prop.zona}</p>
+                    <p className="text-white/80 text-lg font-bold mt-1">
+                      {formatPrice(prop.precio, prop.moneda)}
+                    </p>
+                    <p className="text-white/50 text-sm">
+                      {prop.recamaras && `${prop.recamaras} ${t.beds}`}
+                      {prop.banos && ` • ${prop.banos} ${t.baths}`}
+                      {prop.m2Construccion && ` • ${prop.m2Construccion}m²`}
+                    </p>
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <button
+                      onClick={() => handleEdit(prop)}
+                      className="text-white/60 hover:text-white px-2"
+                    >
+                      ✏️
+                    </button>
+                    <button
+                      onClick={() => handleDelete(prop.id)}
+                      className="text-white/60 hover:text-red-400 px-2"
+                    >
+                      🗑️
+                    </button>
+                  </div>
                 </div>
               </div>
             ))}
@@ -216,13 +257,13 @@ export default function ClientesTab({ t }) {
     <div>
       <div className="flex justify-between items-center mb-4">
         <button
-          onClick={() => { setShowForm(false); setForm(initialClient); setEditingId(null) }}
+          onClick={() => { setShowForm(false); setForm(initialProperty); setEditingId(null) }}
           className="text-white/60 hover:text-white"
         >
           ← {t.back}
         </button>
         <h3 className="text-white font-medium">
-          {editingId ? t.editClient : t.newClient}
+          {editingId ? t.editProperty : t.newProperty}
         </h3>
         <button
           onClick={handleSave}
@@ -233,108 +274,100 @@ export default function ClientesTab({ t }) {
       </div>
 
       <div className="max-h-[60vh] overflow-y-auto pr-2">
-        {/* DATOS PERSONALES */}
-        <Section title={t.sections.personal} isOpen={sections.personal} onToggle={() => toggleSection('personal')}>
-          <Input label={t.fields.nombre + ' *'} value={form.nombre} onChange={e => updateForm('nombre', e.target.value)} />
-          <Input label={t.fields.fechaNac} type="date" value={form.fechaNac} onChange={e => updateForm('fechaNac', e.target.value)} />
-          <Input label={t.fields.lugarNac} value={form.lugarNac} onChange={e => updateForm('lugarNac', e.target.value)} />
+        {/* BASICO */}
+        <Section title={t.sections.basico} isOpen={sections.basico} onToggle={() => toggleSection('basico')}>
+          <Input label={t.fields.titulo + ' *'} value={form.titulo} onChange={e => updateForm('titulo', e.target.value)} placeholder="Ej: Casa en Marina Vallarta" />
           <Select
-            label={t.fields.nacionalidad}
-            value={form.nacionalidad}
-            onChange={e => updateForm('nacionalidad', e.target.value)}
+            label={t.fields.tipo}
+            value={form.tipo}
+            onChange={e => updateForm('tipo', e.target.value)}
             options={[
-              { value: 'MX', label: '🇲🇽 Mexicano' },
-              { value: 'US', label: '🇺🇸 Estadounidense' },
-              { value: 'CA', label: '🇨🇦 Canadiense' },
-              { value: 'OTHER', label: 'Otro' },
+              { value: 'casa', label: t.types.casa },
+              { value: 'depto', label: t.types.depto },
+              { value: 'terreno', label: t.types.terreno },
+              { value: 'local', label: t.types.local },
+              { value: 'bodega', label: t.types.bodega },
             ]}
           />
           <Select
-            label={t.fields.estadoCivil}
-            value={form.estadoCivil}
-            onChange={e => updateForm('estadoCivil', e.target.value)}
+            label={t.fields.listingType}
+            value={form.listingType}
+            onChange={e => updateForm('listingType', e.target.value)}
             options={[
-              { value: '', label: t.select },
-              { value: 'soltero', label: t.civil.soltero },
-              { value: 'casado', label: t.civil.casado },
-              { value: 'divorciado', label: t.civil.divorciado },
-              { value: 'viudo', label: t.civil.viudo },
-              { value: 'unionLibre', label: t.civil.unionLibre },
+              { value: 'enlistada', label: '📋 ' + t.listed },
+              { value: 'pocket', label: '🔒 ' + t.pocket },
             ]}
           />
-          {form.estadoCivil === 'casado' && (
-            <Select
-              label={t.fields.regimen}
-              value={form.regimenMatrimonial}
-              onChange={e => updateForm('regimenMatrimonial', e.target.value)}
-              options={[
-                { value: '', label: t.select },
-                { value: 'separacion', label: t.regimen.separacion },
-                { value: 'sociedad', label: t.regimen.sociedad },
-              ]}
-            />
-          )}
-        </Section>
-
-        {/* IDENTIFICACION */}
-        <Section title={t.sections.identificacion} isOpen={sections.identificacion} onToggle={() => toggleSection('identificacion')}>
           <Select
-            label={t.fields.tipoID}
-            value={form.tipoID}
-            onChange={e => updateForm('tipoID', e.target.value)}
+            label={t.fields.estatus}
+            value={form.estatus}
+            onChange={e => updateForm('estatus', e.target.value)}
             options={[
-              { value: 'INE', label: 'INE' },
-              { value: 'PASAPORTE', label: t.fields.pasaporte },
+              { value: 'disponible', label: t.status.disponible },
+              { value: 'apartada', label: t.status.apartada },
+              { value: 'vendida', label: t.status.vendida },
             ]}
           />
-          {form.tipoID === 'INE' ? (
-            <Input label={t.fields.ine} value={form.ine} onChange={e => updateForm('ine', e.target.value.toUpperCase())} maxLength={18} />
-          ) : (
-            <>
-              <Input label={t.fields.pasaporte} value={form.pasaporte} onChange={e => updateForm('pasaporte', e.target.value.toUpperCase())} />
-              <Input label={t.fields.pasaporteExp} type="date" value={form.pasaporteExp} onChange={e => updateForm('pasaporteExp', e.target.value)} />
-              <Input label={t.fields.pasaporteVenc} type="date" value={form.pasaporteVenc} onChange={e => updateForm('pasaporteVenc', e.target.value)} />
-            </>
-          )}
         </Section>
 
-        {/* CONTACTO */}
-        <Section title={t.sections.contacto} isOpen={sections.contacto} onToggle={() => toggleSection('contacto')}>
-          <Input label={t.fields.tel} type="tel" value={form.tel} onChange={e => updateForm('tel', e.target.value)} />
-          <Input label={t.fields.email} type="email" value={form.email} onChange={e => updateForm('email', e.target.value)} />
-          <Input label={t.fields.dirMx} value={form.dirMx} onChange={e => updateForm('dirMx', e.target.value)} />
-          {form.nacionalidad !== 'MX' && (
-            <Input label={t.fields.dirExt} value={form.dirExt} onChange={e => updateForm('dirExt', e.target.value)} />
-          )}
+        {/* UBICACION */}
+        <Section title={t.sections.ubicacion} isOpen={sections.ubicacion} onToggle={() => toggleSection('ubicacion')}>
+          <Input label={t.fields.zona} value={form.zona} onChange={e => updateForm('zona', e.target.value)} placeholder="Ej: Marina Vallarta, Zona Romántica" />
+          <Input label={t.fields.direccion} value={form.direccion} onChange={e => updateForm('direccion', e.target.value)} />
         </Section>
 
-        {/* FISCAL */}
-        <Section title={t.sections.fiscal} isOpen={sections.fiscal} onToggle={() => toggleSection('fiscal')}>
-          <Input label="CURP" value={form.curp} onChange={e => updateForm('curp', e.target.value.toUpperCase())} maxLength={18} />
-          <Input label="RFC" value={form.rfc} onChange={e => updateForm('rfc', e.target.value.toUpperCase())} maxLength={13} />
+        {/* PRECIO */}
+        <Section title={t.sections.precio} isOpen={sections.precio} onToggle={() => toggleSection('precio')}>
+          <div className="flex gap-2">
+            <div className="flex-1">
+              <Input label={t.fields.precio} type="number" value={form.precio} onChange={e => updateForm('precio', e.target.value)} />
+            </div>
+            <div className="w-24">
+              <Select
+                label=" "
+                value={form.moneda}
+                onChange={e => updateForm('moneda', e.target.value)}
+                options={[
+                  { value: 'USD', label: '🇺🇸 USD' },
+                  { value: 'MXN', label: '🇲🇽 MXN' },
+                ]}
+              />
+            </div>
+          </div>
         </Section>
 
-        {/* LABORAL */}
-        <Section title={t.sections.laboral} isOpen={sections.laboral} onToggle={() => toggleSection('laboral')}>
-          <Input label={t.fields.ocupacion} value={form.ocupacion} onChange={e => updateForm('ocupacion', e.target.value)} />
-          <Input label={t.fields.puesto} value={form.puesto} onChange={e => updateForm('puesto', e.target.value)} />
-          <Input label={t.fields.empresa} value={form.empresa} onChange={e => updateForm('empresa', e.target.value)} />
-          <Input label={t.fields.telEmpresa} type="tel" value={form.telEmpresa} onChange={e => updateForm('telEmpresa', e.target.value)} />
-          <Input label={t.fields.dirEmpresa} value={form.dirEmpresa} onChange={e => updateForm('dirEmpresa', e.target.value)} />
+        {/* CARACTERISTICAS */}
+        <Section title={t.sections.caracteristicas} isOpen={sections.caracteristicas} onToggle={() => toggleSection('caracteristicas')}>
+          <div className="grid grid-cols-2 gap-3">
+            <Input label={t.fields.recamaras} type="number" value={form.recamaras} onChange={e => updateForm('recamaras', e.target.value)} />
+            <Input label={t.fields.banos} type="number" value={form.banos} onChange={e => updateForm('banos', e.target.value)} />
+            <Input label={t.fields.m2Construccion} type="number" value={form.m2Construccion} onChange={e => updateForm('m2Construccion', e.target.value)} />
+            <Input label={t.fields.m2Terreno} type="number" value={form.m2Terreno} onChange={e => updateForm('m2Terreno', e.target.value)} />
+          </div>
+          <Input label={t.fields.estacionamientos} type="number" value={form.estacionamientos} onChange={e => updateForm('estacionamientos', e.target.value)} />
+          <Input label={t.fields.amenidades} value={form.amenidades} onChange={e => updateForm('amenidades', e.target.value)} placeholder="Ej: Alberca, Gym, Seguridad 24h" />
         </Section>
 
         {/* EXTRA */}
         <Section title={t.sections.extra} isOpen={sections.extra} onToggle={() => toggleSection('extra')}>
-          {form.nacionalidad !== 'MX' && (
-            <Input label="SSN" value={form.ssn} onChange={e => updateForm('ssn', e.target.value)} />
-          )}
+          <Input label={t.fields.fotoUrl} value={form.fotoUrl} onChange={e => updateForm('fotoUrl', e.target.value)} placeholder="https://..." />
+          <div>
+            <label className="block text-white/70 text-sm mb-1">{t.fields.descripcion}</label>
+            <textarea
+              value={form.descripcion}
+              onChange={e => updateForm('descripcion', e.target.value)}
+              rows={3}
+              className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white placeholder-white/40 focus:outline-none focus:border-white/40 resize-none"
+            />
+          </div>
           <div>
             <label className="block text-white/70 text-sm mb-1">{t.fields.notas}</label>
             <textarea
               value={form.notas}
               onChange={e => updateForm('notas', e.target.value)}
-              rows={3}
+              rows={2}
               className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white placeholder-white/40 focus:outline-none focus:border-white/40 resize-none"
+              placeholder={t.notasPlaceholder}
             />
           </div>
         </Section>
@@ -348,135 +381,140 @@ export default function ClientesTab({ t }) {
 AGREGAR TRADUCCIONES en app/page.js
 ===================================================
 
-Agregar dentro de translations.es:
+En translations.es agregar:
 
 ```javascript
-clientes: {
-  clients: 'clientes',
-  newClient: 'Nuevo Cliente',
-  editClient: 'Editar Cliente',
-  noClients: 'No hay clientes registrados',
+inventario: {
+  properties: 'propiedades',
+  newProperty: 'Nueva Propiedad',
+  editProperty: 'Editar Propiedad',
+  noProperties: 'No hay propiedades registradas',
   back: 'Volver',
   save: 'Guardar',
-  nameRequired: 'El nombre es requerido',
-  confirmDelete: '¿Eliminar este cliente?',
-  select: 'Seleccionar...',
+  titleRequired: 'El título es requerido',
+  confirmDelete: '¿Eliminar esta propiedad?',
+  filterAll: 'Todas',
+  filterListed: 'Enlistadas',
+  filterPocket: 'Pocket',
+  listed: 'Enlistada',
+  pocket: 'Pocket Listing',
+  beds: 'rec',
+  baths: 'baños',
   sections: {
-    personal: '👤 Datos Personales',
-    identificacion: '🪪 Identificación',
-    contacto: '📞 Contacto',
-    fiscal: '📋 Datos Fiscales',
-    laboral: '💼 Datos Laborales',
+    basico: '🏠 Información Básica',
+    ubicacion: '📍 Ubicación',
+    precio: '💰 Precio',
+    caracteristicas: '📐 Características',
     extra: '📝 Adicional',
   },
   fields: {
-    nombre: 'Nombre Completo',
-    fechaNac: 'Fecha de Nacimiento',
-    lugarNac: 'Lugar de Nacimiento',
-    nacionalidad: 'Nacionalidad',
-    estadoCivil: 'Estado Civil',
-    regimen: 'Régimen Matrimonial',
-    tipoID: 'Tipo de Identificación',
-    ine: 'Clave de Elector INE',
-    pasaporte: 'Pasaporte',
-    pasaporteExp: 'Fecha Expedición',
-    pasaporteVenc: 'Fecha Vencimiento',
-    tel: 'Teléfono',
-    email: 'Email',
-    dirMx: 'Domicilio en México',
-    dirExt: 'Domicilio en Extranjero',
-    ocupacion: 'Ocupación',
-    puesto: 'Puesto',
-    empresa: 'Empresa',
-    telEmpresa: 'Tel. Empresa',
-    dirEmpresa: 'Dir. Empresa',
-    notas: 'Notas',
+    titulo: 'Título',
+    tipo: 'Tipo de Propiedad',
+    listingType: 'Tipo de Listing',
+    estatus: 'Estatus',
+    zona: 'Zona',
+    direccion: 'Dirección',
+    precio: 'Precio',
+    recamaras: 'Recámaras',
+    banos: 'Baños',
+    m2Construccion: 'm² Construcción',
+    m2Terreno: 'm² Terreno',
+    estacionamientos: 'Estacionamientos',
+    amenidades: 'Amenidades',
+    fotoUrl: 'URL de Foto',
+    descripcion: 'Descripción',
+    notas: 'Notas Privadas',
   },
-  civil: {
-    soltero: 'Soltero(a)',
-    casado: 'Casado(a)',
-    divorciado: 'Divorciado(a)',
-    viudo: 'Viudo(a)',
-    unionLibre: 'Unión Libre',
+  types: {
+    casa: 'Casa',
+    depto: 'Departamento',
+    terreno: 'Terreno',
+    local: 'Local Comercial',
+    bodega: 'Bodega',
   },
-  regimen: {
-    separacion: 'Separación de Bienes',
-    sociedad: 'Sociedad Conyugal',
+  status: {
+    disponible: '🟢 Disponible',
+    apartada: '🟡 Apartada',
+    vendida: '🔴 Vendida',
   },
+  notasPlaceholder: 'Notas internas (no visibles al cliente)',
 },
 ```
 
-Y en translations.en:
+En translations.en agregar:
 
 ```javascript
-clientes: {
-  clients: 'clients',
-  newClient: 'New Client',
-  editClient: 'Edit Client',
-  noClients: 'No clients registered',
+inventario: {
+  properties: 'properties',
+  newProperty: 'New Property',
+  editProperty: 'Edit Property',
+  noProperties: 'No properties registered',
   back: 'Back',
   save: 'Save',
-  nameRequired: 'Name is required',
-  confirmDelete: 'Delete this client?',
-  select: 'Select...',
+  titleRequired: 'Title is required',
+  confirmDelete: 'Delete this property?',
+  filterAll: 'All',
+  filterListed: 'Listed',
+  filterPocket: 'Pocket',
+  listed: 'Listed',
+  pocket: 'Pocket Listing',
+  beds: 'bed',
+  baths: 'bath',
   sections: {
-    personal: '👤 Personal Info',
-    identificacion: '🪪 Identification',
-    contacto: '📞 Contact',
-    fiscal: '📋 Tax Info',
-    laboral: '💼 Employment',
+    basico: '🏠 Basic Info',
+    ubicacion: '📍 Location',
+    precio: '💰 Price',
+    caracteristicas: '📐 Features',
     extra: '📝 Additional',
   },
   fields: {
-    nombre: 'Full Name',
-    fechaNac: 'Date of Birth',
-    lugarNac: 'Place of Birth',
-    nacionalidad: 'Nationality',
-    estadoCivil: 'Marital Status',
-    regimen: 'Marital Regime',
-    tipoID: 'ID Type',
-    ine: 'INE Voter ID',
-    pasaporte: 'Passport',
-    pasaporteExp: 'Issue Date',
-    pasaporteVenc: 'Expiry Date',
-    tel: 'Phone',
-    email: 'Email',
-    dirMx: 'Address in Mexico',
-    dirExt: 'Address Abroad',
-    ocupacion: 'Occupation',
-    puesto: 'Position',
-    empresa: 'Company',
-    telEmpresa: 'Company Phone',
-    dirEmpresa: 'Company Address',
-    notas: 'Notes',
+    titulo: 'Title',
+    tipo: 'Property Type',
+    listingType: 'Listing Type',
+    estatus: 'Status',
+    zona: 'Area',
+    direccion: 'Address',
+    precio: 'Price',
+    recamaras: 'Bedrooms',
+    banos: 'Bathrooms',
+    m2Construccion: 'Construction sqft',
+    m2Terreno: 'Land sqft',
+    estacionamientos: 'Parking',
+    amenidades: 'Amenities',
+    fotoUrl: 'Photo URL',
+    descripcion: 'Description',
+    notas: 'Private Notes',
   },
-  civil: {
-    soltero: 'Single',
-    casado: 'Married',
-    divorciado: 'Divorced',
-    viudo: 'Widowed',
-    unionLibre: 'Common Law',
+  types: {
+    casa: 'House',
+    depto: 'Condo',
+    terreno: 'Land',
+    local: 'Commercial',
+    bodega: 'Warehouse',
   },
-  regimen: {
-    separacion: 'Separate Property',
-    sociedad: 'Community Property',
+  status: {
+    disponible: '🟢 Available',
+    apartada: '🟡 Reserved',
+    vendida: '🔴 Sold',
   },
+  notasPlaceholder: 'Internal notes (not visible to client)',
 },
 ```
 
 ===================================================
-MODIFICAR: app/page.js - Importar y usar componente
+MODIFICAR: app/page.js - Agregar import y uso
 ===================================================
 
 1. Agregar import:
 ```javascript
-import ClientesTab from './components/ClientesTab'
+import InventarioTab from './components/InventarioTab'
 ```
 
-2. En el area de contenido, reemplazar el placeholder:
+2. En el area de contenido:
 ```javascript
 {activeTab === 'clientes' && <ClientesTab t={t.clientes} />}
-{activeTab !== 'clientes' && (
+{activeTab === 'inventario' && <InventarioTab t={t.inventario} />}
+{(activeTab === 'comps' || activeTab === 'match') && (
   <p className="text-white/60 text-center">
     {t.tabs[activeTab]} - {t.soon}
   </p>
@@ -484,39 +522,39 @@ import ClientesTab from './components/ClientesTab'
 ```
 
 ===================================================
-CREAR CARPETA
+DIFERENCIA ENLISTADA vs POCKET
 ===================================================
 
-mkdir -p app/components
+ENLISTADA (📋):
+- Propiedad publica en MLS
+- Se puede compartir abiertamente
+- Badge azul
+
+POCKET LISTING (🔒):
+- Propiedad exclusiva/privada
+- Solo para clientes selectos
+- No esta en MLS
+- Badge morado
+- Filtro separado
 
 ===================================================
 CRITERIO DE EXITO
 ===================================================
 
-[ ] Tab Clientes muestra lista vacia al inicio
-[ ] Boton "+ Nuevo Cliente" abre formulario
-[ ] Secciones colapsables funcionan
-[ ] Solo Datos Personales abierto por defecto
-[ ] Guardar cliente lo agrega a la lista
-[ ] Editar cliente carga datos en formulario
-[ ] Eliminar cliente con confirmacion
-[ ] Datos persisten en localStorage
+[ ] Tab Inventario muestra lista con filtros
+[ ] Filtros: Todas | Enlistadas | Pocket
+[ ] Cards muestran badge de tipo (enlistada/pocket)
+[ ] Cards muestran estatus con color
+[ ] CRUD completo funciona
+[ ] localStorage persiste datos
 [ ] Bilingue ES/EN
 
 ===================================================
 COMMIT
 ===================================================
 
-"feat: add Clientes module with Notaria Solutions fields"
+"feat: add Inventario module with Listed/Pocket distinction"
 
 ===================================================
-PENDIENTE (NO HACER AUN)
-===================================================
-
-- Export a PDF
-- Busqueda/filtro de clientes
-- Ordenamiento
-
-===================================================
-FIN RES-PASO4-CLIENTES
+FIN RES-PASO5-INVENTARIO
 ===================================================
