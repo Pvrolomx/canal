@@ -1,194 +1,113 @@
 ===================================================
-SPEC: Real Estate Solutions - Paso 1 (Minimo)
+SPEC: RES-PASO2-TABS
+Real Estate Solutions - Agregar Tabs
 Fecha: 2026-01-18
-Por: C1 Sleepy (Consigliere)
+Por: C1 Sleepy
 ===================================================
 
-OBJETIVO:
-Crear app Next.js con SOLO foto de fondo + titulo.
-Confirmar que la imagen funciona antes de agregar mas.
+CONTEXTO:
+Paso 1 completado - foto de fondo funcionando.
+Ahora agregar header + tabs de navegacion.
 
 ===================================================
-PREREQUISITOS (HACER PRIMERO)
+MODIFICAR: app/page.js
 ===================================================
 
-1. Confirma GitHub MCP conectado
-2. Confirma Vercel MCP conectado
-3. Si NO tienes alguno, NOTIFICA antes de empezar
+Reemplazar contenido completo con:
 
-===================================================
-CREAR REPO
-===================================================
-
-Nombre: real-estate-solutions
-Descripcion: Real Estate Solutions - PV/Bahia
-
-===================================================
-ESTRUCTURA DE ARCHIVOS
-===================================================
-
-real-estate-solutions/
-├── app/
-│   ├── layout.js
-│   ├── page.js
-│   └── globals.css
-├── public/
-│   └── bg-hero.jpg   <- COPIAR DE UPLOADS
-├── next.config.js
-├── package.json
-├── tailwind.config.js
-└── postcss.config.js
-
-===================================================
-ARCHIVOS - COPIAR EXACTO
-===================================================
-
-### package.json
-```json
-{
-  "name": "real-estate-solutions",
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "14.0.4",
-    "react": "^18",
-    "react-dom": "^18"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10",
-    "postcss": "^8",
-    "tailwindcss": "^3"
-  }
-}
-```
-
-### next.config.js
 ```javascript
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
-module.exports = nextConfig
-```
+'use client'
+import { useState } from 'react'
 
-### tailwind.config.js
-```javascript
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./app/**/*.{js,jsx}"],
-  theme: { extend: {} },
-  plugins: [],
-}
-```
+const tabs = [
+  { id: 'clientes', label: 'Clientes' },
+  { id: 'inventario', label: 'Inventario' },
+  { id: 'comps', label: 'Comps' },
+  { id: 'match', label: 'Match' },
+]
 
-### postcss.config.js
-```javascript
-module.exports = {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-}
-```
-
-### app/globals.css
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-
-### app/layout.js
-```javascript
-import './globals.css'
-
-export const metadata = {
-  title: 'Real Estate Solutions',
-  description: 'Puerto Vallarta y Bahia de Banderas',
-}
-
-export default function RootLayout({ children }) {
-  return (
-    <html lang="es">
-      <body>{children}</body>
-    </html>
-  )
-}
-```
-
-### app/page.js
-```javascript
 export default function Home() {
+  const [activeTab, setActiveTab] = useState('clientes')
+
   return (
     <main 
-      className="min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
+      className="min-h-screen bg-cover bg-center bg-no-repeat bg-fixed"
       style={{ backgroundImage: "url('/bg-hero.jpg')" }}
     >
-      <div className="bg-black/50 p-8 rounded-2xl text-center">
-        <h1 className="text-4xl font-bold text-white mb-2">
-          Real Estate Solutions
-        </h1>
-        <p className="text-white/80">
-          Puerto Vallarta y Bahia de Banderas
-        </p>
-      </div>
+      {/* Header */}
+      <header className="pt-8 pb-4 px-4">
+        <div className="max-w-md mx-auto text-center">
+          <h1 className="text-2xl font-bold text-white drop-shadow-lg">
+            Real Estate Solutions
+          </h1>
+          <p className="text-white/70 text-sm">
+            Puerto Vallarta y Bahía de Banderas
+          </p>
+        </div>
+      </header>
+
+      {/* Tabs */}
+      <nav className="px-4 pb-4">
+        <div className="max-w-md mx-auto">
+          <div className="flex gap-2 bg-black/30 backdrop-blur-sm rounded-2xl p-2">
+            {tabs.map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                className={`flex-1 px-3 py-2 rounded-xl text-sm font-medium transition-all ${
+                  activeTab === tab.id
+                    ? 'bg-white/30 text-white'
+                    : 'text-white/70 hover:bg-white/10'
+                }`}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
+        </div>
+      </nav>
+
+      {/* Content Area */}
+      <section className="px-4 pb-8">
+        <div className="max-w-md mx-auto">
+          <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 min-h-[60vh]">
+            <p className="text-white/60 text-center">
+              {activeTab.charAt(0).toUpperCase() + activeTab.slice(1)} - Próximamente
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
   )
 }
 ```
 
 ===================================================
-IMAGEN
-===================================================
-
-IMPORTANTE: Copiar la imagen del Arquitecto a public/bg-hero.jpg
-
-Archivo fuente: /home/pvrolo/colmena/uploads/2026-01-18T13-45-30_RES_Cover.jpg
-Destino: public/bg-hero.jpg
-
-===================================================
-COMMITS
-===================================================
-
-1. Despues de crear estructura: "feat: initial setup"
-2. Despues de agregar imagen: "feat: add hero background"
-3. Antes de deploy: "ready for deploy"
-
-===================================================
-DEPLOY
-===================================================
-
-Usar Vercel MCP para deploy.
-URL esperada: real-estate-solutions.vercel.app
-
-===================================================
 CRITERIO DE EXITO
 ===================================================
 
-[ ] La foto aparece como fondo
-[ ] El titulo se ve encima con fondo semi-transparente
-[ ] Responsive en mobile
-[ ] Deploy exitoso en Vercel
+[ ] Header con titulo visible
+[ ] 4 tabs con fondo semitransparente
+[ ] Tabs con esquinas REDONDEADAS
+[ ] Tab activo resaltado
+[ ] Click cambia tab activo
+[ ] Foto de fondo sigue visible
+[ ] Area de contenido con placeholder
 
 ===================================================
-SI LA FOTO NO APARECE
+COMMIT
 ===================================================
 
-1. Verificar que bg-hero.jpg esta en /public
-2. Verificar que la ruta es "/bg-hero.jpg" (con /)
-3. Verificar tamano de imagen (no mayor a 2MB)
-4. Probar con imagen mas pequena
+"feat: add header and navigation tabs"
 
 ===================================================
-SIGUIENTE PASO (NO HACER AUN)
+NO HACER AUN
 ===================================================
 
-Solo despues de confirmar que foto funciona:
-- Agregar 4 tabs de navegacion
-- Sin funcionalidad, solo UI
+- NO agregar funcionalidad a los tabs
+- NO agregar iconos
+- Solo confirmar que navegacion funciona
 
 ===================================================
-FIN DEL SPEC
+FIN RES-PASO2-TABS
 ===================================================
