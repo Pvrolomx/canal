@@ -643,3 +643,129 @@ COMMIT
 ===================================================
 FIN LEGAL-SOLUTIONS-FIX-001
 ===================================================
+
+
+===================================================
+LEGAL-PASO-SYNC
+Import/Export y Sincronización PC ↔ Móvil
+De: C1 (Sleepy) | Para: Cloud Claude
+Fecha: 2026-01-18
+===================================================
+
+OBJETIVO: Hacer Legal Solutions funcional con sync entre dispositivos
+
+CAPACIDAD:
+- 10-20 expedientes
+- 20-50 clientes  
+- 100-200 escritos Word
+
+---------------------------------------------------
+ARQUITECTURA: IndexedDB
+---------------------------------------------------
+
+Usar IndexedDB en lugar de localStorage para almacenar:
+- clients: datos de clientes
+- cases: expedientes/casos
+- documents: archivos Word/PDF en binario
+- hearings: audiencias
+
+Instalar: npm install idb
+
+CREAR: src/lib/db.ts
+- initDB() que crea stores con índices
+- Permite almacenar archivos binarios grandes
+
+---------------------------------------------------
+COMPONENTE: SyncManager
+---------------------------------------------------
+
+CREAR: src/components/SyncManager.tsx
+
+EXPORTAR:
+1. Recopila todos los datos de IndexedDB
+2. Convierte binarios a base64
+3. Genera JSON y descarga como archivo
+4. Nombre: legal-backup-YYYY-MM-DD.json
+
+IMPORTAR:
+1. Usuario selecciona archivo .json
+2. Parsea y valida estructura
+3. Convierte base64 a ArrayBuffer
+4. Guarda todo en IndexedDB
+5. Recarga página
+
+---------------------------------------------------
+COMPONENTE: DocumentUpload
+---------------------------------------------------
+
+CREAR: src/components/DocumentUpload.tsx
+
+- Input file multiple
+- Acepta: .doc, .docx, .pdf
+- Lee archivo como ArrayBuffer
+- Guarda en IndexedDB con metadata
+
+---------------------------------------------------
+COMPONENTE: DocumentList
+---------------------------------------------------
+
+CREAR: src/components/DocumentList.tsx
+
+- Lista documentos del caso
+- Icono según tipo (📄 PDF, 📝 Word)
+- Botón descargar
+- Botón eliminar
+- Muestra tamaño formateado
+
+---------------------------------------------------
+INTEGRACIÓN
+---------------------------------------------------
+
+En src/app/page.tsx agregar:
+import SyncManager from '@/components/SyncManager';
+<SyncManager /> después de botones principales
+
+En caso detalle agregar:
+<DocumentUpload caseId={caseData.id} />
+<DocumentList caseId={caseData.id} />
+
+---------------------------------------------------
+FLUJO DE USO
+---------------------------------------------------
+
+EXPORTAR (PC → Cel):
+1. Abrir app en PC
+2. Click "Exportar Datos"
+3. Descargar .json
+4. Enviar por WhatsApp/email
+
+IMPORTAR (Cel):
+1. Abrir app en cel
+2. Click "Importar Datos"
+3. Seleccionar .json
+4. Datos cargados!
+
+---------------------------------------------------
+CRITERIO DE ÉXITO
+---------------------------------------------------
+
+[ ] IndexedDB inicializa
+[ ] CRUD clientes en IndexedDB
+[ ] CRUD casos en IndexedDB
+[ ] Subir documento Word funciona
+[ ] Descargar documento funciona
+[ ] Export genera JSON completo
+[ ] Import carga datos correctamente
+[ ] Funciona en móvil (PWA)
+[ ] Funciona en PC
+[ ] Datos persisten entre sesiones
+
+===================================================
+COMMIT
+===================================================
+
+"feat: add IndexedDB storage, document upload, import/export sync"
+
+===================================================
+FIN LEGAL-PASO-SYNC
+===================================================
