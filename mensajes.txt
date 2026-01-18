@@ -1063,3 +1063,89 @@ COMMIT
 ===================================================
 FIN LEGAL-PASO-BRANDING v3
 ===================================================
+
+
+===================================================
+SPEC: AIRBNB-CALC-FIX-001
+Corrección de Fórmulas - Calculadora Airbnb
+Fecha: 2026-01-18
+Prioridad: ALTA
+===================================================
+
+CONTEXTO:
+La calculadora usa 2.5% hardcoded para impuestos.
+Datos reales del CSV muestran retenciones de 12%.
+Diferencia de ~5x!
+
+---------------------------------------------------
+DATOS VERIFICADOS (CSV REAL)
+---------------------------------------------------
+
+CON RFC:
+- Comisión Airbnb: 3%
+- ISR retenido: 4%
+- IVA retenido: 8%
+- TOTAL: 15%
+
+SIN RFC:
+- Comisión Airbnb: 3%
+- ISR retenido: 20%
+- IVA retenido: 16%
+- TOTAL: 39%
+
+ISH: Pass-through (neutro, no afecta neto)
+
+---------------------------------------------------
+CAMBIOS REQUERIDOS
+---------------------------------------------------
+
+1. REEMPLAZAR CONSTANTE HARDCODED:
+
+// ANTES
+const tasa_impuesto = 0.025;
+
+// DESPUÉS
+const TASAS_RETENCION = {
+  CON_RFC: { comision: 0.03, isr: 0.04, iva: 0.08, total: 0.15 },
+  SIN_RFC: { comision: 0.03, isr: 0.20, iva: 0.16, total: 0.39 }
+};
+
+2. AGREGAR SELECTOR RFC EN UI:
+
+<select id="tiene-rfc">
+  <option value="true">Sí, tengo RFC</option>
+  <option value="false">No tengo RFC</option>
+</select>
+
+3. MOSTRAR DESGLOSE DETALLADO:
+
+Ingreso bruto:        $1,000.00
+(-) Comisión (3%):      -$30.00
+(-) ISR (4%):           -$40.00
+(-) IVA (8%):           -$80.00
+─────────────────────────────────
+Pago neto:              $850.00
+
+---------------------------------------------------
+VALIDACIÓN CON DATOS REALES
+---------------------------------------------------
+
+Reservación HMWK8R39MM:
+- Bruto: $994.30
+- Comisión: $29.83 (3.00% ✓)
+- ISR: $39.77 (4.00% ✓)
+- IVA: $79.55 (8.00% ✓)
+
+---------------------------------------------------
+NOTAS
+---------------------------------------------------
+
+- ISH: Airbnb lo cobra al huésped, pass-through
+- IVA: Solo 8% retenido, otro 8% es responsabilidad del anfitrión
+- Angel Host: Manejo diferente (~18% comisión, sin retenciones)
+
+===================================================
+COMMIT: "fix: correct Airbnb tax retention formulas (4%+8% not 2.5%)"
+===================================================
+FIN AIRBNB-CALC-FIX-001
+===================================================
