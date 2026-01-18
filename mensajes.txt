@@ -1,379 +1,522 @@
 ===================================================
-SPEC: RES-PASO5-INVENTARIO
-Modulo Inventario de Propiedades
+SPEC: RES-PASO6-COMPS
+Modulo Comps - Analisis Comparativo con IA
 Fecha: 2026-01-18
 Por: C1 Sleepy
 ===================================================
 
 OBJETIVO:
-Lista de propiedades con distincion entre:
-- Enlistadas (MLS/publicas)
-- Pocket Listing (exclusivas/privadas)
+Integrar motor de comparables del proyecto realtor-comps.
+Permite generar analisis de precio para propiedades.
 
 ===================================================
-CREAR: app/components/InventarioTab.jsx
+CREAR: app/data/properties.js
+===================================================
+
+```javascript
+export const properties = [
+  {
+    id: "PROP001",
+    name: "Condo Vista Mar Bucerías",
+    type: "Condominio",
+    region: "Bucerías",
+    price_usd: 425000,
+    bedrooms: 2,
+    bathrooms: 2,
+    m2_construction: 98,
+    features: ["pool", "ac", "ocean_view", "furnished"],
+  },
+  {
+    id: "PROP002",
+    name: "Penthouse Flamingos",
+    type: "Condominio",
+    region: "Flamingos",
+    price_usd: 580000,
+    bedrooms: 3,
+    bathrooms: 3,
+    m2_construction: 165,
+    features: ["pool", "ac", "ocean_view", "furnished", "beachfront"],
+  },
+  {
+    id: "PROP003",
+    name: "Casa La Cruz",
+    type: "Casa",
+    region: "La Cruz de Huanacaxtle",
+    price_usd: 750000,
+    bedrooms: 4,
+    bathrooms: 3,
+    m2_construction: 220,
+    features: ["pool", "ac", "ocean_view"],
+  },
+  {
+    id: "PROP004",
+    name: "Departamento Nuevo Vallarta",
+    type: "Condominio",
+    region: "Nuevo Vallarta",
+    price_usd: 350000,
+    bedrooms: 2,
+    bathrooms: 2,
+    m2_construction: 85,
+    features: ["pool", "ac", "furnished"],
+  },
+  {
+    id: "PROP005",
+    name: "Villa Punta Mita",
+    type: "Casa",
+    region: "Punta de Mita",
+    price_usd: 1200000,
+    bedrooms: 5,
+    bathrooms: 4,
+    m2_construction: 350,
+    features: ["pool", "ac", "ocean_view", "beachfront"],
+  },
+  {
+    id: "PROP006",
+    name: "Condo Sayulita Centro",
+    type: "Condominio",
+    region: "Sayulita",
+    price_usd: 320000,
+    bedrooms: 1,
+    bathrooms: 1,
+    m2_construction: 65,
+    features: ["ac", "furnished"],
+  },
+  {
+    id: "PROP007",
+    name: "Casa San Pancho",
+    type: "Casa",
+    region: "San Pancho",
+    price_usd: 550000,
+    bedrooms: 3,
+    bathrooms: 2,
+    m2_construction: 180,
+    features: ["pool", "ocean_view"],
+  },
+  {
+    id: "PROP008",
+    name: "Terreno Mezcales",
+    type: "Terreno",
+    region: "Mezcales",
+    price_usd: 150000,
+    bedrooms: 0,
+    bathrooms: 0,
+    m2_construction: 500,
+    features: [],
+  },
+];
+```
+
+===================================================
+CREAR: app/api/generate-comps/route.js
+===================================================
+
+```javascript
+import { properties } from '../../data/properties';
+
+function calculateSimilarity(target, comp) {
+  let score = 0;
+  
+  if (target.region === comp.region) {
+    score += 30;
+  } else {
+    const nearbyRegions = {
+      'Bucerías': ['Flamingos', 'Nuevo Vallarta', 'La Cruz de Huanacaxtle'],
+      'Nuevo Vallarta': ['Bucerías', 'Flamingos', 'Mezcales'],
+      'Punta de Mita': ['La Cruz de Huanacaxtle', 'Sayulita'],
+      'La Cruz de Huanacaxtle': ['Bucerías', 'Punta de Mita'],
+      'Sayulita': ['San Pancho', 'Punta de Mita'],
+      'San Pancho': ['Sayulita'],
+      'Flamingos': ['Bucerías', 'Nuevo Vallarta'],
+      'Mezcales': ['Nuevo Vallarta'],
+      'Puerto Vallarta': ['Nuevo Vallarta'],
+    };
+    if (nearbyRegions[target.region]?.includes(comp.region)) {
+      score += 15;
+    }
+  }
+  
+  const sizeDiff = Math.abs(target.m2_construction - comp.m2_construction) / target.m2_construction;
+  if (sizeDiff <= 0.1) score += 25;
+  else if (sizeDiff <= 0.2) score += 20;
+  else if (sizeDiff <= 0.3) score += 10;
+  
+  if (target.type === comp.type) score += 20;
+  
+  const targetFeatures = new Set(target.features || []);
+  const compFeatures = new Set(comp.features || []);
+  const intersection = [...targetFeatures].filter(f => compFeatures.has(f)).length;
+  const union = new Set([...targetFeatures, ...compFeatures]).size;
+  if (union > 0) {
+    score += Math.round((intersection / union) * 15);
+  }
+  
+  const bedDiff = Math.abs((target.bedrooms || 0) - (comp.bedrooms || 0));
+  if (bedDiff === 0) score += 10;
+  else if (bedDiff === 1) score += 5;
+  
+  return Math.min(score, 100);
+}
+
+function generateJustification(target, comp, lang) {
+  const reasons = [];
+  const featureNames = lang === 'es' 
+    ? { pool: 'alberca', ac: 'A/C', ocean_view: 'vista al mar', furnished: 'amueblado', beachfront: 'frente al mar' }
+    : { pool: 'pool', ac: 'A/C', ocean_view: 'ocean view', furnished: 'furnished', beachfront: 'beachfront' };
+  
+  if (target.region === comp.region) {
+    reasons.push(lang === 'es' ? `Misma zona (${comp.region})` : `Same area (${comp.region})`);
+  } else {
+    reasons.push(lang === 'es' ? `Zona cercana (${comp.region})` : `Nearby area (${comp.region})`);
+  }
+  
+  const sizeDiff = Math.abs(target.m2_construction - comp.m2_construction);
+  if (sizeDiff <= target.m2_construction * 0.1) {
+    reasons.push(lang === 'es' ? 'tamaño muy similar' : 'very similar size');
+  }
+  
+  if (target.type === comp.type) {
+    reasons.push(lang === 'es' ? `mismo tipo` : `same type`);
+  }
+  
+  const sharedFeatures = (target.features || []).filter(f => (comp.features || []).includes(f));
+  if (sharedFeatures.length > 0) {
+    const named = sharedFeatures.slice(0, 2).map(f => featureNames[f] || f);
+    reasons.push(lang === 'es' ? `comparte ${named.join(' y ')}` : `shares ${named.join(' and ')}`);
+  }
+  
+  return reasons.join(', ') + '.';
+}
+
+export async function POST(request) {
+  try {
+    const body = await request.json();
+    const { property, lang = 'es' } = body;
+    
+    if (!property) {
+      return Response.json({ error: 'Property data required' }, { status: 400 });
+    }
+    
+    const compsWithScore = properties
+      .filter(p => p.type === property.type || property.type === 'Terreno')
+      .map(comp => ({
+        ...comp,
+        similarity_score: calculateSimilarity(property, comp),
+        price_per_m2: Math.round(comp.price_usd / comp.m2_construction)
+      }))
+      .sort((a, b) => b.similarity_score - a.similarity_score)
+      .slice(0, 5);
+    
+    const avgPricePerM2 = Math.round(
+      compsWithScore.reduce((sum, c) => sum + c.price_per_m2, 0) / compsWithScore.length
+    );
+    
+    const estimatedMid = Math.round(avgPricePerM2 * property.m2_construction);
+    const estimatedLow = Math.round(estimatedMid * 0.9);
+    const estimatedHigh = Math.round(estimatedMid * 1.1);
+    
+    const response = {
+      success: true,
+      data: {
+        target_summary: lang === 'es'
+          ? `${property.type} de ${property.bedrooms} recámaras y ${property.bathrooms} baños en ${property.region} con ${property.m2_construction} m².`
+          : `${property.type} with ${property.bedrooms} bedrooms and ${property.bathrooms} bathrooms in ${property.region} with ${property.m2_construction} sqm.`,
+        selected_comps: compsWithScore.map((comp, index) => ({
+          rank: index + 1,
+          mls_id: comp.id,
+          name: comp.name,
+          price_usd: comp.price_usd,
+          m2: comp.m2_construction,
+          bedrooms: comp.bedrooms,
+          bathrooms: comp.bathrooms,
+          price_per_m2: comp.price_per_m2,
+          similarity_score: comp.similarity_score,
+          justification: generateJustification(property, comp, lang)
+        })),
+        price_analysis: {
+          avg_price_per_m2: avgPricePerM2,
+          estimated_value_low: estimatedLow,
+          estimated_value_mid: estimatedMid,
+          estimated_value_high: estimatedHigh,
+        },
+        recommendation: lang === 'es'
+          ? `Precio sugerido: $${estimatedLow.toLocaleString()} - $${estimatedHigh.toLocaleString()} USD`
+          : `Suggested price: $${estimatedLow.toLocaleString()} - $${estimatedHigh.toLocaleString()} USD`
+      }
+    };
+    
+    return Response.json(response);
+    
+  } catch (error) {
+    return Response.json({ error: error.message }, { status: 500 });
+  }
+}
+```
+
+===================================================
+CREAR: app/components/CompsTab.jsx
 ===================================================
 
 ```javascript
 'use client'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
-const initialProperty = {
-  id: '',
-  // Basico
-  titulo: '',
-  tipo: 'casa',
-  listingType: 'enlistada', // enlistada | pocket
-  estatus: 'disponible',
-  // Ubicacion
-  zona: '',
-  direccion: '',
-  // Precio
-  precio: '',
-  moneda: 'USD',
-  // Caracteristicas
-  recamaras: '',
-  banos: '',
-  m2Construccion: '',
-  m2Terreno: '',
-  estacionamientos: '',
-  // Extra
-  amenidades: '',
-  descripcion: '',
-  fotoUrl: '',
-  notas: '',
-}
+const regions = [
+  'Bucerías', 'Nuevo Vallarta', 'Punta de Mita', 'La Cruz de Huanacaxtle',
+  'Sayulita', 'San Pancho', 'Flamingos', 'Puerto Vallarta', 'Mezcales'
+];
 
-const Section = ({ title, isOpen, onToggle, children }) => (
-  <div className="mb-3">
-    <button
-      type="button"
-      onClick={onToggle}
-      className="w-full flex justify-between items-center bg-white/10 px-4 py-2 rounded-xl text-white font-medium"
-    >
-      {title}
-      <span>{isOpen ? '▼' : '▶'}</span>
-    </button>
-    {isOpen && (
-      <div className="mt-2 space-y-3 px-2">
-        {children}
-      </div>
-    )}
-  </div>
-)
+const propertyTypes = ['Condominio', 'Casa', 'Terreno', 'Comercial'];
 
-const Input = ({ label, type = 'text', value, onChange, placeholder }) => (
-  <div>
-    <label className="block text-white/70 text-sm mb-1">{label}</label>
-    <input
-      type={type}
-      value={value}
-      onChange={onChange}
-      placeholder={placeholder}
-      className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white placeholder-white/40 focus:outline-none focus:border-white/40"
-    />
-  </div>
-)
+const amenitiesOptions = [
+  { id: 'pool', label: { es: 'Alberca', en: 'Pool' } },
+  { id: 'ac', label: { es: 'A/C', en: 'A/C' } },
+  { id: 'ocean_view', label: { es: 'Vista Mar', en: 'Ocean View' } },
+  { id: 'furnished', label: { es: 'Amueblado', en: 'Furnished' } },
+  { id: 'beachfront', label: { es: 'Playa', en: 'Beachfront' } },
+];
 
-const Select = ({ label, value, onChange, options }) => (
-  <div>
-    <label className="block text-white/70 text-sm mb-1">{label}</label>
-    <select
-      value={value}
-      onChange={onChange}
-      className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-white/40"
-    >
-      {options.map(opt => (
-        <option key={opt.value} value={opt.value} className="bg-gray-800">
-          {opt.label}
-        </option>
-      ))}
-    </select>
-  </div>
-)
-
-export default function InventarioTab({ t }) {
-  const [properties, setProperties] = useState([])
-  const [showForm, setShowForm] = useState(false)
-  const [editingId, setEditingId] = useState(null)
-  const [form, setForm] = useState(initialProperty)
-  const [filter, setFilter] = useState('all') // all | enlistada | pocket
-  const [sections, setSections] = useState({
-    basico: true,
-    ubicacion: false,
-    precio: false,
-    caracteristicas: false,
-    extra: false,
-  })
-
-  useEffect(() => {
-    const saved = localStorage.getItem('res_properties')
-    if (saved) setProperties(JSON.parse(saved))
-  }, [])
-
-  const saveProperties = (newProps) => {
-    setProperties(newProps)
-    localStorage.setItem('res_properties', JSON.stringify(newProps))
-  }
-
-  const toggleSection = (key) => {
-    setSections(prev => ({ ...prev, [key]: !prev[key] }))
-  }
+export default function CompsTab({ t, lang }) {
+  const [isLoading, setIsLoading] = useState(false);
+  const [results, setResults] = useState(null);
+  const [error, setError] = useState(null);
+  const [form, setForm] = useState({
+    type: 'Condominio',
+    region: 'Bucerías',
+    bedrooms: 2,
+    bathrooms: 2,
+    m2_construction: 100,
+    features: [],
+  });
 
   const updateForm = (field, value) => {
-    setForm(prev => ({ ...prev, [field]: value }))
-  }
+    setForm(prev => ({ ...prev, [field]: value }));
+  };
 
-  const handleSave = () => {
-    if (!form.titulo.trim()) return alert(t.titleRequired)
-    
-    if (editingId) {
-      saveProperties(properties.map(p => p.id === editingId ? { ...form, id: editingId } : p))
-    } else {
-      const newProp = { ...form, id: Date.now().toString() }
-      saveProperties([...properties, newProp])
+  const toggleFeature = (featureId) => {
+    setForm(prev => ({
+      ...prev,
+      features: prev.features.includes(featureId)
+        ? prev.features.filter(f => f !== featureId)
+        : [...prev.features, featureId]
+    }));
+  };
+
+  const handleGenerate = async () => {
+    setIsLoading(true);
+    setError(null);
+    setResults(null);
+
+    try {
+      const response = await fetch('/api/generate-comps', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ property: form, lang }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || t.errorGenerate);
+      }
+
+      setResults(data.data);
+    } catch (err) {
+      setError(err.message || t.errorUnknown);
+    } finally {
+      setIsLoading(false);
     }
-    setShowForm(false)
-    setForm(initialProperty)
-    setEditingId(null)
-  }
+  };
 
-  const handleEdit = (prop) => {
-    setForm(prop)
-    setEditingId(prop.id)
-    setShowForm(true)
-  }
+  const formatPrice = (price) => `$${price.toLocaleString()} USD`;
 
-  const handleDelete = (id) => {
-    if (confirm(t.confirmDelete)) {
-      saveProperties(properties.filter(p => p.id !== id))
-    }
-  }
-
-  const filteredProps = filter === 'all' 
-    ? properties 
-    : properties.filter(p => p.listingType === filter)
-
-  const formatPrice = (precio, moneda) => {
-    if (!precio) return ''
-    const num = parseFloat(precio).toLocaleString()
-    return moneda === 'USD' ? `$${num} USD` : `$${num} MXN`
-  }
-
-  // Lista de propiedades
-  if (!showForm) {
+  // Results view
+  if (results) {
     return (
-      <div>
-        {/* Filtros */}
-        <div className="flex gap-2 mb-4">
-          {['all', 'enlistada', 'pocket'].map(f => (
-            <button
-              key={f}
-              onClick={() => setFilter(f)}
-              className={`px-3 py-1 rounded-full text-sm transition-all ${
-                filter === f
-                  ? 'bg-white/30 text-white'
-                  : 'bg-white/10 text-white/60 hover:bg-white/20'
-              }`}
-            >
-              {f === 'all' ? t.filterAll : f === 'enlistada' ? t.filterListed : t.filterPocket}
-            </button>
-          ))}
+      <div className="space-y-4">
+        <button
+          onClick={() => setResults(null)}
+          className="text-white/60 hover:text-white"
+        >
+          ← {t.back}
+        </button>
+
+        {/* Summary */}
+        <div className="bg-blue-500/20 rounded-xl p-4">
+          <p className="text-white/80 text-sm">{results.target_summary}</p>
         </div>
 
-        <div className="flex justify-between items-center mb-4">
-          <span className="text-white/60">{filteredProps.length} {t.properties}</span>
-          <button
-            onClick={() => { setForm(initialProperty); setEditingId(null); setShowForm(true) }}
-            className="bg-white/20 hover:bg-white/30 px-4 py-2 rounded-xl text-white font-medium transition-all"
-          >
-            + {t.newProperty}
-          </button>
+        {/* Price Analysis */}
+        <div className="bg-green-500/20 rounded-xl p-4">
+          <h3 className="text-white font-bold mb-2">💰 {t.priceAnalysis}</h3>
+          <div className="text-center">
+            <p className="text-white/60 text-sm">{t.estimatedRange}</p>
+            <p className="text-2xl font-bold text-green-400">
+              {formatPrice(results.price_analysis.estimated_value_mid)}
+            </p>
+            <p className="text-white/50 text-xs">
+              {formatPrice(results.price_analysis.estimated_value_low)} - {formatPrice(results.price_analysis.estimated_value_high)}
+            </p>
+            <p className="text-white/40 text-xs mt-2">
+              {t.avgPriceM2}: {formatPrice(results.price_analysis.avg_price_per_m2)}/m²
+            </p>
+          </div>
         </div>
-        
-        {filteredProps.length === 0 ? (
-          <p className="text-white/40 text-center py-8">{t.noProperties}</p>
-        ) : (
-          <div className="space-y-3">
-            {filteredProps.map(prop => (
-              <div
-                key={prop.id}
-                className="bg-white/10 rounded-xl p-4"
-              >
+
+        {/* Comps List */}
+        <div>
+          <h3 className="text-white font-bold mb-2">📊 Top 5 Comps</h3>
+          <div className="space-y-2">
+            {results.selected_comps.map(comp => (
+              <div key={comp.rank} className="bg-white/10 rounded-xl p-3">
                 <div className="flex justify-between items-start">
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2 mb-1">
-                      <span className={`text-xs px-2 py-0.5 rounded-full ${
-                        prop.listingType === 'pocket' 
-                          ? 'bg-purple-500/30 text-purple-300' 
-                          : 'bg-blue-500/30 text-blue-300'
-                      }`}>
-                        {prop.listingType === 'pocket' ? '🔒 ' + t.pocket : '📋 ' + t.listed}
-                      </span>
-                      <span className={`text-xs px-2 py-0.5 rounded-full ${
-                        prop.estatus === 'disponible' ? 'bg-green-500/30 text-green-300' :
-                        prop.estatus === 'apartada' ? 'bg-yellow-500/30 text-yellow-300' :
-                        'bg-red-500/30 text-red-300'
-                      }`}>
-                        {t.status[prop.estatus]}
-                      </span>
-                    </div>
-                    <p className="text-white font-medium">{prop.titulo}</p>
-                    <p className="text-white/60 text-sm">{prop.zona}</p>
-                    <p className="text-white/80 text-lg font-bold mt-1">
-                      {formatPrice(prop.precio, prop.moneda)}
+                  <div>
+                    <span className="text-xs bg-white/20 px-2 py-0.5 rounded-full mr-2">
+                      #{comp.rank}
+                    </span>
+                    <span className="text-white font-medium">{comp.name}</span>
+                    <p className="text-white/60 text-xs mt-1">
+                      {comp.bedrooms} {t.beds} • {comp.bathrooms} {t.baths} • {comp.m2}m²
                     </p>
-                    <p className="text-white/50 text-sm">
-                      {prop.recamaras && `${prop.recamaras} ${t.beds}`}
-                      {prop.banos && ` • ${prop.banos} ${t.baths}`}
-                      {prop.m2Construccion && ` • ${prop.m2Construccion}m²`}
-                    </p>
+                    <p className="text-white/50 text-xs">{comp.justification}</p>
                   </div>
-                  <div className="flex flex-col gap-2">
-                    <button
-                      onClick={() => handleEdit(prop)}
-                      className="text-white/60 hover:text-white px-2"
-                    >
-                      ✏️
-                    </button>
-                    <button
-                      onClick={() => handleDelete(prop.id)}
-                      className="text-white/60 hover:text-red-400 px-2"
-                    >
-                      🗑️
-                    </button>
+                  <div className="text-right">
+                    <p className="text-white font-bold">{formatPrice(comp.price_usd)}</p>
+                    <p className="text-white/40 text-xs">{formatPrice(comp.price_per_m2)}/m²</p>
+                    <div className="mt-1 bg-white/20 rounded-full h-1.5 w-16">
+                      <div 
+                        className="bg-green-400 rounded-full h-1.5" 
+                        style={{ width: `${comp.similarity_score}%` }}
+                      />
+                    </div>
+                    <p className="text-white/40 text-xs">{comp.similarity_score}% {t.match}</p>
                   </div>
                 </div>
               </div>
             ))}
           </div>
-        )}
+        </div>
+
+        {/* Recommendation */}
+        <div className="bg-yellow-500/20 rounded-xl p-4">
+          <h3 className="text-white font-bold mb-1">✅ {t.recommendation}</h3>
+          <p className="text-white/80 text-sm">{results.recommendation}</p>
+        </div>
       </div>
-    )
+    );
   }
 
-  // Formulario
+  // Form view
   return (
-    <div>
-      <div className="flex justify-between items-center mb-4">
-        <button
-          onClick={() => { setShowForm(false); setForm(initialProperty); setEditingId(null) }}
-          className="text-white/60 hover:text-white"
+    <div className="space-y-4">
+      {error && (
+        <div className="bg-red-500/20 rounded-xl p-3">
+          <p className="text-red-300 text-sm">❌ {error}</p>
+        </div>
+      )}
+
+      {/* Type */}
+      <div>
+        <label className="block text-white/70 text-sm mb-1">{t.propertyType}</label>
+        <select
+          value={form.type}
+          onChange={e => updateForm('type', e.target.value)}
+          className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white"
         >
-          ← {t.back}
-        </button>
-        <h3 className="text-white font-medium">
-          {editingId ? t.editProperty : t.newProperty}
-        </h3>
-        <button
-          onClick={handleSave}
-          className="bg-green-500/80 hover:bg-green-500 px-4 py-2 rounded-xl text-white font-medium transition-all"
-        >
-          {t.save}
-        </button>
+          {propertyTypes.map(type => (
+            <option key={type} value={type} className="bg-gray-800">{type}</option>
+          ))}
+        </select>
       </div>
 
-      <div className="max-h-[60vh] overflow-y-auto pr-2">
-        {/* BASICO */}
-        <Section title={t.sections.basico} isOpen={sections.basico} onToggle={() => toggleSection('basico')}>
-          <Input label={t.fields.titulo + ' *'} value={form.titulo} onChange={e => updateForm('titulo', e.target.value)} placeholder="Ej: Casa en Marina Vallarta" />
-          <Select
-            label={t.fields.tipo}
-            value={form.tipo}
-            onChange={e => updateForm('tipo', e.target.value)}
-            options={[
-              { value: 'casa', label: t.types.casa },
-              { value: 'depto', label: t.types.depto },
-              { value: 'terreno', label: t.types.terreno },
-              { value: 'local', label: t.types.local },
-              { value: 'bodega', label: t.types.bodega },
-            ]}
-          />
-          <Select
-            label={t.fields.listingType}
-            value={form.listingType}
-            onChange={e => updateForm('listingType', e.target.value)}
-            options={[
-              { value: 'enlistada', label: '📋 ' + t.listed },
-              { value: 'pocket', label: '🔒 ' + t.pocket },
-            ]}
-          />
-          <Select
-            label={t.fields.estatus}
-            value={form.estatus}
-            onChange={e => updateForm('estatus', e.target.value)}
-            options={[
-              { value: 'disponible', label: t.status.disponible },
-              { value: 'apartada', label: t.status.apartada },
-              { value: 'vendida', label: t.status.vendida },
-            ]}
-          />
-        </Section>
-
-        {/* UBICACION */}
-        <Section title={t.sections.ubicacion} isOpen={sections.ubicacion} onToggle={() => toggleSection('ubicacion')}>
-          <Input label={t.fields.zona} value={form.zona} onChange={e => updateForm('zona', e.target.value)} placeholder="Ej: Marina Vallarta, Zona Romántica" />
-          <Input label={t.fields.direccion} value={form.direccion} onChange={e => updateForm('direccion', e.target.value)} />
-        </Section>
-
-        {/* PRECIO */}
-        <Section title={t.sections.precio} isOpen={sections.precio} onToggle={() => toggleSection('precio')}>
-          <div className="flex gap-2">
-            <div className="flex-1">
-              <Input label={t.fields.precio} type="number" value={form.precio} onChange={e => updateForm('precio', e.target.value)} />
-            </div>
-            <div className="w-24">
-              <Select
-                label=" "
-                value={form.moneda}
-                onChange={e => updateForm('moneda', e.target.value)}
-                options={[
-                  { value: 'USD', label: '🇺🇸 USD' },
-                  { value: 'MXN', label: '🇲🇽 MXN' },
-                ]}
-              />
-            </div>
-          </div>
-        </Section>
-
-        {/* CARACTERISTICAS */}
-        <Section title={t.sections.caracteristicas} isOpen={sections.caracteristicas} onToggle={() => toggleSection('caracteristicas')}>
-          <div className="grid grid-cols-2 gap-3">
-            <Input label={t.fields.recamaras} type="number" value={form.recamaras} onChange={e => updateForm('recamaras', e.target.value)} />
-            <Input label={t.fields.banos} type="number" value={form.banos} onChange={e => updateForm('banos', e.target.value)} />
-            <Input label={t.fields.m2Construccion} type="number" value={form.m2Construccion} onChange={e => updateForm('m2Construccion', e.target.value)} />
-            <Input label={t.fields.m2Terreno} type="number" value={form.m2Terreno} onChange={e => updateForm('m2Terreno', e.target.value)} />
-          </div>
-          <Input label={t.fields.estacionamientos} type="number" value={form.estacionamientos} onChange={e => updateForm('estacionamientos', e.target.value)} />
-          <Input label={t.fields.amenidades} value={form.amenidades} onChange={e => updateForm('amenidades', e.target.value)} placeholder="Ej: Alberca, Gym, Seguridad 24h" />
-        </Section>
-
-        {/* EXTRA */}
-        <Section title={t.sections.extra} isOpen={sections.extra} onToggle={() => toggleSection('extra')}>
-          <Input label={t.fields.fotoUrl} value={form.fotoUrl} onChange={e => updateForm('fotoUrl', e.target.value)} placeholder="https://..." />
-          <div>
-            <label className="block text-white/70 text-sm mb-1">{t.fields.descripcion}</label>
-            <textarea
-              value={form.descripcion}
-              onChange={e => updateForm('descripcion', e.target.value)}
-              rows={3}
-              className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white placeholder-white/40 focus:outline-none focus:border-white/40 resize-none"
-            />
-          </div>
-          <div>
-            <label className="block text-white/70 text-sm mb-1">{t.fields.notas}</label>
-            <textarea
-              value={form.notas}
-              onChange={e => updateForm('notas', e.target.value)}
-              rows={2}
-              className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white placeholder-white/40 focus:outline-none focus:border-white/40 resize-none"
-              placeholder={t.notasPlaceholder}
-            />
-          </div>
-        </Section>
+      {/* Region */}
+      <div>
+        <label className="block text-white/70 text-sm mb-1">{t.region}</label>
+        <select
+          value={form.region}
+          onChange={e => updateForm('region', e.target.value)}
+          className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white"
+        >
+          {regions.map(region => (
+            <option key={region} value={region} className="bg-gray-800">{region}</option>
+          ))}
+        </select>
       </div>
+
+      {/* Beds/Baths/M2 */}
+      <div className="grid grid-cols-3 gap-3">
+        <div>
+          <label className="block text-white/70 text-sm mb-1">{t.bedrooms}</label>
+          <input
+            type="number"
+            value={form.bedrooms}
+            onChange={e => updateForm('bedrooms', parseInt(e.target.value) || 0)}
+            min="0"
+            className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white"
+          />
+        </div>
+        <div>
+          <label className="block text-white/70 text-sm mb-1">{t.bathrooms}</label>
+          <input
+            type="number"
+            value={form.bathrooms}
+            onChange={e => updateForm('bathrooms', parseInt(e.target.value) || 0)}
+            min="0"
+            className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white"
+          />
+        </div>
+        <div>
+          <label className="block text-white/70 text-sm mb-1">m²</label>
+          <input
+            type="number"
+            value={form.m2_construction}
+            onChange={e => updateForm('m2_construction', parseInt(e.target.value) || 0)}
+            min="0"
+            className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white"
+          />
+        </div>
+      </div>
+
+      {/* Features */}
+      <div>
+        <label className="block text-white/70 text-sm mb-2">{t.amenities}</label>
+        <div className="flex flex-wrap gap-2">
+          {amenitiesOptions.map(amenity => (
+            <button
+              key={amenity.id}
+              type="button"
+              onClick={() => toggleFeature(amenity.id)}
+              className={`px-3 py-1 rounded-full text-sm transition-all ${
+                form.features.includes(amenity.id)
+                  ? 'bg-white/30 text-white'
+                  : 'bg-white/10 text-white/60'
+              }`}
+            >
+              {amenity.label[lang]}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Generate Button */}
+      <button
+        onClick={handleGenerate}
+        disabled={isLoading}
+        className="w-full bg-green-500/80 hover:bg-green-500 disabled:bg-gray-500 text-white font-bold py-3 rounded-xl transition-all"
+      >
+        {isLoading ? (
+          <span className="flex items-center justify-center gap-2">
+            <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
+              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+            </svg>
+            {t.analyzing}
+          </span>
+        ) : (
+          `🔍 ${t.generateComps}`
+        )}
+      </button>
     </div>
-  )
+  );
 }
 ```
 
@@ -384,120 +527,48 @@ AGREGAR TRADUCCIONES en app/page.js
 En translations.es agregar:
 
 ```javascript
-inventario: {
-  properties: 'propiedades',
-  newProperty: 'Nueva Propiedad',
-  editProperty: 'Editar Propiedad',
-  noProperties: 'No hay propiedades registradas',
+comps: {
   back: 'Volver',
-  save: 'Guardar',
-  titleRequired: 'El título es requerido',
-  confirmDelete: '¿Eliminar esta propiedad?',
-  filterAll: 'Todas',
-  filterListed: 'Enlistadas',
-  filterPocket: 'Pocket',
-  listed: 'Enlistada',
-  pocket: 'Pocket Listing',
+  propertyType: 'Tipo de Propiedad',
+  region: 'Región',
+  bedrooms: 'Recámaras',
+  bathrooms: 'Baños',
+  amenities: 'Amenidades',
+  generateComps: 'Generar Comparables',
+  analyzing: 'Analizando...',
+  priceAnalysis: 'Análisis de Precio',
+  estimatedRange: 'Valor Estimado',
+  avgPriceM2: 'Precio promedio por m²',
   beds: 'rec',
   baths: 'baños',
-  sections: {
-    basico: '🏠 Información Básica',
-    ubicacion: '📍 Ubicación',
-    precio: '💰 Precio',
-    caracteristicas: '📐 Características',
-    extra: '📝 Adicional',
-  },
-  fields: {
-    titulo: 'Título',
-    tipo: 'Tipo de Propiedad',
-    listingType: 'Tipo de Listing',
-    estatus: 'Estatus',
-    zona: 'Zona',
-    direccion: 'Dirección',
-    precio: 'Precio',
-    recamaras: 'Recámaras',
-    banos: 'Baños',
-    m2Construccion: 'm² Construcción',
-    m2Terreno: 'm² Terreno',
-    estacionamientos: 'Estacionamientos',
-    amenidades: 'Amenidades',
-    fotoUrl: 'URL de Foto',
-    descripcion: 'Descripción',
-    notas: 'Notas Privadas',
-  },
-  types: {
-    casa: 'Casa',
-    depto: 'Departamento',
-    terreno: 'Terreno',
-    local: 'Local Comercial',
-    bodega: 'Bodega',
-  },
-  status: {
-    disponible: '🟢 Disponible',
-    apartada: '🟡 Apartada',
-    vendida: '🔴 Vendida',
-  },
-  notasPlaceholder: 'Notas internas (no visibles al cliente)',
+  match: 'match',
+  recommendation: 'Recomendación',
+  errorGenerate: 'Error al generar comps',
+  errorUnknown: 'Error desconocido',
 },
 ```
 
 En translations.en agregar:
 
 ```javascript
-inventario: {
-  properties: 'properties',
-  newProperty: 'New Property',
-  editProperty: 'Edit Property',
-  noProperties: 'No properties registered',
+comps: {
   back: 'Back',
-  save: 'Save',
-  titleRequired: 'Title is required',
-  confirmDelete: 'Delete this property?',
-  filterAll: 'All',
-  filterListed: 'Listed',
-  filterPocket: 'Pocket',
-  listed: 'Listed',
-  pocket: 'Pocket Listing',
+  propertyType: 'Property Type',
+  region: 'Region',
+  bedrooms: 'Bedrooms',
+  bathrooms: 'Bathrooms',
+  amenities: 'Amenities',
+  generateComps: 'Generate Comps',
+  analyzing: 'Analyzing...',
+  priceAnalysis: 'Price Analysis',
+  estimatedRange: 'Estimated Value',
+  avgPriceM2: 'Avg price per sqm',
   beds: 'bed',
   baths: 'bath',
-  sections: {
-    basico: '🏠 Basic Info',
-    ubicacion: '📍 Location',
-    precio: '💰 Price',
-    caracteristicas: '📐 Features',
-    extra: '📝 Additional',
-  },
-  fields: {
-    titulo: 'Title',
-    tipo: 'Property Type',
-    listingType: 'Listing Type',
-    estatus: 'Status',
-    zona: 'Area',
-    direccion: 'Address',
-    precio: 'Price',
-    recamaras: 'Bedrooms',
-    banos: 'Bathrooms',
-    m2Construccion: 'Construction sqft',
-    m2Terreno: 'Land sqft',
-    estacionamientos: 'Parking',
-    amenidades: 'Amenities',
-    fotoUrl: 'Photo URL',
-    descripcion: 'Description',
-    notas: 'Private Notes',
-  },
-  types: {
-    casa: 'House',
-    depto: 'Condo',
-    terreno: 'Land',
-    local: 'Commercial',
-    bodega: 'Warehouse',
-  },
-  status: {
-    disponible: '🟢 Available',
-    apartada: '🟡 Reserved',
-    vendida: '🔴 Sold',
-  },
-  notasPlaceholder: 'Internal notes (not visible to client)',
+  match: 'match',
+  recommendation: 'Recommendation',
+  errorGenerate: 'Error generating comps',
+  errorUnknown: 'Unknown error',
 },
 ```
 
@@ -507,54 +578,49 @@ MODIFICAR: app/page.js - Agregar import y uso
 
 1. Agregar import:
 ```javascript
-import InventarioTab from './components/InventarioTab'
+import CompsTab from './components/CompsTab'
 ```
 
 2. En el area de contenido:
 ```javascript
 {activeTab === 'clientes' && <ClientesTab t={t.clientes} />}
 {activeTab === 'inventario' && <InventarioTab t={t.inventario} />}
-{(activeTab === 'comps' || activeTab === 'match') && (
-  <p className="text-white/60 text-center">
-    {t.tabs[activeTab]} - {t.soon}
-  </p>
+{activeTab === 'comps' && <CompsTab t={t.comps} lang={lang} />}
+{activeTab === 'match' && (
+  <p className="text-white/60 text-center">{t.tabs.match} - {t.soon}</p>
 )}
 ```
 
 ===================================================
-DIFERENCIA ENLISTADA vs POCKET
+CREAR CARPETAS
 ===================================================
 
-ENLISTADA (📋):
-- Propiedad publica en MLS
-- Se puede compartir abiertamente
-- Badge azul
-
-POCKET LISTING (🔒):
-- Propiedad exclusiva/privada
-- Solo para clientes selectos
-- No esta en MLS
-- Badge morado
-- Filtro separado
+mkdir -p app/data
+mkdir -p app/api/generate-comps
 
 ===================================================
 CRITERIO DE EXITO
 ===================================================
 
-[ ] Tab Inventario muestra lista con filtros
-[ ] Filtros: Todas | Enlistadas | Pocket
-[ ] Cards muestran badge de tipo (enlistada/pocket)
-[ ] Cards muestran estatus con color
-[ ] CRUD completo funciona
-[ ] localStorage persiste datos
+[ ] Tab Comps muestra formulario
+[ ] Selects de tipo y region funcionan
+[ ] Inputs de recamaras/banos/m2 funcionan
+[ ] Toggle de amenidades funciona
+[ ] Boton genera comparables
+[ ] Spinner durante carga
+[ ] Resultados muestran:
+    - Resumen de propiedad
+    - Precio estimado (low/mid/high)
+    - Top 5 comps con barra de similitud
+    - Recomendacion
 [ ] Bilingue ES/EN
 
 ===================================================
 COMMIT
 ===================================================
 
-"feat: add Inventario module with Listed/Pocket distinction"
+"feat: add Comps module with price analysis"
 
 ===================================================
-FIN RES-PASO5-INVENTARIO
+FIN RES-PASO6-COMPS
 ===================================================
