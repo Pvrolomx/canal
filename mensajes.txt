@@ -1149,3 +1149,54 @@ COMMIT: "fix: correct Airbnb tax retention formulas (4%+8% not 2.5%)"
 ===================================================
 FIN AIRBNB-CALC-FIX-001
 ===================================================
+
+
+===================================================
+SPEC: ANFITRION-MX-REBRAND-001
+Rebranding a "Anfitrión MX"
+Fecha: 2026-01-18
+Prioridad: Media
+===================================================
+
+NOMBRE: Anfitrión MX
+TAGLINE: "Calcula tu ganancia real"
+VERSION USA: Host MX (futuro)
+
+---------------------------------------------------
+CAMBIOS PRINCIPALES
+---------------------------------------------------
+
+1. TITLE Y META TAGS:
+   <title>Anfitrión MX - Calcula tu ganancia real</title>
+
+2. HEADER:
+   🏠 Anfitrión MX
+   Calcula tu ganancia real
+
+3. PWA MANIFEST:
+   name: "Anfitrión MX"
+   theme_color: "#10b981"
+
+4. FOOTER:
+   © 2026 Anfitrión MX
+
+---------------------------------------------------
+PALETA (mantener)
+---------------------------------------------------
+- Fondo: #1a1a2e
+- Acento: #10b981 (verde esmeralda)
+- Texto: #ffffff
+
+---------------------------------------------------
+NO CAMBIAR
+---------------------------------------------------
+- Dark theme
+- Layout formulario
+- Lógica de cálculo
+- Sistema de créditos
+
+===================================================
+COMMIT: "rebrand: rename to Anfitrión MX"
+===================================================
+FIN ANFITRION-MX-REBRAND-001
+===================================================
