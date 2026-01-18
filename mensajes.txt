@@ -1,3 +1,1 @@
-Sigue igual
-
-Oye, hay alguna manera de saber, para ustedes, de ver el resultado del deploy; ej. esta imagen aparecia a ustedes como que estaba correcta y solo mirando la pantalla se veia que no. Hay forma de que algo a alguien (no humano) les avise si esta correcta o no?
+No funciona; te dice como es la imagen y dimensiones y look pero no te muestra exactamenhte como se deploya y la interfaz real continua oscura
