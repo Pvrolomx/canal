@@ -1,1 +1,48 @@
-No funciona; te dice como es la imagen y dimensiones y look pero no te muestra exactamenhte como se deploya y la interfaz real continua oscura
+## DICTAMEN: OG Image "Oscura"
+
+**Proyecto:** Real Estate Solutions  
+**URL:** https://real-estate-solutions-kappa.vercel.app  
+**Fecha:** 17 enero 2026
+
+---
+
+### Veredicto: NO HAY BUG
+
+La configuración técnica está 100% correcta. El problema reportado es una confusión conceptual, no un error de implementación.
+
+---
+
+### Hallazgos técnicos
+
+- og:image meta tag → Correcto, URL absoluta presente
+- twitter:image meta tag → Correcto, URL absoluta presente  
+- twitter:card → Correcto, summary_large_image
+- Imagen accesible → HTTP 200 OK
+- Dimensiones → 1200x630 px (correctas)
+- Formato → JPEG, 198KB (óptimo)
+
+---
+
+### Causa raíz del reporte
+
+Se confundieron dos cosas diferentes:
+
+1. **Preview del Vercel Dashboard** → Screenshot automático que Vercel genera de la app. Vercel ignora los OG tags para esto. No es configurable.
+
+2. **OG Image real** → La foto nocturna de Puerto Vallarta con alberca infinity que SÍ está configurada correctamente.
+
+La imagen se percibe "oscura" porque es una fotografía nocturna por diseño, no porque haya un error.
+
+---
+
+### Recomendación
+
+Si se desea una imagen más luminosa, se debe reemplazar la foto por una versión diurna o un banner diseñado. No hay código que corregir.
+
+---
+
+**Conclusión:** Caso cerrado. No requiere cambios técnicos.
+
+
+
+Ahora, basado en este dictamen, perobemos con una imagen de PV diurna (RSS Cover 3)
