@@ -1,37 +1,133 @@
 ===================================================
-SPEC: RES-PASO2B-TABS
-Fix: Ocultar contenido por defecto
+SPEC: RES-PASO3-PWA
+Agregar: Toggle ES/EN + Boton Instalar App
 Fecha: 2026-01-18
 Por: C1 Sleepy
 ===================================================
 
-PROBLEMA:
-La caja de contenido aparece siempre, tapando la foto.
+OBJETIVO:
+- Toggle idioma Español/English en header
+- Boton "Instalar App" para PWA
 
-SOLUCION:
-- Por defecto NO mostrar contenido
-- Solo header + tabs + foto visible
-- Contenido aparece al hacer click en tab
+===================================================
+CREAR: public/manifest.json
+===================================================
+
+```json
+{
+  "name": "Real Estate Solutions",
+  "short_name": "RES",
+  "description": "Puerto Vallarta y Bahía de Banderas",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+```
+
+===================================================
+MODIFICAR: app/layout.js
+===================================================
+
+```javascript
+import './globals.css'
+
+export const metadata = {
+  title: 'Real Estate Solutions',
+  description: 'Puerto Vallarta y Bahía de Banderas',
+  manifest: '/manifest.json',
+  themeColor: '#0a0a0a',
+}
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="es">
+      <head>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#0a0a0a" />
+        <link rel="apple-touch-icon" href="/icon-192.png" />
+      </head>
+      <body>{children}</body>
+    </html>
+  )
+}
+```
 
 ===================================================
 MODIFICAR: app/page.js
 ===================================================
 
-Reemplazar contenido completo con:
-
 ```javascript
 'use client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
-const tabs = [
-  { id: 'clientes', label: 'Clientes' },
-  { id: 'inventario', label: 'Inventario' },
-  { id: 'comps', label: 'Comps' },
-  { id: 'match', label: 'Match' },
-]
+const translations = {
+  es: {
+    title: 'Real Estate Solutions',
+    subtitle: 'Puerto Vallarta y Bahía de Banderas',
+    install: 'Instalar App',
+    tabs: {
+      clientes: 'Clientes',
+      inventario: 'Inventario',
+      comps: 'Comps',
+      match: 'Match',
+    },
+    soon: 'Próximamente',
+  },
+  en: {
+    title: 'Real Estate Solutions',
+    subtitle: 'Puerto Vallarta & Bahia de Banderas',
+    install: 'Install App',
+    tabs: {
+      clientes: 'Clients',
+      inventario: 'Inventory',
+      comps: 'Comps',
+      match: 'Match',
+    },
+    soon: 'Coming Soon',
+  },
+}
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState(null)
+  const [lang, setLang] = useState('es')
+  const [deferredPrompt, setDeferredPrompt] = useState(null)
+  const [showInstall, setShowInstall] = useState(false)
+
+  const t = translations[lang]
+  const tabs = Object.keys(t.tabs)
+
+  useEffect(() => {
+    const handler = (e) => {
+      e.preventDefault()
+      setDeferredPrompt(e)
+      setShowInstall(true)
+    }
+    window.addEventListener('beforeinstallprompt', handler)
+    return () => window.removeEventListener('beforeinstallprompt', handler)
+  }, [])
+
+  const handleInstall = async () => {
+    if (!deferredPrompt) return
+    deferredPrompt.prompt()
+    const { outcome } = await deferredPrompt.userChoice
+    if (outcome === 'accepted') {
+      setShowInstall(false)
+    }
+    setDeferredPrompt(null)
+  }
 
   return (
     <main 
@@ -39,14 +135,38 @@ export default function Home() {
       style={{ backgroundImage: "url('/bg-hero.jpg')" }}
     >
       {/* Header */}
-      <header className="pt-8 pb-4 px-4">
-        <div className="max-w-md mx-auto text-center">
-          <h1 className="text-2xl font-bold text-white drop-shadow-lg">
-            Real Estate Solutions
-          </h1>
-          <p className="text-white/70 text-sm">
-            Puerto Vallarta y Bahía de Banderas
-          </p>
+      <header className="pt-6 pb-4 px-4">
+        <div className="max-w-md mx-auto">
+          {/* Top row: Lang toggle + Install */}
+          <div className="flex justify-between items-center mb-4">
+            {/* Language Toggle */}
+            <button
+              onClick={() => setLang(lang === 'es' ? 'en' : 'es')}
+              className="bg-black/30 backdrop-blur-sm px-3 py-1 rounded-full text-sm text-white/80 hover:bg-black/40 transition-all"
+            >
+              {lang === 'es' ? '🇲🇽 ES' : '🇺🇸 EN'}
+            </button>
+
+            {/* Install Button */}
+            {showInstall && (
+              <button
+                onClick={handleInstall}
+                className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm text-white hover:bg-white/30 transition-all"
+              >
+                📲 {t.install}
+              </button>
+            )}
+          </div>
+
+          {/* Title */}
+          <div className="text-center">
+            <h1 className="text-2xl font-bold text-white drop-shadow-lg">
+              {t.title}
+            </h1>
+            <p className="text-white/70 text-sm">
+              {t.subtitle}
+            </p>
+          </div>
         </div>
       </header>
 
@@ -54,30 +174,30 @@ export default function Home() {
       <nav className="px-4 pb-4">
         <div className="max-w-md mx-auto">
           <div className="flex gap-2 bg-black/30 backdrop-blur-sm rounded-2xl p-2">
-            {tabs.map((tab) => (
+            {tabs.map((tabId) => (
               <button
-                key={tab.id}
-                onClick={() => setActiveTab(activeTab === tab.id ? null : tab.id)}
+                key={tabId}
+                onClick={() => setActiveTab(activeTab === tabId ? null : tabId)}
                 className={`flex-1 px-3 py-2 rounded-xl text-sm font-medium transition-all ${
-                  activeTab === tab.id
+                  activeTab === tabId
                     ? 'bg-white/30 text-white'
                     : 'text-white/70 hover:bg-white/10'
                 }`}
               >
-                {tab.label}
+                {t.tabs[tabId]}
               </button>
             ))}
           </div>
         </div>
       </nav>
 
-      {/* Content Area - Solo aparece si hay tab activo */}
+      {/* Content Area */}
       {activeTab && (
         <section className="px-4 pb-8">
           <div className="max-w-md mx-auto">
             <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-6">
               <p className="text-white/60 text-center">
-                {activeTab.charAt(0).toUpperCase() + activeTab.slice(1)} - Próximamente
+                {t.tabs[activeTab]} - {t.soon}
               </p>
             </div>
           </div>
@@ -89,35 +209,32 @@ export default function Home() {
 ```
 
 ===================================================
-CAMBIOS CLAVE
+ICONOS PWA
 ===================================================
 
-1. useState(null) en vez de useState('clientes')
-   - Ningún tab seleccionado al inicio
+NOTA: Se necesitan iconos PNG en public/
+- icon-192.png (192x192)
+- icon-512.png (512x512)
 
-2. onClick toggle: activeTab === tab.id ? null : tab.id
-   - Click en tab activo lo cierra
-   - Click en otro tab lo abre
-
-3. {activeTab && (...)} 
-   - Contenido solo se renderiza si hay tab activo
+Por ahora usar placeholder o copiar de otro proyecto.
+Se puede actualizar despues con logo real.
 
 ===================================================
 CRITERIO DE EXITO
 ===================================================
 
-[ ] Al cargar: Solo header + tabs + foto
-[ ] NO aparece caja de contenido al inicio
-[ ] Click en tab: Aparece contenido
-[ ] Click en mismo tab: Desaparece contenido
-[ ] Foto siempre visible de fondo
+[ ] Toggle ES/EN cambia idioma
+[ ] Tabs cambian de nombre segun idioma
+[ ] Boton "Instalar App" aparece (en Chrome/Edge)
+[ ] Click en instalar muestra prompt nativo
+[ ] PWA se puede instalar
 
 ===================================================
 COMMIT
 ===================================================
 
-"fix: hide content area by default, show on tab click"
+"feat: add language toggle ES/EN and PWA install"
 
 ===================================================
-FIN RES-PASO2B-TABS
+FIN RES-PASO3-PWA
 ===================================================
