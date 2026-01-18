@@ -959,3 +959,107 @@ COMMIT
 ===================================================
 FIN LEGAL-PASO-BRANDING v2
 ===================================================
+
+
+===================================================
+LEGAL-PASO-BRANDING v3
+Config-Based Branding + PLAYFAIR DISPLAY
+De: C1 (Sleepy) | Para: Cloud Claude
+Fecha: 2026-01-18 (ACTUALIZADO)
+===================================================
+
+FUENTE ELEGIDA: Playfair Display (estilo diploma)
+
+---------------------------------------------------
+PASO 1: AGREGAR FUENTE - src/app/layout.tsx
+---------------------------------------------------
+
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({ 
+  subsets: ['latin'],
+  variable: '--font-playfair',
+});
+
+<html lang="es" className={playfair.variable}>
+
+---------------------------------------------------
+PASO 2: CONFIG - src/config/branding.ts
+---------------------------------------------------
+
+export const brandingConfig = {
+  useLogo: true,
+  logoPath: '/logo.png',
+  logoAlt: 'Legal Solutions',
+  
+  useCustomName: false,
+  customName: '',
+  customSubtitle: 'Despacho Jurídico',
+  
+  tagline: 'Sistema de Gestión Legal con IA',
+};
+
+---------------------------------------------------
+PASO 3: HEADER - src/components/BrandingHeader.tsx
+---------------------------------------------------
+
+import { brandingConfig } from '@/config/branding';
+
+export default function BrandingHeader() {
+  const { useCustomName, customName, customSubtitle, tagline, logoPath, logoAlt } = brandingConfig;
+
+  return (
+    <div className="text-center">
+      {useCustomName && customName ? (
+        <>
+          <h1 className="font-[family-name:var(--font-playfair)] text-3xl font-semibold text-stone-800">
+            {customName}
+          </h1>
+          <p className="font-[family-name:var(--font-playfair)] text-stone-500 text-sm italic mt-1">
+            {customSubtitle}
+          </p>
+          <p className="text-stone-400 text-xs mt-2">{tagline}</p>
+        </>
+      ) : (
+        <>
+          <img src={logoPath} alt={logoAlt} className="h-20 mx-auto mb-2" />
+          <p className="text-stone-500 text-sm">{tagline}</p>
+        </>
+      )}
+    </div>
+  );
+}
+
+---------------------------------------------------
+PASO 4: INTEGRAR - src/app/page.tsx
+---------------------------------------------------
+
+import BrandingHeader from '@/components/BrandingHeader';
+
+<header className="bg-white border-b border-stone-200 pt-6 pb-4 px-6">
+  <div className="max-w-lg mx-auto">
+    <BrandingHeader />
+  </div>
+</header>
+
+---------------------------------------------------
+USO
+---------------------------------------------------
+
+CAMBIAR A NOMBRE:
+Editar branding.ts: useCustomName: true, customName: 'Lic. Antonio Torres'
+Push → Deploy → Nombre aparece con Playfair Display!
+
+RESTAURAR LOGO:
+Editar branding.ts: useCustomName: false
+Push → Deploy → Logo original!
+
+===================================================
+COMMIT
+===================================================
+
+"feat: add Playfair Display branding with config system"
+
+===================================================
+FIN LEGAL-PASO-BRANDING v3
+===================================================
