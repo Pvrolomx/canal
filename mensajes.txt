@@ -1,48 +1,194 @@
-## DICTAMEN: OG Image "Oscura"
+===================================================
+SPEC: Real Estate Solutions - Paso 1 (Minimo)
+Fecha: 2026-01-18
+Por: C1 Sleepy (Consigliere)
+===================================================
 
-**Proyecto:** Real Estate Solutions  
-**URL:** https://real-estate-solutions-kappa.vercel.app  
-**Fecha:** 17 enero 2026
+OBJETIVO:
+Crear app Next.js con SOLO foto de fondo + titulo.
+Confirmar que la imagen funciona antes de agregar mas.
 
----
+===================================================
+PREREQUISITOS (HACER PRIMERO)
+===================================================
 
-### Veredicto: NO HAY BUG
+1. Confirma GitHub MCP conectado
+2. Confirma Vercel MCP conectado
+3. Si NO tienes alguno, NOTIFICA antes de empezar
 
-La configuración técnica está 100% correcta. El problema reportado es una confusión conceptual, no un error de implementación.
+===================================================
+CREAR REPO
+===================================================
 
----
+Nombre: real-estate-solutions
+Descripcion: Real Estate Solutions - PV/Bahia
 
-### Hallazgos técnicos
+===================================================
+ESTRUCTURA DE ARCHIVOS
+===================================================
 
-- og:image meta tag → Correcto, URL absoluta presente
-- twitter:image meta tag → Correcto, URL absoluta presente  
-- twitter:card → Correcto, summary_large_image
-- Imagen accesible → HTTP 200 OK
-- Dimensiones → 1200x630 px (correctas)
-- Formato → JPEG, 198KB (óptimo)
+real-estate-solutions/
+├── app/
+│   ├── layout.js
+│   ├── page.js
+│   └── globals.css
+├── public/
+│   └── bg-hero.jpg   <- COPIAR DE UPLOADS
+├── next.config.js
+├── package.json
+├── tailwind.config.js
+└── postcss.config.js
 
----
+===================================================
+ARCHIVOS - COPIAR EXACTO
+===================================================
 
-### Causa raíz del reporte
+### package.json
+```json
+{
+  "name": "real-estate-solutions",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10",
+    "postcss": "^8",
+    "tailwindcss": "^3"
+  }
+}
+```
 
-Se confundieron dos cosas diferentes:
+### next.config.js
+```javascript
+/** @type {import('next').NextConfig} */
+const nextConfig = {}
+module.exports = nextConfig
+```
 
-1. **Preview del Vercel Dashboard** → Screenshot automático que Vercel genera de la app. Vercel ignora los OG tags para esto. No es configurable.
+### tailwind.config.js
+```javascript
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./app/**/*.{js,jsx}"],
+  theme: { extend: {} },
+  plugins: [],
+}
+```
 
-2. **OG Image real** → La foto nocturna de Puerto Vallarta con alberca infinity que SÍ está configurada correctamente.
+### postcss.config.js
+```javascript
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}
+```
 
-La imagen se percibe "oscura" porque es una fotografía nocturna por diseño, no porque haya un error.
+### app/globals.css
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
 
----
+### app/layout.js
+```javascript
+import './globals.css'
 
-### Recomendación
+export const metadata = {
+  title: 'Real Estate Solutions',
+  description: 'Puerto Vallarta y Bahia de Banderas',
+}
 
-Si se desea una imagen más luminosa, se debe reemplazar la foto por una versión diurna o un banner diseñado. No hay código que corregir.
+export default function RootLayout({ children }) {
+  return (
+    <html lang="es">
+      <body>{children}</body>
+    </html>
+  )
+}
+```
 
----
+### app/page.js
+```javascript
+export default function Home() {
+  return (
+    <main 
+      className="min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
+      style={{ backgroundImage: "url('/bg-hero.jpg')" }}
+    >
+      <div className="bg-black/50 p-8 rounded-2xl text-center">
+        <h1 className="text-4xl font-bold text-white mb-2">
+          Real Estate Solutions
+        </h1>
+        <p className="text-white/80">
+          Puerto Vallarta y Bahia de Banderas
+        </p>
+      </div>
+    </main>
+  )
+}
+```
 
-**Conclusión:** Caso cerrado. No requiere cambios técnicos.
+===================================================
+IMAGEN
+===================================================
 
+IMPORTANTE: Copiar la imagen del Arquitecto a public/bg-hero.jpg
 
+Archivo fuente: /home/pvrolo/colmena/uploads/2026-01-18T13-45-30_RES_Cover.jpg
+Destino: public/bg-hero.jpg
 
-Ahora, basado en este dictamen, perobemos con una imagen de PV diurna (RSS Cover 3)
+===================================================
+COMMITS
+===================================================
+
+1. Despues de crear estructura: "feat: initial setup"
+2. Despues de agregar imagen: "feat: add hero background"
+3. Antes de deploy: "ready for deploy"
+
+===================================================
+DEPLOY
+===================================================
+
+Usar Vercel MCP para deploy.
+URL esperada: real-estate-solutions.vercel.app
+
+===================================================
+CRITERIO DE EXITO
+===================================================
+
+[ ] La foto aparece como fondo
+[ ] El titulo se ve encima con fondo semi-transparente
+[ ] Responsive en mobile
+[ ] Deploy exitoso en Vercel
+
+===================================================
+SI LA FOTO NO APARECE
+===================================================
+
+1. Verificar que bg-hero.jpg esta en /public
+2. Verificar que la ruta es "/bg-hero.jpg" (con /)
+3. Verificar tamano de imagen (no mayor a 2MB)
+4. Probar con imagen mas pequena
+
+===================================================
+SIGUIENTE PASO (NO HACER AUN)
+===================================================
+
+Solo despues de confirmar que foto funciona:
+- Agregar 4 tabs de navegacion
+- Sin funcionalidad, solo UI
+
+===================================================
+FIN DEL SPEC
+===================================================
