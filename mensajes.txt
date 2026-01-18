@@ -1200,3 +1200,56 @@ COMMIT: "rebrand: rename to Anfitrión MX"
 ===================================================
 FIN ANFITRION-MX-REBRAND-001
 ===================================================
+
+
+===================================================
+SPEC: ANFITRION-MX-PAYMENTS-001
+Pagos con Stripe Payment Links
+Fecha: 2026-01-18
+Prioridad: Alta
+===================================================
+
+PROBLEMA:
+Backend /crear-sesion-reporte no existe en Vercel
+→ Error 404 al comprar créditos
+
+SOLUCION: Stripe Payment Links
+- No requiere backend
+- Stripe maneja todo
+- Funciona con static hosting
+
+---------------------------------------------------
+PASOS
+---------------------------------------------------
+
+1. STRIPE DASHBOARD:
+   - Crear producto "10 Cálculos - Anfitrión MX"
+   - Precio: $10 MXN
+   - Redirect URL: ?payment=success&credits=10
+
+2. FRONTEND:
+   - Botón abre Payment Link directamente
+   - Detectar ?payment=success al cargar
+   - Agregar créditos a localStorage
+   - Mostrar notificación éxito
+
+---------------------------------------------------
+CODIGO CLAVE
+---------------------------------------------------
+
+// Comprar
+function comprarCreditos() {
+  window.open('https://buy.stripe.com/XXXXXX', '_blank');
+}
+
+// Detectar pago
+if (params.get('payment') === 'success') {
+  let credits = localStorage.getItem('calculosRestantes') || 0;
+  localStorage.setItem('calculosRestantes', credits + 10);
+}
+
+===================================================
+COMMIT: "feat: implement Stripe Payment Links"
+===================================================
+FIN ANFITRION-MX-PAYMENTS-001
+===================================================
