@@ -1,13 +1,17 @@
 ===================================================
-SPEC: RES-PASO2-TABS
-Real Estate Solutions - Agregar Tabs
+SPEC: RES-PASO2B-TABS
+Fix: Ocultar contenido por defecto
 Fecha: 2026-01-18
 Por: C1 Sleepy
 ===================================================
 
-CONTEXTO:
-Paso 1 completado - foto de fondo funcionando.
-Ahora agregar header + tabs de navegacion.
+PROBLEMA:
+La caja de contenido aparece siempre, tapando la foto.
+
+SOLUCION:
+- Por defecto NO mostrar contenido
+- Solo header + tabs + foto visible
+- Contenido aparece al hacer click en tab
 
 ===================================================
 MODIFICAR: app/page.js
@@ -27,7 +31,7 @@ const tabs = [
 ]
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState('clientes')
+  const [activeTab, setActiveTab] = useState(null)
 
   return (
     <main 
@@ -53,7 +57,7 @@ export default function Home() {
             {tabs.map((tab) => (
               <button
                 key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
+                onClick={() => setActiveTab(activeTab === tab.id ? null : tab.id)}
                 className={`flex-1 px-3 py-2 rounded-xl text-sm font-medium transition-all ${
                   activeTab === tab.id
                     ? 'bg-white/30 text-white'
@@ -67,47 +71,53 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Content Area */}
-      <section className="px-4 pb-8">
-        <div className="max-w-md mx-auto">
-          <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 min-h-[60vh]">
-            <p className="text-white/60 text-center">
-              {activeTab.charAt(0).toUpperCase() + activeTab.slice(1)} - Próximamente
-            </p>
+      {/* Content Area - Solo aparece si hay tab activo */}
+      {activeTab && (
+        <section className="px-4 pb-8">
+          <div className="max-w-md mx-auto">
+            <div className="bg-black/40 backdrop-blur-sm rounded-2xl p-6">
+              <p className="text-white/60 text-center">
+                {activeTab.charAt(0).toUpperCase() + activeTab.slice(1)} - Próximamente
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
     </main>
   )
 }
 ```
 
 ===================================================
+CAMBIOS CLAVE
+===================================================
+
+1. useState(null) en vez de useState('clientes')
+   - Ningún tab seleccionado al inicio
+
+2. onClick toggle: activeTab === tab.id ? null : tab.id
+   - Click en tab activo lo cierra
+   - Click en otro tab lo abre
+
+3. {activeTab && (...)} 
+   - Contenido solo se renderiza si hay tab activo
+
+===================================================
 CRITERIO DE EXITO
 ===================================================
 
-[ ] Header con titulo visible
-[ ] 4 tabs con fondo semitransparente
-[ ] Tabs con esquinas REDONDEADAS
-[ ] Tab activo resaltado
-[ ] Click cambia tab activo
-[ ] Foto de fondo sigue visible
-[ ] Area de contenido con placeholder
+[ ] Al cargar: Solo header + tabs + foto
+[ ] NO aparece caja de contenido al inicio
+[ ] Click en tab: Aparece contenido
+[ ] Click en mismo tab: Desaparece contenido
+[ ] Foto siempre visible de fondo
 
 ===================================================
 COMMIT
 ===================================================
 
-"feat: add header and navigation tabs"
+"fix: hide content area by default, show on tab click"
 
 ===================================================
-NO HACER AUN
-===================================================
-
-- NO agregar funcionalidad a los tabs
-- NO agregar iconos
-- Solo confirmar que navegacion funciona
-
-===================================================
-FIN RES-PASO2-TABS
+FIN RES-PASO2B-TABS
 ===================================================
