@@ -1253,3 +1253,87 @@ COMMIT: "feat: implement Stripe Payment Links"
 ===================================================
 FIN ANFITRION-MX-PAYMENTS-001
 ===================================================
+
+
+===================================================
+SPEC: ANFITRION-MX-UX-001
+UI Simplificada - Ganancia Neta Primero
+Fecha: 2026-01-19
+Prioridad: Alta
+Tiempo: 1-2 horas
+===================================================
+
+PROBLEMA: Usuario hace ~2.5 pantallas scroll para ver ganancia neta
+
+SOLUCION:
+- Mostrar ganancia neta arriba en caja prominente
+- Desglose colapsable por default
+- Scroll suave al resultado
+
+FLUJO NUEVO:
+1. Llena form → Click calcular
+2. VE GANANCIA NETA INMEDIATAMENTE
+3. (Opcional) Click "Ver desglose"
+
+===================================================
+COMMIT: "feat: show ganancia neta first"
+===================================================
+
+===================================================
+SPEC: ANFITRION-MX-UX-002
+Grid 2 Columnas Móvil
+Fecha: 2026-01-19
+Prioridad: Media
+Tiempo: 30 min
+===================================================
+
+PROBLEMA: Resultados en 1 columna desperdician espacio
+
+SOLUCION:
+- CSS Grid 2 columnas en móvil
+- 3 columnas en desktop
+- Colores por tipo (verde ingreso, rojo deducción)
+
+===================================================
+COMMIT: "feat: 2-column grid for mobile results"
+===================================================
+
+===================================================
+SPEC: ANFITRION-MX-UX-003
+Corrección de Idioma
+Fecha: 2026-01-19
+Prioridad: Alta
+Tiempo: 5 min
+===================================================
+
+PROBLEMA: "Number of nights" en inglés
+
+SOLUCION:
+- Buscar/reemplazar textos en inglés
+- "Number of nights" → "Número de noches"
+
+===================================================
+COMMIT: "fix: translate remaining english text"
+===================================================
+
+===================================================
+SPEC: ANFITRION-MX-UX-004
+Nota Saneamiento PV (Informativa)
+Fecha: 2026-01-19
+Prioridad: Baja
+Tiempo: 30 min
+===================================================
+
+CONTEXTO: Art. 80 ter Ley Ingresos PV 2026
+- 80% UMA por noche (~$90 MXN)
+- PENDIENTE CONFIRMACION
+
+SOLUCION:
+- Nota informativa solo para Jalisco
+- Color amarillo/naranja (advertencia)
+- NO incluir en cálculo
+- Link a más info
+
+===================================================
+COMMIT: "feat: add PV sanitation tax info note"
+===================================================
