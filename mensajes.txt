@@ -1337,3 +1337,57 @@ SOLUCION:
 ===================================================
 COMMIT: "feat: add PV sanitation tax info note"
 ===================================================
+
+
+===================================================
+SPEC: COLMENA-TESTING-FRAMEWORK-001
+Framework de Testing Estándar
+Fecha: 2026-01-19
+Prioridad: Alta
+Aplica a: TODAS las apps
+===================================================
+
+PROBLEMA:
+Cambios en módulos secundarios rompen lógica
+crítica sin que nadie se de cuenta.
+
+SOLUCION:
+Tests automáticos en CADA PUSH que bloquean
+merge si algo se rompe.
+
+---------------------------------------------------
+COMPONENTES
+---------------------------------------------------
+
+1. TESTS UNITARIOS
+   - Verifican funciones core
+   - vitest como framework
+
+2. CASOS REALES (JSON)
+   - Datos verificados de producción
+   - Fuente de verdad
+
+3. SNAPSHOTS
+   - "Fotos" de resultados
+   - Detectan cualquier cambio
+
+4. E2E (PLAYWRIGHT)
+   - Simulan usuario real
+   - Verifican flujo completo
+
+5. GITHUB ACTIONS
+   - CI/CD automático
+   - Bloquea merge si falla
+
+---------------------------------------------------
+APPS A IMPLEMENTAR
+---------------------------------------------------
+- airbnb-calculadora (Alta)
+- notaria-solutions (Alta)
+- astro3 (Alta)
+- legal-solutions (Media)
+- RES (Media)
+
+===================================================
+COMMIT: "spec: COLMENA testing framework"
+===================================================
