@@ -44,30 +44,68 @@ Si tu mamá no puede usarla, está mal
 
 ---
 
+## 🎨 SPEC VISUAL
+
+### Estructura
+```
+┌─────────────────────────────────────┐
+│ [LOGO HCRPV]          Mi Salud PV  │ ← Header con logo
+├─────────────────────────────────────┤
+│                                     │
+│  ┌─────────────────────────────┐   │
+│  │   🆘 EMERGENCIA             │   │
+│  └─────────────────────────────┘   │
+│                                     │
+│  ┌─────────────────────────────┐   │
+│  │   👨‍⚕️ BUSCAR DOCTOR          │   │
+│  └─────────────────────────────┘   │
+│                                     │  ← FONDO: Fotografía PV
+│  ┌─────────────────────────────┐   │    con overlay oscuro
+│  │   📅 MIS CITAS              │   │    (70-80% opacidad)
+│  └─────────────────────────────┘   │
+│                                     │
+│  ┌─────────────────────────────┐   │
+│  │   💬 NECESITO AYUDA         │   │
+│  └─────────────────────────────┘   │
+│                                     │
+├─────────────────────────────────────┤
+│ Hecho con 🧡 por Colmena 2026      │ ← Footer
+└─────────────────────────────────────┘
+```
+
+### Reglas visuales
+- **Fondo:** Fotografía de PV (por definir) con overlay oscuro
+- **Overlay:** rgba(0,0,0,0.7) o similar - suficiente contraste para leer
+- **Header:** Logo HCRPV (fondo sólido, no transparente)
+- **Botones:** Colores sólidos, alto contraste, GRANDES (touch-friendly)
+- **Tipografía:** Grande (mínimo 18px), sans-serif, alto contraste
+
+### Paleta sugerida
+```
+Header: #1e3a5f (azul oscuro médico)
+Botones: 
+  - Emergencia: #dc2626 (rojo)
+  - Doctor: #2563eb (azul)
+  - Citas: #059669 (verde)
+  - Ayuda: #7c3aed (morado)
+Texto: #ffffff
+Overlay: rgba(15, 23, 42, 0.75)
+```
+
+### Assets necesarios
+- [ ] Logo HCRPV (PNG transparente)
+- [ ] Fotografía de fondo (por definir - sugerencia: bahía, malecón, o médico amigable)
+- [ ] Iconos: Usar emojis (universales, no requieren carga)
+
+---
+
 ## 💡 SOLUCIÓN PROPUESTA: "Mi Salud PV"
 
-### Pantalla del paciente (3 botones máximo)
+### Pantalla del paciente (4 botones máximo)
 ```
-┌─────────────────────────┐
-│                         │
-│   🆘 EMERGENCIA         │  ← Tap = llamada directa
-│                         │
-├─────────────────────────┤
-│                         │
-│   👨‍⚕️ BUSCAR DOCTOR      │  ← Directorio simple
-│                         │
-├─────────────────────────┤
-│                         │
-│   📅 MIS CITAS          │  ← Próximas citas
-│                         │
-├─────────────────────────┤
-│                         │
-│   💬 NECESITO AYUDA     │  ← WhatsApp directo a HCRPV
-│                         │
-└─────────────────────────┘
-
 Sin login. Sin menús. Sin configuración.
 3 taps máximo para cualquier acción.
+Botones gigantes, text grande, cero confusión.
 ```
 
 ### Admin para ella (dashboard oculto)
@@ -99,7 +137,7 @@ Sin login. Sin menús. Sin configuración.
 - DB: localStorage (MVP) → Supabase (V2+)
 - Auth: Ninguno en MVP (pacientes) / Simple pin (admin)
 - PWA: Sí (instalable)
-- Estilo: Inline o Tailwind mínimo
+- Estilo: Inline CSS (sin Tailwind para simplicidad)
 ```
 
 ---
@@ -135,12 +173,13 @@ de tu red necesite algo similar, me lo mandes."
 
 ### URLs
 - Web actual: https://healthcareresourcespv.com/
+- Logo: https://healthcareresourcespv.com/wp-content/uploads/2017/12/HealthCare-Resources-Puerto-Vallarta.png
 - Página de médicos: https://healthcareresourcespv.com/medical-tourism-puerto-vallarta-physicians/
 - Contacto: https://healthcareresourcespv.com/contact-us-healthcare-resources-pv/
 - PlusCard: https://healthcareresourcespv.com/pluscard/
 
 ### Credenciales
-Ver archivo de credenciales Colmena (no incluidas aquí por seguridad)
+Buscar en historial de chats: "tokens Colmena" o "GitHub PAT Vercel"
 
 ---
 
@@ -148,6 +187,8 @@ Ver archivo de credenciales Colmena (no incluidas aquí por seguridad)
 
 - [ ] Discovery con la dueña completado
 - [ ] Dolor #1 confirmado
+- [ ] Fotografía de fondo definida
+- [ ] Logo HCRPV descargado
 - [ ] Repo creado: `Pvrolomx/mi-salud-pv`
 - [ ] Proyecto Vercel creado
 - [ ] MVP construido
@@ -162,6 +203,7 @@ Ver archivo de credenciales Colmena (no incluidas aquí por seguridad)
 - Este proyecto es puerta de entrada a más apps de salud/turismo
 - Priorizar UX sobre features
 - Si el usuario tiene que pensar, está mal diseñado
+- **FONDO CON FOTO** pero con overlay suficiente para no confundir UI
 
 ---
 
