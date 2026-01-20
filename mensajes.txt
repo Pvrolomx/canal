@@ -1,3 +1,1 @@
-Regresa a la formascion anterior: ver cuanto me queda-resultado-abajo calculos restantes-despues de 10 aparece comprar
-
-ahorita se desactivó ver cuanto me queda y comprar calculos
+Checa que estan inactivos varios botones. Si no recuerdas que se hizo, vuelve a la ultima version que operaba sin problema que era cuando quitas el placeholder de nuero de noche
