@@ -1,5 +1,1 @@
-"Descripción
-
-Describe los tipos de productos o servicios que ofrecerás."
-
-Dame una descripcion para stripe en este campo que me pide
+Ya esta activa la cuenta live de stripe; que url es el que necesitas?
