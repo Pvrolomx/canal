@@ -1,1 +1,1 @@
-Checa que estan inactivos varios botones. Si no recuerdas que se hizo, vuelve a la ultima version que operaba sin problema que era cuando quitas el placeholder de nuero de noche
+Abajo de Sin calculos boton "comprar 10 calculos por $10 mxn"
