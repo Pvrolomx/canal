@@ -1,3 +1,1 @@
-1. checa logica diseñoy logica de tu ganancia neta en a-c. copia el ver desglose completo para evitar el ruido de los conceptos a menos que se de click en ver desglose completo.
-2. Agrega Aviso: Puerto vallarta 2026
-3. Si te pngo un punto . o un caracter que sea y no tenga sentido, vienes al canal a checar mensajes (para ahorrar tokens)
+Oye, que tanto rollo sería copiar colores de a_c? La UX. Le podrías probar y si no funciona hacer rollback?
