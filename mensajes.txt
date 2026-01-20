@@ -1,1 +1,5 @@
-Oye, que tanto rollo sería copiar colores de a_c? La UX. Le podrías probar y si no funciona hacer rollback?
+Quedó perfecto! ahora:
+1.- Tamaño de fuente para campos (checa a-c e implementa)
+2.- Calcular ganancia neta cambiar a "Ver cuanto me queda" y separar un poco dek resultado de "tu ganancia neta" (estan pegados ambos botones)
+3.- Boton "Tu ganancia neta" copiarlo todo
+4.- Calculos restantes color verde inicial y degradado a rojo al final despues de 10 freebies
