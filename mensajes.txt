@@ -1,1 +1,1 @@
-checa a-c cuando se utilizan los 10 calculos (hay un prompt de comprar 10 calculos -$10 mxn). Implementalo
+No aparece comprar calculos
