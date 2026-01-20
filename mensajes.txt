@@ -1,1 +1,1 @@
-Ahora veamnos lo del pdf: en el desglose se corta la info y no sale toda. Este desglose debe quedar presentable como si fuera para algun contador pero mucho mejor
+checa a-c cuando se utilizan los 10 calculos (hay un prompt de comprar 10 calculos -$10 mxn). Implementalo
