@@ -1,1 +1,1 @@
-dale un poco mas tamaño al resultado tuganancia neta
+Dale mas tamaño a la fuente de botones de plataforma y % (casi no se ve). Y color verde a todos esos botones pero opacos a los inactivos y vivo al activo
