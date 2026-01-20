@@ -1,1 +1,3 @@
-No aparece comprar calculos
+Regresa a la formascion anterior: ver cuanto me queda-resultado-abajo calculos restantes-despues de 10 aparece comprar
+
+ahorita se desactivó ver cuanto me queda y comprar calculos
