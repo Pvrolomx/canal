@@ -1,1 +1,9 @@
-Checa image.png y dime
+Checa cambios/adiciones
+1.- Toggle con banderita ES EN
+2.- Calculadora fiscal para host -> Calculadora para Anfitriones (se debe evitar fiscal por cuestiones legales y politicas de google)
+3.- Airbnb 15% agregar botón (tarifa que cobra a los que usan servicios como Angel Host o algo parecido)
+4.- Tarifa de limpieza (mover a Gastos Operativos
+5.- Quitar flechitas de aumentar o disminuir cantidades (nadie en su right mind las utilizaría)
+6.- Abajo de resultado de ganancia mostrar el contador de freebies (son diez grastis)
+7.- Y abajo del contador, Boton descargar pdf con breakdown (mira lógica de "airbnb-calculadora" para lo que no quede claro (ya deployada y en github))
+8.- Agrega anuncios de airbnb.calculadora (importante... Aviso...)
