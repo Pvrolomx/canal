@@ -1,1 +1,1 @@
-Quita numeros dummy inactivos de tarifa, noches, limpieza, etc
+Quedó el placeholder de numero de noches
