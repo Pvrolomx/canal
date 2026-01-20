@@ -1,1 +1,1 @@
-Quedó el placeholder de numero de noches
+Ahora veamnos lo del pdf: en el desglose se corta la info y no sale toda. Este desglose debe quedar presentable como si fuera para algun contador pero mucho mejor
