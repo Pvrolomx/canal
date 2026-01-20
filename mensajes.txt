@@ -1,1 +1,1 @@
-En el Header De Anfitrion MX que cambie a Host MX en el toggle
+Quita numeros dummy inactivos de tarifa, noches, limpieza, etc
