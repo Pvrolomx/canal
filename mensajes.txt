@@ -1,1 +1,5 @@
-Configura de mientras; voy a stripe 
+"Descripción
+
+Describe los tipos de productos o servicios que ofrecerás."
+
+Dame una descripcion para stripe en este campo que me pide
