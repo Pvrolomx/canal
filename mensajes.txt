@@ -1,1 +1,1 @@
-De Stripe no tenemos nada configurado, correcto?
+Inicialmente lo tenia en sandbox pero no recuerdo si configuré el verdadero. Si trato de configurar el verdadero me dirán que ya existe?
