@@ -1,13 +1,73 @@
 # SPEC: MediCompara MX
 ## App de Comparación de Precios de Medicamentos USA → México
 
-**Versión:** 1.0 MVP  
+**Versión:** 1.1  
 **Fecha:** Enero 2026  
 **Autor:** C-OG / Colmena
 
 ---
 
-## 1. RESUMEN EJECUTIVO
+## 0. ASSETS REQUERIDOS
+
+### Imagen de fondo principal
+**Archivo:** `Cover Medicompara 3.png`  
+**Ubicación:** `github.com/Pvrolomx/canal/Medicompara/`  
+**Dimensiones:** 1024x1536 (vertical, optimizada para móvil)  
+**Uso:** Background de home screen con overlay
+
+![Cover](https://raw.githubusercontent.com/Pvrolomx/canal/main/Medicompara/Cover%20Medicompara%203.png)
+
+**Características de la imagen:**
+- Farmacia mexicana estilo "pueblo mágico"
+- Cielo limpio (~40% superior) para UI
+- Bokeh/difuminado en fondo
+- Tonos cálidos terracota
+- Cruz verde de farmacia visible
+- Espacio para overlay y texto
+
+---
+
+## 1. CONSTRUCCIÓN INCREMENTAL
+
+### Deploy 1: Solo imagen de fondo
+```
+- index.html con imagen fullscreen
+- Overlay gradient oscuro (50-60%)
+- Logo "MediCompara" centrado
+- Texto "Próximamente" o barra de búsqueda dummy
+- PWA manifest básico
+```
+
+### Deploy 2: Home + Búsqueda
+```
+- Barra de búsqueda funcional
+- Base de datos de 10 medicamentos
+- Resultado básico (nombre MX)
+```
+
+### Deploy 3: Modo Farmacia
+```
+- Pantalla fullscreen letra gigante
+- Botón de audio (pronunciación)
+```
+
+### Deploy 4: Mi Lista + Precios
+```
+- Guardar medicinas
+- Comparativa de precios
+- Resumen de ahorro
+```
+
+### Deploy 5: Farmacias + PWA completa
+```
+- Mapa de farmacias
+- Instalación PWA
+- Ajustes de idioma
+```
+
+---
+
+## 2. RESUMEN EJECUTIVO
 
 **Problema:** Adultos mayores expats estadounidenses en México no saben cómo se llaman sus medicamentos en español ni dónde comprarlos más barato.
 
@@ -19,7 +79,7 @@
 
 ---
 
-## 2. USUARIO PRIMARIO
+## 3. USUARIO PRIMARIO
 
 ### Perfil: "Don Robert"
 
@@ -42,7 +102,7 @@
 
 ---
 
-## 3. MOMENTOS DE USO
+## 4. MOMENTOS DE USO
 
 | Momento | Dónde | Estado | Necesidad principal |
 |---------|-------|--------|---------------------|
@@ -55,7 +115,7 @@
 
 ---
 
-## 4. ARQUITECTURA DE INFORMACIÓN
+## 5. ARQUITECTURA DE INFORMACIÓN
 
 ```
 MediCompara
@@ -87,11 +147,6 @@ MediCompara
 │   ├── Filtro por cadena
 │   └── Navegación a Google Maps
 │
-├── ❓ AYUDA / INFO
-│   ├── FAQ (regla de 90 días, etc.)
-│   ├── ¿Es seguro el genérico?
-│   └── Contacto HCRPV (referido)
-│
 └── ⚙️ AJUSTES
     ├── Idioma (EN/ES)
     ├── Tamaño de letra
@@ -100,30 +155,29 @@ MediCompara
 
 ---
 
-## 5. PANTALLAS DETALLADAS
+## 6. PANTALLAS DETALLADAS
 
-### 5.1 HOME
+### 6.1 HOME (con imagen de fondo)
 
 ```
 ┌─────────────────────────────────────┐
-│  [Fondo: Farmacia mexicana típica]  │
-│  [Overlay semi-transparente]        │
 │                                     │
-│         🇲🇽 MediCompara             │
-│    "Tu medicina, mejor precio"      │
+│  [IMAGEN: Cover Medicompara 3.png]  │
+│  [Overlay gradient 50% oscuro]      │
+│                                     │
+│         🇲🇽 MediCompara             │  ← Logo blanco
+│    "Tu medicina, mejor precio"      │  ← Texto blanco
 │                                     │
 │  ┌─────────────────────────────┐   │
-│  │ 🔍 Buscar medicina...       │   │  ← Input GRANDE
+│  │ 🔍 Buscar medicina...       │   │  ← Input con fondo blanco
 │  └─────────────────────────────┘   │
 │                                     │
-│   Recientes:                        │
+│   Recientes:                        │  ← Texto blanco/gris claro
 │   • Lipitor 20mg                    │
 │   • Metformin 850mg                 │
 │                                     │
-│                                     │
 │  ┌─────────────────────────────┐   │
-│  │  💊 Mis Medicinas (5)       │   │  ← Botón prominente
-│  │     Ver lista completa →     │   │
+│  │  💊 Mis Medicinas (5)       │   │  ← Cards semi-transparentes
 │  └─────────────────────────────┘   │
 │                                     │
 │  ┌─────────────────────────────┐   │
@@ -131,19 +185,29 @@ MediCompara
 │  └─────────────────────────────┘   │
 │                                     │
 ├─────────────────────────────────────┤
-│  🏠    🔍    💊    📍    ⚙️        │  ← Tab bar
+│  🏠    🔍    💊    📍    ⚙️        │  ← Tab bar sólido
 └─────────────────────────────────────┘
 ```
 
-**Notas de diseño:**
-- Fondo: Foto de farmacia mexicana colorida o calle típica con farmacia
-- Overlay: 40-50% para legibilidad
-- Búsqueda es la acción principal, debe dominar
-- Máximo 2 taps para llegar a cualquier función
+**CSS para imagen de fondo:**
+```css
+.home-screen {
+  background-image: url('/hero-bg.png');
+  background-size: cover;
+  background-position: center bottom;
+}
 
----
+.home-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.6) 0%,
+    rgba(0,0,0,0.4) 50%,
+    rgba(0,0,0,0.7) 100%
+  );
+}
+```
 
-### 5.2 RESULTADO DE BÚSQUEDA
+### 6.2 RESULTADO DE BÚSQUEDA
 
 ```
 ┌─────────────────────────────────────┐
@@ -156,72 +220,48 @@ MediCompara
 │                                     │
 │  En México pide:                    │
 │  ┌─────────────────────────────┐   │
-│  │                             │   │
 │  │    ATORVASTATINA            │   │  ← Letra grande
 │  │        20 mg                │   │
-│  │                             │   │
 │  │  [🔊 Escuchar]  [📋 Copiar] │   │
 │  └─────────────────────────────┘   │
 │                                     │
-│  ✅ Mismo ingrediente activo        │  ← Badge de confianza
+│  ✅ Mismo ingrediente activo        │
 │  ✅ Aprobado por COFEPRIS           │
 │                                     │
-│  ════════════════════════════════   │
-│                                     │
 │  💰 Precios aproximados:            │
-│                                     │
 │  ┌─────────────────────────────┐   │
-│  │ 🟢 Similares        $85 MXN │ ★ │  ← Más barato destacado
+│  │ 🟢 Similares        $85 MXN │ ★ │
 │  └─────────────────────────────┘   │
 │  ┌─────────────────────────────┐   │
 │  │ ⚪ Guadalajara     $110 MXN │   │
 │  └─────────────────────────────┘   │
-│  ┌─────────────────────────────┐   │
-│  │ ⚪ Del Ahorro      $120 MXN │   │
-│  └─────────────────────────────┘   │
 │                                     │
-│  Precio USA: ~$350 MXN ($18 USD)    │
 │  💵 Ahorras: ~$230 MXN (~75%)       │
 │                                     │
 │  ┌─────────────────────────────┐   │
-│  │  🏪 MODO FARMACIA           │   │  ← Botón principal
-│  │  Mostrar al empleado        │   │
+│  │  🏪 MODO FARMACIA           │   │
 │  └─────────────────────────────┘   │
 │                                     │
 │  [💊 Guardar en mi lista]           │
 │                                     │
-├─────────────────────────────────────┤
-│  🏠    🔍    💊    📍    ⚙️        │
 └─────────────────────────────────────┘
 ```
 
-**Notas de diseño:**
-- El nombre mexicano debe ser lo MÁS VISIBLE
-- Botón de audio para pronunciación correcta
-- Badges de confianza reducen miedo
-- Comparativa simple, el más barato arriba y destacado
-- "Modo Farmacia" es CTA principal
-
----
-
-### 5.3 MODO FARMACIA (Pantalla crítica)
+### 6.3 MODO FARMACIA (Pantalla crítica)
 
 ```
 ┌─────────────────────────────────────┐
 │                                     │
-│  [Fondo blanco puro - máximo        │
-│   contraste, sin distracciones]     │
+│  [Fondo BLANCO puro]                │
 │                                     │
 │                                     │
+│         ATORVASTATINA               │  ← 48-64pt BOLD
 │                                     │
-│         ATORVASTATINA               │  ← Letra GIGANTE
-│                                     │
-│             20 mg                   │
+│             20 mg                   │  ← 32pt
 │                                     │
 │         ───────────                 │
 │                                     │
 │          Caja de 30                 │
-│                                     │
 │                                     │
 │                                     │
 │  ┌─────────────────────────────┐   │
@@ -229,178 +269,40 @@ MediCompara
 │  │     al farmacéutico         │   │
 │  └─────────────────────────────┘   │
 │                                     │
-│                                     │
 │           [ ✕ Cerrar ]              │
 │                                     │
 └─────────────────────────────────────┘
 ```
 
-**Notas de diseño:**
-- SIN navegación, SIN distracciones
+**Notas críticas:**
 - Fondo BLANCO (legible bajo el sol)
-- Letra mínimo 48pt para el nombre
-- El empleado debe poder leerlo a 1 metro
-- Tap anywhere o botón X para cerrar
-- Bloquear auto-sleep mientras está abierta
+- Sin navegación, sin distracciones
+- Bloquear auto-sleep
+- El empleado debe leerlo a 1 metro
 
 ---
 
-### 5.4 MIS MEDICINAS
+## 7. IDENTIDAD VISUAL
 
-```
-┌─────────────────────────────────────┐
-│  💊 Mis Medicinas       [+ Agregar] │
-│                                     │
-│  ┌─────────────────────────────┐   │
-│  │  💊 Atorvastatina           │   │
-│  │     (Lipitor)               │   │
-│  │     20mg · Noche            │   │
-│  │                      $85 →  │   │
-│  └─────────────────────────────┘   │
-│                                     │
-│  ┌─────────────────────────────┐   │
-│  │  💊 Metformina              │   │
-│  │     (Glucophage)            │   │
-│  │     850mg · Con comida      │   │
-│  │                      $45 →  │   │
-│  └─────────────────────────────┘   │
-│                                     │
-│  ┌─────────────────────────────┐   │
-│  │  💊 Lisinopril              │   │
-│  │     (Prinivil)              │   │
-│  │     10mg · Mañana           │   │
-│  │                      $65 →  │   │
-│  └─────────────────────────────┘   │
-│                                     │
-│  ════════════════════════════════   │
-│                                     │
-│  📊 RESUMEN MENSUAL                 │
-│  ┌─────────────────────────────┐   │
-│  │  Costo en USA:    $1,200    │   │
-│  │  Costo en MX:       $195    │   │
-│  │  ─────────────────────────  │   │
-│  │  💰 AHORRAS:     $1,005     │   │  ← WOW moment
-│  │     (84% menos)             │   │
-│  └─────────────────────────────┘   │
-│                                     │
-├─────────────────────────────────────┤
-│  🏠    🔍    💊    📍    ⚙️        │
-└─────────────────────────────────────┘
-```
+### 7.1 Paleta de colores
 
-**Notas de diseño:**
-- Cada medicina es tappeable → va a resultado
-- Swipe para eliminar
-- Resumen de ahorro es el "WOW moment" emocional
-- Posibilidad de compartir: "Mira cuánto ahorro"
+| Uso | Color | Código |
+|-----|-------|--------|
+| Primario | Verde farmacia | #059669 |
+| Secundario | Azul profundo | #1e3a5f |
+| Acento | Naranja mexicano | #f97316 |
+| Fondo | Blanco/Crema | #fafaf9 |
+| Texto | Gris oscuro | #1f2937 |
 
----
+### 7.2 Tipografía
 
-### 5.5 FARMACIAS CERCA
-
-```
-┌─────────────────────────────────────┐
-│  📍 Farmacias Cerca                 │
-│                                     │
-│  ┌─────────────────────────────┐   │
-│  │                             │   │
-│  │      [MAPA con pins]        │   │
-│  │                             │   │
-│  │   🟢 Similares              │   │
-│  │   🔵 Guadalajara            │   │
-│  │   🟡 Del Ahorro             │   │
-│  │                             │   │
-│  └─────────────────────────────┘   │
-│                                     │
-│  Filtrar: [Todas ▼]                 │
-│                                     │
-│  ┌─────────────────────────────┐   │
-│  │ 🟢 Similares Fluvial        │   │
-│  │    📍 450m · Abierta 24hrs  │   │
-│  │    [Navegar]                │   │
-│  └─────────────────────────────┘   │
-│                                     │
-│  ┌─────────────────────────────┐   │
-│  │ 🔵 Guadalajara Centro       │   │
-│  │    📍 800m · Cierra 10pm    │   │
-│  │    [Navegar]                │   │
-│  └─────────────────────────────┘   │
-│                                     │
-├─────────────────────────────────────┤
-│  🏠    🔍    💊    📍    ⚙️        │
-└─────────────────────────────────────┘
-```
-
----
-
-## 6. IDENTIDAD VISUAL
-
-### 6.1 Concepto
-
-**"México auténtico + Confianza médica"**
-
-- Mexicanidad: Colores vibrantes, fotos reales de farmacias/calles mexicanas
-- Confianza: Limpieza, claridad, profesionalismo médico
-- Accesibilidad: Alto contraste, letra grande, simple
-
-### 6.2 Paleta de colores
-
-| Uso | Color | Código | Notas |
-|-----|-------|--------|-------|
-| Primario | Verde farmacia | #059669 | Confianza médica |
-| Secundario | Azul profundo | #1e3a5f | Profesionalismo |
-| Acento | Naranja mexicano | #f97316 | Destacar ahorros |
-| Fondo | Blanco/Crema | #fafaf9 | Legibilidad |
-| Texto | Gris oscuro | #1f2937 | Contraste |
-| Éxito | Verde claro | #22c55e | Confirmaciones |
-| Alerta | Rojo suave | #ef4444 | Advertencias |
-
-### 6.3 Tipografía
-
-| Uso | Familia | Tamaño | Peso |
-|-----|---------|--------|------|
-| Títulos | System (SF Pro / Roboto) | 24-32pt | Bold |
-| Nombre medicina MX | System | 28-36pt | Bold |
-| Modo Farmacia | System | 48-64pt | Bold |
-| Cuerpo | System | 18-20pt | Regular |
-| Mínimo legible | - | 16pt | - |
-
-### 6.4 Fondos fotográficos
-
-**Estilo:** Fotos reales de México, colores vibrantes, ambiente cálido.
-
-**Opciones sugeridas:**
-1. Fachada de farmacia mexicana colorida (verde cruz)
-2. Calle de pueblo mágico con farmacia visible
-3. Mostrador de farmacia tradicional
-4. Plaza mexicana con comercios
-5. Manos de adulto mayor con medicinas (emocional)
-
-**Tratamiento:**
-- Overlay de 40-50% con color primario
-- Blur sutil en algunas pantallas
-- Siempre priorizar legibilidad del contenido
-
----
-
-## 7. INTERACCIONES CLAVE
-
-### 7.1 Búsqueda
-- Autocomplete mientras escribe
-- Debounce de 300ms
-- Mostrar "Buscando..." con spinner
-- Resultado aparece con fade-in suave
-
-### 7.2 Modo Farmacia
-- Transición: slide-up fullscreen
-- Auto-brightness al máximo
-- Haptic feedback al abrir
-- Prevent screen sleep mientras está activo
-
-### 7.3 Guardar medicina
-- Animación de "check" satisfactoria
-- Haptic feedback de éxito
-- Toast: "Guardada en tu lista"
+| Uso | Tamaño | Peso |
+|-----|--------|------|
+| Títulos | 24-32pt | Bold |
+| Nombre medicina MX | 28-36pt | Bold |
+| Modo Farmacia | 48-64pt | Bold |
+| Cuerpo | 18-20pt | Regular |
+| Mínimo | 16pt | - |
 
 ---
 
@@ -408,61 +310,56 @@ MediCompara
 
 | Requerimiento | Implementación |
 |---------------|----------------|
-| Texto escalable | Respetar configuración de sistema |
+| Texto escalable | Respetar config sistema |
 | Alto contraste | Ratio mínimo 4.5:1 |
 | Touch targets | Mínimo 48x48pt |
 | VoiceOver/TalkBack | Labels descriptivos |
-| Daltonismo | No depender solo de color |
 
 ---
 
-## 9. ESTADOS VACÍOS Y ERRORES
+## 9. TECH STACK
 
-### Sin resultados
-"No encontramos [búsqueda]. Intenta revisar la ortografía o buscar el nombre genérico."
-
-### Lista vacía
-"Tu lista está vacía. Busca una medicina y guárdala aquí para acceso rápido."
-
-### Error de conexión
-"Sin conexión. Tu lista guardada funciona sin internet."
+```
+Frontend: Next.js + Tailwind CSS
+Deploy: Vercel
+PWA: manifest.json + service worker
+Audio: Web Speech API
+Storage: localStorage
+```
 
 ---
 
-## 10. MÉTRICAS DE ÉXITO
+## 10. BASE DE DATOS INICIAL (MVP)
+
+```javascript
+const medicamentos = [
+  { usa: 'Lipitor', mx: 'Atorvastatina', dosis: '20mg', precioMX: 85 },
+  { usa: 'Metformin', mx: 'Metformina', dosis: '850mg', precioMX: 45 },
+  { usa: 'Lisinopril', mx: 'Lisinopril', dosis: '10mg', precioMX: 65 },
+  { usa: 'Omeprazole', mx: 'Omeprazol', dosis: '20mg', precioMX: 55 },
+  { usa: 'Amlodipine', mx: 'Amlodipino', dosis: '5mg', precioMX: 50 },
+  { usa: 'Losartan', mx: 'Losartán', dosis: '50mg', precioMX: 70 },
+  { usa: 'Simvastatin', mx: 'Simvastatina', dosis: '20mg', precioMX: 75 },
+  { usa: 'Levothyroxine', mx: 'Levotiroxina', dosis: '50mcg', precioMX: 40 },
+  { usa: 'Gabapentin', mx: 'Gabapentina', dosis: '300mg', precioMX: 95 },
+  { usa: 'Hydrochlorothiazide', mx: 'Hidroclorotiazida', dosis: '25mg', precioMX: 35 },
+]
+```
+
+---
+
+## 11. MÉTRICAS DE ÉXITO
 
 | Métrica | Objetivo MVP |
 |---------|--------------|
-| Búsquedas completadas | 80%+ encuentran resultado |
-| Uso de Modo Farmacia | 50%+ de búsquedas exitosas |
-| Medicinas guardadas | Promedio 3+ por usuario |
+| Búsquedas completadas | 80%+ |
+| Uso de Modo Farmacia | 50%+ |
+| Medicinas guardadas | 3+ por usuario |
 | Retención D7 | 40%+ |
-| NPS | 50+ |
 
 ---
 
-## 11. ROADMAP
-
-### MVP (v1.0)
-- [x] Búsqueda por nombre USA
-- [x] Equivalente MX + pronunciación
-- [x] Comparativa 4 farmacias
-- [x] Modo Farmacia
-- [x] Mi lista de medicinas
-- [x] Mapa farmacias cercanas
-- [x] EN/ES toggle
-
-### v1.1
-- [ ] Escaneo código de barras
-- [ ] Notificaciones de resurtido
-
-### v2.0
-- [ ] Integración con HCRPV (recetas)
-- [ ] Recordatorios de tomar medicina
-
----
-
-**FIN DEL SPEC v1.0**
+**FIN DEL SPEC v1.1**
 
 *"Escribe tu medicina gringa, te digo cómo se llama en México y dónde es más barata."*
 
