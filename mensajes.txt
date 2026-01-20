@@ -1,1 +1,1 @@
-Abajo de Sin calculos boton "comprar 10 calculos por $10 mxn"
+De Stripe no tenemos nada configurado, correcto?
