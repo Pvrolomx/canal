@@ -1,8 +1,1 @@
-Sube un  poco mas la fuente dfe 
-- Plataforma, 
-- Botones de plataformas (o negritas)
-- Taqrifa por noche
-- Numero de noches
-- etc.
-
-En Descargar PDF  que quede "Descargar PDF de calculo desglosado"
+Todo se reflejó excepto "Descargar PDF de calculo desglosado". continúa igual
