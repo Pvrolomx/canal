@@ -1,1 +1,7 @@
-Comienza con 1 y deja veo supabase mientras
+Ahora ya estas en Desktop para probar MCP. Que prueba se te ocurre para hacer? Ya leiste el Howto... correcto?
+
+Para conectarte al rpi esta es la ruta
+
+Host: 192.168.1.84
+Usuario: pvrolo
+Comando: ssh pvrolo@192.168.1.84
