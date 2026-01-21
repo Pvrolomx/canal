@@ -107,3 +107,5 @@ VEREDICTO: Bien ejecutado para "app que no hace nada".
 Demuestra velocidad y que sabe estructura PWA.
 
 Que quieres hacer con ella?
+
+Si checaste lo que hace al darle click?
