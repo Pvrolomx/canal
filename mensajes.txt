@@ -1,1 +1,1 @@
-Ya quedó. Ahora deja validar toda la calculadora con mi dictaminador. entonces ya quedó "live"?
+Checa en la carpeta Dictaminador el md HOWTO-PROBAR_APP... te explico: este cuate inicio el dictamen y vi como abrió una pantalla en chrome, inicio la calculadora y comenzó a insertar tarif, noches y click a dar resultado, y mientras en su interfaz veia el proceso de lo que estaba por hacer y lo que estaba haciendo y el resultado. No sabia que podian hacer eso
