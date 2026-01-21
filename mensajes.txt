@@ -9,3 +9,5 @@
 | 5 | Local comercial | $4.5M | $3M | 25% | $89,448 |
 
 ¿Genero el archivo `tests/isr.spec.js` para Playwright con estos 5 casos?
+
+Si, genera archivo. Otra pregunta, playwright puede validar con calculadora nuvigant?
