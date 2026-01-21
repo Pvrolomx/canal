@@ -141,3 +141,8 @@ Perfecto. Plan:
    - "Matrix te hackeo. Es broma. O no?"
 
 Lo implemento directo en bot-ox-kardashian?
+
+Checa respuestas y dime:
+- Cuantas y cuales se repiten 
+- Cuantas son en total (sin contar los clicks fantasmas)
+- Cuantas identifican genero
