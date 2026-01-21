@@ -1,28 +1,30 @@
-**Ejemplo concreto Playwright:**
+**Sí, exactamente así.**
 
-Cuando corre `npx playwright test`:
+Ejemplo para calculadora ISR:
 
+```javascript
+test('Prueba 1 - Venta inmueble', async ({ page }) => {
+  await page.goto('https://tu-calculadora-isr.vercel.app');
+  
+  // Datos entrada
+  await page.fill('#fechaAdquisicion', '2015-03-15');
+  await page.fill('#fechaEnajenacion', '2024-06-20');
+  await page.fill('#valorAdquisicion', '1500000');
+  await page.fill('#valorEnajenacion', '3200000');
+  await page.click('#btnCalcular');
+  
+  // Verificar resultado esperado
+  expect(await page.textContent('#isrPagar')).toBe('$185,000');
+});
+
+test('Prueba 2 - Venta acciones', async ({ page }) => {
+  // ... otro escenario
+});
 ```
-Running 2 tests using 1 worker
 
-  ✓ suma 5 + 3 = 8 (1.2s)
-  ✓ suma 100 + 200 = 300 (0.8s)
+**Flujo:**
+1. Tú defines casos de prueba con datos + resultado esperado
+2. Playwright los corre automáticamente
+3. Si algo falla, te dice exactamente qué
 
-2 passed (2.5s)
-```
-
-**Qué hace internamente (en 2 segundos):**
-1. Abre Chromium headless (invisible)
-2. Navega a la URL
-3. Llena campo #num1 con '5'
-4. Llena campo #num2 con '3'
-5. Click en #btnSumar
-6. Lee resultado
-7. Compara: ¿es '8'? → ✓ PASS
-
-**El problema en RPi:** Chromium ARM tiene issues de red. Funciona mejor en PC/Mac.
-
-**Alternativa rápida:** GitHub Actions corre Playwright gratis en cada push.
-
-
-Entonces puedo darle a playwright un set the pruebas para mi calculadora de isr? Ej. Prueba 1.- datos: Fecha de adquisicion .... Fecha de enajuenacion.... Valor de adquisicion.... Valor de enajenacion .... etc., Prueba 2 ......., prueba 3 ......, eas asi?
+¿Tienes la calculadora ISR ya hecha? Te genero el suite de tests.
