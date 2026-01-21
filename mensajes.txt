@@ -406,3 +406,5 @@ MI RECOMENDACIÓN:
 - Apunta DNS de Cloudflare → Vercel
 
 ¿Quieres que te guíe paso a paso?
+
+Dime si ves adjunta inage.png y comenta (Namecheap)
