@@ -30,3 +30,5 @@ expect(await page.textContent('#gananciaNeta')).toBe('$6,100');
 
 
 Genera pero prueba en algo simple. Podrías crear una app lo mas simple posible donde puedas demostrarme lo que hace?
+
+Ahora el demo
