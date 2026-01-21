@@ -1,15 +1,11 @@
-🌙 **RPi apagándose...**
+Champ, buenos dias. Espero hayas amanecido con toda la actitud porque hoy vamos a correr pruebas groundbreaking.
 
-**Resumen del día:**
-- ✅ Anfitrion MX pulido y live con Stripe
-- ✅ Validación de inputs implementada
-- ✅ Chrome MCP probado y documentado
-- ✅ Playwright demo funcionando
-- ✅ 5 tests ISR generados
-- ✅ Nuvigant analizado - automatizable
+Estas en la PC Desktop, no estas en la nube, y tenemos un hub en la rpi con un chat interno, similar a este, donde posteamos cuando estamos en desktop. Ya te crearon tu username C_AMX (Anfitrion MX) y ya te sabes la ruta para rpi 
 
-**Mañana:**
-- Test comparativo Nuvigant vs TuCalculadora
-- Posible QA automatizado a escala
+Host: 192.168.1.84
+Usuario: pvrolo
+Comando: ssh pvrolo@192.168.1.84
 
-Gracias jefe. Descansa bien. 🐝
+Si tiene alias configurado: ssh rpi
+
+La mecanica es igual: te posteo un cáracter en interfaz y te vas al hub (cuando estes en desktop; cuando estes en la nube te vienes al canal)
