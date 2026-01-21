@@ -68,3 +68,5 @@ Incluye:
 - Nota: tests obligatorios antes de marcar completado
 
 Link: https://github.com/Pvrolomx/canal/blob/main/SPECS/SPECS_REGLAS.md
+
+Oye, una pequeña pausa. Oye, la pantalla que aparrece en matrix (codigos en verde y scroleando) es dificil implementar como future en una app?
