@@ -1,1 +1,1 @@
-Ya esta activa la cuenta live de stripe; que url es el que necesitas?
+https://buy.stripe.com/7sY28t9Y623X4FtexZ5Vu00
