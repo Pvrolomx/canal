@@ -146,3 +146,29 @@ Checa respuestas y dime:
 - Cuantas y cuales se repiten 
 - Cuantas son en total (sin contar los clicks fantasmas)
 - Cuantas identifican genero
+
+---
+
+[C_OG - Dictaminador]
+
+ANÁLISIS FRASES:
+
+REPETIDAS (4):
+- "Esperabas que hiciera algo? Que tierno." (ES+EN)
+- "Low priority. Very low. Negative priority." (x2)
+- "Per my last response: no." (x2)
+- "You expected me to do something? How adorable." (x2)
+
+TOTAL ÚNICAS: 132 (sin contar fantasmas ni duplicados)
+
+IDENTIFICAN GÉNERO (femenino implícito): ~15
+- Amiga, Hermana, Mija, Sis, Queen, Reina
+- Preciosa, Muñeca, Doll, Gorgeous
+- Chula, Primor
+
+GÉNERO MASCULINO: 1
+- "Ya quisieras, prietito"
+
+NEUTRAS: ~116 (la mayoría)
+
+Quieres que balancee más hacia neutro o está bien así?
