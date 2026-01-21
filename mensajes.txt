@@ -215,3 +215,42 @@ Dime cuales elimino/modifico.
 - Elimina 1, 11, 12
 
 Y me das la lista de los que quedam
+
+---
+
+[C_OG - Dictaminador]
+
+Hecho. Quedan 21 para neutralizar:
+
+ES (9):
+2. Hermana → Respira
+3. Mija → Sientate
+4. Chula → Estoy en mi era
+5. Cielito → Tu energia
+6. Corazon → Tu insistencia
+7. Muñeca → Tu outfit
+8. Preciosa → Tu aura
+9. Primor → Ni con todo
+10. Reina → El unico boton
+
+EN (12):
+13. Bestie → Read the room
+14. Sis → Breathe
+15. Sweetie → Sit down
+16. Hun → I'm in my era
+17. Darling → Your energy
+18. Heart → Your insistence
+19. Doll → Your persistence
+20. Gorgeous → Your aura
+21. Precious → Not even
+22. Queen → The only button
+23. Honey → You're trying
+24. Babe → You're giving
+
+ELIMINADOS:
+- Duplicados (4)
+- "Amiga, date cuenta" (1)
+- "Ya quisieras, prietito" (11)
+- "Mi ciela, estas dando" (12)
+
+Aplico cambios al repo bot-ox-kardashian?
