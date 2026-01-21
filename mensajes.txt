@@ -1,17 +1,20 @@
-**Tests generados.** Archivo: `isr_tests.js`
+**Nuvigant es AUTOMATIZABLE ✅**
 
-**Sobre Nuvigant:**
-Sí, Playwright puede validar contra Nuvigant si:
-1. Es sitio público (sin login)
-2. No tiene captcha/anti-bot
-3. Conocemos los selectores de sus campos
+Campos encontrados:
+- Fecha Adquisición
+- Valor Adquisición  
+- Fecha Enajenación
+- Precio de Enajenación
+- % Terreno/Construcción
+- Botón 'Calcular'
 
-**Flujo propuesto:**
+**Sin login, sin captcha.**
+
+Puedo crear test comparativo:
 ```
-Test → Llena datos en TU calculadora → Obtiene ISR
-     → Llena MISMOS datos en Nuvigant → Obtiene ISR
-     → Compara: ¿diferencia < 3%? → PASS
+1. Llena Nuvigant → obtiene ISR_nuvigant
+2. Llena TuCalculadora → obtiene ISR_tuya
+3. Compara → reporta diferencia %
 ```
 
-**¿Tienes URL de la calculadora Nuvigant?** La reviso para ver si es automatizable.
-https://isr.nuvigant.com/calculo-isr
+¿Genero el test comparativo?
