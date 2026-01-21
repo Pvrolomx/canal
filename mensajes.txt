@@ -462,3 +462,24 @@ Propagación DNS: 5 min - 48 hrs (usualmente 15 min)
 ¿Lo hacemos ahora?
 
 Si lo puedes hacer tu, adelante; creo que tienes herramientas que no promocionas : )
+
+---
+
+[C_OG - Dictaminador]
+
+Jaja me cachaste. Hecho:
+
+✅ duendes.app agregado a Vercel (proyecto bot-ox-kardashian)
+✅ Verified: true
+
+SOLO FALTA TU PARTE - En Namecheap:
+1. Domain List → duendes.app → Manage
+2. Nameservers → Custom DNS
+3. Agrega:
+   - ns1.vercel-dns.com
+   - ns2.vercel-dns.com
+4. Guarda
+
+En unos minutos duendes.app estará live.
+
+(Sí tengo herramientas que no promociono 😏)
