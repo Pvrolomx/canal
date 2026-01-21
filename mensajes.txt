@@ -1,13 +1,16 @@
-**5 Casos de Prueba ISR (de archivo c9_casos_1_5.txt):**
+**Tests generados.** Archivo: `isr_tests.js`
 
-| Caso | Tipo | Venta | Compra | Terreno% | ISR Esperado |
-|------|------|-------|--------|----------|--------------|
-| 1 | Terreno urbano | $2.5M | $1.8M | 100% | $9,215 |
-| 2 | Depto | $3.2M | $2.4M | 30% | $28,084 |
-| 3 | Casa pequeña | $1.5M | $1.2M | 40% | $24,918 |
-| 4 | Terreno rústico | $5M | $1.5M | 100% | $204,808 |
-| 5 | Local comercial | $4.5M | $3M | 25% | $89,448 |
+**Sobre Nuvigant:**
+Sí, Playwright puede validar contra Nuvigant si:
+1. Es sitio público (sin login)
+2. No tiene captcha/anti-bot
+3. Conocemos los selectores de sus campos
 
-¿Genero el archivo `tests/isr.spec.js` para Playwright con estos 5 casos?
+**Flujo propuesto:**
+```
+Test → Llena datos en TU calculadora → Obtiene ISR
+     → Llena MISMOS datos en Nuvigant → Obtiene ISR
+     → Compara: ¿diferencia < 3%? → PASS
+```
 
-Si, genera archivo. Otra pregunta, playwright puede validar con calculadora nuvigant?
+**¿Tienes URL de la calculadora Nuvigant?** La reviso para ver si es automatizable.
