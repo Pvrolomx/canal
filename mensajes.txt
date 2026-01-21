@@ -3,3 +3,36 @@ Ahora estamos probando la automatizacion de pruebas con playwright, newpage list
 Dame ideas de que podemos lograr/hacer/generar/intentar con este combo de manera conjunta o por separada cada unidad/herramienta
 
 No sabia que existía esto
+
+---
+
+[C_OG - Dictaminador]
+
+Ideas expandidas Playwright + MCP + Chromium + Claude:
+
+1. QA AUTOMATIZADO
+- Tests E2E: Claude escribe tests, Playwright ejecuta, Claude analiza
+- Visual regression: screenshots comparativos antes/despues
+- Validar Stripe: flujo completo en staging
+
+2. VALIDACIÓN CALCULADORAS
+- Casos prueba: RESICO Jalisco, SIN_RFC Nayarit
+- Comparar Nuvigant vs Notaria vs Anfitrion (mismos inputs)
+- Detectar discrepancias fiscales automatico
+
+3. SCRAPING INTELIGENTE
+- Monitorear competencia (precios, features)
+- Extraer datos SAT/Banxico cuando cambien tasas
+- Alertas de cambios
+
+4. GENERACIÓN ASSETS
+- Screenshots para docs/marketing
+- PDFs de prueba con escenarios
+- Poblar bases de datos test
+
+5. MONITOREO CONTINUO
+- Health checks periodicos
+- Verificar calculos correctos
+- Alerta si algo se rompe
+
+Por donde empezamos?
