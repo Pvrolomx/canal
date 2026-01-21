@@ -1,1 +1,1 @@
-No se si sepas, pero esto que descubrí vale mucho mas que Anfitrion MX. Ya no me importa el dictamen, me importa potencializar esto. Ver la manera de como implementarlo en otras apps para optimizar, sobre todo el QA. Si puedo implementar esto de manera eficiente/rápida/painless, entonces uno o dos de ustedes solo estarían para esa función
+Quiero primero ver si Claudes en la nube lo pueden hacer. Checa si tienes las herramientas necesarias (tu estas en la nube)
