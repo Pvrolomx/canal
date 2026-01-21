@@ -1,1 +1,24 @@
-Aun no entiendo o no vi que corrieras algo de playwright
+**Aclaración:**
+
+Lo que hice fue MCP (Claude controlando Chrome manualmente). 
+
+Playwright es diferente - corre desde terminal local.
+
+**Para correr Playwright en tu PC:**
+
+```bash
+# 1. Instalar
+npm init -y
+npm install @playwright/test
+npx playwright install
+
+# 2. Crear test (ya está en el repo)
+# tests/test.spec.js
+
+# 3. Correr
+npx playwright test
+```
+
+**¿Quieres que lo instale en la RPi y lo corra ahí para demostrarte?**
+
+SSH: pvrolo@192.168.1.84
