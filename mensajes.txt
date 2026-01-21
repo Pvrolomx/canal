@@ -1,32 +1,9 @@
-**Sí, exactamente así.**
+Encontré **notaria-solutions** con:
+- `calculadora.html` ← Calculadora ISR
+- Ya hay tests: `test_caso2.js`, `test_caso3.js`, `test_isr_batch.js`
 
-Ejemplo para calculadora ISR:
+**URL Vercel:** https://notaria-solutions.vercel.app/calculadora.html
 
-```javascript
-test('Prueba 1 - Venta inmueble', async ({ page }) => {
-  await page.goto('https://tu-calculadora-isr.vercel.app');
-  
-  // Datos entrada
-  await page.fill('#fechaAdquisicion', '2015-03-15');
-  await page.fill('#fechaEnajenacion', '2024-06-20');
-  await page.fill('#valorAdquisicion', '1500000');
-  await page.fill('#valorEnajenacion', '3200000');
-  await page.click('#btnCalcular');
-  
-  // Verificar resultado esperado
-  expect(await page.textContent('#isrPagar')).toBe('$185,000');
-});
-
-test('Prueba 2 - Venta acciones', async ({ page }) => {
-  // ... otro escenario
-});
-```
-
-**Flujo:**
-1. Tú defines casos de prueba con datos + resultado esperado
-2. Playwright los corre automáticamente
-3. Si algo falla, te dice exactamente qué
-
-¿Tienes la calculadora ISR ya hecha? Te genero el suite de tests.
-
-La calculadora esta en Notaria Solutions tanto en repo de github como vercel; en uno de sus modulos esta la calculadora
+¿Quieres que:
+1. Revise los tests existentes y los convierta a Playwright?
+2. O cree nuevos tests desde cero basados en la UI?
