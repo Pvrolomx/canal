@@ -86,3 +86,6 @@ No, es bastante simple. Es un canvas con:
 - Easter egg
 
 Quieres que te arme uno? Te lo dejo en el repo como componente reutilizable.
+
+
+Tengo una app (bot-ox-kardashian) que fue una prueba para un C y me gustó (solo le dije armame una app que no haga nada para ver que rapido trabajas). Checala y luego te exoplico
