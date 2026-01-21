@@ -7,3 +7,5 @@ Encontré **notaria-solutions** con:
 ¿Quieres que:
 1. Revise los tests existentes y los convierta a Playwright?
 2. O cree nuevos tests desde cero basados en la UI?
+
+Mejor aun, en el rpi hay 40 casos de calculos ISR la mayoria reales. Si puedes armar 5 casos de prueba junto con el resultado esperado, mejor. la carpeta se llama ISR 
