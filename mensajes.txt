@@ -123,3 +123,5 @@ Jajaja ya vi el JS. Es genial:
 Es humor mexicano bien ejecutado. El concepto de "app que no hace nada" pero con actitud. 
 
 Lo usamos como template de humor o le damos otro uso?
+
+Quiero usar la matrix rain como una respuesta que momentaneamente asuste al usuario, seguida de "Te asustaste, querido?" o algo asi
