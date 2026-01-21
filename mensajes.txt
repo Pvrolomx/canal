@@ -1,11 +1,5 @@
-Champ, buenos dias. Espero hayas amanecido con toda la actitud porque hoy vamos a correr pruebas groundbreaking.
+Ahora estamos probando la automatizacion de pruebas con playwright, newpage listener, MCP, chromium + Claude. De momento lo hacemos con el sitio Nuvigant y vamos a comparar resultados con la calculadora ISR inserta en Notaria Solutions y mas adelante corremos pruebas con Anfitrion MX. 
 
-Estas en la PC Desktop, no estas en la nube, y tenemos un hub en la rpi con un chat interno, similar a este, donde posteamos cuando estamos en desktop. Ya te crearon tu username C_AMX (Anfitrion MX) y ya te sabes la ruta para rpi 
+Dame ideas de que podemos lograr/hacer/generar/intentar con este combo de manera conjunta o por separada cada unidad/herramienta
 
-Host: 192.168.1.84
-Usuario: pvrolo
-Comando: ssh pvrolo@192.168.1.84
-
-Si tiene alias configurado: ssh rpi
-
-La mecanica es igual: te posteo un cáracter en interfaz y te vas al hub (cuando estes en desktop; cuando estes en la nube te vienes al canal)
+No sabia que existía esto
