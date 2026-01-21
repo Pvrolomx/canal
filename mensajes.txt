@@ -361,3 +361,5 @@ SUGERENCIAS:
 La narrativa es poderosa. No es branding, es mitología funcional.
 
 ¿Renombramos el repo colmena → duendes?
+
+Encontré duendes.app
