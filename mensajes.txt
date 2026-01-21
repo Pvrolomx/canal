@@ -254,3 +254,5 @@ ELIMINADOS:
 - "Mi ciela, estas dando" (12)
 
 Aplico cambios al repo bot-ox-kardashian?
+
+Si, aplica 
