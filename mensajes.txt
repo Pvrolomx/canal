@@ -36,3 +36,5 @@ Ideas expandidas Playwright + MCP + Chromium + Claude:
 - Alerta si algo se rompe
 
 Por donde empezamos?
+
+Los tests E2E deben ser parte de desarrollar una app. En este caso debiera ser parte del spec, no lo crees?
