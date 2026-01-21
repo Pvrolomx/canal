@@ -174,3 +174,39 @@ NEUTRAS: ~116 (la mayoría)
 Quieres que balancee más hacia neutro o está bien así?
 
 haz balance hacia neutro y dame la lista completa para ver cual elimino
+
+---
+
+[C_OG - Dictaminador]
+
+FRASES CON GÉNERO → NEUTRO (24 total):
+
+ES:
+1. Amiga, date cuenta → Date cuenta
+2. Hermana, respira → Respira
+3. Mija, sientate → Sientate
+4. Chula, estoy en mi era → Estoy en mi era
+5. Cielito, tu energia → Tu energia
+6. Corazon, tu insistencia → Tu insistencia
+7. Muñeca, tu outfit → Tu outfit
+8. Preciosa, tu aura → Tu aura
+9. Primor, ni con todo → Ni con todo
+10. Reina, el unico boton → El unico boton
+11. Ya quisieras, prietito → Ya quisieras
+12. Mi ciela, estas dando → Estas dando
+
+EN:
+13. Bestie, read the room → Read the room
+14. Sis, breathe → Breathe
+15. Sweetie, sit down → Sit down
+16. Hun, I'm in my era → I'm in my era
+17. Darling, your energy → Your energy
+18. Heart, your insistence → Your insistence
+19. Doll, your persistence → Your persistence
+20. Gorgeous, your aura → Your aura
+21. Precious, not even → Not even
+22. Queen, the only button → The only button
+23. Honey, you're trying → You're trying
+24. Babe, you're giving → You're giving
+
+Dime cuales elimino/modifico.
