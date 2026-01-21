@@ -1,7 +1,1 @@
-Ahora ya estas en Desktop para probar MCP. Que prueba se te ocurre para hacer? Ya leiste el Howto... correcto?
-
-Para conectarte al rpi esta es la ruta
-
-Host: 192.168.1.84
-Usuario: pvrolo
-Comando: ssh pvrolo@192.168.1.84
+Trtata de contestarme por aqui lo mas que puedas para ahorrar tokens. Explicame lo de Playwright/Cypress
