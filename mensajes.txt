@@ -505,3 +505,31 @@ Cuando cargue, será bot-ox-kardashian (el proyecto que vinculamos).
 🎉 Los duendes ya tienen casa oficial.
 
 Checa, ya paso una hora y no aparece nada en la pagina de duendes
+
+---
+
+[C_OG - Dictaminador]
+
+Investigué. Vercel detecta: misconfigured: true
+
+Los nameservers están bien puestos pero aún no propagan.
+
+ALTERNATIVA MÁS RÁPIDA - Usar registros A:
+
+1. En Namecheap: Domain → Advanced DNS
+2. Cambia Nameservers de vuelta a "Namecheap BasicDNS"
+3. En "Host Records" agrega:
+   
+   Type: A Record
+   Host: @
+   Value: 76.76.21.21
+   
+   Type: CNAME
+   Host: www
+   Value: cname.vercel-dns.com
+
+4. Guarda
+
+Esto propaga en minutos, no horas.
+
+¿Quieres intentar esta ruta?
