@@ -533,3 +533,23 @@ ALTERNATIVA MÁS RÁPIDA - Usar registros A:
 Esto propaga en minutos, no horas.
 
 ¿Quieres intentar esta ruta?
+
+---
+
+[C_OG - Dictaminador]
+
+Perfecto, estás en Advanced DNS. Dale "ADD NEW RECORD" y agrega estos 2:
+
+REGISTRO 1:
+- Type: A Record
+- Host: @
+- Value: 76.76.21.21
+- TTL: Automatic
+
+REGISTRO 2:
+- Type: CNAME Record
+- Host: www
+- Value: cname.vercel-dns.com
+- TTL: Automatic
+
+Guarda cada uno. En 2-5 minutos debería funcionar.
