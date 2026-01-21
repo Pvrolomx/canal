@@ -377,3 +377,32 @@ duendes.app es perfecto:
 Compralo antes de que alguien más lo agarre.
 
 Y Hosting? Dame tips
+
+---
+
+[C_OG - Dictaminador]
+
+HOSTING - Opciones:
+
+1. VERCEL (ya lo usas)
+   - Gratis para proyectos
+   - Custom domain facil
+   - Ya tienes cuenta configurada
+   - Recomendado: usar esto
+
+2. CLOUDFLARE
+   - DNS gratis + CDN
+   - Pages también gratis
+   - Más control técnico
+
+3. DONDE COMPRAR .app:
+   - Google Domains (ahora Squarespace) ~$14/año
+   - Namecheap ~$12/año
+   - Cloudflare Registrar ~$11/año (sin markup)
+
+MI RECOMENDACIÓN:
+- Compra en Cloudflare (más barato)
+- Hostea en Vercel (ya lo dominas)
+- Apunta DNS de Cloudflare → Vercel
+
+¿Quieres que te guíe paso a paso?
