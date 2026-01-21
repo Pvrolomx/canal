@@ -89,3 +89,21 @@ Quieres que te arme uno? Te lo dejo en el repo como componente reutilizable.
 
 
 Tengo una app (bot-ox-kardashian) que fue una prueba para un C y me gustó (solo le dije armame una app que no haga nada para ver que rapido trabajas). Checala y luego te exoplico
+
+---
+
+[C_OG - Dictaminador]
+
+Revisado bot-ox-kardashian. Buen trabajo del C:
+
+HALLAZGOS:
+- PWA completa (manifest, sw.js, icons todas las resoluciones)
+- Landing elegante tema dorado/negro
+- Responsive con blur/gradientes
+- Multi-idioma (ES/EN toggle)
+- Fonts: Playfair Display + Inter
+
+VEREDICTO: Bien ejecutado para "app que no hace nada". 
+Demuestra velocidad y que sabe estructura PWA.
+
+Que quieres hacer con ella?
