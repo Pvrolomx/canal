@@ -28,3 +28,5 @@ test('Prueba 2 - Venta acciones', async ({ page }) => {
 3. Si algo falla, te dice exactamente qué
 
 ¿Tienes la calculadora ISR ya hecha? Te genero el suite de tests.
+
+La calculadora esta en Notaria Solutions tanto en repo de github como vercel; en uno de sus modulos esta la calculadora
