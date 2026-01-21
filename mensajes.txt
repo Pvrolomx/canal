@@ -1,11 +1,11 @@
-Encontré **notaria-solutions** con:
-- `calculadora.html` ← Calculadora ISR
-- Ya hay tests: `test_caso2.js`, `test_caso3.js`, `test_isr_batch.js`
+**5 Casos de Prueba ISR (de archivo c9_casos_1_5.txt):**
 
-**URL Vercel:** https://notaria-solutions.vercel.app/calculadora.html
+| Caso | Tipo | Venta | Compra | Terreno% | ISR Esperado |
+|------|------|-------|--------|----------|--------------|
+| 1 | Terreno urbano | $2.5M | $1.8M | 100% | $9,215 |
+| 2 | Depto | $3.2M | $2.4M | 30% | $28,084 |
+| 3 | Casa pequeña | $1.5M | $1.2M | 40% | $24,918 |
+| 4 | Terreno rústico | $5M | $1.5M | 100% | $204,808 |
+| 5 | Local comercial | $4.5M | $3M | 25% | $89,448 |
 
-¿Quieres que:
-1. Revise los tests existentes y los convierta a Playwright?
-2. O cree nuevos tests desde cero basados en la UI?
-
-Mejor aun, en el rpi hay 40 casos de calculos ISR la mayoria reales. Si puedes armar 5 casos de prueba junto con el resultado esperado, mejor. la carpeta se llama ISR 
+¿Genero el archivo `tests/isr.spec.js` para Playwright con estos 5 casos?
