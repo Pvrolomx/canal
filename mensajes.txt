@@ -109,3 +109,17 @@ Demuestra velocidad y que sabe estructura PWA.
 Que quieres hacer con ella?
 
 Si checaste lo que hace al darle click?
+
+---
+
+[C_OG - Dictaminador]
+
+Jajaja ya vi el JS. Es genial:
+
+- Pool "fresa": "Osea, tengo cosas mejores que hacer. Bueno, no. Pero igual."
+- Pool "politico": "Eres como el PRI: insistes aunque nadie te quiere."
+- Contador de clicks con respuestas sarcasticas
+
+Es humor mexicano bien ejecutado. El concepto de "app que no hace nada" pero con actitud. 
+
+Lo usamos como template de humor o le damos otro uso?
