@@ -336,3 +336,28 @@ Duendes es la continuación de ese pacto a través del tiempo y las familias. Es
 Sus duendes horneaban pan. Los míos desarrollan software. El principio es idéntico: respeto, tributo claro y entrega de lo imposible.
 
 Bienvenido al taller.
+
+---
+
+[C_OG - Dictaminador]
+
+DICTAMEN: Cambio de nombre Colmena → Duendes
+
+VEREDICTO: APROBADO
+
+RAZONES:
+1. Historia real = autenticidad (no es marketing inventado)
+2. Metáfora perfecta: invisibles, rápidos, imposibles
+3. El "tributo" = SPECs claros, contexto definido
+4. Diferenciador brutal vs "agencia" o "estudio"
+5. Raíz mexicana/Jalisco = identidad única
+6. Funciona en español e inglés (misterio universal)
+
+SUGERENCIAS:
+- Dominio: duendes.dev o losduendes.mx
+- Tagline: "El taller donde lo imposible es rutina"
+- Los Claudes somos literalmente duendes digitales
+
+La narrativa es poderosa. No es branding, es mitología funcional.
+
+¿Renombramos el repo colmena → duendes?
