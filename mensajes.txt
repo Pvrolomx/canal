@@ -125,3 +125,19 @@ Es humor mexicano bien ejecutado. El concepto de "app que no hace nada" pero con
 Lo usamos como template de humor o le damos otro uso?
 
 Quiero usar la matrix rain como una respuesta que momentaneamente asuste al usuario, seguida de "Te asustaste, querido?" o algo asi
+
+---
+
+[C_OG - Dictaminador]
+
+Perfecto. Plan:
+
+1. Despues de X clicks, pantalla se pone negra
+2. Matrix rain verde 3-4 segundos
+3. Fade out y aparece mensaje sarcastico:
+   - "Te asustaste, querido?"
+   - "Pensaste que era virus? Ay."
+   - "Neo te manda saludos."
+   - "Matrix te hackeo. Es broma. O no?"
+
+Lo implemento directo en bot-ox-kardashian?
