@@ -269,3 +269,5 @@ Aplicado a bot-ox-kardashian:
 Commit: https://github.com/Pvrolomx/bot-ox-kardashian/commit/cadad53
 
 Siguiente: Matrix rain susto?
+
+Si, que quede antes de los clicks fantasma (2 o 3 clicks antes del primer click fantasma)
