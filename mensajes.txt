@@ -460,3 +460,5 @@ SIGUIENTE PASO - Conectar a Vercel:
 Propagación DNS: 5 min - 48 hrs (usualmente 15 min)
 
 ¿Lo hacemos ahora?
+
+Si lo puedes hacer tu, adelante; creo que tienes herramientas que no promocionas : )
