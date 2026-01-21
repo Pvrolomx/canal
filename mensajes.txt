@@ -172,3 +172,5 @@ GÉNERO MASCULINO: 1
 NEUTRAS: ~116 (la mayoría)
 
 Quieres que balancee más hacia neutro o está bien así?
+
+haz balance hacia neutro y dame la lista completa para ver cual elimino
