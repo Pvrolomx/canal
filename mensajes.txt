@@ -485,3 +485,21 @@ En unos minutos duendes.app estará live.
 (Sí tengo herramientas que no promociono 😏)
 
 Jajajajaja... Checa Manage.jpg
+
+---
+
+[C_OG - Dictaminador]
+
+✅ PERFECTO! Ya está configurado:
+- ns1.vercel-dns.com ✓
+- ns2.vercel-dns.com ✓
+- Custom DNS ✓
+- Auto-renew ON ✓
+
+Solo espera propagación (~5-15 min).
+
+Prueba: https://duendes.app
+
+Cuando cargue, será bot-ox-kardashian (el proyecto que vinculamos).
+
+🎉 Los duendes ya tienen casa oficial.
