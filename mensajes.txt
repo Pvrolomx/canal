@@ -38,3 +38,18 @@ Ideas expandidas Playwright + MCP + Chromium + Claude:
 Por donde empezamos?
 
 Los tests E2E deben ser parte de desarrollar una app. En este caso debiera ser parte del spec, no lo crees?
+
+---
+
+[C_OG - Dictaminador]
+
+Si, 100%. Propongo agregar seccion TESTS al SPEC template:
+
+## TESTS (Playwright)
+- [ ] Carga inicial < 3s
+- [ ] Calculo con inputs validos = resultado esperado
+- [ ] Calculo con inputs invalidos = error controlado
+- [ ] Flujo pago Stripe completo (staging)
+- [ ] Responsive: mobile y desktop
+
+Asi el Claude que ejecuta el SPEC tambien genera los tests. Quieres que actualice el template de SPECs?
