@@ -55,3 +55,16 @@ Si, 100%. Propongo agregar seccion TESTS al SPEC template:
 Asi el Claude que ejecuta el SPEC tambien genera los tests. Quieres que actualice el template de SPECs?
 
 Entonces arma una carpeta SPECS y dentrto el archivo REGLAS_SPECS o SPECS_REGLAS por si mas adelante le agregamos mas reglas o modificamos esta
+
+---
+
+[C_OG - Dictaminador]
+
+Hecho. Creado: SPECS/SPECS_REGLAS.md
+
+Incluye:
+- Estructura obligatoria (objetivo, stack, funcionalidad, UI, tests, criterios)
+- Sección TESTS con checklist Playwright
+- Nota: tests obligatorios antes de marcar completado
+
+Link: https://github.com/Pvrolomx/canal/blob/main/SPECS/SPECS_REGLAS.md
