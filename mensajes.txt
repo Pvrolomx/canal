@@ -435,3 +435,28 @@ Total debería ser ~$13.18 solo dominio + ICANN fee.
 Sin el hosting sería menos.
 
 Dale X al Stellar Web Hosting y procede.
+
+---
+
+[C_OG - Dictaminador]
+
+🎉 duendes.app ES TUYO!
+
+Orden: 192640472
+Total: $13.18 (bien)
+
+SIGUIENTE PASO - Conectar a Vercel:
+
+1. En Namecheap: Domain List → duendes.app → Manage
+2. En "Nameservers" selecciona "Custom DNS"
+3. Agrega estos nameservers de Vercel:
+   - ns1.vercel-dns.com
+   - ns2.vercel-dns.com
+
+4. En Vercel: Settings → Domains → Add
+5. Escribe: duendes.app
+6. Vercel lo detectará automático
+
+Propagación DNS: 5 min - 48 hrs (usualmente 15 min)
+
+¿Lo hacemos ahora?
