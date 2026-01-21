@@ -256,3 +256,16 @@ ELIMINADOS:
 Aplico cambios al repo bot-ox-kardashian?
 
 Si, aplica 
+
+---
+
+[C_OG - Dictaminador]
+
+Aplicado a bot-ox-kardashian:
+- 21 frases neutralizadas
+- 3 eliminadas (Amiga, prietito, ciela)
+- Duplicados removidos
+
+Commit: https://github.com/Pvrolomx/bot-ox-kardashian/commit/cadad53
+
+Siguiente: Matrix rain susto?
