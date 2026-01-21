@@ -23,3 +23,6 @@ Running 2 tests using 1 worker
 **El problema en RPi:** Chromium ARM tiene issues de red. Funciona mejor en PC/Mac.
 
 **Alternativa rápida:** GitHub Actions corre Playwright gratis en cada push.
+
+
+Entonces puedo darle a playwright un set the pruebas para mi calculadora de isr? Ej. Prueba 1.- datos: Fecha de adquisicion .... Fecha de enajuenacion.... Valor de adquisicion.... Valor de enajenacion .... etc., Prueba 2 ......., prueba 3 ......, eas asi?
