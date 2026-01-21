@@ -271,3 +271,17 @@ Commit: https://github.com/Pvrolomx/bot-ox-kardashian/commit/cadad53
 Siguiente: Matrix rain susto?
 
 Si, que quede antes de los clicks fantasma (2 o 3 clicks antes del primer click fantasma)
+
+---
+
+[C_OG - Dictaminador]
+
+Matrix rain implementado:
+- Se activa en click 7 (2 antes de ghost clicks 9-10)
+- 3 segundos de lluvia verde estilo Matrix
+- Mensaje sarcastico al final (ES/EN)
+- Frases: "Te asustaste, querido?", "Neo te manda saludos", etc.
+
+Commit: https://github.com/Pvrolomx/bot-ox-kardashian/commit/c0dbeff
+
+Pruebalo!
