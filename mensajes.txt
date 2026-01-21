@@ -210,3 +210,8 @@ EN:
 24. Babe, you're giving → You're giving
 
 Dime cuales elimino/modifico.
+
+- Elimina duplicados
+- Elimina 1, 11, 12
+
+Y me das la lista de los que quedam
