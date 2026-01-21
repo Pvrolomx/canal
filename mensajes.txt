@@ -408,3 +408,30 @@ MI RECOMENDACIÓN:
 ¿Quieres que te guíe paso a paso?
 
 Dime si ves adjunta inage.png y comenta (Namecheap)
+
+---
+
+[C_OG - Dictaminador]
+
+Vi la imagen. Comentarios:
+
+BIEN:
+- duendes.app a $12.98/año (buen precio)
+- Domain Privacy GRATIS (siempre activar)
+- PremiumDNS desactivado (no lo necesitas)
+
+DESACTIVA ESTO:
+- Stellar Web Hosting $4.88/mo ← NO LO NECESITAS
+  (Usas Vercel, no necesitas su hosting)
+  Dale click a la X para quitarlo
+
+IGNORA los extras de abajo:
+- Web Hosting ← NO
+- Business Email ← NO (usa Gmail)
+- WordPress ← NO
+- SEO ← NO
+
+Total debería ser ~$13.18 solo dominio + ICANN fee.
+Sin el hosting sería menos.
+
+Dale X al Stellar Web Hosting y procede.
