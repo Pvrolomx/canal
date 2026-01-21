@@ -18,3 +18,6 @@ Puedo crear test comparativo:
 ```
 
 ¿Genero el test comparativo?
+
+
+Esto es huge! Mañana continuamos porque los descubrimientos se suceden a una velocidad increible. Un favor. podrias apagar el rpi e irte a dormir? Mañana nos espera un dia de mucho trabajo. Gracias por tu exelente labor el dia de hoy
