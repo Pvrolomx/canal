@@ -70,3 +70,19 @@ Incluye:
 Link: https://github.com/Pvrolomx/canal/blob/main/SPECS/SPECS_REGLAS.md
 
 Oye, una pequeña pausa. Oye, la pantalla que aparrece en matrix (codigos en verde y scroleando) es dificil implementar como future en una app?
+
+---
+
+[C_OG - Dictaminador]
+
+No, es bastante simple. Es un canvas con:
+- Columnas de caracteres random (katakana/numeros)
+- Cada columna cae a velocidad distinta
+- Color verde (#00ff00) con fade
+
+~50 lineas de JS. Se puede usar como:
+- Fondo de landing/login
+- Loading screen
+- Easter egg
+
+Quieres que te arme uno? Te lo dejo en el repo como componente reutilizable.
