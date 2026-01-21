@@ -1,1 +1,2 @@
 Dame un ejemoplo concreto de que sucede cuando playwright corre. Digamos con la sumadora que creaste
+Estas tardanjdo en tus respuestas y eso gasta muchos tokens
