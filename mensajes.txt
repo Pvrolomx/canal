@@ -503,3 +503,5 @@ Prueba: https://duendes.app
 Cuando cargue, será bot-ox-kardashian (el proyecto que vinculamos).
 
 🎉 Los duendes ya tienen casa oficial.
+
+Checa, ya paso una hora y no aparece nada en la pagina de duendes
