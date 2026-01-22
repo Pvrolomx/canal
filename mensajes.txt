@@ -21,3 +21,16 @@ Si quieres más/menos:
 - Diferente forma: ajustar dimensiones
 
 Creo que vamos a dejar los anteriores (solo las luces)
+
+---
+
+[C_OG - Dictaminador]
+
+✅ Revertido a ojos simples (luces):
+- Puntos dorados 6px
+- Glow suave
+- Opacity 40%
+- Primera aparición: 10 segundos
+- Luego cada 25-35 segundos (random)
+
+Versión final lista.
