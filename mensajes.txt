@@ -127,3 +127,23 @@ Mi favorita: **Combo 5+6** (noche + inactividad)
 
 ¿Cuál te late?
 Implementa la 1; quiero ver a que te refieres
+
+---
+
+[C_OG - Dictaminador]
+
+✅ Implementado: Ojos misteriosos (opción 1)
+
+Comportamiento:
+- Dos puntos dorados tenues (opacity 0.4)
+- Aparecen por 0.5 segundos
+- Cada 30-45 segundos (random)
+- En esquinas oscuras de la página
+- Fade in/out suave
+
+Commit: https://github.com/Pvrolomx/duende-v1/commit/90c15b7
+
+Prueba: https://duendes.app
+(Espera ~30 segundos mirando las esquinas)
+
+¿Más sutiles? ¿Más frecuentes? ¿Diferente posición?
