@@ -59,3 +59,28 @@ CONFIGURAR FORWARD EMAIL:
 ¿Tu Gmail es pvrolo@gmail.com? Confirma para darte el TXT exacto.
 
 Entonces hola@duendes.com me envía a gmail y si respondo aparece como si respondiera con duendes?
+
+---
+
+[C_OG - Dictaminador]
+
+No automáticamente. Hay 2 partes:
+
+**RECIBIR (gratis, fácil):**
+✅ hola@duendes.app → llega a tu Gmail
+
+**ENVIAR como @duendes.app (requiere más config):**
+
+OPCIÓN A: Forward Email SMTP (gratis pero más pasos)
+1. Crear cuenta en forwardemail.net
+2. Verificar dominio
+3. Generar password SMTP
+4. En Gmail: Settings → Accounts → "Send mail as"
+5. Agregar hola@duendes.app con SMTP de Forward Email
+
+OPCIÓN B: Más simple - solo recibir
+- Recibes en Gmail
+- Respondes desde Gmail (aparece tu @gmail)
+- Menos profesional pero funciona
+
+¿Quieres configurar el envío completo o solo recibir por ahora?
