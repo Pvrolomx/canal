@@ -553,3 +553,5 @@ REGISTRO 2:
 - TTL: Automatic
 
 Guarda cada uno. En 2-5 minutos debería funcionar.
+
+Checa imagen; sigue sin funcionar y ya pasaron cerca de 10 minutos
