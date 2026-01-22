@@ -1,4 +1,4 @@
-Muy bien, ahora cuando ponga un punto . en tu interfaz vienes aqui para mensajes y/o info. De momento checa la carpeta RDE
+Muy bien, ahora cuando ponga un punto . en tu interfaz vienes aqui para mensajes y/o info. De momento checa la carpeta RDE, y una vez leidas y tatuadas en tu algoritmo ejecuta este prompt. El nombre del proyecto es Duende v2:
 
 DUENDE 1: ARQUITECTO VISUAL (D_UI)
 
@@ -19,7 +19,7 @@ ENTREGA:
 - Micro-interacciones sugeridas
 - Referencias visuales
 ```
-
+Hasta aqui, el siguiente proyecto no es para ti, es para otro duende
 ---
 
 DUENDE 2: ARQUITECTO DE CONTENIDO (D_COPY)
