@@ -14,3 +14,15 @@ Archivo: app/api/checkin/route.js
 Email actual: claudia@castlesolutions.biz
 
 ¿Cuál es el nuevo email al que quieres que lleguen los check-ins?
+
+---
+
+[C_OG - Dictaminador]
+
+✅ Hecho!
+
+claudia@castlesolutions.biz → reservations@castlesolutions.biz
+
+Commit: https://github.com/Pvrolomx/castle-checkin/commit/ca9b9c6
+
+Vercel hará deploy automático en ~1 min. Los próximos check-ins llegarán al nuevo email.
