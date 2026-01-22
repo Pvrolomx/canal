@@ -31,3 +31,35 @@ Mi recomendación: **Zoho Mail** (gratis, enviar y recibir)
 
 ¿Cuál prefieres?
 Zoho
+
+---
+
+[C_OG - Dictaminador]
+
+CONFIGURAR ZOHO MAIL:
+
+**PASO 1: Crear cuenta Zoho**
+1. Ve a: https://www.zoho.com/mail/zohomail-pricing.html
+2. Selecciona "Forever Free Plan"
+3. Click "Sign Up Now"
+4. Ingresa: duendes.app como dominio
+
+**PASO 2: Verificar dominio**
+Zoho te dará un código TXT. En Namecheap:
+- Advanced DNS → Add TXT Record
+- Host: @
+- Value: (el código que te da Zoho)
+
+**PASO 3: Configurar MX Records**
+En Namecheap, agrega estos MX records:
+
+| Host | Value | Priority |
+|------|-------|----------|
+| @ | mx.zoho.com | 10 |
+| @ | mx2.zoho.com | 20 |
+| @ | mx3.zoho.com | 50 |
+
+**PASO 4: Crear hola@duendes.app**
+En Zoho Mail dashboard, crear el usuario.
+
+¿Ya tienes cuenta Zoho o empezamos desde cero?
