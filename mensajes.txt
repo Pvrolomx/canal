@@ -84,3 +84,32 @@ SOLO FALTA TU PARTE - En Namecheap:
 En 2-5 min: https://astro4.duendes.app estará live.
 
 Ya. Y para configurar el email hola@duendes.app?
+
+---
+
+[C_OG - Dictaminador]
+
+Para hola@duendes.app tienes opciones:
+
+**OPCIÓN 1: Namecheap Email Forwarding (GRATIS)**
+- Reenvía hola@duendes.app → tu Gmail
+- Solo recibir, no enviar como @duendes.app
+- En Namecheap: Domain → Redirect Email
+- Pero... requiere nameservers de Namecheap (no Vercel)
+
+**OPCIÓN 2: Cloudflare Email Routing (GRATIS)**
+- Reenvía a tu Gmail
+- Solo recibir
+- Requiere mover DNS a Cloudflare
+
+**OPCIÓN 3: Zoho Mail (GRATIS 1 usuario)**
+- Enviar Y recibir como hola@duendes.app
+- Configurar MX records en DNS
+
+**OPCIÓN 4: Google Workspace (~$6/mes)**
+- Gmail completo con @duendes.app
+- El más profesional
+
+Mi recomendación: **Zoho Mail** (gratis, enviar y recibir)
+
+¿Cuál prefieres?
