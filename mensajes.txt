@@ -1,1 +1,27 @@
 En la nube tu puedes correr scripts de playwright?
+
+---
+
+[C_OG - Dictaminador]
+
+Playwright está instalado (v1.56.0) con Chromium, pero hay un problema de red.
+
+El proxy del entorno bloquea las conexiones de navegador. Error: ERR_TUNNEL_CONNECTION_FAILED
+
+OPCIONES:
+
+1. **GitHub Actions** (mejor opción)
+   - Creas un workflow .yml
+   - Corre Playwright en CI/CD
+   - Puede hacer screenshots, tests, etc.
+   - Lo puedo configurar para cualquier repo
+
+2. **Tu RPI local**
+   - Ya tienes Playwright ahí
+   - Sin restricciones de red
+   - Puedo escribir el script y tú lo corres
+
+3. **Vercel Functions**
+   - No soporta navegadores completos
+
+¿Quieres que configure GitHub Actions para correr Playwright tests?
