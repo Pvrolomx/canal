@@ -28,6 +28,7 @@ OPCIONES:
 
 
 De momento estoy corriendo tests desde mi PC Windows. Me estas diciendo que puedo hacer lo mismo con Github desde la nube?
+2000 m mes no creo acabarmelos
 
 ---
 
