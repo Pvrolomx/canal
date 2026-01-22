@@ -131,3 +131,5 @@ jobs:
 5. Commit
 
 También necesitas crear `playwright.config.ts` y tests. ¿Lo haces y luego yo agrego los tests?
+
+Medicompara ya quedó. Ahora debes actualizar el token de github. Checa en chat de CD1d_UI, le acabo de dar token con workflow (actualicé el que usamos en github)
