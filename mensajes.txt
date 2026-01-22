@@ -55,3 +55,5 @@ STACK PROPUESTO:
 - Dominio: Lo que ella quiera
 
 ¿Quieres que arme un MVP con Opción B?
+
+Arma el SPEC para el MVP y recuerda playwright y nombre MPM-Psi
