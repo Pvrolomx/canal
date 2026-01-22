@@ -19,3 +19,5 @@ Si quieres más/menos:
 - Más grande: aumentar tamaño
 - Sin pupila: quitar el ::after
 - Diferente forma: ajustar dimensiones
+
+Creo que vamos a dejar los anteriores (solo las luces)
