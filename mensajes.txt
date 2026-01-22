@@ -65,3 +65,33 @@ En Zoho Mail dashboard, crear el usuario.
 ¿Ya tienes cuenta Zoho o empezamos desde cero?
 
 No tienen plan gratis
+
+---
+
+[C_OG - Dictaminador]
+
+Tienes razón, Zoho quitó el plan gratis en 2023. Alternativas:
+
+**OPCIÓN A: Cloudflare Email Routing (GRATIS)**
+- Reenvía hola@duendes.app → tu Gmail
+- Para ENVIAR como @duendes.app: usa Gmail "Send as" con SMTP externo
+- Requiere mover DNS a Cloudflare
+
+**OPCIÓN B: ImprovMX (GRATIS)**
+- Forwarding gratis hasta 25 aliases
+- SMTP para enviar: $9/mes
+- Solo agregar MX records
+
+**OPCIÓN C: Forward Email (GRATIS)**
+- Open source
+- Forwarding ilimitado
+- Agrega MX + TXT records
+
+**OPCIÓN D: Gmail + Namecheap Forwarding**
+- Forward en Namecheap gratis
+- Recibir en Gmail
+- Enviar con Gmail alias (menos profesional)
+
+Mi nueva recomendación: **ImprovMX** o **Forward Email**
+
+¿Cuál probamos?
