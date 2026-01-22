@@ -143,3 +143,31 @@ Medicompara ya quedó. Ahora debes actualizar el token de github. Checa en chat 
 ✅ Medicompara workflow confirmado.
 
 ¿Sigo con la configuración completa de Playwright para medicompara y mi-salud-pv?
+
+---
+
+[C_OG - Dictaminador]
+
+✅ PLAYWRIGHT CONFIGURADO EN AMBOS REPOS
+
+**MEDICOMPARA:**
+- ✅ .github/workflows/playwright.yml
+- ✅ playwright.config.ts
+- ✅ tests/basic.spec.ts
+- ✅ package.json actualizado con @playwright/test
+
+**MI-SALUD-PV:**
+- ✅ .github/workflows/playwright.yml
+- ✅ playwright.config.ts
+- ✅ tests/basic.spec.ts
+- ✅ package.json actualizado con @playwright/test
+
+Los workflows correrán automáticamente en cada push a main.
+También puedes ejecutarlos manualmente desde Actions → workflow_dispatch.
+
+Tests básicos incluidos:
+- Verifica que página carga
+- Verifica título
+- Verifica elementos visibles
+
+¿Quieres que agregue tests más específicos para cada app?
