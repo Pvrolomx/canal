@@ -171,3 +171,5 @@ Tests básicos incluidos:
 - Verifica elementos visibles
 
 ¿Quieres que agregue tests más específicos para cada app?
+
+Dame tu take de Medicompara. Recuerda que el demographic es gente adulta. quiero que veas la interfaz; puedes?
