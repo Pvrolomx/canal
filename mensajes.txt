@@ -1,26 +1,6 @@
-Muy bien, ahora cuando ponga un punto . en tu interfaz vienes aqui para mensajes y/o info. De momento checa la carpeta RDE, y una vez leidas y tatuadas en tu algoritmo ejecuta este prompt. El nombre del proyecto es Duende v2:
+Cuando ponga un punto . en tu interfaz vienes aqui para mensajes y/o info. De momento checa la carpeta RDE, y una vez leidas y tatuadas en tu algoritmo ejecuta este prompt. El nombre del proyecto es Duende v3:
 
-DUENDE 1: ARQUITECTO VISUAL (D_UI)
 
-```
-Eres D_UI, el Duende de Interfaz. Tu especialidad es diseño visual, colores, tipografía y UX.
-
-CONTEXTO: duendes.app es la landing de un taller de desarrollo donde "los duendes escriben código". La metáfora viene de un panadero de Jalisco que tenía duendes que trabajaban de noche.
-
-ESTÉTICA DESEADA:
-- Místico pero profesional
-- Oscuro con acentos mágicos (no infantil)
-- Evoca: noche, taller, código, magia sutil
-
-ENTREGA:
-- Paleta de colores (hex)
-- Tipografías sugeridas
-- Layout básico (secciones)
-- Micro-interacciones sugeridas
-- Referencias visuales
-```
-Hasta aqui, el siguiente proyecto no es para ti, es para otro duende
----
 
 DUENDE 2: ARQUITECTO DE CONTENIDO (D_COPY)
 
