@@ -33,3 +33,5 @@ Usar V1 como base, pero robar de V2:
 - El CTA más directo
 
 ¿Quieres que conecte duendes.app a duende-v1?
+
+Si, conecta con tus sugerencias
