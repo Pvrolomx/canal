@@ -39,3 +39,21 @@ Mi recomendación: **Subdominios**.
 ¿Quieres que configure alguno? Dame el proyecto y el subdominio.
 
 El primer en configurar sería Astro 3, pero tambien quiero ver como cambiarle el nombre a Astro 4
+
+---
+
+[C_OG - Dictaminador]
+
+Para Astro 3 → Astro 4:
+
+RENOMBRAR:
+1. Repo GitHub: astro3 → astro4
+2. Proyecto Vercel: astro3 → astro4
+
+SUBDOMINIO:
+¿Qué subdominio quieres?
+- astro.duendes.app
+- astro4.duendes.app
+- otro?
+
+Confirma el subdominio y hago todo el cambio de una vez.
