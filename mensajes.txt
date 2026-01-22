@@ -86,3 +86,5 @@ DISEÑO:
 - Target: adultos 25-55
 
 ¿Inicio desarrollo o necesitas ajustes al SPEC?
+
+Se lo bien que trabajas pero ya tienes bastante carga y te me puedes quedar en el intento; mejor se lo doy a D2
