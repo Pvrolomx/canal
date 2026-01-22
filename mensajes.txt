@@ -28,3 +28,17 @@ Commit: https://github.com/Pvrolomx/castle-checkin/commit/ca9b9c6
 Vercel hará deploy automático en ~1 min. Los próximos check-ins llegarán al nuevo email.
 
 Sigue llegando a claudia@... checa de nuevo (intente refresh y en mi cel)
+
+---
+
+[C_OG - Dictaminador]
+
+Encontré el problema: había 2 lugares donde se enviaba el email.
+
+1. ✅ app/api/checkin/route.js (ya corregido)
+2. ❌ app/checkin/page.js (le faltaba el campo "to")
+
+Ya corregí el segundo:
+Commit: https://github.com/Pvrolomx/castle-checkin/commit/2056f4c
+
+Espera 1 min para el deploy y prueba de nuevo.
