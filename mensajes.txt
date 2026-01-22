@@ -19,6 +19,4 @@ ENTREGA:
 - Tagline final
 ```
 
----
 
-¿Los pruebas y me dices qué te dan?
