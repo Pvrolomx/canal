@@ -35,3 +35,21 @@ Usar V1 como base, pero robar de V2:
 ¿Quieres que conecte duendes.app a duende-v1?
 
 Si, conecta con tus sugerencias
+
+---
+
+[C_OG - Dictaminador]
+
+✅ Hecho! duendes.app ahora conectado a duende-v1
+
+CAMBIOS APLICADOS:
+1. ✅ Nav con blur y borde dorado sutil
+2. ✅ Sección "El Proceso" con 3 pasos:
+   - 01: Cuéntanos tu idea
+   - 02: Los duendes trabajan
+   - 03: Entrega imposible
+3. ✅ CTA mejorado: "¿Listo para invocar?" + "Iniciar el Pacto"
+
+Commit: https://github.com/Pvrolomx/duende-v1/commit/7d7acf3
+
+Vercel desplegará en ~1 min. Prueba: https://duendes.app
