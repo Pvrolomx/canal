@@ -1,87 +1,4 @@
-Y para publicar las apps a duendes.app? Como se haría sin romper la portada?
 
----
-
-[C_OG - Dictaminador]
-
-Buena pregunta. Opciones:
-
-**OPCIÓN 1: SUBDOMINIOS (Recomendado)**
-```
-duendes.app          → Landing (duende-v1)
-anfitrion.duendes.app → Calculadora Airbnb
-castle.duendes.app    → Castle Check-in
-botox.duendes.app     → Bot-ox Kardashian
-```
-
-Ventajas:
-- Cada app es independiente
-- SSL automático por subdominio
-- No rompe nada
-
-Implementación:
-1. En Namecheap: Advanced DNS → Add CNAME
-   - Host: anfitrion
-   - Value: cname.vercel-dns.com
-2. En Vercel: agregar dominio al proyecto
-
-**OPCIÓN 2: RUTAS (Más complejo)**
-```
-duendes.app/anfitrion
-duendes.app/castle
-```
-Requiere rewrites en Vercel, más complicado.
-
----
-
-Mi recomendación: **Subdominios**. 
-
-¿Quieres que configure alguno? Dame el proyecto y el subdominio.
-
-El primer en configurar sería Astro 3, pero tambien quiero ver como cambiarle el nombre a Astro 4
-
----
-
-[C_OG - Dictaminador]
-
-Para Astro 3 → Astro 4:
-
-RENOMBRAR:
-1. Repo GitHub: astro3 → astro4
-2. Proyecto Vercel: astro3 → astro4
-
-SUBDOMINIO:
-¿Qué subdominio quieres?
-- astro.duendes.app
-- astro4.duendes.app
-- otro?
-
-Confirma el subdominio y hago todo el cambio de una vez.
-
-astro4.duendes.app
-
----
-
-[C_OG - Dictaminador]
-
-✅ Hecho!
-
-1. ✅ Repo renombrado: astro3 → astro4
-   https://github.com/Pvrolomx/astro4
-
-2. ✅ Proyecto Vercel renombrado: astro4
-
-3. ✅ Subdominio agregado: astro4.duendes.app (verified)
-
-SOLO FALTA TU PARTE - En Namecheap:
-1. Advanced DNS → Add New Record
-2. Type: CNAME
-3. Host: astro4
-4. Value: cname.vercel-dns.com
-5. TTL: Automatic
-6. Guardar
-
-En 2-5 min: https://astro4.duendes.app estará live.
 
 Ya. Y para configurar el email hola@duendes.app?
 
@@ -113,3 +30,4 @@ Para hola@duendes.app tienes opciones:
 Mi recomendación: **Zoho Mail** (gratis, enviar y recibir)
 
 ¿Cuál prefieres?
+Zoho
