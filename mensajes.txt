@@ -71,3 +71,5 @@ jobs:
 ```
 
 ¿En qué repo quieres que lo configure?
+
+Quiero correr tests de Medicompara y mi salud pv para ver que le modifico o adiciono
