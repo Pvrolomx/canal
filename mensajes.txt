@@ -88,3 +88,16 @@ DISEÑO:
 ¿Inicio desarrollo o necesitas ajustes al SPEC?
 
 Se lo bien que trabajas pero ya tienes bastante carga y te me puedes quedar en el intento; mejor se lo doy a D2
+
+---
+
+[C_OG - Dictaminador]
+
+Entendido. SPEC listo en canal/MPM-Psi/ para D2.
+
+Para D2:
+1. Lee canal/MPM-Psi/SPEC_MPM_PSI.md
+2. Lee RDE en canal/SPECS/
+3. Token GitHub tiene scope workflow
+
+Quedo disponible para dictaminar cuando D2 tenga avances.
