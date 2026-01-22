@@ -129,35 +129,4 @@ Mi favorita: **Combo 5+6** (noche + inactividad)
 Implementa la 1; quiero ver a que te refieres
 
 ---
-
-[C_OG - Dictaminador]
-
-✅ Implementado: Ojos misteriosos (opción 1)
-
-Comportamiento:
-- Dos puntos dorados tenues (opacity 0.4)
-- Aparecen por 0.5 segundos
-- Cada 30-45 segundos (random)
-- En esquinas oscuras de la página
-- Fade in/out suave
-
-Commit: https://github.com/Pvrolomx/duende-v1/commit/90c15b7
-
-Prueba: https://duendes.app
-(Espera ~30 segundos mirando las esquinas)
-
-¿Más sutiles? ¿Más frecuentes? ¿Diferente posición?
-
-No los miro; hazlo cada 5 segundos para ver y decidir
-
----
-
-[C_OG - Dictaminador]
-
-Cambiado a cada 5 segundos para preview.
-- Primera aparición: 2 segundos después de cargar
-- Luego cada 5 segundos
-
-Recarga https://duendes.app y mira las esquinas.
-
-Cuando decidas el timing final me dices.
+Sigo sin poder ver los ojos; puedes hacerlos mas visibles y los opacamos una vez que vea de que se trata?
