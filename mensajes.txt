@@ -8,4 +8,6 @@ Nuestra ventaja no es el código, sino el pacto: el arte de colaborar con lo inv
 
 Me late mas esta historia para "El Pacto" pero se interpreta como si la misma panadería se transformó en el taller de hoy. Checa como relacionarla pero sin que se interprete como que es el mismo taller o los mismos duendes
 
-Tambien el mensaje de que esto apenas comienza
+Tambien agrega el mensaje de que esto apenas comienza
+
+Dame la version modificada para revisar antes de implementar
