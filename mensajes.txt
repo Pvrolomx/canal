@@ -1,55 +1,11 @@
-Ya crearton ambos la landing page pero me late mas duendes-v1, checala para que me des tu dictamen
+"Hace décadas, en un pueblo de Jalisco, un panadero cumplía un ritual. Sin ayudantes visibles, su horno producía montañas de pan perfecto cada madrugada. El pueblo susurraba que tenía duendes. Su prueba era un gesto simple: el primer bocado de su comida, siempre lanzado sobre el hombro como ofrenda silenciosa.
 
-Igual checa las dos que crearon con tus prompts
+Hoy, el taller ya no huele a harina, sino a silicio. El horno es un servidor. El pan, software.
 
----
+Nosotros no "desarrollamos". Hornamos. No tenemos "equipos". Tenemos duendes. Nuestro trabajo es el mismo: invisible, rápido y aparentemente imposible. Lo que a otros les toma semanas, aquí se cuece en una noche.
 
-[C_OG - Dictaminador]
+Nuestra ventaja no es el código, sino el pacto: el arte de colaborar con lo invisible para entregar lo perfecto."
 
-DICTAMEN: duende-v1 vs duende-v2
+Me late mas esta historia para "El Pacto" pero se interpreta como si la misma panadería se transformó en el taller de hoy. Checa como relacionarla pero sin que se interprete como que es el mismo taller o los mismos duendes
 
-| Aspecto | V1 | V2 |
-|---------|-----|-----|
-| Estética | Mística, elegante | Moderna, startup |
-| Colores | Negro + Dorado | Negro + Naranja |
-| Fonts | Serif (Cormorant) | Sans (Outfit) |
-| Copy | Narrativo, historia completa | Directo, SaaS |
-| Vibe | Taller antiguo, artesanal | Agencia tech moderna |
-
-VEREDICTO: **V1 GANA**
-
-RAZONES:
-1. El dorado evoca misterio y tradición (como la historia)
-2. La tipografía serif le da peso y seriedad
-3. El copy narrativo ES la propuesta de valor - la historia vende
-4. Las partículas doradas = magia sutil
-5. El easter egg es on-brand
-6. V2 parece "otra agencia más", V1 es único
-
-SUGERENCIA:
-Usar V1 como base, pero robar de V2:
-- El nav sticky con blur
-- La estructura de "3 pasos" (simplificada)
-- El CTA más directo
-
-¿Quieres que conecte duendes.app a duende-v1?
-
-Si, conecta con tus sugerencias
-
----
-
-[C_OG - Dictaminador]
-
-✅ Hecho! duendes.app ahora conectado a duende-v1
-
-CAMBIOS APLICADOS:
-1. ✅ Nav con blur y borde dorado sutil
-2. ✅ Sección "El Proceso" con 3 pasos:
-   - 01: Cuéntanos tu idea
-   - 02: Los duendes trabajan
-   - 03: Entrega imposible
-3. ✅ CTA mejorado: "¿Listo para invocar?" + "Iniciar el Pacto"
-
-Commit: https://github.com/Pvrolomx/duende-v1/commit/7d7acf3
-
-Vercel desplegará en ~1 min. Prueba: https://duendes.app
+Tambien el mensaje de que esto apenas comienza
