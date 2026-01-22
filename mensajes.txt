@@ -1,3 +1,16 @@
 Parece que no verifique mi email a tiempo y ahora me van a reractivar el nombre dentre de 24-48 horas; oh well.
 
 Oye, por otro lado, quiero modificar el email al que le llegan los correo de check ins a castle solutions check ins. Estoy dentro del dominio, dime que sigue
+
+---
+
+[C_OG - Dictaminador]
+
+Sobre duendes.app: No pasa nada, en 24-48hrs se reactiva.
+
+Sobre Castle check-in: Encontré la config.
+
+Archivo: app/api/checkin/route.js
+Email actual: claudia@castlesolutions.biz
+
+¿Cuál es el nuevo email al que quieres que lleguen los check-ins?
