@@ -86,3 +86,43 @@ OPCIÓN B: Más simple - solo recibir
 ¿Quieres configurar el envío completo o solo recibir por ahora?
 
 No puedo solo recibir; debo tambien responder con duendes, de lo contrario it's a joke. Pero solo quería entender la logistica. Ahora me interesaría unos ojos misteriosos que apenas se diluciden en la página o que aparezcan de manera momentanea pero que no sean evidentes. Dame ideas (esto no tiene que ver con marketing o branding o nada por el estilo)
+
+---
+
+[C_OG - Dictaminador]
+
+IDEAS: Ojos misteriosos sutiles
+
+**1. PARPADEO EN LAS SOMBRAS**
+- Dos puntos dorados muy tenues que aparecen 0.5s cada ~30 segundos
+- Posición random en las esquinas oscuras
+- Fade in/out muy suave
+- Solo quien mira fijamente los nota
+
+**2. SIGUEN EL CURSOR**
+- Ojos casi invisibles (opacity: 0.03)
+- Se activan solo después de 10+ segundos sin mover el mouse
+- Cuando mueves el cursor, desaparecen instantáneo
+
+**3. EN EL SCROLL**
+- Al hacer scroll, por un frame aparecen entre las partículas
+- Tan rápido que parece imaginación
+- "¿Vi algo o...?"
+
+**4. REFLEJO EN HOVER**
+- Al pasar sobre ciertos elementos, por 0.2s aparece un reflejo de ojos
+- Como si algo estuviera detrás del texto
+
+**5. SOLO DE NOCHE**
+- JS detecta hora local
+- Entre 11pm-5am los ojos aparecen más frecuente
+- "Los duendes trabajan de noche"
+
+**6. DESPUÉS DE INACTIVIDAD**
+- Usuario deja la página abierta 2+ minutos
+- Ojos aparecen gradualmente
+- Al mover el mouse: desaparecen como si los atraparon mirando
+
+Mi favorita: **Combo 5+6** (noche + inactividad)
+
+¿Cuál te late?
