@@ -25,3 +25,6 @@ OPCIONES:
    - No soporta navegadores completos
 
 ¿Quieres que configure GitHub Actions para correr Playwright tests?
+
+
+De momento estoy corriendo tests desde mi PC Windows. Me estas diciendo que puedo hacer lo mismo con Github desde la nube?
