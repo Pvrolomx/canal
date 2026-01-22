@@ -30,3 +30,30 @@ Mi nueva recomendación: **ImprovMX** o **Forward Email**
 ¿Cuál probamos?
 
 Forward email
+
+---
+
+[C_OG - Dictaminador]
+
+CONFIGURAR FORWARD EMAIL:
+
+**En Namecheap → Advanced DNS, agrega:**
+
+**MX Records (2):**
+| Type | Host | Value | Priority |
+|------|------|-------|----------|
+| MX | @ | mx1.forwardemail.net | 10 |
+| MX | @ | mx2.forwardemail.net | 20 |
+
+**TXT Record (1):**
+| Type | Host | Value |
+|------|------|-------|
+| TXT | @ | forward-email=hola:TU_GMAIL@gmail.com |
+
+(Reemplaza TU_GMAIL@gmail.com con tu email real, ej: pvrolo@gmail.com)
+
+**Resultado:**
+- hola@duendes.app → reenvía a tu Gmail
+- Gratis e ilimitado
+
+¿Tu Gmail es pvrolo@gmail.com? Confirma para darte el TXT exacto.
