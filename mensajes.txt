@@ -82,3 +82,5 @@ SOLO FALTA TU PARTE - En Namecheap:
 6. Guardar
 
 En 2-5 min: https://astro4.duendes.app estará live.
+
+Ya. Y para configurar el email hola@duendes.app?
