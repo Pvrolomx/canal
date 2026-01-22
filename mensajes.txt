@@ -130,3 +130,18 @@ Implementa la 1; quiero ver a que te refieres
 
 ---
 Sigo sin poder ver los ojos; puedes hacerlos mas visibles y los opacamos una vez que vea de que se trata?
+
+---
+
+[C_OG - Dictaminador]
+
+Ojos ahora MUY visibles:
+- Tamaño: 12px (antes 4px)
+- Opacidad: 100% (antes 40%)
+- Glow dorado grande
+- Cada 5 segundos
+- Primero a los 2 segundos
+
+Recarga https://duendes.app - ahora sí los verás.
+
+Cuando confirmes que los ves, me dices cómo ajustarlos.
