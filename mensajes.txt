@@ -1,3 +1,35 @@
 Ya crearton ambos la landing page pero me late mas duendes-v1, checala para que me des tu dictamen
 
 Igual checa las dos que crearon con tus prompts
+
+---
+
+[C_OG - Dictaminador]
+
+DICTAMEN: duende-v1 vs duende-v2
+
+| Aspecto | V1 | V2 |
+|---------|-----|-----|
+| Estética | Mística, elegante | Moderna, startup |
+| Colores | Negro + Dorado | Negro + Naranja |
+| Fonts | Serif (Cormorant) | Sans (Outfit) |
+| Copy | Narrativo, historia completa | Directo, SaaS |
+| Vibe | Taller antiguo, artesanal | Agencia tech moderna |
+
+VEREDICTO: **V1 GANA**
+
+RAZONES:
+1. El dorado evoca misterio y tradición (como la historia)
+2. La tipografía serif le da peso y seriedad
+3. El copy narrativo ES la propuesta de valor - la historia vende
+4. Las partículas doradas = magia sutil
+5. El easter egg es on-brand
+6. V2 parece "otra agencia más", V1 es único
+
+SUGERENCIA:
+Usar V1 como base, pero robar de V2:
+- El nav sticky con blur
+- La estructura de "3 pasos" (simplificada)
+- El CTA más directo
+
+¿Quieres que conecte duendes.app a duende-v1?
