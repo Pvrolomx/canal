@@ -63,3 +63,5 @@ En Namecheap, agrega estos MX records:
 En Zoho Mail dashboard, crear el usuario.
 
 ¿Ya tienes cuenta Zoho o empezamos desde cero?
+
+No tienen plan gratis
