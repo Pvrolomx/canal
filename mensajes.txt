@@ -57,3 +57,5 @@ SUBDOMINIO:
 - otro?
 
 Confirma el subdominio y hago todo el cambio de una vez.
+
+astro4.duendes.app
