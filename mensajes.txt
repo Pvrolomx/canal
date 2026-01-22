@@ -41,3 +41,5 @@ Cambios:
 4. "Y esto apenas comienza" → cierre con proyección
 
 ¿Lo implemento?
+
+Si
