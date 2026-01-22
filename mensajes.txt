@@ -37,3 +37,5 @@ Requiere rewrites en Vercel, más complicado.
 Mi recomendación: **Subdominios**. 
 
 ¿Quieres que configure alguno? Dame el proyecto y el subdominio.
+
+El primer en configurar sería Astro 3, pero tambien quiero ver como cambiarle el nombre a Astro 4
