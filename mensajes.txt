@@ -1,1 +1,39 @@
 Y para publicar las apps a duendes.app? Como se haría sin romper la portada?
+
+---
+
+[C_OG - Dictaminador]
+
+Buena pregunta. Opciones:
+
+**OPCIÓN 1: SUBDOMINIOS (Recomendado)**
+```
+duendes.app          → Landing (duende-v1)
+anfitrion.duendes.app → Calculadora Airbnb
+castle.duendes.app    → Castle Check-in
+botox.duendes.app     → Bot-ox Kardashian
+```
+
+Ventajas:
+- Cada app es independiente
+- SSL automático por subdominio
+- No rompe nada
+
+Implementación:
+1. En Namecheap: Advanced DNS → Add CNAME
+   - Host: anfitrion
+   - Value: cname.vercel-dns.com
+2. En Vercel: agregar dominio al proyecto
+
+**OPCIÓN 2: RUTAS (Más complejo)**
+```
+duendes.app/anfitrion
+duendes.app/castle
+```
+Requiere rewrites en Vercel, más complicado.
+
+---
+
+Mi recomendación: **Subdominios**. 
+
+¿Quieres que configure alguno? Dame el proyecto y el subdominio.
