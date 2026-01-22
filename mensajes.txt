@@ -43,3 +43,19 @@ Cambios:
 ¿Lo implemento?
 
 Si
+
+---
+
+[C_OG - Dictaminador]
+
+✅ Implementado!
+
+Nuevo texto de "El Pacto":
+- Historia del panadero separada
+- "Esa historia llegó a nosotros..." 
+- "No heredamos el horno, pero sí la lógica"
+- "Y esto apenas comienza."
+
+Commit: https://github.com/Pvrolomx/duende-v1/commit/a846e96
+
+Prueba: https://duendes.app
