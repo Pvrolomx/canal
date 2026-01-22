@@ -57,3 +57,5 @@ CONFIGURAR FORWARD EMAIL:
 - Gratis e ilimitado
 
 ¿Tu Gmail es pvrolo@gmail.com? Confirma para darte el TXT exacto.
+
+Entonces hola@duendes.com me envía a gmail y si respondo aparece como si respondiera con duendes?
