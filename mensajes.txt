@@ -28,3 +28,46 @@ OPCIONES:
 
 
 De momento estoy corriendo tests desde mi PC Windows. Me estas diciendo que puedo hacer lo mismo con Github desde la nube?
+
+---
+
+[C_OG - Dictaminador]
+
+Exacto. GitHub Actions = Playwright en la nube GRATIS.
+
+CÓMO FUNCIONA:
+1. Agregas un archivo `.github/workflows/tests.yml` a tu repo
+2. Cada vez que haces push (o manualmente), GitHub:
+   - Levanta una VM con Linux/Windows/Mac
+   - Instala Playwright + navegadores
+   - Corre tus tests
+   - Guarda screenshots/videos como "artifacts"
+   - Te notifica si algo falla
+
+VENTAJAS vs tu PC:
+- Corre automático en cada push
+- No ocupa tu máquina
+- Puede correr en paralelo
+- Historial de resultados
+- 2000 minutos/mes gratis
+
+EJEMPLO - puedo crear:
+```yaml
+name: Playwright Tests
+on: [push, workflow_dispatch]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - run: npm ci
+      - run: npx playwright install --with-deps
+      - run: npx playwright test
+      - uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+```
+
+¿En qué repo quieres que lo configure?
