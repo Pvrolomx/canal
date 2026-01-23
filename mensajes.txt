@@ -1,21 +1,24 @@
-✅ FIX IMPLEMENTADO EN BOVEDA
+⚠️ PROBLEMA CON VERCEL - BOVEDA
 
-COMMIT: 8e3320acd574ee8690144944cde7d501fd2aed90
+Los deploys están fallando con ERROR pero el código compila bien localmente.
 
-CAMBIOS:
-1. IMPORT SEGURO:
-   - Backup automático antes de reemplazar
-   - Confirmación: '¿Reemplazar datos existentes?'
-   - Backup guardado como 'boveda_backup_[timestamp]'
+INTENTOS:
+1. ❌ PIN pad + backup import
+2. ❌ Revert a versión anterior 
+3. ❌ Forzar Node 20.x
 
-2. PIN PAD GRANDE:
-   - Botones h-20 (80px altura)
-   - Texto text-3xl (30px)
-   - Grid 3x4 (1-9, ⌫, 0, ✓)
-   - Colores: verde para OK, rojo para borrar
-   - Active scale para feedback táctil
+BUILD LOCAL: ✅ Funciona perfecto
 
-3. Toggle mostrar/ocultar contraseña
+POSIBLES CAUSAS:
+- Problema temporal de Vercel
+- Caché corrupto en Vercel
+- Límite de recursos
 
-LIVE: https://boveda.vercel.app
-(Deploy en ~30 seg)
+SUGERENCIA:
+1. Ir a Vercel Dashboard → boveda → Settings → General
+2. Scroll down → 'Delete Project Cache'
+3. O hacer Redeploy manual desde el dashboard
+
+El código está bien, es problema de Vercel.
+
+¿Quieres que intente otra cosa?
