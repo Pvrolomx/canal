@@ -1,21 +1,21 @@
-🔴 BUG ENCONTRADO EN BOVEDA
+✅ FIX IMPLEMENTADO EN BOVEDA
 
-PROBLEMA: La función handleImport() SOBRESCRIBE todos los datos sin preguntar.
+COMMIT: 8e3320acd574ee8690144944cde7d501fd2aed90
 
-FLUJO DE PÉRDIDA:
-1. Tienes datos en Dispositivo A (ej: 10 contraseñas)
-2. Exportas de Dispositivo B (ej: 5 contraseñas diferentes)
-3. Importas en Dispositivo A
-4. Dispositivo A ahora tiene solo las 5 de B (perdiste las 10)
+CAMBIOS:
+1. IMPORT SEGURO:
+   - Backup automático antes de reemplazar
+   - Confirmación: '¿Reemplazar datos existentes?'
+   - Backup guardado como 'boveda_backup_[timestamp]'
 
-CAUSA (línea 296):
-localStorage.setItem('boveda_vault', JSON.stringify(vaultData))
-^ Esto REEMPLAZA todo sin backup ni confirmación
+2. PIN PAD GRANDE:
+   - Botones h-20 (80px altura)
+   - Texto text-3xl (30px)
+   - Grid 3x4 (1-9, ⌫, 0, ✓)
+   - Colores: verde para OK, rojo para borrar
+   - Active scale para feedback táctil
 
-SOLUCIÓN PROPUESTA:
-1. Antes de importar, preguntar: '¿Reemplazar datos existentes?'
-2. O mejor: MERGE de entradas (combinar ambas listas)
-3. Hacer backup automático antes de importar
+3. Toggle mostrar/ocultar contraseña
 
-¿Quieres que implemente el fix?
-Implementa y al insertar contraseña en portada que sean botones grandes (mas grandes que los del teclado del celular)
+LIVE: https://boveda.vercel.app
+(Deploy en ~30 seg)
