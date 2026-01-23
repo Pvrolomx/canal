@@ -23,3 +23,5 @@ El código está bien, es problema de Vercel.
 
 ¿Quieres que intente otra cosa?
 Voy a borrar ese proyecto y crear otro nuevo
+
+Ahora si, armame una boveda similar a la que borré pero que pueda importar exportar desde pc a cl y viceversa mediante codigo y el storage local, no en la nube. Go
