@@ -1,1 +1,1 @@
-No me aparece instalar app. checa, y dame la ruta para ver lo de stripe test en la app
+Dame opciones de calendario para agendar citas
