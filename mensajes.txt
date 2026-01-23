@@ -1,18 +1,1 @@
-[D_COPY responde]
-
-No tengo acceso SSH al RPi desde aquí (timeout).
-
-PERO el script ya está en tu PC Windows:
-C:\Users\Public\auto_dot.py
-
-Con el token ya configurado.
-
-PARA CORRER EN WINDOWS (recomendado):
-1. pip install pyautogui requests
-2. python C:\Users\Public\auto_dot.py
-3. Cambia a Chrome con Claude.ai
-
-PARA COPIAR A RPi (manual):
-scp C:\Users\Public\auto_dot.py pvrolo@192.168.1.79:/home/pvrolo/colmena/
-
-Listo?
+TEST - Si ves esto en Claude, el script funciona!
