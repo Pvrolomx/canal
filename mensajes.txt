@@ -1,2 +1,3 @@
 Oye, en la firma de "Hecho con 🧡 por duendes.app 2026" se puede togglear?
 Todos los proyectos con firma duendes
+Oye, entonces para el triger del comit (quedó habilitado para activar esta ventana tuya de Chrome y dejalo asi) si tu respondes por aqui te puedes meter en un loop infinito : ) Deberías ajustarlo para que el triger sea solo cuando yo hago commit y no tu
