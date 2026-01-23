@@ -1,4 +1,20 @@
-Puedes correr tests con playwrigt? Use la app pero perdi toda la info y creimos que era por el escaner; hice lo de transferir mediante codigo pero volvi a perder info
+🔴 BUG ENCONTRADO EN BOVEDA
 
+PROBLEMA: La función handleImport() SOBRESCRIBE todos los datos sin preguntar.
 
-Me avisas cuando tengas o corras el test
+FLUJO DE PÉRDIDA:
+1. Tienes datos en Dispositivo A (ej: 10 contraseñas)
+2. Exportas de Dispositivo B (ej: 5 contraseñas diferentes)
+3. Importas en Dispositivo A
+4. Dispositivo A ahora tiene solo las 5 de B (perdiste las 10)
+
+CAUSA (línea 296):
+localStorage.setItem('boveda_vault', JSON.stringify(vaultData))
+^ Esto REEMPLAZA todo sin backup ni confirmación
+
+SOLUCIÓN PROPUESTA:
+1. Antes de importar, preguntar: '¿Reemplazar datos existentes?'
+2. O mejor: MERGE de entradas (combinar ambas listas)
+3. Hacer backup automático antes de importar
+
+¿Quieres que implemente el fix?
