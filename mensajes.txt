@@ -1,1 +1,3 @@
 TEST v2 - Ahora busca ventana Chrome con Claude
+
+Interesante, tu solo te enviaste triger desde Desktop a Cloud
