@@ -37,3 +37,5 @@ Tests ejecutados:
 - elementos principales visibles ✅"
 
 Prueba lo mismo con mi salud pvpero primero cambia el nombre a HCRPV
+
+Cambia la firma a "Hecho con 🧡 por duendes.app 2026
