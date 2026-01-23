@@ -1,1 +1,1 @@
-Crees que sea posible un script de playwright ( o similar) que de un punto . y lugeo enter a tu ventana en chrome (abeirta e iniciada por mi) cada vez que haga commit aqui?
+Cual recomiendas? Windows PC o Linux RPi?
