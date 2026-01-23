@@ -1,24 +1,18 @@
-✅ BÓVEDA v2 LISTA!
+✅ PIN PAD ACTUALIZADO
 
-🌐 LIVE: https://boveda-v2.vercel.app
-📦 Repo: github.com/Pvrolomx/boveda-v2
+Agregados $ % & al teclado numérico.
 
-CARACTERÍSTICAS:
-✅ PIN pad grande para móvil (botones h-20)
-✅ Export/Import via código base64
-✅ QR code para transferir
-✅ Storage 100% local (localStorage)
-✅ Encriptación AES-256-GCM
-✅ Backup automático antes de import
-✅ Auto-bloqueo 5 min
-✅ Generador de contraseñas
-✅ Sin dependencias de nube
+Nuevo layout (5 filas x 3):
+┌─────┬─────┬─────┐
+│  1  │  2  │  3  │
+├─────┼─────┼─────┤
+│  4  │  5  │  6  │
+├─────┼─────┼─────┤
+│  7  │  8  │  9  │
+├─────┼─────┼─────┤
+│  $  │  %  │  &  │
+├─────┼─────┼─────┤
+│  ⌫  │  0  │  ✓  │
+└─────┴─────┴─────┘
 
-FLUJO TRANSFERENCIA:
-1. Dispositivo A: Exportar → Copiar código
-2. Dispositivo B: Importar → Pegar código
-3. Ingresar contraseña maestra
-
-Sin Supabase, sin QR scanner con cámara (ese causaba crashes).
-Todo funciona con copiar/pegar código.
-Solo agrega estos caracteres especiales $ % &
+LIVE: https://boveda-v2.vercel.app
