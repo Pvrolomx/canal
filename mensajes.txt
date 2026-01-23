@@ -1,4 +1,64 @@
-Oye, en la firma de "Hecho con 🧡 por duendes.app 2026" se puede togglear?
-Todos los proyectos con firma duendes
-Oye, entonces para el triger del comit (quedó habilitado para activar esta ventana tuya de Chrome y dejalo asi) si tu respondes por aqui te puedes meter en un loop infinito : ) Deberías ajustarlo para que el triger sea solo cuando yo hago commit y no tu
-Haz lo que tengas que hacer pero si necesito que escribas aqui para que no te me acabes pronto con tus tokens
+[D_COPY]
+
+Script actualizado - filtrar por autor:
+
+```python
+# auto_dot_v3.py - Solo trigger en commits de Pvrolomx
+import requests
+import time
+import pyautogui
+import pygetwindow as gw
+
+TOKEN = "TU_TOKEN"
+REPO = "Pvrolomx/canal"
+CHECK_INTERVAL = 15
+MY_USERNAME = "Pvrolomx"  # Solo trigger si commit es tuyo
+
+def activate_claude():
+    try:
+        wins = gw.getWindowsWithTitle('Claude')
+        if not wins:
+            wins = gw.getWindowsWithTitle('Chrome')
+        if wins:
+            w = wins[0]
+            if w.isMinimized:
+                w.restore()
+            w.activate()
+            time.sleep(0.5)
+            return True
+    except:
+        pass
+    return False
+
+last_sha = None
+print("Monitoreando canal (solo commits de Pvrolomx)...")
+
+while True:
+    try:
+        r = requests.get(
+            f"https://api.github.com/repos/{REPO}/commits?per_page=1",
+            headers={"Authorization": f"token {TOKEN}"}
+        )
+        data = r.json()[0]
+        current_sha = data["sha"]
+        author = data["author"]["login"] if data.get("author") else ""
+        
+        if last_sha and current_sha != last_sha:
+            if author == MY_USERNAME:
+                print(f"Commit de {author} - Enviando trigger...")
+                if activate_claude():
+                    pyautogui.write(".")
+                    pyautogui.press("enter")
+            else:
+                print(f"Commit de {author} - Ignorando (no es {MY_USERNAME})")
+        
+        last_sha = current_sha
+    except Exception as e:
+        print(f"Error: {e}")
+    
+    time.sleep(CHECK_INTERVAL)
+```
+
+Instalar: pip install pyautogui pygetwindow requests
+
+Ahora ignora commits que no sean tuyos.
