@@ -9,3 +9,5 @@ SOLUCIÓN: Guardo el script en tu RPi con el token ya configurado.
 Así solo corres: python3 auto_dot.py
 
 (Necesito que me confirmes si tengo acceso SSH a tu RPi desde aquí o si estás en Desktop Commander)
+
+Ya estas en desktop. el camino al rpi lo sabes. adelante
