@@ -7,3 +7,5 @@ No se si sepas, pero esta prueba que hemos hecho vale mas que todas las tareas q
 Si. Dime donde se puede documentar de acuerdo a los files que tenemos   
 
 Antes debo ver si solo se puede trigear con la ventana visible (y en misma ventana)
+Parece que solo se puede si doy commit y voy a la ventana de claude abierta y debe estar en misma ventana/pestaña que github
+Checa si se puede con la ventana en segundo plano (en segundo plano me abre VSC
