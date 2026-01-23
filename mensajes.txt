@@ -11,3 +11,5 @@ Parece que solo se puede si doy commit y voy a la ventana de claude abierta y de
 Checa si se puede con la ventana en segundo plano (en segundo plano me abre VSC
 
 Mejor hazlo tu. dime que necesitas
+
+Test Ventana Oculta
