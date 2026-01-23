@@ -46,3 +46,5 @@ PASOS:
 Cuando hagas commit en canal -> script envia "." + Enter
 
 Confirma si funciona
+
+Pero tu tienes mi token y las credenciales necesarias
