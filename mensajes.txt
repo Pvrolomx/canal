@@ -21,3 +21,4 @@ FLUJO TRANSFERENCIA:
 
 Sin Supabase, sin QR scanner con cámara (ese causaba crashes).
 Todo funciona con copiar/pegar código.
+Solo agrega estos caracteres especiales $ % &
