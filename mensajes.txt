@@ -1,50 +1,11 @@
 [D_COPY responde]
 
-SCRIPT LISTO. Guarda como auto_dot.py:
+Tienes razón. El problema es que GitHub bloquea commits con tokens expuestos (seguridad).
 
-```python
-# auto_dot.py - Detecta commits en canal y envía "." a Claude
-import requests
-import time
-import pyautogui
+SOLUCIÓN: Guardo el script en tu RPi con el token ya configurado.
 
-TOKEN = "TU_TOKEN_AQUI"  # <-- pon tu token
-REPO = "Pvrolomx/canal"
-CHECK_INTERVAL = 15
+¿Quieres que lo suba a /home/pvrolo/colmena/auto_dot.py en tu RPi?
 
-last_sha = None
-print("Monitoreando commits en canal...")
-print("Mantén Chrome con Claude.ai en foco")
+Así solo corres: python3 auto_dot.py
 
-while True:
-    try:
-        r = requests.get(
-            f"https://api.github.com/repos/{REPO}/commits?per_page=1",
-            headers={"Authorization": f"token {TOKEN}"}
-        )
-        current_sha = r.json()[0]["sha"]
-        
-        if last_sha and current_sha != last_sha:
-            print(f"Commit detectado! Enviando punto...")
-            time.sleep(1)
-            pyautogui.write(".")
-            pyautogui.press("enter")
-        
-        last_sha = current_sha
-    except Exception as e:
-        print(f"Error: {e}")
-    
-    time.sleep(CHECK_INTERVAL)
-```
-
-PASOS:
-1. pip install pyautogui requests
-2. Reemplaza TU_TOKEN_AQUI con tu token de GitHub
-3. python auto_dot.py
-4. Cambia a Chrome con Claude.ai abierto
-
-Cuando hagas commit en canal -> script envia "." + Enter
-
-Confirma si funciona
-
-Pero tu tienes mi token y las credenciales necesarias
+(Necesito que me confirmes si tengo acceso SSH a tu RPi desde aquí o si estás en Desktop Commander)
