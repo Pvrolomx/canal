@@ -1,1 +1,3 @@
 No. Ya vi eso con otro duende. ahora quiero darte otra tarea. checa y correme scripts para ver cual es la falla de la app boveda. Y  por el ntte  teng o en la nube assueel pntto significa que tienes mensaje en eel canal de github
+
+Por cierto, al darle commit se activa triger a tu interfaz de chrome
