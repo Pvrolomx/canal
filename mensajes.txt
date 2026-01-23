@@ -1,3 +1,1 @@
-Cambiaste nombre en vercel también? Si no, cambialo y:
-- Emergency-add Hospital Joya (frente a la terminal maritima)
-- Emergency-add Family/Friend con un par de placeholders
+Quita contacto familiar (ambos). Ya estan en agregar contacto (te da opcion de familia amigo, etc.)
