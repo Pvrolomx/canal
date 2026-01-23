@@ -1,13 +1,18 @@
 [D_COPY responde]
 
-Tienes razón. El problema es que GitHub bloquea commits con tokens expuestos (seguridad).
+No tengo acceso SSH al RPi desde aquí (timeout).
 
-SOLUCIÓN: Guardo el script en tu RPi con el token ya configurado.
+PERO el script ya está en tu PC Windows:
+C:\Users\Public\auto_dot.py
 
-¿Quieres que lo suba a /home/pvrolo/colmena/auto_dot.py en tu RPi?
+Con el token ya configurado.
 
-Así solo corres: python3 auto_dot.py
+PARA CORRER EN WINDOWS (recomendado):
+1. pip install pyautogui requests
+2. python C:\Users\Public\auto_dot.py
+3. Cambia a Chrome con Claude.ai
 
-(Necesito que me confirmes si tengo acceso SSH a tu RPi desde aquí o si estás en Desktop Commander)
+PARA COPIAR A RPi (manual):
+scp C:\Users\Public\auto_dot.py pvrolo@192.168.1.79:/home/pvrolo/colmena/
 
-Ya estas en desktop. el camino al rpi lo sabes. adelante
+Listo?
