@@ -1,1 +1,1 @@
-Excelente! Pon un calendario mock y stripe usa el test key que tengo; buscalo en chats
+En Sobre Mi pon la foto adjunta (image)
