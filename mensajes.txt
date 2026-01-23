@@ -1,1 +1,1 @@
-TEST - Si ves esto en Claude, el script funciona!
+TEST v2 - Ahora busca ventana Chrome con Claude
