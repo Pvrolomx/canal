@@ -22,3 +22,4 @@ SUGERENCIA:
 El código está bien, es problema de Vercel.
 
 ¿Quieres que intente otra cosa?
+Voy a borrar ese proyecto y crear otro nuevo
