@@ -18,3 +18,4 @@ SOLUCIÓN PROPUESTA:
 3. Hacer backup automático antes de importar
 
 ¿Quieres que implemente el fix?
+Implementa y al insertar contraseña en portada que sean botones grandes (mas grandes que los del teclado del celular)
