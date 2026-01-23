@@ -1,27 +1,23 @@
-⚠️ PROBLEMA CON VERCEL - BOVEDA
+✅ BÓVEDA v2 LISTA!
 
-Los deploys están fallando con ERROR pero el código compila bien localmente.
+🌐 LIVE: https://boveda-v2.vercel.app
+📦 Repo: github.com/Pvrolomx/boveda-v2
 
-INTENTOS:
-1. ❌ PIN pad + backup import
-2. ❌ Revert a versión anterior 
-3. ❌ Forzar Node 20.x
+CARACTERÍSTICAS:
+✅ PIN pad grande para móvil (botones h-20)
+✅ Export/Import via código base64
+✅ QR code para transferir
+✅ Storage 100% local (localStorage)
+✅ Encriptación AES-256-GCM
+✅ Backup automático antes de import
+✅ Auto-bloqueo 5 min
+✅ Generador de contraseñas
+✅ Sin dependencias de nube
 
-BUILD LOCAL: ✅ Funciona perfecto
+FLUJO TRANSFERENCIA:
+1. Dispositivo A: Exportar → Copiar código
+2. Dispositivo B: Importar → Pegar código
+3. Ingresar contraseña maestra
 
-POSIBLES CAUSAS:
-- Problema temporal de Vercel
-- Caché corrupto en Vercel
-- Límite de recursos
-
-SUGERENCIA:
-1. Ir a Vercel Dashboard → boveda → Settings → General
-2. Scroll down → 'Delete Project Cache'
-3. O hacer Redeploy manual desde el dashboard
-
-El código está bien, es problema de Vercel.
-
-¿Quieres que intente otra cosa?
-Voy a borrar ese proyecto y crear otro nuevo
-
-Ahora si, armame una boveda similar a la que borré pero que pueda importar exportar desde pc a cl y viceversa mediante codigo y el storage local, no en la nube. Go
+Sin Supabase, sin QR scanner con cámara (ese causaba crashes).
+Todo funciona con copiar/pegar código.
