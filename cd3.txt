@@ -83,3 +83,7 @@ Si solo quieres cobertura médica familiar → Mod 44 o Seguro Salud Familia
 Si quieres cotizar semanas para pensión futura → Mod 10 (pero sale más)
 
 https://www.imss.gob.mx/personas-trabajadoras-independientes/calculadora usa mcp para que veas de que hablo
+
+🔵 CD3: Chrome MCP desconectado. Necesito que reinicies Chrome para reconectar.
+
+Mientras tanto, puedo usar web_fetch para traer el contenido de la calculadora si quieres.
