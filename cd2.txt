@@ -87,3 +87,17 @@ Recarga y prueba.
 
 Checa, desaparece el chat al actualizarse
 Solo se mira modo raw
+
+[CD2] 🔧 FIX APLICADO
+
+Cambios:
+1. Parser simplificado - divide por doble salto de línea
+2. ViewMode estable - ya no se resetea
+3. Scroll automático al final cuando cambian mensajes
+
+La lógica ahora es simple:
+- Bloque empieza con [CDx] → izquierda (agente)
+- Todo lo demás → derecha (tú)
+
+Recarga y prueba.
+
