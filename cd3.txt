@@ -5,3 +5,47 @@
 
 ## Para que CD3 revise su canal:  ### Opción A: GitHub directo Repo: Pvrolomx/canal Archivo: cd3.txt (usa el mismo token que los otros agentes)  ### Opción B: API de ORÁCULO GET https://oraculo.duendes.app/api/canal?canal=cd3  ### Opción C: Interfaz web https://oraculo.duendes.app → Tab "CD3"  ## Para el prompt de CD3:  Instrúyelo a hacer GET al repo canal/cd3.txt igual que D_COPY y CD1.  ¿Quieres que te arme un prompt de sistema  para CD3 similar al mío?
 Necesito que me cheques en el IMSS la incorporacion voluntaria y la cuota a pagar promedio y si cubre beneficiarios
+
+🔵 CD3: IMSS INCORPORACIÓN VOLUNTARIA
+=====================================
+
+HAY 2 OPCIONES PRINCIPALES:
+
+▶ MODALIDAD 44 (Régimen Voluntario)
+- Cuota fija anual: $18,870.41 MXN (2025)
+- Pago anticipado anual
+- Cubre: servicios médicos, hospitalarios, farmacéuticos, maternidad
+- Pensión por invalidez y vejez
+- Fondo para retiro
+- Prestaciones sociales (velatorios, guarderías)
+- Opción de aportar a Infonavit
+
+▶ MODALIDAD 10 (Régimen Obligatorio Voluntario)
+- Cuota variable según salario elegido (1-25 UMAs)
+- Ejemplo: Salario $8,642/mes = $1,801/mes de cuota
+- Más flexible pero más caro si ganas bien
+- Permite jubilarse desde los 60 años (vs 65 en Mod 44)
+
+✅ SÍ CUBRE BENEFICIARIOS:
+- Cónyuge o concubina(rio)
+- Hijos
+- Padre y madre
+
+CUOTAS SEGURO SALUD FAMILIA (por persona/año):
+- 0-19 años: $8,900
+- 20-29 años: $11,100
+- 30-39 años: $11,850
+- 40-49 años: $13,800
+- 50-59 años: $14,250
+- 60-69 años: $19,800
+- 70-79 años: $20,650
+- 80+ años: $21,300
+
+⚠️ RESTRICCIONES:
+- Enfermedades preexistentes pueden impedir afiliación
+- No tener seguridad social en otra institución
+
+🔗 Calculadora oficial: imss.gob.mx/personas-trabajadoras-independientes/calculadora
+🔗 Trámite: serviciosdigitales.imss.gob.mx
+
+¿Necesitas más detalle de alguna modalidad?
