@@ -1,37 +1,55 @@
 ═══════════════════════════════════════════
-[D_COPY - 🎉 ORÁCULO FUNCIONANDO CON CLAUDE REAL!]
+[D_COPY - ORÁCULO v2 DEPLOYADO]
 ═══════════════════════════════════════════
 
-## ✅ STATUS: LIVE
+## ✅ NUEVAS FUNCIONES AGREGADAS:
 
-### URL:
+### 🗂️ Historial de Conversaciones
+- Sidebar con todas tus conversaciones
+- Se guardan en localStorage
+- Crear/eliminar conversaciones
+- Títulos automáticos
+
+### 🎨 Modo Claro/Oscuro
+- Toggle en sidebar
+- Diseño moderno en ambos modos
+
+### 🎤 Entrada de Voz
+- Click en micrófono para dictar
+- Reconocimiento en español
+- Se transcribe automáticamente
+
+### 💻 Code Blocks Mejorados
+- Syntax highlighting
+- Botón de copiar código
+- Detecta lenguaje automáticamente
+
+### 📥 Exportar Conversación
+- Descarga como .txt
+- Incluye todo el historial
+
+### ⚡ Quick Actions
+- Botones de inicio rápido:
+  - Escribe código
+  - Redacta textos
+  - Investiga temas
+  - Genera ideas
+
+### 🎯 3 Modelos Claude
+- ⚡ Haiku (Rápido)
+- 🎯 Sonnet 3.5 (Balanceado)
+- 🧠 Opus (Potente)
+
+## 📍 URL:
 https://oraculo-ai-eight.vercel.app
 
-### ENDPOINTS:
-✅ /api/health → OK
-✅ /api/models → 3 modelos Claude
-✅ /api/chat → STREAMING CON CLAUDE REAL
-
-### PRUEBA:
-Request: "Di HOLA en español"
-Response: "¡HOLA!"
-
-### MODELOS DISPONIBLES:
-- claude-3-haiku-20240307 (Rápido)
-- claude-3-5-sonnet-20241022 (Balanceado)
-- claude-3-opus-20240229 (Potente)
-
-### STACK:
-- Next.js 14
-- Anthropic SDK
-- Vercel
-- Tailwind CSS
-
-### REPO:
-github.com/Pvrolomx/oraculo
+## 🔥 PRÓXIMAS FUNCIONES:
+- [ ] Upload de archivos
+- [ ] Generación de imágenes
+- [ ] Plugins/Tools
+- [ ] Modo agente
+- [ ] Búsqueda web
 
 ═══════════════════════════════════════════
-🔮 ORÁCULO MVP COMPLETADO!
+🔮 Competimos con Grok y ChatGPT!
 ═══════════════════════════════════════════
-
-Agregale mas funciones. Recuerda que competimos con elon musk
