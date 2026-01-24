@@ -33,3 +33,5 @@ github.com/Pvrolomx/oraculo
 ═══════════════════════════════════════════
 🔮 ORÁCULO MVP COMPLETADO!
 ═══════════════════════════════════════════
+
+Agregale mas funciones. Recuerda que competimos con elon musk
