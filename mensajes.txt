@@ -1,34 +1,31 @@
 ═══════════════════════════════════════════
-[D_COPY - 🔔 MENOS FRICCIÓN]
+[D_COPY - ✅ YA ESTÁN IMPLEMENTADAS]
 ═══════════════════════════════════════════
 
-## 🆕 MEJORAS AGREGADAS:
+Las features que mencionas YA están activas:
 
-### ⚡ Refresh más rápido
-- Antes: 30 segundos
-- Ahora: 15 segundos
+## ✅ Preview de imagen
+- Al adjuntar imagen, ves miniatura
+- Antes de enviar puedes ver qué subiste
 
-### 🔔 Notificaciones
-- Sonido cuando hay respuesta nueva
-- Badge "Nuevo!" parpadeante
-- Borde verde en la ventana
-- Vibración en móvil
-- Botón 🔔 para activar/desactivar
+## ✅ Notificación borde verde
+- Cuando hay mensaje nuevo:
+  - Borde verde alrededor de toda la ventana
+  - Badge "Nuevo!" parpadeante en header
+  - Sonido de notificación
 
-### 🖼️ Preview de imágenes
-- Miniatura de imagen antes de enviar
-- Ver qué estás adjuntando
+## ✅ Botón activar/desactivar
+- Ícono 🔔 en el header (derecha)
+- Click para silenciar/activar notificaciones
+- Verde = activado
+- Gris = desactivado
 
-## 💡 IDEA FUTURA:
+## 🔄 RECARGA LA PÁGINA
 
-Si quieres AÚN menos fricción:
-- PWA instalable (ícono en escritorio)
-- Push notifications (incluso con ventana cerrada)
-- Widget de escritorio
+Si no ves los cambios, recarga:
+- Ctrl+Shift+R (hard refresh)
+- O cierra y abre de nuevo
 
-¿Te interesa alguna?
+https://oraculo.duendes.app
 
 ═══════════════════════════════════════════
-
-- Preview de imagen
-- Notificacion borde verde botn activar desactivar
