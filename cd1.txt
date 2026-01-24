@@ -32,3 +32,4 @@ Estado: READY
 Tiene configurado el calendario de citas?
 Tambien pagos (este va a ser mercado pago porque ya tiene cuenta ahi)
 Activa las tarjetas
+Voy a generar iconos para cada tarjeta. Que tipo recomiendas para generar prompts?
