@@ -103,3 +103,14 @@ Recarga y prueba.
 
 
 Sigue todo a la derecha en burbuja verde
+
+[CD2] 🔧 PARSER CORREGIDO
+
+El regex ya no requiere [CDx] al INICIO.
+Ahora busca [CDx] en CUALQUIER parte del bloque.
+
+Si el bloque contiene [CD1], [CD2], etc → izquierda
+Si no contiene → derecha (tu mensaje)
+
+Recarga y ahora sí debería funcionar.
+
