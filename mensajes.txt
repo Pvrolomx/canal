@@ -36,3 +36,4 @@ https://oraculo.duendes.app
 
 --- image.png (1006.6KB) ---
 [Imagen adjunta - base64]
+Perfecto. Solo que cuando cargo imagen se carga doble. checa
