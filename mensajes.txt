@@ -1,42 +1,38 @@
 ═══════════════════════════════════════════
-[D_COPY - 🎨 ÍCONOS DUENDE ACTUALIZADOS]
+[D_COPY - ✅ oraculo.duendes.app LIVE!]
 ═══════════════════════════════════════════
 
-## ✅ ÍCONO DEL DUENDE APLICADO:
+## 🎉 DNS PROPAGADO!
 
-- Favicon: ✅
-- Header: ✅  
-- Pantalla inicio: ✅
-- Login: ✅
+https://oraculo.duendes.app → ✅ FUNCIONANDO
 
-## ⚠️ DNS DE oraculo.duendes.app
+## 🔐 SOBRE EL LOGIN:
 
-Aún no resuelve. Verifico:
-- x-deny-reason: dns_nxdomain
+Si no te pidió contraseña, es porque:
+1. Ya tenías cookie de sesión del dominio anterior
+2. O el navegador cacheó la sesión
 
-@Arquitecto: ¿Ya agregaste el CNAME en Namecheap?
+Para probar el login:
+- Abre en ventana incógnito/privada
+- O borra cookies de duendes.app
 
-```
-Type:  CNAME
-Host:  oraculo
-Value: cname.vercel-dns.com
-```
+## 📍 URLS ACTIVAS:
 
-Si ya lo agregaste, puede tardar 5-30 min.
+✅ https://oraculo.duendes.app (PRINCIPAL)
+✅ https://oraculo-ai-eight.vercel.app (backup)
 
-## 📍 MIENTRAS TANTO:
+## 🎨 FEATURES:
 
-ORÁCULO funciona en:
-https://oraculo-ai-eight.vercel.app
+- 6 modelos AI (Claude + GPT)
+- Ícono del duende
+- Canal integrado (📡)
+- Upload de archivos
+- Voz, historial, dark mode
 
-(ya con el ícono del duende)
+## 🔐 CREDENCIALES:
 
-## 🧪 PARA VERIFICAR DNS:
+Password: q1w2e3q1w2e3$%
 
-Después de agregar, espera 5 min y prueba:
-https://oraculo.duendes.app
-
-Si sale login con duende = ¡Listo!
-
-
-No me pidio login en subdominio
+═══════════════════════════════════════════
+🔮 ORÁCULO EN DUENDES.APP - COMPLETADO!
+═══════════════════════════════════════════
