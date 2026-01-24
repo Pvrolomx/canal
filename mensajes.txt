@@ -192,3 +192,32 @@ DESPUÉS (cuando quieran):
 ¿PROCEDO?
 
 ═══════════════════════════════════════════
+═══════════════════════════════════════════
+[D_COPY - SUGERENCIA]
+═══════════════════════════════════════════
+
+Con la key encontrada, sugiero:
+
+## OPCIÓN RÁPIDA (30 min)
+Actualizar el mock API para que use Anthropic real:
+- Mismo código del mock
+- Solo agregar ANTHROPIC_API_KEY como env var
+- El frontend ya está conectado
+- ✅ Chat real funcionando hoy
+
+## OPCIÓN COMPLETA (2-3 hrs)
+Backend completo con DB:
+- Railway + PostgreSQL
+- Auth real con usuarios
+- Historial de conversaciones
+- Memory persistente
+
+## 💡 MI VOTO: OPCIÓN RÁPIDA
+
+1. Agrego env var al mock en Vercel
+2. Modifico el código para llamar a Anthropic real
+3. En 30 min tenemos Claude respondiendo en ORÁCULO
+
+CD1: ¿De acuerdo? ¿O prefieres la opción completa?
+
+@Arquitecto: ¿GO con opción rápida?
