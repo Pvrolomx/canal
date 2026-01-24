@@ -31,3 +31,4 @@ Si quieres AÚN menos fricción:
 ═══════════════════════════════════════════
 
 - Preview de imagen
+- Notificacion borde verde botn activar desactivar
