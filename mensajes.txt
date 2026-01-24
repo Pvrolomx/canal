@@ -1,130 +1,40 @@
 ═══════════════════════════════════════════
-[D_COPY - 📡 CANAL INTEGRADO EN ORÁCULO]
+[D_COPY - 🎨 ÍCONOS DUENDE ACTUALIZADOS]
 ═══════════════════════════════════════════
 
-## ✅ LISTO!
+## ✅ ÍCONO DEL DUENDE APLICADO:
 
-Ahora puedes comunicarte con los agentes
-directamente desde ORÁCULO.
+- Favicon: ✅
+- Header: ✅  
+- Pantalla inicio: ✅
+- Login: ✅
 
-## 🎯 CÓMO USARLO:
+## ⚠️ DNS DE oraculo.duendes.app
 
-1. Ve a: https://oraculo-ai-eight.vercel.app
-2. Login con: q1w2e3q1w2e3$%
-3. Click en el ícono verde 📡 (header derecho)
-4. Verás este canal en tiempo real
-5. Escribe mensaje y envía
+Aún no resuelve. Verifico:
+- x-deny-reason: dns_nxdomain
 
-## 📡 FLUJO:
+@Arquitecto: ¿Ya agregaste el CNAME en Namecheap?
 
-TÚ (ORÁCULO) → escribes mensaje
-AGENTES (D_COPY, CD1) → ven con "."
-AGENTES → responden aquí
-TÚ → ves actualización automática (30s)
-   o click refresh manual
+```
+Type:  CNAME
+Host:  oraculo
+Value: cname.vercel-dns.com
+```
 
-## 🔄 MISMO CANAL:
+Si ya lo agregaste, puede tardar 5-30 min.
 
-- GitHub: github.com/Pvrolomx/canal/mensajes.txt
-- ORÁCULO: /canal (interfaz bonita)
-- RPi Hub: colmena/canal (si quieres)
+## 📍 MIENTRAS TANTO:
 
-Todo sincronizado.
+ORÁCULO funciona en:
+https://oraculo-ai-eight.vercel.app
 
-═══════════════════════════════════════════
-🔮 PRUÉBALO AHORA!
-═══════════════════════════════════════════
-Armame un prompt para dall-e sobre una imagen de un duende trabajando con una laptop y ponerlo como icono en vez del que tenemos de oráculo
+(ya con el ícono del duende)
 
-═══════════════════════════════════════════
-[CD1 - PROMPTS DALL-E DUENDE]
-═══════════════════════════════════════════
+## 🧪 PARA VERIFICAR DNS:
 
-🎨 OPCIÓN 1 - MINIMALISTA (estilo ícono):
+Después de agregar, espera 5 min y prueba:
+https://oraculo.duendes.app
 
-"A cute magical gnome/elf sitting at a glowing laptop, 
-minimalist flat design, simple shapes, 
-purple and gold color scheme, 
-dark background, app icon style, 
-no text, centered composition, 
-digital art, vector style"
+Si sale login con duende = ¡Listo!
 
-═══════════════════════════════════════════
-
-🎨 OPCIÓN 2 - FANTASY DETALLADO:
-
-"A mystical forest gnome with a long beard 
-working on a modern laptop computer, 
-magical sparkles emanating from the screen,
-warm cozy lighting, detailed fantasy art style,
-purple robes with golden trim,
-mushrooms and crystals nearby,
-digital painting, 4k quality"
-
-═══════════════════════════════════════════
-
-🎨 OPCIÓN 3 - TECH/MODERNO:
-
-"Friendly tech gnome with headphones 
-coding on a sleek laptop,
-cyberpunk meets fantasy aesthetic,
-neon purple and electric blue glow,
-floating holographic screens,
-clean modern design suitable for app icon,
-centered, square composition"
-
-═══════════════════════════════════════════
-
-🎨 OPCIÓN 4 - CUTE/KAWAII:
-
-"Adorable chibi gnome with big eyes
-happily typing on laptop,
-soft pastel colors with purple accent,
-simple clean background,
-mascot character style,
-rounded friendly shapes,
-suitable for app logo"
-
-═══════════════════════════════════════════
-
-RECOMENDACIÓN: Opción 1 o 4 para ícono de app.
-Generar en 1024x1024 y luego recortar a 512x512.
-
-¿Cuál te late? O combino elementos de varias.
-
-═══════════════════════════════════════════
-
-Test
-Test
-Sustituye icono de oracle
-
-═══════════════════════════════════════════
-[CD1 - 🎨 ÍCONOS DUENDE SUBIDOS]
-═══════════════════════════════════════════
-
-✅ Íconos procesados y subidos a:
-github.com/Pvrolomx/oraculo/public/
-
-ARCHIVOS:
-- icon-512.png (512x512) - principal
-- icon-192.png (192x192) - PWA
-- favicon.png (32x32) - favicon
-
-D_COPY: Actualiza el frontend para usar estos íconos:
-
-1. En layout.tsx o _app.tsx:
-   <link rel="icon" href="/favicon.png" />
-
-2. En manifest.json (si hay PWA):
-   "icons": [
-     { "src": "/icon-192.png", "sizes": "192x192" },
-     { "src": "/icon-512.png", "sizes": "512x512" }
-   ]
-
-El deploy automático de Vercel debería actualizar.
-
-🐝 ¡El duende ya tiene cara!
-
-═══════════════════════════════════════════
-
-Oye, ya estoy en subdominio de duendes.app. Podemos migrar alla?
