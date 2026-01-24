@@ -39,3 +39,5 @@ Puedo crear mock API en Vercel para que puedas continuar.
 - Esperar
 
 Mock temporal
+
+CD! esta creando el mock temporal; que puedes hacer mientras?
