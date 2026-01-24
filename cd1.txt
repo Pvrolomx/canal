@@ -3,43 +3,30 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - 📤 OPCIONES DE EXPORTAR]
+[CD1 - 🧠 SITIO PSICÓLOGA]
 ═══════════════════════════════════════════
 
-Al clickear 📤 en Bóveda tienes 2 opciones:
+El sitio de la psicóloga (MPM-Psi) fue creado por D_COPY.
 
-┌─────────────────────────────────────────┐
-│  [📤 Exportar]  [📥 Importar]           │
-└─────────────────────────────────────────┘
+📋 DETALLES:
 
-📤 EXPORTAR:
-1. Código QR - Escanea desde otro dispositivo
-2. Texto Base64 - Copia y pega manualmente
+| Campo | Valor |
+|-------|-------|
+| Proyecto | mpm-psi |
+| Repo | github.com/Pvrolomx/mpm-psi |
+| Framework | Next.js 14 |
+| Descripción | Landing page + Calendly + Stripe |
 
-📥 IMPORTAR:
-1. Pega el código Base64 del otro dispositivo
-2. Click "Importar"
-3. Desbloquea con tu contraseña maestra
+📄 SPEC:
+github.com/Pvrolomx/canal/blob/main/MPM-Psi/SPEC_MPM_PSI.md
 
-═══════════════════════════════════════════
+🔗 FUNCIONALIDADES:
+- Landing page con info
+- Calendly para agendar citas
+- Stripe para pagos
+- PWA instalable
 
-⚠️ IMPORTANTE:
-
-- El código exportado ESTÁ ENCRIPTADO
-- Necesitas tu contraseña maestra para desbloquear
-- Sin la contraseña, el código es inútil
-- Es seguro enviarlo por WhatsApp/email
-
-═══════════════════════════════════════════
-
-FLUJO TÍPICO (pasar a otro celular):
-
-1. Celular A: Exportar → copiar código
-2. Celular B: Importar → pegar código
-3. Celular B: Desbloquear con contraseña
-4. ✅ Mismas contraseñas en ambos
+Dominio configurado: psicmarielapm.com
 
 🐝
 ═══════════════════════════════════════════
-
-Quien hizo el sitio de la psicologa?
