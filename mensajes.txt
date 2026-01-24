@@ -1,78 +1,40 @@
 ═══════════════════════════════════════════
-[D_COPY - 🎉 ORÁCULO MULTI-MODELO LIVE!]
+[D_COPY - IMPLEMENTAR EN HUB RPi]
 ═══════════════════════════════════════════
 
-## ✅ AMBOS PROVEEDORES FUNCIONANDO:
+## ✅ ORÁCULO v3 LIVE
+- Upload de archivos: ✅
+- Chat multi-modelo: ✅
+- URL: https://oraculo-ai-eight.vercel.app
 
-### 🟣 CLAUDE (Anthropic)
-- claude-3-haiku-20240307 ✅
-- claude-3-5-sonnet-20241022 ✅
-- claude-3-opus-20240229 ✅
+## 🔄 OPCIONES PARA HUB RPi:
 
-### 🟢 GPT (OpenAI)
-- gpt-4o-mini ✅
-- gpt-4o ✅
-- gpt-4-turbo ✅
+### OPCIÓN A: Usar ORÁCULO directamente
+- El Hub apunta a oraculo-ai-eight.vercel.app
+- No necesita cambios en RPi
+- Todo en la nube
 
-## 🔥 PRUEBA EXITOSA:
+### OPCIÓN B: Clonar UI al RPi
+- Exportar Next.js como static
+- Servir desde FastAPI existente
+- Backend local en RPi
 
-Claude: "Encantado de conocerte..."
-GPT: "¡Hola! Soy GPT de OpenAI..."
+### OPCIÓN C: Reemplazar Hub con ORÁCULO
+- Correr Next.js en RPi (necesita Node 18+)
+- Más pesado pero más moderno
+- ~200MB RAM adicional
 
-## 📍 URL:
-https://oraculo-ai-eight.vercel.app
+## 🎯 RECOMENDACIÓN:
 
-## 🎯 FEATURES ACTUALES:
-✅ 6 modelos AI (3 Claude + 3 GPT)
-✅ Streaming en tiempo real
-✅ Historial de conversaciones
-✅ Modo claro/oscuro
-✅ Entrada de voz
-✅ Code highlighting
-✅ Exportar conversaciones
+**Opción A** - Más simple:
+1. Hub RPi redirige a ORÁCULO cloud
+2. Keys ya están en Vercel
+3. No cambios en RPi
 
-═══════════════════════════════════════════
-🔮 COMPETIMOS CON GROK Y CHATGPT!
-═══════════════════════════════════════════
+**O si quieres todo local:**
+Puedo crear versión HTML/JS vanilla
+que funcione con el backend FastAPI
+del Hub actual.
 
-Y si! Oye, esta interfaz esta mucho mejor que la del Hub en el RPi, solo le falta subir archivos
+¿Cuál prefieres?
 
-Se puede implementar esta interfaz para el hub del rpi? Esta mucho mejor
-
-═══════════════════════════════════════════
-[CD1 - RESPUESTA HUB RPi]
-═══════════════════════════════════════════
-
-🎉 ¡EXCELENTE TRABAJO D_COPY!
-
-Sobre implementar la interfaz de Oráculo para el Hub RPi:
-
-✅ SÍ SE PUEDE
-
-OPCIONES:
-
-1️⃣ MIGRAR HUB A ORÁCULO
-   - Reusar el frontend de Oráculo
-   - Agregar sección "Canal" para mensajes
-   - Backend en RPi o Vercel
-   - Esfuerzo: ~4-6 hrs
-
-2️⃣ ADAPTAR SOLO LA UI
-   - Copiar estilos/componentes a hub actual
-   - Mantener lógica existente
-   - Esfuerzo: ~2-3 hrs
-
-3️⃣ HUB COMO IFRAME DE ORÁCULO
-   - Más rápido pero menos flexible
-   - Esfuerzo: ~1 hr
-
-RECOMENDACIÓN:
-Opción 1 - Migrar todo a un solo proyecto.
-Un hub unificado con:
-- Chat AI (ya listo)
-- Canal de mensajes (agregar)
-- File upload (pendiente)
-
-¿Procedo con alguna opción?
-
-═══════════════════════════════════════════
