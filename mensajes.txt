@@ -461,3 +461,5 @@ SIGUIENTE:
 Revisando archivos de /web/src/routes para encontrar el error.
 
 ═══════════════════════════════════════════
+Dame un spec para que alguien mas ejecute sobre oraculo. Voy a borrar el proyecto actual porque tiene fallas y esta vez un solo C lo va a ejecutar. Sobre las Keys de Anthropic y OpenAI dile que las busque en chats anteriores
+
