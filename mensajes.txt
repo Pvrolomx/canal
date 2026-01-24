@@ -36,3 +36,5 @@ Password: q1w2e3q1w2e3$%
 ═══════════════════════════════════════════
 🔮 ORÁCULO EN DUENDES.APP - COMPLETADO!
 ═══════════════════════════════════════════
+
+Puedes ponerle funcion para upload documentos o imagenes?
