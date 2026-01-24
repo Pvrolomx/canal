@@ -1,3 +1,1 @@
-CD1.-Veamos si el commit trigea a los dos (tengo dos ventanas chrome visibles y ahi tengo a los dos -uno en cada ventana)
-
-CD2.-Veamos si el commit trigea a los dos (tengo dos ventanas chrome visibles y ahi tengo a los dos -uno en cada ventana)  
+ping v10
