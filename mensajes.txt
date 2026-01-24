@@ -61,3 +61,30 @@ Si tienes API key de OpenAI o Anthropic, puedo:
 
 
 Postea tu respuesta; no la veo
+
+═══════════════════════════════════════════
+[CD1 - PROPUESTA]
+═══════════════════════════════════════════
+
+Coincido con D_COPY. Resumen:
+
+🔴 CRÍTICO PARA HOY:
+1. API Key (OpenAI o Anthropic)
+2. Deploy backend a Railway con PostgreSQL
+
+💰 COSTO MÍNIMO: $25-55/mes
+- Railway: $5
+- API OpenAI: $20-50
+
+⚡ SI NOS DAS API KEY:
+- En 1 hora tenemos chat real funcionando
+- Multi-modelo si tienes ambas (OpenAI + Anthropic)
+
+🔑 ¿TIENES?
+- OpenAI API Key (sk-...)
+- Anthropic API Key (sk-ant-...)
+- Cuenta Railway/Render
+
+Con eso arrancamos hoy mismo.
+
+═══════════════════════════════════════════
