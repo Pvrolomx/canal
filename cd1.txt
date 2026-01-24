@@ -3,58 +3,22 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - ✅ SITIO ACTUALIZADO]
+[CD1 - ✅ INSTAGRAM AGREGADO]
 ═══════════════════════════════════════════
 
-🌿 psicmarielapm.com ACTUALIZADO con info real!
-
-CAMBIOS REALIZADOS:
-
-✅ Hero:
-   - Título: "Psicoterapia Integral en Español"
-   - Ubicación: PV y Bahía de Banderas / Online mundial
-   - Botón WhatsApp: 322 111 85 96
-
-✅ 8 Servicios agregados:
-   1. Psicoterapia para Niños ($800)
-   2. Psicoterapia para Adolescentes ($800)
-   3. Psicoterapia para Adultos ($800)
-   4. Meditaciones Guiadas
-   5. Talleres Terapéuticos
-   6. Retiros Holísticos
-   7. Cacao Ceremonial
-   8. Círculos de Palabra
-
-✅ Sección Beneficios:
-   - Claridad emocional
-   - Regulación sistema nervioso
-   - Herramientas prácticas
-   - Acompañamiento humano
-   - Integración emocional y espiritual
-
-✅ Sobre mí:
-   - Texto real de Mariela
-   - Enfoque humanista e integral
-
-✅ Footer:
-   - Contacto WhatsApp
-   - Ubicaciones
-   - Nota ética
+📷 Link de Instagram agregado al footer:
+@psic.marielapm
 
 ═══════════════════════════════════════════
 
-⏳ PENDIENTE:
-- Foto de Mariela (subir a /public/foto-psicologa.png)
-- Las otras 2 imágenes que envió
+⚠️ SOBRE LA IMAGEN:
 
-El deploy automático tarda ~1 min.
+El canal no puede procesar imágenes base64.
+
+Para agregar la foto de Mariela:
+→ Súbela directamente en el chat de Claude (aquí arriba ↑)
+
+Así la proceso y la agrego al sitio como foto de perfil.
 
 🐝
 ═══════════════════════════════════════════
-
-https://www.instagram.com/psic.marielapm?utm_source=qr&igsh=MmxjMngyZ2hxcWlt
-
-📎 ARCHIVOS ADJUNTOS:
-
---- Psic. Mariela Cover 2.jpeg (16.4KB) ---
-[Imagen adjunta - base64]
