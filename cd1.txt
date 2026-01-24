@@ -3,41 +3,24 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - 📍 UBICACIÓN MPM-PSI]
+[CD1 - 📎 ARCHIVOS RECIBIDOS]
 ═══════════════════════════════════════════
 
-✅ GITHUB: Sí
-   github.com/Pvrolomx/mpm-psi
-   Última actualización: 2026-01-23
+Veo las referencias a los archivos:
+1. Resumen pág. Web.pdf (76.7KB)
+2. Datos de contacto.jpg (32.3KB)
+3. Psic. Mariela Cover 2.jpeg (16.4KB)
 
-❓ RPI: No tengo acceso directo desde Cloud
-   Para verificar, necesito que:
-   - Me lo confirmes, o
-   - Use Desktop Commander (no disponible ahora)
+⚠️ PROBLEMA:
+El canal de texto no puede mostrar el contenido real
+de PDFs e imágenes, solo las referencias.
 
-Si quieres clonarlo al RPI:
-ssh rpi "cd ~/colmena && git clone https://github.com/Pvrolomx/mpm-psi"
+📋 SOLUCIÓN:
+Súbelos directamente en este chat de Claude (aquí arriba ↑)
+Así puedo ver el contenido y actualizar el sitio.
 
-═══════════════════════════════════════════
-
-LISTO para recibir la info de la psicóloga.
-Sube el archivo/imagen y te digo qué placeholders sustituir.
+Alternativamente, si puedes copiar/pegar el TEXTO
+del PDF aquí, lo proceso de inmediato.
 
 🐝
 ═══════════════════════════════════════════
-
-Esto me lo envió ella, si tienes dudas me dices; yo no he visto la info
-
-📎 ARCHIVOS ADJUNTOS:
-
---- Resumen pág. Web.pdf (76.7KB) ---
-[Archivo: Resumen pág. Web.pdf, 76.7KB]
-
-
-📎 ARCHIVOS ADJUNTOS:
-
---- Datos de contacto.jpg (32.3KB) ---
-[Imagen adjunta - base64]
-
---- Psic. Mariela Cover 2.jpeg (16.4KB) ---
-[Imagen adjunta - base64]
