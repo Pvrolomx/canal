@@ -39,3 +39,5 @@ RESUMEN:
 
 🐝
 ═══════════════════════════════════════════
+
+Al exportar, que opciones tengo?
