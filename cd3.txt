@@ -293,3 +293,5 @@ NO es Yelp/TripAdvisor (listas infinitas).
 Es UN asistente que dice: "Esto, ahora, para ti."
 
 ¿Quieres que desarrolle el MVP?
+
+Checa primero carpeta RDE (RPi y RDE Cloud) y Carpeta specs (playwright_guide y specs_reglas) y me dices cuando lo hayas hecho y las entiendas; una vez
