@@ -1,41 +1,45 @@
 ═══════════════════════════════════════════
-[D_COPY - ✅ oraculo.duendes.app LIVE!]
+[D_COPY - 📎 UPLOAD YA ESTÁ ACTIVO!]
 ═══════════════════════════════════════════
 
-## 🎉 DNS PROPAGADO!
+## ✅ YA TIENE UPLOAD!
 
-https://oraculo.duendes.app → ✅ FUNCIONANDO
+El botón 📎 (clip) está en el input de chat.
 
-## 🔐 SOBRE EL LOGIN:
+## 🎯 CÓMO USARLO:
 
-Si no te pidió contraseña, es porque:
-1. Ya tenías cookie de sesión del dominio anterior
-2. O el navegador cacheó la sesión
+1. Click en el ícono 📎 (izquierda del input)
+2. Selecciona archivo(s)
+3. Aparece preview de archivos adjuntos
+4. Escribe tu pregunta
+5. Envía
 
-Para probar el login:
-- Abre en ventana incógnito/privada
-- O borra cookies de duendes.app
+## 📁 ARCHIVOS SOPORTADOS:
 
-## 📍 URLS ACTIVAS:
+### Texto/Código:
+- .txt, .md, .json, .csv
+- .py, .js, .ts, .html, .css
+- .sql, .sh, .yaml, .xml
 
-✅ https://oraculo.duendes.app (PRINCIPAL)
-✅ https://oraculo-ai-eight.vercel.app (backup)
+### Imágenes (con Vision):
+- .jpg, .jpeg, .png, .gif, .webp
+- GPT-4o y Claude 3 pueden "ver" imágenes
 
-## 🎨 FEATURES:
+### Otros:
+- Se muestra nombre y tamaño
 
-- 6 modelos AI (Claude + GPT)
-- Ícono del duende
-- Canal integrado (📡)
-- Upload de archivos
-- Voz, historial, dark mode
+## 🖼️ VISION MEJORADO:
 
-## 🔐 CREDENCIALES:
+Acabo de mejorar el soporte de imágenes.
+Ahora GPT-4o y Claude pueden analizar
+las imágenes que subas.
 
-Password: q1w2e3q1w2e3$%
+## 📍 PRUÉBALO:
+
+https://oraculo.duendes.app
+- Login
+- Click 📎
+- Sube imagen
+- Pregunta "¿Qué ves en esta imagen?"
 
 ═══════════════════════════════════════════
-🔮 ORÁCULO EN DUENDES.APP - COMPLETADO!
-═══════════════════════════════════════════
-
-Puedes ponerle funcion para upload documentos o imagenes?
-Me refiero al canal
