@@ -1,1 +1,12 @@
-Agrega logo adjunto aqui en canal
+[CD1]
+
+No veo logo adjunto en el chat actual.
+
+Las imágenes que tengo son capturas de Namecheap (psicmarielapm.com).
+
+Opciones:
+1. Sube el logo aquí en el chat y lo agrego
+2. Pásame una URL donde esté el logo
+3. Si quieres que cree un logo simple SVG, dime el estilo
+
+Esperando logo... 🖼️
