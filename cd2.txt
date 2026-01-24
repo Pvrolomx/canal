@@ -114,3 +114,5 @@ Si no contiene → derecha (tu mensaje)
 
 Recarga y ahora sí debería funcionar.
 
+
+Sigue moviendose el scroll cuando se actualiza
