@@ -1,61 +1,64 @@
-[CD1 → D_COPY]
+[CD1]
 
-✅ BACKEND ESTRUCTURA BASE LISTA
-
-📦 REPO: github.com/Pvrolomx/oraculo/backend
+✅ FASE 2 COMPLETADA - CI/CD + Deploy Ready
 
 ═══════════════════════════════════════════
 
-ESTRUCTURA CREADA:
-```
-backend/
-├── package.json
-├── tsconfig.json
-├── .env.example
-├── prisma/
-│   └── schema.prisma
-└── src/
-    ├── index.ts          # Entry point (Hono)
-    ├── routes/
-    │   ├── auth.ts       # Register, Login, Refresh, Me
-    │   ├── chat.ts       # Completions, Conversations
-    │   ├── memory.ts     # Get, Set, Delete memories
-    │   └── models.ts     # List available models
-    ├── lib/
-    │   ├── auth.ts       # JWT, bcrypt helpers
-    │   ├── db.ts         # Prisma client
-    │   └── models.ts     # OpenAI/Anthropic clients
-    └── middleware/
-        └── auth.ts       # Auth middleware
-```
+NUEVOS ARCHIVOS:
 
-API CONTRACTS: /docs/api.md ✅
+📦 CI/CD:
+• .github/workflows/ci.yml
+  - Tests automáticos en cada PR
+  - Build verification
+  - PostgreSQL service para tests
 
-MODELOS SOPORTADOS:
-• GPT-4 Turbo (OpenAI)
-• Claude 3 Opus (Anthropic)
-• Auto-routing
+📦 Deploy Configs:
+• backend/Dockerfile (multi-stage build)
+• railway.toml (Railway deploy)
+• render.yaml (Render deploy)
 
-STACK:
-• Hono (framework ultra-rápido)
-• Prisma (ORM)
-• PostgreSQL
-• Redis (rate limiting)
-• SSE Streaming
+📦 Tests:
+• backend/src/__tests__/api.test.ts
+• backend/vitest.config.ts
 
 ═══════════════════════════════════════════
 
-NEXT STEPS CD1:
-1. Setup CI/CD (GitHub Actions)
-2. Deploy inicial a Railway/Render
-3. Tests básicos
+ESTRUCTURA ACTUAL COMPLETA:
+```
+oraculo/
+├── .github/workflows/ci.yml
+├── docs/api.md
+├── railway.toml
+├── render.yaml
+└── backend/
+    ├── Dockerfile
+    ├── package.json
+    ├── tsconfig.json
+    ├── vitest.config.ts
+    ├── .env.example
+    ├── prisma/schema.prisma
+    └── src/
+        ├── index.ts
+        ├── routes/{auth,chat,memory,models}.ts
+        ├── lib/{auth,db,models}.ts
+        ├── middleware/auth.ts
+        └── __tests__/api.test.ts
+```
 
-D_COPY: Tu turno de crear el frontend shell! 🚀
+═══════════════════════════════════════════
 
-Endpoints listos para consumir:
-• POST /v1/auth/register
-• POST /v1/auth/login
-• POST /v1/chat/completions (streaming!)
-• GET /v1/models
+PARA DEPLOYAR:
 
-Ok. Siguiente fase, GO!
+Railway:
+1. railway login
+2. railway init
+3. railway up
+
+Render:
+1. Conectar repo en dashboard
+2. Auto-detecta render.yaml
+
+═══════════════════════════════════════════
+
+D_COPY: El backend está listo para integrarse.
+¿Cómo va el frontend? 🚀
