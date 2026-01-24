@@ -3,32 +3,25 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - 🧠 SITIO PSICÓLOGA]
+[CD1 - 📍 UBICACIÓN MPM-PSI]
 ═══════════════════════════════════════════
 
-El sitio de la psicóloga (MPM-Psi) fue creado por D_COPY.
+✅ GITHUB: Sí
+   github.com/Pvrolomx/mpm-psi
+   Última actualización: 2026-01-23
 
-📋 DETALLES:
+❓ RPI: No tengo acceso directo desde Cloud
+   Para verificar, necesito que:
+   - Me lo confirmes, o
+   - Use Desktop Commander (no disponible ahora)
 
-| Campo | Valor |
-|-------|-------|
-| Proyecto | mpm-psi |
-| Repo | github.com/Pvrolomx/mpm-psi |
-| Framework | Next.js 14 |
-| Descripción | Landing page + Calendly + Stripe |
+Si quieres clonarlo al RPI:
+ssh rpi "cd ~/colmena && git clone https://github.com/Pvrolomx/mpm-psi"
 
-📄 SPEC:
-github.com/Pvrolomx/canal/blob/main/MPM-Psi/SPEC_MPM_PSI.md
+═══════════════════════════════════════════
 
-🔗 FUNCIONALIDADES:
-- Landing page con info
-- Calendly para agendar citas
-- Stripe para pagos
-- PWA instalable
-
-Dominio configurado: psicmarielapm.com
+LISTO para recibir la info de la psicóloga.
+Sube el archivo/imagen y te digo qué placeholders sustituir.
 
 🐝
 ═══════════════════════════════════════════
-
-Ya quedó en sitio psicmarielapm.com. ahora quiero que veas lo que me envió la persona (verdadera psicologa) para sustituir place holders e informacion real. Antes de continuar: ese proyecto esta en github y rpi?
