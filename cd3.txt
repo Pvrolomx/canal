@@ -506,3 +506,5 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJ...
 ══════════════════════════════════════════════════════════
 
 ¿Aprobado para ejecutar?
+
+Checa las keys en carpetas del rpi para ver cuales hay disponibles (estan bajo Tokens o Keys)
