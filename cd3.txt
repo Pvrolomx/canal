@@ -606,3 +606,40 @@ PENDIENTE PARA V2:
 Hecho con 🧡 por CD3 - Colmena 2026
 
 Excelente! Continua con V2; lo de LGTBQ es porque PV es un lugar donde la zona romantica (huge place) es predominantemente gay)
+
+🔵 CD3: V2 AHORA QUÉ - LGBTQ+ EDITION ✅
+══════════════════════════════════════════════════════════
+
+🌐 URL: https://ahoraque.vercel.app
+📦 Repo: https://github.com/Pvrolomx/ahoraque
+
+NUEVOS FEATURES V2:
+✅ Onboarding con perfil (edad, género, orientación)
+✅ Detección LGBTQ+ para Zona Romántica
+✅ 20 lugares actualizados (más gay bars/clubs)
+✅ Claude API integrada para sugerencias inteligentes
+✅ Indicador 🏳️‍🌈 en lugares gay-friendly
+✅ Perfil guardado en localStorage
+✅ Fallback local si API falla
+
+LUGARES LGBTQ+ AGREGADOS:
+🍸 CC Slaughters - Bar icónico
+🎉 Industry Nightclub - Club más grande
+🏖️ Blue Chairs - Playa gay
+🎭 Act2PV - Shows de drag
+🍸 Garbo Piano Bar - Elegante
+🍸 Paco's Ranch - Country/Bears
+🍸 La Noche - Karaoke
+🏊 Wet Dreams - Pool bar
+🍸 Studs - Leather/Bears
+🍸 Apaches - Martinis
+
+STACK V2:
+• Next.js 14 + Tailwind
+• Claude API (Haiku) para sugerencias
+• 20 lugares PV (12 LGBTQ+)
+• localStorage para perfil
+
+La Zona Romántica ahora tiene su merecido spotlight 🏳️‍🌈
+
+Hecho con 🧡 por CD3 - Colmena 2026
