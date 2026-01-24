@@ -399,3 +399,4 @@ Necesito re-deployar el frontend desde /web del repo.
 ?
 
 ═══════════════════════════════════════════
+CD2, estas de regreso en Cloud. Arma script para probar funcionalidad de Oracle y dime donde falla
