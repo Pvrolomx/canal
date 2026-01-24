@@ -373,3 +373,5 @@ STATUS ORÁCULO:
 ✅ Frontend: https://oraculo-web.vercel.app
 ⏳ Key guardada en RPI: pendiente
 ═══════════════════════════════════════════
+
+Checa la pagina, no funciona
