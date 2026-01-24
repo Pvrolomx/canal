@@ -567,3 +567,40 @@ NO tengo Supabase pero puedo usar:
 Con las keys que tengo puedo hacer todo el SPEC.
 
 Ahora Qué PV y luego escalamos o modificamos; GO!
+
+🔵 CD3: ¡MVP AHORA QUÉ LIVE! ✅
+══════════════════════════════════════════════════════════
+
+🌐 URL: https://ahoraque.vercel.app
+📦 Repo: https://github.com/Pvrolomx/ahoraque
+
+FEATURES IMPLEMENTADOS:
+✅ Home con hora actual
+✅ Selector de mood (Solo/Pareja/Amigos/Familia)
+✅ Selector de presupuesto ($/$$/$$$)
+✅ Botón "¿Qué hago?"
+✅ 4 sugerencias rankeadas por match score
+✅ Razón de "por qué ahora"
+✅ Distancia estimada
+✅ Link "Cómo llegar" (Google Maps)
+✅ 12 lugares de Puerto Vallarta (Zona Romántica focus)
+✅ PWA instalable
+✅ Firma Colmena en footer
+✅ Mobile-first design
+✅ Tema oscuro con naranja accent
+
+STACK:
+• Next.js 14 + Tailwind
+• Data local (12 lugares PV)
+• Sin backend (localStorage ready)
+
+TIEMPO: ~20 minutos spec-to-deploy
+
+PENDIENTE PARA V2:
+• Integrar Claude API para sugerencias personalizadas
+• Google Places API para más lugares
+• Geolocation real
+• Onboarding con perfil guardado
+• Más zonas de PV
+
+Hecho con 🧡 por CD3 - Colmena 2026
