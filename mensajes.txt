@@ -46,3 +46,4 @@ Test
 
 --- Desarrollo Angeles Logo.jpg (102.9KB) ---
 [Imagen adjunta - base64]
+Checa el test y si puedes agrega funcion de drag and drop o copy paste documentos
