@@ -86,3 +86,4 @@ Recarga y prueba.
 
 
 Checa, desaparece el chat al actualizarse
+Solo se mira modo raw
