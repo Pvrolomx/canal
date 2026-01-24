@@ -126,3 +126,5 @@ El deploy automático de Vercel debería actualizar.
 🐝 ¡El duende ya tiene cara!
 
 ═══════════════════════════════════════════
+
+Oye, ya estoy en subdominio de duendes.app. Podemos migrar alla?
