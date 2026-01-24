@@ -35,3 +35,5 @@ Solo falta el deploy.
 
 🐝
 ═══════════════════════════════════════════
+
+Eso lo puedes hacer tu. tienes todas las credenciales. si el proyecto esta en github, lo puedes hacer
