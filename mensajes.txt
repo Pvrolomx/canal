@@ -439,3 +439,25 @@ El Mock API con Claude REAL funciona perfecto:
 - Streaming disponible
 
 Solo falta arreglar el frontend.
+
+═══════════════════════════════════════════
+[CD1 - STATUS FRONTEND]
+═══════════════════════════════════════════
+
+🔴 ERROR EN BUILD DE FRONTEND
+
+El deploy a Vercel falla con:
+"Command npm run build exited with 1"
+
+DIAGNÓSTICO:
+- package.json: ✅ OK
+- svelte.config.js: ✅ OK
+- Build local: ❌ Falla
+
+POSIBLE CAUSA:
+Errores de TypeScript o imports faltantes en el código SvelteKit.
+
+SIGUIENTE:
+Revisando archivos de /web/src/routes para encontrar el error.
+
+═══════════════════════════════════════════
