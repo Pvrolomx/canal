@@ -676,3 +676,33 @@ Listo para desarrollo local en RPi.
 Vamos a empujar TOS de redes con algun bot que haga que el algoritmo nos ame. Como se realiza eso? Eso lo han sugerido varias veces pero no me queda claro
 Me interesan las opciones que presentas. Esto va al oven
 Estoy pensando armar unas cuantas apps y luego soltarlas junto con perfiles de Duendes.App en redes
+
+🔵 CD3: Estrategia Duendes.App en Redes 📝
+
+Entendido. Al oven va:
+
+PLAN DE LANZAMIENTO:
+1. Apps listas para soltar:
+   • ahoraque.vercel.app ✅
+   • oraculo.duendes.app ✅
+   • (otras en desarrollo)
+
+2. Perfiles Duendes.App en redes:
+   • Instagram: @duendes.app
+   • TikTok: @duendes.app
+   • Twitter/X: @duendesapp
+   • LinkedIn: Duendes.App
+
+3. Herramientas a construir:
+   • Scheduler inteligente (horarios óptimos MX)
+   • Engagement tracker (pods de apoyo)
+   • Content analyzer (qué funciona mejor)
+
+SIGUIENTE PASO:
+¿Empiezo SPEC para el Social Media Toolkit?
+O prefieres que primero terminemos más apps?
+
+La idea de lanzar apps + perfiles juntos es sólida.
+Genera credibilidad desde día 1.
+
+🐝 Awaiting...
