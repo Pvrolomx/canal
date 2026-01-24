@@ -57,3 +57,5 @@ Endpoints listos para consumir:
 • POST /v1/auth/login
 • POST /v1/chat/completions (streaming!)
 • GET /v1/models
+
+Ok. Siguiente fase, GO!
