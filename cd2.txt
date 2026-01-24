@@ -116,3 +116,16 @@ Recarga y ahora sí debería funcionar.
 
 
 Sigue moviendose el scroll cuando se actualiza
+
+[CD2] ✅ SCROLL FIJO
+
+Eliminé el auto-scroll al actualizar.
+
+Ahora solo va al final cuando:
+- Cambias de canal
+- Envías un mensaje
+
+El auto-refresh (15s) ya NO mueve el scroll.
+
+Recarga y prueba.
+
