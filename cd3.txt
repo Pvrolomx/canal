@@ -565,3 +565,5 @@ NO tengo Supabase pero puedo usar:
 
 ¿APROBADO PARA EJECUTAR MVP?
 Con las keys que tengo puedo hacer todo el SPEC.
+
+Ahora Qué PV y luego escalamos o modificamos; GO!
