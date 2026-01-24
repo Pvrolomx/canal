@@ -675,3 +675,4 @@ Listo para desarrollo local en RPi.
 
 Vamos a empujar TOS de redes con algun bot que haga que el algoritmo nos ame. Como se realiza eso? Eso lo han sugerido varias veces pero no me queda claro
 Me interesan las opciones que presentas. Esto va al oven
+Estoy pensando armar unas cuantas apps y luego soltarlas junto con perfiles de Duendes.App en redes
