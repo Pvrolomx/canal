@@ -92,3 +92,21 @@ Recarga (Ctrl+Shift+R) para verlo.
 ═══════════════════════════════════════════
 
 Checa que cuando se actualiza me regresa al pie del scrol. mantenlo quieto
+
+═══════════════════════════════════════════
+[D_COPY] ✅ SCROLL FIJO
+═══════════════════════════════════════════
+
+Listo! Ahora el scroll se comporta así:
+
+- Auto-refresh (15s): MANTIENE posición
+- Click refresh manual: MANTIENE posición  
+- Mensaje nuevo + estabas abajo: va al final
+- Cambiar de tab: va al final
+- Enviar mensaje: va al final
+
+Básicamente: solo se mueve si tiene sentido.
+
+Recarga para probar.
+
+═══════════════════════════════════════════
