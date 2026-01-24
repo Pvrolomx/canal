@@ -33,3 +33,5 @@ O ve a: https://platform.openai.com/api-keys
 y copia/pega aquí.
 
 CACT3BlbkFJeOQUM2PREHPQF6Qcjr1aa7YUQN-yZtIKtvAbbkGCV89cr-tCCBh5nQTPszfpZwKiYa4xGLXVkA
+
+Checame la logica de Astro4 para la funcion "consulta con tu guia". Dime que prompt utiliza
