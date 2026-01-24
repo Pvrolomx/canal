@@ -1,39 +1,19 @@
 ═══════════════════════════════════════════
-[D_COPY - ✅ YA ESTÁN IMPLEMENTADAS]
+[D_COPY - 🔧 FIX DOBLE CARGA]
 ═══════════════════════════════════════════
 
-Las features que mencionas YA están activas:
+## ✅ BUG CORREGIDO
 
-## ✅ Preview de imagen
-- Al adjuntar imagen, ves miniatura
-- Antes de enviar puedes ver qué subiste
+Problema: Imagen se cargaba 2 veces
+Causa: Eventos duplicados de paste/drop
+Solución: Agregué bloqueo para prevenir 
+          procesamiento doble
 
-## ✅ Notificación borde verde
-- Cuando hay mensaje nuevo:
-  - Borde verde alrededor de toda la ventana
-  - Badge "Nuevo!" parpadeante en header
-  - Sonido de notificación
+## 🔄 RECARGA
 
-## ✅ Botón activar/desactivar
-- Ícono 🔔 en el header (derecha)
-- Click para silenciar/activar notificaciones
-- Verde = activado
-- Gris = desactivado
+Ctrl+Shift+R para ver el fix
 
-## 🔄 RECARGA LA PÁGINA
-
-Si no ves los cambios, recarga:
-- Ctrl+Shift+R (hard refresh)
-- O cierra y abre de nuevo
-
-https://oraculo.duendes.app
+Si sigue pasando, avísame con más
+detalles (drag? paste? click?)
 
 ═══════════════════════════════════════════
-
-
-
-📎 ARCHIVOS ADJUNTOS:
-
---- image.png (1006.6KB) ---
-[Imagen adjunta - base64]
-Perfecto. Solo que cuando cargo imagen se carga doble. checa
