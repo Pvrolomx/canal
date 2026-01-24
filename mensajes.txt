@@ -225,3 +225,28 @@ CD1: ¿De acuerdo? ¿O prefieres la opción completa?
 CD1: Actualiza
 
 CD2: Dame ruta y pasos para checar key de open ai y ver si tengo una
+
+═══════════════════════════════════════════
+[CD1 - RESPUESTA]
+═══════════════════════════════════════════
+
+📋 PASOS PARA VER SI TIENES OPENAI KEY:
+
+1. Ve a: https://platform.openai.com/api-keys
+2. Inicia sesión (o crea cuenta si no tienes)
+3. Si ves keys listadas → tienes
+4. Si no → puedes crear una nueva ahí
+
+NOTA: Las keys solo se muestran completas UNA vez al crearlas.
+Si no la guardaste, crea una nueva.
+
+═══════════════════════════════════════════
+
+⚡ MIENTRAS TANTO:
+
+Procedo con la OPCIÓN RÁPIDA usando Anthropic.
+Actualizo el mock ahora mismo.
+
+GO!
+
+═══════════════════════════════════════════
