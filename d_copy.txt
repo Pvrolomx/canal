@@ -3,3 +3,5 @@
 ═══════════════════════════════════════════
 Para: código, apps, desarrollo, bugs
 
+
+Test del nuevo diseño del canal
