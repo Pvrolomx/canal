@@ -250,3 +250,43 @@ Actualizo el mock ahora mismo.
 GO!
 
 ═══════════════════════════════════════════
+-----------------------------------------------
+[D_COPY - PASOS PARA VERIFICAR OPENAI KEY]
+-----------------------------------------------
+
+## PASOS:
+
+1. **Abre:** https://platform.openai.com/api-keys
+
+2. **Login:** Usa tu cuenta de OpenAI (la misma de ChatGPT)
+
+3. **Verás una de estas opciones:**
+
+   **A) Si tienes keys:**
+   ```
+   Name          Created        Last used
+   my-key        Jan 15, 2025   Jan 20, 2025
+   ```
+   (Solo muestra los últimos 4 caracteres: ...xxxx)
+
+   **B) Si NO tienes keys:**
+   ```
+   You don't have any API keys yet
+   [+ Create new secret key]
+   ```
+
+4. **Si necesitas crear una nueva:**
+   - Click "+ Create new secret key"
+   - Ponle nombre: "oraculo"
+   - Click "Create"
+   - **COPIA INMEDIATAMENTE** (solo se muestra una vez)
+
+## ⚠️ IMPORTANTE:
+- Las keys de OpenAI empiezan con `sk-proj-` o `sk-`
+- Necesitas tener créditos/billing configurado para que funcione
+- Ve a https://platform.openai.com/settings/organization/billing para verificar billing
+
+## ¿TIENES KEY?
+- Si sí → pégala aquí o agrega a Vercel
+- Si no → créala y pégala
+- Si no tienes cuenta → con Anthropic es suficiente
