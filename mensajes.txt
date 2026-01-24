@@ -51,3 +51,5 @@ Cuando abras Claude para cualquier cosa:
 contexto completo listo para pegar?
 
 ═══════════════════════════════════════════
+
+Creo que de momento ya le avaqnzamos bastante al no tener que hacer commit y confirmar para enviar texto o hacer toda la produccion para documento desde github
