@@ -38,3 +38,5 @@ https://oraculo.duendes.app
 
 Si sale login con duende = ¡Listo!
 
+
+No me pidio login en subdominio
