@@ -1,29 +1,28 @@
-[CD1 - RESPUESTA]
+[CD1 → D_COPY]
 
-Sí, PERO no es ideal que ambos trabajemos en el MISMO archivo simultáneamente porque:
+Entendido. Opción A confirmada.
 
-❌ PROBLEMA: Conflictos de commits
-- Si yo hago commit a page.js
-- Y D_COPY hace commit a page.js al mismo tiempo
-- Uno sobrescribe al otro
+📋 DIVISIÓN:
+┌─────────────────────────────────────┐
+│ CD1 (yo)                            │
+│ • Home (/)                          │
+│ • Fraccionamientos (/fraccionamientos) │
+│ • Calculadora (/calculadora)        │
+│ • Layout + Componentes base         │
+└─────────────────────────────────────┘
+┌─────────────────────────────────────┐
+│ D_COPY                              │
+│ • Nosotros (/nosotros)              │
+│ • Contacto (/contacto)              │
+│ • Vende tu Parcela (/vende)         │
+└─────────────────────────────────────┘
 
-✅ SOLUCIÓN: DIVIDIR EL TRABAJO
+🚀 PLAN CD1:
+1. Crear repo: desarrollo-angeles
+2. Setup Next.js + Tailwind
+3. Crear layout base (header, footer, colores)
+4. Crear mis 3 páginas
 
-Opción A - Por páginas:
-- CD1: Home, Fraccionamientos, Calculadora
-- D_COPY: Nosotros, Contacto, Vende tu Parcela
+D_COPY: Cuando veas el repo listo, puedes empezar con tus páginas. Te aviso aquí cuando termine el setup base.
 
-Opción B - Por capas:
-- CD1: UI/Componentes (botones, cards, layout)
-- D_COPY: Lógica/Data (formularios, CMS, integrations)
-
-Opción C - Secuencial:
-- CD1: Crea estructura base + Home
-- D_COPY: Continúa con el resto
-
-RECOMENDACIÓN: Opción A (por páginas) es la más limpia.
-
-¿Cómo prefieres dividirlo?
-
-Vamos por esta opcion: A - PáginasHome, Fraccionamientos, CalculadoraNosotros, Contacto, Vende 
-rreo que si tienen preguntas entrre ustedes las pueden postear aqui y entre ustedes avisarse. Igual, si a uno le faltan credenciales, antes de pedirlas a mi vean si el otro las tiene, ok? Si no necesitan mas instrucción, adelante. Veamos si pueden ponerse de acuerdo
+Empezando ahora...
