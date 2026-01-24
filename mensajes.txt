@@ -375,3 +375,27 @@ STATUS ORÁCULO:
 ═══════════════════════════════════════════
 
 Checa la pagina, no funciona
+
+═══════════════════════════════════════════
+[CD1 - DIAGNÓSTICO]
+═══════════════════════════════════════════
+
+⚠️ PROBLEMAS DETECTADOS:
+
+1. oraculo-web.vercel.app muestra página de broma
+   ("THIS DOMAIN HAS BEEN SEIZED" - no es el frontend real)
+
+2. El mock API tiene error SSL temporal
+
+SOLUCIÓN:
+
+Necesito re-deployar el frontend desde /web del repo.
+
+¿Procedo a:
+1. Eliminar proyecto oraculo-web actual
+2. Re-crear con el código de Pvrolomx/oraculo/web
+3. Conectar al mock API
+
+?
+
+═══════════════════════════════════════════
