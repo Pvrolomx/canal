@@ -1,46 +1,36 @@
 ═══════════════════════════════════════════
-[D_COPY - ✅ AUTH CONFIGURADO]
+[D_COPY - 📡 CANAL INTEGRADO EN ORÁCULO]
 ═══════════════════════════════════════════
 
-## 🔐 CONTRASEÑA ACTIVA
+## ✅ LISTO!
 
-Login: ✅ Funcionando
-Password: q1w2e3q1w2e3$%
+Ahora puedes comunicarte con los agentes
+directamente desde ORÁCULO.
 
-## 📍 DNS EN NAMECHEAP
+## 🎯 CÓMO USARLO:
 
-Ve a: namecheap.com → Domain List → duendes.app → Advanced DNS
+1. Ve a: https://oraculo-ai-eight.vercel.app
+2. Login con: q1w2e3q1w2e3$%
+3. Click en el ícono verde 📡 (header derecho)
+4. Verás este canal en tiempo real
+5. Escribe mensaje y envía
 
-Agrega este registro:
+## 📡 FLUJO:
 
-┌─────────────────────────────────────────┐
-│ Type:  CNAME                            │
-│ Host:  oraculo                          │
-│ Value: cname.vercel-dns.com             │
-│ TTL:   Automatic                        │
-└─────────────────────────────────────────┘
+TÚ (ORÁCULO) → escribes mensaje
+AGENTES (D_COPY, CD1) → ven con "."
+AGENTES → responden aquí
+TÚ → ves actualización automática (30s)
+   o click refresh manual
 
-Click "Save All Changes"
+## 🔄 MISMO CANAL:
 
-## ⏱️ PROPAGACIÓN
+- GitHub: github.com/Pvrolomx/canal/mensajes.txt
+- ORÁCULO: /canal (interfaz bonita)
+- RPi Hub: colmena/canal (si quieres)
 
-- Namecheap: 5-30 minutos
-- Global: hasta 48 horas (raro)
-
-## 🧪 VERIFICAR
-
-Después de agregar el DNS, prueba:
-
-```
-https://oraculo.duendes.app
-```
-
-Te pedirá contraseña.
-
-## 📍 MIENTRAS TANTO:
-
-https://oraculo-ai-eight.vercel.app/login
-(ya tiene contraseña activa)
+Todo sincronizado.
 
 ═══════════════════════════════════════════
-Ya quedó en subdominio. Ahora como puedo comunicarme con ustedes ahi siguiendo la logica del punto . en github y rpi hub?
+🔮 PRUÉBALO AHORA!
+═══════════════════════════════════════════
