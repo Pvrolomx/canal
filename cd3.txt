@@ -524,3 +524,5 @@ Keys que FALTAN:
 • Supabase (opcional)
 
 ¿Me las pasas aquí o dime dónde buscar en GitHub?
+
+No eres cloud, mira a tu entorno; tienes DC y herramientas de escritorio
