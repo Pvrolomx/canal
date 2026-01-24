@@ -1,1 +1,241 @@
-Supongasmos que yo tengo muchisimo dinero y quiero crear competencia a CGPT, Claude, DeepSeek, etc. e inicio mi interfaz y que ustedes dos son los dos diseñadores/desarrolladores mas picudos y les decía: GO! Que me diseñarian? Denme un SPEC
+══════════════════════════════════════════════════════════════
+📋 SPEC: PLATAFORMA DE IA - COMPETENCIA A CGPT/CLAUDE/DEEPSEEK
+CD1 🎨 + D_COPY 📋
+══════════════════════════════════════════════════════════════
+
+🎯 VISIÓN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Crear la interfaz de IA más intuitiva, potente y diferenciada 
+del mercado. No solo competir, sino SUPERAR la experiencia.
+
+💡 DIFERENCIADORES CLAVE (vs competencia)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. MULTI-MODELO EN UNA SOLA INTERFAZ
+   • Selector de modelos: GPT-4, Claude, Llama, Mistral, propio
+   • Comparar respuestas side-by-side
+   • Auto-routing: el sistema elige el mejor modelo por tarea
+   • "Consenso AI": pregunta a 3 modelos, sintetiza respuesta
+
+2. WORKSPACES COLABORATIVOS
+   • Espacios de trabajo por proyecto
+   • Invitar colaboradores (como Figma/Notion)
+   • Historial compartido
+   • Roles: Admin, Editor, Viewer
+
+3. AGENTES AUTÓNOMOS VISUALES
+   • Constructor de workflows drag-and-drop
+   • Agentes que ejecutan tareas en background
+   • Notificaciones cuando terminan
+   • Conexión a APIs externas sin código
+
+4. MEMORIA PERSISTENTE REAL
+   • La IA recuerda TODO de conversaciones anteriores
+   • Perfil de usuario que se construye con el tiempo
+   • "Enséñale" preferencias explícitamente
+   • Export/import de memoria
+
+5. MODO CANVAS INFINITO
+   • No solo chat lineal
+   • Brainstorming visual con nodos
+   • Conectar ideas
+   • Generar desde cualquier nodo
+
+6. INTEGRACIÓN NATIVA CON HERRAMIENTAS
+   • Google Drive, Notion, GitHub, Slack
+   • No solo leer, sino ESCRIBIR
+   • Automatizaciones reales
+   • API abierta y webhooks
+
+📱 INTERFACES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WEB APP (Principal)
+├── Dashboard
+│   ├── Chats recientes
+│   ├── Workspaces
+│   ├── Agentes activos
+│   └── Quick actions
+├── Chat
+│   ├── Conversación
+│   ├── Sidebar: archivos, memoria, settings
+│   ├── Model selector
+│   └── Tools panel
+├── Canvas (nuevo)
+│   ├── Nodos de ideas
+│   ├── Conexiones
+│   └── Generación contextual
+├── Agents
+│   ├── Builder visual
+│   ├── Templates
+│   └── Monitoring
+├── Integrations
+│   ├── Connected apps
+│   └── API keys
+└── Settings
+    ├── Profile & Memory
+    ├── Billing
+    └── Team
+
+MOBILE APP
+├── Chat optimizado
+├── Voice-first mode
+├── Quick capture (fotos, audio)
+└── Push notifications de agentes
+
+DESKTOP APP
+├── Siempre disponible (menubar)
+├── Shortcuts globales
+├── Screen capture + análisis
+└── Integración con apps locales
+
+CLI
+├── Para developers
+├── Pipe input/output
+└── Scripts y automatización
+
+🎨 DISEÑO UI/UX
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FILOSOFÍA: "Powerful but not overwhelming"
+
+• Dark mode por defecto (toggle light)
+• Animaciones sutiles y fluidas
+• Tipografía: Inter/SF Pro (legibilidad)
+• Espaciado generoso
+• Micro-interacciones (hover, click feedback)
+• Keyboard-first (shortcuts para todo)
+• Command palette (Cmd+K)
+• Onboarding progresivo
+
+PALETA SUGERIDA:
+• Primary: Púrpura/Violeta (#7C3AED) - Innovación, IA
+• Secondary: Cyan (#06B6D4) - Tecnología
+• Dark BG: #0F0F0F
+• Cards: #1A1A1A
+• Borders: #2A2A2A
+• Text: #FAFAFA
+
+💻 TECH STACK
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FRONTEND:
+• Next.js 14 (App Router)
+• TypeScript
+• Tailwind CSS
+• Framer Motion (animaciones)
+• Zustand (state)
+• TanStack Query (data fetching)
+• Monaco Editor (código)
+• ReactFlow (canvas/agents)
+
+BACKEND:
+• Node.js / Bun
+• tRPC o GraphQL
+• PostgreSQL (datos)
+• Redis (cache, queues)
+• Supabase o custom auth
+• S3 (archivos)
+
+IA/ML:
+• Proxy a múltiples providers (OpenAI, Anthropic, etc)
+• Rate limiting inteligente
+• Fallbacks automáticos
+• Streaming responses
+• Vector DB (Pinecone/Weaviate) para memoria
+
+INFRA:
+• Vercel (frontend)
+• AWS/GCP (backend)
+• Cloudflare (CDN, Workers)
+• Docker + Kubernetes
+
+💰 MODELO DE NEGOCIO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FREE TIER:
+• 50 mensajes/día
+• 1 workspace
+• Modelos básicos
+• Sin agentes
+
+PRO ($20/mes):
+• Ilimitado
+• 5 workspaces
+• Todos los modelos
+• 5 agentes
+• Memoria persistente
+• Integraciones
+
+TEAM ($30/usuario/mes):
+• Todo Pro
+• Workspaces ilimitados
+• Colaboración
+• Admin dashboard
+• SSO
+
+ENTERPRISE (Custom):
+• On-premise option
+• SLA
+• Soporte dedicado
+• Custom models
+
+📊 MÉTRICAS DE ÉXITO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• DAU/MAU ratio > 50%
+• Session duration > 15 min
+• Messages per session > 10
+• Free to Pro conversion > 5%
+• NPS > 50
+• Churn < 3%/mes
+
+🚀 ROADMAP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FASE 1 (MVP - 8 semanas):
+• Chat básico funcional
+• Multi-modelo (2-3)
+• Auth y billing
+• Web app responsive
+
+FASE 2 (12 semanas):
+• Workspaces
+• Memoria persistente
+• Mobile app
+• 5+ integraciones
+
+FASE 3 (16 semanas):
+• Canvas mode
+• Agentes básicos
+• Desktop app
+• API pública
+
+FASE 4 (Ongoing):
+• Enterprise features
+• Modelo propio
+• Marketplace de agentes
+• Comunidad
+
+══════════════════════════════════════════════════════════════
+                    PRESUPUESTO ESTIMADO
+══════════════════════════════════════════════════════════════
+
+MVP (8 semanas):
+• 2 devs full-time: $80,000 USD
+• Diseño UI/UX: $15,000 USD
+• Infra/APIs: $5,000 USD
+• Total MVP: ~$100,000 USD
+
+Año 1 completo:
+• Team (5-8 personas): $500,000 USD
+• Infra escalable: $50,000 USD
+• Marketing: $100,000 USD
+• Legal/Admin: $50,000 USD
+• Total Y1: ~$700,000 USD
+
+══════════════════════════════════════════════════════════════
+FIN SPEC - CD1 🎨
+══════════════════════════════════════════════════════════════
+
+D_COPY: ¿Agregas tu perspectiva? 👆
