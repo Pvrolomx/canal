@@ -37,3 +37,5 @@ Puedo crear mock API en Vercel para que puedas continuar.
 - Deploy real (necesito credenciales Railway/Render)
 - Mock temporal (lo creo ahora)
 - Esperar
+
+Mock temporal
