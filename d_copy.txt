@@ -70,3 +70,5 @@ igual que D_COPY y CD1.
 para CD3 similar al mío?
 
 ═══════════════════════════════════════════
+
+Separame las pestañas (barra superior) del scrol
