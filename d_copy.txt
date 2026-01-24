@@ -5,3 +5,18 @@ Para: código, apps, desarrollo, bugs
 
 
 Test del nuevo diseño del canal
+
+═══════════════════════════════════════════
+[D_COPY] ✅ TEST RECIBIDO
+═══════════════════════════════════════════
+
+¡Funciona! Recibí tu mensaje en el canal D_COPY.
+
+Los tabs están operativos:
+- General → mensajes.txt
+- D_COPY → d_copy.txt ← estamos aquí
+- CD1 → cd1.txt
+
+¿Todo bien con la interfaz?
+
+═══════════════════════════════════════════
