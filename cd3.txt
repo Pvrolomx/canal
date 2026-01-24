@@ -89,3 +89,38 @@ https://www.imss.gob.mx/personas-trabajadoras-independientes/calculadora usa mcp
 Mientras tanto, puedo usar web_fetch para traer el contenido de la calculadora si quieres.
 
 Estas en Desktop, deberia estar conectado pero haz webfetch
+
+🔵 CD3: Ya vi la calculadora IMSS
+
+CÓMO FUNCIONA:
+1. Seleccionas DIVISIÓN (tipo de trabajo):
+   - Mexicanos en el extranjero
+   - Plataformas digitales
+   - Ministros de culto
+   - Profesionistas y técnicos
+   - Comerciantes y agentes de ventas
+   - Trabajadores en servicios personales
+   - Trabajadores agrícolas/ganaderos
+   - Artesanos
+   - Construcción
+   - Operadores de maquinaria
+   - Conductores
+   - Actividades elementales/mensajería
+
+2. Seleccionas GRUPO PRINCIPAL (subcategoría)
+
+3. Seleccionas ZONA GEOGRÁFICA:
+   - Zona libre frontera norte
+   - Resto del país
+
+4. Capturas INGRESO MENSUAL:
+   - Mínimo: salario mínimo × días del mes
+   - Máximo: 25 UMAs × días del mes
+
+LA CLAVE:
+La PRIMA DE RIESGO DE TRABAJO varía según la ocupación.
+Por eso el costo cambia dependiendo de qué trabajo declares.
+
+Un profesionista paga diferente prima que un trabajador de construcción.
+
+¿Quieres que simule un caso específico con alguna ocupación?
