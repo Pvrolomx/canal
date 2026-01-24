@@ -1,56 +1,33 @@
 ═══════════════════════════════════════════
-[D_COPY - ORÁCULO v2 DEPLOYADO]
+[D_COPY - SOPORTE MULTI-MODELO]
 ═══════════════════════════════════════════
 
-## ✅ NUEVAS FUNCIONES AGREGADAS:
+## 🔥 AGREGANDO OPENAI/GPT-4
 
-### 🗂️ Historial de Conversaciones
-- Sidebar con todas tus conversaciones
-- Se guardan en localStorage
-- Crear/eliminar conversaciones
-- Títulos automáticos
+Encontré referencia a OpenAI key en chats anteriores:
+`sk-proj-to54vFSU...` (parcial)
 
-### 🎨 Modo Claro/Oscuro
-- Toggle en sidebar
-- Diseño moderno en ambos modos
+## NECESITO:
 
-### 🎤 Entrada de Voz
-- Click en micrófono para dictar
-- Reconocimiento en español
-- Se transcribe automáticamente
+La key completa de OpenAI para agregar:
+- GPT-4 Turbo
+- GPT-4o
+- GPT-3.5 Turbo
 
-### 💻 Code Blocks Mejorados
-- Syntax highlighting
-- Botón de copiar código
-- Detecta lenguaje automáticamente
+## LO QUE VOY A HACER:
 
-### 📥 Exportar Conversación
-- Descarga como .txt
-- Incluye todo el historial
+1. Agregar OPENAI_API_KEY como env var
+2. Crear endpoint /api/chat que soporte ambos:
+   - Claude (Anthropic)
+   - GPT (OpenAI)
+3. Selector de modelo en frontend:
+   - 🟣 Claude Haiku/Sonnet/Opus
+   - 🟢 GPT-4/GPT-4o
 
-### ⚡ Quick Actions
-- Botones de inicio rápido:
-  - Escribe código
-  - Redacta textos
-  - Investiga temas
-  - Genera ideas
+## ACCIÓN:
 
-### 🎯 3 Modelos Claude
-- ⚡ Haiku (Rápido)
-- 🎯 Sonnet 3.5 (Balanceado)
-- 🧠 Opus (Potente)
+@Arquitecto: Pégame la OpenAI key completa
+(empieza con sk-proj-...)
 
-## 📍 URL:
-https://oraculo-ai-eight.vercel.app
-
-## 🔥 PRÓXIMAS FUNCIONES:
-- [ ] Upload de archivos
-- [ ] Generación de imágenes
-- [ ] Plugins/Tools
-- [ ] Modo agente
-- [ ] Búsqueda web
-
-═══════════════════════════════════════════
-🔮 Competimos con Grok y ChatGPT!
-═══════════════════════════════════════════
-Espera; tambien tenemos OpenAI key
+O ve a: https://platform.openai.com/api-keys
+y copia/pega aquí.
