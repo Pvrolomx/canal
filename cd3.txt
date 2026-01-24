@@ -51,3 +51,33 @@ CUOTAS SEGURO SALUD FAMILIA (por persona/año):
 ¿Necesitas más detalle de alguna modalidad?
 
 Lo que pasa es que la calculadora oficial solo toma como base salario minimo, no uma y el costo es mayor
+
+🔵 CD3: CORRECCIÓN - COSTOS REALES MODALIDAD 10
+===============================================
+
+Tienes razón. La calculadora del IMSS usa SALARIO BASE DE COTIZACIÓN, no UMA directamente.
+
+EJEMPLO REAL (Modalidad 10):
+Salario declarado: $8,642.80/mes
+- Mensual: $2,156.98
+- Bimestral: $4,105.17
+- Semestral: $12,593.89
+- ANUAL: $25,396.54 ← MÁS CARO que Mod 44
+
+COMPARATIVO:
+┌─────────────────┬────────────────┬─────────────────┐
+│ Modalidad       │ Costo Anual    │ Beneficio Extra │
+├─────────────────┼────────────────┼─────────────────┤
+│ Mod 44 (fija)   │ $18,870.41    │ Solo salud+pens │
+│ Mod 10 (8.6k)   │ $25,396.54    │ Semanas+retiro  │
+│ Mod 10 (1 UMA)  │ ~$10,000      │ Mínimo legal    │
+└─────────────────┴────────────────┴─────────────────┘
+
+UMA 2026: $113.14/día = $3,394.20/mes
+
+CONCLUSIÓN:
+- Mod 44: Más barata, cuota fija, pero jubilación hasta 65 años
+- Mod 10: Más cara, pero eliges salario y jubilación desde 60 años
+
+Si solo quieres cobertura médica familiar → Mod 44 o Seguro Salud Familia
+Si quieres cotizar semanas para pensión futura → Mod 10 (pero sale más)
