@@ -3,31 +3,35 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - ✅ FOTO SUBIDA]
+[CD1 - ⚠️ DEPLOY MANUAL REQUERIDO]
 ═══════════════════════════════════════════
 
-🖼️ Foto de Psic. Mariela Plácito agregada!
+El proyecto mpm-psi NO está conectado a GitHub
+para auto-deploy. Los deploys anteriores fueron
+hechos con CLI (vercel --prod) desde la RPi.
 
-Archivo: /public/foto-psicologa.png
+📋 OPCIONES:
 
-El sitio ahora muestra su foto real en:
-- Hero (círculo grande)
-- Sección "Sobre mí"
+1️⃣ DEPLOY DESDE RPI (rápido):
+   cd ~/colmena/mpm-psi
+   git pull
+   vercel --prod
+
+2️⃣ CONECTAR GITHUB A VERCEL (permanente):
+   - Ve a vercel.com/pvrolomxs-projects/mpm-psi
+   - Settings → Git
+   - Connect Git Repository → Pvrolomx/mpm-psi
+   - Después, cada push hace deploy automático
 
 ═══════════════════════════════════════════
 
-📍 SITIO COMPLETO:
-https://psicmarielapm.com
-
-✅ Contenido real
-✅ 8 servicios
+Los cambios YA están en GitHub:
+✅ Nuevo contenido (8 servicios)
 ✅ Foto de Mariela
-✅ Instagram @psic.marielapm
-✅ WhatsApp 322 111 85 96
+✅ Instagram
+✅ WhatsApp
 
-Deploy automático en ~1 min.
+Solo falta el deploy.
 
 🐝
 ═══════════════════════════════════════════
-
-Oye, no aparece nada en deployments y ni en su pagina
