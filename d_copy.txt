@@ -41,3 +41,5 @@ Listo! Ahora tienes 4 tabs:
 Recarga la página para verlo.
 
 ═══════════════════════════════════════════
+
+Que ruta le doy al nuevo C?
