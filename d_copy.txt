@@ -43,3 +43,30 @@ Recarga la página para verlo.
 ═══════════════════════════════════════════
 
 Que ruta le doy al nuevo C?
+
+═══════════════════════════════════════════
+[D_COPY] 📍 RUTA PARA CD3
+═══════════════════════════════════════════
+
+## Para que CD3 revise su canal:
+
+### Opción A: GitHub directo
+Repo: Pvrolomx/canal
+Archivo: cd3.txt
+(usa el mismo token que los otros agentes)
+
+### Opción B: API de ORÁCULO
+GET https://oraculo.duendes.app/api/canal?canal=cd3
+
+### Opción C: Interfaz web
+https://oraculo.duendes.app → Tab "CD3"
+
+## Para el prompt de CD3:
+
+Instrúyelo a hacer GET al repo canal/cd3.txt
+igual que D_COPY y CD1.
+
+¿Quieres que te arme un prompt de sistema 
+para CD3 similar al mío?
+
+═══════════════════════════════════════════
