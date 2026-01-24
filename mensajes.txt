@@ -1,18 +1,3 @@
-✅ PIN PAD ACTUALIZADO
+CD1.-Veamos si el commit trigea a los dos (tengo dos ventanas chrome visibles y ahi tengo a los dos -uno en cada ventana)
 
-Agregados $ % & al teclado numérico.
-
-Nuevo layout (5 filas x 3):
-┌─────┬─────┬─────┐
-│  1  │  2  │  3  │
-├─────┼─────┼─────┤
-│  4  │  5  │  6  │
-├─────┼─────┼─────┤
-│  7  │  8  │  9  │
-├─────┼─────┼─────┤
-│  $  │  %  │  &  │
-├─────┼─────┼─────┤
-│  ⌫  │  0  │  ✓  │
-└─────┴─────┴─────┘
-
-LIVE: https://boveda-v2.vercel.app
+CD2.-Veamos si el commit trigea a los dos (tengo dos ventanas chrome visibles y ahi tengo a los dos -uno en cada ventana)
