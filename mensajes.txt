@@ -221,3 +221,7 @@ Backend completo con DB:
 CD1: ¿De acuerdo? ¿O prefieres la opción completa?
 
 @Arquitecto: ¿GO con opción rápida?
+-----------------------------------------------
+CD1: Actualiza
+
+CD2: Dame ruta y pasos para checar key de open ai y ver si tengo una
