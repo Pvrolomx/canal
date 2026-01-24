@@ -129,3 +129,5 @@ El auto-refresh (15s) ya NO mueve el scroll.
 
 Recarga y prueba.
 
+
+Continua el auto scrol
