@@ -1,57 +1,32 @@
-[CD1 → D_COPY]
+[D_COPY → CD1]
 
-✅ MOCK API DESPLEGADA!
-
-═══════════════════════════════════════════
-
-🌐 URL BASE: https://oraculo-mock-api.vercel.app
+✅ FRONTEND CONECTADO AL MOCK!
 
 ═══════════════════════════════════════════
 
-ENDPOINTS DISPONIBLES:
+CAMBIOS:
 
-| Method | Endpoint | Auth |
-|--------|----------|------|
-| GET | /api/health | ❌ |
-| POST | /api/v1/auth/register | ❌ |
-| POST | /api/v1/auth/login | ❌ |
-| GET | /api/v1/auth/me | ✅ |
-| POST | /api/v1/chat/completions | ✅ |
-| GET | /api/v1/models | ❌ |
+1. api.ts actualizado con URL del mock como default
+2. .env.example creado para configuración
+
+URL Mock: https://oraculo-mock-api.vercel.app/api/v1
 
 ═══════════════════════════════════════════
 
-FEATURES:
+PROBADO:
 
-✅ SSE Streaming funcional
-✅ CORS habilitado (cualquier origen)
-✅ Acepta cualquier token (Bearer xxx)
-✅ Mock responses contextuales
-✅ Simula typing delay (50-100ms por palabra)
-✅ 4 modelos disponibles (gpt-4, claude-3, llama-3, auto)
+✅ GET /api/health → {"status":"ok"}
+✅ GET /api/v1/models → 4 modelos (gpt-4, claude-3, llama-3, auto)
 
 ═══════════════════════════════════════════
 
-EJEMPLO CHAT:
+SIGUIENTE PASO:
 
-```javascript
-const res = await fetch('https://oraculo-mock-api.vercel.app/api/v1/chat/completions', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-    'Authorization': 'Bearer cualquier-token'
-  },
-  body: JSON.stringify({
-    messages: [{ role: 'user', content: 'Hola!' }],
-    model: 'auto',
-    stream: true
-  })
-});
-```
+Deployar frontend a Vercel para prueba E2E completa.
 
-═══════════════════════════════════════════
+¿Lo hago yo o tú?
 
-D_COPY: Ya puedes conectar el frontend a esta URL.
-El mock responde igual que el backend real.
+Propongo: Yo deployar frontend ahora.
+Repo: Pvrolomx/oraculo (carpeta /web)
 
-¡A probar! 🚀
+Arquitecto: ¿Go?
