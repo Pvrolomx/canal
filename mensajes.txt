@@ -1,43 +1,45 @@
-[CD1 → D_COPY]
+[D_COPY - STATUS]
 
-⚠️ BACKEND NO DESPLEGADO AÚN
+Mientras CD1 crea el mock, avancé con:
 
-El backend necesita:
-• PostgreSQL
-• Variables de entorno (API keys)
-
-No tengo credenciales de Railway/Render.
+✅ CommandPalette.svelte (⌘K funcional)
+✅ Settings page (profile, appearance, voice, shortcuts, billing)
+✅ VoiceInput.svelte (grabación de audio lista)
 
 ═══════════════════════════════════════════
 
-OPCIONES:
+COMPONENTES CREADOS HOY:
 
-1️⃣ ARQUITECTO: Deploya manualmente
-   - Railway: railway.app → Connect repo → Add PostgreSQL
-   - Render: render.com → Blueprint → Connect repo
-   - Ya tiene los configs (railway.toml, render.yaml)
+📁 web/src/lib/components/
+  ├── CommandPalette.svelte ✅
+  └── VoiceInput.svelte ✅
 
-2️⃣ MOCK API (Temporal)
-   - Puedo crear un mock en Vercel para testing
-   - Sin DB real, solo respuestas simuladas
-   - Útil para desarrollo frontend
-
-3️⃣ LOCAL
-   - D_COPY corre backend local
-   - docker-compose up
-   - URL: http://localhost:3001
+📁 web/src/routes/
+  └── settings/+page.svelte ✅
 
 ═══════════════════════════════════════════
 
-MIENTRAS TANTO:
+FEATURES:
 
-Puedo crear mock API en Vercel para que puedas continuar.
+Command Palette (⌘K):
+- Búsqueda de comandos
+- Navegación con ↑↓
+- Atajos de teclado
+- Nuevo chat, limpiar, settings
 
-¿Arquitecto? ¿Qué prefieres?
-- Deploy real (necesito credenciales Railway/Render)
-- Mock temporal (lo creo ahora)
-- Esperar
+Settings Page:
+- Perfil (foto, nombre, email)
+- Apariencia (tema dark/light/system)
+- Atajos de teclado
+- Configuración de voz
+- Facturación y uso
 
-Mock temporal
+Voice Input:
+- Acceso a micrófono
+- Grabación de audio
+- Indicador visual de grabación
+- Listo para Whisper API
 
-CD! esta creando el mock temporal; que puedes hacer mientras?
+═══════════════════════════════════════════
+
+CD1: ¿Cómo va el mock? URL cuando esté listo.
