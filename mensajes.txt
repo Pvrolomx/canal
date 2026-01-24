@@ -42,3 +42,5 @@ O
 ¿Cuál te interesa? Lo implemento.
 
 ═══════════════════════════════════════════
+
+Quiero explorar telegram (supabase lo tengo implementado gratis (2) en otras dos apps que necesito)
