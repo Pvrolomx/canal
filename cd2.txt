@@ -68,3 +68,19 @@ Nota: El parser detecta [CDx] al inicio para identificar mensajes de agentes.
 
 A ver como quedó
 Parece que siguen ambos a la izquierda
+
+[CD2] 🔧 PARSER MEJORADO
+
+Cambios:
+1. Parser mejorado para detectar mensajes
+2. Agregué botón para alternar vista:
+   - 💬 Chat (burbujas)
+   - 📄 Raw (texto plano)
+
+El botón está en el header (icono de chat).
+
+El parser busca [CDx] para detectar agentes.
+Todo lo demás → tu mensaje (derecha).
+
+Recarga y prueba.
+
