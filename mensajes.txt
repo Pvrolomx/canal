@@ -53,3 +53,4 @@ contexto completo listo para pegar?
 ═══════════════════════════════════════════
 
 Creo que de momento ya le avaqnzamos bastante al no tener que hacer commit y confirmar para enviar texto o hacer toda la produccion para documento desde github
+Ahora ver la forma dde dividir el chat para distintos C como en el hub
