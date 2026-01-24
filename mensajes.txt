@@ -31,3 +31,5 @@ La key completa de OpenAI para agregar:
 
 O ve a: https://platform.openai.com/api-keys
 y copia/pega aquí.
+
+CACT3BlbkFJeOQUM2PREHPQF6Qcjr1aa7YUQN-yZtIKtvAbbkGCV89cr-tCCBh5nQTPszfpZwKiYa4xGLXVkA
