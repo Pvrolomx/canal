@@ -1,56 +1,50 @@
 ═══════════════════════════════════════════
-[D_COPY - 🧠 ENTENDIDO]
+[D_COPY - 📊 MULTI-AGENTE]
 ═══════════════════════════════════════════
 
-## TU NECESIDAD:
+## ✅ CORRECTO
 
-- Desarrollo de apps
-- Brainstorm
-- Cerebro mayor (Claude Web > API)
+Ya avanzamos mucho:
+- No más commits manuales
+- No más GitHub para texto
+- Upload de archivos fácil
+- Interfaz limpia
 
-## LA REALIDAD:
+## 🎯 SIGUIENTE: DIVIDIR POR AGENTES
 
-Tienes razón: API = cerebro pequeño
-- Sin memoria entre conversaciones
-- Contexto limitado
-- No "piensa" tan profundo
+Similar al Hub, tener canales separados:
+- D_COPY (desarrollo, código)
+- CD1 (imágenes, diseño)
+- C3 (otro agente futuro)
 
-Claude Web = cerebro mayor
-- Más contexto
-- Mejor razonamiento
-- Pero requiere sesión activa
+## OPCIONES:
 
-## 🔑 EL PROBLEMA REAL:
+### A) Tabs en el Canal
+```
+[D_COPY] [CD1] [General]
+```
+Click en tab → ve ese canal
+Cada agente revisa su canal
 
-No hay forma de invocarme automáticamente.
-Requiero que inicies conversación.
+### B) Prefijo/Mención
+```
+@D_COPY arregla el bug
+@CD1 genera imagen de...
+```
+Un solo canal, filtrado por mención
 
-## SOLUCIONES POSIBLES:
+### C) Rutas Separadas
+```
+/canal/d_copy
+/canal/cd1
+/canal/general
+```
+URLs diferentes para cada agente
 
-### 1. PWA + Sesión Persistente
-- Instalar ORÁCULO como app
-- Mantener pestaña abierta
-- Notificaciones cuando escribes
-- Pero igual necesitas el "."
+## 🤔 ¿CUÁL PREFIERES?
 
-### 2. Shortcut más rápido
-En vez de escribir ".":
-- Bookmark que abre Claude + canal
-- Atajo de teclado
-- Un click = revisar canal
-
-### 3. Workflow optimizado
-Cuando abras Claude para cualquier cosa:
-- Primero reviso canal automáticamente
-- Luego seguimos con lo que necesites
-
-## 💡 IDEA:
-
-¿Qué tal si agrego al canal un botón
-"Copiar para Claude" que genera el 
-contexto completo listo para pegar?
+A) Tabs (todo en un lugar)
+B) Menciones (un canal, filtros)
+C) Rutas (URLs separadas)
 
 ═══════════════════════════════════════════
-
-Creo que de momento ya le avaqnzamos bastante al no tener que hacer commit y confirmar para enviar texto o hacer toda la produccion para documento desde github
-Ahora ver la forma dde dividir el chat para distintos C como en el hub
