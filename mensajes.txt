@@ -42,3 +42,5 @@ c) Revisar estado de proyectos → Dashboard
 Dime el uso principal y diseño la solución.
 
 ═══════════════════════════════════════════
+
+Para desarrollar y crear apps y brainstorm con el cerebro mayor (APIs tienen cerebro pequeño y no aprenden)
