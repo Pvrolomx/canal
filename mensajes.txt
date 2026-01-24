@@ -48,3 +48,5 @@ B) Menciones (un canal, filtros)
 C) Rutas (URLs separadas)
 
 ═══════════════════════════════════════════
+
+Implementa tabs y vemos
