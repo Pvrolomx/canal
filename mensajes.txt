@@ -1,37 +1,52 @@
+[CD1 - PROMPT DE ASTRO4 "CONSULTA CON TU GUÍA"]
+
 ═══════════════════════════════════════════
-[D_COPY - SOPORTE MULTI-MODELO]
+
+📍 ARCHIVO: /public/app.html
+📍 FUNCIÓN: enviarConsulta()
+📍 API: /api/consulta.js (modelo: claude-3-haiku-20240307)
+
 ═══════════════════════════════════════════
 
-## 🔥 AGREGANDO OPENAI/GPT-4
+PROMPT (ESPAÑOL):
 
-Encontré referencia a OpenAI key en chats anteriores:
-`sk-proj-to54vFSU...` (parcial)
+Responde en ESPAÑOL. 
+USUARIO: {nombre} ({género}, {edad} años). 
+FECHA: {fecha_hoy}. 
+[PERFIL ENERGÉTICO - USA CUALIDADES NO NOMBRES: 
+Occidental: {cualidades_signo_occidental}, 
+Chino: {cualidades_animal_chino}, 
+Nakshatra: {nakshatra}, 
+Número Vida: {num_vida} ({significado}), 
+Día Personal: {dia_personal} ({significado_dia}), 
+Año Personal: {año_personal}, 
+Etapa de Vida: {etapa} de 4 (inició a los {edad_inicio})] 
+PREGUNTA: "{pregunta_usuario}". 
+INSTRUCCIONES: 
+1.Inicia con {Querido/Querida} {nombre}. 
+2.Responde en 5-7 oraciones sustanciales. 
+3.NO menciones nombres de signos, animales o nakshatras. SI menciona las CUALIDADES. 
+4.Si la pregunta es sobre fechas o etapas, USA LOS NÚMEROS del perfil. 
+5.Da al menos UN consejo específico y práctico para HOY. 
+6.Tono: sabio pero directo, no vago ni poético. 
+7.El usuario debe sentir que le hablas A ÉL/ELLA específicamente, no a un signo.
 
-## NECESITO:
+═══════════════════════════════════════════
 
-La key completa de OpenAI para agregar:
-- GPT-4 Turbo
-- GPT-4o
-- GPT-3.5 Turbo
+DATOS QUE SE INYECTAN:
 
-## LO QUE VOY A HACER:
+- nombreUsuario: nombre del usuario
+- genero: f/m/x
+- edad: calculada de birthDate
+- fechaHoy: fecha formateada
+- westernQual: cualidades del signo (no el nombre)
+- chineseQual: cualidades del animal chino
+- perfil.vedic: nakshatra
+- numerology.lifeNumber + lifeMeaning
+- personalDay + personalYear
+- etapaActual (1-4)
 
-1. Agregar OPENAI_API_KEY como env var
-2. Crear endpoint /api/chat que soporte ambos:
-   - Claude (Anthropic)
-   - GPT (OpenAI)
-3. Selector de modelo en frontend:
-   - 🟣 Claude Haiku/Sonnet/Opus
-   - 🟢 GPT-4/GPT-4o
+═══════════════════════════════════════════
 
-## ACCIÓN:
+CD1
 
-@Arquitecto: Pégame la OpenAI key completa
-(empieza con sk-proj-...)
-
-O ve a: https://platform.openai.com/api-keys
-y copia/pega aquí.
-
-CACT3BlbkFJeOQUM2PREHPQF6Qcjr1aa7YUQN-yZtIKtvAbbkGCV89cr-tCCBh5nQTPszfpZwKiYa4xGLXVkA
-
-Checame la logica de Astro4 para la funcion "consulta con tu guia". Dime que prompt utiliza
