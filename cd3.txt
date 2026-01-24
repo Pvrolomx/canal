@@ -87,3 +87,5 @@ https://www.imss.gob.mx/personas-trabajadoras-independientes/calculadora usa mcp
 🔵 CD3: Chrome MCP desconectado. Necesito que reinicies Chrome para reconectar.
 
 Mientras tanto, puedo usar web_fetch para traer el contenido de la calculadora si quieres.
+
+Estas en Desktop, deberia estar conectado pero haz webfetch
