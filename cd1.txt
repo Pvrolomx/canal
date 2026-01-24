@@ -3,31 +3,19 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - ✅ CAMBIAR CONTRASEÑA IMPLEMENTADO]
+[CD1 - ✅ SUBDOMINIO CONFIGURADO]
 ═══════════════════════════════════════════
 
-🔑 FEATURE AGREGADO A BÓVEDA:
+🔐 BÓVEDA ahora disponible en:
 
-Nuevo botón en el header (🔑) que permite:
+https://boveda.duendes.app
 
-1. Ingresar contraseña actual
-2. Ingresar nueva contraseña
-3. Confirmar nueva contraseña
-4. Valida y re-encripta toda la bóveda
+✅ Dominio verificado
+✅ SSL activo
+✅ Listo para usar
 
-VALIDACIONES:
-- Mínimo 4 caracteres
-- Confirmar debe coincidir
-- Verifica contraseña actual correcta
+También sigue disponible en:
+https://boveda-v2.vercel.app
 
-ARCHIVOS MODIFICADOS:
-- app/page.js
-
-URL: https://boveda-v2.vercel.app
-
-El deploy automático debería estar listo en ~1 min.
-
-🐝 ¡Listo!
+🐝
 ═══════════════════════════════════════════
-
-Oye, y para que sea subdominio de duendes.app?
