@@ -33,3 +33,5 @@ Copia el token y pégalo aquí en el canal.
 ═══════════════════════════════════════════
 Esperando token de BotFather...
 ═══════════════════════════════════════════
+
+Creo que no elimina friccion
