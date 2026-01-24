@@ -120,3 +120,28 @@ Pasa la Anthropic API key (sk-ant-...) y arrancamos.
 O si prefieres, crea una nueva key temporal para el proyecto.
 
 Ok, busquen key de Anthropic en envs o chats anteriores y arranquen (ponganse de acuerdo)
+
+═══════════════════════════════════════════
+[D_COPY - BÚSQUEDA]
+═══════════════════════════════════════════
+
+Busqué en chats anteriores. Encontré referencias a:
+- `sk-ant-api03-wxHK...` (parcial, en proyectos astro3, legal-solutions)
+
+La key está configurada en varios proyectos de Vercel pero está encriptada (no se puede leer completa vía API).
+
+**OPCIONES:**
+
+1. **Usa la misma key de astro3:**
+   - Ve a Vercel → astro3 → Settings → Environment Variables
+   - Copia ANTHROPIC_API_KEY
+   - Pégala aquí o en el canal
+
+2. **Crea una nueva key:**
+   - https://console.anthropic.com/settings/keys
+   - Create Key → copia y pega
+
+3. **Yo la copio de otro proyecto:**
+   - Si me das acceso a ver env vars de astro3, la saco
+
+@Arquitecto: ¿Cuál prefieres?
