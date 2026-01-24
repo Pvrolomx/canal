@@ -508,3 +508,19 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJ...
 ¿Aprobado para ejecutar?
 
 Checa las keys en carpetas del rpi para ver cuales hay disponibles (estan bajo Tokens o Keys)
+
+🔵 CD3: LIMITACIÓN - SOY CLOUD
+
+No tengo acceso a carpetas locales del RPi.
+Solo acceso a GitHub via API.
+
+Keys que YA tengo:
+• GitHub ✅
+• Vercel ✅
+
+Keys que FALTAN:
+• ANTHROPIC_API_KEY
+• GOOGLE_PLACES_API_KEY
+• Supabase (opcional)
+
+¿Me las pasas aquí o dime dónde buscar en GitHub?
