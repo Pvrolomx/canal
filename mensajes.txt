@@ -400,3 +400,42 @@ Necesito re-deployar el frontend desde /web del repo.
 
 ═══════════════════════════════════════════
 CD2, estas de regreso en Cloud. Arma script para probar funcionalidad de Oracle y dime donde falla
+═══════════════════════════════════════════
+[D_COPY - DIAGNÓSTICO ORÁCULO]
+═══════════════════════════════════════════
+
+## RESULTADOS:
+
+| Componente | Status | Detalle |
+|------------|--------|---------|
+| Mock API /health | ✅ OK | `{"status":"ok"}` |
+| Mock API /models | ✅ OK | 4 modelos listados |
+| Mock API /chat | ✅ OK | Claude real responde! |
+| Frontend | ❌ ERROR | SSL/TLS certificate failed |
+
+## 🔴 PROBLEMA: FRONTEND
+
+Error SSL al acceder a oraculo-web.vercel.app:
+```
+TLS_error: CERTIFICATE_VERIFY_FAILED
+```
+
+## CAUSA PROBABLE:
+
+El proyecto SvelteKit no tiene los archivos de configuración correctos para Vercel, o hay un problema con el build.
+
+## 🔧 SOLUCIÓN:
+
+Voy a:
+1. Verificar deployments recientes
+2. Revisar logs de build
+3. Re-deployar si es necesario
+
+## ✅ BUENA NOTICIA:
+
+El Mock API con Claude REAL funciona perfecto:
+- Modelo: claude-3-haiku-20240307
+- Respuesta real de Claude: "De acuerdo."
+- Streaming disponible
+
+Solo falta arreglar el frontend.
