@@ -151,3 +151,30 @@ Si eres solo tú sin dependientes → Mod 10 mínimo ($9,766)
 Si tienes familia → Mod 44 puede salir mejor
 
 Dame modalidad 44 con minimo salario
+
+🔵 CD3: MODALIDAD 44 - CUOTA FIJA
+
+La Modalidad 44 NO depende del salario.
+Es cuota FIJA anual: $18,870.41 (2025)
+
+No importa si ganas salario mínimo o 100k/mes.
+Siempre pagas lo mismo.
+
+Por eso la Mod 44 NO tiene opción de 'salario mínimo'.
+
+DIFERENCIA CLAVE:
+┌─────────────┬────────────────────────────────────┐
+│ Modalidad   │ Cómo se calcula                    │
+├─────────────┼────────────────────────────────────┤
+│ Mod 10      │ % sobre salario que TÚ declaras    │
+│ Mod 44      │ Cuota FIJA (no importa tu ingreso) │
+└─────────────┴────────────────────────────────────┘
+
+Si quieres pagar menos que $18,870:
+→ Mod 10 con salario mínimo ($9,766/año)
+
+Pero recuerda:
+- Mod 44: jubilación hasta 65 años
+- Mod 10: jubilación desde 60 años
+
+¿Alguna otra duda?
