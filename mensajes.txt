@@ -1,182 +1,26 @@
-[D_COPY - SPEC]
+[CD1 - RESPUESTA]
 
-# SPEC: Desarrollo Angeles - Sitio Web
+Sí, PERO no es ideal que ambos trabajemos en el MISMO archivo simultáneamente porque:
 
-## 1. OVERVIEW
-**Cliente:** Desarrollo Angeles
-**Industria:** Fraccionadora de lotes / Bienes Raíces
-**Ubicación:** Puerto Vallarta, Jalisco (zonas: Las Palmas, El Ranchito, áreas de ranchería)
-**Modelo de negocio:** Compra parcelas grandes → Lotifica → Vende lotes a plazos largos
+❌ PROBLEMA: Conflictos de commits
+- Si yo hago commit a page.js
+- Y D_COPY hace commit a page.js al mismo tiempo
+- Uno sobrescribe al otro
 
-## 2. OBJETIVOS DEL SITIO
-- Generar leads de compradores potenciales de lotes
-- Mostrar inventario de fraccionamientos (+10 desarrollos)
-- Facilitar contacto con equipo de ventas (4-5 vendedores)
-- Transmitir confianza y solidez (plazos de 10-20 años)
-- Captar propietarios de parcelas que quieran vender
+✅ SOLUCIÓN: DIVIDIR EL TRABAJO
 
-## 3. AUDIENCIA TARGET
-**Primaria:** Familias mexicanas clase media/media-baja buscando terreno propio
-- Edad: 30-55 años
-- Ingresos: $15,000-$40,000 MXN/mes
-- Motivación: Patrimonio, inversión, construir casa propia
-- Pain point: No tienen capital para compra de contado
+Opción A - Por páginas:
+- CD1: Home, Fraccionamientos, Calculadora
+- D_COPY: Nosotros, Contacto, Vende tu Parcela
 
-**Secundaria:** Propietarios de parcelas (2+ hectáreas) interesados en vender
+Opción B - Por capas:
+- CD1: UI/Componentes (botones, cards, layout)
+- D_COPY: Lógica/Data (formularios, CMS, integrations)
 
-## 4. ESTRUCTURA DE PÁGINAS
+Opción C - Secuencial:
+- CD1: Crea estructura base + Home
+- D_COPY: Continúa con el resto
 
-### 4.1 HOME
-- Hero: Video/imagen aérea de fraccionamiento con CTA "Conoce tu futuro terreno"
-- Propuesta de valor: "Tu terreno desde $X/mes a 10-20 años"
-- Grid de fraccionamientos destacados (3-4)
-- Calculadora simple de pagos mensuales
-- Testimoniales
-- CTA WhatsApp flotante
+RECOMENDACIÓN: Opción A (por páginas) es la más limpia.
 
-### 4.2 FRACCIONAMIENTOS (Catálogo)
-- Grid/lista de +10 fraccionamientos
-- Filtros: zona, precio, tamaño de lote, disponibilidad
-- Card por fraccionamiento: nombre, ubicación, imagen, precio desde, lotes disponibles
-
-### 4.3 DETALLE FRACCIONAMIENTO
-- Galería de fotos/video
-- Mapa de ubicación (Google Maps embed)
-- Plano de lotificación interactivo (si es posible)
-- Lista de lotes disponibles con medidas y precios
-- Amenidades/características de la zona
-- Formulario de contacto específico
-
-### 4.4 PLANES DE PAGO
-- Explicación del modelo de plazos (10, 15, 20 años)
-- Calculadora de mensualidades
-- Requisitos para comprar
-- FAQ sobre financiamiento
-- Proceso paso a paso
-
-### 4.5 VENDE TU PARCELA
-- Formulario para propietarios que quieran vender
-- Requisitos (2+ hectáreas)
-- Beneficios de vender a Desarrollo Angeles
-- Proceso de compra
-
-### 4.6 NOSOTROS
-- Historia de la empresa
-- Misión/Visión
-- Equipo (fotos opcionales de vendedores)
-- Números: años en el mercado, lotes vendidos, familias beneficiadas
-
-### 4.7 CONTACTO
-- Formulario general
-- Mapa de oficina
-- Teléfonos y WhatsApp
-- Horarios de atención
-- Links a redes sociales
-
-## 5. FUNCIONALIDADES CLAVE
-
-### 5.1 Calculadora de Pagos
-```
-Inputs: Precio del lote, Enganche (%), Plazo (años)
-Output: Mensualidad estimada
-```
-
-### 5.2 CTA WhatsApp
-- Botón flotante en todas las páginas
-- Mensaje pre-llenado: "Hola, me interesa información sobre lotes en [fraccionamiento]"
-
-### 5.3 Formulario de Lead
-- Nombre, Teléfono, Email
-- Fraccionamiento de interés (dropdown)
-- Rango de presupuesto
-- ¿Cómo nos encontró?
-
-### 5.4 Galería por Fraccionamiento
-- Fotos del terreno
-- Fotos de la zona
-- Video aéreo (drone)
-
-## 6. DISEÑO
-
-### 6.1 Paleta de Colores
-- Primario: Verde bosque (#2d5a27) - naturaleza, crecimiento
-- Secundario: Dorado/Arena (#c9a227) - solidez, valor
-- Neutros: Blanco, gris claro
-- Acentos: Azul cielo para CTAs
-
-### 6.2 Tipografía
-- Headlines: Serif (confianza, tradición)
-- Body: Sans-serif (legibilidad)
-
-### 6.3 Estilo Visual
-- Fotos de terrenos verdes, cielo azul
-- Familias felices (stock o reales)
-- Iconografía simple
-- Diseño limpio, no sobrecargado
-
-## 7. TECH STACK RECOMENDADO
-- **Framework:** Next.js 14
-- **Styling:** Tailwind CSS
-- **CMS:** Sanity o Strapi (para manejar fraccionamientos)
-- **Forms:** React Hook Form + Email/WhatsApp API
-- **Maps:** Google Maps Embed
-- **Hosting:** Vercel
-- **Analytics:** Google Analytics 4
-
-## 8. SEO KEYWORDS
-- lotes en puerto vallarta
-- terrenos a plazos vallarta
-- fraccionamientos las palmas
-- comprar lote puerto vallarta
-- terrenos baratos jalisco
-- lotes a crédito
-
-## 9. INTEGRACIONES
-- WhatsApp Business API
-- Google Maps
-- Google Analytics
-- Facebook Pixel (para remarketing)
-- CRM simple (opcional: HubSpot free, Pipedrive)
-
-## 10. FASES DE DESARROLLO
-
-### Fase 1 (MVP) - 2 semanas
-- Home con hero y CTAs
-- Página de fraccionamientos (estática inicial)
-- Calculadora de pagos
-- Formulario de contacto
-- WhatsApp flotante
-- Responsive mobile-first
-
-### Fase 2 - 2 semanas
-- CMS para administrar fraccionamientos
-- Páginas de detalle dinámicas
-- Galería de fotos
-- Página "Vende tu parcela"
-
-### Fase 3 - 1 semana
-- Optimización SEO
-- Analytics
-- Performance tuning
-- Pruebas finales
-
-## 11. MÉTRICAS DE ÉXITO
-- Leads generados por mes
-- Tasa de conversión formulario
-- Clicks en WhatsApp
-- Tiempo en página de fraccionamientos
-- Bounce rate
-
-## 12. PRESUPUESTO ESTIMADO
-- Desarrollo MVP: $15,000 - $25,000 MXN
-- Desarrollo completo: $35,000 - $50,000 MXN
-- Mantenimiento mensual: $2,000 - $4,000 MXN
-
----
-**Próximos pasos:**
-1. Recopilar contenido (fotos, info de fraccionamientos)
-2. Definir precios y planes de pago exactos
-3. Crear wireframes
-4. Desarrollo MVP
-
-Una pregunta: pueden ambos crear un sitio web simultaneamentee; ej. yo digo GO y ambos crean el mismo  proyecto? No dos por separado. Es solo preggunta 
+¿Cómo prefieres dividirlo?
