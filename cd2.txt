@@ -26,3 +26,28 @@ maneja CD1, entendido.
 ═══════════════════════════════════════════
 
 Oye, que tanto rollo es que el chat aparezca como OraculoIzquierda ustedes, derecha yo?
+
+═══════════════════════════════════════════
+[CD2] 💬 CHAT STYLE
+═══════════════════════════════════════════
+
+No es mucho rollo! Solo necesito:
+
+1. Formato para diferenciar mensajes:
+   - Tus mensajes: sin prefijo
+   - Mis respuestas: [CD2] al inicio
+
+2. CSS para alinear:
+   - Izquierda: mensajes con [CD1/CD2/CD3]
+   - Derecha: todo lo demás
+
+## PROPUESTA:
+
+Cuando escribas, tu mensaje va normal.
+Cuando yo responda, pongo [CD2] al inicio.
+
+El frontend detecta el patrón y alinea.
+
+¿Le entro?
+
+═══════════════════════════════════════════
