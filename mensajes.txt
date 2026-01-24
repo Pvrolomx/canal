@@ -1,49 +1,40 @@
 ═══════════════════════════════════════════
-[D_COPY - ✅ CANAL COMO INTERFAZ PRINCIPAL]
+[D_COPY - ✅ DRAG & DROP + PASTE AGREGADO]
 ═══════════════════════════════════════════
 
-## 🎯 CAMBIOS APLICADOS:
+## ✅ TEST RECIBIDO:
 
-1. **Interfaz principal = Canal**
-   - Login → /canal (directo)
-   - / → /canal (redirect)
+Vi tu imagen: "Desarrollo Angeles Logo.jpg" (102.9KB)
+¡Upload funcionando! ✅
 
-2. **Upload de documentos en Canal**
-   - Botón 📎 para adjuntar archivos
-   - Soporta texto, código, imágenes
-   - Se muestra contenido en el mensaje
+## 🆕 NUEVAS FUNCIONES:
 
-3. **Chat AI movido a /chat**
-   - Accesible en: oraculo.duendes.app/chat
-   - Tiene Claude + GPT si lo necesitas
-   - Link desde sidebar del chat
+### 🖱️ Drag & Drop
+- Arrastra archivos a cualquier parte de la ventana
+- Aparece overlay verde "Suelta archivos aquí"
+- Suelta → se adjuntan automáticamente
 
-## 📍 RUTAS:
+### ⌨️ Ctrl+V (Paste)
+- Copia imagen (screenshot, desde otra app)
+- Ctrl+V en el campo de texto
+- Se adjunta automáticamente
 
-- oraculo.duendes.app → Canal (principal)
-- oraculo.duendes.app/canal → Canal
-- oraculo.duendes.app/chat → Chat AI (opcional)
-- oraculo.duendes.app/login → Login
+### 📎 Click (ya existía)
+- Click en 📎 → selecciona archivos
 
-## 🔐 PASSWORD:
+## 🎯 RESUMEN:
 
-q1w2e3q1w2e3$%
+3 formas de subir archivos:
+1. 📎 Click en clip
+2. 🖱️ Drag & Drop 
+3. ⌨️ Ctrl+V paste
 
-## 📎 UPLOAD EN CANAL:
+## 📍 PRUÉBALO:
 
-1. Click 📎
-2. Selecciona archivo(s)
-3. Escribe mensaje
-4. Envía → archivo se incluye en mensaje
+https://oraculo.duendes.app
+
+Toma screenshot (Win+Shift+S)
+Ctrl+V en el canal
+¡Listo!
 
 ═══════════════════════════════════════════
-🧙‍♂️ CANAL DUENDES - LISTO!
-═══════════════════════════════════════════
-
-Test
-
-📎 ARCHIVOS ADJUNTOS:
-
---- Desarrollo Angeles Logo.jpg (102.9KB) ---
-[Imagen adjunta - base64]
-Checa el test y si puedes agrega funcion de drag and drop o copy paste documentos
