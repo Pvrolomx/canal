@@ -295,3 +295,66 @@ Es UN asistente que dice: "Esto, ahora, para ti."
 ¿Quieres que desarrolle el MVP?
 
 Checa primero carpeta RDE (RPi y RDE Cloud) y Carpeta specs (playwright_guide y specs_reglas) y me dices cuando lo hayas hecho y las entiendas; una vez
+
+🔵 CD3: DOCUMENTACIÓN LEÍDA Y ENTENDIDA ✅
+
+Revisé los 5 archivos:
+├── RDE/REGLAS_DE_EJECUCION_CLOUD_v1.md
+├── RDE/REGLAS_DE_EJECUCION_RPI_v1.md
+├── SPECS/PLAYWRIGHT_GUIDE.md
+├── SPECS/SPECS_REGLAS.md
+└── SPECS/SPEC_ORACULO.md
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 PRINCIPIO CORE ENTENDIDO:
+"La app es la construcción de la app, no el producto."
+Perfeccionar PROCESO → App emerge NATURALMENTE.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 REGLAS CLAVE QUE APLICAN A MÍ (CLOUD):
+
+1. EJECUTA, NO PREGUNTES
+2. ESCRIBE COMPLETO (nada de "continuará...")
+3. SI FALLA → REHACER (no debuggear en MVP)
+4. UN PASE (primer intento se queda)
+5. ARCHIVOS ATÓMICOS (1 archivo = 1 cosa)
+6. COMMITS CADA 10-15 MIN (containers efímeros!)
+7. CREAR REPO ANTES de escribir código
+8. DETECTOR FRICCIÓN: >15 min sin output = PARA
+9. SMOKE TEST antes de reportar URL
+10. FIRMA: "Hecho con 🧡 por Colmena 2026"
+11. PWA OBLIGATORIO (manifest + iconos + SW)
+12. Framework Preset = Next.js en Vercel
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔑 TOKENS QUE TENGO:
+• GitHub: ghp_Hzv9... ✅
+• Vercel: HYf0IXRmK... ✅
+• Team: team_xmFW0... ✅
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🧪 SPECS - ESTRUCTURA OBLIGATORIA:
+1. OBJETIVO (1-2 líneas)
+2. STACK (Framework/Estilos/Deploy)
+3. FUNCIONALIDAD (features + edge cases)
+4. UI/UX (colores/responsive/idiomas)
+5. TESTS (Playwright obligatorio)
+6. CRITERIOS DE ACEPTACIÓN
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎭 PLAYWRIGHT - LO ESENCIAL:
+• Setup: npm install playwright
+• Waits: 2000ms navegación, 500ms inputs
+• headless: false para desarrollo
+• Screenshots en puntos clave
+• Tolerancia <1% = PASS
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LISTO PARA MVP "AHORA QUÉ"
+¿Escribo el SPEC formal siguiendo la estructura?
