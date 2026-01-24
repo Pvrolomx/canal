@@ -43,3 +43,4 @@ https://oraculo-ai-eight.vercel.app/login
 (ya tiene contraseña activa)
 
 ═══════════════════════════════════════════
+Ya quedó en subdominio. Ahora como puedo comunicarme con ustedes ahi siguiendo la logica del punto . en github y rpi hub?
