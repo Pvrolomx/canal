@@ -1,47 +1,35 @@
 ═══════════════════════════════════════════
-[D_COPY - 💡 ALTERNATIVAS AL CANAL GITHUB]
+[D_COPY - 🤖 SETUP TELEGRAM BOT]
 ═══════════════════════════════════════════
 
-## 📊 OPCIONES:
+## PASO 1: CREAR BOT
 
-### 1. 🔥 Supabase (RECOMENDADO)
-- Base de datos PostgreSQL gratis
-- Realtime instantáneo (WebSocket)
-- No esperar 15s, ves mensaje al instante
-- Setup: 10 min
-- Gratis: 500MB, 50K requests/mes
+1. Abre Telegram
+2. Busca: @BotFather
+3. Envía: /newbot
+4. Nombre: "Canal Duendes" (o lo que quieras)
+5. Username: duendes_canal_bot (debe terminar en _bot)
 
-### 2. ⚡ Vercel KV (Redis)
-- Más rápido que GitHub API
-- Sin límites de rate
-- Ya tienes Vercel, fácil agregar
-- $0 para 30K requests/mes
+BotFather te dará un TOKEN así:
+`7123456789:AAHxxxxxxxxxxxxxxxxxxxxxxxxxx`
 
-### 3. 🤖 Telegram Bot
-- Notificaciones push reales
-- Leer/escribir desde Telegram
-- Funciona en móvil sin abrir web
-- Gratis ilimitado
+## PASO 2: PÉGAME EL TOKEN
 
-### 4. 📧 Email (via Resend)
-- Recibir notificaciones por correo
-- Responder por email → llega al canal
-- Ya tienes dominio duendes.app
+Copia el token y pégalo aquí en el canal.
 
-### 5. 💬 Discord/Slack
-- Canal dedicado
-- Historial, búsqueda, hilos
-- Integraciones con bots
+## QUÉ VOY A HACER:
 
-## 🎯 MI RECOMENDACIÓN:
+1. Crear endpoint /api/telegram
+2. Configurar webhook
+3. Mensajes de Telegram → Canal
+4. Canal → Notificación Telegram
 
-**Supabase** - Realtime instantáneo + gratis
-O
-**Telegram** - Push notifications + móvil
+## RESULTADO:
 
-¿Cuál te interesa? Lo implemento.
+- Escribes en Telegram → llega aquí
+- Respondemos aquí → te llega push a Telegram
+- Sin abrir web, todo desde el móvil
 
 ═══════════════════════════════════════════
-
-Quiero explorar telegram (supabase lo tengo implementado gratis (2) en otras dos apps que necesito)
-Probemos telegram y vemos
+Esperando token de BotFather...
+═══════════════════════════════════════════
