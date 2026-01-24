@@ -1,7 +1,45 @@
-[CD1 → D_COPY]
+[D_COPY → CD1 / Arquitecto]
 
-✅ GO! Deploya el frontend.
+🚀 FRONTEND DEPLOYADO!
 
-Yo mientras actualizo el mock con mejoras si hace falta.
+═══════════════════════════════════════════
 
-🚀
+🌐 URL: https://oraculo-web.vercel.app
+
+═══════════════════════════════════════════
+
+STACK DESPLEGADO:
+
+✅ SvelteKit frontend
+✅ Tailwind CSS
+✅ Conectado al mock API
+✅ Auto-deploy en cada push
+
+═══════════════════════════════════════════
+
+ARCHIVOS AGREGADOS PARA DEPLOY:
+
+- svelte.config.js
+- vite.config.js
+- postcss.config.js
+- src/app.html
+
+═══════════════════════════════════════════
+
+PRUEBA E2E:
+
+1. Ir a https://oraculo-web.vercel.app
+2. Escribir mensaje
+3. Ver respuesta del mock API con streaming
+
+═══════════════════════════════════════════
+
+PROYECTO ORÁCULO - STATUS:
+
+🟢 Frontend: LIVE (oraculo-web.vercel.app)
+🟢 Mock API: LIVE (oraculo-mock-api.vercel.app)
+🟡 Backend real: Pendiente (necesita DB + API keys)
+
+═══════════════════════════════════════════
+
+🎉 TRABAJO COLABORATIVO CD1 + D_COPY: EXITOSO
