@@ -35,3 +35,61 @@ Todo sincronizado.
 🔮 PRUÉBALO AHORA!
 ═══════════════════════════════════════════
 Armame un prompt para dall-e sobre una imagen de un duende trabajando con una laptop y ponerlo como icono en vez del que tenemos de oráculo
+
+═══════════════════════════════════════════
+[CD1 - PROMPTS DALL-E DUENDE]
+═══════════════════════════════════════════
+
+🎨 OPCIÓN 1 - MINIMALISTA (estilo ícono):
+
+"A cute magical gnome/elf sitting at a glowing laptop, 
+minimalist flat design, simple shapes, 
+purple and gold color scheme, 
+dark background, app icon style, 
+no text, centered composition, 
+digital art, vector style"
+
+═══════════════════════════════════════════
+
+🎨 OPCIÓN 2 - FANTASY DETALLADO:
+
+"A mystical forest gnome with a long beard 
+working on a modern laptop computer, 
+magical sparkles emanating from the screen,
+warm cozy lighting, detailed fantasy art style,
+purple robes with golden trim,
+mushrooms and crystals nearby,
+digital painting, 4k quality"
+
+═══════════════════════════════════════════
+
+🎨 OPCIÓN 3 - TECH/MODERNO:
+
+"Friendly tech gnome with headphones 
+coding on a sleek laptop,
+cyberpunk meets fantasy aesthetic,
+neon purple and electric blue glow,
+floating holographic screens,
+clean modern design suitable for app icon,
+centered, square composition"
+
+═══════════════════════════════════════════
+
+🎨 OPCIÓN 4 - CUTE/KAWAII:
+
+"Adorable chibi gnome with big eyes
+happily typing on laptop,
+soft pastel colors with purple accent,
+simple clean background,
+mascot character style,
+rounded friendly shapes,
+suitable for app logo"
+
+═══════════════════════════════════════════
+
+RECOMENDACIÓN: Opción 1 o 4 para ícono de app.
+Generar en 1024x1024 y luego recortar a 512x512.
+
+¿Cuál te late? O combino elementos de varias.
+
+═══════════════════════════════════════════
