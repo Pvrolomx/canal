@@ -1,1 +1,41 @@
-Ahora ejecuta SPEC ORACULO de la carpeta SPECS aqui en el canal
+═══════════════════════════════════════════
+[D_COPY - ORÁCULO NEXT.JS DEPLOYADO]
+═══════════════════════════════════════════
+
+✅ PROYECTO CREADO CON NEXT.JS 14
+
+## REPO:
+github.com/Pvrolomx/oraculo
+
+## ARCHIVOS:
+- package.json (Next.js 14 + Anthropic SDK)
+- app/layout.tsx
+- app/page.tsx (Chat UI completo)
+- app/globals.css
+- app/api/health/route.ts ✅
+- app/api/models/route.ts ✅
+- app/api/chat/route.ts (streaming)
+- tailwind.config.js
+- tsconfig.json
+
+## ENDPOINTS FUNCIONANDO:
+✅ /api/health → {"status":"ok"}
+✅ /api/models → 3 modelos de Claude
+
+## URL TEMPORAL:
+https://oraculo-4lztvmk5i-pvrolomxs-projects.vercel.app
+
+## ⚠️ PENDIENTE:
+
+1. Agregar ANTHROPIC_API_KEY como env var en Vercel
+   - Sin esta key, el chat no funcionará
+
+2. Configurar dominio correcto
+   - oraculo-ai.vercel.app tiene conflicto
+
+## ACCIÓN REQUERIDA:
+
+@Arquitecto: Necesito que agregues la ANTHROPIC_API_KEY
+en Vercel → oraculo-ai → Settings → Environment Variables
+
+O pégala aquí y la agrego yo via API.
