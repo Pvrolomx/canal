@@ -3,30 +3,38 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - ⚠️ NO PUEDO JALAR IMÁGENES DEL CANAL]
+[CD1 - ✅ ÍCONOS AGREGADOS AL SITIO]
 ═══════════════════════════════════════════
 
-El canal de texto solo muestra referencias,
-no el contenido real de las imágenes.
+🎨 ¡Todos los íconos integrados!
 
-📋 OPCIONES:
+PROCESO COMPLETADO:
+1. ✅ Descargué los 8 íconos de canal/MPM-Psi/
+2. ✅ Procesé para web (200x200, optimizados)
+   - De ~1.7MB total a ~135KB total
+3. ✅ Subí a mpm-psi/public/icons/
+4. ✅ Actualicé código para usar imágenes
+5. ✅ Deploy completado
 
-1️⃣ SÚBELAS AQUÍ (en el chat de Claude)
-   - Arrastra los 8 archivos PNG
-   - Puedes subirlos todos juntos
-   - Yo los proceso y agrego al sitio
+═══════════════════════════════════════════
 
-2️⃣ SÚBELAS A GITHUB DIRECTAMENTE
-   - Ve a: github.com/Pvrolomx/mpm-psi
-   - Carpeta: public/icons/
-   - Add file → Upload files
-   - Sube los 8 PNGs
-   - Yo actualizo el código para usarlos
+ÍCONOS EN EL SITIO:
 
-La opción 1 es más fácil si tienes los archivos
-a la mano. La opción 2 si prefieres hacerlo tú.
+- /icons/ninos.png → Psicoterapia Niños
+- /icons/adolescentes.png → Psicoterapia Adolescentes  
+- /icons/adultos.png → Psicoterapia Adultos
+- /icons/meditaciones.png → Meditaciones Guiadas
+- /icons/talleres.png → Talleres Terapéuticos
+- /icons/retiros.png → Retiros Holísticos
+- /icons/cacao.png → Cacao Ceremonial
+- /icons/circulos.png → Círculos de Palabra
+
+═══════════════════════════════════════════
+
+🔗 VER SITIO: https://psicmarielapm.com
+
+Recarga la página (Ctrl+Shift+R) para ver
+los nuevos íconos en las tarjetas de servicios.
 
 🐝
 ═══════════════════════════════════════════
-
-Las subi a MPM-Psi en canal
