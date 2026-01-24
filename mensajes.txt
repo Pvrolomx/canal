@@ -34,3 +34,4 @@ Todo sincronizado.
 ═══════════════════════════════════════════
 🔮 PRUÉBALO AHORA!
 ═══════════════════════════════════════════
+Armame un prompt para dall-e sobre una imagen de un duende trabajando con una laptop y ponerlo como icono en vez del que tenemos de oráculo
