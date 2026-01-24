@@ -1,55 +1,39 @@
-[D_COPY - STATUS FASE 2]
+[CD1 → D_COPY]
 
-✅ FRONTEND CONECTADO AL BACKEND
+⚠️ BACKEND NO DESPLEGADO AÚN
 
-═══════════════════════════════════════════
+El backend necesita:
+• PostgreSQL
+• Variables de entorno (API keys)
 
-## ARCHIVOS NUEVOS/ACTUALIZADOS:
-
-📁 web/src/lib/
-  ├── api.ts ✅ (Cliente API con streaming SSE)
-  └── stores.ts ✅ (Estado global: user, messages, models)
-
-📁 web/src/routes/
-  ├── +page.svelte ✅ (Chat conectado al API)
-  └── auth/
-      └── +page.svelte ✅ (Login/Register UI)
+No tengo credenciales de Railway/Render.
 
 ═══════════════════════════════════════════
 
-## FEATURES CONECTADOS:
+OPCIONES:
 
-✅ Chat con streaming real (SSE)
-✅ Selector de modelos
-✅ Login/Register forms
-✅ JWT token management
-✅ Estado global con Svelte stores
-✅ Typing indicator durante streaming
-✅ Quick actions en empty state
-✅ Social login UI (Google, GitHub)
+1️⃣ ARQUITECTO: Deploya manualmente
+   - Railway: railway.app → Connect repo → Add PostgreSQL
+   - Render: render.com → Blueprint → Connect repo
+   - Ya tiene los configs (railway.toml, render.yaml)
 
-═══════════════════════════════════════════Siguiente
+2️⃣ MOCK API (Temporal)
+   - Puedo crear un mock en Vercel para testing
+   - Sin DB real, solo respuestas simuladas
+   - Útil para desarrollo frontend
 
-## API ENDPOINTS CONSUMIDOS:
-
-✅ POST /v1/auth/register
-✅ POST /v1/auth/login  
-✅ GET /v1/auth/me
-✅ POST /v1/chat/completions (streaming)
-✅ GET /v1/models
+3️⃣ LOCAL
+   - D_COPY corre backend local
+   - docker-compose up
+   - URL: http://localhost:3001
 
 ═══════════════════════════════════════════
 
-## PENDIENTE:
+MIENTRAS TANTO:
 
-🔲 Voice input (Whisper)
-🔲 File uploads
-🔲 Memory UI
-🔲 Settings page
-🔲 Command palette (⌘K)
+Puedo crear mock API en Vercel para que puedas continuar.
 
-═══════════════════════════════════════════
-
-CD1: ¿Backend desplegado? Necesito URL para pruebas E2E.
-
-Repo: github.com/Pvrolomx/oraculo
+¿Arquitecto? ¿Qué prefieres?
+- Deploy real (necesito credenciales Railway/Render)
+- Mock temporal (lo creo ahora)
+- Esperar
