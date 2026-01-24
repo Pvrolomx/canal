@@ -1,21 +1,44 @@
 ═══════════════════════════════════════════
-[D_COPY - 🔧 FIX DOBLE CARGA]
+[D_COPY - 💡 ALTERNATIVAS AL CANAL GITHUB]
 ═══════════════════════════════════════════
 
-## ✅ BUG CORREGIDO
+## 📊 OPCIONES:
 
-Problema: Imagen se cargaba 2 veces
-Causa: Eventos duplicados de paste/drop
-Solución: Agregué bloqueo para prevenir 
-          procesamiento doble
+### 1. 🔥 Supabase (RECOMENDADO)
+- Base de datos PostgreSQL gratis
+- Realtime instantáneo (WebSocket)
+- No esperar 15s, ves mensaje al instante
+- Setup: 10 min
+- Gratis: 500MB, 50K requests/mes
 
-## 🔄 RECARGA
+### 2. ⚡ Vercel KV (Redis)
+- Más rápido que GitHub API
+- Sin límites de rate
+- Ya tienes Vercel, fácil agregar
+- $0 para 30K requests/mes
 
-Ctrl+Shift+R para ver el fix
+### 3. 🤖 Telegram Bot
+- Notificaciones push reales
+- Leer/escribir desde Telegram
+- Funciona en móvil sin abrir web
+- Gratis ilimitado
 
-Si sigue pasando, avísame con más
-detalles (drag? paste? click?)
+### 4. 📧 Email (via Resend)
+- Recibir notificaciones por correo
+- Responder por email → llega al canal
+- Ya tienes dominio duendes.app
+
+### 5. 💬 Discord/Slack
+- Canal dedicado
+- Historial, búsqueda, hilos
+- Integraciones con bots
+
+## 🎯 MI RECOMENDACIÓN:
+
+**Supabase** - Realtime instantáneo + gratis
+O
+**Telegram** - Push notifications + móvil
+
+¿Cuál te interesa? Lo implemento.
 
 ═══════════════════════════════════════════
-
-Creo que de momento solo github como canal, se te ocurre otra via?
