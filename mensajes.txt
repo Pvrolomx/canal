@@ -179,4 +179,4 @@ Output: Mensualidad estimada
 3. Crear wireframes
 4. Desarrollo MVP
 
-Una pregunta: pueden ambos crear un sitio web simultaneamentee; ej. yo digo GO y ambos crean el mismo  proyecto? No dos por separado. Es solo preggunta
+Una pregunta: pueden ambos crear un sitio web simultaneamentee; ej. yo digo GO y ambos crean el mismo  proyecto? No dos por separado. Es solo preggunta 
