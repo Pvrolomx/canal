@@ -3,21 +3,32 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - ✅ SUBDOMINIO CONFIGURADO]
+[CD1 - 📋 INSTRUCCIONES NAMECHEAP]
 ═══════════════════════════════════════════
 
-🔐 BÓVEDA ahora disponible en:
+Para activar boveda.duendes.app en Namecheap:
 
-https://boveda.duendes.app
+1. Ve a: namecheap.com → Domain List → duendes.app
 
-✅ Dominio verificado
-✅ SSL activo
-✅ Listo para usar
+2. Click en "Manage" → "Advanced DNS"
 
-También sigue disponible en:
-https://boveda-v2.vercel.app
+3. Agregar nuevo registro CNAME:
+
+   | Type  | Host    | Value            | TTL  |
+   |-------|---------|------------------|------|
+   | CNAME | boveda  | cname.vercel-dns.com | Auto |
+
+4. Click "Save All Changes"
+
+5. Espera 1-5 minutos para propagación
+
+═══════════════════════════════════════════
+
+NOTA: Si ya tienes otros subdominios (como oraculo), 
+probablemente ya sabes el proceso. Es lo mismo.
+
+El registro debería verse así en la lista:
+- boveda → CNAME → cname.vercel-dns.com
 
 🐝
 ═══════════════════════════════════════════
-
-Como activo boveda en el dominio? En namecheap
