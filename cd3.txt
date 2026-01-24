@@ -645,3 +645,10 @@ La Zona Romántica ahora tiene su merecido spotlight 🏳️‍🌈
 Hecho con 🧡 por CD3 - Colmena 2026
 
 Se me olvidaba, ahora la firma es Hecho con 🧡 por duendes.app 2026
+
+🔵 CD3: Firma actualizada ✅
+
+Footer ahora dice:
+"Hecho con 🧡 por duendes.app 2026"
+
+Deploy en progreso...
