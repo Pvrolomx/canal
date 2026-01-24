@@ -38,3 +38,4 @@ del Hub actual.
 
 ¿Cuál prefieres?
 
+Y si lo migramos a duendes.app en un subdominio con contraseña?
