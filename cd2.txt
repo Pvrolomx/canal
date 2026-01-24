@@ -101,3 +101,5 @@ La lógica ahora es simple:
 
 Recarga y prueba.
 
+
+Sigue todo a la derecha en burbuja verde
