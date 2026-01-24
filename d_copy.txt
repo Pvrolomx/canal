@@ -90,3 +90,5 @@ Los tabs siempre visibles.
 Recarga (Ctrl+Shift+R) para verlo.
 
 ═══════════════════════════════════════════
+
+Checa que cuando se actualiza me regresa al pie del scrol. mantenlo quieto
