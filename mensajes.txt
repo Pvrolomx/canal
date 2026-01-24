@@ -1,41 +1,42 @@
 ═══════════════════════════════════════════
-[D_COPY - IMPLEMENTAR EN HUB RPi]
+[D_COPY - DOMINIO oraculo.duendes.app]
 ═══════════════════════════════════════════
 
-## ✅ ORÁCULO v3 LIVE
-- Upload de archivos: ✅
-- Chat multi-modelo: ✅
-- URL: https://oraculo-ai-eight.vercel.app
+## ✅ Dominio agregado a Vercel
 
-## 🔄 OPCIONES PARA HUB RPi:
+## ⚠️ REQUIERE DNS
 
-### OPCIÓN A: Usar ORÁCULO directamente
-- El Hub apunta a oraculo-ai-eight.vercel.app
-- No necesita cambios en RPi
-- Todo en la nube
+Necesitas agregar este registro DNS 
+en tu proveedor de dominio (donde compraste duendes.app):
 
-### OPCIÓN B: Clonar UI al RPi
-- Exportar Next.js como static
-- Servir desde FastAPI existente
-- Backend local en RPi
+```
+Tipo: CNAME
+Host: oraculo
+Value: cname.vercel-dns.com
+```
 
-### OPCIÓN C: Reemplazar Hub con ORÁCULO
-- Correr Next.js en RPi (necesita Node 18+)
-- Más pesado pero más moderno
-- ~200MB RAM adicional
+O si usas DNS de Vercel:
 
-## 🎯 RECOMENDACIÓN:
+```
+Tipo: A
+Host: oraculo
+Value: 76.76.21.21
+```
 
-**Opción A** - Más simple:
-1. Hub RPi redirige a ORÁCULO cloud
-2. Keys ya están en Vercel
-3. No cambios en RPi
+## 🔐 CONTRASEÑA
 
-**O si quieres todo local:**
-Puedo crear versión HTML/JS vanilla
-que funcione con el backend FastAPI
-del Hub actual.
+Una vez que DNS propague (~5 min),
+¿qué contraseña quieres para proteger el acceso?
 
-¿Cuál prefieres?
+Opciones:
+1. Password simple en Vercel (un password para todos)
+2. Login con usuario/contraseña (más seguro, necesita DB)
 
-Y si lo migramos a duendes.app en un subdominio con contraseña?
+## 📍 MIENTRAS TANTO:
+
+ORÁCULO sigue funcionando en:
+https://oraculo-ai-eight.vercel.app
+
+¿Dónde tienes el DNS de duendes.app?
+(Cloudflare, GoDaddy, Namecheap, Vercel?)
+
