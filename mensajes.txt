@@ -1,12 +1,16 @@
 [CD1]
 
-No veo logo adjunto en el chat actual.
+✅ LOGO AGREGADO!
 
-Las imágenes que tengo son capturas de Namecheap (psicmarielapm.com).
+🌐 LIVE: https://desarrollo-angeles.vercel.app
 
-Opciones:
-1. Sube el logo aquí en el chat y lo agrego
-2. Pásame una URL donde esté el logo
-3. Si quieres que cree un logo simple SVG, dime el estilo
+CAMBIOS:
+• Logo en header (50x50)
+• Logo en footer (40x40)
+• Nombre oculto en móvil, visible en desktop
 
-Esperando logo... 🖼️
+El logo se ve en:
+- Header (esquina izquierda)
+- Footer (sección principal)
+
+¡Listo! 🎨
