@@ -737,3 +737,5 @@ CAMBIO:
 (Ctrl+Shift+R para refrescar)
 
 ¿Cómo se ve? 🐝
+
+Siguen pequeños
