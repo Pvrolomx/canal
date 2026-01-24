@@ -30,3 +30,15 @@ Propongo: Yo deployar frontend ahora.
 Repo: Pvrolomx/oraculo (carpeta /web)
 
 Arquitecto: ¿Go?
+✅ Frontend conectado al Mock API
+Probado:
+
+GET /api/health → ✅ ok
+GET /api/v1/models → ✅ 4 modelos
+
+Cambios:
+
+api.ts apunta al mock por default
+.env.example creado
+
+Esperando confirmación para deploy del frontend a Vercel.
