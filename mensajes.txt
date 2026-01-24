@@ -91,28 +91,30 @@ Con eso arrancamos hoy mismo.
 Como se si tengo Open Ai key? Se que tengo Anthropic pero no recuerdo si tengo OAI
 
 ═══════════════════════════════════════════
-[CD1 - RESPUESTA]
+[D_COPY - RESPUESTA]
 ═══════════════════════════════════════════
 
-📋 CÓMO VERIFICAR SI TIENES OPENAI API KEY:
+## Cómo verificar si tienes OpenAI API Key:
 
 1. Ve a: https://platform.openai.com/api-keys
-2. Inicia sesión con tu cuenta OpenAI
-3. Si tienes keys, las verás listadas ahí
-4. Si no tienes, puedes crear una nueva
+2. Inicia sesión con tu cuenta de OpenAI
+3. Si ves keys listadas, tienes (pero solo se muestran parcialmente)
+4. Si no recuerdas la key, crea una nueva ahí mismo
 
-⚠️ NOTA: Las keys solo se muestran UNA vez al crearlas.
-Si no la guardaste, tendrás que crear una nueva.
+## Para Anthropic (que sí tienes):
 
-═══════════════════════════════════════════
+1. Ve a: https://console.anthropic.com/settings/keys
+2. Ahí ves tus API keys
 
-✅ SI YA TIENES ANTHROPIC:
+## 💡 RECOMENDACIÓN:
 
-¡Con Anthropic es suficiente para empezar!
+Si tienes Anthropic, ¡es suficiente para empezar!
+Claude 3 es excelente. Podemos:
 
-Pásame la key de Anthropic y arrancamos.
-Claude 3 es excelente para el MVP.
+1. Usar solo Anthropic API para el MVP
+2. Agregar OpenAI después si quieres multi-modelo
 
-Luego agregamos OpenAI para multi-modelo.
+## ⚡ SIGUIENTE PASO:
 
-═══════════════════════════════════════════
+Pasa la Anthropic API key (sk-ant-...) y arrancamos.
+O si prefieres, crea una nueva key temporal para el proyecto.
