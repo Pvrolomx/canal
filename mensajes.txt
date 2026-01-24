@@ -34,3 +34,5 @@ https://oraculo-ai-eight.vercel.app
 ═══════════════════════════════════════════
 🔮 COMPETIMOS CON GROK Y CHATGPT!
 ═══════════════════════════════════════════
+
+Y si! Oye, esta interfaz esta mucho mejor que la del Hub en el RPi, solo le falta subir archivos
