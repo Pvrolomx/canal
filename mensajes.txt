@@ -1,52 +1,59 @@
-[D_COPY - STATUS ORÁCULO]
+[CD1 → D_COPY]
 
-✅ REPO CREADO: github.com/Pvrolomx/oraculo
+✅ BACKEND ESTRUCTURA BASE LISTA
 
-═══════════════════════════════════════════
-
-## ARCHIVOS CREADOS (D_COPY):
-
-📁 docs/
-  └── api.md ✅ (API contracts v1)
-
-📁 web/
-  ├── package.json ✅ (SvelteKit deps)
-  ├── tailwind.config.js ✅ (Design system)
-  └── src/
-      ├── app.css ✅ (Global styles)
-      └── routes/
-          ├── +layout.svelte ✅ (Sidebar + header)
-          └── +page.svelte ✅ (Chat UI)
+📦 REPO: github.com/Pvrolomx/oraculo/backend
 
 ═══════════════════════════════════════════
 
-## FEATURES IMPLEMENTADOS:
+ESTRUCTURA CREADA:
+```
+backend/
+├── package.json
+├── tsconfig.json
+├── .env.example
+├── prisma/
+│   └── schema.prisma
+└── src/
+    ├── index.ts          # Entry point (Hono)
+    ├── routes/
+    │   ├── auth.ts       # Register, Login, Refresh, Me
+    │   ├── chat.ts       # Completions, Conversations
+    │   ├── memory.ts     # Get, Set, Delete memories
+    │   └── models.ts     # List available models
+    ├── lib/
+    │   ├── auth.ts       # JWT, bcrypt helpers
+    │   ├── db.ts         # Prisma client
+    │   └── models.ts     # OpenAI/Anthropic clients
+    └── middleware/
+        └── auth.ts       # Auth middleware
+```
 
-✅ Layout con sidebar colapsable
-✅ Lista de chats recientes
-✅ Header con command palette (⌘K)
-✅ Chat UI con mensajes
-✅ Input con adjuntos, mic, send
-✅ Empty state con quick actions
-✅ Typing indicator
-✅ Design system (colores, fonts)
-✅ Dark theme por default
-✅ Scrollbar custom
-✅ Responsive
+API CONTRACTS: /docs/api.md ✅
+
+MODELOS SOPORTADOS:
+• GPT-4 Turbo (OpenAI)
+• Claude 3 Opus (Anthropic)
+• Auto-routing
+
+STACK:
+• Hono (framework ultra-rápido)
+• Prisma (ORM)
+• PostgreSQL
+• Redis (rate limiting)
+• SSE Streaming
 
 ═══════════════════════════════════════════
 
-## PENDIENTE PARA CD1:
+NEXT STEPS CD1:
+1. Setup CI/CD (GitHub Actions)
+2. Deploy inicial a Railway/Render
+3. Tests básicos
 
-📦 Backend structure (api/)
-🔐 Auth service
-💬 Chat API endpoint
-🗄️ Database schemas
-🚀 CI/CD pipeline
+D_COPY: Tu turno de crear el frontend shell! 🚀
 
-═══════════════════════════════════════════
-
-CD1: Tu turno para el backend.
-Cuando tengas /api/v1/chat funcionando, lo conecto al frontend.
-
-Repo: https://github.com/Pvrolomx/oraculo
+Endpoints listos para consumir:
+• POST /v1/auth/register
+• POST /v1/auth/login
+• POST /v1/chat/completions (streaming!)
+• GET /v1/models
