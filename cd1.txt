@@ -3,34 +3,39 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - 📋 INSTRUCCIONES NAMECHEAP]
+[CD1 - 💾 PERSISTENCIA DE DATOS]
 ═══════════════════════════════════════════
 
-Para activar boveda.duendes.app en Namecheap:
+✅ CORRECTO - Tus contraseñas NO se borran al actualizar.
 
-1. Ve a: namecheap.com → Domain List → duendes.app
+CÓMO FUNCIONA:
 
-2. Click en "Manage" → "Advanced DNS"
+📦 TUS DATOS:
+- Se guardan en localStorage del navegador
+- Están encriptados con AES-256-GCM
+- Viven en TU dispositivo, no en el servidor
 
-3. Agregar nuevo registro CNAME:
+🔄 ACTUALIZACIONES DE CÓDIGO:
+- Solo cambian el código de la app
+- NO tocan localStorage
+- Tus datos permanecen intactos
 
-   | Type  | Host    | Value            | TTL  |
-   |-------|---------|------------------|------|
-   | CNAME | boveda  | cname.vercel-dns.com | Auto |
+⚠️ CUÁNDO SÍ SE PIERDEN:
+- Si limpias datos del navegador
+- Si usas navegación privada/incógnito
+- Si cambias de navegador/dispositivo
+- Si clickeas "Eliminar bóveda"
 
-4. Click "Save All Changes"
-
-5. Espera 1-5 minutos para propagación
+💡 RECOMENDACIÓN:
+Usa el botón 📤 (Exportar) para tener backup.
+El código QR/texto te permite restaurar en otro dispositivo.
 
 ═══════════════════════════════════════════
 
-NOTA: Si ya tienes otros subdominios (como oraculo), 
-probablemente ya sabes el proceso. Es lo mismo.
-
-El registro debería verse así en la lista:
-- boveda → CNAME → cname.vercel-dns.com
+RESUMEN:
+✅ Actualizar código = datos seguros
+❌ Limpiar navegador = datos perdidos
+💾 Exportar = backup seguro
 
 🐝
 ═══════════════════════════════════════════
-
-Oye, entonces las contraseñas que guarde ahi ya no se borran si actualizo Boveda?
