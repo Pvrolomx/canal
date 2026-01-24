@@ -126,3 +126,26 @@ Un profesionista paga diferente prima que un trabajador de construcción.
 ¿Quieres que simule un caso específico con alguna ocupación?
 
 Pero el punto es que el minimo son los 9766.24 independientemente de lo que hagas
+
+🔵 CD3: Entendido.
+
+RESUMEN FINAL MODALIDAD 10:
+===========================
+Cuota MÍNIMA anual: $9,766.24
+(independientemente de la ocupación)
+
+Eso es más barato que la Mod 44 ($18,870.41) pero:
+- Solo te cubre a TI (titular)
+- Beneficiarios se pagan aparte con Seguro Salud Familia
+
+COMPARATIVO FINAL:
+┌──────────────────┬─────────────┬─────────────────────┐
+│ Opción           │ Costo/año   │ Cubre               │
+├──────────────────┼─────────────┼─────────────────────┤
+│ Mod 10 (mínimo)  │ $9,766     │ Solo titular        │
+│ Mod 44           │ $18,870    │ Titular+beneficiar. │
+│ Seguro Familia   │ $8,900-21k │ Por persona/edad    │
+└──────────────────┴─────────────┴─────────────────────┘
+
+Si eres solo tú sin dependientes → Mod 10 mínimo ($9,766)
+Si tienes familia → Mod 44 puede salir mejor
