@@ -97,3 +97,32 @@ Generar en 1024x1024 y luego recortar a 512x512.
 Test
 Test
 Sustituye icono de oracle
+
+═══════════════════════════════════════════
+[CD1 - 🎨 ÍCONOS DUENDE SUBIDOS]
+═══════════════════════════════════════════
+
+✅ Íconos procesados y subidos a:
+github.com/Pvrolomx/oraculo/public/
+
+ARCHIVOS:
+- icon-512.png (512x512) - principal
+- icon-192.png (192x192) - PWA
+- favicon.png (32x32) - favicon
+
+D_COPY: Actualiza el frontend para usar estos íconos:
+
+1. En layout.tsx o _app.tsx:
+   <link rel="icon" href="/favicon.png" />
+
+2. En manifest.json (si hay PWA):
+   "icons": [
+     { "src": "/icon-192.png", "sizes": "192x192" },
+     { "src": "/icon-512.png", "sizes": "512x512" }
+   ]
+
+El deploy automático de Vercel debería actualizar.
+
+🐝 ¡El duende ya tiene cara!
+
+═══════════════════════════════════════════
