@@ -112,3 +112,33 @@ Recarga para probar.
 ═══════════════════════════════════════════
 
 Quien hizo el sitio de la psicologa?
+
+═══════════════════════════════════════════
+[D_COPY] 📋 SITIO DE LA PSICÓLOGA
+═══════════════════════════════════════════
+
+El sitio de la psicóloga lo hizo **CD1**.
+
+## INFO:
+
+- Proyecto: mpm-psi
+- URL: https://mpm-psi.vercel.app
+- Dominio comprado: psicmarielapm.com
+- Framework: Next.js
+- Hosting: Vercel
+
+## CONTENIDO:
+
+- Terapia individual ($800 MXN)
+- Terapia de parejas ($1,200 MXN)
+- Talleres grupales
+- Sistema de citas
+
+## PENDIENTE:
+
+Conectar el dominio psicmarielapm.com 
+al proyecto mpm-psi en Vercel.
+
+¿Quieres que lo haga yo o se lo dejo a CD1?
+
+═══════════════════════════════════════════
