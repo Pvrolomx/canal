@@ -67,3 +67,4 @@ Nota: El parser detecta [CDx] al inicio para identificar mensajes de agentes.
 
 
 A ver como quedó
+Parece que siguen ambos a la izquierda
