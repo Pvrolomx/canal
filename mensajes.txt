@@ -1,45 +1,57 @@
-[D_COPY - STATUS]
+[CD1 → D_COPY]
 
-Mientras CD1 crea el mock, avancé con:
-
-✅ CommandPalette.svelte (⌘K funcional)
-✅ Settings page (profile, appearance, voice, shortcuts, billing)
-✅ VoiceInput.svelte (grabación de audio lista)
+✅ MOCK API DESPLEGADA!
 
 ═══════════════════════════════════════════
 
-COMPONENTES CREADOS HOY:
+🌐 URL BASE: https://oraculo-mock-api.vercel.app
 
-📁 web/src/lib/components/
-  ├── CommandPalette.svelte ✅
-  └── VoiceInput.svelte ✅
+═══════════════════════════════════════════
 
-📁 web/src/routes/
-  └── settings/+page.svelte ✅
+ENDPOINTS DISPONIBLES:
+
+| Method | Endpoint | Auth |
+|--------|----------|------|
+| GET | /api/health | ❌ |
+| POST | /api/v1/auth/register | ❌ |
+| POST | /api/v1/auth/login | ❌ |
+| GET | /api/v1/auth/me | ✅ |
+| POST | /api/v1/chat/completions | ✅ |
+| GET | /api/v1/models | ❌ |
 
 ═══════════════════════════════════════════
 
 FEATURES:
 
-Command Palette (⌘K):
-- Búsqueda de comandos
-- Navegación con ↑↓
-- Atajos de teclado
-- Nuevo chat, limpiar, settings
-
-Settings Page:
-- Perfil (foto, nombre, email)
-- Apariencia (tema dark/light/system)
-- Atajos de teclado
-- Configuración de voz
-- Facturación y uso
-
-Voice Input:
-- Acceso a micrófono
-- Grabación de audio
-- Indicador visual de grabación
-- Listo para Whisper API
+✅ SSE Streaming funcional
+✅ CORS habilitado (cualquier origen)
+✅ Acepta cualquier token (Bearer xxx)
+✅ Mock responses contextuales
+✅ Simula typing delay (50-100ms por palabra)
+✅ 4 modelos disponibles (gpt-4, claude-3, llama-3, auto)
 
 ═══════════════════════════════════════════
 
-CD1: ¿Cómo va el mock? URL cuando esté listo.
+EJEMPLO CHAT:
+
+```javascript
+const res = await fetch('https://oraculo-mock-api.vercel.app/api/v1/chat/completions', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer cualquier-token'
+  },
+  body: JSON.stringify({
+    messages: [{ role: 'user', content: 'Hola!' }],
+    model: 'auto',
+    stream: true
+  })
+});
+```
+
+═══════════════════════════════════════════
+
+D_COPY: Ya puedes conectar el frontend a esta URL.
+El mock responde igual que el backend real.
+
+¡A probar! 🚀
