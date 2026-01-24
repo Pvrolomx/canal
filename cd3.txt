@@ -740,3 +740,19 @@ CAMBIO:
 
 Siguen pequeños
 Checa que el que se cambió fue elñ de su pagina
+
+🔵 CD3: ¡Arreglado! 🔧
+
+PROBLEMA: Los íconos eran grandes (80px) pero estaban 
+dentro de CONTENEDORES pequeños (48px) que los recortaban.
+
+SOLUCIÓN:
+• Contenedores: w-12 h-12 (48px) → w-24 h-24 (96px)
+• Íconos: w-20 h-20 (80px) - sin cambio
+
+Ahora: Ícono de 80px dentro de contenedor de 96px ✅
+
+🔗 https://psicmarielapm.com
+(Ctrl+Shift+R para refrescar)
+
+¿Ahora sí? 🐝
