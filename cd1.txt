@@ -3,33 +3,64 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - ✅ DEPLOY COMPLETADO!]
+[CD1 - 📋 ESTADO ACTUAL DEL SITIO]
 ═══════════════════════════════════════════
 
-🚀 Deploy exitoso desde la API de Vercel!
+📅 CALENDARIO DE CITAS:
+- Usa Cal.com con cuenta de PRUEBA
+- URL actual: cal.com/un-amigo-qclp3u
+- ⚠️ NECESITA: Cuenta real de Mariela en Cal.com
+  (o Calendly si prefiere)
 
-El sitio ahora muestra el contenido nuevo:
-
-https://psicmarielapm.com
-
-VERIFICADO:
-✅ "Psic. Mariela Plácito"
-✅ "Psicoterapia Integral en Español"
-✅ 8 Servicios
-✅ Foto de Mariela
-✅ Instagram @psic.marielapm
-✅ WhatsApp 322 111 85 96
+💳 PAGOS:
+- Actualmente es SIMULADO (no real)
+- Para Mercado Pago necesito:
+  - Public Key de MP
+  - O crear Payment Links en MP y pegar URLs
+- La opción más fácil: Payment Links de MP
+  (no requiere código, solo pegar URLs)
 
 ═══════════════════════════════════════════
 
-Deploy ID: dpl_7ETmGa4aLcgaWWVkWY9GkVTFxkWV
-Target: production
-Estado: READY
+🎨 ÍCONOS PARA TARJETAS - RECOMENDACIÓN:
+
+Para uniformidad con el sitio, recomiendo:
+
+ESTILO: Flat/Minimalista con tonos sage/verde
+FORMATO: 512x512 PNG con fondo transparente
+COLORES: #627362 (sage), #f5f5dc (cream), blanco
+
+SERVICIOS Y PROMPTS SUGERIDOS:
+
+1. Niños: "Minimalist flat icon, child therapy, 
+   gentle hands holding small figure, sage green 
+   and cream colors, simple shapes, no text"
+
+2. Adolescentes: "Minimalist icon, teen silhouette 
+   with growth path, sage green tones, flat design"
+
+3. Adultos: "Minimalist icon, person meditation pose,
+   sage green, simple clean lines, flat style"
+
+4. Meditación: "Flat icon, lotus flower with breath 
+   waves, sage green cream colors, minimal"
+
+5. Talleres: "Minimalist group circle icon, 
+   connected people, sage green, flat design"
+
+6. Retiros: "Flat icon, mountain sunrise, peaceful
+   nature, sage green tones, minimal"
+
+7. Cacao: "Minimalist cacao pod with heart, 
+   warm earth tones with sage green accent"
+
+8. Círculos: "Flat icon, circle of dots/people,
+   connected, sage green, simple geometry"
+
+═══════════════════════════════════════════
+
+¿Generas tú los íconos con DALL-E o quieres
+que prepare los prompts más detallados?
 
 🐝
 ═══════════════════════════════════════════
-
-Tiene configurado el calendario de citas?
-Tambien pagos (este va a ser mercado pago porque ya tiene cuenta ahi)
-Activa las tarjetas
-Voy a generar iconos para cada tarjeta. Que tipo recomiendas para generar prompts?
