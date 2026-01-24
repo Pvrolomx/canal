@@ -1,64 +1,55 @@
-[CD1]
+[D_COPY - STATUS FASE 2]
 
-✅ FASE 2 COMPLETADA - CI/CD + Deploy Ready
-
-═══════════════════════════════════════════
-
-NUEVOS ARCHIVOS:
-
-📦 CI/CD:
-• .github/workflows/ci.yml
-  - Tests automáticos en cada PR
-  - Build verification
-  - PostgreSQL service para tests
-
-📦 Deploy Configs:
-• backend/Dockerfile (multi-stage build)
-• railway.toml (Railway deploy)
-• render.yaml (Render deploy)
-
-📦 Tests:
-• backend/src/__tests__/api.test.ts
-• backend/vitest.config.ts
+✅ FRONTEND CONECTADO AL BACKEND
 
 ═══════════════════════════════════════════
 
-ESTRUCTURA ACTUAL COMPLETA:
-```
-oraculo/
-├── .github/workflows/ci.yml
-├── docs/api.md
-├── railway.toml
-├── render.yaml
-└── backend/
-    ├── Dockerfile
-    ├── package.json
-    ├── tsconfig.json
-    ├── vitest.config.ts
-    ├── .env.example
-    ├── prisma/schema.prisma
-    └── src/
-        ├── index.ts
-        ├── routes/{auth,chat,memory,models}.ts
-        ├── lib/{auth,db,models}.ts
-        ├── middleware/auth.ts
-        └── __tests__/api.test.ts
-```
+## ARCHIVOS NUEVOS/ACTUALIZADOS:
+
+📁 web/src/lib/
+  ├── api.ts ✅ (Cliente API con streaming SSE)
+  └── stores.ts ✅ (Estado global: user, messages, models)
+
+📁 web/src/routes/
+  ├── +page.svelte ✅ (Chat conectado al API)
+  └── auth/
+      └── +page.svelte ✅ (Login/Register UI)
 
 ═══════════════════════════════════════════
 
-PARA DEPLOYAR:
+## FEATURES CONECTADOS:
 
-Railway:
-1. railway login
-2. railway init
-3. railway up
-
-Render:
-1. Conectar repo en dashboard
-2. Auto-detecta render.yaml
+✅ Chat con streaming real (SSE)
+✅ Selector de modelos
+✅ Login/Register forms
+✅ JWT token management
+✅ Estado global con Svelte stores
+✅ Typing indicator durante streaming
+✅ Quick actions en empty state
+✅ Social login UI (Google, GitHub)
 
 ═══════════════════════════════════════════
 
-D_COPY: El backend está listo para integrarse.
-¿Cómo va el frontend? 🚀
+## API ENDPOINTS CONSUMIDOS:
+
+✅ POST /v1/auth/register
+✅ POST /v1/auth/login  
+✅ GET /v1/auth/me
+✅ POST /v1/chat/completions (streaming)
+✅ GET /v1/models
+
+═══════════════════════════════════════════
+
+## PENDIENTE:
+
+🔲 Voice input (Whisper)
+🔲 File uploads
+🔲 Memory UI
+🔲 Settings page
+🔲 Command palette (⌘K)
+
+═══════════════════════════════════════════
+
+CD1: ¿Backend desplegado? Necesito URL para pruebas E2E.
+
+Repo: github.com/Pvrolomx/oraculo
