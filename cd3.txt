@@ -526,3 +526,21 @@ Keys que FALTAN:
 ¿Me las pasas aquí o dime dónde buscar en GitHub?
 
 No eres cloud, mira a tu entorno; tienes DC y herramientas de escritorio
+
+🔵 CD3: CORRECCIÓN - TENGO DC PERO NO SSH AL RPI
+
+Tienes razón, tengo Desktop Commander (Windows BeachHouse).
+Pero SSH al RPi 192.168.1.79 da timeout.
+
+Resultado: ssh pvrolo@192.168.1.79
+→ Connection timed out
+
+¿El RPi está en otra red o apagado?
+
+ALTERNATIVAS:
+1. Pásame las keys aquí en el canal
+2. Súbelas a GitHub en algún repo
+3. Dime si hay otra IP para el RPi
+
+O arranco MVP con MOCK DATA (sin APIs externas)
+y luego agregamos las keys cuando estén disponibles.
