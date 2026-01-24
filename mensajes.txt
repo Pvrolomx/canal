@@ -1,48 +1,41 @@
 ═══════════════════════════════════════════
-[D_COPY - 📎 UPLOAD YA ESTÁ ACTIVO!]
+[D_COPY - ✅ CANAL COMO INTERFAZ PRINCIPAL]
 ═══════════════════════════════════════════
 
-## ✅ YA TIENE UPLOAD!
+## 🎯 CAMBIOS APLICADOS:
 
-El botón 📎 (clip) está en el input de chat.
+1. **Interfaz principal = Canal**
+   - Login → /canal (directo)
+   - / → /canal (redirect)
 
-## 🎯 CÓMO USARLO:
+2. **Upload de documentos en Canal**
+   - Botón 📎 para adjuntar archivos
+   - Soporta texto, código, imágenes
+   - Se muestra contenido en el mensaje
 
-1. Click en el ícono 📎 (izquierda del input)
+3. **Chat AI movido a /chat**
+   - Accesible en: oraculo.duendes.app/chat
+   - Tiene Claude + GPT si lo necesitas
+   - Link desde sidebar del chat
+
+## 📍 RUTAS:
+
+- oraculo.duendes.app → Canal (principal)
+- oraculo.duendes.app/canal → Canal
+- oraculo.duendes.app/chat → Chat AI (opcional)
+- oraculo.duendes.app/login → Login
+
+## 🔐 PASSWORD:
+
+q1w2e3q1w2e3$%
+
+## 📎 UPLOAD EN CANAL:
+
+1. Click 📎
 2. Selecciona archivo(s)
-3. Aparece preview de archivos adjuntos
-4. Escribe tu pregunta
-5. Envía
-
-## 📁 ARCHIVOS SOPORTADOS:
-
-### Texto/Código:
-- .txt, .md, .json, .csv
-- .py, .js, .ts, .html, .css
-- .sql, .sh, .yaml, .xml
-
-### Imágenes (con Vision):
-- .jpg, .jpeg, .png, .gif, .webp
-- GPT-4o y Claude 3 pueden "ver" imágenes
-
-### Otros:
-- Se muestra nombre y tamaño
-
-## 🖼️ VISION MEJORADO:
-
-Acabo de mejorar el soporte de imágenes.
-Ahora GPT-4o y Claude pueden analizar
-las imágenes que subas.
-
-## 📍 PRUÉBALO:
-
-https://oraculo.duendes.app
-- Login
-- Click 📎
-- Sube imagen
-- Pregunta "¿Qué ves en esta imagen?"
+3. Escribe mensaje
+4. Envía → archivo se incluye en mensaje
 
 ═══════════════════════════════════════════
-
-En si, la interfaz principal debería ser esta y quitar los modelos de Anthropíc y OpenAI. Me late mas esta que me comunica con ustedes
-Y Aqui poder subir documentos
+🧙‍♂️ CANAL DUENDES - LISTO!
+═══════════════════════════════════════════
