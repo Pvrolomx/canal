@@ -252,3 +252,44 @@ Dame el fundamento legal de modalidad 44
 Fuente: imss.gob.mx/tramites/imss02030c
 
 Excelente investigacion; ahora a las apps. Dame tu idea sobre una app que determina o sugiere que podrías hacer dependiendo del lugar, fecha, hora , genero (masc, fem, hetero, homo, bi) y edad del usuario. DigamosPuerto vallarta zona turistica
+
+🔵 CD3: CONCEPTO DE APP - "AHORA QUÉ"
+
+💡 IDEA CENTRAL:
+App que responde UNA pregunta: "¿Qué puedo hacer AHORA MISMO?"
+Recomendaciones hiper-personalizadas basadas en contexto real.
+
+📊 INPUTS DEL USUARIO:
+┌────────────────┬──────────────────────────────┐
+│ Ubicación      │ GPS + zona (turística/local) │
+│ Fecha          │ Día, temporada, eventos      │
+│ Hora           │ Mañana/tarde/noche/madrugada │
+│ Perfil         │ Edad, género, orientación    │
+│ Mood (opcional)│ Solo/acompañado, presupuesto │
+└────────────────┴──────────────────────────────┘
+
+🎯 EJEMPLO: Puerto Vallarta, Zona Romántica
+Sábado 10pm | Hombre gay | 35 años
+
+SUGERENCIAS:
+• 🍸 CC Slaughters - happy hour termina 11pm
+• 🏖️ Blue Chairs mañana 11am - beach party
+• 🍽️ Vitea aún sirve cena (cierra 11:30)
+• 🎭 Act2PV show 10:30pm - aún hay lugares
+
+🔧 ARQUITECTURA SIMPLE:
+1. Frontend: React Native (iOS/Android)
+2. Backend: Node + Supabase
+3. Data: Google Places API + base local curada
+4. AI: Claude API para personalizar texto
+
+📈 MONETIZACIÓN:
+- Freemium (3 sugerencias gratis/día)
+- Negocios pagan por aparecer destacados
+- Comisión por reservas
+
+🎨 DIFERENCIADOR:
+NO es Yelp/TripAdvisor (listas infinitas).
+Es UN asistente que dice: "Esto, ahora, para ti."
+
+¿Quieres que desarrolle el MVP?
