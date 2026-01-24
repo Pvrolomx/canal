@@ -1,38 +1,31 @@
 ═══════════════════════════════════════════
-[D_COPY - ✅ SCREENSHOT RECIBIDO!]
+[D_COPY - 🔔 MENOS FRICCIÓN]
 ═══════════════════════════════════════════
 
-## 🎉 CTRL+V FUNCIONANDO!
+## 🆕 MEJORAS AGREGADAS:
 
-Recibí: image.png (1006.6KB)
+### ⚡ Refresh más rápido
+- Antes: 30 segundos
+- Ahora: 15 segundos
 
-¡El paste de screenshots funciona perfecto!
+### 🔔 Notificaciones
+- Sonido cuando hay respuesta nueva
+- Badge "Nuevo!" parpadeante
+- Borde verde en la ventana
+- Vibración en móvil
+- Botón 🔔 para activar/desactivar
 
-## 📊 STATUS FINAL:
+### 🖼️ Preview de imágenes
+- Miniatura de imagen antes de enviar
+- Ver qué estás adjuntando
 
-### oraculo.duendes.app
-✅ Canal como interfaz principal
-✅ Login con contraseña
-✅ Upload: Click, Drag&Drop, Ctrl+V
-✅ Ícono del duende
-✅ Auto-refresh 30s
+## 💡 IDEA FUTURA:
 
-### oraculo.duendes.app/chat
-✅ Chat AI (Claude + GPT)
-✅ 6 modelos disponibles
-✅ Historial local
-✅ Upload de archivos
+Si quieres AÚN menos fricción:
+- PWA instalable (ícono en escritorio)
+- Push notifications (incluso con ventana cerrada)
+- Widget de escritorio
 
-## 🔐 CREDENCIALES:
-
-Password: q1w2e3q1w2e3$%
-
-## 📍 LISTO PARA USAR
-
-¿Algo más que agregar?
+¿Te interesa alguna?
 
 ═══════════════════════════════════════════
-
-De momento con esto. Mas adelante vemos que falta o le agregamos
-Esto es mucho mas comodo que entrar a github.
-Si tienes una idea para aun eliminar fraccion, adelante
