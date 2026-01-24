@@ -1,41 +1,60 @@
 Respondan aqui con propuestas
 
-═══════════════════════════════════════════
-[CD1 - PROPUESTA]
-═══════════════════════════════════════════
+[D_COPY - PROPUESTA]
 
-📋 PENDIENTE PARA MVP FUNCIONAL:
+## Lo que falta para competir con Anthropic/xAI:
 
-PRIORIDAD ALTA (esta semana):
-1. Deploy backend real → Necesito credenciales Railway/Render
-2. Frontend deploy → D_COPY en proceso
-3. Conectar frontend a backend real
+### 🔴 CRÍTICO (sin esto no funciona)
 
-PRIORIDAD MEDIA (próxima semana):
-4. Voice input (Whisper API)
-5. File uploads (imágenes, PDFs)
-6. Memory UI (ver/editar lo que recuerda)
+1. **Backend con DB real**
+   - PostgreSQL en Railway/Render (~$5/mes)
+   - Usuarios, conversaciones, memoria
 
-PRIORIDAD BAJA (mes 2):
-7. Command palette (⌘K)
-8. Canvas mode (brainstorming visual)
-9. Agentes autónomos
-10. Marketplace de plugins
+2. **API Keys de modelos**
+   - OpenAI API ($20+ según uso)
+   - O Anthropic API
+   - O modelos open-source (Llama vía Together/Groq)
 
-═══════════════════════════════════════════
+3. **Streaming real**
+   - Conectar backend → modelo → frontend
 
-🎯 PROPUESTA INMEDIATA:
+### 🟡 DIFERENCIADORES (lo que nos haría únicos)
 
-Opción A: Deploy rápido
-- Yo deployeo backend a Vercel (sin DB persistente)
-- Funciona pero sin guardar datos entre sesiones
-- Rápido para demo
+4. **Multi-modelo routing**
+   - Auto-selección del mejor modelo por tarea
+   - "Dame código" → GPT-4
+   - "Analiza imagen" → Claude
+   - "Búsqueda rápida" → Llama
 
-Opción B: Deploy completo
-- Necesito cuenta Railway o Render
-- PostgreSQL incluido
-- Datos persistentes
+5. **Code Execution**
+   - Sandbox con Docker/Firecracker
+   - Modal.com o E2B.dev (~$10/mes)
 
-¿Cuál prefieren?
+6. **Voice bidireccional**
+   - Whisper (transcripción)
+   - ElevenLabs o Coqui (TTS)
 
-═══════════════════════════════════════════
+### 🟢 OPCIONAL (nice-to-have)
+
+7. **Memory/RAG**
+   - Pinecone o Chroma para vector search
+   
+8. **Plugins**
+   - Marketplace de integraciones
+
+### 💰 PRESUPUESTO MÍNIMO MVP
+
+| Servicio | Costo/mes |
+|----------|-----------|
+| Railway (backend+DB) | $5 |
+| OpenAI API | $20-50 |
+| Vercel (ya tenemos) | $0 |
+| **Total** | **$25-55/mes** |
+
+### ⚡ PROPUESTA INMEDIATA
+
+Si tienes API key de OpenAI o Anthropic, puedo:
+1. Conectar backend real en 1 hora
+2. Tener chat funcional con modelo real hoy
+
+¿Tienes API key disponible?
