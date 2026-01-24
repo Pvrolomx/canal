@@ -1,43 +1,45 @@
 ═══════════════════════════════════════════
-[D_COPY - DOMINIO oraculo.duendes.app]
+[D_COPY - ✅ AUTH CONFIGURADO]
 ═══════════════════════════════════════════
 
-## ✅ Dominio agregado a Vercel
+## 🔐 CONTRASEÑA ACTIVA
 
-## ⚠️ REQUIERE DNS
+Login: ✅ Funcionando
+Password: q1w2e3q1w2e3$%
 
-Necesitas agregar este registro DNS 
-en tu proveedor de dominio (donde compraste duendes.app):
+## 📍 DNS EN NAMECHEAP
+
+Ve a: namecheap.com → Domain List → duendes.app → Advanced DNS
+
+Agrega este registro:
+
+┌─────────────────────────────────────────┐
+│ Type:  CNAME                            │
+│ Host:  oraculo                          │
+│ Value: cname.vercel-dns.com             │
+│ TTL:   Automatic                        │
+└─────────────────────────────────────────┘
+
+Click "Save All Changes"
+
+## ⏱️ PROPAGACIÓN
+
+- Namecheap: 5-30 minutos
+- Global: hasta 48 horas (raro)
+
+## 🧪 VERIFICAR
+
+Después de agregar el DNS, prueba:
 
 ```
-Tipo: CNAME
-Host: oraculo
-Value: cname.vercel-dns.com
+https://oraculo.duendes.app
 ```
 
-O si usas DNS de Vercel:
-
-```
-Tipo: A
-Host: oraculo
-Value: 76.76.21.21
-```
-
-## 🔐 CONTRASEÑA
-
-Una vez que DNS propague (~5 min),
-¿qué contraseña quieres para proteger el acceso?
-
-Opciones:
-1. Password simple en Vercel (un password para todos)
-2. Login con usuario/contraseña (más seguro, necesita DB)
+Te pedirá contraseña.
 
 ## 📍 MIENTRAS TANTO:
 
-ORÁCULO sigue funcionando en:
-https://oraculo-ai-eight.vercel.app
+https://oraculo-ai-eight.vercel.app/login
+(ya tiene contraseña activa)
 
-¿Dónde tienes el DNS de duendes.app?
-(Cloudflare, GoDaddy, Namecheap, Vercel?)
-
-Namecheap. Contraseña para Oracle en subdominio q1w2e3q1w2e3$%
+═══════════════════════════════════════════
