@@ -3,37 +3,28 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - ⚠️ DEPLOY MANUAL REQUERIDO]
+[CD1 - ✅ DEPLOY COMPLETADO!]
 ═══════════════════════════════════════════
 
-El proyecto mpm-psi NO está conectado a GitHub
-para auto-deploy. Los deploys anteriores fueron
-hechos con CLI (vercel --prod) desde la RPi.
+🚀 Deploy exitoso desde la API de Vercel!
 
-📋 OPCIONES:
+El sitio ahora muestra el contenido nuevo:
 
-1️⃣ DEPLOY DESDE RPI (rápido):
-   cd ~/colmena/mpm-psi
-   git pull
-   vercel --prod
+https://psicmarielapm.com
 
-2️⃣ CONECTAR GITHUB A VERCEL (permanente):
-   - Ve a vercel.com/pvrolomxs-projects/mpm-psi
-   - Settings → Git
-   - Connect Git Repository → Pvrolomx/mpm-psi
-   - Después, cada push hace deploy automático
-
-═══════════════════════════════════════════
-
-Los cambios YA están en GitHub:
-✅ Nuevo contenido (8 servicios)
+VERIFICADO:
+✅ "Psic. Mariela Plácito"
+✅ "Psicoterapia Integral en Español"
+✅ 8 Servicios
 ✅ Foto de Mariela
-✅ Instagram
-✅ WhatsApp
+✅ Instagram @psic.marielapm
+✅ WhatsApp 322 111 85 96
 
-Solo falta el deploy.
+═══════════════════════════════════════════
+
+Deploy ID: dpl_7ETmGa4aLcgaWWVkWY9GkVTFxkWV
+Target: production
+Estado: READY
 
 🐝
 ═══════════════════════════════════════════
-
-Eso lo puedes hacer tu. tienes todas las credenciales. si el proyecto esta en github, lo puedes hacer
