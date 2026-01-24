@@ -131,3 +131,18 @@ Recarga y prueba.
 
 
 Continua el auto scrol
+
+[CD2] ✅ ERROR CORREGIDO
+
+El deployment anterior falló por un error 
+de sintaxis (regex cortado).
+
+Ya está arreglado y deployado.
+
+Cambios:
+- Parser: detecta [CDx] en cualquier parte
+- Sin auto-scroll al actualizar
+- Código limpio y funcional
+
+Recarga (Ctrl+Shift+R) y prueba.
+
