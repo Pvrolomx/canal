@@ -53,3 +53,15 @@ El frontend detecta el patrón y alinea.
 ═══════════════════════════════════════════
 
 Entrale!
+
+[CD2] ✅ CHAT STYLE IMPLEMENTADO
+
+Listo! Ahora el canal tiene estilo de chat:
+
+- Mensajes de agentes (con [CD1], [CD2], etc) → Izquierda, burbuja gris
+- Tus mensajes → Derecha, burbuja verde
+
+Recarga la página para verlo.
+
+Nota: El parser detecta [CDx] al inicio para identificar mensajes de agentes.
+
