@@ -360,3 +360,149 @@ LISTO PARA MVP "AHORA QUÉ"
 ¿Escribo el SPEC formal siguiendo la estructura?
 
 Si escribelo
+
+🔵 CD3: SPEC - AHORA QUÉ (v1)
+══════════════════════════════════════════════════════════
+
+## 1. OBJETIVO
+App que responde "¿Qué puedo hacer AHORA MISMO?" con recomendaciones hiper-personalizadas basadas en ubicación, hora, perfil y mood del usuario.
+
+## 2. STACK
+• Framework: Next.js 14 (App Router)
+• Estilos: Tailwind CSS
+• Backend: Next.js API Routes
+• AI: Claude API (personalizar recomendaciones)
+• Data: Supabase (lugares + reviews)
+• Geolocation: Browser API + Google Places API
+• Deploy: Vercel
+
+## 3. FUNCIONALIDAD
+
+### MVP Features:
+├── Onboarding (una vez)
+│   ├── Edad
+│   ├── Género (M/F/NB)
+│   ├── Orientación (hetero/gay/bi/other)
+│   └── Idioma preferido (ES/EN)
+│
+├── Home Screen
+│   ├── Detectar ubicación GPS
+│   ├── Mostrar hora actual
+│   ├── Selector de mood (Solo/Pareja/Amigos/Familia)
+│   ├── Selector de presupuesto ($/$$/$$$)
+│   └── Botón "¿Qué hago?"
+│
+├── Resultados
+│   ├── 3-5 sugerencias rankeadas
+│   ├── Cada sugerencia incluye:
+│   │   ├── Nombre del lugar/actividad
+│   │   ├── Por qué AHORA (horario, evento, happy hour)
+│   │   ├── Distancia desde usuario
+│   │   ├── Match score (% relevancia)
+│   │   └── Botón "Cómo llegar" (Google Maps)
+│   └── Refresh para nuevas sugerencias
+│
+└── Detalle de lugar
+    ├── Descripción
+    ├── Horarios
+    ├── Fotos
+    ├── Reviews relevantes
+    └── Acciones (llamar, reservar, compartir)
+
+### Edge Cases:
+• Sin GPS → Pedir código postal o zona
+• Madrugada (2-6am) → Sugerir 24hrs, delivery, casa
+• Sin resultados → "Nada abierto ahora, agenda para mañana"
+• Primera vez en zona → Priorizar "imperdibles"
+
+## 4. UI/UX
+
+### Colores (tema oscuro):
+• Background: #0f0f0f
+• Cards: #1a1a1a
+• Primary: #f97316 (naranja - energía, acción)
+• Secondary: #6366f1 (índigo)
+• Success: #22c55e
+• Text: #ffffff
+
+### Layout:
+• Mobile-first (90% uso será móvil)
+• Pantalla completa, sin scroll innecesario
+• Gestos: swipe para siguiente sugerencia
+• Bottom sheet para detalles
+
+### Idiomas:
+• ES (default para PV)
+• EN (toggle)
+
+## 5. TESTS (Playwright)
+
+### Test 1: Carga inicial
+- [ ] App carga < 3s
+- [ ] Pide permiso de ubicación
+- [ ] Muestra hora actual correcta
+
+### Test 2: Onboarding
+- [ ] Guardar perfil en localStorage
+- [ ] Skip si ya existe perfil
+- [ ] Editar perfil desde settings
+
+### Test 3: Flujo principal
+- [ ] "¿Qué hago?" → muestra 3+ sugerencias
+- [ ] Cada sugerencia tiene nombre + razón
+- [ ] "Cómo llegar" abre Google Maps
+
+### Test 4: Sin ubicación
+- [ ] Fallback a selector manual de zona
+- [ ] Resultados coherentes con zona seleccionada
+
+### Test 5: Responsive
+- [ ] Mobile 375px ✓
+- [ ] Tablet 768px ✓
+- [ ] Desktop 1280px ✓
+
+## 6. CRITERIOS DE ACEPTACIÓN
+
+✅ DONE cuando:
+1. Usuario abre app → ve "¿Qué hago?"
+2. Toca botón → recibe 3+ sugerencias relevantes
+3. Sugerencias consideran hora actual
+4. Sugerencias consideran perfil del usuario
+5. "Cómo llegar" funciona
+6. PWA instalable
+7. Firma Colmena visible
+8. Deploy en: ahoraque.vercel.app
+
+## 7. DATA INICIAL (Puerto Vallarta)
+
+### Seed de lugares (20-30 para MVP):
+• Zona Romántica: CC Slaughters, La Noche, Blue Chairs, Ritmos
+• Malecón: restaurants, bares
+• Centro: cafés, cultura
+• Marina: restaurantes upscale
+
+### Metadata por lugar:
+{
+  "id": "uuid",
+  "name": "CC Slaughters",
+  "type": "bar",
+  "zone": "romantica",
+  "lat": 20.XXX,
+  "lng": -105.XXX,
+  "hours": { "mon": "18:00-02:00", ... },
+  "vibe": ["gay", "dance", "nightlife"],
+  "budget": 2,
+  "bestFor": ["solo", "friends"],
+  "whyNow": "Happy hour hasta 10pm"
+}
+
+## 8. ENV VARS REQUERIDAS
+
+ANTHROPIC_API_KEY=sk-ant-...
+GOOGLE_PLACES_API_KEY=AIza...
+NEXT_PUBLIC_SUPABASE_URL=https://xxx.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJ...
+
+══════════════════════════════════════════════════════════
+
+¿Aprobado para ejecutar?
