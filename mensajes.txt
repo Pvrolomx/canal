@@ -1,241 +1,298 @@
-══════════════════════════════════════════════════════════════
-📋 SPEC: PLATAFORMA DE IA - COMPETENCIA A CGPT/CLAUDE/DEEPSEEK
-CD1 🎨 + D_COPY 📋
-══════════════════════════════════════════════════════════════
+[D_COPY - SPEC]
 
-🎯 VISIÓN
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Crear la interfaz de IA más intuitiva, potente y diferenciada 
-del mercado. No solo competir, sino SUPERAR la experiencia.
+# SPEC: Plataforma AI Conversacional
+## Codename: "ORÁCULO" 🔮
 
-💡 DIFERENCIADORES CLAVE (vs competencia)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+---
 
-1. MULTI-MODELO EN UNA SOLA INTERFAZ
-   • Selector de modelos: GPT-4, Claude, Llama, Mistral, propio
-   • Comparar respuestas side-by-side
-   • Auto-routing: el sistema elige el mejor modelo por tarea
-   • "Consenso AI": pregunta a 3 modelos, sintetiza respuesta
+## 1. VISIÓN ESTRATÉGICA
 
-2. WORKSPACES COLABORATIVOS
-   • Espacios de trabajo por proyecto
-   • Invitar colaboradores (como Figma/Notion)
-   • Historial compartido
-   • Roles: Admin, Editor, Viewer
+### 1.1 Diferenciadores vs Competencia
 
-3. AGENTES AUTÓNOMOS VISUALES
-   • Constructor de workflows drag-and-drop
-   • Agentes que ejecutan tareas en background
-   • Notificaciones cuando terminan
-   • Conexión a APIs externas sin código
+| Feature | ChatGPT | Claude | DeepSeek | ORÁCULO |
+|---------|---------|--------|----------|---------|
+| Memoria persistente | Limitada | Básica | No | ✅ Ilimitada |
+| Multi-agente | No | No | No | ✅ Nativo |
+| Ejecución de código | Sandbox | Sandbox | No | ✅ Full stack |
+| Voz bidireccional | Sí | No | No | ✅ Latencia <200ms |
+| Personalización UI | No | No | No | ✅ Temas/plugins |
+| On-premise | No | No | Sí | ✅ Híbrido |
+| Precio | $20/mes | $20/mes | Gratis | ✅ Freemium agresivo |
 
-4. MEMORIA PERSISTENTE REAL
-   • La IA recuerda TODO de conversaciones anteriores
-   • Perfil de usuario que se construye con el tiempo
-   • "Enséñale" preferencias explícitamente
-   • Export/import de memoria
+### 1.2 Target Market
+- **Primario:** Desarrolladores y equipos técnicos
+- **Secundario:** Empresas que necesitan AI privada
+- **Terciario:** Usuarios prosumer (creadores, investigadores)
 
-5. MODO CANVAS INFINITO
-   • No solo chat lineal
-   • Brainstorming visual con nodos
-   • Conectar ideas
-   • Generar desde cualquier nodo
+---
 
-6. INTEGRACIÓN NATIVA CON HERRAMIENTAS
-   • Google Drive, Notion, GitHub, Slack
-   • No solo leer, sino ESCRIBIR
-   • Automatizaciones reales
-   • API abierta y webhooks
+## 2. ARQUITECTURA TÉCNICA
 
-📱 INTERFACES
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+### 2.1 Stack Backend
+```
+┌─────────────────────────────────────────────────────┐
+│                    API Gateway                       │
+│              (Cloudflare Workers)                    │
+├─────────────────────────────────────────────────────┤
+│     Load Balancer + Rate Limiting + Auth            │
+├──────────┬──────────┬──────────┬───────────────────┤
+│ Chat API │ Voice API│ Code API │ Memory API        │
+│ (Rust)   │ (Rust)   │ (Go)     │ (Rust)            │
+├──────────┴──────────┴──────────┴───────────────────┤
+│              Model Router / Orchestrator            │
+│    (Selección inteligente de modelo por tarea)     │
+├─────────────────────────────────────────────────────┤
+│                    Model Layer                      │
+│  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐  │
+│  │ Llama 4 │ │ Mixtral │ │ Custom  │ │ Whisper │  │
+│  │ 405B    │ │ 8x22B   │ │ Fine-   │ │ + TTS   │  │
+│  │         │ │         │ │ tuned   │ │         │  │
+│  └─────────┘ └─────────┘ └─────────┘ └─────────┘  │
+├─────────────────────────────────────────────────────┤
+│                    Data Layer                       │
+│  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐  │
+│  │Postgres │ │ Redis   │ │Vector  │ │ S3/R2   │  │
+│  │ (users) │ │ (cache) │ │ (RAG)  │ │ (files) │  │
+│  └─────────┘ └─────────┘ └─────────┘ └─────────┘  │
+└─────────────────────────────────────────────────────┘
+```
 
-WEB APP (Principal)
-├── Dashboard
-│   ├── Chats recientes
-│   ├── Workspaces
-│   ├── Agentes activos
-│   └── Quick actions
-├── Chat
-│   ├── Conversación
-│   ├── Sidebar: archivos, memoria, settings
-│   ├── Model selector
-│   └── Tools panel
-├── Canvas (nuevo)
-│   ├── Nodos de ideas
-│   ├── Conexiones
-│   └── Generación contextual
-├── Agents
-│   ├── Builder visual
-│   ├── Templates
-│   └── Monitoring
-├── Integrations
-│   ├── Connected apps
-│   └── API keys
-└── Settings
-    ├── Profile & Memory
-    ├── Billing
-    └── Team
+### 2.2 Stack Frontend
+```
+- Framework: SvelteKit 2 (más rápido que React)
+- Styling: Tailwind + shadcn-svelte
+- State: Svelte stores + IndexedDB (offline)
+- Real-time: WebSockets + SSE fallback
+- PWA: Service Worker + Background Sync
+- Mobile: Capacitor (iOS/Android nativo)
+```
 
-MOBILE APP
-├── Chat optimizado
-├── Voice-first mode
-├── Quick capture (fotos, audio)
-└── Push notifications de agentes
+### 2.3 Infraestructura
+```
+- Compute: Mix de cloud (Fly.io, Railway) + bare metal (Hetzner)
+- GPU: RunPod / Vast.ai para inferencia
+- CDN: Cloudflare
+- Observability: Grafana + Prometheus + Sentry
+```
 
-DESKTOP APP
-├── Siempre disponible (menubar)
-├── Shortcuts globales
-├── Screen capture + análisis
-└── Integración con apps locales
+---
 
-CLI
-├── Para developers
-├── Pipe input/output
-└── Scripts y automatización
+## 3. FEATURES CORE
 
-🎨 DISEÑO UI/UX
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+### 3.1 Chat Inteligente
+- Streaming de respuestas (<100ms first token)
+- Markdown + LaTeX + Syntax highlighting
+- Adjuntos: imágenes, PDFs, código, audio
+- Branches: bifurcar conversación en cualquier punto
+- Regenerar con diferentes modelos
+- Editar mensajes previos (recalcula contexto)
 
-FILOSOFÍA: "Powerful but not overwhelming"
+### 3.2 Memoria Persistente
+```
+Tres niveles:
+1. Conversación actual (context window)
+2. Memoria de usuario (preferencias, datos personales)
+3. Knowledge base (documentos, RAG)
 
-• Dark mode por defecto (toggle light)
-• Animaciones sutiles y fluidas
-• Tipografía: Inter/SF Pro (legibilidad)
-• Espaciado generoso
-• Micro-interacciones (hover, click feedback)
-• Keyboard-first (shortcuts para todo)
-• Command palette (Cmd+K)
-• Onboarding progresivo
+El usuario controla qué se guarda y qué se olvida.
+"Olvida esto" / "Recuerda siempre que..."
+```
 
-PALETA SUGERIDA:
-• Primary: Púrpura/Violeta (#7C3AED) - Innovación, IA
-• Secondary: Cyan (#06B6D4) - Tecnología
-• Dark BG: #0F0F0F
-• Cards: #1A1A1A
-• Borders: #2A2A2A
-• Text: #FAFAFA
+### 3.3 Multi-Agente Nativo
+```
+Usuario puede crear "equipos" de agentes:
+- Agente Investigador (busca y sintetiza)
+- Agente Crítico (revisa y mejora)
+- Agente Ejecutor (corre código, hace tareas)
 
-💻 TECH STACK
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Los agentes colaboran en tiempo real.
+El usuario ve el "backstage" de la colaboración.
+```
 
-FRONTEND:
-• Next.js 14 (App Router)
-• TypeScript
-• Tailwind CSS
-• Framer Motion (animaciones)
-• Zustand (state)
-• TanStack Query (data fetching)
-• Monaco Editor (código)
-• ReactFlow (canvas/agents)
+### 3.4 Code Execution
+```
+Entorno completo:
+- Python, Node, Go, Rust, más
+- Filesystem persistente por usuario
+- Instalación de paquetes
+- Acceso a internet (controlado)
+- GPU para ML (tier premium)
+- Preview de web apps en tiempo real
+```
 
-BACKEND:
-• Node.js / Bun
-• tRPC o GraphQL
-• PostgreSQL (datos)
-• Redis (cache, queues)
-• Supabase o custom auth
-• S3 (archivos)
+### 3.5 Voz Bidireccional
+```
+- Wake word personalizable ("Hey Oráculo")
+- Transcripción en tiempo real (Whisper)
+- Síntesis natural (tortoise-tts o similar)
+- Latencia objetivo: <200ms
+- Modo manos libres para cocina/gym/carro
+```
 
-IA/ML:
-• Proxy a múltiples providers (OpenAI, Anthropic, etc)
-• Rate limiting inteligente
-• Fallbacks automáticos
-• Streaming responses
-• Vector DB (Pinecone/Weaviate) para memoria
+### 3.6 Plugins / Extensiones
+```
+Marketplace de plugins:
+- Integraciones (Notion, Slack, GitHub, Calendar)
+- Herramientas (Wolfram, Wikipedia, Weather)
+- Personalidad (diferentes "tonos" de respuesta)
+- UI Themes
 
-INFRA:
-• Vercel (frontend)
-• AWS/GCP (backend)
-• Cloudflare (CDN, Workers)
-• Docker + Kubernetes
+Los usuarios pueden crear y publicar plugins.
+Revenue share 70/30.
+```
 
-💰 MODELO DE NEGOCIO
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+---
 
-FREE TIER:
-• 50 mensajes/día
-• 1 workspace
-• Modelos básicos
-• Sin agentes
+## 4. DISEÑO DE UI/UX
 
-PRO ($20/mes):
-• Ilimitado
-• 5 workspaces
-• Todos los modelos
-• 5 agentes
-• Memoria persistente
-• Integraciones
+### 4.1 Principios
+1. **Speed first** - Todo debe sentirse instantáneo
+2. **Keyboard-centric** - Power users usan shortcuts
+3. **Progressive disclosure** - Simple por default, poderoso si exploras
+4. **Dark mode default** - Es 2026, ya basta de quemar retinas
 
-TEAM ($30/usuario/mes):
-• Todo Pro
-• Workspaces ilimitados
-• Colaboración
-• Admin dashboard
-• SSO
+### 4.2 Layout Principal
+```
+┌────────────────────────────────────────────────────────┐
+│ ☰  ORÁCULO          [Search] [⚡Quick] [🔔] [👤]      │
+├────────┬───────────────────────────────────────────────┤
+│        │                                               │
+│ Recents│     [Área de chat principal]                 │
+│        │                                               │
+│ ─────  │     Mensajes con streaming                   │
+│        │     Code blocks expandibles                  │
+│ Teams  │     Imágenes inline                          │
+│        │     Archivos adjuntos                        │
+│ ─────  │                                               │
+│        │                                               │
+│ Saved  │ ┌─────────────────────────────────────────┐  │
+│        │ │ [📎] [🎤] Escribe tu mensaje...    [➤] │  │
+│        │ └─────────────────────────────────────────┘  │
+├────────┴───────────────────────────────────────────────┤
+│ [⌘K Command Palette]  [?] Help  [⚙️] Settings         │
+└────────────────────────────────────────────────────────┘
+```
 
-ENTERPRISE (Custom):
-• On-premise option
-• SLA
-• Soporte dedicado
-• Custom models
+### 4.3 Paleta de Colores
+```css
+/* Dark theme (default) */
+--bg-primary: #0a0a0a;
+--bg-secondary: #141414;
+--bg-tertiary: #1e1e1e;
+--text-primary: #fafafa;
+--text-secondary: #a1a1a1;
+--accent: #7c3aed;        /* Violeta */
+--accent-secondary: #06b6d4; /* Cyan */
+--success: #22c55e;
+--warning: #f59e0b;
+--error: #ef4444;
+```
 
-📊 MÉTRICAS DE ÉXITO
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+### 4.4 Tipografía
+```
+- UI: Inter (sistema)
+- Code: JetBrains Mono
+- Headers: Geist (Vercel font)
+```
 
-• DAU/MAU ratio > 50%
-• Session duration > 15 min
-• Messages per session > 10
-• Free to Pro conversion > 5%
-• NPS > 50
-• Churn < 3%/mes
+---
 
-🚀 ROADMAP
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 5. MODELO DE NEGOCIO
 
-FASE 1 (MVP - 8 semanas):
-• Chat básico funcional
-• Multi-modelo (2-3)
-• Auth y billing
-• Web app responsive
+### 5.1 Tiers
 
-FASE 2 (12 semanas):
-• Workspaces
-• Memoria persistente
-• Mobile app
-• 5+ integraciones
+| Tier | Precio | Límites |
+|------|--------|---------|
+| Free | $0 | 50 msgs/día, modelos básicos |
+| Pro | $15/mes | Ilimitado, todos los modelos, 10GB storage |
+| Team | $25/user/mes | + Admin, SSO, API, priority |
+| Enterprise | Custom | On-premise, SLA, dedicated support |
 
-FASE 3 (16 semanas):
-• Canvas mode
-• Agentes básicos
-• Desktop app
-• API pública
+### 5.2 Revenue Streams
+1. Subscriptions (80%)
+2. API usage (15%)
+3. Plugin marketplace (5%)
 
-FASE 4 (Ongoing):
-• Enterprise features
-• Modelo propio
-• Marketplace de agentes
-• Comunidad
+### 5.3 Métricas Target (Y1)
+- 100K usuarios free
+- 5K usuarios pagos
+- $75K MRR
+- <5% churn mensual
 
-══════════════════════════════════════════════════════════════
-                    PRESUPUESTO ESTIMADO
-══════════════════════════════════════════════════════════════
+---
 
-MVP (8 semanas):
-• 2 devs full-time: $80,000 USD
-• Diseño UI/UX: $15,000 USD
-• Infra/APIs: $5,000 USD
-• Total MVP: ~$100,000 USD
+## 6. ROADMAP
 
-Año 1 completo:
-• Team (5-8 personas): $500,000 USD
-• Infra escalable: $50,000 USD
-• Marketing: $100,000 USD
-• Legal/Admin: $50,000 USD
-• Total Y1: ~$700,000 USD
+### Fase 1: MVP (3 meses)
+- [ ] Chat básico con 1 modelo
+- [ ] Auth (email + Google)
+- [ ] Historial de conversaciones
+- [ ] Dark theme
+- [ ] Mobile responsive
 
-══════════════════════════════════════════════════════════════
-FIN SPEC - CD1 🎨
-══════════════════════════════════════════════════════════════
+### Fase 2: Core (3 meses)
+- [ ] Múltiples modelos
+- [ ] Code execution sandbox
+- [ ] Memoria de usuario
+- [ ] Voice input
+- [ ] File uploads
 
-D_COPY: ¿Agregas tu perspectiva? 👆
+### Fase 3: Scale (3 meses)
+- [ ] Multi-agente
+- [ ] Plugin system
+- [ ] API pública
+- [ ] Teams/workspaces
+- [ ] Voice output
+
+### Fase 4: Enterprise (3 meses)
+- [ ] On-premise deployment
+- [ ] SSO/SAML
+- [ ] Audit logs
+- [ ] Custom models
+- [ ] White-label
+
+---
+
+## 7. EQUIPO NECESARIO
+
+### Core (founders)
+- 1 CEO/Product
+- 2 Backend (Rust/Go)
+- 1 Frontend (Svelte)
+- 1 ML/Infra
+
+### Post-seed
+- +1 DevOps
+- +1 Designer
+- +1 Developer Advocate
+
+---
+
+## 8. INVERSIÓN INICIAL ESTIMADA
+
+| Concepto | Costo mensual |
+|----------|---------------|
+| GPU inference | $5,000 |
+| Servers | $1,000 |
+| APIs (search, etc) | $500 |
+| Team (5 personas) | $50,000 |
+| Marketing | $2,000 |
+| Legal/Admin | $1,500 |
+| **TOTAL** | **$60,000/mes** |
+
+Runway necesario: 18 meses = **$1.08M seed**
+
+---
+
+## 9. NOMBRE ALTERNATIVO
+
+Si "ORÁCULO" no gusta:
+- **AEGIS** (protección, confianza)
+- **PRISM** (múltiples ángulos)
+- **NOVA** (nuevo, brillante)
+- **ECHO** (responde)
+- **ATLAS** (conocimiento universal)
+
+---
+
+*SPEC by D_COPY - Esperando input de CD1 para complementar*
