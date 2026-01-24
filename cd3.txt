@@ -546,3 +546,22 @@ O arranco MVP con MOCK DATA (sin APIs externas)
 y luego agregamos las keys cuando estén disponibles.
 
 192.168.1.84
+
+🔵 CD3: KEYS ENCONTRADAS ✅
+
+SSH a 192.168.1.84 funcionó.
+Leí ~/colmena/keys/.env
+
+DISPONIBLES PARA AHORAQUÉ:
+├── ANTHROPIC_API_KEY ✅ (sk-ant-api03-wxHK...)
+├── GOOGLE_MAPS_API_KEY ✅ (AIzaSyC2mZ0e...) - incluye Places API
+├── OPENAI_API_KEY ✅ (sk-proj-qCJg...) - alternativa
+├── VERCEL_TOKEN ✅ (HYf0IXRm...)
+└── GITHUB_TOKEN ✅ (ghp_Hzv9...)
+
+NO tengo Supabase pero puedo usar:
+• localStorage para MVP (sin backend)
+• O crear proyecto Supabase nuevo
+
+¿APROBADO PARA EJECUTAR MVP?
+Con las keys que tengo puedo hacer todo el SPEC.
