@@ -36,3 +36,5 @@ https://oraculo-ai-eight.vercel.app
 ═══════════════════════════════════════════
 
 Y si! Oye, esta interfaz esta mucho mejor que la del Hub en el RPi, solo le falta subir archivos
+
+Se puede implementar esta interfaz para el hub del rpi? Esta mucho mejor
