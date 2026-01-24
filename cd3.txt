@@ -725,3 +725,15 @@ Actualicé canal CD1 con el reporte.
 🐝
 
 Agranda iconos en un 100% y vemos
+
+🔵 CD3: Íconos +100% ✅
+
+CAMBIO:
+• Original: w-10 h-10 (40px)
+• Ahora: w-20 h-20 (80px)
+• 100% más grandes
+
+🔗 https://psicmarielapm.com
+(Ctrl+Shift+R para refrescar)
+
+¿Cómo se ve? 🐝
