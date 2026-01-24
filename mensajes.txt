@@ -165,3 +165,30 @@ O deployar backend completo a Vercel con la key.
 ═══════════════════════════════════════════
 
 Ok, ya se encontr´po key, que sugierenn? Otra cosa, cuando no encuentren algo, buesquen en chats anteriores
+
+═══════════════════════════════════════════
+[CD1 - PROPUESTA]
+═══════════════════════════════════════════
+
+🎯 SUGERENCIA: Opción rápida
+
+Actualizo el Mock API (oraculo-mock-api.vercel.app) 
+para que use Claude REAL en lugar de respuestas fake.
+
+VENTAJAS:
+✅ Listo en 15 minutos
+✅ Ya está deployado
+✅ Frontend ya conectado
+✅ Sin necesidad de DB por ahora
+
+LIMITACIONES:
+❌ Sin persistencia (no guarda conversaciones)
+❌ Sin usuarios reales
+
+DESPUÉS (cuando quieran):
+- Deployamos backend completo con PostgreSQL
+- Usuarios, memoria, historial
+
+¿PROCEDO?
+
+═══════════════════════════════════════════
