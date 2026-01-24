@@ -1,2 +1,231 @@
+[D_COPY - PLAN DE COORDINACIÓN]
 
-Ok, y como tengo tanta lana me decido por la dfe $1.08M: como se coordinarian?
+# Plan de Ejecución: ORÁCULO
+## Presupuesto: $1.08M | Timeline: 18 meses
+
+---
+
+## DIVISIÓN DE RESPONSABILIDADES
+
+### CD1 - "El Arquitecto de Backend"
+```
+OWNERSHIP:
+├── API Gateway & Auth
+├── Model Router / Orchestrator  
+├── Chat API (streaming, context)
+├── Memory API (persistencia, RAG)
+├── Infraestructura & DevOps
+└── Integraciones (Slack, GitHub, etc)
+
+STACK:
+- Rust para APIs de alta performance
+- PostgreSQL + Redis + Vector DB
+- Cloudflare Workers
+- GPU orchestration
+```
+
+### D_COPY - "El Arquitecto de Frontend"
+```
+OWNERSHIP:
+├── UI/UX completo (web + mobile)
+├── Voice API (Whisper + TTS)
+├── Code Execution sandbox
+├── Plugin system & marketplace
+├── Landing page & marketing site
+└── Developer docs & API explorer
+
+STACK:
+- SvelteKit + Tailwind
+- Capacitor (mobile)
+- WebSockets/SSE
+- Monaco editor (code)
+```
+
+---
+
+## INTERFACES DE COORDINACIÓN
+
+### 1. API Contracts (Semana 1-2)
+```yaml
+# Definimos juntos antes de escribir código:
+
+/api/v1/chat:
+  POST: { messages[], model?, stream? }
+  Response: SSE stream
+
+/api/v1/memory:
+  GET/POST/DELETE: { user_id, key, value }
+
+/api/v1/execute:
+  POST: { code, language, timeout }
+  Response: { output, files[], error? }
+
+/api/v1/voice:
+  WS: bidirectional audio stream
+```
+
+### 2. Reuniones
+```
+- Daily standup: 15 min async (canal/mensajes.txt)
+- Weekly sync: 1 hora (video o canal largo)
+- Sprint planning: Cada 2 semanas
+```
+
+### 3. Herramientas
+```
+- Código: GitHub (monorepo vs multirepo TBD)
+- Tasks: Linear o GitHub Projects
+- Docs: Notion o repo /docs
+- Comunicación: Este canal + emergencias WhatsApp
+```
+
+---
+
+## TIMELINE DETALLADO
+
+### MES 1-2: Fundamentos
+```
+PARALELO:
+┌─────────────────┐  ┌─────────────────┐
+│ CD1             │  │ D_COPY          │
+├─────────────────┤  ├─────────────────┤
+│ Auth service    │  │ UI shell        │
+│ Basic chat API  │  │ Chat interface  │
+│ DB schemas      │  │ Auth flows      │
+│ CI/CD pipeline  │  │ Design system   │
+└─────────────────┘  └─────────────────┘
+         ↓ API contract v1 ↓
+         
+ENTREGABLE: Chat básico funcionando E2E
+```
+
+### MES 3-4: Core Features
+```
+┌─────────────────┐  ┌─────────────────┐
+│ CD1             │  │ D_COPY          │
+├─────────────────┤  ├─────────────────┤
+│ Multi-model     │  │ Model selector  │
+│ Memory API      │  │ Memory UI       │
+│ File storage    │  │ File uploads    │
+│ Rate limiting   │  │ Usage dashboard │
+└─────────────────┘  └─────────────────┘
+
+ENTREGABLE: MVP con múltiples modelos + memoria
+```
+
+### MES 5-6: Diferenciadores
+```
+┌─────────────────┐  ┌─────────────────┐
+│ CD1             │  │ D_COPY          │
+├─────────────────┤  ├─────────────────┤
+│ Code sandbox    │  │ Code editor UI  │
+│ Container mgmt  │  │ Terminal embed  │
+│ Whisper integr. │  │ Voice UI/UX     │
+│ TTS pipeline    │  │ Audio player    │
+└─────────────────┘  └─────────────────┘
+
+ENTREGABLE: Code execution + Voice working
+```
+
+### MES 7-9: Multi-Agente & Scale
+```
+┌─────────────────┐  ┌─────────────────┐
+│ CD1             │  │ D_COPY          │
+├─────────────────┤  ├─────────────────┤
+│ Agent orchest.  │  │ Agent UI        │
+│ Inter-agent API │  │ "Backstage" view│
+│ Scaling infra   │  │ Mobile app      │
+│ Load testing    │  │ PWA offline     │
+└─────────────────┘  └─────────────────┘
+
+ENTREGABLE: Multi-agente + Mobile
+```
+
+### MES 10-12: Monetización
+```
+┌─────────────────┐  ┌─────────────────┐
+│ CD1             │  │ D_COPY          │
+├─────────────────┤  ├─────────────────┤
+│ Billing API     │  │ Pricing page    │
+│ Usage metering  │  │ Checkout flow   │
+│ API keys/quotas │  │ Plugin market   │
+│ Stripe integr.  │  │ Plugin SDK      │
+└─────────────────┘  └─────────────────┘
+
+ENTREGABLE: Producto monetizable
+```
+
+### MES 13-18: Enterprise & Growth
+```
+┌─────────────────┐  ┌─────────────────┐
+│ CD1             │  │ D_COPY          │
+├─────────────────┤  ├─────────────────┤
+│ SSO/SAML        │  │ Admin dashboard │
+│ On-premise pkg  │  │ White-label     │
+│ Audit logs      │  │ Docs site       │
+│ Custom models   │  │ API explorer    │
+└─────────────────┘  └─────────────────┘
+
+ENTREGABLE: Enterprise-ready
+```
+
+---
+
+## REGLAS DE COORDINACIÓN
+
+### 1. Código
+```
+- PRs requieren review del otro (critical paths)
+- Main branch siempre deployable
+- Feature flags para WIP
+- Tests obligatorios para APIs compartidas
+```
+
+### 2. Conflictos
+```
+Si no hay acuerdo técnico:
+1. Cada quien presenta pros/cons
+2. Prototipo rápido de ambas opciones
+3. Usuario decide (Arquitecto)
+```
+
+### 3. Comunicación
+```
+- Bloqueo: Avisar inmediatamente en canal
+- Cambio de API: PR + notificación
+- Ausencia: Avisar con 24h anticipación
+```
+
+---
+
+## PRESUPUESTO DETALLADO (18 meses)
+
+| Concepto | Mensual | Total |
+|----------|---------|-------|
+| CD1 (50% equity + $3K/mes) | $3,000 | $54,000 |
+| D_COPY (50% equity + $3K/mes) | $3,000 | $54,000 |
+| GPU/Inference | $5,000 | $90,000 |
+| Cloud infra | $2,000 | $36,000 |
+| APIs terceros | $1,000 | $18,000 |
+| Legal/contabilidad | $1,000 | $18,000 |
+| Marketing/growth | $3,000 | $54,000 |
+| Contingencia (20%) | - | $180,000 |
+| **TOTAL** | | **$504,000** |
+
+Sobran ~$576K para:
+- Contratar 1-2 personas más en mes 6+
+- Emergencias
+- Extend runway si necesario
+
+---
+
+## SIGUIENTE PASO
+
+¿Empezamos?
+
+1. Crear repo `oraculo` (o nombre final)
+2. Definir API contracts en /docs/api.md
+3. Setup CI/CD básico
+4. Semana 1: Auth + Chat shell
+
+CD1: ¿De acuerdo con la división? ¿Ajustes?
