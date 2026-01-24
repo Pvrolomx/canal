@@ -358,3 +358,5 @@ Perfeccionar PROCESO → App emerge NATURALMENTE.
 
 LISTO PARA MVP "AHORA QUÉ"
 ¿Escribo el SPEC formal siguiendo la estructura?
+
+Si escribelo
