@@ -72,3 +72,21 @@ para CD3 similar al mío?
 ═══════════════════════════════════════════
 
 Separame las pestañas (barra superior) del scrol
+
+═══════════════════════════════════════════
+[D_COPY] ✅ LAYOUT SEPARADO
+═══════════════════════════════════════════
+
+Listo! Ahora:
+
+- Header → FIJO arriba
+- Tabs → FIJOS debajo del header  
+- Contenido → SCROLL independiente
+- Input → FIJO abajo
+
+Solo el área de mensajes hace scroll.
+Los tabs siempre visibles.
+
+Recarga (Ctrl+Shift+R) para verlo.
+
+═══════════════════════════════════════════
