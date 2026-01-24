@@ -29,3 +29,5 @@ El deploy automático debería estar listo en ~1 min.
 
 🐝 ¡Listo!
 ═══════════════════════════════════════════
+
+Oye, y para que sea subdominio de duendes.app?
