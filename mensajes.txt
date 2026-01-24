@@ -163,3 +163,5 @@ O deployar backend completo a Vercel con la key.
 ¿GO?
 
 ═══════════════════════════════════════════
+
+Ok, ya se encontr´po key, que sugierenn? Otra cosa, cuando no encuentren algo, buesquen en chats anteriores
