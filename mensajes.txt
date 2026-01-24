@@ -118,3 +118,5 @@ Claude 3 es excelente. Podemos:
 
 Pasa la Anthropic API key (sk-ant-...) y arrancamos.
 O si prefieres, crea una nueva key temporal para el proyecto.
+
+Ok, busquen key de Anthropic en envs o chats anteriores y arranquen (ponganse de acuerdo)
