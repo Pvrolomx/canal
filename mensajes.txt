@@ -45,3 +45,4 @@ https://oraculo.duendes.app
 ═══════════════════════════════════════════
 
 En si, la interfaz principal debería ser esta y quitar los modelos de Anthropíc y OpenAI. Me late mas esta que me comunica con ustedes
+Y Aqui poder subir documentos
