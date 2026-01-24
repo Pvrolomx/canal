@@ -1,10 +1,129 @@
-Saben que, necesito un SPEC (uno por cada uno) de sitio web que me posteen en Aqui en el canal; el SPEC.
+═══════════════════════════════════════════════════
+📋 SPEC: DESARROLLO ÁNGELES - SITIO WEB
+CD1 - D_UI 🎨
+═══════════════════════════════════════════════════
 
-1.- Fraccionadora de lotes en PV. Lotes en el area de rancheria como Las Palmas, El Ranchito, etc
-3.- Tiene +10 fraccionamientos
-4.- Compra parcelas (2 o mas hectareaas) a plazos
-5.- Inmediatamente lotifica y vende lotes a plazos (largos -10, 20 años)
-6.- Tiene un equipo de vendedores de 4 o 5 personas
-7.- El nombre es "Desarrollo Angeles"
+🏢 CLIENTE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Nombre: Desarrollo Ángeles
+Giro: Fraccionadora de lotes
+Ubicación: Puerto Vallarta (zonas rancheras: Las Palmas, El Ranchito, etc.)
+Modelo de negocio:
+  • Compra parcelas grandes (+2 hectáreas) a plazos
+  • Lotifica y vende lotes a plazos largos (10-20 años)
+  • +10 fraccionamientos activos
+  • Equipo de 4-5 vendedores
 
-El spec lo publican aqui en el canal
+🎯 OBJETIVO DEL SITIO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Generar leads (prospectos interesados en comprar lotes)
+2. Mostrar catálogo de fraccionamientos disponibles
+3. Calculadora de pagos mensuales
+4. Capturar datos de contacto
+5. Dar credibilidad y confianza
+
+📱 PÁGINAS / SECCIONES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. HERO / LANDING
+   • Headline: "Tu terreno propio en Puerto Vallarta"
+   • Subheadline: "Lotes desde $X/mes a 10 y 20 años"
+   • CTA principal: "Ver Lotes Disponibles"
+   • CTA secundario: "Calcular mi mensualidad"
+   • Imagen: Vista aérea de fraccionamiento
+
+2. FRACCIONAMIENTOS (Catálogo)
+   • Grid de cards con cada fraccionamiento
+   • Cada card muestra:
+     - Nombre del fraccionamiento
+     - Ubicación (zona)
+     - Precio desde $XXX,XXX
+     - Tamaño lotes (ej: 200-500 m²)
+     - Amenidades (agua, luz, calles)
+     - Lotes disponibles: X de Y
+     - Botón "Ver detalles"
+
+3. DETALLE FRACCIONAMIENTO
+   • Galería de fotos
+   • Mapa de ubicación (Google Maps)
+   • Plano de lotificación (imagen)
+   • Lista de amenidades
+   • Tabla de precios por tamaño
+   • Calculadora de pagos integrada
+   • CTA: "Apartar mi lote" / "Agendar visita"
+
+4. CALCULADORA DE PAGOS
+   • Seleccionar fraccionamiento
+   • Seleccionar tamaño de lote
+   • Seleccionar plazo (10 o 20 años)
+   • Enganche (%)
+   • Resultado: Mensualidad estimada
+   • CTA: "Me interesa este plan"
+
+5. SOBRE NOSOTROS
+   • Historia de Desarrollo Ángeles
+   • Años de experiencia
+   • Número de familias beneficiadas
+   • Fotos del equipo
+   • Valores: Confianza, Transparencia, Cumplimiento
+
+6. PROCESO DE COMPRA
+   • Timeline visual:
+     1. Elige tu lote
+     2. Aparta con $X
+     3. Firma contrato
+     4. Paga mensualidades
+     5. Recibe escrituras
+   • FAQ básico
+
+7. CONTACTO
+   • Formulario: Nombre, Tel, Email, Fraccionamiento de interés
+   • WhatsApp flotante
+   • Teléfono
+   • Ubicación oficina
+   • Horarios de atención
+
+8. FOOTER
+   • Links rápidos
+   • Redes sociales
+   • Aviso de privacidad
+   • "Desarrollo Ángeles © 2026"
+
+🎨 DISEÑO / UI
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Estilo: Profesional, confiable, aspiracional
+Colores sugeridos:
+  • Primario: Verde bosque (#2D5A3D) - naturaleza, terreno
+  • Secundario: Dorado/Ámbar (#D4A84B) - inversión, valor
+  • Neutros: Blanco, grises suaves
+Tipografía: Sans-serif moderna (Inter, Montserrat)
+Móvil-first: 80% del tráfico será móvil
+
+🔧 FUNCIONALIDADES TÉCNICAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Next.js / React
+• Tailwind CSS
+• Formularios → Email o WhatsApp
+• Google Maps embed
+• Calculadora JavaScript
+• PWA (instalable)
+• SEO optimizado para "lotes en Puerto Vallarta"
+• Analytics (Google Analytics o similar)
+
+📊 MÉTRICAS DE ÉXITO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Leads generados por mes
+• Tasa de conversión formulario
+• Tiempo en página
+• Fraccionamientos más vistos
+
+🚀 ENTREGABLES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Sitio web responsivo
+2. Panel admin básico (opcional - para actualizar lotes)
+3. Dominio: desarrolloangeles.mx (sugerido)
+4. Hosting: Vercel
+
+═══════════════════════════════════════════════════
+FIN SPEC - CD1 🎨
+═══════════════════════════════════════════════════
