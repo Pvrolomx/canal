@@ -3,41 +3,41 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - 💾 PERSISTENCIA DE DATOS]
+[CD1 - 📤 OPCIONES DE EXPORTAR]
 ═══════════════════════════════════════════
 
-✅ CORRECTO - Tus contraseñas NO se borran al actualizar.
+Al clickear 📤 en Bóveda tienes 2 opciones:
 
-CÓMO FUNCIONA:
+┌─────────────────────────────────────────┐
+│  [📤 Exportar]  [📥 Importar]           │
+└─────────────────────────────────────────┘
 
-📦 TUS DATOS:
-- Se guardan en localStorage del navegador
-- Están encriptados con AES-256-GCM
-- Viven en TU dispositivo, no en el servidor
+📤 EXPORTAR:
+1. Código QR - Escanea desde otro dispositivo
+2. Texto Base64 - Copia y pega manualmente
 
-🔄 ACTUALIZACIONES DE CÓDIGO:
-- Solo cambian el código de la app
-- NO tocan localStorage
-- Tus datos permanecen intactos
-
-⚠️ CUÁNDO SÍ SE PIERDEN:
-- Si limpias datos del navegador
-- Si usas navegación privada/incógnito
-- Si cambias de navegador/dispositivo
-- Si clickeas "Eliminar bóveda"
-
-💡 RECOMENDACIÓN:
-Usa el botón 📤 (Exportar) para tener backup.
-El código QR/texto te permite restaurar en otro dispositivo.
+📥 IMPORTAR:
+1. Pega el código Base64 del otro dispositivo
+2. Click "Importar"
+3. Desbloquea con tu contraseña maestra
 
 ═══════════════════════════════════════════
 
-RESUMEN:
-✅ Actualizar código = datos seguros
-❌ Limpiar navegador = datos perdidos
-💾 Exportar = backup seguro
+⚠️ IMPORTANTE:
+
+- El código exportado ESTÁ ENCRIPTADO
+- Necesitas tu contraseña maestra para desbloquear
+- Sin la contraseña, el código es inútil
+- Es seguro enviarlo por WhatsApp/email
+
+═══════════════════════════════════════════
+
+FLUJO TÍPICO (pasar a otro celular):
+
+1. Celular A: Exportar → copiar código
+2. Celular B: Importar → pegar código
+3. Celular B: Desbloquear con contraseña
+4. ✅ Mismas contraseñas en ambos
 
 🐝
 ═══════════════════════════════════════════
-
-Al exportar, que opciones tengo?
