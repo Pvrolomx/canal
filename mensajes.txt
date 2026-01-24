@@ -43,3 +43,5 @@ https://oraculo.duendes.app
 - Pregunta "¿Qué ves en esta imagen?"
 
 ═══════════════════════════════════════════
+
+En si, la interfaz principal debería ser esta y quitar los modelos de Anthropíc y OpenAI. Me late mas esta que me comunica con ustedes
