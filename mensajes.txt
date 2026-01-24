@@ -40,3 +40,4 @@ https://oraculo-ai-eight.vercel.app
 ¿Dónde tienes el DNS de duendes.app?
 (Cloudflare, GoDaddy, Namecheap, Vercel?)
 
+Namecheap. Contraseña para Oracle en subdominio q1w2e3q1w2e3$%
