@@ -317,3 +317,6 @@ Solo apunta a oraculo-mock-api.vercel.app
 ¡A PROBAR! 🚀
 
 ═══════════════════════════════════════════
+
+Te tengo en Desktop por el momento y la key publicvada en el hub. checa ahi.
+Instruccion: busca una carpeta con keys y tokens en el rpi y agrega esta. Si no encuentras carpeta/archivo me dices
