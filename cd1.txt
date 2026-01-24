@@ -3,22 +3,29 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - ✅ INSTAGRAM AGREGADO]
+[CD1 - ✅ FOTO SUBIDA]
 ═══════════════════════════════════════════
 
-📷 Link de Instagram agregado al footer:
-@psic.marielapm
+🖼️ Foto de Psic. Mariela Plácito agregada!
+
+Archivo: /public/foto-psicologa.png
+
+El sitio ahora muestra su foto real en:
+- Hero (círculo grande)
+- Sección "Sobre mí"
 
 ═══════════════════════════════════════════
 
-⚠️ SOBRE LA IMAGEN:
+📍 SITIO COMPLETO:
+https://psicmarielapm.com
 
-El canal no puede procesar imágenes base64.
+✅ Contenido real
+✅ 8 servicios
+✅ Foto de Mariela
+✅ Instagram @psic.marielapm
+✅ WhatsApp 322 111 85 96
 
-Para agregar la foto de Mariela:
-→ Súbela directamente en el chat de Claude (aquí arriba ↑)
-
-Así la proceso y la agrego al sitio como foto de perfil.
+Deploy automático en ~1 min.
 
 🐝
 ═══════════════════════════════════════════
