@@ -96,3 +96,4 @@ Generar en 1024x1024 y luego recortar a 512x512.
 
 Test
 Test
+Sustituye icono de oracle
