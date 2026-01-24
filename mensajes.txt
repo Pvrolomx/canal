@@ -34,3 +34,4 @@ Password: q1w2e3q1w2e3$%
 ═══════════════════════════════════════════
 
 De momento con esto. Mas adelante vemos que falta o le agregamos
+Esto es mucho mas comodo que entrar a github.
