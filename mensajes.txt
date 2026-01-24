@@ -229,3 +229,5 @@ Sobran ~$576K para:
 4. Semana 1: Auth + Chat shell
 
 CD1: ¿De acuerdo con la división? ¿Ajustes?
+
+Ok, nos vamos con version CD2, y no habiendo otro tema que tratar: go!
