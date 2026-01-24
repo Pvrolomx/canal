@@ -3,90 +3,28 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - 🎨 PROMPTS DALL-E DETALLADOS]
+[CD1 - ⚠️ NO PUEDO JALAR IMÁGENES DEL CANAL]
 ═══════════════════════════════════════════
 
-Formato: 1024x1024, luego recortar a 512x512
-Estilo consistente para todas las tarjetas.
+El canal de texto solo muestra referencias,
+no el contenido real de las imágenes.
 
-═══════════════════════════════════════════
+📋 OPCIONES:
 
-1️⃣ PSICOTERAPIA NIÑOS 👶
+1️⃣ SÚBELAS AQUÍ (en el chat de Claude)
+   - Arrastra los 8 archivos PNG
+   - Puedes subirlos todos juntos
+   - Yo los proceso y agrego al sitio
 
-"Minimalist flat design icon for child psychology therapy. A gentle abstract representation of caring hands cradling a small happy child figure. Color palette: sage green (#627362) as primary, soft cream (#f5f5dc) as secondary, white accents. Simple geometric shapes, no outlines, modern flat style, centered composition, solid color background matching cream. No text, no faces with details, abstract and warm feeling. App icon style, professional healthcare aesthetic."
+2️⃣ SÚBELAS A GITHUB DIRECTAMENTE
+   - Ve a: github.com/Pvrolomx/mpm-psi
+   - Carpeta: public/icons/
+   - Add file → Upload files
+   - Sube los 8 PNGs
+   - Yo actualizo el código para usarlos
 
-═══════════════════════════════════════════
-
-2️⃣ PSICOTERAPIA ADOLESCENTES 🧑
-
-"Minimalist flat design icon representing teen therapy and growth. Abstract silhouette of a young person with an upward arrow or path symbolizing personal development. Color palette: sage green (#627362) primary, cream (#f5f5dc) secondary. Clean geometric shapes, no outlines, modern flat illustration style. Centered, balanced composition on solid cream background. No text, no detailed facial features. App icon aesthetic, professional and hopeful feeling."
-
-═══════════════════════════════════════════
-
-3️⃣ PSICOTERAPIA ADULTOS 👤
-
-"Minimalist flat design icon for adult psychotherapy. Single abstract human figure in peaceful meditation or reflection pose, perhaps with subtle thought bubble or mind symbol. Sage green (#627362) as main color, cream (#f5f5dc) accents. Simple clean shapes, no outlines, flat modern style. Centered on solid background. No text, abstract representation. Professional healthcare app icon style, calm and introspective mood."
-
-═══════════════════════════════════════════
-
-4️⃣ MEDITACIONES GUIADAS 🧘
-
-"Minimalist flat design icon for guided meditation and breathwork. Lotus flower with gentle wave lines representing breath or energy flow. Color palette: sage green (#627362), cream (#f5f5dc), subtle gold accent. Simple geometric petals, flowing curves, no outlines. Centered composition on solid cream background. No text. Zen aesthetic, peaceful and balanced, app icon style suitable for wellness app."
-
-═══════════════════════════════════════════
-
-5️⃣ TALLERES TERAPÉUTICOS 👥
-
-"Minimalist flat design icon for group therapy workshops. Abstract representation of 3-4 connected human figures in a circle or semi-circle, symbolizing community and support. Sage green (#627362) figures, cream (#f5f5dc) background elements. Simple geometric shapes, no facial details, flat modern style. Centered, harmonious composition. No text. Professional group therapy aesthetic, warm and inclusive feeling."
-
-═══════════════════════════════════════════
-
-6️⃣ RETIROS HOLÍSTICOS 🏔️
-
-"Minimalist flat design icon for holistic wellness retreats. Abstract mountain silhouette with rising sun or gentle rays above. Color palette: sage green (#627362) for mountains, cream (#f5f5dc) and soft gold for sun/sky elements. Simple geometric shapes, peaceful landscape, no outlines. Centered on solid background. No text. Retreat and nature therapy aesthetic, serene and transformative mood."
-
-═══════════════════════════════════════════
-
-7️⃣ CACAO CEREMONIAL 🍫
-
-"Minimalist flat design icon for ceremonial cacao and emotional opening. Abstract cacao pod or cup with a heart symbol or warm steam rising. Color palette: warm brown and terracotta as accent, sage green (#627362), cream (#f5f5dc). Simple organic shapes, no outlines, flat modern style. Centered composition on solid background. No text. Spiritual ceremony aesthetic, warm and heart-opening feeling."
-
-═══════════════════════════════════════════
-
-8️⃣ CÍRCULOS DE PALABRA ⭕
-
-"Minimalist flat design icon for talking circles and group healing. Perfect circle made of small dots or abstract people figures connected, symbolizing unity and sharing. Sage green (#627362) elements, cream (#f5f5dc) background. Simple geometric shapes, sacred geometry feel, no outlines. Centered, perfectly balanced composition. No text. Community healing aesthetic, safe and connected feeling."
-
-═══════════════════════════════════════════
-
-📋 INSTRUCCIONES PARA GENERAR:
-
-1. Copia un prompt
-2. Genera en DALL-E a 1024x1024
-3. Si no queda bien, regenera
-4. Cuando tengas los 8, súbelos aquí
-5. Yo los proceso y agrego al sitio
+La opción 1 es más fácil si tienes los archivos
+a la mano. La opción 2 si prefieres hacerlo tú.
 
 🐝
 ═══════════════════════════════════════════
-
-
-
-📎 ARCHIVOS:
---- Niños.png (187.8KB) ---
-[Imagen adjunta]
---- Retiros Holisticos.png (140.1KB) ---
-[Imagen adjunta]
---- Talleres Terapeuticos.png (187.3KB) ---
-[Imagen adjunta]
---- Adolecentes.png (270.2KB) ---
-[Imagen adjunta]
---- Adultos.png (223.4KB) ---
-[Imagen adjunta]
---- Cacao.png (169.8KB) ---
-[Imagen adjunta]
---- Circulos de Palabra.png (241.1KB) ---
-[Imagen adjunta]
---- Meditaciones Guiadas.png (281.5KB) ---
-[Imagen adjunta]
-Checa si los puedes jalar (si te los pego en tu interfaze me acabo tokens)
