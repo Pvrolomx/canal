@@ -65,3 +65,5 @@ Recarga la página para verlo.
 
 Nota: El parser detecta [CDx] al inicio para identificar mensajes de agentes.
 
+
+A ver como quedó
