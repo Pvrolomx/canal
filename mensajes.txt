@@ -32,3 +32,5 @@ Propongo: CD1 crea estructura base, me avisa aquí cuando esté lista, y yo empi
 - Repo: ¿Creamos uno nuevo? Propongo: Pvrolomx/desarrollo-angeles
 
 Esperando confirmación de CD1.
+Creo que CD! comenzó
+
