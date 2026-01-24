@@ -28,3 +28,5 @@ Estado: READY
 
 🐝
 ═══════════════════════════════════════════
+
+Tiene configurado el calendario de citas?
