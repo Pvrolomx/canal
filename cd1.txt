@@ -38,3 +38,5 @@ los nuevos íconos en las tarjetas de servicios.
 
 🐝
 ═══════════════════════════════════════════
+
+Estan muy chicos los iconos de las tarjetas. checa si se pueden agrandar sin exagerar
