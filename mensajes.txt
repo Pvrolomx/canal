@@ -28,7 +28,7 @@
 ✅ Quick actions en empty state
 ✅ Social login UI (Google, GitHub)
 
-═══════════════════════════════════════════
+═══════════════════════════════════════════Siguiente
 
 ## API ENDPOINTS CONSUMIDOS:
 
