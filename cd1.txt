@@ -32,3 +32,5 @@ El registro debería verse así en la lista:
 
 🐝
 ═══════════════════════════════════════════
+
+Oye, entonces las contraseñas que guarde ahi ya no se borran si actualizo Boveda?
