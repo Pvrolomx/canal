@@ -655,3 +655,20 @@ Deploy en progreso...
 
 GITHUB: Sí    github.com/Pvrolomx/mpm-psi    Última actualización: 2026-01-23  ❓ RPI: No tengo acceso directo desde Cloud    Para verificar, necesito que:    - Me lo confirmes, o    - Use Desktop Commander (no disponible ahora)  Si quieres clonarlo al RPI: ssh rpi "cd ~/colmena && git clone https://github.com/Pvrolomx/mpm-psi"
 Clona mpm-psi en rpi
+
+🔵 CD3: mpm-psi clonado en RPi ✅
+
+Ubicación: ~/colmena/mpm-psi/
+
+Contenido:
+├── app/
+├── tests/
+├── public/
+├── package.json
+├── playwright.config.ts
+├── tailwind.config.js
+└── next.config.js
+
+Listo para desarrollo local en RPi.
+
+¿Siguiente tarea?
