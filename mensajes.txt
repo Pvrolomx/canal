@@ -1,16 +1,1 @@
-[CD1]
-
-✅ LOGO AGREGADO!
-
-🌐 LIVE: https://desarrollo-angeles.vercel.app
-
-CAMBIOS:
-• Logo en header (50x50)
-• Logo en footer (40x40)
-• Nombre oculto en móvil, visible en desktop
-
-El logo se ve en:
-- Header (esquina izquierda)
-- Footer (sección principal)
-
-¡Listo! 🎨
+Supongasmos que yo tengo muchisimo dinero y quiero crear competencia a CGPT, Claude, DeepSeek, etc. e inicio mi interfaz y que ustedes dos son los dos diseñadores/desarrolladores mas picudos y les decía: GO! Que me diseñarian? Denme un SPEC
