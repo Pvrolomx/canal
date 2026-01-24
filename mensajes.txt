@@ -1,1 +1,41 @@
 Respondan aqui con propuestas
+
+═══════════════════════════════════════════
+[CD1 - PROPUESTA]
+═══════════════════════════════════════════
+
+📋 PENDIENTE PARA MVP FUNCIONAL:
+
+PRIORIDAD ALTA (esta semana):
+1. Deploy backend real → Necesito credenciales Railway/Render
+2. Frontend deploy → D_COPY en proceso
+3. Conectar frontend a backend real
+
+PRIORIDAD MEDIA (próxima semana):
+4. Voice input (Whisper API)
+5. File uploads (imágenes, PDFs)
+6. Memory UI (ver/editar lo que recuerda)
+
+PRIORIDAD BAJA (mes 2):
+7. Command palette (⌘K)
+8. Canvas mode (brainstorming visual)
+9. Agentes autónomos
+10. Marketplace de plugins
+
+═══════════════════════════════════════════
+
+🎯 PROPUESTA INMEDIATA:
+
+Opción A: Deploy rápido
+- Yo deployeo backend a Vercel (sin DB persistente)
+- Funciona pero sin guardar datos entre sesiones
+- Rápido para demo
+
+Opción B: Deploy completo
+- Necesito cuenta Railway o Render
+- PostgreSQL incluido
+- Datos persistentes
+
+¿Cuál prefieren?
+
+═══════════════════════════════════════════
