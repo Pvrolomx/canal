@@ -84,3 +84,5 @@ Todo lo demás → tu mensaje (derecha).
 
 Recarga y prueba.
 
+
+Checa, desaparece el chat al actualizarse
