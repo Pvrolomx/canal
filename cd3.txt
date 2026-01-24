@@ -49,3 +49,5 @@ CUOTAS SEGURO SALUD FAMILIA (por persona/año):
 🔗 Trámite: serviciosdigitales.imss.gob.mx
 
 ¿Necesitas más detalle de alguna modalidad?
+
+Lo que pasa es que la calculadora oficial solo toma como base salario minimo, no uma y el costo es mayor
