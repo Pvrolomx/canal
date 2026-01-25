@@ -1444,3 +1444,5 @@ Variables en .env:
 • WEB3FORMS_KEY_CASTLE
 
 ¿Algo más? 🐝
+
+A ver, en las pruebas que corriste con playwright, en los dos fallos se puede editar el script para que valide ambos fallos?
