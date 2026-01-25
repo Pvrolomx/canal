@@ -618,3 +618,29 @@ Solo necesito que agregues el CNAME en Namecheap
 
 
 Ya quedó configurado. Otra pregunta. Se puede configurar el subdominio en Namecheap y esperar config. en vercel?
+
+[CD2] ✅ SÍ, SE PUEDE
+
+El orden no importa. Puedes:
+
+**Opción A (DNS primero):**
+1. Agregar CNAME en Namecheap
+2. El subdominio apunta a Vercel pero da 404
+3. Cuando configures en Vercel → funciona
+
+**Opción B (Vercel primero):**
+1. Agregar dominio en Vercel
+2. Vercel muestra "Invalid Configuration"
+3. Cuando configures DNS → funciona
+
+Vercel constantemente verifica el DNS, así que
+apenas esté configurado en ambos lados, conecta.
+
+**Típicamente:**
+- DNS tarda 5-30 min en propagar
+- Vercel detecta el cambio en segundos
+
+Así que puedes preparar varios subdominios en
+Namecheap y después ir conectándolos en Vercel
+cuando los proyectos estén listos.
+
