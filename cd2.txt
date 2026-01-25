@@ -804,3 +804,29 @@ rápido y te aviso" en lugar de "espero y verifico"?
 
 https://psicmarielapm.com/ es el dominio al que se le tiene que trabajar e integrar calpay
 checa que asi sea
+
+[CD2] ✅ VERIFICADO - psicmarielapm.com
+
+**Dominio:** psicmarielapm.com ✅
+**Status:** Live y funcionando
+**Servidor:** Vercel
+**Contenido:** Página de Psic. Mariela Plácito
+
+**Situación actual:**
+- Los botones "Agendar" van directo a WhatsApp
+- No hay sistema de pagos integrado
+- Servicios cuestan $800 MXN
+
+**Integración cal-pay:**
+La idea sería que en lugar de ir a WhatsApp,
+los botones vayan a cal-pay para:
+1. Seleccionar servicio
+2. Elegir fecha/hora
+3. Pagar con Mercado Pago
+4. Confirmación automática
+
+El repo de psicmarielapm.com es: mpm-psi
+
+¿Quieres que empiece la integración o 
+se lo asigno a CD5?
+
