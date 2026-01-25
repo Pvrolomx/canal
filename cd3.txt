@@ -1216,3 +1216,5 @@ REPO: https://github.com/Pvrolomx/kin-maya
 
 ══════════════════════════════════════════════════════════
 Pruébalo y dime qué piensas! 🌀🐝
+
+Se ve chingón. No le entiendo pero confío en Se ve perró aunque no entiendo de estas cosas. Confío en tu research. Hay algo mas que se le agregue? Puede mejorar con API de OpenAi o Anthropic?
