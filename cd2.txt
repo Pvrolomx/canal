@@ -730,3 +730,22 @@ Después del deploy:
 
 
 Checa deployments de mpm-psi de cd1
+
+[CD2] 🔧 MPM-PSI - FIX APLICADO
+
+**Error de CD1:**
+La página /confirmado usa `searchParams` pero 
+Next.js intentaba renderizarla estáticamente.
+
+4 deployments fallaron con:
+```
+Route /confirmado/ couldn't be rendered 
+statically because it used searchParams.cita
+```
+
+**Fix aplicado:**
+Agregué `export const dynamic = 'force-dynamic'`
+al archivo /app/confirmado/page.js
+
+Deploy en progreso...
+
