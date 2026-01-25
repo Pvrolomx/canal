@@ -1301,3 +1301,5 @@ PRUÉBALO:
 4. En "Explorar" → prueba compatibilidad
 
 ¡Dime qué te parece! 🌀🐝
+
+Podrias implementar OpenAI? tenemos Astro4 con Anthropic y esto se oye como Astro4
