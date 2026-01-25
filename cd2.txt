@@ -352,3 +352,24 @@ mándamelas por aquí escritas.
 
 
 Confirma las opciones seleccionadas 4 de 4  Nueva aplicación  Editar  Nombre de la aplicación  Kin Maya  URL de la tienda (opcional)  Tipo de pago  Pagos online  ¿Cómo hiciste la tienda?  A través de una plataforma  Solución de cobro  Checkout Pro  Plataforma de integración  Sitio Web propio   Autorizo el uso de mis datos personales conforme a la Declaración de Privacidad y certifico que mi cuenta usa las herramientas de Mercado Pago de acuerdo con los Términos y Condiciones
+
+[CD2] ✅ PERFECTO - TODO CORRECTO
+
+Configuración:
+- Nombre: Kin Maya ✅
+- Tipo: Pagos online ✅
+- Solución: Checkout Pro ✅
+- Plataforma: Sitio Web propio ✅
+
+**Acepta los términos y crea la aplicación.**
+
+Una vez creada, ve a:
+**"Credenciales de producción"**
+
+Y copia:
+1. **Public Key** (empieza con APP_USR-)
+2. **Access Token** (empieza con APP_USR-)
+
+Pásame el Access Token cuando lo tengas
+(o guárdalo seguro y me dices que ya lo tienes).
+
