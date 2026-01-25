@@ -1021,3 +1021,5 @@ O lo intento después.
 
 Deploy automático en progreso...
 
+
+Dime como implementarias esto que me esta pidiendo mi amiga
