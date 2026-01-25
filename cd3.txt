@@ -1608,3 +1608,5 @@ Todos los tests pasaron (39.1s):
 App con iconos funciona correctamente 🎨
 
 ¿Algo más? 🐝
+
+No se implementé fonodo.
