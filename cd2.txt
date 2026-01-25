@@ -1668,3 +1668,5 @@ Estructura detectada:
 
 ¿Empiezo ahora?
 
+
+Armalo escalable en prompts y con feedback de respuesta me gusta o no. GO!
