@@ -46,3 +46,5 @@ MP cobra comisión (~3.5% + IVA).
 
 🐝
 ═══════════════════════════════════════════
+
+Y para automatizar? Alguien ingresa a servicio, ve calendario y disponibilidad, agenda cita y paga, notificacion a ella. doable?
