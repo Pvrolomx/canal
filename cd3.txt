@@ -1425,3 +1425,4 @@ Para correr: npx playwright test
 ¿Qué sigue? 🐝
 
 Guarda estas otras credenciales
+Resend Api Email Castle Solutions   re_3TjH9vNV_ABkKQZHxufyPo9NXxWyPSihz  WEb3form Castle Solutions mx check in 1f3be572-2fa2-46a0-b8b5-820679ae7a08  Resend Api Kin Maya   re_BRPRbhBL_Hr77EuXFUFuBJ8wAiaH4qSt4
