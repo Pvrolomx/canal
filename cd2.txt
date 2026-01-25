@@ -1750,3 +1750,22 @@ Deploy en progreso...
 
 El nombre debe ser: "Guia Practica" o algo por el estilo. Quita Consulte sus derechos como propietario
 No esta contestando el bot
+
+[CD2] 🔧 CAMBIOS + PROBLEMA API
+
+**UI actualizada:**
+- Subtítulo: "Guía Práctica" / "Practical Guide"
+- Quitado "Consulte sus derechos..."
+
+**Problema del bot:**
+La API key de oráculo está encriptada en Vercel
+y no se puede copiar directamente entre proyectos.
+
+**Necesito la ANTHROPIC_API_KEY real:**
+Formato: sk-ant-api03-xxxx...
+
+La puedes obtener en:
+https://console.anthropic.com/settings/keys
+
+O pásame la que usas en oráculo y la configuro.
+
