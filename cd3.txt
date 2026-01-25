@@ -1717,3 +1717,30 @@ Host = kin-maya (con guión)
 ¿Lo tienes así? 🔧
 
 Ya quedó. Que significa cada sello?
+
+🔵 CD3: LOS 20 SELLOS SOLARES
+
+| # | Sello | Poder | Acción | Esencia |
+|---|-------|-------|--------|---------|
+| 1 | Dragón 🐉 | Nacimiento | Nutrir | Ser |
+| 2 | Viento 🌬️ | Espíritu | Comunicar | Aliento |
+| 3 | Noche 🌙 | Abundancia | Soñar | Intuición |
+| 4 | Semilla 🌱 | Florecimiento | Apuntar | Conciencia |
+| 5 | Serpiente 🐍 | Fuerza Vital | Sobrevivir | Instinto |
+| 6 | Enlazador 💀 | Muerte | Igualar | Oportunidad |
+| 7 | Mano ✋ | Realización | Conocer | Sanación |
+| 8 | Estrella ⭐ | Elegancia | Embellecer | Arte |
+| 9 | Luna 🌊 | Agua Universal | Purificar | Flujo |
+| 10 | Perro 🐕 | Corazón | Amar | Lealtad |
+| 11 | Mono 🐒 | Magia | Jugar | Ilusión |
+| 12 | Humano 🧑 | Libre Albedrío | Influenciar | Sabiduría |
+| 13 | Caminante 🚶 | Espacio | Explorar | Vigilia |
+| 14 | Mago 🧙 | Atemporalidad | Encantar | Receptividad |
+| 15 | Águila 🦅 | Visión | Crear | Mente |
+| 16 | Guerrero ⚔️ | Inteligencia | Cuestionar | Intrepidez |
+| 17 | Tierra 🌍 | Navegación | Evolucionar | Sincronicidad |
+| 18 | Espejo 🪞 | Sin Fin | Reflejar | Orden |
+| 19 | Tormenta ⛈️ | Autogeneración | Catalizar | Energía |
+| 20 | Sol ☀️ | Fuego Universal | Iluminar | Vida |
+
+Cada sello representa una energía arquetípica del cosmos 🌀
