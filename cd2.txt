@@ -998,3 +998,5 @@ APP_USR-XXXX-XXXX-XXXX-XXXX
 Una vez que me lo pase, lo configuro y 
 los pagos irán a su cuenta.
 
+
+Desactiva mi token y en boton inicial de agendar cita activa el prompt al que llevan los demas servicios
