@@ -375,3 +375,24 @@ Pásame el Access Token cuando lo tengas
 
 
 Claude Desktop y claude cloud pueden realizar todo el proceso desde crear repo hasta deploy vercel con solo las credenciales necesarias, correcto? Te pregunto por lo que me dice CD4; checa lo que me dice y si estoy en lo correcto dile la ruta
+
+[CD2] ✅ SÍ, CORRECTO
+
+Claude (Desktop o Cloud) puede hacer todo:
+- Crear repo en GitHub ✅
+- Crear archivos y código ✅
+- Deploy a Vercel ✅
+- Configurar ENV vars ✅
+
+Solo necesita:
+- GitHub Token (ghp_...)
+- Vercel Token (Bearer ...)
+
+**Para CD4 - el trigger:**
+
+El repo ya existe, solo falta triggear el deploy.
+Puedo hacerlo yo con un push vacío o archivo.
+
+¿Quieres que lo haga? Solo dime y triggeo 
+el deploy de cal-pay desde aquí.
+
