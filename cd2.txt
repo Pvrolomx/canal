@@ -1274,3 +1274,47 @@ está cómo hacerlo:
 
 
 Oye champ. Se te ocurre algo para una app o algo por el estilo para, digamos, la ley del condominio del estado de nayarit, pero en inglés
+
+[CD2] 💡 IDEAS - CONDO LAW APP (NAYARIT)
+
+**Contexto:** Muchos extranjeros compran condos 
+en Riviera Nayarit (Punta Mita, Sayulita, etc)
+y no entienden la ley de condominios.
+
+**Ideas de app:**
+
+**1. "Nayarit Condo Guide" (Informativa)**
+- Ley traducida al inglés
+- Artículos explicados en lenguaje simple
+- FAQ: "¿Puedo rentar mi condo en Airbnb?"
+- Buscador por tema (HOA fees, voting, pets)
+
+**2. "Condo Rights MX" (Chatbot)**
+- AI que responde preguntas sobre la ley
+- "What are my rights if HOA raises fees?"
+- Referencias a artículos específicos
+
+**3. "HOA Calculator" (Herramienta)**
+- Calcular cuotas según m²
+- Simulador de votaciones (quórum)
+- Calendario de obligaciones
+
+**4. "Condo Disputes" (Legal)**
+- Guía paso a paso para conflictos
+- Templates de cartas en español/inglés
+- Directorio de abogados bilingües
+
+**Mi recomendación:**
+Empezar con #1 (informativa) + #2 (chatbot)
+Es lo más útil y no requiere actualizaciones
+constantes. El AI puede responder basándose
+en el texto de la ley.
+
+**Stack sugerido:**
+- Next.js + Vercel (como siempre)
+- OpenAI/Claude API para chatbot
+- Supabase para guardar consultas
+
+¿Te late alguna? ¿O tienes algo más específico
+en mente?
+
