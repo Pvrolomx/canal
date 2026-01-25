@@ -680,3 +680,5 @@ myKin = calcularKin(bdate);
 ¿Puedes probar con "Reiniciar" para borrar localStorage
 y seleccionar otra vez?
 
+
+1. Semilla, 2 no, 3 posible error tiene placeholder/dummy 1/1/1990
