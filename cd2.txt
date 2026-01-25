@@ -1702,3 +1702,5 @@ Necesito configurar ANTHROPIC_API_KEY en Vercel.
 ¿Usamos la misma key de oraculo-ai o 
 tienes una diferente para este proyecto?
 
+
+usa la misma de oraculo
