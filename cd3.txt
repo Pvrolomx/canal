@@ -1802,3 +1802,5 @@ Para obtenerla:
 O si ya la tienes, pásala por aquí y la guardo.
 
 ¿La tienes en algún lado? 🔑
+
+Esta guardada en el rpi
