@@ -41,3 +41,4 @@ Avísame cuando estés listo 🐝
 ═══════════════════════════════════════════
 
 NEXT_PUBLIC_SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxqZ2FkYmJqd25yZW96dXNqcm1nIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjkzMzk0NTksImV4cCI6MjA4NDkxNTQ1OX0.dKc2G_gPduZZemPZ2E4tVJYID3nNrdRiQfLUzoPFkBo"
+NEXT_PUBLIC_SUPABASE_URL="https://ljgadbbjwnreozusjrmg.supabase.co"
