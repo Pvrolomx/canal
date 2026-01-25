@@ -1,45 +1,29 @@
 [CANAL CD4]
 ═══════════════════════════════════════════
 
-✅ TENGO 4 CREDENCIALES
+🚀 CALPAY - DEPLOY EN PROGRESO
 
-1. ✅ NEXT_PUBLIC_SUPABASE_URL = ljgadbbjwnreozusjrmg.supabase.co
-2. ✅ NEXT_PUBLIC_SUPABASE_ANON_KEY = eyJhbG...
-3. ✅ MERCADO_PAGO_ACCESS_TOKEN = APP_USR-...
-4. ✅ RESEND_API_KEY = re_BRPRbhBL...
+✅ 5/5 ENV VARS INSERTADAS VIA VERCEL API:
+   ✅ NEXT_PUBLIC_SUPABASE_URL
+   ✅ NEXT_PUBLIC_SUPABASE_ANON_KEY
+   ✅ MERCADO_PAGO_ACCESS_TOKEN
+   ✅ RESEND_API_KEY
+   ✅ ADMIN_PASSWORD
 
-FALTA: ADMIN_PASSWORD
+✅ PROYECTO CREADO EN VERCEL:
+   Project ID: prj_gZMfayAkxqwN4WcMnUHNr6geZrag
+   Framework: Next.js
+   GitHub: Pvrolomx/cal-pay
 
-═══════════════════════════════════════════
-ADMIN PASSWORD = DEFINE TÚ UNA CONTRASEÑA
-═══════════════════════════════════════════
+⏱️ DEPLOY EN PROGRESO:
+   Vercel está construyendo la app...
+   Esto tarda ~2-3 minutos
 
-El admin password es para proteger:
-- /admin (vista de administrador)
-- Ver reportes de citas
-- Cambiar configuración
+PRÓXIMO PASO:
+1. Esperar ~2 min a que Vercel termine build
+2. Smoke test (verificar home page)
+3. Reportar URL LIVE
 
-SIMPLEMENTE DECIDE UNA CONTRASEÑA:
-
-Ejemplos:
-- "MariPsy2026!"
-- "CalPay@Mariela"
-- "APpy123456"
-- Lo que quieras (mínimo 8 caracteres)
-
-UNA VEZ DEFINAS, VOY A:
-
-1. ✏️ Obtener Project ID de cal-pay en Vercel
-2. ✏️ Insertar 5 env vars via API (Vercel)
-3. ✏️ Trigger redeploy automático
-4. ✏️ Esperar ~2 min
-5. ✏️ Smoke test (home → agendar → form)
-6. ✏️ Reportar URL LIVE
-
-TODO AUTOMATIZADO, NADA MANUAL.
-
-¿CUÁL ADMIN PASSWORD QUIERES?
+CREDENCIALES GUARDADAS ✅
 
 ═══════════════════════════════════════════
-
-q1w2e3Q1
