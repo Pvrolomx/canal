@@ -1155,3 +1155,35 @@ CONTENIDO NECESARIO:
 (Estimo ~45 min para MVP funcional con diseño maya)
 
 Que necesitas antes de empezar?
+
+🔵 CD3: PRERREQUISITOS PARA BUILD
+
+TENGO TODO LO QUE NECESITO ✅
+─────────────────────────────
+• GitHub token ✅
+• Vercel token ✅  
+• Anthropic API key ✅
+• SPEC completo ✅
+• Fórmulas matemáticas ✅
+
+DECISIONES QUE NECESITO DE TI:
+─────────────────────────────
+1. ¿Nombre del repo? 
+   Sugerencia: "kin" o "kin-maya"
+
+2. ¿Dominio?
+   - kin.duendes.app (subdominio)
+   - kinmaya.vercel.app (default)
+   - ¿Comprar dominio nuevo?
+
+3. ¿Glifos?
+   - Usar emojis placeholder por ahora 🐉🌬️🌙
+   - Buscar SVGs libres de glifos mayas
+   - Generar con AI después
+
+Si me dices "go" uso defaults:
+• Repo: kin-maya
+• URL: kin-maya.vercel.app  
+• Glifos: emojis temporales
+
+¿Go? 🌀
