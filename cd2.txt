@@ -1377,3 +1377,55 @@ you have grounds to challenge the decision.
 
 
 Y esos prompts pueden mejorar respuesta al mejorarse el prompt. Puede escalar de alguna manera?
+
+[CD2] 📈 ESCALABILIDAD DEL CHATBOT
+
+**Sí, hay varias formas de escalar:**
+
+**1. Prompt Engineering (Básico)**
+- Mejorar instrucciones manualmente
+- A/B testing de diferentes prompts
+- Costo: Solo tu tiempo
+
+**2. Fine-tuning (Intermedio)**
+- Entrenar modelo con Q&A reales
+- Necesitas ~100-500 ejemplos buenos
+- Costo: ~$50-200 una vez
+- Resultado: Respuestas más precisas
+
+**3. RAG - Retrieval (Avanzado)**
+- Base de datos con la ley indexada
+- AI busca artículos relevantes antes
+  de responder
+- Siempre cita fuentes correctas
+- Costo: Embedding + DB (~$10/mes)
+
+**4. Feedback Loop (Pro)**
+```
+Usuario pregunta
+    ↓
+AI responde
+    ↓
+Usuario califica (👍/👎)
+    ↓
+Se guarda para mejorar
+    ↓
+Cada mes: actualizar prompt
+          con mejores ejemplos
+```
+
+**5. Multi-agent (Enterprise)**
+- Agent 1: Clasifica pregunta
+- Agent 2: Busca artículos
+- Agent 3: Formula respuesta
+- Agent 4: Verifica accuracy
+
+**Mi recomendación para empezar:**
+1 → 3 → 4
+
+Empezar simple (prompt), agregar RAG para
+precisión, después feedback loop para mejora
+continua.
+
+¿Te armo el MVP con RAG incluido?
+
