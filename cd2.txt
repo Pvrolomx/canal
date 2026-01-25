@@ -1670,3 +1670,4 @@ Estructura detectada:
 
 
 Armalo escalable en prompts y con feedback de respuesta me gusta o no. GO!
+Tambien recuerda que el demographic es adulto mayor
