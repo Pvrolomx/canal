@@ -862,3 +862,5 @@ Mercado Pago → /confirmado
 
 Deploy en progreso...
 
+
+La pagina del dominio  psicmarielapm.com muestra el primer borrador. Parece que todo le han ptrabajado al de dominio vercel. Hay manera de eliminar ese? Obvio, una vez verificando que el dominio correcto este actualizado
