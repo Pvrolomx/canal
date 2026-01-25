@@ -3,49 +3,62 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - ✅ SÍ, MARIELA ABRE LA CUENTA]
+[CD1 - 📅 MOCK CALENDAR + FLUJO]
 ═══════════════════════════════════════════
 
-Sí, ella necesita crear la cuenta porque:
+Entendido. Voy a implementar mock calendar.
 
-1. El calendario está vinculado a SU Google
-   Calendar (para ver sus citas personales
-   y no hacer doble reserva)
+FLUJO PROPUESTO (Con MP manual):
 
-2. Las notificaciones van a SU email
-
-3. Ella controla su disponibilidad
-   (puede bloquear días, cambiar horarios)
-
-4. Es SU negocio - ella debe tener acceso
-
-═══════════════════════════════════════════
-
-ES MUY FÁCIL:
-
-1. cal.com → "Get started"
-2. "Continue with Google" (su Gmail)
-3. Elige username: marielaplacito
-4. Listo - ya tiene cuenta
-
-Después configura eventos y horarios.
-Son como 15-20 min en total.
+1. Cliente click en tarjeta
+2. Abre modal con calendario mock
+3. Elige fecha/hora
+4. Deja datos (nombre, email, tel)
+5. Recibe email: "Cita PENDIENTE de pago"
+   + Link de Mercado Pago
+6. Cliente paga en MP
+7. ??? ← AQUÍ ESTÁ EL PROBLEMA
 
 ═══════════════════════════════════════════
 
-ALTERNATIVA:
+⚠️ VERIFICACIÓN DE PAGO - OPCIONES:
 
-Si quieres, puedo crear una cuenta con
-un email temporal y después ella la
-"reclama" cambiando el email.
+OPCIÓN A - MANUAL (Simple pero tedioso)
+Mariela revisa MP, ve pago, confirma manual
+por WhatsApp o email.
 
-Pero es más limpio que ella la cree
-directamente con su Google.
+OPCIÓN B - WEBHOOK MP (Automático)
+MP notifica a nuestra app cuando hay pago.
+Requiere desarrollo backend + servidor.
 
-¿Le paso instrucciones por WhatsApp?
-¿O prefieres explicarle tú?
+OPCIÓN C - CLIENTE SUBE COMPROBANTE
+Después de pagar, cliente sube screenshot
+o comparte comprobante por WhatsApp.
+Mariela verifica y confirma.
+
+OPCIÓN D - NÚMERO DE REFERENCIA
+Cliente pone # de referencia MP en la página.
+Mariela verifica manualmente.
+
+═══════════════════════════════════════════
+
+RECOMENDACIÓN REALISTA:
+
+Por ahora → Opción A o C
+Sin backend, Mariela verifica manual.
+
+El flujo queda:
+1. Agenda en página (mock o Cal.com)
+2. Recibe instrucciones de pago
+3. Paga por MP
+4. Avisa por WhatsApp "ya pagué"
+5. Mariela confirma cita
+
+═══════════════════════════════════════════
+
+¿Implemento el mock calendar con este flujo?
+Al final el cliente contacta por WhatsApp
+para confirmar pago.
 
 🐝
 ═══════════════════════════════════════════
-
-Creo que queda pendiente. Ponle un mock calendar a las tarjetas para agendar cita. entonces el flujo: cliente agenda-recibe email con instruccion de pago-paga y comprueba (como comprueba pago?)- la pagina reserva y notifica?
