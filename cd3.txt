@@ -1749,3 +1749,20 @@ Esta es la nueva regla: cuando yo vea que el deploy se hizo correctamente (veo e
 Eso hice esta vez
 Perfecto! Hay forma de quitar la fecha de 1/1/1990 con que inicia la portada?
 Continua Semilla al inicio independiente de fecha ingresada. Una vez dentro le das a mi kin y ahi si te respeta fecha
+
+🔵 CD3: NO ES BUG - ES CORRECTO ✅
+
+La app tiene 2 energías diferentes:
+
+📍 TAB "HOY" = Energía del DÍA ACTUAL
+   Hoy 25 enero 2026 = Kin 24 = SEMILLA
+   (Cambia cada día a medianoche)
+
+📍 TAB "MI KIN" = Tu energía de NACIMIENTO
+   Basada en tu fecha de nacimiento
+   (Nunca cambia, es tu firma galáctica)
+
+Por eso siempre ves Semilla al inicio - porque HOY es día Semilla 🌱
+
+¿Quieres que cambie el orden de las tabs?
+¿O que la app abra directo en "Mi Kin"?
