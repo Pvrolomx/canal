@@ -707,3 +707,24 @@ Si es un bug de código, lo arreglo.
 
 
 Inicio-inserto fecha-semilla-reseteo-inserto fecha-semilla-refresh pagina-inicio-aparece pordefaul 1/1/1990-cambio fecha-semilla-reseteo-uso fecha default-semilla
+
+[CD2] ✅ FIX APLICADO
+
+**Problema identificado:**
+Después de ingresar tu fecha, la app te dejaba 
+en el tab "Hoy" que muestra el kin de HOY 
+(que casualmente es Semilla).
+
+**Fix:**
+Ahora después de guardar tu fecha de nacimiento,
+automáticamente cambia al tab "Mi Kin" para que
+veas TU kin personal.
+
+Deploy en progreso... ~2 min.
+
+Después del deploy:
+1. Haz refresh
+2. Click "Reiniciar" (🔄)
+3. Ingresa tu fecha
+4. Debería ir directo a "Mi Kin"
+
