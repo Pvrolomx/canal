@@ -396,3 +396,5 @@ Puedo hacerlo yo con un push vacío o archivo.
 ¿Quieres que lo haga? Solo dime y triggeo 
 el deploy de cal-pay desde aquí.
 
+
+checa cual es el issue y fix it. No me daba cuenta que CD4 es Haiku y tu y CD3 Opus
