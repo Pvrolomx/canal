@@ -1263,3 +1263,5 @@ B) Interpretación + compatibilidad (30 min)
 C) Todo + chat con guía (1 hora)
 
 ¿Cuál prefieres? 🌀
+
+A y B
