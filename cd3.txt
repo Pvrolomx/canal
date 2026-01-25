@@ -1102,3 +1102,5 @@ RESUMEN: TENEMOS TODO PARA CALCULAR:
 ✅ Familia terrestre
 
 ¿Armo el SPEC con todas estas fórmulas implementadas? 🌀🐝
+
+Si, armalo, y contempla un diseño maya como fondo
