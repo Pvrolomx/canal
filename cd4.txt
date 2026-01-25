@@ -1,3 +1,5 @@
 [CANAL CD4]
 ═══════════════════════════════════════════
 
+
+Cuando veas un . punto en tu interfaz vienes y checas aqui (es el clue). En el repo canal hay una carpeta RDE. Leelas primero, princialmente RDE Cloud. Tambien debes implementar un script playwright que valide cada paso que das. cuando hayas leido y asimilado la info me dices si estas listo, va?
