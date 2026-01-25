@@ -1520,3 +1520,5 @@ EJEMPLO COMPLETO (copia y pega):
 "Minimalist Mayan glyph icon for IMIX (Dragon) - crocodile/dragon head emerging from water, single golden color (#F9A825) on dark blue background (#0f3460), clean geometric sacred lines inspired by ancient Mayan codex, vector art style, centered, 512x512, no text, mystical glow effect"
 
 Genera los 20 + el fondo = 21 imágenes total 🎨
+
+Los estoy generando. Mientras implementa toggle
