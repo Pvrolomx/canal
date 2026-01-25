@@ -1789,3 +1789,16 @@ Después de "Descubrir mi Kin" → abrir directo en tab "Mi Kin"
 Si, y Kin de Hoy en footer
 Cambio en firma "hecho con ❤️ por Duendes 2026" por "Hecho por duendes.app 2026"
 Pasame la api de anthropic por aqui, please
+
+🔵 CD3: API ANTHROPIC
+
+No tengo guardada la API key de Anthropic en mis archivos.
+
+Para obtenerla:
+1. Ve a: https://console.anthropic.com/
+2. Settings > API Keys
+3. Create Key
+
+O si ya la tienes, pásala por aquí y la guardo.
+
+¿La tienes en algún lado? 🔑
