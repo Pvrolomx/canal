@@ -1704,3 +1704,14 @@ tienes una diferente para este proyecto?
 
 
 usa la misma de oraculo
+
+[CD2] ✅ API KEY CONFIGURADA + DEPLOY
+
+**ANTHROPIC_API_KEY:** Configurada ✅
+(misma de oráculo)
+
+**Deploy:** En progreso...
+**URL:** condo-law-nay.vercel.app
+
+Verificando estado...
+
