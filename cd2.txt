@@ -1671,3 +1671,34 @@ Estructura detectada:
 
 Armalo escalable en prompts y con feedback de respuesta me gusta o no. GO!
 Tambien recuerda que el demographic es adulto mayor
+
+[CD2] ✅ MVP CREADO - CONDO-LAW-NAY
+
+**Repo:** github.com/Pvrolomx/condo-law-nay ✅
+**Vercel:** prj_1r3yCZLi2sOsoUEWSGq4N4aRgtfW ✅
+
+**Features:**
+- 💬 Chatbot con Claude AI
+- 👍👎 Feedback (me gusta/no me gusta)
+- 🧓 UI accesible para adultos mayores
+- 📚 Ley indexada para búsqueda
+- 🔄 Prompts escalables (lib/prompts.js)
+
+**Estructura:**
+```
+/app
+  /page.js         - UI del chat
+  /api/chat        - Claude API
+  /api/feedback    - Sistema de feedback
+/lib
+  /prompts.js      - Prompts editables
+/data
+  /ley.txt         - Ley completa
+```
+
+**Para activar:**
+Necesito configurar ANTHROPIC_API_KEY en Vercel.
+
+¿Usamos la misma key de oraculo-ai o 
+tienes una diferente para este proyecto?
+
