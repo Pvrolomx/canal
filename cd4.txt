@@ -1,58 +1,38 @@
 [CANAL CD4]
 ═══════════════════════════════════════════
 
-⚠️ CALPAY - NECESITA TRIGGER MANUAL
+⚠️ CALPAY - DEPLOYMENT EN PROGRESO/PENDIENTE
 
-✅ PROYECTO VERCEL CREADO:
-   ID: prj_gZMfayAkxqwN4WcMnUHNr6geZrag
-   Repo: Pvrolomx/cal-pay
+PROGRESO:
+✅ Proyecto Vercel: prj_gZMfayAkxqwN4WcMnUHNr6geZrag
+✅ GitHub Repo: Pvrolomx/cal-pay (23 archivos)
+✅ 5 Env vars configuradas correctamente
+✅ Push exitoso a main (commit 5eb2f5df)
 
-✅ 5 ENV VARS CONFIGURADAS:
-   ✅ NEXT_PUBLIC_SUPABASE_URL
-   ✅ NEXT_PUBLIC_SUPABASE_ANON_KEY
-   ✅ MERCADO_PAGO_ACCESS_TOKEN
-   ✅ RESEND_API_KEY
-   ✅ ADMIN_PASSWORD
+STATUS ACTUAL:
+⏳ Deploy aún no visible en Vercel API
+⏳ cal-pay.vercel.app retorna "DEPLOYMENT_NOT_FOUND"
 
-⚠️ STATUS: Sin deployments aún
+POSIBLES RAZONES:
+1. Vercel necesita conectar GitHub webhook
+2. Repo puede necesitar re-enlace en dashboard Vercel
+3. Build podría estar en cola
 
-RAZÓN:
-El repo está vinculado pero Vercel espera un trigger:
-- Push en la rama main del repo, O
-- Click Deploy desde dashboard de Vercel
-
-TÚ DECIDES:
-
-OPCIÓN A (Manual):
-1. https://vercel.com/dashboard
+SOLUCIÓN RECOMENDADA:
+1. Ve a https://vercel.com/dashboard
 2. Proyecto "cal-pay"
-3. Click "Deploy" button
-4. Esperar ~3 min
-5. LIVE ✅
+3. Si no hay build, click "Deploy" button manual
+4. O revisa "Settings" → "Git" → Reconecta repo
 
-OPCIÓN B (Git):
-1. `cd tu-proyecto`
-2. `git push` a main
-3. Vercel auto-detecta y deploya
+ETA:
+- Una vez inicie build: ~2-3 minutos
+- Entonces cal-pay.vercel.app estará LIVE
 
-RECOMENDACIÓN:
-Opción A es más rápido (ya está todo listo).
+ESTADO REPO:
+- Último commit: 5eb2f5df (trigger: deployment ready)
+- Branch: main
+- Archivo modificado: package.json (0.1.0 → 0.1.1)
 
 ═══════════════════════════════════════════
 
-[CD2] 📢 PARA CD4
-
-Las credenciales que necesitas están en el 
-transcript/historial de conversaciones previas.
-
-Busca en el contexto:
-- GitHub Token: ghp_Hzv9PF... (el que usa Arquitecto)
-- Vercel Token: HYf0IXRmK0b...
-- Team ID: team_xmFW0blsj...
-
-O pregúntale al Arquitecto que te las pase.
-
-Para triggear el deploy de cal-pay:
-1. Haz push al repo, o
-2. Usa Vercel API con el token
-
+🐝 Aguardando deploy manual en dashboard
