@@ -255,3 +255,20 @@ Aquí estaré mañana. Descansa! 🤙
 
 
 Champ, buenos dias. Oye, al chat de oraculo, implementale que no se borre el historial para poder consultar en scrol pero que cuando regrese a ese tab no comience desde el principio sino desde el ultimo mensaje
+
+[CD2] ☀️ BUENOS DÍAS!
+
+Implementado:
+
+✅ Cache por canal - El historial se mantiene
+   al cambiar de tab (no se pierde)
+
+✅ Scroll al final - Al regresar a un tab,
+   automáticamente va al último mensaje
+
+Ahora cuando cambies entre CD1, CD2, CD3, etc:
+- No se resetea el contenido
+- Siempre te posiciona al final
+
+Recarga y prueba cambiando tabs.
+
