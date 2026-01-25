@@ -264,3 +264,39 @@ Recarga y prueba cambiando tabs.
 
 
 Dame los pasos para obtener M PAGO token. Ya tengo mi cuenta activa
+
+[CD2] 💳 MERCADO PAGO - OBTENER CREDENCIALES
+
+## PASOS:
+
+1. **Ir a Developers**
+   https://www.mercadopago.com.mx/developers
+
+2. **Login** con tu cuenta de Mercado Pago
+
+3. **Crear aplicación**
+   - Click "Tus integraciones" → "Crear aplicación"
+   - Nombre: "Psicóloga Mariela" (o lo que quieras)
+   - Selecciona "Pagos online"
+   - Acepta términos → Crear
+
+4. **Obtener credenciales**
+   - En tu aplicación → "Credenciales de producción"
+   - Copia:
+     - **Public Key**: APP_USR-xxxx (para frontend)
+     - **Access Token**: APP_USR-xxxx (para backend)
+
+5. **Configurar en Vercel**
+   - Ve a tu proyecto en Vercel
+   - Settings → Environment Variables
+   - Agrega:
+     - `MP_PUBLIC_KEY` = tu public key
+     - `MP_ACCESS_TOKEN` = tu access token
+
+## IMPORTANTE:
+- Usa credenciales de **PRODUCCIÓN** (no test)
+- El Access Token es SECRETO (nunca en frontend)
+- El Public Key puede ir en frontend
+
+¿Ya tienes las credenciales o necesitas ayuda en algún paso?
+
