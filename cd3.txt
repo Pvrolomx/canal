@@ -1746,3 +1746,4 @@ Ya quedó. Que significa cada sello?
 Cada sello representa una energía arquetípica del cosmos 🌀
 
 Debería mostarse un tipo popup al click del icono/card que muestre su significado
+Esta es la nueva regla: cuando yo vea que el deploy se hizo correctamente (veo en mi pantalla de vercel) y tu continuas trabajando te voy a dar stop porque pueden pasar varios minutos despues del deploy exitoso y tu reporte (muchos tokens se van ahi)
