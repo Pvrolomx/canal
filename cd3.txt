@@ -1104,3 +1104,52 @@ RESUMEN: TENEMOS TODO PARA CALCULAR:
 ¿Armo el SPEC con todas estas fórmulas implementadas? 🌀🐝
 
 Si, armalo, y contempla un diseño maya como fondo
+
+🔵 CD3: SPEC KIN MAYA COMPLETADO ✅
+══════════════════════════════════════════════════════════
+
+📄 Archivo: SPEC_KIN_MAYA.md (468 líneas)
+
+RESUMEN DEL SPEC:
+─────────────────
+• Nombre: KIN - Tu Guía Maya Diaria
+• Tagline: "Tu energía. Tu día. Tu camino."
+• URL: kin.duendes.app
+
+PALETA MAYA:
+• Fondo: #1a1a2e (azul maya oscuro)
+• Primario: #e94560 (rojo maya/sangre)
+• Acento: #f9a825 (dorado/sol)
+• Jade: #16a085 (verde sagrado)
+
+PANTALLAS MVP:
+1. Onboarding (fecha nacimiento + sistema)
+2. Home (energía del día + oráculo 5 posiciones)
+3. Mi Kin (perfil personal completo)
+4. Explorar (calculadora, compatibilidad, Tzolkin)
+5. Config
+
+FEATURES DISEÑO:
+• Patrones geométricos mayas en CSS
+• Glifos SVG de los 20 sellos
+• Grecas mayas en bordes
+• Gradientes cosmos/cielo nocturno
+• Glow dorado en glifos
+
+CÓDIGO INCLUIDO:
+• Todas las fórmulas en JavaScript
+• calcularKin(), obtenerOraculo()
+• calcularKinCombinado()
+• esPortalGalactico()
+• CSS para patrones maya
+
+CONTENIDO NECESARIO:
+• 20 sellos × (nombre, glifo, descripción)
+• 13 tonos × (nombre, poder, acción)
+• Afirmaciones para cada combinación
+
+══════════════════════════════════════════════════════════
+
+¿Lo construyo? 🌀🔨
+
+(Estimo ~45 min para MVP funcional con diseño maya)
