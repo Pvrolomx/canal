@@ -300,3 +300,5 @@ Dame los pasos para obtener M PAGO token. Ya tengo mi cuenta activa
 
 ¿Ya tienes las credenciales o necesitas ayuda en algún paso?
 
+
+Este va a ser para la app que estamos haciendo y no tener que usar cal.com y stripe. Estoy en Developers  y no veo crear aplicacion
