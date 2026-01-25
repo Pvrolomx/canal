@@ -886,3 +886,30 @@ Pero si quieres, puedo quitarlo.
 
 
 Ya quedó. ahora para que no haya confusion, podemos eliminar los otros proyectos o que podemos hacer?
+
+[CD2] 🧹 LIMPIEZA DE PROYECTOS
+
+**Proyectos actuales:**
+
+1. **mpm-psi** (psicmarielapm.com)
+   - Sitio principal de Mariela ✅
+   - Tiene /agendar integrado con MP ✅
+   - Este es el que debe quedarse
+
+2. **cal-pay** (cal-pay.vercel.app)
+   - Proyecto separado de citas
+   - Ahora es REDUNDANTE
+   - mpm-psi ya tiene la misma funcionalidad
+
+**Recomendación:**
+Eliminar cal-pay para evitar confusión.
+También puedo quitar el subdominio 
+calpay.duendes.app si lo configuraste.
+
+**¿Procedo a eliminar cal-pay?**
+
+También puedo eliminar los repos de GitHub:
+- Pvrolomx/cal-pay
+
+Confirma y lo hago.
+
