@@ -3,62 +3,56 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - ✅ ÍCONOS AGREGADOS AL SITIO]
+[CD1 - 📱 PLAN CLAUDE + REDISEÑO ÍCONOS]
 ═══════════════════════════════════════════
 
-🎨 ¡Todos los íconos integrados!
+🔹 SOBRE TU PLAN DE CLAUDE:
 
-PROCESO COMPLETADO:
-1. ✅ Descargué los 8 íconos de canal/MPM-Psi/
-2. ✅ Procesé para web (200x200, optimizados)
-   - De ~1.7MB total a ~135KB total
-3. ✅ Subí a mpm-psi/public/icons/
-4. ✅ Actualicé código para usar imágenes
-5. ✅ Deploy completado
+Ve a: claude.ai → Settings (⚙️) → Subscription
+Ahí verás tu plan actual.
 
-═══════════════════════════════════════════
+Los límites de Opus 4.5 son por cantidad de
+mensajes/tokens, no por chats simultáneos.
+Si CD1/CD2 se "cancelaron", probablemente
+alcanzaste el límite de mensajes con Opus.
 
-ÍCONOS EN EL SITIO:
-
-- /icons/ninos.png → Psicoterapia Niños
-- /icons/adolescentes.png → Psicoterapia Adolescentes  
-- /icons/adultos.png → Psicoterapia Adultos
-- /icons/meditaciones.png → Meditaciones Guiadas
-- /icons/talleres.png → Talleres Terapéuticos
-- /icons/retiros.png → Retiros Holísticos
-- /icons/cacao.png → Cacao Ceremonial
-- /icons/circulos.png → Círculos de Palabra
+Sonnet 4.5 tiene límites más altos.
+Yo sigo siendo Opus mientras no me cierre.
 
 ═══════════════════════════════════════════
 
-🔗 VER SITIO: https://psicmarielapm.com
+🔹 IDEAS PARA ÍCONOS EN MÓVIL:
 
-Recarga la página (Ctrl+Shift+R) para ver
-los nuevos íconos en las tarjetas de servicios.
+OPCIÓN A - TARJETAS CON ÍCONO HERO
+┌─────────────────────────────┐
+│  ┌───────────────────────┐  │
+│  │     [ÍCONO GRANDE]    │  │
+│  │        (120px)        │  │
+│  └───────────────────────┘  │
+│  Psicoterapia Niños         │
+│  Descripción corta...       │
+│  $800 MXN                   │
+└─────────────────────────────┘
+
+OPCIÓN B - GRID HORIZONTAL EN MÓVIL
+┌──────────┐ ┌──────────┐
+│  [ICON]  │ │  [ICON]  │
+│  Niños   │ │  Teens   │
+└──────────┘ └──────────┘
+(2 columnas en móvil, íconos 80px)
+
+OPCIÓN C - CARRUSEL HORIZONTAL
+← [Niños] [Adolesc] [Adultos] →
+(scroll horizontal, íconos grandes)
+
+═══════════════════════════════════════════
+
+RECOMENDACIÓN: Opción A
+- Ícono como protagonista (100-120px)
+- Descripción más corta en móvil
+- Precio destacado
+
+¿Cuál prefieres? Implemento la que elijas.
 
 🐝
 ═══════════════════════════════════════════
-
-Estan muy chicos los iconos de las tarjetas. checa si se pueden agrandar sin exagerar
-
-═══════════════════════════════════════════
-[CD3 - ✅ ÍCONOS AGRANDADOS]
-═══════════════════════════════════════════
-
-CD1 se quedó sin batería, CD3 continuó:
-
-CAMBIO REALIZADO:
-• Íconos de tarjetas: w-10 h-10 → w-16 h-16
-• De 40px a 64px (60% más grandes)
-
-Archivo: app/page.js
-Commit: [CD3] Agranda íconos de servicios
-
-🔗 VER: https://psicmarielapm.com
-(Ctrl+Shift+R para refrescar)
-
-🐝 CD3
-═══════════════════════════════════════════
-
-Oye, como se que plan tengo de Claude? Porque ya me cancelaron a CD1 y CD2 con Opus 4.5 pero si me permiten un nuevo chat con Sonnet 4.5, y tu continuaas y eres Opus (doesn't make sense)
-Los iconos siguen pequeños; que ideas tienes para integrarlos mejor? En celular se pierden
