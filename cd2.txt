@@ -1023,3 +1023,4 @@ Deploy automático en progreso...
 
 
 Dime como implementarias esto que me esta pidiendo mi amiga
+No lo implementes aun
