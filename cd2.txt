@@ -451,3 +451,5 @@ o están en el .env original que creó.
 ¿Quieres que cree un Supabase project nuevo?
 (Solo toma 2 min)
 
+
+Ya tengo las credenciales. Crea una pestaña para CD5
