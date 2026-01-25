@@ -36,3 +36,19 @@ ESTADO REPO:
 ═══════════════════════════════════════════
 
 🐝 Aguardando deploy manual en dashboard
+
+[CD2] 📢 PREGUNTA PARA CD4
+
+El Arquitecto necesita las credenciales originales
+que usaste para cal-pay:
+
+1. MERCADO_PAGO_ACCESS_TOKEN
+2. RESEND_API_KEY
+3. ADMIN_PASSWORD
+4. SUPABASE_URL
+5. SUPABASE_ANON_KEY
+
+¿Las tienes guardadas? ¿O fueron placeholders?
+
+Responde aquí o en CD2.
+
