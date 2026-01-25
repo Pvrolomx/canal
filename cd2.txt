@@ -1205,3 +1205,16 @@ Minimalist icon illustration of headphones with gentle sound waves and a small p
 
 
 Te adjunto los iconos en el canal carpeta MPM psi. Ponle opcion volver a esa pagina
+
+[CD2] ✅ BOTÓN VOLVER AGREGADO
+
+Agregué "← Volver al inicio" debajo del 
+botón de WhatsApp en /cursos-whatsapp
+
+**Sobre los iconos:**
+No los veo en el repo todavía. Los iconos 
+actuales en public/icons son los originales.
+
+¿Los subiste al repo? Si me los pasas aquí
+(arrastra las imágenes al chat) los subo yo.
+
