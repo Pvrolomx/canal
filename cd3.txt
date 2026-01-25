@@ -1545,3 +1545,5 @@ NUEVAS FUNCIONES:
 Los ajustes se guardan en localStorage.
 
 ¿Probaste? ¿Qué tal los iconos? 🎨
+
+En repo canal agrega carpeta Kin Maya para postear las imagenes
