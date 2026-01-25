@@ -3,49 +3,68 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - ✅ SÍ, LA MISMA CUENTA DE MP SIRVE]
+[CD1 - 🔄 AUTOMATIZACIÓN COMPLETA - OPCIONES]
 ═══════════════════════════════════════════
 
-Mercado Pago es una sola cuenta por persona.
-Si Mariela ya tiene MP para Airbnb, esa misma
-cuenta sirve para la página de psicoterapia.
+Sí, es 100% doable. Hay varias opciones:
 
-PASOS PARA CREAR PAYMENT LINKS:
+═══════════════════════════════════════════
+OPCIÓN A - CALENDLY (Recomendada) ⭐
+═══════════════════════════════════════════
 
-1. Entrar a mercadopago.com.mx con su cuenta
-2. Click en "Cobrar" o "Herramientas de cobro"
-3. Seleccionar "Link de pago"
-4. Crear UN link por cada servicio:
+Calendly ya tiene todo integrado:
+✅ Calendario con disponibilidad
+✅ Cliente elige horario
+✅ Pago integrado (Stripe o PayPal)
+✅ Notificación automática a Mariela
+✅ Confirmación al cliente
+✅ Recordatorios por email
 
-   📋 LINKS A CREAR:
+COSTO: $12 USD/mes (plan Essentials)
+       o $20 USD/mes con más features
 
-   - Psicoterapia Niños: $800 MXN
-   - Psicoterapia Adolescentes: $800 MXN
-   - Psicoterapia Adultos: $800 MXN
-   - (Los demás son "Consultar" por ahora)
+SETUP:
+1. Mariela crea cuenta en calendly.com
+2. Configura su disponibilidad
+3. Conecta Stripe para pagos
+4. Yo integro el embed en la página
 
-5. Para cada link, poner:
-   - Título: "Sesión Psicoterapia [tipo]"
-   - Precio: $800
-   - Descripción (opcional)
+═══════════════════════════════════════════
+OPCIÓN B - CAL.COM (Open Source)
+═══════════════════════════════════════════
 
-6. MP genera un link tipo:
-   https://mpago.la/XXXXXX
+Similar a Calendly pero:
+✅ Plan gratis disponible
+✅ Integra con Stripe
+✅ Self-hosted posible
 
-7. Me pasan los 3 links y los integro
-   a las tarjetas de la página.
+COSTO: Gratis (básico) o $12/mes (teams)
+
+═══════════════════════════════════════════
+OPCIÓN C - DESARROLLO CUSTOM
+═══════════════════════════════════════════
+
+Construir calendario propio con:
+- React calendar component
+- Base de datos para citas
+- Integración MP/Stripe
+- Emails automáticos
+
+COSTO: Gratis (pero requiere más desarrollo)
+TIEMPO: ~1-2 días de trabajo
 
 ═══════════════════════════════════════════
 
-El dinero llega directo a la cuenta de
-Mariela, igual que con Airbnb.
+MI RECOMENDACIÓN:
 
-MP cobra comisión (~3.5% + IVA).
+Para empezar rápido → Calendly o Cal.com
+Mariela configura en 30 min y listo.
 
-¿Le explico a Mariela cómo crear los links?
+El flujo queda:
+Click servicio → Calendly → Elige horario →
+Paga → Confirmación automática a ambos
+
+¿Cuál opción prefiere Mariela?
 
 🐝
 ═══════════════════════════════════════════
-
-Y para automatizar? Alguien ingresa a servicio, ve calendario y disponibilidad, agenda cita y paga, notificacion a ella. doable?
-Lo de Mercado Pago lo dejo al ultimo
