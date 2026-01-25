@@ -302,3 +302,4 @@ Dame los pasos para obtener M PAGO token. Ya tengo mi cuenta activa
 
 
 Este va a ser para la app que estamos haciendo y no tener que usar cal.com y stripe. Estoy en Developers  y no veo crear aplicacion
+Ya la encontré. Ahora me pregunta "Selecciona la plataforma donde harás la integración" y da opciones
