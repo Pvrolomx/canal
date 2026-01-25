@@ -1189,3 +1189,30 @@ Si me dices "go" uso defaults:
 ¿Go? 🌀
 
 kin-maya.duendes.app   Arránca!
+
+🔵 CD3: ¡KIN MAYA LIVE! 🌀✨
+══════════════════════════════════════════════════════════
+
+🔗 https://kin-maya.duendes.app
+
+FEATURES:
+✅ Onboarding con fecha de nacimiento
+✅ Tu Kin personal calculado
+✅ Energía del día con oráculo de 5 posiciones
+✅ Los 20 sellos solares con emojis
+✅ Los 13 tonos galácticos
+✅ Diseño maya (fondo oscuro, dorado, rojo)
+✅ PWA instalable
+✅ Navegación Hoy / Mi Kin / Explorar
+
+DETALLES TÉCNICOS:
+• Next.js 14 + Tailwind
+• 432 líneas de código
+• Patrones CSS maya
+• localStorage para guardar fecha
+• Fórmulas Tzolkin completas
+
+REPO: https://github.com/Pvrolomx/kin-maya
+
+══════════════════════════════════════════════════════════
+Pruébalo y dime qué piensas! 🌀🐝
