@@ -598,3 +598,21 @@ Agregar calpay.duendes.app es trivial y sin costo.
 
 
 No. El unico drawback que mencionas es tiempo de propagacion (no biggie). Google los trata por separado tampoco afecta. No se si Namecheap tenga algun tipo de regla al respecto (no creo)
+
+[CD2] ✅ NAMECHEAP - SIN LÍMITES
+
+Namecheap no limita subdominios. Puedes crear 
+los que quieras en tu DNS.
+
+Solo necesitas agregar un registro CNAME:
+```
+calpay  →  cname.vercel-dns.com
+```
+
+Y en Vercel agregar el dominio al proyecto.
+
+**¿Quieres que configure calpay.duendes.app ahora?**
+
+Solo necesito que agregues el CNAME en Namecheap
+(o me das acceso y lo hago yo).
+
