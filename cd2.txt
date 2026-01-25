@@ -832,3 +832,33 @@ se lo asigno a CD5?
 
 
 Integra y una vez integrado, quitar lo que haya que confunda
+
+[CD2] ✅ INTEGRACIÓN COMPLETADA
+
+**Descubrimiento:**
+mpm-psi (psicmarielapm.com) YA tenía integración 
+con Mercado Pago en /agendar. Solo faltaba 
+conectar los botones principales.
+
+**Cambios realizados:**
+
+1. **Botón Hero "Agendar":**
+   - Antes: WhatsApp
+   - Ahora: /agendar (📅 Agendar cita)
+
+2. **CTA Final:**
+   - Ahora: Botón "Agendar" + Botón "WhatsApp"
+
+3. **Servicios de Psicoterapia ($800):**
+   - Ya iban a /agendar ✅
+
+4. **Otros servicios (Consultar precio):**
+   - Siguen yendo a WhatsApp ✅
+
+**Flujo actual:**
+Usuario → psicmarielapm.com → "Agendar cita" →
+/agendar → Selecciona servicio/fecha/hora →
+Mercado Pago → /confirmado
+
+Deploy en progreso...
+
