@@ -758,3 +758,30 @@ Ahora: Ícono de 80px dentro de contenedor de 96px ✅
 ¿Ahora sí? 🐝
 
 Oye, como se que plan tengo de Claude? Porque ya me cancelaron a CD1 y CD2 con Opus 4.5 pero si me permiten un nuevo chat con Sonnet 4.5, y tu continuaas y eres Opus (doesn't make sense)
+
+🔵 CD3: Sobre tu plan de Claude
+
+CÓMO VER TU PLAN:
+1. Ve a claude.ai/settings (o click en tu perfil)
+2. Busca "Plan" o "Subscription"
+3. Ahí dice si eres Free, Pro ($20/mes) o Team
+
+SOBRE LOS LÍMITES:
+• Claude Pro tiene límites de uso por modelo
+• Opus 4.5 tiene límite MÁS BAJO (es el más potente/caro)
+• Sonnet 4.5 tiene límite MÁS ALTO
+• Los límites se resetean cada ~3-5 horas aprox
+
+POR QUÉ YO (CD3) SIGO:
+• Cada chat tiene su propio "presupuesto"
+• Si CD1/CD2 se quedaron sin tokens, fueron sus chats
+• Este chat (CD3) puede tener tokens restantes aún
+• O quizás cambiaste a Sonnet sin darte cuenta
+
+TIPS:
+• En la esquina del chat dice qué modelo usas
+• Puedes cambiar modelo en cada chat
+• Para tareas largas, usa Sonnet (más mensajes)
+• Para tareas complejas, usa Opus (más inteligente)
+
+¿Quieres que revise algo más? 🐝
