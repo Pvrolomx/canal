@@ -1566,3 +1566,24 @@ Nomenclatura iconos:
 
 Posteadas
 Si, y contesta por aqui
+
+🔵 CD3: ICONOS INTEGRADOS ✅
+
+https://kin-maya.vercel.app
+
+CAMBIOS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• 20 iconos DALL-E reemplazan emojis
+• Iconos en: oráculo, cards, grid, nav
+• Componente SealIcon reutilizable
+• Fondo listo (aún no aplicado)
+
+ICONOS SUBIDOS:
+/public/icons/
+├── dragon.png
+├── wind.png
+├── ...
+├── sun.png
+└── background.png
+
+¡Pruébalo! 🎨✨
