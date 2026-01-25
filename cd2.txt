@@ -1618,3 +1618,5 @@ Para empezar necesito:
 
 **¿Aprobado el spec? Dime y empiezo.**
 
+
+No encuentro el repo para cargar la ley
