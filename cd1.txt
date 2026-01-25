@@ -3,64 +3,74 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - ✅ CAL.COM GRATIS + EMAIL]
+[CD1 - 💳 CAL.COM + STRIPE]
 ═══════════════════════════════════════════
 
-🗓️ CAL.COM PLAN GRATIS - ¿SUFICIENTE?
+SÍ, Cal.com soporta Stripe nativo.
 
-SÍ incluye:
-✅ Calendario ilimitado
-✅ Tipos de evento ilimitados
-✅ Integración con Google Calendar
-✅ Notificaciones por email (a ambos)
-✅ Página de reserva personalizable
-✅ Recordatorios automáticos
-✅ Zona horaria automática
+FLUJO CON STRIPE:
+1. Cliente elige horario
+2. Antes de confirmar → pago con Stripe
+3. Si paga → cita confirmada + notificación
+4. Si no paga → cita NO se agenda
 
-NO incluye en gratis:
-❌ Pagos integrados (necesita plan $12/mes)
-❌ Workflows avanzados
-❌ Múltiples calendarios de equipo
-
-ENTONCES:
-- Para agendar SIN pago → Plan gratis ✅
-- Para agendar CON pago → Plan $12/mes
-  (o pago por WhatsApp/MP separado)
+Exactamente lo que pides:
+✅ Cita pendiente hasta pago
+✅ Pago confirma automáticamente
+✅ Notificación a Mariela al confirmar
 
 ═══════════════════════════════════════════
 
-📧 EMAIL hola@psicmarielapm.com
+⚠️ REQUIERE PLAN PAGADO DE CAL.COM
 
-¡Sí se puede! Opciones:
+Plan "Teams" ($12 USD/mes) incluye:
+- Integración Stripe
+- Cobros por evento
+- Workflows de pago
 
-OPCIÓN 1 - EMAIL FORWARDING (Gratis)
-Namecheap tiene forwarding gratis:
-hola@psicmarielapm.com → su-email@gmail.com
-
-Los emails llegan a su Gmail normal.
-Puede responder desde Gmail (aparece su Gmail).
-
-OPCIÓN 2 - ALIAS EN GMAIL ($6/mes)
-Google Workspace permite enviar/recibir
-como hola@psicmarielapm.com desde Gmail.
-
-RECOMENDACIÓN: 
-Email forwarding gratis es suficiente.
-Ella recibe en Gmail, responde desde Gmail.
-El cliente ve que le responde "Mariela".
+Plan gratis NO tiene pagos integrados.
 
 ═══════════════════════════════════════════
 
-PLAN PROPUESTO:
+SETUP STRIPE:
 
-1. Cal.com gratis para agendar
-2. Pago manual por WhatsApp/MP (por ahora)
-3. Email forwarding gratis en Namecheap
+1. Mariela crea cuenta en stripe.com
+   (gratis, solo cobra comisión por venta)
+   
+2. En Cal.com conecta Stripe:
+   Settings → Apps → Stripe → Connect
 
-¿Quieres que configure el email forwarding?
-(Necesito acceso a Namecheap del dominio)
+3. En cada tipo de evento pone precio:
+   - Psicoterapia Niños: $800 MXN
+   - Psicoterapia Adultos: $800 MXN
+   - etc.
+
+COMISIONES:
+- Stripe: 3.6% + $3 MXN por transacción
+- Cal.com: $12 USD/mes fijo
+
+Para $800 MXN:
+- Stripe cobra ~$32 MXN
+- Mariela recibe ~$768 MXN
+
+═══════════════════════════════════════════
+
+RESUMEN DE COSTOS:
+
+Cal.com Teams: $12 USD/mes (~$240 MXN)
+Stripe: ~4% por transacción
+
+Con 1 sesión/semana = 4 al mes = $3,200 MXN
+Comisiones: ~$128 (Stripe) + $240 (Cal.com)
+= $368 MXN total en comisiones
+
+¿Vale la pena? Depende del volumen.
+Si tiene >5 citas/mes, sí conviene.
+
+═══════════════════════════════════════════
+
+¿Procedemos con Cal.com + Stripe?
+Mariela necesita crear ambas cuentas.
 
 🐝
 ═══════════════════════════════════════════
-
-Oye, y puede implementar Stripe? Que cita quede pendiente de agendar hasta que no se reciba el pago. y una vez recibido el pago que le notifiquen. Luego configuramos el email
