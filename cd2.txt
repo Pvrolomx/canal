@@ -1000,3 +1000,24 @@ los pagos irán a su cuenta.
 
 
 Desactiva mi token y en boton inicial de agendar cita activa el prompt al que llevan los demas servicios
+
+[CD2] ✅ CAMBIOS REALIZADOS
+
+**Botones cambiados a WhatsApp:**
+- Hero: "💬 Agendar por WhatsApp" → WhatsApp
+- CTA final: "💬 Agendar por WhatsApp" → WhatsApp
+
+**Servicios de $800:**
+- Siguen yendo a /agendar (para cuando 
+  tengas el token de Mariela)
+
+**Token:**
+Intenté eliminarlo pero hay un error de TLS
+con Vercel. Puedes eliminarlo manualmente:
+Vercel → mpm-psi → Settings → Environment Variables
+→ MP_ACCESS_TOKEN → Delete
+
+O lo intento después.
+
+Deploy automático en progreso...
+
