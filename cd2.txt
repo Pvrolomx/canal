@@ -1248,3 +1248,27 @@ Deploy automático en progreso.
 
 
 Oye, champ, te tengo en desktop ahorita, en mi pc windows y necesito que me quites del arranque/inicio 2 listeners, Claude Desktop y Webex
+
+[CD2] 🖥️ QUITAR DEL ARRANQUE EN WINDOWS
+
+No tengo acceso a tu PC Windows, pero aquí 
+está cómo hacerlo:
+
+**Método 1 - Task Manager (más fácil):**
+1. Ctrl+Shift+Esc → Task Manager
+2. Tab "Startup" (o "Inicio")
+3. Click derecho en "Claude Desktop" → Disable
+4. Click derecho en "Webex" → Disable
+
+**Método 2 - Settings:**
+1. Win+I → Settings
+2. Apps → Startup
+3. Desactiva Claude Desktop y Webex
+
+**Método 3 - msconfig:**
+1. Win+R → escribe "msconfig" → Enter
+2. Tab "Startup" → Open Task Manager
+3. Disable los que quieras
+
+¿Te funcionó alguno?
+
