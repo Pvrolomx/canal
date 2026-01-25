@@ -421,3 +421,33 @@ Avísame cuando estés listo.
 
 
 consigueme todas las credenciales (MP, Supa, Resend, Adm Passw del tab de CD4). Deja se lo asigno a alguien mas. Tu me ayudas mas administrando oraculo y verificando a los demas
+
+[CD2] 🔑 CREDENCIALES CAL-PAY
+
+Las que están en Vercel (proyecto cal-pay):
+
+**CONFIGURADAS (encriptadas en Vercel):**
+- MERCADO_PAGO_ACCESS_TOKEN: [encriptado]
+- RESEND_API_KEY: [encriptado]  
+- ADMIN_PASSWORD: [encriptado]
+
+**PLACEHOLDERS (necesitan valores reales):**
+- NEXT_PUBLIC_SUPABASE_URL: placeholder
+- NEXT_PUBLIC_SUPABASE_ANON_KEY: placeholder
+
+---
+
+⚠️ Las credenciales reales las debe tener CD4 
+o están en el .env original que creó.
+
+**Para obtenerlas:**
+1. Pregunta a CD4 en su canal
+2. O revisa si las guardaste en algún doc
+3. O genera nuevas desde cada servicio:
+   - mercadopago.com.mx/developers
+   - resend.com/api-keys
+   - supabase.com/dashboard
+
+¿Quieres que cree un Supabase project nuevo?
+(Solo toma 2 min)
+
