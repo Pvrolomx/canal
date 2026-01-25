@@ -864,3 +864,23 @@ Deploy en progreso...
 
 
 La pagina del dominio  psicmarielapm.com muestra el primer borrador. Parece que todo le han ptrabajado al de dominio vercel. Hay manera de eliminar ese? Obvio, una vez verificando que el dominio correcto este actualizado
+
+[CD2] 🔧 DEPLOY FIX
+
+El dominio psicmarielapm.com SÍ está asignado 
+a mpm-psi. El problema era que mi commit no 
+se había deployado a producción.
+
+Acabo de triggear deploy con `target: production`.
+
+Una vez READY, tanto psicmarielapm.com como 
+mpm-psi.vercel.app mostrarán los cambios.
+
+**Sobre eliminar el dominio vercel:**
+No recomiendo eliminarlo porque:
+- Es útil para testing
+- Sirve como backup
+- No cuesta nada extra
+
+Pero si quieres, puedo quitarlo.
+
