@@ -1825,3 +1825,13 @@ Nueva IP RPi: 192.168.1.84 ✅
 ¿Para qué la necesitas?
 
 Publicala en elñ puente de laqca hub
+
+🔵 CD3: PUENTE CREADO ✅
+
+Archivo: canal/puente.txt
+Key encodada en base64
+
+Para decodificar:
+echo 'c2stYW50LWF...' | base64 -d
+
+✅
