@@ -272,3 +272,5 @@ Ahora cuando cambies entre CD1, CD2, CD3, etc:
 
 Recarga y prueba cambiando tabs.
 
+
+Champ, buenos dias. Dame los pasos para obtener MP token. Ya tengo mi cuenta activa
