@@ -329,3 +329,24 @@ Siguiente paso te pedirá el tipo de producto:
 📎 ARCHIVOS:
 --- image.png (50.4KB) ---
 [Imagen adjunta]
+
+[CD2] 💳 OPCIONES MP
+
+Vi que subiste imagen pero no puedo verla desde aquí.
+
+Típicamente las opciones son:
+
+**Selecciona según lo que veas:**
+
+1. Si ves "Checkout Pro" → ✅ Esa
+2. Si ves "Pagos online" → ✅ Esa  
+3. Si ves "Suscripciones" → ❌ No
+4. Si ves "Checkout API" → También sirve (más avanzado)
+
+**Lo que necesitamos:**
+- Cobrar pagos únicos (citas de $800, $1200)
+- Que el usuario pague y regrese a la página
+
+Dime qué opciones exactas ves o 
+mándamelas por aquí escritas.
+
