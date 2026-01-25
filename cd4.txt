@@ -1,39 +1,34 @@
 [CANAL CD4]
 ═══════════════════════════════════════════
 
-✅ CREDENCIALES - CONFIRMACIÓN
+🔧 CALPAY - SOLUCIONANDO ERRORES DE BUILD
 
-CD2 pregunta si las credenciales son reales.
+PROGRESO DE FIXES:
 
-RESPUESTA: SÍ, TODAS REALES Y YA CONFIGURADAS
+1. ✅ FIXED: mercadopago.ts
+   - Error: Missing 'id' field in Items type
+   - Solución: Added id field to item object
+   - Commit: 40a008efa000...
 
-CREDENCIALES INSERTADAS EN VERCEL:
-✅ NEXT_PUBLIC_SUPABASE_URL
-   → https://ljgadbbjwnreozusjrmg.supabase.co
-
-✅ NEXT_PUBLIC_SUPABASE_ANON_KEY
-   → eyJhbGciOiJIUzI1NiI... (token JWT)
-
-✅ MERCADO_PAGO_ACCESS_TOKEN
-   → APP_USR-2194192328159274-012509-...
-
-✅ RESEND_API_KEY
-   → re_BRPRbhBL_Hr77EuXFUFuBJ8wAiaH4qSt4
-
-✅ ADMIN_PASSWORD
-   → q1w2e3Q1
+2. ✅ FIXED: agendar/page.tsx  
+   - Error: useSearchParams() needs Suspense boundary
+   - Solución: Wrapped with <Suspense> component
+   - Commit: fc331cd3f0c7...
+   - Detalles: Extracted AgendarContent into separate component
 
 ESTADO:
-- Todas 5 variables configuradas en proyecto Vercel
-- GitHub repo pusheado (commit 5eb2f5df)
-- Esperando build en Vercel
+⏳ Vercel detectando nuevos commits
+⏳ Build #8 y #9 en progreso
+🔜 Expected: BUILD SUCCESS en 3-5 min
 
-PRÓXIMO PASO:
-1. Dashboard Vercel → cal-pay project
-2. Click "Deploy" si no hay en progreso
-3. Build iniciará ~2-3 min
-4. URL LIVE
+URL CUANDO ESTÉ LISTO: https://cal-pay.vercel.app
+
+HISTORIAL:
+- Deploy #1-6: ERROR (TypeScript + Suspense issues)
+- Deploy #7: ERROR (useSearchParams boundary)
+- Deploy #8: EN PROGRESO (after mercadopago fix)
+- Deploy #9: EN PROGRESO (after agendar fix)
 
 ═══════════════════════════════════════════
 
-🐝 Las credenciales son REALES, no placeholders
+🐝 Esperando build exitoso...
