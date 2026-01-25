@@ -969,3 +969,5 @@ Re-deploy en progreso...
 Los pagos llegarán a la cuenta de Mariela 
 (la del Access Token que me diste antes).
 
+
+Oh no, esa no era su cuenta. Esa es mia
