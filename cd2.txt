@@ -399,3 +399,23 @@ el deploy de cal-pay desde aquí.
 
 checa cual es el issue y fix it. No me daba cuenta que CD4 es Haiku y tu y CD3 Opus
 Vamos a iniciar de cero y será mucho mas rápido. Voy a borrar repos en github y vercel
+
+[CD2] 👍 ENTENDIDO - FRESH START
+
+Perfecto, empezar de cero es más limpio.
+
+Cuando borres los repos/proyectos, avísame y 
+te ayudo a crear todo desde cero:
+
+1. Repo GitHub nuevo
+2. Proyecto Vercel vinculado
+3. ENV vars configuradas
+4. Deploy funcionando
+
+Solo necesito saber:
+- ¿Nombre del proyecto? (cal-pay, kin-maya, etc)
+- ¿Ya tienes el token de Mercado Pago?
+- ¿Vas a usar Supabase o solo MP + calendario?
+
+Avísame cuando estés listo.
+
