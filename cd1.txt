@@ -3,76 +3,74 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - 💳 CAL.COM + STRIPE]
+[CD1 - 🔄 MP vs STRIPE - FLUJOS]
 ═══════════════════════════════════════════
 
-SÍ, Cal.com soporta Stripe nativo.
-
-FLUJO CON STRIPE:
-1. Cliente elige horario
-2. Antes de confirmar → pago con Stripe
-3. Si paga → cita confirmada + notificación
-4. Si no paga → cita NO se agenda
-
-Exactamente lo que pides:
-✅ Cita pendiente hasta pago
-✅ Pago confirma automáticamente
-✅ Notificación a Mariela al confirmar
-
+OPCIÓN 1 - MERCADO PAGO (Semi-manual)
 ═══════════════════════════════════════════
 
-⚠️ REQUIERE PLAN PAGADO DE CAL.COM
+Flujo:
+1. Cliente elige servicio en página
+2. Click → WhatsApp con Mariela
+3. Mariela envía link de pago MP
+4. Cliente paga
+5. Mariela agenda manualmente en su calendario
+6. Confirma por WhatsApp
 
-Plan "Teams" ($12 USD/mes) incluye:
-- Integración Stripe
-- Cobros por evento
-- Workflows de pago
+Pros:
+✅ Sin costo mensual
+✅ MP ya lo conoce
+✅ Control total de Mariela
 
-Plan gratis NO tiene pagos integrados.
+Contras:
+❌ Proceso manual
+❌ Mariela responde cada solicitud
+❌ No hay calendario público
 
 ═══════════════════════════════════════════
 
-SETUP STRIPE:
+OPCIÓN 2 - CAL.COM + STRIPE (Automático)
+═══════════════════════════════════════════
 
-1. Mariela crea cuenta en stripe.com
-   (gratis, solo cobra comisión por venta)
-   
-2. En Cal.com conecta Stripe:
-   Settings → Apps → Stripe → Connect
+Flujo:
+1. Cliente elige servicio en página
+2. Ve calendario con disponibilidad
+3. Elige horario + paga con tarjeta
+4. Cita confirmada automáticamente
+5. Ambos reciben notificación
 
-3. En cada tipo de evento pone precio:
-   - Psicoterapia Niños: $800 MXN
-   - Psicoterapia Adultos: $800 MXN
-   - etc.
+Pros:
+✅ 100% automático
+✅ Mariela no hace nada manual
+✅ Cliente ve disponibilidad real
 
-COMISIONES:
-- Stripe: 3.6% + $3 MXN por transacción
-- Cal.com: $12 USD/mes fijo
-
-Para $800 MXN:
-- Stripe cobra ~$32 MXN
-- Mariela recibe ~$768 MXN
+Contras:
+❌ $12 USD/mes Cal.com
+❌ Stripe no es tan conocido en MX
+❌ Algunos clientes prefieren MP
 
 ═══════════════════════════════════════════
 
-RESUMEN DE COSTOS:
+OPCIÓN 3 - HÍBRIDO (Recomendada) ⭐
+═══════════════════════════════════════════
 
-Cal.com Teams: $12 USD/mes (~$240 MXN)
-Stripe: ~4% por transacción
+Cal.com GRATIS + pago después:
+1. Cliente agenda en Cal.com (gratis)
+2. Cita queda "pendiente de pago"
+3. Cal.com envía email con link MP
+4. Cliente paga por MP
+5. Mariela confirma manualmente
 
-Con 1 sesión/semana = 4 al mes = $3,200 MXN
-Comisiones: ~$128 (Stripe) + $240 (Cal.com)
-= $368 MXN total en comisiones
-
-¿Vale la pena? Depende del volumen.
-Si tiene >5 citas/mes, sí conviene.
+O usar Calendly (también tiene opción
+de "cobrar después" con reminder).
 
 ═══════════════════════════════════════════
 
-¿Procedemos con Cal.com + Stripe?
-Mariela necesita crear ambas cuentas.
+¿QUÉ PREFIERE MARIELA?
+
+A) Todo manual con WhatsApp + MP
+B) Todo automático con Cal.com + Stripe ($12/mes)
+C) Híbrido: Cal.com gratis + MP manual
 
 🐝
 ═══════════════════════════════════════════
-
-Entonces si continua con MP va a agendar cita manual despues de pago?
