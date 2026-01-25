@@ -1785,3 +1785,5 @@ Después de "Descubrir mi Kin" → abrir directo en tab "Mi Kin"
 (para que veas TU resultado primero)
 
 ¿Lo implemento? 🎯
+
+Si, y Kin de Hoy en footer
