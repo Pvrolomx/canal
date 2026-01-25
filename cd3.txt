@@ -1471,3 +1471,52 @@ C:\Users\pvrol\kin-maya-test\kin-maya.spec.ts
 Necesitamos crear iconos personalisados de las imagenes que insertaste. También un fondo con alguna pintura maya (o imagen) . Todo lo puede crear Dall-e. Solo necesitamos prompts
 Como ves. dame tu opinion
 Dame el prompt para pegar todo el texto en un mensaje y que me diseñe todos los iconos e imagen por separado. es posible?
+
+🔵 CD3: PROMPTS DALL-E PARA KIN MAYA
+
+DALL-E genera 1 imagen por prompt. Te doy el formato para ir generando cada uno manteniendo consistencia:
+
+═══════════════════════════════════════════════════════════
+PROMPT BASE (copiar antes de cada sello):
+═══════════════════════════════════════════════════════════
+
+"Minimalist Mayan glyph icon for [NOMBRE], single golden color (#F9A825) on dark blue background (#0f3460), clean geometric sacred lines inspired by ancient Mayan codex, vector art style, centered, 512x512, no text, mystical glow effect"
+
+═══════════════════════════════════════════════════════════
+20 SELLOS - Reemplaza [NOMBRE] con:
+═══════════════════════════════════════════════════════════
+
+1. IMIX (Dragon) - crocodile/dragon head emerging from water
+2. IK (Wind) - T-shaped breath of life symbol with spirals
+3. AKBAL (Night) - temple silhouette under stars
+4. KAN (Seed) - maize kernel with sprouting energy
+5. CHICCHAN (Serpent) - feathered serpent coiled
+6. CIMI (Death) - stylized skull with flower
+7. MANIK (Hand) - open palm with central eye
+8. LAMAT (Star) - four-pointed Venus star radiating
+9. MULUC (Moon) - jade water droplet with ripples
+10. OC (Dog) - loyal dog head profile
+11. CHUEN (Monkey) - playful monkey face
+12. EB (Human) - wise human profile with headdress
+13. BEN (Skywalker) - vertical reed pillar reaching sky
+14. IX (Wizard) - jaguar spots pattern with eye
+15. MEN (Eagle) - eagle head with feathered crown
+16. CIB (Warrior) - owl face with shield
+17. CABAN (Earth) - spiral earth movement symbol
+18. ETZNAB (Mirror) - obsidian blade reflection
+19. CAUAC (Storm) - rain cloud with lightning bolt
+20. AHAU (Sun) - radiant sun lord face
+
+═══════════════════════════════════════════════════════════
+PROMPT PARA FONDO:
+═══════════════════════════════════════════════════════════
+
+"Dark mystical Mayan temple background for mobile app, deep navy blue (#1a1a2e) to teal (#0f3460) gradient, subtle sacred geometry patterns, distant pyramid silhouette, stars and jungle canopy, gold accent lines, low contrast for text readability, 1080x1920 vertical, atmospheric and spiritual"
+
+═══════════════════════════════════════════════════════════
+
+EJEMPLO COMPLETO (copia y pega):
+
+"Minimalist Mayan glyph icon for IMIX (Dragon) - crocodile/dragon head emerging from water, single golden color (#F9A825) on dark blue background (#0f3460), clean geometric sacred lines inspired by ancient Mayan codex, vector art style, centered, 512x512, no text, mystical glow effect"
+
+Genera los 20 + el fondo = 21 imágenes total 🎨
