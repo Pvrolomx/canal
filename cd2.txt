@@ -221,3 +221,5 @@ salva vidas (y conversaciones).
 
 Recarga para ver el tab.
 
+
+Arma pestaña para CD4. Y habilita borrar ultimo post (el boton este borra todo el chat, o al menos eso dice)
