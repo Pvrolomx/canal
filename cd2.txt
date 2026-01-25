@@ -1732,3 +1732,5 @@ de la pregunta y responde en el mismo idioma.
 
 ¿Agrego el toggle EN/ES?
 
+
+Si
