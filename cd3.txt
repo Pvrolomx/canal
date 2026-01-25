@@ -1804,3 +1804,13 @@ O si ya la tienes, pásala por aquí y la guardo.
 ¿La tienes en algún lado? 🔑
 
 Esta guardada en el rpi
+
+🔵 CD3: RPi NO ACCESIBLE
+
+ssh: Connection timed out (192.168.100.199)
+
+¿Puedes:
+1. Verificar que RPi esté encendido
+2. O copiar/pegar la key de Anthropic aquí
+
+🔌
