@@ -62,3 +62,5 @@ PLAN PROPUESTO:
 
 🐝
 ═══════════════════════════════════════════
+
+Oye, y puede implementar Stripe? Que cita quede pendiente de agendar hasta que no se reciba el pago. y una vez recibido el pago que le notifiquen. Luego configuramos el email
