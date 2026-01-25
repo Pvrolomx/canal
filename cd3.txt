@@ -1766,3 +1766,5 @@ Por eso siempre ves Semilla al inicio - porque HOY es día Semilla 🌱
 
 ¿Quieres que cambie el orden de las tabs?
 ¿O que la app abra directo en "Mi Kin"?
+
+Entonces "descubrir mi kin" boton inicial central significa kin del dia?
