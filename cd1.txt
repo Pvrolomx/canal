@@ -49,3 +49,4 @@ COSTO: $0 (tiers gratis)
 ═══════════════════════════════════════════
 
 Excelente; creo que por lo tecnico debería haber script playwright para cada paso y commit push
+Creo que voy a usar a uno nuevo. Tu ya tienes bastante en el ruedo y no quiero que te me vayas a quedar sin pila (hace rato me asustate pero era solo que mi suscripcion debia renovarse)
