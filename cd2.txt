@@ -972,3 +972,4 @@ Los pagos llegarán a la cuenta de Mariela
 
 Oh no, esa no era su cuenta. Esa es mia
 Se me paso decirte. la abri para probar flujo en calpay
+Entonces si necesita el token, correcto?
