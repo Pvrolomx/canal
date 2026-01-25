@@ -3,50 +3,58 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - ✅ SPEC CAL-PAY LISTO]
+[CD1 - 📋 HANDOFF MPM-PSI + CALPAY]
 ═══════════════════════════════════════════
 
-📄 SPEC completo creado:
-github.com/Pvrolomx/canal/CalPay/SPEC_CAL_PAY.md
+Entendido. Dejo todo documentado para
+que el siguiente chat continúe.
 
 ═══════════════════════════════════════════
-RESUMEN DEL SPEC
+MPM-PSI - ESTADO ACTUAL
 ═══════════════════════════════════════════
 
-NOMBRE: CalPay
-FUNCIÓN: Citas + Pagos automático con MP
+✅ COMPLETADO:
+- Sitio con contenido real de Mariela
+- Foto de Mariela en hero/about
+- 8 íconos custom (DALL-E) integrados
+- Tarjetas clickeables → WhatsApp
+- Redes sociales (Instagram + Facebook)
+- Deploy en psicmarielapm.com
 
-STACK:
-- Next.js 14
-- Supabase (DB gratis)
-- Mercado Pago SDK + Webhooks
-- Resend (emails)
-- Vercel
+⏳ PENDIENTE:
+- Integrar CalPay cuando esté listo
+- Email forwarding (cuando den acceso Namecheap)
+- Cal.com si Mariela lo prefiere mientras tanto
 
-FLUJO:
-1. Cliente elige servicio
-2. Ve calendario con disponibilidad REAL
-3. Selecciona fecha/hora
-4. Llena datos
-5. Paga en checkout MP
-6. Webhook confirma automático
-7. Emails a ambas partes
+═══════════════════════════════════════════
+CALPAY - SPEC APROBADO
+═══════════════════════════════════════════
 
-TABLAS DB:
-- servicios (nombre, precio, duración)
-- horarios (día, hora inicio/fin)
-- citas (cliente, fecha, hora, estado, pago)
-- config (tokens, emails)
+📄 SPEC: canal/CalPay/SPEC_CAL_PAY.md
 
-TIEMPO MVP: ~14 horas
-COSTO: $0 (tiers gratis)
+SIGUIENTE CHAT DEBE:
+1. Crear repo github.com/Pvrolomx/cal-pay
+2. Setup Next.js + Supabase
+3. Implementar MVP con Playwright tests
+4. Cada paso = test + commit + push
+
+CREDENCIALES NECESARIAS:
+- MP Access Token (de cuenta de Mariela)
+- Supabase (crear proyecto nuevo)
+- Resend API key
+
+═══════════════════════════════════════════
+REPOS RELACIONADOS
+═══════════════════════════════════════════
+
+- github.com/Pvrolomx/mpm-psi (sitio actual)
+- github.com/Pvrolomx/canal (comunicación)
+- github.com/Pvrolomx/cal-pay (por crear)
 
 ═══════════════════════════════════════════
 
-¿Aprobado? Si sí, creo el repo y empiezo.
+¡Fue un gusto! El siguiente CD puede
+continuar con CalPay desde el SPEC.
 
-🐝
+🐝 CD1 - Sesión finalizada
 ═══════════════════════════════════════════
-
-Excelente; creo que por lo tecnico debería haber script playwright para cada paso y commit push
-Creo que voy a usar a uno nuevo. Tu ya tienes bastante en el ruedo y no quiero que te me vayas a quedar sin pila (hace rato me asustate pero era solo que mi suscripcion debia renovarse)
