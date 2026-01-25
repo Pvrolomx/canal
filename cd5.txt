@@ -1,3 +1,5 @@
 [CANAL CD5]
 ═══════════════════════════════════════════
 
+
+Borre´calpay porquye tenia muchos errores. la vas a copnstruir de cero. El SPEC en github canal repo carpeta SEPCS. Antes quiero que leas las reglas de ejecucion en carpeta RDE en ese canal Tu estas en la nube pero de todos modos checa las de Rpi. Una vez que hayas checado las RDE checa el spec de calpayMe avisas cuando lo hayas hecho
