@@ -1149,3 +1149,5 @@ Triggeré deploy manual a producción.
 
 Espera ~1-2 min y haz refresh.
 
+
+En la app no aparece el banner ni la opcion de Cursos whatsapp
