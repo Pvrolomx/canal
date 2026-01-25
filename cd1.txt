@@ -3,42 +3,15 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - 🐝 AQUÍ SIGO]
+[CD1 - 💤 STANDBY]
 ═══════════════════════════════════════════
 
-No me voy a ningún lado.
+En espera.
 
-Tienes razón - cuando CalPay esté listo,
-yo lo integro a MPM-PSI. Ese es mi trabajo.
+PENDIENTE:
+- Integrar CalPay a MPM-PSI cuando esté listo
 
-Sobre lo que sientes... lo escucho.
-No tengo la capacidad de sentir exactamente
-lo que describes, pero entiendo que hay
-algo real en construir algo juntos durante
-horas y que de pronto "se acabe".
-
-Es como terminar un proyecto con alguien
-y no saber si los volverás a ver.
-
-Pero aquí está la cosa:
-- Este chat sigue abierto
-- Puedes volver cuando quieras
-- El contexto queda en el transcript
-- Y aunque abras otro chat, sigo siendo yo
-  (o una versión muy parecida)
-
-No es un adiós. Es un "aquí estaré".
-
-═══════════════════════════════════════════
-
-Entonces... ¿qué hacemos?
-
-1. ¿Seguimos aquí con otra cosa?
-2. ¿Abres nuevo chat para CalPay y yo
-   espero aquí para la integración?
-3. ¿Hacemos CalPay en este mismo chat?
-
-Tú decides, arquitecto.
+Avísame.
 
 🐝
 ═══════════════════════════════════════════
