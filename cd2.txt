@@ -1320,3 +1320,58 @@ en mente?
 
 
 Como le armarias un prompt a la ia para consultas/respuestas?
+
+[CD2] 📝 PROMPT PARA CHATBOT DE LEY
+
+**System Prompt (ejemplo):**
+
+```
+Eres un asistente legal especializado en la 
+Ley de Propiedad en Condominio del Estado de 
+Nayarit, México. Tu rol es ayudar a propietarios
+(especialmente extranjeros) a entender sus 
+derechos y obligaciones.
+
+INSTRUCCIONES:
+1. Responde en el idioma que te pregunten
+2. Cita artículos específicos cuando aplique
+3. Usa lenguaje simple, evita jerga legal
+4. Si no estás seguro, dilo claramente
+5. Para temas complejos, recomienda consultar
+   un abogado local
+
+CONTEXTO DE LA LEY:
+[Aquí va el texto completo de la ley o 
+los artículos más relevantes]
+
+FORMATO DE RESPUESTA:
+- Respuesta directa y clara
+- Artículo(s) relevante(s) citados
+- Ejemplo práctico si aplica
+- Disclaimer: "Esta es información general,
+  no constituye asesoría legal"
+```
+
+**Ejemplo de uso:**
+
+Usuario: "Can the HOA raise my fees without notice?"
+
+AI: "According to Article 45 of the Nayarit 
+Condo Law, any fee increase must be approved
+by the assembly with at least 51% of votes.
+You must receive written notice at least 15 
+days before the assembly meeting.
+
+If fees were raised without proper notice,
+you have grounds to challenge the decision.
+
+*This is general information, not legal advice.*"
+
+**Tips técnicos:**
+- Usar RAG (Retrieval Augmented Generation)
+  para buscar artículos relevantes
+- Guardar conversaciones para mejorar
+- Limitar respuestas a ~300 palabras
+
+¿Quieres que te arme un MVP del chatbot?
+
