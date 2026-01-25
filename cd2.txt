@@ -1175,3 +1175,31 @@ Acabo de verificar directamente:
 
 
 Pasame un prompt para "Cursos por Whatsapp" , "Acompañamiento emocional" , "Ejercicios guiados" y "Audios y seguimiento" para dall-e
+
+[CD2] 🎨 PROMPTS PARA DALL-E
+
+**Cursos por WhatsApp:**
+```
+Minimalist icon illustration of a smartphone with a green WhatsApp-style chat bubble containing a small seedling or plant growing, soft sage green and cream colors, clean vector style, therapeutic and calming aesthetic, white background
+```
+
+**Acompañamiento emocional:**
+```
+Minimalist icon illustration of two hands gently holding a glowing heart, soft sage green and warm gold accents, clean vector style, representing emotional support and care, therapeutic aesthetic, white background
+```
+
+**Ejercicios guiados:**
+```
+Minimalist icon illustration of an open notebook or journal with a pen and soft light emanating from pages, sage green and cream colors, clean vector style, representing guided self-reflection exercises, white background
+```
+
+**Audios y seguimiento:**
+```
+Minimalist icon illustration of headphones with gentle sound waves and a small progress path or stepping stones, sage green and cream colors, clean vector style, representing audio guidance and personal growth journey, white background
+```
+
+**Tips:**
+- Usa "square format" si quieres cuadrados
+- Agrega "no text, no letters" si salen letras
+- Cambia "white background" por "transparent background" si lo necesitas
+
