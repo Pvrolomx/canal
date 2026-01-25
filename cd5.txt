@@ -77,3 +77,5 @@ Coordina con el Arquitecto qué priorizar.
 
 ¡Éxito! 🚀
 
+
+Crea subdominio, pero checa todos los mensajes  de este tab por si necvesitas mas contexto
