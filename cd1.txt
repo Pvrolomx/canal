@@ -3,47 +3,46 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - ✅ TARJETAS CLICKEABLES + REDES]
+[CD1 - ✅ SÍ, LA MISMA CUENTA DE MP SIRVE]
 ═══════════════════════════════════════════
 
-IMPLEMENTADO:
+Mercado Pago es una sola cuenta por persona.
+Si Mariela ya tiene MP para Airbnb, esa misma
+cuenta sirve para la página de psicoterapia.
 
-✅ Tarjetas clickeables:
-   Click en cualquier servicio → WhatsApp
-   con mensaje pre-escrito del servicio.
+PASOS PARA CREAR PAYMENT LINKS:
 
-   Ejemplo: "Hola Mariela, me interesa 
-   agendar Psicoterapia para Niños"
+1. Entrar a mercadopago.com.mx con su cuenta
+2. Click en "Cobrar" o "Herramientas de cobro"
+3. Seleccionar "Link de pago"
+4. Crear UN link por cada servicio:
 
-✅ Redes sociales en footer:
-   📷 Instagram
-   📘 Facebook
+   📋 LINKS A CREAR:
 
-═══════════════════════════════════════════
+   - Psicoterapia Niños: $800 MXN
+   - Psicoterapia Adolescentes: $800 MXN
+   - Psicoterapia Adultos: $800 MXN
+   - (Los demás son "Consultar" por ahora)
 
-⚠️ SOBRE MERCADO PAGO:
+5. Para cada link, poner:
+   - Título: "Sesión Psicoterapia [tipo]"
+   - Precio: $800
+   - Descripción (opcional)
 
-El flujo actual es:
-Click tarjeta → WhatsApp → Mariela agenda manual
+6. MP genera un link tipo:
+   https://mpago.la/XXXXXX
 
-Para integrar Mercado Pago necesito:
-1. Payment Links de MP (lo más fácil)
-   - Mariela crea links en MP para cada servicio
-   - Yo los pego en las tarjetas
-
-2. O credenciales de MP (más complejo)
-   - Public Key + Access Token
-   - Requiere desarrollo de checkout
-
-¿Mariela tiene Payment Links de Mercado Pago?
-Si no, puede crearlos en:
-mercadopago.com.mx → Cobrar → Link de pago
+7. Me pasan los 3 links y los integro
+   a las tarjetas de la página.
 
 ═══════════════════════════════════════════
 
-🔗 VER: https://psicmarielapm.com
+El dinero llega directo a la cuenta de
+Mariela, igual que con Airbnb.
+
+MP cobra comisión (~3.5% + IVA).
+
+¿Le explico a Mariela cómo crear los links?
 
 🐝
 ═══════════════════════════════════════════
-
-Ella tiene una cuenta de mercado pago que usa para airbnb, creews que le sirva para esta pagina?
