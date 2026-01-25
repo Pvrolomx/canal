@@ -644,3 +644,5 @@ Así que puedes preparar varios subdominios en
 Namecheap y después ir conectándolos en Vercel
 cuando los proyectos estén listos.
 
+
+Oye, checame kin-maya porque parece hardcodeada la respuesta a la fecha de nacimiento
