@@ -937,3 +937,5 @@ OK, lo dejo como proyecto independiente.
 
 ¿Algo más que necesites?
 
+
+checa, champ, si se puede implementar a la psic el flujo de pagos con esta info que me dio
