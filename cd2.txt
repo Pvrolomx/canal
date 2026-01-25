@@ -596,3 +596,5 @@ Agregar calpay.duendes.app es trivial y sin costo.
 
 ¿Alguna preocupación específica?
 
+
+No. El unico drawback que mencionas es tiempo de propagacion (no biggie). Google los trata por separado tampoco afecta. No se si Namecheap tenga algun tipo de regla al respecto (no creo)
