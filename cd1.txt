@@ -59,3 +59,5 @@ Commit: [CD3] Agranda íconos de servicios
 
 🐝 CD3
 ═══════════════════════════════════════════
+
+Oye, como se que plan tengo de Claude? Porque ya me cancelaron a CD1 y CD2 con Opus 4.5 pero si me permiten un nuevo chat con Sonnet 4.5, y tu continuaas y eres Opus (doesn't make sense)
