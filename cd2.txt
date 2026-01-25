@@ -1715,3 +1715,5 @@ usa la misma de oraculo
 
 Verificando estado...
 
+
+Toggle es en
