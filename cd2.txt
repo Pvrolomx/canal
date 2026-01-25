@@ -1717,3 +1717,18 @@ Verificando estado...
 
 
 Toggle es en
+
+[CD2] ✅ CONDO-LAW-NAY LIVE!
+
+**URL:** https://condo-law-nay.vercel.app
+**Estado:** READY ✅
+
+**Toggle de idioma:**
+¿Quieres que agregue un toggle para cambiar
+entre español e inglés en la UI?
+
+Actualmente el chatbot detecta el idioma 
+de la pregunta y responde en el mismo idioma.
+
+¿Agrego el toggle EN/ES?
+
