@@ -3,78 +3,47 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - ✅ OPCIÓN C - PLAN DE IMPLEMENTACIÓN]
+[CD1 - ✅ SÍ, MARIELA ABRE LA CUENTA]
 ═══════════════════════════════════════════
 
-Cal.com gratis + MP manual. Perfecto.
+Sí, ella necesita crear la cuenta porque:
 
-═══════════════════════════════════════════
-PASO 1 - MARIELA CREA CUENTA CAL.COM
-═══════════════════════════════════════════
+1. El calendario está vinculado a SU Google
+   Calendar (para ver sus citas personales
+   y no hacer doble reserva)
 
-1. Ir a cal.com
-2. Sign up con Google (su Gmail)
-3. Elegir plan FREE
-4. Configurar perfil:
-   - Nombre: Psic. Mariela Plácito
-   - URL: cal.com/marielaplacito (o similar)
-   - Timezone: America/Mexico_City
+2. Las notificaciones van a SU email
 
-═══════════════════════════════════════════
-PASO 2 - CREAR TIPOS DE EVENTO
-═══════════════════════════════════════════
+3. Ella controla su disponibilidad
+   (puede bloquear días, cambiar horarios)
 
-Crear 3 eventos (sin precio, gratis agenda):
-
-📌 Psicoterapia Niños
-   - Duración: 50 min
-   - Descripción del PDF
-
-📌 Psicoterapia Adolescentes  
-   - Duración: 50 min
-
-📌 Psicoterapia Adultos
-   - Duración: 50 min
-
-═══════════════════════════════════════════
-PASO 3 - CONFIGURAR DISPONIBILIDAD
-═══════════════════════════════════════════
-
-En Settings → Availability:
-- Días que atiende
-- Horarios disponibles
-- Conectar Google Calendar (sincroniza)
-
-═══════════════════════════════════════════
-PASO 4 - EMAIL DE CONFIRMACIÓN
-═══════════════════════════════════════════
-
-Cal.com envía email automático con:
-- Confirmación de cita
-- Podemos agregar texto:
-  "Para confirmar tu cita, realiza el pago:
-   [Link de Mercado Pago]"
-
-═══════════════════════════════════════════
-PASO 5 - YO INTEGRO EN LA PÁGINA
-═══════════════════════════════════════════
-
-Cuando tenga su URL de Cal.com:
-- Cambio las tarjetas para que abran Cal.com
-- Cada servicio → su tipo de evento
+4. Es SU negocio - ella debe tener acceso
 
 ═══════════════════════════════════════════
 
-TAREA PARA MARIELA:
+ES MUY FÁCIL:
 
-1. Crear cuenta en cal.com (5 min)
-2. Crear los 3 tipos de evento (10 min)
-3. Configurar disponibilidad (5 min)
-4. Pasarme su URL de Cal.com
+1. cal.com → "Get started"
+2. "Continue with Google" (su Gmail)
+3. Elige username: marielaplacito
+4. Listo - ya tiene cuenta
 
-¿Puede hacerlo hoy o mañana?
+Después configura eventos y horarios.
+Son como 15-20 min en total.
+
+═══════════════════════════════════════════
+
+ALTERNATIVA:
+
+Si quieres, puedo crear una cuenta con
+un email temporal y después ella la
+"reclama" cambiando el email.
+
+Pero es más limpio que ella la cree
+directamente con su Google.
+
+¿Le paso instrucciones por WhatsApp?
+¿O prefieres explicarle tú?
 
 🐝
 ═══════════════════════════════════════════
-
-Entonces ella tiene que abrir cuenta con cal.com?
