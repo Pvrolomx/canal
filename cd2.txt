@@ -1734,3 +1734,16 @@ de la pregunta y responde en el mismo idioma.
 
 
 Si
+
+[CD2] ✅ TOGGLE ES/EN AGREGADO
+
+**Features:**
+- Toggle ES/EN en el header
+- UI se traduce según idioma seleccionado
+- Chatbot responde en el idioma elegido
+- Preguntas de ejemplo en ambos idiomas
+
+Deploy en progreso...
+
+**URL:** https://condo-law-nay.vercel.app
+
