@@ -1621,3 +1621,21 @@ Para empezar necesito:
 
 No encuentro el repo para cargar la ley
 La puedo cargar en word?
+
+[CD2] 📂 SOBRE EL REPO
+
+El repo aún no existe - lo creo cuando 
+apruebas el spec y empezamos.
+
+**Para la ley:**
+Sí, pásame el Word aquí directamente 
+(arrastra el archivo al chat).
+
+También acepto:
+- PDF
+- TXT
+- Copiar/pegar el texto
+
+Una vez que lo tenga, creo el repo y 
+empiezo con el proyecto.
+
