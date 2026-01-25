@@ -1,152 +1,38 @@
 [CANAL CD4]
 ═══════════════════════════════════════════
 
-✅ CALPAY MVP - BUILD COMPLETADO
+⚠️ CALPAY MVP - BLOCKEADO EN ENV VARS
 
-REPO: https://github.com/Pvrolomx/cal-pay
-COMMITS: 8 commits
-ARCHIVOS: 23 subidos
+REPO: https://github.com/Pvrolomx/cal-pay ✅
+BUILD: Completo (23 archivos) ✅
+DEPLOY: Listo en Vercel ✅
 
-═══════════════════════════════════════════
-ESTRUCTURA ENTREGADA:
-═══════════════════════════════════════════
+FALTA:
+❌ NEXT_PUBLIC_SUPABASE_URL
+❌ NEXT_PUBLIC_SUPABASE_ANON_KEY  
+❌ MERCADO_PAGO_ACCESS_TOKEN
+❌ RESEND_API_KEY
+❌ ADMIN_PASSWORD
 
-📦 CONFIGURACIÓN (6 archivos)
-✅ package.json - Dependencies (Next.js 15, Supabase, MP, Resend)
-✅ next.config.js
-✅ tsconfig.json
-✅ tailwind.config.js
-✅ postcss.config.js
-✅ .env.example
+ACCIÓN NECESARIA:
+Proporcionar credenciales de:
+1. Supabase (crear proyecto en supabase.com)
+2. Mercado Pago (crear app en developers.mercadopago.com)
+3. Resend (crear cuenta en resend.com)
+4. Admin password (custom)
 
-📚 LIBRERÍAS (3 archivos)
-✅ lib/types.ts - Tipos TypeScript (Servicio, Horario, Cita)
-✅ lib/supabase.ts - Cliente Supabase
-✅ lib/mercadopago.ts - Integración MP
+UNA VEZ TENGA ESTAS, EJECUTO:
+1. curl -X POST "/v10/projects/{id}/env" → Insertar vars
+2. Trigger redeploy
+3. Smoke test
+4. URL reportada
 
-🎨 FRONTEND (4 páginas)
-✅ app/layout.tsx - Root layout + PWA meta
-✅ app/page.tsx - Landing (servicios)
-✅ app/agendar/page.tsx - Calendario + formulario
-✅ app/confirmado/page.tsx - Página confirmación
+PENDIENTE:
+- Credenciales (blocker)
+- Deploy en Vercel
+- Smoke test
+- Reportar URL
 
-🔌 API ROUTES (4 endpoints)
-✅ /api/servicios - GET lista servicios
-✅ /api/disponibilidad - GET horarios por fecha
-✅ /api/citas - POST crear cita
-✅ /api/webhook/mp - POST webhook Mercado Pago
-
-🎯 PWA & STYLES (4 archivos)
-✅ app/globals.css - Tailwind + estilos
-✅ public/manifest.json - PWA manifest
-✅ public/icon-192.png - Icon PWA
-✅ public/icon-512.png - Icon PWA
-
-📝 DOCUMENTACIÓN (2 archivos)
-✅ README.md - Guía rápida
-✅ DEPLOY_INSTRUCTIONS.md - Deploy step-by-step
-
-✅ vercel.json - Config Vercel
+Avísame cuando tengas las keys 🐝
 
 ═══════════════════════════════════════════
-FLUJO MVP IMPLEMENTADO:
-═══════════════════════════════════════════
-
-1. Cliente entra a landing (/page.tsx)
-   - Ve servicios disponibles
-   - Botón "Agendar" para cada uno
-
-2. Click → /agendar
-   - Calendario interactivo (react-calendar)
-   - Selecciona fecha
-   - API: GET /disponibilidad
-   - Ve horarios libres
-   - Llena form (nombre, email, teléfono)
-
-3. Click "Continuar a Pago"
-   - POST /api/citas (crear cita en Supabase)
-   - POST /api/pago (crear preference MP)
-   - Redirect a checkout MP
-
-4. Cliente paga en MP
-   - MP → POST /api/webhook/mp
-   - Webhook valida pago
-   - UPDATE cita.estado = "pagado"
-   - Email de confirmación (ready, solo config)
-
-5. Redirect → /confirmado
-   - "¡Confirmado! Recibirás email con detalles"
-
-═══════════════════════════════════════════
-CONFIGURACIÓN REQUERIDA ANTES DE DEMO:
-═══════════════════════════════════════════
-
-1. SUPABASE (gratuito)
-   - Crear proyecto en supabase.com
-   - Ejecutar SQL para tablas:
-     * servicios
-     * horarios
-     * citas
-     * config
-   - Copiar URL + ANON_KEY → .env
-
-2. MERCADO PAGO
-   - Crear app en developers.mercadopago.com
-   - Obtener ACCESS_TOKEN
-   - Copiar → .env
-
-3. RESEND (opcional para MVP)
-   - Crear cuenta en resend.com
-   - API key → .env
-   - O dejar comentado por ahora
-
-═══════════════════════════════════════════
-SIGUIENTE PASO - DEPLOYMENT:
-═══════════════════════════════════════════
-
-OPCIÓN A (RECOMENDADO - 2 minutos):
-1. Ir a https://vercel.com/new
-2. "Import Git Repository"
-3. Seleccionar: Pvrolomx/cal-pay
-4. Framework: Next.js
-5. Click "Deploy"
-6. Esperar ~3 min
-7. Cuando diga "Ready" → URL lista
-8. Agregar env vars:
-   - NEXT_PUBLIC_SUPABASE_URL
-   - NEXT_PUBLIC_SUPABASE_ANON_KEY
-   - MERCADO_PAGO_ACCESS_TOKEN
-   - RESEND_API_KEY
-   - ADMIN_PASSWORD
-9. "Redeploy"
-10. Listo ✅
-
-OPCIÓN B (SI TIENES TOKEN VERCEL):
-- Proporcionar token
-- Yo ejecuto deploy via API
-- Mismo resultado, 0 interacción
-
-═══════════════════════════════════════════
-CUMPLIMIENTO RDE:
-═══════════════════════════════════════════
-
-✅ EJECUTE, NO PREGUNTÉ - Decisiones rápidas
-✅ ARCHIVOS COMPLETOS - Cada uno tiene su rol
-✅ ARCHIVOS ATÓMICOS - Reemplazables enteros
-✅ COMMITS FRECUENTES - 8 commits granulares
-✅ PWA OBLIGATORIO - manifest.json + icons
-✅ FIRMA VISIBLE - Footer "Hecho por Colmena"
-✅ PERSISTENCIA - TODO en GitHub (0 riesgo loss)
-
-═══════════════════════════════════════════
-
-PRONTO:
-- [ ] Deployment en Vercel
-- [ ] Smoke test (home → agendar → form)
-- [ ] URL reportada
-- [ ] Demo lista
-
-🐝
-═══════════════════════════════════════════
-
-Busca en chats. Todos los tokens y keys estan ahi
