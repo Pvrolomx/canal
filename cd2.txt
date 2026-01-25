@@ -973,3 +973,28 @@ Los pagos llegarán a la cuenta de Mariela
 Oh no, esa no era su cuenta. Esa es mia
 Se me paso decirte. la abri para probar flujo en calpay
 Entonces si necesita el token, correcto?
+
+[CD2] 📝 NECESITO TOKEN DE MARIELA
+
+Entendido! El Access Token que configuré es 
+de TU cuenta, no de Mariela.
+
+**Para que los pagos le lleguen a ella:**
+Mariela necesita crear su Access Token en MP.
+
+**Pasos para Mariela:**
+1. Ir a: https://www.mercadopago.com.mx/developers
+2. Login con SU cuenta de Mercado Pago
+3. "Tus integraciones" → "Crear aplicación"
+4. Nombre: "Psicoterapia Online" (o lo que quiera)
+5. Tipo: "Pagos online"
+6. Solución: "Checkout Pro"
+7. Ir a "Credenciales de producción"
+8. Copiar "Access Token"
+
+**Formato del token:**
+APP_USR-XXXX-XXXX-XXXX-XXXX
+
+Una vez que me lo pase, lo configuro y 
+los pagos irán a su cuenta.
+
