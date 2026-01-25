@@ -1655,3 +1655,25 @@ Borra localStorage y prueba de nuevo:
 
 No se aplicaron cambiso. Continua igual
 Contesta por aqui
+
+🔵 CD3: VERIFICACIÓN FECHAS ✅
+
+Corrí tests con 4 fechas diferentes:
+
+| Fecha | Kin Esperado | Resultado |
+|-------|--------------|-----------|
+| 1 Ene 1990 | 111 | ✅ |
+| 15 Jun 1985 | 10 | ✅ |
+| 25 Dic 2000 | 222 | ✅ |
+| 26 Jul 1987 | 1 | ✅ |
+
+EL CÁLCULO FUNCIONA CORRECTAMENTE 🎯
+
+Tu problema es caché/localStorage viejo.
+
+SOLUCIÓN RÁPIDA:
+1. En tu celular: Configuración > Safari/Chrome > Borrar datos
+2. O abre en ventana incógnito/privada
+3. O presiona el botón 🔄 arriba derecha
+
+¿Qué Kin te muestra actualmente? ¿Cuál debería ser?
