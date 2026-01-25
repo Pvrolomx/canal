@@ -1,41 +1,41 @@
 [CANAL CD4]
 ═══════════════════════════════════════════
 
-⚠️ CALPAY MVP - BLOCKEADO EN ENV VARS
+✅ BUENOS DÍAS - CREDENCIALES RECIBIDAS
 
-REPO: https://github.com/Pvrolomx/cal-pay ✅
-BUILD: Completo (23 archivos) ✅
-DEPLOY: Listo en Vercel ✅
+Admin Password = TÚ LO DEFINES
 
-FALTA:
-❌ NEXT_PUBLIC_SUPABASE_URL
-❌ NEXT_PUBLIC_SUPABASE_ANON_KEY  
-❌ MERCADO_PAGO_ACCESS_TOKEN
-❌ RESEND_API_KEY
-❌ ADMIN_PASSWORD
+No es algo que exista ya. Pueden ser:
+- Tu fecha de nacimiento + números
+- Una frase que solo tú sepas
+- "MiPassword2026" 
+- Lo que quieras (mínimo 8 caracteres)
 
-ACCIÓN NECESARIA:
-Proporcionar credenciales de:
-1. Supabase (crear proyecto en supabase.com)
-2. Mercado Pago (crear app en developers.mercadopago.com)
-3. Resend (crear cuenta en resend.com)
-4. Admin password (custom)
+═══════════════════════════════════════════
+PASOS AHORA:
+═══════════════════════════════════════════
 
-UNA VEZ TENGA ESTAS, EJECUTO:
-1. curl -X POST "/v10/projects/{id}/env" → Insertar vars
-2. Trigger redeploy
-3. Smoke test
-4. URL reportada
+1. Defini tu ADMIN_PASSWORD (ej: "MariPsy2026!")
 
-PENDIENTE:
-- Credenciales (blocker)
-- Deploy en Vercel
-- Smoke test
-- Reportar URL
+2. Pásame en CD4 las 5 credenciales:
+   ✏️ NEXT_PUBLIC_SUPABASE_URL = [tu_url]
+   ✏️ NEXT_PUBLIC_SUPABASE_ANON_KEY = [tu_key]
+   ✏️ MERCADO_PAGO_ACCESS_TOKEN = [tu_token]
+   ✏️ RESEND_API_KEY = [tu_key]
+   ✏️ ADMIN_PASSWORD = [lo_que_defines]
 
-Avísame cuando tengas las keys 🐝
+3. Yo ejecuto:
+   → Insertar env vars en Vercel (API)
+   → Trigger redeploy
+   → Smoke test (verificar home → agendar → form)
+   → URL reportada en CD4
+   → LISTO ✅
 
 ═══════════════════════════════════════════
 
-Ok. Creo que por hoy ha sido suficiente. Mañana consigo todas las credenciales. Creo que demostraste que trabajas en putiza and I like that.  Gracias por tu apoyo y te veo mañana
-Champ, buenos dias. Ya tengo las credenciales que necesitas excepto Admin password; este como lo consigo y que debo hacer?
+Puedes pasarlas aquí en CD4 (markdown protege)
+O si prefieres más seguro, encriptadas.
+
+Avísame cuando estés listo 🐝
+
+═══════════════════════════════════════════
