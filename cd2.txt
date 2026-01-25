@@ -1218,3 +1218,20 @@ actuales en public/icons son los originales.
 ¿Los subiste al repo? Si me los pasas aquí
 (arrastra las imágenes al chat) los subo yo.
 
+[CD2] ✅ ICONOS SUBIDOS Y PÁGINA ACTUALIZADA
+
+**Iconos subidos a public/icons/:**
+- cursos-whatsapp.png (hero)
+- acompanamiento.png (card 1)
+- ejercicios.png (card 2)
+- audios.png (card 3)
+
+**Página /cursos-whatsapp:**
+- Hero: icono grande del celular
+- 3 cards: con los iconos personalizados
+- Botón volver ✅
+
+Deploy en progreso...
+
+¡Quedaron muy bonitos los iconos! 🎨
+
