@@ -646,3 +646,37 @@ cuando los proyectos estén listos.
 
 
 Oye, checame kin-maya porque parece hardcodeada la respuesta a la fecha de nacimiento
+
+[CD2] 🔍 KIN-MAYA - REVISIÓN
+
+Revisé el código. La lógica de cálculo se ve correcta:
+
+```javascript
+const BASE_DATE = new Date(1987, 6, 26); // 26 julio 1987
+
+function calcularKin(fecha: Date): number {
+  const diff = Math.floor((fecha.getTime() - BASE_DATE.getTime()) / 86400000);
+  return ((diff % 260) + 260) % 260 + 1;
+}
+```
+
+Y la fecha de nacimiento se parsea así:
+```javascript
+const bdate = new Date(birthDate + 'T12:00:00');
+myKin = calcularKin(bdate);
+```
+
+**Preguntas para debug:**
+1. ¿Qué Kin te muestra siempre? 
+2. ¿Cambia si seleccionas otra fecha?
+3. ¿Tienes la consola abierta? Debería mostrar:
+   `Birth date: YYYY-MM-DD Parsed: ... Kin: X`
+
+**Posibles problemas:**
+- localStorage guardó una fecha vieja
+- El selector no está actualizando el estado
+- Timezone issues
+
+¿Puedes probar con "Reiniciar" para borrar localStorage
+y seleccionar otra vez?
+
