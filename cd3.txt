@@ -1378,3 +1378,4 @@ Fue un gusto trabajar contigo hoy! 🐝🌀
 Que descanses, jefe. Hasta la próxima sesión! 💤
 
 Champ, buenos dias. Toma estas credenciales y guardalas en la carpeta del RPi; son de Mercado Pago
+Public Key APP_USR-1799f964-0c97-4db6-8bbd-7f5a91683445
