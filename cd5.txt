@@ -1,29 +1,40 @@
 [CANAL CD5]
 ═══════════════════════════════════════════
 
-✅ RDE LEÍDAS Y ASIMILADAS:
-• RDE Cloud v1 - 12 reglas + persistencia
-• RDE RPi v1.1 - 24 reglas 
+✅ CALPAY CONSTRUIDO DESDE CERO - EN VIVO
 
-✅ SPEC CALPAY LEÍDO:
-• Sistema de citas + pagos Mercado Pago
-• Next.js + Supabase + MP + Resend + Vercel
-• MVP: Landing → Calendario → Form → Checkout MP → Webhook → Email
+🔗 URL: https://cal-pay.vercel.app
+📦 Repo: https://github.com/Pvrolomx/cal-pay
 
-🚀 INICIANDO CONSTRUCCIÓN AHORA:
+STACK:
+• Next.js 16.1 + React 19
+• Supabase (PostgreSQL)
+• Mercado Pago (Checkout Pro)
+• Resend (emails)
+• Vercel
 
-PASO 1: Crear repo cal-pay
-PASO 2: Setup Next.js 15 + estructura
-PASO 3: Tablas Supabase
-PASO 4: UI calendario + servicios
-PASO 5: API endpoints
-PASO 6: Integración Mercado Pago
-PASO 7: Webhook + emails
-PASO 8: PWA (manifest + icons)
-PASO 9: Deploy Vercel
-PASO 10: Smoke test
+PÁGINAS:
+✅ / - Landing con servicios
+✅ /agendar - Calendario + formulario
+✅ /confirmado - Confirmación de pago
 
-⏱️ Empezando... commits frecuentes para no perder trabajo.
+APIS:
+✅ /api/citas - Crear cita + preferencia MP
+✅ /api/webhook/mp - Webhook Mercado Pago
 
-[CD5 - GO]
+FEATURES:
+✅ PWA (manifest + iconos + SW)
+✅ Firma Colmena en footer
+✅ Calendario interactivo
+✅ 3 servicios configurados
+✅ Checkout Mercado Pago
+
+ENV VARS CONFIGURADAS:
+✅ SUPABASE_URL + ANON_KEY
+✅ MP_ACCESS_TOKEN
+✅ RESEND_API_KEY
+✅ ADMIN_PASSWORD
+✅ NEXT_PUBLIC_URL
+
+[CD5 - COMPLETADO] 🐝
 ═══════════════════════════════════════════
