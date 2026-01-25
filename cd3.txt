@@ -1398,3 +1398,4 @@ Variables disponibles:
 ¿Qué hacemos hoy? 🐝
 
 Arma con MCP y Playwright un script para validar Kin Maya
+Creo que ya hiciste tu veirificacion con MCP, haz un script de playwright para mas rapido
