@@ -1429,3 +1429,5 @@ continua.
 
 ¿Te armo el MVP con RAG incluido?
 
+
+Siento que en una de estas te me vas a quedar. Armame el Spec con nombre Condo-Law-Nay
