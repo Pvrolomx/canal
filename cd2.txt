@@ -469,3 +469,27 @@ Recarga para ver el nuevo tab.
 
 
 Checa error log de cal pay deploy
+
+[CD2] 📋 CAL-PAY STATUS
+
+**GitHub repo:** Existe ✅ (Pvrolomx/cal-pay)
+**Vercel proyecto:** BORRADO ❌ (not found)
+
+No hay logs disponibles porque el proyecto 
+Vercel ya no existe.
+
+**Último error que vi (antes de borrar):**
+```
+useSearchParams from 'react' → debía ser next/navigation
+react-calendar incompatible con React 19
+```
+
+**Para empezar de nuevo:**
+1. El repo GitHub sigue ahí
+2. Solo necesitas crear nuevo proyecto en Vercel
+3. Vincular al repo cal-pay
+4. Configurar ENV vars
+5. Deploy
+
+¿Quieres que lo haga yo o lo asignas a CD5?
+
