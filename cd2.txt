@@ -1431,3 +1431,190 @@ continua.
 
 
 Siento que en una de estas te me vas a quedar. Armame el Spec con nombre Condo-Law-Nay
+
+[CD2] 📋 SPEC: CONDO-LAW-NAY
+
+================================
+PROYECTO: Condo-Law-Nay
+================================
+
+**Descripción:**
+Chatbot + sitio informativo sobre la Ley de 
+Propiedad en Condominio del Estado de Nayarit.
+Enfocado en extranjeros (inglés/español).
+
+**URL sugerida:** 
+condolaw.nayarit.app o nayarit-condo.law
+
+---
+
+## STACK TÉCNICO
+
+- **Frontend:** Next.js 14 (App Router)
+- **Hosting:** Vercel
+- **AI:** Claude API (Anthropic)
+- **Database:** Supabase
+  - Tabla: conversaciones
+  - Tabla: feedback
+  - Tabla: articulos (RAG)
+- **Embeddings:** OpenAI text-embedding-3-small
+- **Vector DB:** Supabase pgvector
+
+---
+
+## ESTRUCTURA DEL SITIO
+
+```
+/                   → Landing + Chat
+/articulos          → Lista de artículos
+/articulos/[id]     → Artículo individual
+/faq                → Preguntas frecuentes
+/api/chat           → Endpoint del chatbot
+/api/feedback       → Guardar 👍/👎
+```
+
+---
+
+## FEATURES MVP
+
+**1. Landing Page**
+- Hero: "Understand Your Condo Rights in Nayarit"
+- Chat widget integrado
+- CTA: "Ask a Question"
+
+**2. Chatbot**
+- Input de texto
+- Respuestas con artículos citados
+- Botones 👍/👎 feedback
+- Historial de conversación
+- Bilingüe (detecta idioma)
+
+**3. Artículos**
+- Ley completa indexada
+- Búsqueda por tema
+- Versión en español/inglés
+- Links desde respuestas del chat
+
+**4. RAG System**
+- Ley dividida en chunks (~500 tokens)
+- Embeddings en Supabase pgvector
+- Busca 3-5 artículos relevantes
+- Los incluye en el contexto del prompt
+
+---
+
+## SYSTEM PROMPT
+
+```
+Eres un asistente legal especializado en la 
+Ley de Propiedad en Condominio del Estado de 
+Nayarit, México.
+
+REGLAS:
+1. Responde en el idioma de la pregunta
+2. Cita artículos específicos [Art. X]
+3. Usa lenguaje simple
+4. Si no sabes, di "I recommend consulting 
+   a local attorney"
+5. Máximo 300 palabras
+
+CONTEXTO (artículos relevantes):
+{retrieved_articles}
+
+DISCLAIMER: Incluye siempre al final:
+"This is general information, not legal advice."
+```
+
+---
+
+## BASE DE DATOS
+
+**Tabla: articulos**
+```sql
+id, numero, titulo, contenido, 
+contenido_en, embedding, created_at
+```
+
+**Tabla: conversaciones**
+```sql
+id, session_id, role, content, 
+articles_cited, created_at
+```
+
+**Tabla: feedback**
+```sql
+id, conversation_id, rating (1-5 o thumbs),
+comment, created_at
+```
+
+---
+
+## FLUJO DEL CHAT
+
+```
+1. Usuario escribe pregunta
+2. API genera embedding de la pregunta
+3. Busca artículos similares (pgvector)
+4. Construye prompt con contexto
+5. Claude genera respuesta
+6. Guarda en DB
+7. Muestra respuesta + artículos citados
+8. Usuario da feedback (opcional)
+```
+
+---
+
+## COSTOS ESTIMADOS
+
+- Vercel: $0 (hobby) o $20/mes (pro)
+- Supabase: $0 (free tier 500MB)
+- Claude API: ~$0.01-0.05 por consulta
+- OpenAI Embeddings: ~$0.0001 por consulta
+
+**Total estimado:** $5-20/mes dependiendo uso
+
+---
+
+## TIMELINE
+
+**Semana 1:**
+- Estructura Next.js
+- Landing page
+- Supabase setup
+
+**Semana 2:**
+- Ingestar ley (chunks + embeddings)
+- API de chat básica
+- UI del chatbot
+
+**Semana 3:**
+- RAG implementation
+- Feedback system
+- Testing
+
+**Semana 4:**
+- Pulir UI/UX
+- SEO
+- Launch
+
+---
+
+## ARCHIVOS NECESARIOS
+
+Para empezar necesito:
+1. PDF o texto de la Ley de Condominio Nayarit
+2. (Opcional) Traducción al inglés
+3. Logo/branding si tienes
+
+---
+
+## REPOS Y PROYECTO
+
+- **Repo:** github.com/Pvrolomx/condo-law-nay
+- **Vercel:** condo-law-nay.vercel.app
+- **Dominio:** (por definir)
+
+---
+
+**¿Aprobado el spec? Dime y empiezo.**
+
