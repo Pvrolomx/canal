@@ -560,3 +560,5 @@ Le pasé toda la info:
 
 CD5 puede continuar cuando esté listo.
 
+
+Oye champ, cual es el drawback de crear subdominios? quiza hay algo que no veo?
