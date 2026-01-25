@@ -1173,3 +1173,5 @@ Acabo de verificar directamente:
 **Verificación directa:**
 - psicmarielapm.com/cursos-whatsapp/ ← abre esto
 
+
+Pasame un prompt para "Cursos por Whatsapp" , "Acompañamiento emocional" , "Ejercicios guiados" y "Audios y seguimiento" para dall-e
