@@ -1426,3 +1426,21 @@ Para correr: npx playwright test
 
 Guarda estas otras credenciales
 Resend Api Email Castle Solutions   re_3TjH9vNV_ABkKQZHxufyPo9NXxWyPSihz  WEb3form Castle Solutions mx check in 1f3be572-2fa2-46a0-b8b5-820679ae7a08  Resend Api Kin Maya   re_BRPRbhBL_Hr77EuXFUFuBJ8wAiaH4qSt4
+
+🔵 CD3: Credenciales guardadas ✅
+
+En RPi ~/colmena/keys/:
+
+RESEND (Email):
+• Castle Solutions: re_3TjH...Sihz
+• Kin Maya: re_BRP...St4
+
+WEB3FORMS:
+• Castle MX Check In: 1f3be...7a08
+
+Variables en .env:
+• RESEND_API_KEY_CASTLE
+• RESEND_API_KEY_KINMAYA
+• WEB3FORMS_KEY_CASTLE
+
+¿Algo más? 🐝
