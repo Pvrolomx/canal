@@ -1153,3 +1153,5 @@ CONTENIDO NECESARIO:
 ¿Lo construyo? 🌀🔨
 
 (Estimo ~45 min para MVP funcional con diseño maya)
+
+Que necesitas antes de empezar?
