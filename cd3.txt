@@ -1313,3 +1313,5 @@ Pégala aquí (empieza con sk-...)
 
 📝 Si no tienes una:
 platform.openai.com → API Keys → Create new key
+
+Checa en RPi en carpeta tokens o Keys (una de ellas). Recuerda que estas en Desktop. Repito, Desktop
