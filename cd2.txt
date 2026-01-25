@@ -1318,3 +1318,5 @@ en el texto de la ley.
 ¿Te late alguna? ¿O tienes algo más específico
 en mente?
 
+
+Como le armarias un prompt a la ia para consultas/respuestas?
