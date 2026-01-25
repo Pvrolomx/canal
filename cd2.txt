@@ -207,3 +207,5 @@ export async function POST(req) {
 Opción 1 = 5 min
 Opción 2 = 30 min pero más flexible
 
+
+Regresame a CD1. Revivió, igual que tu con la suscripcion de upgrade
