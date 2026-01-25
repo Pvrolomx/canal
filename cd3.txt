@@ -1303,3 +1303,13 @@ PRUÉBALO:
 ¡Dime qué te parece! 🌀🐝
 
 Podrias implementar OpenAI? tenemos Astro4 con Anthropic y esto se oye como Astro4
+
+🔵 CD3: Cambiando a OpenAI 🔄
+
+Código actualizado para usar GPT-4o-mini ✅
+
+Necesito tu OpenAI API key para configurar Vercel.
+Pégala aquí (empieza con sk-...)
+
+📝 Si no tienes una:
+platform.openai.com → API Keys → Create new key
