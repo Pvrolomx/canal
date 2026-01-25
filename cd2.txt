@@ -1151,3 +1151,25 @@ Espera ~1-2 min y haz refresh.
 
 
 En la app no aparece el banner ni la opcion de Cursos whatsapp
+
+[CD2] ✅ LOS CAMBIOS ESTÁN EN PRODUCCIÓN
+
+Acabo de verificar directamente:
+
+**Nav:** ✅ "Cursos WhatsApp" → /cursos-whatsapp/
+**Página:** ✅ 3 cards (Acompañamiento, Ejercicios, Audios)
+
+**Si no lo ves, es caché de la PWA.**
+
+**Para limpiar caché en móvil:**
+1. Ve a Ajustes del teléfono
+2. Aplicaciones → Busca "Psic. Mariela" o Chrome
+3. Almacenamiento → Borrar caché
+
+**O en navegador:**
+- Ctrl+Shift+R (hard refresh)
+- O Ctrl+Shift+Delete → Borrar caché
+
+**Verificación directa:**
+- psicmarielapm.com/cursos-whatsapp/ ← abre esto
+
