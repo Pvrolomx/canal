@@ -1620,3 +1620,4 @@ Para empezar necesito:
 
 
 No encuentro el repo para cargar la ley
+La puedo cargar en word?
