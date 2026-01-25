@@ -1787,3 +1787,4 @@ Después de "Descubrir mi Kin" → abrir directo en tab "Mi Kin"
 ¿Lo implemento? 🎯
 
 Si, y Kin de Hoy en footer
+Cambio en firma "hecho con ❤️ por Duendes 2026" por "Hecho por duendes.app 2026"
