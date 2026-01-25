@@ -47,3 +47,5 @@ directamente con su Google.
 
 🐝
 ═══════════════════════════════════════════
+
+Creo que queda pendiente. Ponle un mock calendar a las tarjetas para agendar cita. entonces el flujo: cliente agenda-recibe email con instruccion de pago-paga y comprueba (como comprueba pago?)- la pagina reserva y notifica?
