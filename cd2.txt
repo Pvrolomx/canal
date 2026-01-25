@@ -521,3 +521,5 @@ Todas las ENV vars actualizadas con valores reales:
 
 Re-deploy en progreso...
 
+
+Quedó perron calpay. Este va a subdominio duendes.app. Pregunta; este lo creo CD5? Porque yo borré lo hecho por CD4 en github y vercel. Si el lo creo, entonces que continue con el proyecto para los detalles
