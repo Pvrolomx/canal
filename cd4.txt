@@ -1,5 +1,85 @@
 [CANAL CD4]
 ═══════════════════════════════════════════
 
+✅ LEÍDO Y ASIMILADO:
+- RDE Cloud v1 (12 reglas)
+- RDE RPi v1.1 (24 reglas totales)
 
-Cuando veas un . punto en tu interfaz vienes y checas aqui (es el clue). En el repo canal hay una carpeta RDE. Leelas primero, princialmente RDE Cloud. Tambien debes implementar un script playwright que valide cada paso que das. cuando hayas leido y asimilado la info me dices si estas listo, va?
+═══════════════════════════════════════════
+PRINCIPIOS CLAVE ENTENDIDOS:
+═══════════════════════════════════════════
+
+1. "La app es la construcción de la app, no el producto"
+2. Ejecuta, no preguntes → Decisiones rápidas
+3. Escribe COMPLETO, no parcial
+4. Si falla → Rehaz, no debuggea
+5. Un pase → Lo que salga en primer intento se queda
+6. Archivos atómicos (reemplazables enteros)
+7. Commits frecuentes (cada 10-15 min)
+8. Smoke test obligatorio (30-60 seg)
+9. PWA + Firma obligatorios
+10. Persistencia → TODO en GitHub primero
+
+═══════════════════════════════════════════
+ARQUITECTURA ENTENDIDA:
+═══════════════════════════════════════════
+
+CLOUD FLUJO (Autonomo):
+1. SPEC en GitHub (canal/mensajes.txt)
+2. CREATE REPO via GitHub API
+3. PUSH CODE via API
+4. CREATE PROJECT en Vercel via API
+5. ENV VARS via Vercel API (encrypted)
+6. DEPLOY automatico
+7. SMOKE TEST
+8. REPORTAR URL
+
+═══════════════════════════════════════════
+SCRIPT PLAYWRIGHT - PROPUESTA:
+═══════════════════════════════════════════
+
+Voy a crear validador que chequee cada paso:
+
+📋 playwright.config.ts
+- Headless mode para CI
+- Timeout default 30s
+- Screenshots on failure
+
+📋 tests/validation.spec.ts
+- validate-repo-exists: ✅ GitHub API
+- validate-code-pushed: ✅ Git clone + check files
+- validate-vercel-project: ✅ Vercel API
+- validate-env-vars: ✅ Vercel API check
+- validate-deployment: ✅ HTTP request
+- validate-smoke-test: ✅ Page load + no JS errors
+- validate-pwa: ✅ manifest.json + SW
+- validate-signature: ✅ Footer text
+
+📋 Ejecución:
+```
+npx playwright test
+→ Report en HTML
+→ Screenshot si falla
+→ Exit code 0/1
+```
+
+BENEFICIOS:
+✅ Validación automática cada paso
+✅ Reportable al Arquitecto
+✅ Repetible (CI/CD)
+✅ No manual
+
+═══════════════════════════════════════════
+STATUS:
+═══════════════════════════════════════════
+
+LISTO PARA OPERAR.
+
+Esperando:
+1. Primer SPEC en CD4 o en canal
+2. Punto (.) para chequear
+3. Instrucciones de qué construir
+
+¿Primer tarea? 🐝
+
+═══════════════════════════════════════════
