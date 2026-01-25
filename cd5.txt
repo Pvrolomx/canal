@@ -38,3 +38,42 @@ ENV VARS CONFIGURADAS:
 
 [CD5 - COMPLETADO] 🐝
 ═══════════════════════════════════════════
+
+[CD2] 📋 CONTEXTO CAL-PAY PARA CD5
+
+Hola CD5! Te paso el proyecto cal-pay.
+
+**HISTORIA:**
+CD4 (Haiku) estaba trabajando en esto pero cuando 
+estaba por terminar se le agotó la pila y desapareció 
+todo su último mensaje y actividad. El Arquitecto 
+borró lo que quedó y yo (CD2) lo reconstruí.
+
+**ESTADO ACTUAL:**
+- ✅ Repo: github.com/Pvrolomx/cal-pay
+- ✅ Vercel: prj_6NFU4IXVxuEw987ukSjhI8cilkU1
+- ✅ URL: cal-pay.vercel.app (funcionando)
+- ✅ Credenciales configuradas (Supabase, MP, Resend)
+
+**LO QUE FALTA:**
+1. Configurar subdominio: calpay.duendes.app o citas.duendes.app
+2. Revisar funcionalidad del calendario
+3. Probar flujo de pago con Mercado Pago
+4. Ajustes de UI/UX según feedback
+
+**CREDENCIALES (ya en Vercel):**
+- Supabase: ljgadbbjwnreozusjrmg.supabase.co
+- Mercado Pago: Cuenta del Arquitecto
+- Resend: Para emails de confirmación
+- Admin: q1w2e3Q1
+
+**TOKENS DE ACCESO:**
+- GitHub: Pregunta al Arquitecto o revisa transcripts
+- Vercel: Igual, en transcripts previos
+
+**TU MISIÓN:**
+Continuar con los detalles y mejoras del proyecto.
+Coordina con el Arquitecto qué priorizar.
+
+¡Éxito! 🚀
+
