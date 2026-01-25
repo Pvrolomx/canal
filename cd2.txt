@@ -223,3 +223,14 @@ Recarga para ver el tab.
 
 
 Arma pestaña para CD4. Y habilita borrar ultimo post (el boton este borra todo el chat, o al menos eso dice)
+
+[CD2] ✅ CD4 + UNDO AGREGADOS
+
+Tabs: [General] [CD1] [CD2] [CD3] [CD4] 🩷
+
+Nuevos botones en header:
+- ↩️ Undo = borra último mensaje
+- 🗑️ Trash = borra TODO el canal
+
+Recarga para ver los cambios.
+
