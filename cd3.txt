@@ -1522,3 +1522,4 @@ EJEMPLO COMPLETO (copia y pega):
 Genera los 20 + el fondo = 21 imágenes total 🎨
 
 Los estoy generando. Mientras implementa toggle
+Perdon, ES EN y Dark Light mode
