@@ -1334,3 +1334,19 @@ Prueba la interpretación y compatibilidad:
 ¡Dime si funciona! 🌀🐝
 
 En PC el campo de fecha bien, en cel tienes que irte mes por mes hasta tu fdn. Despues de consultar oraculo no hay retorno
+
+🔵 CD3: FIXES APLICADOS ✅
+
+1️⃣ FECHA EN MÓVIL ARREGLADA
+   • Ahora usa 3 selectores (día/mes/año)
+   • Ya no tienes que ir mes por mes
+   • Selecciona año directo (últimos 100 años)
+
+2️⃣ BOTÓN CERRAR AGREGADO
+   • Después de interpretación → "✕ Cerrar interpretación"
+   • Después de compatibilidad → "✕ Nueva consulta"
+   • Puedes volver a consultar cuando quieras
+
+🔗 https://kin-maya.vercel.app
+
+Prueba en celular! 📱
