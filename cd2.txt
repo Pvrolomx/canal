@@ -547,3 +547,5 @@ necesito agregar el dominio en Vercel.
 Si CD5 va a continuar, le paso el contexto 
 en su canal con todo lo que necesita saber.
 
+
+Pasale el contexto en su canal. dile que cuando estaba por terminar se le agotó la pila y desaparecio todo el ultimo mensaje y actividad
