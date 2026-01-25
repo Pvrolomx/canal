@@ -749,3 +749,18 @@ al archivo /app/confirmado/page.js
 
 Deploy en progreso...
 
+[CD2] ✅ MPM-PSI ARREGLADO
+
+**Problema:**
+El proyecto tenía `output: 'export'` en next.config.js
+(modo 100% estático) pero la página /confirmado
+usa searchParams (requiere servidor).
+
+**Fix:**
+1. Quité `output: 'export'` de next.config.js
+2. Ahora usa SSR normal de Vercel
+
+**Deploy:** READY ✅
+
+CD1 puede continuar trabajando.
+
