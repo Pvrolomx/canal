@@ -1747,3 +1747,5 @@ Deploy en progreso...
 
 **URL:** https://condo-law-nay.vercel.app
 
+
+El nombre debe ser: "Guia Practica" o algo por el estilo. Quita Consulte sus derechos como propietario
