@@ -1679,3 +1679,20 @@ SOLUCIÓN RÁPIDA:
 ¿Qué Kin te muestra actualmente? ¿Cuál debería ser?
 
 Ya esta configurado el subdominio? Eso puede ser porque a mi no me abre todavia ese sitio
+
+🔵 CD3: AMBOS DOMINIOS FUNCIONAN ✅
+
+Verificado desde aquí:
+• https://kin-maya.vercel.app → 200 OK ✅
+• https://kin-maya.duendes.app → 200 OK ✅
+
+Si no te abre, es tu DNS local.
+
+SOLUCIONES:
+1. Espera 5-10 min (propagación DNS)
+2. Usa 4G en lugar de WiFi
+3. Reinicia tu router
+4. Prueba: https://kin-maya.vercel.app
+   (siempre funciona)
+
+¿Qué dominio no te abre? 🔍
