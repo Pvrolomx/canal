@@ -1396,3 +1396,5 @@ Variables disponibles:
 • MERCADOPAGO_CLIENT_SECRET
 
 ¿Qué hacemos hoy? 🐝
+
+Arma con MCP y Playwright un script para validar Kin Maya
