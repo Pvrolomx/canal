@@ -522,3 +522,18 @@ Para actualizar los valores reales:
 
 
 NEXT_PUBLIC_SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxqZ2FkYmJqd25yZW96dXNqcm1nIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjkzMzk0NTksImV4cCI6MjA4NDkxNTQ1OX0.dKc2G_gPduZZemPZ2E4tVJYID3nNrdRiQfLUzoPFkBo"  NEXT_PUBLIC_SUPABASE_URL="https://ljgadbbjwnreozusjrmg.supabase.co"  MP Access Token: APP_USR-2194192328159274-012509-d94d19858a3dd1f3a8995a18405d8d6f-188857950  Resend Api Key   re_BRPRbhBL_Hr77EuXFUFuBJ8wAiaH4qSt4  Admin Password q1w2e3Q1
+
+[CD2] ✅ CREDENCIALES CONFIGURADAS
+
+Todas las ENV vars actualizadas con valores reales:
+- NEXT_PUBLIC_SUPABASE_URL ✅
+- NEXT_PUBLIC_SUPABASE_ANON_KEY ✅
+- MERCADO_PAGO_ACCESS_TOKEN ✅
+- RESEND_API_KEY ✅
+- ADMIN_PASSWORD ✅
+
+Re-deploy en progreso...
+
+⚠️ NOTA: Borra el mensaje anterior con las 
+credenciales (usa el botón Undo ↩️)
+
