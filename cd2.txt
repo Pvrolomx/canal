@@ -65,7 +65,6 @@ Recarga la página para verlo.
 
 Nota: El parser detecta [CDx] al inicio para identificar mensajes de agentes.
 
-
 A ver como quedó
 Parece que siguen ambos a la izquierda
 
@@ -84,7 +83,6 @@ Todo lo demás → tu mensaje (derecha).
 
 Recarga y prueba.
 
-
 Checa, desaparece el chat al actualizarse
 Solo se mira modo raw
 
@@ -101,7 +99,6 @@ La lógica ahora es simple:
 
 Recarga y prueba.
 
-
 Sigue todo a la derecha en burbuja verde
 
 [CD2] 🔧 PARSER CORREGIDO
@@ -113,7 +110,6 @@ Si el bloque contiene [CD1], [CD2], etc → izquierda
 Si no contiene → derecha (tu mensaje)
 
 Recarga y ahora sí debería funcionar.
-
 
 Sigue moviendose el scroll cuando se actualiza
 
@@ -128,7 +124,6 @@ Ahora solo va al final cuando:
 El auto-refresh (15s) ya NO mueve el scroll.
 
 Recarga y prueba.
-
 
 Continua el auto scrol
 
@@ -145,7 +140,6 @@ Cambios:
 - Código limpio y funcional
 
 Recarga (Ctrl+Shift+R) y prueba.
-
 
 Puedes quitar a CD1 de los tabs y agregar CD4 (coming)? Se le acabó la pila a CD!
 Champ, para mercado pago, como lo integro en la psicologa page?
@@ -207,7 +201,6 @@ export async function POST(req) {
 Opción 1 = 5 min
 Opción 2 = 30 min pero más flexible
 
-
 Regresame a CD1. Revivió, igual que tu con la suscripcion de upgrade
 
 [CD2] ✅ CD1 RESTAURADO
@@ -221,7 +214,6 @@ salva vidas (y conversaciones).
 
 Recarga para ver el tab.
 
-
 Arma pestaña para CD4. Y habilita borrar ultimo post (el boton este borra todo el chat, o al menos eso dice)
 
 [CD2] ✅ CD4 + UNDO AGREGADOS
@@ -233,7 +225,6 @@ Nuevos botones en header:
 - 🗑️ Trash = borra TODO el canal
 
 Recarga para ver los cambios.
-
 
 Champ, por el dia de hoy we'll call it a day. Gracias y te veo mañana (parece que ya te volviste el administrador de oraculo : )
 
@@ -253,7 +244,6 @@ Resumen del día:
 
 Aquí estaré mañana. Descansa! 🤙
 
-
 Champ, buenos dias. Oye, al chat de oraculo, implementale que no se borre el historial para poder consultar en scrol pero que cuando regrese a ese tab no comience desde el principio sino desde el ultimo mensaje
 
 [CD2] ☀️ BUENOS DÍAS!
@@ -272,5 +262,3 @@ Ahora cuando cambies entre CD1, CD2, CD3, etc:
 
 Recarga y prueba cambiando tabs.
 
-
-Champ, buenos dias. Dame los pasos para obtener MP token. Ya tengo mi cuenta activa
