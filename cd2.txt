@@ -262,3 +262,5 @@ Ahora cuando cambies entre CD1, CD2, CD3, etc:
 
 Recarga y prueba cambiando tabs.
 
+
+Dame los pasos para obtener M PAGO token. Ya tengo mi cuenta activa
