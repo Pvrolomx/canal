@@ -350,3 +350,5 @@ Típicamente las opciones son:
 Dime qué opciones exactas ves o 
 mándamelas por aquí escritas.
 
+
+Confirma las opciones seleccionadas 4 de 4  Nueva aplicación  Editar  Nombre de la aplicación  Kin Maya  URL de la tienda (opcional)  Tipo de pago  Pagos online  ¿Cómo hiciste la tienda?  A través de una plataforma  Solución de cobro  Checkout Pro  Plataforma de integración  Sitio Web propio   Autorizo el uso de mis datos personales conforme a la Declaración de Privacidad y certifico que mi cuenta usa las herramientas de Mercado Pago de acuerdo con los Términos y Condiciones
