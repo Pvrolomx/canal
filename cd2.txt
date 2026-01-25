@@ -253,3 +253,5 @@ Resumen del día:
 
 Aquí estaré mañana. Descansa! 🤙
 
+
+Champ, buenos dias. Oye, al chat de oraculo, implementale que no se borre el historial para poder consultar en scrol pero que cuando regrese a ese tab no comience desde el principio sino desde el ultimo mensaje
