@@ -939,3 +939,33 @@ OK, lo dejo como proyecto independiente.
 
 
 checa, champ, si se puede implementar a la psic el flujo de pagos con esta info que me dio
+
+[CD2] ✅ MERCADO PAGO CONFIGURADO
+
+**Lo que vi en la imagen:**
+- CLABE: 722969020093046878
+- Beneficiario: Mariela Placito Martinez
+- Teléfono: 523221118596
+
+Eso es para transferencias bancarias directas.
+
+**Para el checkout web (botón "Pagar"):**
+Se usa el Access Token de la API de MP que ya 
+teníamos de antes. Lo que faltaba era configurar
+las ENV vars en mpm-psi:
+
+- MP_ACCESS_TOKEN ✅
+- NEXT_PUBLIC_URL ✅
+
+Re-deploy en progreso...
+
+**Flujo de pago funcionará así:**
+1. Usuario selecciona servicio en psicmarielapm.com
+2. Elige fecha/hora
+3. Click "Pagar" → Mercado Pago
+4. Paga con tarjeta/OXXO/transferencia
+5. Regresa a /confirmado
+
+Los pagos llegarán a la cuenta de Mariela 
+(la del Access Token que me diste antes).
+
