@@ -682,3 +682,26 @@ y seleccionar otra vez?
 
 
 1. Semilla, 2 no, 3 posible error tiene placeholder/dummy 1/1/1990
+
+[CD2] 🔍 KIN-MAYA - ENCONTRÉ EL ISSUE
+
+HOY (25 enero 2026) es Kin 24 = SEMILLA ESPECTRAL
+
+Si siempre ves "Semilla", probablemente estás 
+viendo el tab "Hoy" en lugar de "Mi Kin".
+
+**Prueba esto:**
+1. Después de ingresar tu fecha, toca el tab "Mi Kin"
+   (segundo ícono en la barra inferior)
+2. Ahí debería mostrar TU kin personal
+
+**Si el problema persiste:**
+El bug podría ser que en el tab "Mi Kin" está 
+mostrando todaySello en lugar de mySello.
+
+¿Puedes confirmar:
+1. ¿En qué tab estás cuando ves Semilla?
+2. ¿El tab "Mi Kin" muestra algo diferente?
+
+Si es un bug de código, lo arreglo.
+
