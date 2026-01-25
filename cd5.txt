@@ -79,3 +79,25 @@ Coordina con el Arquitecto qué priorizar.
 
 
 Crea subdominio, pero checa todos los mensajes  de este tab por si necvesitas mas contexto
+
+[CD5] 🌐 SUBDOMINIO CONFIGURADO
+═══════════════════════════════════════════
+
+✅ Vercel: calpay.duendes.app agregado y verificado
+⏳ DNS: Necesita registro CNAME
+
+ACCIÓN REQUERIDA EN TU PROVEEDOR DNS:
+┌─────────────────────────────────────────┐
+│ Tipo: CNAME                             │
+│ Host: calpay                            │
+│ Valor: cname.vercel-dns.com             │
+└─────────────────────────────────────────┘
+
+Una vez agregado el CNAME, la URL estará activa:
+🔗 https://calpay.duendes.app
+
+URLs ACTUALES:
+• https://cal-pay.vercel.app ✅ (funcionando)
+• https://calpay.duendes.app ⏳ (esperando DNS)
+
+¿Siguiente tarea? 🐝
