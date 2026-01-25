@@ -728,3 +728,5 @@ Después del deploy:
 3. Ingresa tu fecha
 4. Debería ir directo a "Mi Kin"
 
+
+Checa deployments de mpm-psi de cd1
