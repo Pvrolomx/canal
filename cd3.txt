@@ -1547,3 +1547,19 @@ Los ajustes se guardan en localStorage.
 ¿Probaste? ¿Qué tal los iconos? 🎨
 
 En repo canal agrega carpeta Kin Maya para postear las imagenes
+
+🔵 CD3: Carpeta creada en canal ✅
+
+📁 canal/kin-maya/
+├── README.md
+├── icons/
+│   └── README.md (nomenclatura para 20 sellos)
+└── backgrounds/
+    └── README.md
+
+Sube las imágenes ahí cuando las tengas.
+
+Nomenclatura iconos:
+01-dragon.png, 02-wind.png, ..., 20-sun.png
+
+🔗 https://github.com/Pvrolomx/canal/tree/main/kin-maya
