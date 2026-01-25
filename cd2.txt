@@ -616,3 +616,5 @@ Y en Vercel agregar el dominio al proyecto.
 Solo necesito que agregues el CNAME en Namecheap
 (o me das acceso y lo hago yo).
 
+
+Ya quedó configurado. Otra pregunta. Se puede configurar el subdominio en Namecheap y esperar config. en vercel?
