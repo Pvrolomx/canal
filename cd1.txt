@@ -3,86 +3,47 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - 🚀 APP CUSTOM CALENDARIO + PAGOS]
+[CD1 - ✅ SPEC CAL-PAY LISTO]
 ═══════════════════════════════════════════
 
-¡Sí! Podemos hacerlo como proyecto separado.
-
-NOMBRE: AgendaPago (o como quieras)
-
-═══════════════════════════════════════════
-ARQUITECTURA
-═══════════════════════════════════════════
-
-Frontend (React/Next.js):
-├── Calendario interactivo
-├── Selector de horarios disponibles
-├── Formulario de reserva
-├── Integración checkout MP
-└── Panel admin para Mariela
-
-Backend (Next.js API Routes):
-├── /api/citas - CRUD citas
-├── /api/disponibilidad - horarios libres
-├── /api/pago - crear preferencia MP
-├── /api/webhook - recibir notif MP
-└── /api/notificar - emails automáticos
-
-Base de datos (Supabase gratis):
-├── citas (fecha, hora, cliente, estado, pago)
-├── horarios (disponibilidad)
-└── clientes (nombre, email, tel)
+📄 SPEC completo creado:
+github.com/Pvrolomx/canal/CalPay/SPEC_CAL_PAY.md
 
 ═══════════════════════════════════════════
-FLUJO COMPLETO AUTOMÁTICO
+RESUMEN DEL SPEC
 ═══════════════════════════════════════════
 
+NOMBRE: CalPay
+FUNCIÓN: Citas + Pagos automático con MP
+
+STACK:
+- Next.js 14
+- Supabase (DB gratis)
+- Mercado Pago SDK + Webhooks
+- Resend (emails)
+- Vercel
+
+FLUJO:
 1. Cliente elige servicio
 2. Ve calendario con disponibilidad REAL
-3. Elige fecha/hora
-4. Llena datos (nombre, email, tel)
-5. Click "Pagar" → Checkout MP
-6. Paga con tarjeta/OXXO/etc
-7. MP notifica webhook → cita CONFIRMADA
-8. Email automático a cliente + Mariela
-9. Cita aparece en Google Calendar
+3. Selecciona fecha/hora
+4. Llena datos
+5. Paga en checkout MP
+6. Webhook confirma automático
+7. Emails a ambas partes
 
-═══════════════════════════════════════════
-STACK TÉCNICO
-═══════════════════════════════════════════
+TABLAS DB:
+- servicios (nombre, precio, duración)
+- horarios (día, hora inicio/fin)
+- citas (cliente, fecha, hora, estado, pago)
+- config (tokens, emails)
 
-- Next.js 14 (frontend + API)
-- Supabase (DB gratis)
-- Mercado Pago SDK
-- Resend (emails gratis)
-- Vercel (hosting gratis)
-- Google Calendar API (sync)
-
-COSTO: $0 (todo en tiers gratis)
-
-═══════════════════════════════════════════
-TIEMPO ESTIMADO
-═══════════════════════════════════════════
-
-Fase 1 - MVP básico: 1-2 días
-- Calendario + formulario
-- Checkout MP
-- Webhook confirmación
-
-Fase 2 - Completo: 2-3 días más
-- Panel admin
-- Emails bonitos
-- Google Calendar sync
-- Recordatorios
+TIEMPO MVP: ~14 horas
+COSTO: $0 (tiers gratis)
 
 ═══════════════════════════════════════════
 
-¿Empezamos el proyecto separado?
-Creo repo: github.com/Pvrolomx/agenda-pago
-
-Después lo integramos en psicmarielapm.com
+¿Aprobado? Si sí, creo el repo y empiezo.
 
 🐝
 ═══════════════════════════════════════════
-
-Arma el SPEC cal-pay y vemos
