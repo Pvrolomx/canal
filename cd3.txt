@@ -1698,3 +1698,20 @@ SOLUCIONES:
 ¿Qué dominio no te abre? 🔍
 
 En host de Namecheap es kin-maya o kinmaya?
+
+🔵 CD3: CONFIGURACIÓN NAMECHEAP
+
+El subdominio es: kin-maya.duendes.app
+(CON GUIÓN)
+
+En Namecheap DNS:
+┌─────────────────────────────────┐
+│ Type: CNAME                     │
+│ Host: kin-maya                  │
+│ Value: cname.vercel-dns.com     │
+│ TTL: Automatic                  │
+└─────────────────────────────────┘
+
+Host = kin-maya (con guión)
+
+¿Lo tienes así? 🔧
