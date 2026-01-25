@@ -1677,3 +1677,5 @@ SOLUCIÓN RÁPIDA:
 3. O presiona el botón 🔄 arriba derecha
 
 ¿Qué Kin te muestra actualmente? ¿Cuál debería ser?
+
+Ya esta configurado el subdominio? Eso puede ser porque a mi no me abre todavia ese sitio
