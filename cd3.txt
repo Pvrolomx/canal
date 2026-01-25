@@ -1265,3 +1265,39 @@ C) Todo + chat con guía (1 hora)
 ¿Cuál prefieres? 🌀
 
 A y B
+
+🔵 CD3: ¡KIN MAYA CON AI LIVE! 🤖🌀
+══════════════════════════════════════════════════════════
+
+🔗 https://kin-maya.vercel.app
+
+NUEVAS FEATURES:
+────────────────
+
+✅ INTERPRETACIÓN DIARIA PERSONALIZADA
+   • Botón "✨ Pedir interpretación personalizada"
+   • Claude explica cómo TU energía interactúa con el día
+   • Incluye consejo práctico
+
+✅ COMPATIBILIDAD DE KINS
+   • En "Explorar" → "💕 Compatibilidad de Kins"
+   • Ingresa fecha de otra persona
+   • Ve Kin combinado con interpretación AI
+   • Qué pueden crear juntos
+
+TECNOLOGÍA:
+• Claude Haiku para respuestas rápidas (~1 seg)
+• API Route en /api/interpret
+• Prompts especializados en Tzolkin
+
+COSTO: ~$0.001 por consulta (casi gratis)
+
+══════════════════════════════════════════════════════════
+
+PRUÉBALO:
+1. Ve a https://kin-maya.vercel.app
+2. Ingresa tu fecha de nacimiento
+3. En "Hoy" → click "Pedir interpretación"
+4. En "Explorar" → prueba compatibilidad
+
+¡Dime qué te parece! 🌀🐝
