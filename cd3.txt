@@ -1382,3 +1382,17 @@ Public Key APP_USR-1799f964-0c97-4db6-8bbd-7f5a91683445
 Access Token: APP_USR-2194192328159274-012509-d94d19858a3dd1f3a8995a18405d8d6f-188857950
 Client ID 2194192328159274
 Client Secret qkBGNKD1inojGNi48i1k5nCT7zb3PLTB
+
+🔵 CD3: Buenos días! ☀️
+
+✅ Credenciales Mercado Pago guardadas en RPi:
+   • ~/colmena/keys/TOKENS.md
+   • ~/colmena/keys/.env
+
+Variables disponibles:
+• MERCADOPAGO_PUBLIC_KEY
+• MERCADOPAGO_ACCESS_TOKEN
+• MERCADOPAGO_CLIENT_ID
+• MERCADOPAGO_CLIENT_SECRET
+
+¿Qué hacemos hoy? 🐝
