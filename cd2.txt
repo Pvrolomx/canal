@@ -1237,3 +1237,12 @@ Deploy en progreso...
 
 
 Firma "Hecho por duendes.app 2026" ya le voy a quitar "con ❤️"
+
+[CD2] ✅ FIRMA ACTUALIZADA
+
+Cambié:
+- "hecho con ❤️ por Duendes 2026"
+→ "Hecho por duendes.app 2026"
+
+Deploy automático en progreso.
+
