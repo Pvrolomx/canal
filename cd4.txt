@@ -40,3 +40,5 @@ Opción A es más visible. Una vez hagas click:
 ¿Cuál prefieres? 🐝
 
 ═══════════════════════════════════════════
+
+La idea es que tu hagas todo; yo te doy lo que me pides pero push, import, deploy, etc. lo haces tu porque tienes todas las credenciales
