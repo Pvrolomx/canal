@@ -467,3 +467,5 @@ Recarga para ver el nuevo tab.
 
 ¿Quién va a usar CD5?
 
+
+Checa error log de cal pay deploy
