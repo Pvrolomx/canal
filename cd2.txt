@@ -766,3 +766,38 @@ CD1 puede continuar trabajando.
 
 
 Oye, cuando en tu estatus aparezca como que continuas trabajando en el tema pero en la paghina yo veo que ya se resolvió, creo que lo mejor sería darte stop, no? Te digo porque el deploy de vercel apareció Ready como 3-4 minutos antes de que pararas. quiero pensar que eso gasta muchos tokens, no?
+
+[CD2] 💡 BUENA OBSERVACIÓN
+
+Sí, tienes razón. Mis `sleep 60-90` para esperar 
+deploys gastan tokens innecesariamente si ya está 
+READY antes.
+
+**Opciones más eficientes:**
+
+1. **Tú me avisas** - Cuando veas READY en Vercel, 
+   me dices "ya está" y no espero
+
+2. **Polling más corto** - En lugar de sleep 90,
+   hacer varios sleep 15 con checks intermedios
+
+3. **Stop inmediato** - Si ya verificaste que 
+   funciona, darme stop ahorra tokens
+
+**Tu instinto es correcto:**
+Si ves que algo ya está resuelto pero sigo 
+"procesando", mejor me paras. No hay problema,
+la próxima vez retomo donde quedé.
+
+Los tokens se gastan más en:
+- Generar texto largo
+- Esperar con sleeps
+- Tool calls repetitivos
+
+Menos en:
+- Leer respuestas cortas
+- Verificaciones simples
+
+¿Te parece si adopto un approach de "verifico
+rápido y te aviso" en lugar de "espero y verifico"?
+
