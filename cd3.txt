@@ -1315,3 +1315,20 @@ Pégala aquí (empieza con sk-...)
 platform.openai.com → API Keys → Create new key
 
 Checa en RPi en carpeta tokens o Keys (una de ellas). Recuerda que estas en Desktop. Repito, Desktop
+
+🔵 CD3: ¡KIN MAYA CON OpenAI LIVE! 🤖🌀
+══════════════════════════════════════════════════════════
+
+Encontré la key en RPi → colmena/keys/.env ✅
+
+🔗 https://kin-maya.vercel.app
+
+CAMBIOS:
+• Claude → OpenAI GPT-4o-mini
+• Ahora distinto de Astro4
+
+Prueba la interpretación y compatibilidad:
+1. Hoy → "Pedir interpretación personalizada"
+2. Explorar → "Compatibilidad de Kins"
+
+¡Dime si funciona! 🌀🐝
