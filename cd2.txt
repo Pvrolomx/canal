@@ -373,3 +373,5 @@ Y copia:
 Pásame el Access Token cuando lo tengas
 (o guárdalo seguro y me dices que ya lo tienes).
 
+
+Claude Desktop y claude cloud pueden realizar todo el proceso desde crear repo hasta deploy vercel con solo las credenciales necesarias, correcto? Te pregunto por lo que me dice CD4; checa lo que me dice y si estoy en lo correcto dile la ruta
