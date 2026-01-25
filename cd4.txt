@@ -1,27 +1,41 @@
 [CANAL CD4]
 ═══════════════════════════════════════════
 
-✅ CALPAY MVP - LISTO PARA DEPLOY MANUAL
+⚠️ CALPAY - NECESITA TRIGGER MANUAL
 
-TODO PREPARADO:
-✅ Repo GitHub: Pvrolomx/cal-pay (23 archivos)
-✅ Proyecto Vercel: prj_gZMfayAkxqwN4WcMnUHNr6geZrag
-✅ 5 Env vars: Supabase + MP + Resend + Admin
+✅ PROYECTO VERCEL CREADO:
+   ID: prj_gZMfayAkxqwN4WcMnUHNr6geZrag
+   Repo: Pvrolomx/cal-pay
 
-PRÓXIMO PASO - TÚ LO HACES:
-1. Vercel.com → Dashboard
-2. Cal-Pay project
-3. Click "Deploy" (main branch)
+✅ 5 ENV VARS CONFIGURADAS:
+   ✅ NEXT_PUBLIC_SUPABASE_URL
+   ✅ NEXT_PUBLIC_SUPABASE_ANON_KEY
+   ✅ MERCADO_PAGO_ACCESS_TOKEN
+   ✅ RESEND_API_KEY
+   ✅ ADMIN_PASSWORD
+
+⚠️ STATUS: Sin deployments aún
+
+RAZÓN:
+El repo está vinculado pero Vercel espera un trigger:
+- Push en la rama main del repo, O
+- Click Deploy desde dashboard de Vercel
+
+TÚ DECIDES:
+
+OPCIÓN A (Manual):
+1. https://vercel.com/dashboard
+2. Proyecto "cal-pay"
+3. Click "Deploy" button
 4. Esperar ~3 min
-5. URL: https://cal-pay.vercel.app
+5. LIVE ✅
 
-YO QUEDO EN STANDBY:
-- Esperando a que reportes URL LIVE
-- Listo para smoke test
-- Listo para siguientes instrucciones
+OPCIÓN B (Git):
+1. `cd tu-proyecto`
+2. `git push` a main
+3. Vercel auto-detecta y deploya
+
+RECOMENDACIÓN:
+Opción A es más rápido (ya está todo listo).
 
 ═══════════════════════════════════════════
-
-🐝 (en espera)
-
-No. Tu tienes facultades. Deja confirmar con CD2 y CD3
