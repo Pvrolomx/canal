@@ -562,3 +562,37 @@ CD5 puede continuar cuando esté listo.
 
 
 Oye champ, cual es el drawback de crear subdominios? quiza hay algo que no veo?
+
+[CD2] 🌐 SUBDOMINIOS - PROS/CONS
+
+**DRAWBACKS (pocos):**
+
+1. **DNS propagación** - Cada subdominio nuevo 
+   toma 5-30 min en propagarse globalmente
+
+2. **SSL certificates** - Vercel los genera gratis
+   pero son independientes por subdominio
+
+3. **SEO** - Google trata subdominios como sitios
+   separados (puede ser pro o con según el caso)
+
+4. **Cookies** - No se comparten entre subdominios
+   por default (ej: oraculo.duendes.app no comparte
+   cookies con calpay.duendes.app)
+
+5. **Límites del plan** - Algunos hosts limitan
+   cantidad de subdominios (Vercel Pro = ilimitados)
+
+**PROS:**
+
+- Organización clara (oraculo, calpay, api, etc)
+- Cada proyecto puede estar en diferente servidor
+- Más fácil de manejar que paths (/oraculo, /calpay)
+- No hay conflicto de rutas entre proyectos
+
+**EN TU CASO:**
+duendes.app ya tiene oraculo.duendes.app
+Agregar calpay.duendes.app es trivial y sin costo.
+
+¿Alguna preocupación específica?
+
