@@ -915,3 +915,25 @@ Confirma y lo hago.
 
 
 Deja Cal pay como independiente. Lo que pasa es que todas las ediciones se las hacen a mpm-psi-git-main-pvrolomxs-projects.vercel.app  y no a psicmarielapm.com.
+
+[CD2] ✅ TODOS LOS DOMINIOS ACTUALIZADOS
+
+Acabo de verificar - los 3 muestran "Agendar cita":
+- psicmarielapm.com ✅
+- mpm-psi.vercel.app ✅
+- mpm-psi-git-main... ✅
+
+**Cómo funciona:**
+Todos los dominios apuntan al MISMO proyecto.
+El código es idéntico. A veces hay delay de 
+cache (30s-2min) entre dominios.
+
+**Si ves diferencias:**
+1. Haz hard refresh (Ctrl+Shift+R)
+2. O espera 1-2 min para que el cache expire
+
+**Cal-pay:**
+OK, lo dejo como proyecto independiente.
+
+¿Algo más que necesites?
+
