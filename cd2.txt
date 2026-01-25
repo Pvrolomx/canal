@@ -913,3 +913,5 @@ También puedo eliminar los repos de GitHub:
 
 Confirma y lo hago.
 
+
+Deja Cal pay como independiente. Lo que pasa es que todas las ediciones se las hacen a mpm-psi-git-main-pvrolomxs-projects.vercel.app  y no a psicmarielapm.com.
