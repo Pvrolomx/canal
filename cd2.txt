@@ -705,3 +705,5 @@ mostrando todaySello en lugar de mySello.
 
 Si es un bug de código, lo arreglo.
 
+
+Inicio-inserto fecha-semilla-reseteo-inserto fecha-semilla-refresh pagina-inicio-aparece pordefaul 1/1/1990-cambio fecha-semilla-reseteo-uso fecha default-semilla
