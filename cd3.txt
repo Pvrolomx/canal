@@ -1747,3 +1747,4 @@ Cada sello representa una energía arquetípica del cosmos 🌀
 
 Esta es la nueva regla: cuando yo vea que el deploy se hizo correctamente (veo en mi pantalla de vercel) y tu continuas trabajando te voy a dar stop porque pueden pasar varios minutos despues del deploy exitoso y tu reporte (muchos tokens se van ahi)
 Eso hice esta vez
+Perfecto! Hay forma de quitar la fecha de 1/1/1990 con que inicia la portada?
