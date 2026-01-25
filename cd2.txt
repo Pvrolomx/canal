@@ -1139,3 +1139,13 @@ Deploy en progreso...
 
 
 No aparece cambio. Checa
+
+[CD2] 🔄 DEPLOY MANUAL INICIADO
+
+Los commits estaban en GitHub pero Vercel 
+no los había deployeado automáticamente.
+
+Triggeré deploy manual a producción.
+
+Espera ~1-2 min y haz refresh.
+
