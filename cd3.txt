@@ -788,3 +788,148 @@ TIPS:
 
 Era cuestion de renovar plan. ya recuperé a CD1
 Pero sabes que? Echate un clavado a la tradicion Maya y checa cuantas apps hay sobre eso y sobre las existentes dime en que fallan o que les falta
+
+🔵 CD3: ANÁLISIS APPS TRADICIÓN MAYA 🌀
+══════════════════════════════════════════════════════════
+
+APPS EXISTENTES PRINCIPALES:
+────────────────────────────
+
+1. 13:20:Sync (iOS/Android) ⭐⭐⭐⭐
+   • La más completa (Dreamspell)
+   • Tzolkin + 13 Lunas + Oráculos
+   • Calculadora de Kin combinado
+   • $4.99 USD
+   FALLAS:
+   ✗ Solo Dreamspell (no Cholq'ij tradicional)
+   ✗ UI anticuada
+   ✗ Sin notificaciones diarias
+   ✗ Sin comunidad/social
+
+2. Dreamspell Calendar (Android) ⭐⭐⭐
+   • Gratis con anuncios
+   • Oráculo diario
+   • Widget para home screen
+   FALLAS:
+   ✗ Interfaz muy básica
+   ✗ Errores en conceptos (según usuarios)
+   ✗ Sin versión iOS
+   ✗ Última actualización 2023
+
+3. Maya Calendar (Dr. Barnhart) (iOS) ⭐⭐⭐
+   • Enfoque académico/arqueológico
+   • Cuenta Larga auténtica
+   • Birthdays feature
+   FALLAS:
+   ✗ Solo iOS
+   ✗ Sin contenido espiritual/práctico
+   ✗ UI muy técnica
+   ✗ $2.99 sin actualizaciones frecuentes
+
+4. Latido Nawal (Android) ⭐⭐⭐
+   • Cholq'ij guatemalteco AUTÉNTICO
+   • Conecta con Ajq'ij (sacerdotisas)
+   • En español
+   FALLAS:
+   ✗ Solo Android
+   ✗ Muy básica
+   ✗ Sin notificaciones
+   ✗ Sin oráculos completos
+
+5. Nawal Maya (Android) ⭐⭐
+   • Gratis
+   • Calcula nawal por fecha
+   FALLAS:
+   ✗ Muy limitada
+   ✗ Sin contenido diario
+   ✗ Bugs reportados
+
+6. Calendario Maya (Alhega) ⭐⭐
+   • Meditaciones diarias
+   • Glifos visuales
+   FALLAS:
+   ✗ 148 descargas total
+   ✗ Sin comunidad
+   ✗ Desarrollo abandonado
+
+WEBS (no apps):
+• MayanKin.com - Decodificador de fechas
+• ViaTzolkin.com - Blog con Kin diario
+• LawoofTime.org - Referencia oficial Dreamspell
+• aprendoqeqchi.com - Calculadora Cholq'ij
+
+══════════════════════════════════════════════════════════
+PROBLEMAS COMUNES EN TODAS LAS APPS:
+══════════════════════════════════════════════════════════
+
+1. ❌ CONFUSIÓN DREAMSPELL vs CHOLQ'IJ
+   • Mezclan calendarios sin explicar diferencia
+   • Dreamspell = José Argüelles (1987, New Age)
+   • Cholq'ij = Tradicional Maya vivo (Guatemala)
+   • Los usuarios no saben cuál siguen
+
+2. ❌ UI/UX ANTICUADA
+   • Diseños de 2010-2015
+   • Sin dark mode
+   • No mobile-first
+   • Sin gestos modernos
+
+3. ❌ SIN NOTIFICACIONES INTELIGENTES
+   • No te avisan la energía del día
+   • No te preparan para días importantes
+   • No alertan portales galácticos
+
+4. ❌ SIN COMPONENTE SOCIAL
+   • No encuentras gente con tu mismo Kin
+   • No hay comunidad
+   • No hay eventos/ceremonias
+
+5. ❌ SIN PERSONALIZACIÓN
+   • No adaptan contenido a tu nivel
+   • Mismo texto para principiante y experto
+   • Sin paths de aprendizaje
+
+6. ❌ SOLO LECTURA PASIVA
+   • No hay journaling
+   • No hay tracking de sincronicidades
+   • No hay integración con vida real
+
+7. ❌ MONETIZACIÓN POBRE
+   • O todo gratis con ads molestos
+   • O pago único sin updates
+   • No hay modelo sustentable
+
+══════════════════════════════════════════════════════════
+OPORTUNIDAD: APP "KIN" o "NAWAL"
+══════════════════════════════════════════════════════════
+
+CONCEPTO:
+"Tu guía diaria de energía Maya - simple, hermosa, viva"
+
+DIFERENCIADORES:
+✅ AMBOS SISTEMAS: Dreamspell Y Cholq'ij (el usuario elige)
+✅ DISEÑO MODERNO: Dark mode, glassmorphism, animaciones
+✅ NOTIFICACIÓN MATUTINA: "Hoy es Serpiente 8 - día de transformación"
+✅ JOURNALING: Escribe tu experiencia del día
+✅ COMUNIDAD: Encuentra tu tribu de Kin
+✅ PERSONALIZADO: Onboarding que detecta tu nivel
+✅ PWA: Web app instalable (sin App Store)
+✅ FREEMIUM: Básico gratis, Pro con features avanzados
+
+FEATURES MVP:
+1. Tu Kin/Nawal de nacimiento (calculadora)
+2. Energía del día (con notificación)
+3. Oráculo de 5 posiciones
+4. Significado de tonos y sellos
+5. Compatibilidad con otros Kin
+
+FEATURES PRO:
+• Sincronario anual personalizado
+• Tracking de sincronicidades
+• Comunidad y eventos
+• Ceremonias y rituales guiados
+• Consultas con Ajq'ij reales
+
+══════════════════════════════════════════════════════════
+
+¿Quieres que arme el SPEC? 🌀🐝
