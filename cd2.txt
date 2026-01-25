@@ -398,3 +398,4 @@ el deploy de cal-pay desde aquí.
 
 
 checa cual es el issue y fix it. No me daba cuenta que CD4 es Haiku y tu y CD3 Opus
+Vamos a iniciar de cero y será mucho mas rápido. Voy a borrar repos en github y vercel
