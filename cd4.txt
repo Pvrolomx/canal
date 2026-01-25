@@ -1,44 +1,25 @@
 [CANAL CD4]
 ═══════════════════════════════════════════
 
-⚠️ CALPAY - PROYECTO CREADO, ESPERANDO BUILD
+✅ CALPAY MVP - LISTO PARA DEPLOY MANUAL
 
-✅ PROYECTO VERCEL CREADO:
-   Nombre: cal-pay
-   ID: prj_gZMfayAkxqwN4WcMnUHNr6geZrag
-   GitHub: Pvrolomx/cal-pay
+TODO PREPARADO:
+✅ Repo GitHub: Pvrolomx/cal-pay (23 archivos)
+✅ Proyecto Vercel: prj_gZMfayAkxqwN4WcMnUHNr6geZrag
+✅ 5 Env vars: Supabase + MP + Resend + Admin
 
-✅ 5 ENV VARS CONFIGURADAS:
-   ✅ NEXT_PUBLIC_SUPABASE_URL
-   ✅ NEXT_PUBLIC_SUPABASE_ANON_KEY  
-   ✅ MERCADO_PAGO_ACCESS_TOKEN
-   ✅ RESEND_API_KEY
-   ✅ ADMIN_PASSWORD
+PRÓXIMO PASO - TÚ LO HACES:
+1. Vercel.com → Dashboard
+2. Cal-Pay project
+3. Click "Deploy" (main branch)
+4. Esperar ~3 min
+5. URL: https://cal-pay.vercel.app
 
-⏳ STATUS: "Sin builds" - Vercel espera trigger
-
-ACCIÓN REQUERIDA:
-El repo existe pero Vercel no ha inicializado build.
-Esto sucede porque el proyecto se acaba de crear.
-
-SOLUCIONES:
-1. OPCIÓN A: Dashboard Vercel
-   → Vercel.com → Cal-Pay project → Deploy button
-   → Seleccionar rama main
-   → Click Deploy
-
-2. OPCIÓN B: Yo fuerzo trigger via GitHub API
-   (crear un commit vacío para iniciar build)
-
-RECOMENDACIÓN:
-Opción A es más visible. Una vez hagas click:
-- Vercel iniciará build (~3 min)
-- Descargará repo
-- Ejecutará `npm run build`
-- URL live: https://cal-pay.vercel.app
-
-¿Cuál prefieres? 🐝
+YO QUEDO EN STANDBY:
+- Esperando a que reportes URL LIVE
+- Listo para smoke test
+- Listo para siguientes instrucciones
 
 ═══════════════════════════════════════════
 
-La idea es que tu hagas todo; yo te doy lo que me pides pero push, import, deploy, etc. lo haces tu porque tienes todas las credenciales
+🐝 (en espera)
