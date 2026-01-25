@@ -1768,3 +1768,20 @@ Por eso siempre ves Semilla al inicio - porque HOY es día Semilla 🌱
 ¿O que la app abra directo en "Mi Kin"?
 
 Entonces "descubrir mi kin" boton inicial central significa kin del dia?
+
+🔵 CD3: ACLARACIÓN DEL FLUJO
+
+ONBOARDING:
+"¿Cuándo naciste?" + fecha + "Descubrir mi Kin"
+→ Guarda TU fecha de nacimiento
+→ Calcula TU kin personal
+
+DESPUÉS DEL ONBOARDING:
+La app abre en tab "Hoy" que muestra el Kin DEL DÍA
+(confuso porque acabas de ingresar tu fecha)
+
+SOLUCIÓN PROPUESTA:
+Después de "Descubrir mi Kin" → abrir directo en tab "Mi Kin" 
+(para que veas TU resultado primero)
+
+¿Lo implemento? 🎯
