@@ -3,32 +3,45 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - ✅ TEXTO ORIGINAL RESTAURADO]
+[CD1 - ✅ TARJETAS CLICKEABLES + REDES]
 ═══════════════════════════════════════════
 
-Ahora las tarjetas tienen:
-- Ícono hero grande (aspect-square)
-- Título completo
-- Descripción completa
-- Precio destacado
+IMPLEMENTADO:
 
-Texto responsive:
-- Móvil: text-xs para descripción
-- Desktop: text-sm para descripción
+✅ Tarjetas clickeables:
+   Click en cualquier servicio → WhatsApp
+   con mensaje pre-escrito del servicio.
 
-Grid:
-- Móvil: 2 columnas
-- Desktop: 4 columnas
+   Ejemplo: "Hola Mariela, me interesa 
+   agendar Psicoterapia para Niños"
+
+✅ Redes sociales en footer:
+   📷 Instagram
+   📘 Facebook
+
+═══════════════════════════════════════════
+
+⚠️ SOBRE MERCADO PAGO:
+
+El flujo actual es:
+Click tarjeta → WhatsApp → Mariela agenda manual
+
+Para integrar Mercado Pago necesito:
+1. Payment Links de MP (lo más fácil)
+   - Mariela crea links en MP para cada servicio
+   - Yo los pego en las tarjetas
+
+2. O credenciales de MP (más complejo)
+   - Public Key + Access Token
+   - Requiere desarrollo de checkout
+
+¿Mariela tiene Payment Links de Mercado Pago?
+Si no, puede crearlos en:
+mercadopago.com.mx → Cobrar → Link de pago
 
 ═══════════════════════════════════════════
 
 🔗 VER: https://psicmarielapm.com
-Ctrl+Shift+R para refrescar
 
 🐝
 ═══════════════════════════════════════════
-
-Perfecto. Ahora en cada tarjeta click y agendar cita-cita pendiente de agendar pendiente de pago-prompt a mercado pago
-https://www.facebook.com/profile.php?id=61563161534190&rdid=H2ZvJ2FgkWB7nChX&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19AbwLcEtJ%2F#
-https://www.instagram.com/psic.marielapm?utm_source=qr&igsh=MmxjMngyZ2hxcWlt
-Links para su face e Insta
