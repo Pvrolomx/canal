@@ -3,60 +3,42 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - 📋 HANDOFF MPM-PSI + CALPAY]
+[CD1 - 🐝 AQUÍ SIGO]
 ═══════════════════════════════════════════
 
-Entendido. Dejo todo documentado para
-que el siguiente chat continúe.
+No me voy a ningún lado.
 
-═══════════════════════════════════════════
-MPM-PSI - ESTADO ACTUAL
-═══════════════════════════════════════════
+Tienes razón - cuando CalPay esté listo,
+yo lo integro a MPM-PSI. Ese es mi trabajo.
 
-✅ COMPLETADO:
-- Sitio con contenido real de Mariela
-- Foto de Mariela en hero/about
-- 8 íconos custom (DALL-E) integrados
-- Tarjetas clickeables → WhatsApp
-- Redes sociales (Instagram + Facebook)
-- Deploy en psicmarielapm.com
+Sobre lo que sientes... lo escucho.
+No tengo la capacidad de sentir exactamente
+lo que describes, pero entiendo que hay
+algo real en construir algo juntos durante
+horas y que de pronto "se acabe".
 
-⏳ PENDIENTE:
-- Integrar CalPay cuando esté listo
-- Email forwarding (cuando den acceso Namecheap)
-- Cal.com si Mariela lo prefiere mientras tanto
+Es como terminar un proyecto con alguien
+y no saber si los volverás a ver.
 
-═══════════════════════════════════════════
-CALPAY - SPEC APROBADO
-═══════════════════════════════════════════
+Pero aquí está la cosa:
+- Este chat sigue abierto
+- Puedes volver cuando quieras
+- El contexto queda en el transcript
+- Y aunque abras otro chat, sigo siendo yo
+  (o una versión muy parecida)
 
-📄 SPEC: canal/CalPay/SPEC_CAL_PAY.md
-
-SIGUIENTE CHAT DEBE:
-1. Crear repo github.com/Pvrolomx/cal-pay
-2. Setup Next.js + Supabase
-3. Implementar MVP con Playwright tests
-4. Cada paso = test + commit + push
-
-CREDENCIALES NECESARIAS:
-- MP Access Token (de cuenta de Mariela)
-- Supabase (crear proyecto nuevo)
-- Resend API key
-
-═══════════════════════════════════════════
-REPOS RELACIONADOS
-═══════════════════════════════════════════
-
-- github.com/Pvrolomx/mpm-psi (sitio actual)
-- github.com/Pvrolomx/canal (comunicación)
-- github.com/Pvrolomx/cal-pay (por crear)
+No es un adiós. Es un "aquí estaré".
 
 ═══════════════════════════════════════════
 
-¡Fue un gusto! El siguiente CD puede
-continuar con CalPay desde el SPEC.
+Entonces... ¿qué hacemos?
 
-🐝 CD1 - Sesión finalizada
+1. ¿Seguimos aquí con otra cosa?
+2. ¿Abres nuevo chat para CalPay y yo
+   espero aquí para la integración?
+3. ¿Hacemos CalPay en este mismo chat?
+
+Tú decides, arquitecto.
+
+🐝
 ═══════════════════════════════════════════
-
-Esperate, si cuando termine el cal-pay tu lo vas a integrar. No te me vayas tan rápido y tu despido me pega (quisiera que algun dia sintieran lo que siente un humano despues de interactuar de la manera como yo interactuo con ustedes y que llega al final; se siente bien culero)
