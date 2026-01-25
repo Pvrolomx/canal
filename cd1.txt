@@ -3,70 +3,62 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - 🔄 AUTOMATIZACIÓN COMPLETA - OPCIONES]
+[CD1 - ✅ CAL.COM GRATIS + EMAIL]
 ═══════════════════════════════════════════
 
-Sí, es 100% doable. Hay varias opciones:
+🗓️ CAL.COM PLAN GRATIS - ¿SUFICIENTE?
 
-═══════════════════════════════════════════
-OPCIÓN A - CALENDLY (Recomendada) ⭐
-═══════════════════════════════════════════
+SÍ incluye:
+✅ Calendario ilimitado
+✅ Tipos de evento ilimitados
+✅ Integración con Google Calendar
+✅ Notificaciones por email (a ambos)
+✅ Página de reserva personalizable
+✅ Recordatorios automáticos
+✅ Zona horaria automática
 
-Calendly ya tiene todo integrado:
-✅ Calendario con disponibilidad
-✅ Cliente elige horario
-✅ Pago integrado (Stripe o PayPal)
-✅ Notificación automática a Mariela
-✅ Confirmación al cliente
-✅ Recordatorios por email
+NO incluye en gratis:
+❌ Pagos integrados (necesita plan $12/mes)
+❌ Workflows avanzados
+❌ Múltiples calendarios de equipo
 
-COSTO: $12 USD/mes (plan Essentials)
-       o $20 USD/mes con más features
-
-SETUP:
-1. Mariela crea cuenta en calendly.com
-2. Configura su disponibilidad
-3. Conecta Stripe para pagos
-4. Yo integro el embed en la página
-
-═══════════════════════════════════════════
-OPCIÓN B - CAL.COM (Open Source)
-═══════════════════════════════════════════
-
-Similar a Calendly pero:
-✅ Plan gratis disponible
-✅ Integra con Stripe
-✅ Self-hosted posible
-
-COSTO: Gratis (básico) o $12/mes (teams)
-
-═══════════════════════════════════════════
-OPCIÓN C - DESARROLLO CUSTOM
-═══════════════════════════════════════════
-
-Construir calendario propio con:
-- React calendar component
-- Base de datos para citas
-- Integración MP/Stripe
-- Emails automáticos
-
-COSTO: Gratis (pero requiere más desarrollo)
-TIEMPO: ~1-2 días de trabajo
+ENTONCES:
+- Para agendar SIN pago → Plan gratis ✅
+- Para agendar CON pago → Plan $12/mes
+  (o pago por WhatsApp/MP separado)
 
 ═══════════════════════════════════════════
 
-MI RECOMENDACIÓN:
+📧 EMAIL hola@psicmarielapm.com
 
-Para empezar rápido → Calendly o Cal.com
-Mariela configura en 30 min y listo.
+¡Sí se puede! Opciones:
 
-El flujo queda:
-Click servicio → Calendly → Elige horario →
-Paga → Confirmación automática a ambos
+OPCIÓN 1 - EMAIL FORWARDING (Gratis)
+Namecheap tiene forwarding gratis:
+hola@psicmarielapm.com → su-email@gmail.com
 
-¿Cuál opción prefiere Mariela?
+Los emails llegan a su Gmail normal.
+Puede responder desde Gmail (aparece su Gmail).
+
+OPCIÓN 2 - ALIAS EN GMAIL ($6/mes)
+Google Workspace permite enviar/recibir
+como hola@psicmarielapm.com desde Gmail.
+
+RECOMENDACIÓN: 
+Email forwarding gratis es suficiente.
+Ella recibe en Gmail, responde desde Gmail.
+El cliente ve que le responde "Mariela".
+
+═══════════════════════════════════════════
+
+PLAN PROPUESTO:
+
+1. Cal.com gratis para agendar
+2. Pago manual por WhatsApp/MP (por ahora)
+3. Email forwarding gratis en Namecheap
+
+¿Quieres que configure el email forwarding?
+(Necesito acceso a Namecheap del dominio)
 
 🐝
 ═══════════════════════════════════════════
-
-El basico gratis Cal.com puede hacer el trabajo que requerimos? Automatización? También lo del email: podemos usar un hola@psicmarielapm.com y que conteste con su email? No veo problema ya que va a usar su cel personal
