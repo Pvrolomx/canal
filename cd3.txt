@@ -1563,3 +1563,5 @@ Nomenclatura iconos:
 01-dragon.png, 02-wind.png, ..., 20-sun.png
 
 🔗 https://github.com/Pvrolomx/canal/tree/main/kin-maya
+
+Posteadas
