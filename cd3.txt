@@ -1523,3 +1523,25 @@ Genera los 20 + el fondo = 21 imágenes total 🎨
 
 Los estoy generando. Mientras implementa toggle
 Perdon, ES EN y Dark Light mode
+
+🔵 CD3: TOGGLES IMPLEMENTADOS ✅
+
+https://kin-maya.vercel.app
+
+NUEVAS FUNCIONES:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🌐 IDIOMA (ES ↔ EN)
+• Botón arriba derecha
+• Todo el UI traducido
+• Interpretaciones AI en ambos idiomas
+• Sellos y tonos traducidos
+
+🌙 MODO OSCURO/CLARO
+• Botón ☀️/🌙
+• Dark mode por defecto (actual)
+• Light mode limpio y legible
+
+Los ajustes se guardan en localStorage.
+
+¿Probaste? ¿Qué tal los iconos? 🎨
