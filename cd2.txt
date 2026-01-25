@@ -1375,3 +1375,5 @@ you have grounds to challenge the decision.
 
 ¿Quieres que te arme un MVP del chatbot?
 
+
+Y esos prompts pueden mejorar respuesta al mejorarse el prompt. Puede escalar de alguna manera?
