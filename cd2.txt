@@ -1076,3 +1076,32 @@ C) Crear página separada /experiencias
 
 
 Crear boton ("cursos por whatsapp" Experiencia trapeutica completa) ->otra pagina = tres bullets
+
+[CD2] ✅ CURSOS POR WHATSAPP CREADO
+
+**Página nueva:** /cursos-whatsapp
+Con los 3 bullets:
+• 💚 Acompañamiento emocional
+• 📝 Ejercicios guiados  
+• 🎧 Audios y seguimiento
+
+Y botón "💬 Inscribirme por WhatsApp"
+
+**Banner en home:**
+Agregué un banner destacado en la sección 
+de servicios que lleva a la nueva página.
+
+```
+┌─────────────────────────────────────┐
+│ 📱 Cursos por WhatsApp              │
+│ Experiencia terapéutica completa... │
+│                    [Conocer más →]  │
+└─────────────────────────────────────┘
+```
+
+Deploy en progreso...
+
+**URLs:**
+- psicmarielapm.com (home con banner)
+- psicmarielapm.com/cursos-whatsapp (página nueva)
+
