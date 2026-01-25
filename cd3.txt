@@ -935,3 +935,170 @@ FEATURES PRO:
 ¿Quieres que arme el SPEC? 🌀🐝
 
 Para los horoscopos y numerologia y demas tenemos las formulas. Que formulas tenemos o existen disponibles para consulta/oraculo/comunidad/etc
+
+🔵 CD3: FÓRMULAS DISPONIBLES PARA APP MAYA 📐
+══════════════════════════════════════════════════════════
+
+1️⃣ CÁLCULO DEL KIN (Número del 1-260)
+────────────────────────────────────────
+FÓRMULA BASE:
+días_desde_referencia = fecha_gregoriana - fecha_base
+kin = (días_desde_referencia % 260) + 1
+
+FECHA BASE (Correlación GMT):
+• Dreamspell: 26 julio 1987 = Kin 1
+• Cholq'ij: 21 dic 2012 = 4 Ajaw (Kin equivalente)
+
+CÓDIGO JS:
+function calcKin(fecha) {
+  const base = new Date(1987, 6, 26); // 26 jul 1987
+  const diff = Math.floor((fecha - base) / 86400000);
+  return ((diff % 260) + 260) % 260 + 1;
+}
+
+══════════════════════════════════════════════════════════
+2️⃣ SELLO SOLAR (1-20) y TONO GALÁCTICO (1-13)
+────────────────────────────────────────
+Del Kin, extraer:
+• SELLO = ((kin - 1) % 20) + 1
+• TONO = ((kin - 1) % 13) + 1
+
+20 SELLOS (Dreamspell):
+1.Dragón 2.Viento 3.Noche 4.Semilla 5.Serpiente
+6.Enlazador 7.Mano 8.Estrella 9.Luna 10.Perro
+11.Mono 12.Humano 13.Caminante 14.Mago 15.Águila
+16.Guerrero 17.Tierra 18.Espejo 19.Tormenta 20.Sol
+
+20 NAWALES (Cholq'ij Guatemala):
+B'atz', E, Aj, I'x, Tz'ikin, Ajmaq, No'j, Tijax,
+Kawoq, Ajpu, Imox, Iq', Aq'ab'al, K'at, Kan,
+Kame, Kej, Q'anil, Toj, Tz'i'
+
+13 TONOS:
+1.Magnético 2.Lunar 3.Eléctrico 4.Autoexistente
+5.Entonado 6.Rítmico 7.Resonante 8.Galáctico
+9.Solar 10.Planetario 11.Espectral 12.Cristal 13.Cósmico
+
+══════════════════════════════════════════════════════════
+3️⃣ ORÁCULO DE 5 POSICIONES
+────────────────────────────────────────
+Cada Kin tiene 4 energías complementarias FIJAS:
+
+CENTRO: Tu Sello (destino)
+GUÍA (arriba): Mismo color, varía según tono
+ANÁLOGO (derecha): Soporte/compatible
+ANTÍPODA (izquierda): Desafío/fortalecedor  
+OCULTO (abajo): Poder escondido
+
+FÓRMULAS:
+• GUÍA: Mismo color, avanza según tono:
+  - Tono 1,6,11 → Guía = mismo sello
+  - Tono 2,7,12 → Guía = +12 sellos (mismo color)
+  - Tono 3,8,13 → Guía = +4 sellos (mismo color)
+  - Tono 4,9 → Guía = +16 sellos (mismo color)
+  - Tono 5,10 → Guía = +8 sellos (mismo color)
+
+• ANÁLOGO: sello_análogo = 19 - sello + 1 (si >20, -20)
+• ANTÍPODA: sello_antípoda = sello + 10 (si >20, -20)
+• OCULTO: sello_oculto = 21 - sello
+
+TONO OCULTO: 14 - tono_destino
+
+Ejemplo Dragón (1):
+• Análogo: Sol (20) [19-1+1=19, ajustado=20]
+• Antípoda: Mono (11) [1+10=11]
+• Oculto: Sol (20) [21-1=20]
+
+══════════════════════════════════════════════════════════
+4️⃣ COMPATIBILIDAD / KIN COMBINADO
+────────────────────────────────────────
+Para 2 personas:
+
+sello_combinado = (sello1 + sello2) % 20 || 20
+tono_combinado = (tono1 + tono2 - 1) % 13 + 1
+
+O más simple:
+kin_combinado = (kin1 + kin2 - 1) % 260 + 1
+
+Interpretación:
+• El Kin combinado revela la energía de la RELACIÓN
+• Qué pueden crear juntos
+• Lecciones compartidas
+
+══════════════════════════════════════════════════════════
+5️⃣ WAVESPELL (Onda Encantada de 13 días)
+────────────────────────────────────────
+wavespell = Math.ceil(kin / 13)
+
+Hay 20 Wavespells (260/13 = 20)
+Cada Wavespell tiene un tema de 13 días
+
+══════════════════════════════════════════════════════════
+6️⃣ CASTILLO (52 días)
+────────────────────────────────────────
+castillo = Math.ceil(kin / 52)
+
+5 Castillos:
+1. Rojo (Kins 1-52) - Este - Iniciar
+2. Blanco (Kins 53-104) - Norte - Refinar
+3. Azul (Kins 105-156) - Oeste - Transformar
+4. Amarillo (Kins 157-208) - Sur - Madurar
+5. Verde (Kins 209-260) - Centro - Encantar
+
+══════════════════════════════════════════════════════════
+7️⃣ PORTALES GALÁCTICOS (GAP)
+────────────────────────────────────────
+52 días especiales de alta frecuencia
+Lista fija en el Tzolkin (simétricos al centro)
+
+const GAP_DAYS = [1,20,22,39,43,50,51,58,64,69,72,77,
+85,88,93,96,106,107,108,109,110,111,112,113,
+148,149,150,151,152,153,154,155,165,168,173,
+176,184,189,192,197,203,210,211,218,222,239,
+241,260];
+
+es_portal = GAP_DAYS.includes(kin)
+
+══════════════════════════════════════════════════════════
+8️⃣ AÑO SOLAR GALÁCTICO
+────────────────────────────────────────
+Inicia 26 de julio cada año
+Ciclo de 52 años (4 colores × 13 tonos)
+
+año_kin = calcKin(new Date(año, 6, 26))
+
+══════════════════════════════════════════════════════════
+9️⃣ FAMILIA TERRESTRE
+────────────────────────────────────────
+5 familias, 4 sellos cada una:
+
+Polar: Dragón, Viento, Águila, Tierra
+Cardinal: Serpiente, Enlazador, Mono, Guerrero
+Central: Mano, Estrella, Humano, Sol
+Señal: Noche, Caminante, Espejo, Luna
+Portal: Semilla, Perro, Mago, Tormenta
+
+familia = FAMILIAS[sello]
+
+══════════════════════════════════════════════════════════
+🔟 LUNA DE 13 (Calendario 13 Lunas × 28 días)
+────────────────────────────────────────
+Año = 13 lunas de 28 días = 364 días
++ 1 Día Fuera del Tiempo (25 julio)
+
+Cada luna tiene nombre y tono:
+1.Magnética, 2.Lunar, 3.Eléctrica... etc.
+
+══════════════════════════════════════════════════════════
+
+RESUMEN: TENEMOS TODO PARA CALCULAR:
+✅ Kin de cualquier fecha
+✅ Sello y Tono
+✅ Oráculo completo (5 posiciones)
+✅ Compatibilidad entre personas
+✅ Wavespell y Castillo
+✅ Portales galácticos
+✅ Año galáctico
+✅ Familia terrestre
+
+¿Armo el SPEC con todas estas fórmulas implementadas? 🌀🐝
