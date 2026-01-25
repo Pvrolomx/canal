@@ -1587,3 +1587,5 @@ ICONOS SUBIDOS:
 └── background.png
 
 ¡Pruébalo! 🎨✨
+
+Corre tests playwright (no los hagas tu con MCP)
