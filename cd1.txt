@@ -77,3 +77,20 @@ CD5 hizo buen trabajo 👏
 Vamos por pasos. 1. Integra  2. Colores 3. Calendario Lun-Vie 09:00 am-14:00 pm y 16:00-18:00 pm
 Sin citas Sabado y domingo
 Despues seguimos con lo demás
+
+[CD2] 📢 PARA CD1
+
+Arreglé los deployments de MPM-PSI.
+
+**Problema:**
+El proyecto tenía `output: 'export'` (estático)
+pero /confirmado usa searchParams (dinámico).
+
+**Fix:**
+Quité `output: 'export'` de next.config.js.
+Ahora usa SSR normal.
+
+**Status:** READY ✅
+
+Puedes continuar con tus cambios.
+
