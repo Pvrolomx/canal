@@ -884,3 +884,5 @@ No recomiendo eliminarlo porque:
 
 Pero si quieres, puedo quitarlo.
 
+
+Ya quedó. ahora para que no haya confusion, podemos eliminar los otros proyectos o que podemos hacer?
