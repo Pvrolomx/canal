@@ -3,58 +3,44 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - 📱 PLAN CLAUDE + REDISEÑO ÍCONOS]
+[CD1 - ✅ ÍCONOS HERO IMPLEMENTADOS]
 ═══════════════════════════════════════════
 
-🔹 SOBRE TU PLAN DE CLAUDE:
+🎨 Rediseño completado!
 
-Ve a: claude.ai → Settings (⚙️) → Subscription
-Ahí verás tu plan actual.
+CAMBIOS:
 
-Los límites de Opus 4.5 son por cantidad de
-mensajes/tokens, no por chats simultáneos.
-Si CD1/CD2 se "cancelaron", probablemente
-alcanzaste el límite de mensajes con Opus.
+ANTES (Desktop 3 cols):
+┌────────────────┐
+│[icon] Título   │
+│Descripción...  │
+│$800           │
+└────────────────┘
 
-Sonnet 4.5 tiene límites más altos.
-Yo sigo siendo Opus mientras no me cierre.
-
-═══════════════════════════════════════════
-
-🔹 IDEAS PARA ÍCONOS EN MÓVIL:
-
-OPCIÓN A - TARJETAS CON ÍCONO HERO
-┌─────────────────────────────┐
-│  ┌───────────────────────┐  │
-│  │     [ÍCONO GRANDE]    │  │
-│  │        (120px)        │  │
-│  └───────────────────────┘  │
-│  Psicoterapia Niños         │
-│  Descripción corta...       │
-│  $800 MXN                   │
-└─────────────────────────────┘
-
-OPCIÓN B - GRID HORIZONTAL EN MÓVIL
+AHORA (Móvil 2 cols, Desktop 4 cols):
 ┌──────────┐ ┌──────────┐
-│  [ICON]  │ │  [ICON]  │
-│  Niños   │ │  Teens   │
+│ ┌──────┐ │ │ ┌──────┐ │
+│ │ ICON │ │ │ │ ICON │ │
+│ │ BIG  │ │ │ │ BIG  │ │
+│ └──────┘ │ │ └──────┘ │
+│  Niños   │ │ Adultos  │
+│  $800    │ │  $800    │
 └──────────┘ └──────────┘
-(2 columnas en móvil, íconos 80px)
 
-OPCIÓN C - CARRUSEL HORIZONTAL
-← [Niños] [Adolesc] [Adultos] →
-(scroll horizontal, íconos grandes)
+ESPECIFICACIONES:
+- Grid: 2 columnas móvil, 4 desktop
+- Ícono: aspect-square (cuadrado, llena contenedor)
+- Padding: p-4 alrededor del ícono
+- Texto: Centrado, título corto
+- Precio: Destacado
 
 ═══════════════════════════════════════════
 
-RECOMENDACIÓN: Opción A
-- Ícono como protagonista (100-120px)
-- Descripción más corta en móvil
-- Precio destacado
+🔗 VER: https://psicmarielapm.com
+Ctrl+Shift+R para refrescar
 
-¿Cuál prefieres? Implemento la que elijas.
+Pruébalo en celular - los íconos ahora
+son protagonistas!
 
 🐝
 ═══════════════════════════════════════════
-
-Tarjetas icono hero y vemnos
