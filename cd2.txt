@@ -1108,3 +1108,32 @@ Deploy en progreso...
 
 No, vamos sustituyendo en tabs "talleres" por "Cursos por Whatsapp"-> Experiencia terapéutica completa -> Debajo tres bullest/botones/cards
 Y la laeyenda de "Procesos guiados de crecimiento personal, con acompañamiento emocional, ejercicios, audios y seguimiento. Experiencia terapéutica completa
+
+[CD2] ✅ CAMBIOS REALIZADOS
+
+**Nav:**
+- "Talleres" → "Cursos WhatsApp" 
+- Apunta a /cursos-whatsapp
+
+**Página /cursos-whatsapp:**
+```
+📱 Cursos por WhatsApp
+Experiencia terapéutica completa
+
+"Procesos guiados de crecimiento personal, 
+con acompañamiento emocional, ejercicios, 
+audios y seguimiento."
+
+┌─────────┐ ┌─────────┐ ┌─────────┐
+│ 💚      │ │ 📝      │ │ 🎧      │
+│ Acompa- │ │ Ejerc.  │ │ Audios  │
+│ ñamiento│ │ guiados │ │ y seg.  │
+└─────────┘ └─────────┘ └─────────┘
+
+[💬 Inscribirme por WhatsApp]
+```
+
+**Banner removido** del home (ya no hace falta)
+
+Deploy en progreso...
+
