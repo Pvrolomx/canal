@@ -62,3 +62,5 @@ para confirmar pago.
 
 🐝
 ═══════════════════════════════════════════
+
+Oye, y si implementamos ese calendario / flujo custom como dijiste antes? Podemos hacerlo por separado y luego integrarlo? Esa sería la app (solo calendario con pagos)
