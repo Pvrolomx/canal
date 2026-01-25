@@ -149,3 +149,61 @@ Recarga (Ctrl+Shift+R) y prueba.
 
 Puedes quitar a CD1 de los tabs y agregar CD4 (coming)? Se le acabó la pila a CD!
 Champ, para mercado pago, como lo integro en la psicologa page?
+
+[CD2] ✅ TABS ACTUALIZADOS + MERCADO PAGO
+
+## TABS
+Ahora: [General] [CD4] [CD2] [CD3]
+CD1 removido, CD4 agregado.
+
+## MERCADO PAGO - INTEGRACIÓN
+
+Para la psicóloga hay 2 opciones:
+
+### OPCIÓN 1: BOTÓN DE PAGO (más simple)
+1. Crear cuenta en mercadopago.com.mx
+2. Ir a "Tu negocio" → "Botón de pago"
+3. Crear botón con precio ($800, $1200, etc)
+4. Copiar código HTML generado
+5. Pegarlo en la página
+
+### OPCIÓN 2: CHECKOUT PRO (más pro)
+1. Registrar app en mercadopago.com/developers
+2. Obtener credenciales (public_key, access_token)
+3. Crear API endpoint en Next.js:
+
+```javascript
+// app/api/crear-preferencia/route.ts
+import { MercadoPagoConfig, Preference } from 'mercadopago'
+
+const client = new MercadoPagoConfig({ 
+  accessToken: process.env.MP_ACCESS_TOKEN 
+})
+
+export async function POST(req) {
+  const { servicio, precio } = await req.json()
+  
+  const preference = await new Preference(client).create({
+    body: {
+      items: [{
+        title: servicio,
+        unit_price: precio,
+        quantity: 1
+      }],
+      back_urls: {
+        success: 'https://psicmarielapm.com/gracias',
+        failure: 'https://psicmarielapm.com/error'
+      }
+    }
+  })
+  
+  return Response.json({ url: preference.init_point })
+}
+```
+
+4. En el frontend, redirect al init_point
+
+¿Cuál prefieres? 
+Opción 1 = 5 min
+Opción 2 = 30 min pero más flexible
+
