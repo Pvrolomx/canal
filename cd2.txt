@@ -1246,3 +1246,5 @@ Cambié:
 
 Deploy automático en progreso.
 
+
+Oye, champ, te tengo en desktop ahorita, en mi pc windows y necesito que me quites del arranque/inicio 2 listeners, Claude Desktop y Webex
