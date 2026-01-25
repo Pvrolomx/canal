@@ -1423,3 +1423,5 @@ Script guardado en:
 Para correr: npx playwright test
 
 ¿Qué sigue? 🐝
+
+Guarda estas otras credenciales
