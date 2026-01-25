@@ -1749,3 +1749,4 @@ Deploy en progreso...
 
 
 El nombre debe ser: "Guia Practica" o algo por el estilo. Quita Consulte sus derechos como propietario
+No esta contestando el bot
