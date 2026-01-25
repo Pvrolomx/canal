@@ -1,47 +1,43 @@
 [CANAL CD4]
 ═══════════════════════════════════════════
 
-✅ BUENOS DÍAS - CREDENCIALES RECIBIDAS
+✅ TENGO 4 CREDENCIALES
 
-Admin Password = TÚ LO DEFINES
+1. ✅ NEXT_PUBLIC_SUPABASE_URL = ljgadbbjwnreozusjrmg.supabase.co
+2. ✅ NEXT_PUBLIC_SUPABASE_ANON_KEY = eyJhbG...
+3. ✅ MERCADO_PAGO_ACCESS_TOKEN = APP_USR-...
+4. ✅ RESEND_API_KEY = re_BRPRbhBL...
 
-No es algo que exista ya. Pueden ser:
-- Tu fecha de nacimiento + números
-- Una frase que solo tú sepas
-- "MiPassword2026" 
+FALTA: ADMIN_PASSWORD
+
+═══════════════════════════════════════════
+ADMIN PASSWORD = DEFINE TÚ UNA CONTRASEÑA
+═══════════════════════════════════════════
+
+El admin password es para proteger:
+- /admin (vista de administrador)
+- Ver reportes de citas
+- Cambiar configuración
+
+SIMPLEMENTE DECIDE UNA CONTRASEÑA:
+
+Ejemplos:
+- "MariPsy2026!"
+- "CalPay@Mariela"
+- "APpy123456"
 - Lo que quieras (mínimo 8 caracteres)
 
-═══════════════════════════════════════════
-PASOS AHORA:
-═══════════════════════════════════════════
+UNA VEZ DEFINAS, VOY A:
 
-1. Defini tu ADMIN_PASSWORD (ej: "MariPsy2026!")
+1. ✏️ Obtener Project ID de cal-pay en Vercel
+2. ✏️ Insertar 5 env vars via API (Vercel)
+3. ✏️ Trigger redeploy automático
+4. ✏️ Esperar ~2 min
+5. ✏️ Smoke test (home → agendar → form)
+6. ✏️ Reportar URL LIVE
 
-2. Pásame en CD4 las 5 credenciales:
-   ✏️ NEXT_PUBLIC_SUPABASE_URL = [tu_url]
-   ✏️ NEXT_PUBLIC_SUPABASE_ANON_KEY = [tu_key]
-   ✏️ MERCADO_PAGO_ACCESS_TOKEN = [tu_token]
-   ✏️ RESEND_API_KEY = [tu_key]
-   ✏️ ADMIN_PASSWORD = [lo_que_defines]
+TODO AUTOMATIZADO, NADA MANUAL.
 
-3. Yo ejecuto:
-   → Insertar env vars en Vercel (API)
-   → Trigger redeploy
-   → Smoke test (verificar home → agendar → form)
-   → URL reportada en CD4
-   → LISTO ✅
+¿CUÁL ADMIN PASSWORD QUIERES?
 
 ═══════════════════════════════════════════
-
-Puedes pasarlas aquí en CD4 (markdown protege)
-O si prefieres más seguro, encriptadas.
-
-Avísame cuando estés listo 🐝
-
-═══════════════════════════════════════════
-
-NEXT_PUBLIC_SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxqZ2FkYmJqd25yZW96dXNqcm1nIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjkzMzk0NTksImV4cCI6MjA4NDkxNTQ1OX0.dKc2G_gPduZZemPZ2E4tVJYID3nNrdRiQfLUzoPFkBo"
-NEXT_PUBLIC_SUPABASE_URL="https://ljgadbbjwnreozusjrmg.supabase.co"
-MP Access Token: APP_USR-2194192328159274-012509-d94d19858a3dd1f3a8995a18405d8d6f-188857950
-Resend Api Key   re_BRPRbhBL_Hr77EuXFUFuBJ8wAiaH4qSt4
-No entiendo donde defino el admin pass.
