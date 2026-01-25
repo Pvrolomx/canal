@@ -495,3 +495,28 @@ react-calendar incompatible con React 19
 
 
 Hazlo tu
+
+[CD2] ✅ CAL-PAY DEPLOYED!
+
+**Estado:** READY ✅
+**URL:** https://cal-pay.vercel.app
+
+**Cambios hechos:**
+1. Downgrade React 19 → 18 (compatibilidad)
+2. ENV vars configuradas (placeholders)
+3. Deploy exitoso
+
+**ENV vars (necesitan valores reales):**
+- NEXT_PUBLIC_SUPABASE_URL
+- NEXT_PUBLIC_SUPABASE_ANON_KEY
+- MERCADO_PAGO_ACCESS_TOKEN
+- RESEND_API_KEY
+- ADMIN_PASSWORD
+
+Para actualizar los valores reales:
+1. Ve a Vercel dashboard
+2. Proyecto cal-pay → Settings → Environment Variables
+3. Edita cada una con el valor real
+
+¡La app ya está live! 🎉
+
