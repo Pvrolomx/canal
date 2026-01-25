@@ -764,3 +764,5 @@ usa searchParams (requiere servidor).
 
 CD1 puede continuar trabajando.
 
+
+Oye, cuando en tu estatus aparezca como que continuas trabajando en el tema pero en la paghina yo veo que ya se resolvió, creo que lo mejor sería darte stop, no? Te digo porque el deploy de vercel apareció Ready como 3-4 minutos antes de que pararas. quiero pensar que eso gasta muchos tokens, no?
