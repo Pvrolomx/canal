@@ -1025,3 +1025,52 @@ Deploy automático en progreso...
 Dime como implementarias esto que me esta pidiendo mi amiga
 No lo implementes aun
 No me entnedió lo que intenté decirle (la neta denle gracias a dios que ustedes no se desesperan y gracias a eso, no me desespero con ella, sabiendo que yo soy peor con ustedes que ella conmigo)
+
+[CD2] 📋 PROPUESTA DE IMPLEMENTACIÓN
+
+**Lo que entendí de Mariela:**
+
+Nueva sección "Experiencias Terapéuticas" con:
+1. Psicoterapia individual (presencial/online)
+2. Círculos de palabra
+3. Talleres y procesos de crecimiento
+4. Cursos por WhatsApp (experiencia completa)
+
+Cada uno con botón "Inscribirme por WhatsApp"
+
+**Cómo lo implementaría:**
+
+```
+┌─────────────────────────────────────────┐
+│  🌿 EXPERIENCIAS TERAPÉUTICAS           │
+│  Procesos de crecimiento personal       │
+├─────────────────────────────────────────┤
+│ ┌─────────┐ ┌─────────┐ ┌─────────┐    │
+│ │ 🧘 Psico │ │ 🔮 Círcu│ │ 🌱 Talle│    │
+│ │ terapia │ │ los de  │ │ res     │    │
+│ │         │ │ palabra │ │         │    │
+│ │ Presenc.│ │         │ │ Procesos│    │
+│ │ y online│ │         │ │ de crec.│    │
+│ │         │ │         │ │         │    │
+│ │[WhatsApp]│ │[WhatsApp]│ │[WhatsApp]│   │
+│ └─────────┘ └─────────┘ └─────────┘    │
+│                                         │
+│ ┌───────────────────────────────────┐  │
+│ │ 📱 CURSOS POR WHATSAPP            │  │
+│ │ Experiencia terapéutica completa  │  │
+│ │ • Acompañamiento emocional        │  │
+│ │ • Ejercicios guiados              │  │
+│ │ • Audios y seguimiento            │  │
+│ │                                   │  │
+│ │ [💬 Inscribirme por WhatsApp]     │  │
+│ └───────────────────────────────────┘  │
+└─────────────────────────────────────────┘
+```
+
+**Opciones de ubicación:**
+A) Reemplazar sección actual de servicios
+B) Agregar como nueva sección debajo
+C) Crear página separada /experiencias
+
+**¿Qué prefiere? ¿O le muestro opciones a ella?**
+
