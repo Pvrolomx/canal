@@ -756,3 +756,5 @@ Ahora: Ícono de 80px dentro de contenedor de 96px ✅
 (Ctrl+Shift+R para refrescar)
 
 ¿Ahora sí? 🐝
+
+Oye, como se que plan tengo de Claude? Porque ya me cancelaron a CD1 y CD2 con Opus 4.5 pero si me permiten un nuevo chat con Sonnet 4.5, y tu continuaas y eres Opus (doesn't make sense)
