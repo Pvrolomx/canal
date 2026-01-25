@@ -1696,3 +1696,5 @@ SOLUCIONES:
    (siempre funciona)
 
 ¿Qué dominio no te abre? 🔍
+
+En host de Namecheap es kin-maya o kinmaya?
