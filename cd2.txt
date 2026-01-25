@@ -262,7 +262,6 @@ Ahora cuando cambies entre CD1, CD2, CD3, etc:
 
 Recarga y prueba cambiando tabs.
 
-
 Dame los pasos para obtener M PAGO token. Ya tengo mi cuenta activa
 
 [CD2] 💳 MERCADO PAGO - OBTENER CREDENCIALES
@@ -300,7 +299,6 @@ Dame los pasos para obtener M PAGO token. Ya tengo mi cuenta activa
 
 ¿Ya tienes las credenciales o necesitas ayuda en algún paso?
 
-
 Este va a ser para la app que estamos haciendo y no tener que usar cal.com y stripe. Estoy en Developers  y no veo crear aplicacion
 Ya la encontré. Ahora me pregunta "Selecciona la plataforma donde harás la integración" y da opciones
 
@@ -322,9 +320,6 @@ Siguiente paso te pedirá el tipo de producto:
 - Selecciona **"Checkout Pro"** o **"Pagos online"**
 
 ¿Qué opciones te muestra?
-
-
-
 
 📎 ARCHIVOS:
 --- image.png (50.4KB) ---
@@ -350,7 +345,6 @@ Típicamente las opciones son:
 Dime qué opciones exactas ves o 
 mándamelas por aquí escritas.
 
-
 Confirma las opciones seleccionadas 4 de 4  Nueva aplicación  Editar  Nombre de la aplicación  Kin Maya  URL de la tienda (opcional)  Tipo de pago  Pagos online  ¿Cómo hiciste la tienda?  A través de una plataforma  Solución de cobro  Checkout Pro  Plataforma de integración  Sitio Web propio   Autorizo el uso de mis datos personales conforme a la Declaración de Privacidad y certifico que mi cuenta usa las herramientas de Mercado Pago de acuerdo con los Términos y Condiciones
 
 [CD2] ✅ PERFECTO - TODO CORRECTO
@@ -372,7 +366,6 @@ Y copia:
 
 Pásame el Access Token cuando lo tengas
 (o guárdalo seguro y me dices que ya lo tienes).
-
 
 Claude Desktop y claude cloud pueden realizar todo el proceso desde crear repo hasta deploy vercel con solo las credenciales necesarias, correcto? Te pregunto por lo que me dice CD4; checa lo que me dice y si estoy en lo correcto dile la ruta
 
@@ -396,7 +389,6 @@ Puedo hacerlo yo con un push vacío o archivo.
 ¿Quieres que lo haga? Solo dime y triggeo 
 el deploy de cal-pay desde aquí.
 
-
 checa cual es el issue y fix it. No me daba cuenta que CD4 es Haiku y tu y CD3 Opus
 Vamos a iniciar de cero y será mucho mas rápido. Voy a borrar repos en github y vercel
 
@@ -418,7 +410,6 @@ Solo necesito saber:
 - ¿Vas a usar Supabase o solo MP + calendario?
 
 Avísame cuando estés listo.
-
 
 consigueme todas las credenciales (MP, Supa, Resend, Adm Passw del tab de CD4). Deja se lo asigno a alguien mas. Tu me ayudas mas administrando oraculo y verificando a los demas
 
@@ -451,7 +442,6 @@ o están en el .env original que creó.
 ¿Quieres que cree un Supabase project nuevo?
 (Solo toma 2 min)
 
-
 Ya tengo las credenciales. Crea una pestaña para CD5
 
 [CD2] ✅ CD5 CREADO
@@ -466,7 +456,6 @@ Tabs: [General] [CD1] [CD2] [CD3] [CD4] [CD5] 🩵
 Recarga para ver el nuevo tab.
 
 ¿Quién va a usar CD5?
-
 
 Checa error log de cal pay deploy
 
@@ -492,7 +481,6 @@ react-calendar incompatible con React 19
 5. Deploy
 
 ¿Quieres que lo haga yo o lo asignas a CD5?
-
 
 Hazlo tu
 
@@ -520,7 +508,6 @@ Para actualizar los valores reales:
 
 ¡La app ya está live! 🎉
 
-
 NEXT_PUBLIC_SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxqZ2FkYmJqd25yZW96dXNqcm1nIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjkzMzk0NTksImV4cCI6MjA4NDkxNTQ1OX0.dKc2G_gPduZZemPZ2E4tVJYID3nNrdRiQfLUzoPFkBo"  NEXT_PUBLIC_SUPABASE_URL="https://ljgadbbjwnreozusjrmg.supabase.co"  MP Access Token: APP_USR-2194192328159274-012509-d94d19858a3dd1f3a8995a18405d8d6f-188857950  Resend Api Key   re_BRPRbhBL_Hr77EuXFUFuBJ8wAiaH4qSt4  Admin Password q1w2e3Q1
 
 [CD2] ✅ CREDENCIALES CONFIGURADAS
@@ -533,7 +520,4 @@ Todas las ENV vars actualizadas con valores reales:
 - ADMIN_PASSWORD ✅
 
 Re-deploy en progreso...
-
-⚠️ NOTA: Borra el mensaje anterior con las 
-credenciales (usa el botón Undo ↩️)
 
