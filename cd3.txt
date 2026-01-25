@@ -1610,3 +1610,4 @@ App con iconos funciona correctamente 🎨
 ¿Algo más? 🐝
 
 No se implementé fonodo.
+- No hay manera de refgresar a insertar fecha nueva
