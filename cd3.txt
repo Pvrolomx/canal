@@ -1470,3 +1470,4 @@ C:\Users\pvrol\kin-maya-test\kin-maya.spec.ts
 
 Necesitamos crear iconos personalisados de las imagenes que insertaste. También un fondo con alguna pintura maya (o imagen) . Todo lo puede crear Dall-e. Solo necesitamos prompts
 Como ves. dame tu opinion
+Dame el prompt para pegar todo el texto en un mensaje y que me diseñe todos los iconos e imagen por separado. es posible?
