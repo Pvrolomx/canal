@@ -1744,3 +1744,5 @@ Ya quedó. Que significa cada sello?
 | 20 | Sol ☀️ | Fuego Universal | Iluminar | Vida |
 
 Cada sello representa una energía arquetípica del cosmos 🌀
+
+Debería mostarse un tipo popup al click del icono/card que muestre su significado
