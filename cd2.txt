@@ -1074,3 +1074,5 @@ C) Crear página separada /experiencias
 
 **¿Qué prefiere? ¿O le muestro opciones a ella?**
 
+
+Crear boton ("cursos por whatsapp" Experiencia trapeutica completa) ->otra pagina = tres bullets
