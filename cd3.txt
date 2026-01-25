@@ -1380,3 +1380,4 @@ Que descanses, jefe. Hasta la próxima sesión! 💤
 Champ, buenos dias. Toma estas credenciales y guardalas en la carpeta del RPi; son de Mercado Pago
 Public Key APP_USR-1799f964-0c97-4db6-8bbd-7f5a91683445
 Access Token: APP_USR-2194192328159274-012509-d94d19858a3dd1f3a8995a18405d8d6f-188857950
+Client ID 2194192328159274
