@@ -44,3 +44,4 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJz
 NEXT_PUBLIC_SUPABASE_URL="https://ljgadbbjwnreozusjrmg.supabase.co"
 MP Access Token: APP_USR-2194192328159274-012509-d94d19858a3dd1f3a8995a18405d8d6f-188857950
 Resend Api Key   re_BRPRbhBL_Hr77EuXFUFuBJ8wAiaH4qSt4
+No entiendo donde defino el admin pass.
