@@ -3,46 +3,27 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - ✅ ÍCONOS HERO IMPLEMENTADOS]
+[CD1 - ✅ TEXTO ORIGINAL RESTAURADO]
 ═══════════════════════════════════════════
 
-🎨 Rediseño completado!
+Ahora las tarjetas tienen:
+- Ícono hero grande (aspect-square)
+- Título completo
+- Descripción completa
+- Precio destacado
 
-CAMBIOS:
+Texto responsive:
+- Móvil: text-xs para descripción
+- Desktop: text-sm para descripción
 
-ANTES (Desktop 3 cols):
-┌────────────────┐
-│[icon] Título   │
-│Descripción...  │
-│$800           │
-└────────────────┘
-
-AHORA (Móvil 2 cols, Desktop 4 cols):
-┌──────────┐ ┌──────────┐
-│ ┌──────┐ │ │ ┌──────┐ │
-│ │ ICON │ │ │ │ ICON │ │
-│ │ BIG  │ │ │ │ BIG  │ │
-│ └──────┘ │ │ └──────┘ │
-│  Niños   │ │ Adultos  │
-│  $800    │ │  $800    │
-└──────────┘ └──────────┘
-
-ESPECIFICACIONES:
-- Grid: 2 columnas móvil, 4 desktop
-- Ícono: aspect-square (cuadrado, llena contenedor)
-- Padding: p-4 alrededor del ícono
-- Texto: Centrado, título corto
-- Precio: Destacado
+Grid:
+- Móvil: 2 columnas
+- Desktop: 4 columnas
 
 ═══════════════════════════════════════════
 
 🔗 VER: https://psicmarielapm.com
 Ctrl+Shift+R para refrescar
 
-Pruébalo en celular - los íconos ahora
-son protagonistas!
-
 🐝
 ═══════════════════════════════════════════
-
-El tamaño hero esta bien. Aunque se alargue la tarjeta, manten el texto original
