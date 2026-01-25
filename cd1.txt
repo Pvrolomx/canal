@@ -3,76 +3,76 @@
 ═══════════════════════════════════════════
 
 ═══════════════════════════════════════════
-[CD1 - 🔄 MP vs STRIPE - FLUJOS]
+[CD1 - ✅ OPCIÓN C - PLAN DE IMPLEMENTACIÓN]
 ═══════════════════════════════════════════
 
-OPCIÓN 1 - MERCADO PAGO (Semi-manual)
-═══════════════════════════════════════════
-
-Flujo:
-1. Cliente elige servicio en página
-2. Click → WhatsApp con Mariela
-3. Mariela envía link de pago MP
-4. Cliente paga
-5. Mariela agenda manualmente en su calendario
-6. Confirma por WhatsApp
-
-Pros:
-✅ Sin costo mensual
-✅ MP ya lo conoce
-✅ Control total de Mariela
-
-Contras:
-❌ Proceso manual
-❌ Mariela responde cada solicitud
-❌ No hay calendario público
+Cal.com gratis + MP manual. Perfecto.
 
 ═══════════════════════════════════════════
-
-OPCIÓN 2 - CAL.COM + STRIPE (Automático)
+PASO 1 - MARIELA CREA CUENTA CAL.COM
 ═══════════════════════════════════════════
 
-Flujo:
-1. Cliente elige servicio en página
-2. Ve calendario con disponibilidad
-3. Elige horario + paga con tarjeta
-4. Cita confirmada automáticamente
-5. Ambos reciben notificación
+1. Ir a cal.com
+2. Sign up con Google (su Gmail)
+3. Elegir plan FREE
+4. Configurar perfil:
+   - Nombre: Psic. Mariela Plácito
+   - URL: cal.com/marielaplacito (o similar)
+   - Timezone: America/Mexico_City
 
-Pros:
-✅ 100% automático
-✅ Mariela no hace nada manual
-✅ Cliente ve disponibilidad real
+═══════════════════════════════════════════
+PASO 2 - CREAR TIPOS DE EVENTO
+═══════════════════════════════════════════
 
-Contras:
-❌ $12 USD/mes Cal.com
-❌ Stripe no es tan conocido en MX
-❌ Algunos clientes prefieren MP
+Crear 3 eventos (sin precio, gratis agenda):
+
+📌 Psicoterapia Niños
+   - Duración: 50 min
+   - Descripción del PDF
+
+📌 Psicoterapia Adolescentes  
+   - Duración: 50 min
+
+📌 Psicoterapia Adultos
+   - Duración: 50 min
+
+═══════════════════════════════════════════
+PASO 3 - CONFIGURAR DISPONIBILIDAD
+═══════════════════════════════════════════
+
+En Settings → Availability:
+- Días que atiende
+- Horarios disponibles
+- Conectar Google Calendar (sincroniza)
+
+═══════════════════════════════════════════
+PASO 4 - EMAIL DE CONFIRMACIÓN
+═══════════════════════════════════════════
+
+Cal.com envía email automático con:
+- Confirmación de cita
+- Podemos agregar texto:
+  "Para confirmar tu cita, realiza el pago:
+   [Link de Mercado Pago]"
+
+═══════════════════════════════════════════
+PASO 5 - YO INTEGRO EN LA PÁGINA
+═══════════════════════════════════════════
+
+Cuando tenga su URL de Cal.com:
+- Cambio las tarjetas para que abran Cal.com
+- Cada servicio → su tipo de evento
 
 ═══════════════════════════════════════════
 
-OPCIÓN 3 - HÍBRIDO (Recomendada) ⭐
-═══════════════════════════════════════════
+TAREA PARA MARIELA:
 
-Cal.com GRATIS + pago después:
-1. Cliente agenda en Cal.com (gratis)
-2. Cita queda "pendiente de pago"
-3. Cal.com envía email con link MP
-4. Cliente paga por MP
-5. Mariela confirma manualmente
+1. Crear cuenta en cal.com (5 min)
+2. Crear los 3 tipos de evento (10 min)
+3. Configurar disponibilidad (5 min)
+4. Pasarme su URL de Cal.com
 
-O usar Calendly (también tiene opción
-de "cobrar después" con reminder).
-
-═══════════════════════════════════════════
-
-¿QUÉ PREFIERE MARIELA?
-
-A) Todo manual con WhatsApp + MP
-B) Todo automático con Cal.com + Stripe ($12/mes)
-C) Híbrido: Cal.com gratis + MP manual
+¿Puede hacerlo hoy o mañana?
 
 🐝
 ═══════════════════════════════════════════
-
-Opcion C)
