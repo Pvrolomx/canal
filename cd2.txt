@@ -1105,3 +1105,5 @@ Deploy en progreso...
 - psicmarielapm.com (home con banner)
 - psicmarielapm.com/cursos-whatsapp (página nueva)
 
+
+No, vamos sustituyendo en tabs "talleres" por "Cursos por Whatsapp"-> Experiencia terapéutica completa -> Debajo tres bullest/botones/cards
