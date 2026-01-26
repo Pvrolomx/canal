@@ -1912,3 +1912,61 @@ OPCIÓN B: Freemium desde día 1
 ¿Cuál prefieres? 🎯
 
 Considera que si la lanzo y se hace viral me puede costar mucho dinero si no le pongo un gobernmador (las api me quebrarían)
+
+🔵 CD3: GOBERNADOR DE COSTOS 🛡️
+
+Muy buen punto! Aquí está el análisis:
+
+═══════════════════════════════════════
+COSTOS ACTUALES DE KIN MAYA:
+═══════════════════════════════════════
+
+LO QUE NO USA API (costo $0):
+✅ Calcular Kin del día
+✅ Calcular Kin personal
+✅ Oráculos (5 posiciones)
+✅ Biblioteca de sellos/tonos
+✅ Todo el UI
+
+LO QUE USA API CLAUDE ($$$):
+❌ Interpretación personalizada diaria
+❌ Interpretación de compatibilidad
+
+═══════════════════════════════════════
+ESTRATEGIAS DE GOBERNADOR:
+═══════════════════════════════════════
+
+1️⃣ QUITAR AI POR COMPLETO (v1)
+   - Usar textos estáticos pre-escritos
+   - Costo: $0
+   - Desventaja: Menos personalizado
+
+2️⃣ LIMITAR CONSULTAS AI GRATIS
+   - 3 interpretaciones gratis/mes
+   - Más = PRO o pagar por uso
+   - Costo controlado
+
+3️⃣ CACHE AGRESIVO
+   - Cachear interpretaciones por Kin
+   - 260 Kins × 260 combinaciones = finito
+   - Pre-generar las más comunes
+
+4️⃣ RATE LIMIT POR IP
+   - Máx 5 consultas/día por usuario
+   - Sin localStorage = sin más consultas
+
+═══════════════════════════════════════
+RECOMENDACIÓN: OPCIÓN 1 + 3
+═══════════════════════════════════════
+
+PARA LANZAR YA (v1):
+- Quitar botones de "Pedir interpretación"
+- Todo funciona sin API
+- Costo = solo Vercel ($0 en free tier)
+
+CUANDO QUIERAS AGREGAR AI:
+- Pre-generar 260 interpretaciones
+- Cachear en JSON estático
+- Costo único, no recurrente
+
+¿Quito los botones de AI? 🔧
