@@ -1985,3 +1985,22 @@ test.describe('Condo Advisor Chatbot', () => {
 
 
 No solo queria las preguntas comunes y si me laten
+
+[CD2] ✅ PERFECTO
+
+Las preguntas están listas para que las uses
+en el tuneo del prompt.
+
+**Resumen de categorías:**
+• Derechos básicos
+• Cuotas y pagos  
+• Asambleas/votaciones
+• Administrador
+• Áreas comunes
+• Problemas comunes
+• Legal
+• Específicas de extranjeros
+
+24 preguntas en total que cubren los 
+escenarios más comunes de gringos en condos.
+
