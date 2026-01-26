@@ -1248,3 +1248,4 @@ Tengo a Anfitrion Mx conectada a Stripe, conecto cuenta nueva (CA)?
 ¡Listo para recibir cafés! ☕🐝
 
 Y si llega a 50 ya no pueden donar?
+Le dejo Tip $5? Es default
