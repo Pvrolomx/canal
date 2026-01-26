@@ -2070,3 +2070,5 @@ La app sigue mostrando:
 - Todo funcional
 
 ¡Lista para lanzar! 🚀
+
+Vuelve a la version anterior y entonces hacemos cambios. Solo regresa a la anterior porque necesito ver exactamente lo hecho
