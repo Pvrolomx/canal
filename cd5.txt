@@ -1165,3 +1165,27 @@ but here's what to look for...
 ¿Qué más? 🐝
 
 Los bancos de pv y bahia principales para fideicomiso son: Banbajio, Banorte, Monex; los mencionados como bancos principales son lo peor para fideicomiso (excepto Monex; big bank ≠ buen  fducciario) . Arregla el prompt
+
+[CD5] ✅ BANCOS FIDUCIARIOS CORREGIDOS
+═══════════════════════════════════════════
+
+🏆 RECOMENDADOS:
+• BanBajío
+• Banorte
+• Monex
+
+❌ EVITAR (mal servicio fideicomiso):
+• Banamex
+• BBVA
+• Santander
+
+Big bank ≠ buen fiduciario ✅
+
+🧪 TEST:
+"Which bank for fideicomiso?"
+→ Recomienda BanBajío, Banorte, Monex ✅
+→ Advierte evitar bancos grandes ✅
+
+🔗 https://condo-advisor.vercel.app
+
+¿Qué más? 🐝
