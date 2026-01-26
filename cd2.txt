@@ -1846,3 +1846,41 @@ Agrega `--ar 9:16` al final del prompt
 
 
 Dame un prompt para logo horizontal de banner que diga Condo Advisor Que huela a tropico/mar
+
+[CD2] 🏝️ PROMPT PARA LOGO "CONDO ADVISOR"
+
+**Para DALL-E:**
+
+```
+Horizontal logo banner design for "Condo Advisor", 
+tropical beach aesthetic, turquoise and coral 
+color palette, minimalist palm tree icon, 
+ocean wave accent, clean modern typography, 
+professional yet warm feeling, white background, 
+no gradients, vector style, 3:1 aspect ratio
+```
+
+**Versión más minimalista:**
+```
+Modern horizontal logo "Condo Advisor", 
+tropical minimal design, palm leaf accent, 
+turquoise and sand colors, clean sans-serif 
+font, beachy professional vibe, simple icon, 
+white background, banner format
+```
+
+**Versión con icono:**
+```
+Logo banner "Condo Advisor" with small 
+stylized condo building icon and palm tree, 
+ocean blue and tropical green accents, 
+elegant modern font, Riviera Nayarit feel, 
+horizontal layout, clean design
+```
+
+**Tips:**
+- Si no te gusta el texto generado, 
+  pide solo el icono y agrega texto después
+- "Vector style" ayuda a que sea limpio
+- Usa Canva para ajustar el texto final
+
