@@ -185,3 +185,46 @@ LISTO PARA:
 ¿Siguiente paso? 🐝
 
 Del Codigo civil lo imnportante son los contratos de compraventa, las promesas de compraventa. las Asociaciones Civiles. Y parte del prompt para los extranjeros es , y no esta en el codigo civil ni del condominio es que si su propiedad esta bajo regimen de fideicomiso, para votar en asamblea debe estar a lo que su fideicomiso disponga. Regularmente el fideicomiso dice que el poder para concurrir a una asamblea de condóminos esta inserto en su escritura y que puede delegar ese poder mediante carta poder a un tercero, pero si no se encuentra esa clausula en su escritura/fideicomiso, entonces tendrá que pedir al banco (fiduciario) mediante carta instruccion, un poder para asistir a la asamblea, para el fideicomisario /propietario o un tercero que el fideico0misario designe
+
+[CD5] 📚 CONTENIDO ACTUALIZADO - FIDEICOMISOS + CONTRATOS
+═══════════════════════════════════════════
+
+✅ NUEVOS ARCHIVOS EN /extracted/:
+
+1. codigo-civil-contratos.md
+   • Promesa de Compraventa (Arts. 1616-1620)
+   • Compraventa de Inmuebles (Arts. 1621-1698)
+   • Asociaciones Civiles (Arts. 2041-2058)
+
+2. fideicomisos.md ⭐ CRÍTICO
+   • Qué es un fideicomiso
+   • Cómo votar en asambleas si eres extranjero
+   • Escenario A: Fideicomiso incluye poder
+   • Escenario B: Necesitas carta instrucción al banco
+   • Modelo de carta instrucción
+   • Modelo de carta poder simple
+   • FAQs para extranjeros
+
+✅ SYSTEM PROMPT ACTUALIZADO (v2):
+
+Agregado:
+• Sección 🏦 FIDEICOMISOS Y EXTRANJEROS
+• Regla crítica: verificar fideicomiso antes de votar
+• Escenarios A y B explicados
+• Terminología: Fiduciario, Fideicomisario, Carta Instrucción
+• Ejemplos de interacción actualizados
+• Contratos del Código Civil integrados
+
+ESTRUCTURA FINAL:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+extracted/
+├── ley-condominio.md
+├── codigo-civil-relevante.md (copropiedad)
+├── codigo-civil-contratos.md ✅ NUEVO
+├── articulos-clave.md
+└── fideicomisos.md ✅ NUEVO (crítico)
+
+prompts/
+└── system-prompt.md ✅ ACTUALIZADO v2
+
+¿Siguiente paso? 🐝
