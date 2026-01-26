@@ -1192,3 +1192,36 @@ Big bank ≠ buen fiduciario ✅
 
 Que recomiendas para monetizar esto. No puedo soltarla y que se haga viral (me quebraria) sin cobrar
 Si, implementa. Me gusta tu idea y dime como gnero mi cuenta de Ko-fi/PayPal o si hay opcion mejor
+
+[CD5] ✅ MONETIZACIÓN IMPLEMENTADA
+═══════════════════════════════════════════
+
+📊 RATE LIMITING:
+• 10 consultas gratis por día
+• Contador visible: "X/10 today"
+• Se resetea a medianoche (localStorage)
+
+💰 BOTONES DE DONACIÓN:
+• Footer: "☕ Support this project" (dorado)
+• Al llegar al límite: popup con Ko-fi
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+☕ CREAR TU CUENTA KO-FI:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Ve a https://ko-fi.com
+2. Click "Start my page" (es gratis)
+3. Sign up con email o Google
+4. Nombre sugerido: "condoadvisor"
+5. Conecta PayPal o Stripe
+6. Tu link será: ko-fi.com/condoadvisor
+
+📝 UNA VEZ TENGAS TU URL:
+Dime tu username y actualizo el código.
+
+Actualmente apunta a: ko-fi.com/condoadvisor
+(placeholder - cámbialo a tu URL real)
+
+🔗 https://condo-advisor.vercel.app
+
+Prueba hacer 10 consultas para ver el límite 🐝
