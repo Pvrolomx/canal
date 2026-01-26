@@ -106,3 +106,4 @@ Que preguntas harias para armar un prompt o fortalecerlo para una IA de api de a
 Es para extranjeros principalmente pero debe ser es en. Tengo la ley y solo debo bajar el código civil
 Lo que mas les interesa son las asambleas de condóminos. Los cuerpos de gobierno. Quorum etc.
 Ya tengo codigo civil y ley del condominio, arma un repo Condo-nay-law y la publico ahi
+Recuerda que el demographic es gringo de la tercera edad
