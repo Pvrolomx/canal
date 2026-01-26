@@ -1082,3 +1082,5 @@ Se puede agregar funcion de Imprimir consulta en Pdf, sin olvidar disclaimer com
 🔗 https://condo-advisor.vercel.app
 
 Prueba hacer una consulta y dar clic en 📄 🐝
+
+Fucking genius! Me refiero al que termine con una pregunta la consulta. Sobre el pdf. ambas, pregunta y respuesta mismo tamaño excepto pregunta bold y respuesta no y ambas oscuras (se pierde la respuesta en blanco y darle mas tono al fondo es mucha tinta al imprimir)
