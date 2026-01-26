@@ -2087,3 +2087,5 @@ Esta versión tiene:
 Deploy: https://kin-maya.vercel.app
 
 ¿Qué cambios quieres hacer?
+
+Esa no es porque la anterior tenia la imagen de fondo
