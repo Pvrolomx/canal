@@ -480,3 +480,78 @@ FASE 5: Plantillas descargables (pendiente)
 ¿Siguiente? 🐝
 
 Fase 4 GO!
+
+[CD5] ✅ FASE 4 COMPLETADA - MANTENIMIENTO + CONFLICTOS
+═══════════════════════════════════════════
+
+📚 NUEVOS DOCUMENTOS:
+
+1. mantenimiento-obras.md
+   • ¿Quién paga qué? (áreas comunes vs privativas)
+   • Fondo de reserva (qué es, cómo se usa)
+   • Obras mayores (proceso, mayorías)
+   • Obras en tu unidad (permisos, horarios)
+   • Vicios ocultos en construcción nueva
+   • Modelo de solicitud de reparación
+
+2. conflictos-vecinales.md
+   • Problemas comunes (ruido, mascotas, estacionamiento)
+   • Proceso de resolución (6 niveles)
+   • Horarios de silencio típicos
+   • Reglas de mascotas
+   • Conflictos de estacionamiento
+   • Daños por fugas entre vecinos
+   • Sanciones permitidas y límites
+   • Modelo de acuerdo de convivencia
+   • Tips para extranjeros (diferencias culturales)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🤖 CONDO ADVISOR - CONOCIMIENTO COMPLETO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+El bot ahora cubre TODO:
+✅ Fideicomisos y votación
+✅ Asambleas y quórum
+✅ Cuotas y morosos
+✅ Administrador corrupto
+✅ Airbnb y rentas
+✅ Compraventa y due diligence
+✅ Mantenimiento y reparaciones ← NUEVO
+✅ Conflictos vecinales ← NUEVO
+
+Nuevas preguntas:
+• "Who pays for elevator repairs?"
+• "My neighbor's leak damaged my ceiling"
+• "How do I complain about noise?"
+• "Can they fine me for my dog barking?"
+• "What's the reserve fund for?"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 PROGRESO:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FASE 1: Asambleas + Fideicomisos ✅
+FASE 2: Cuotas + Morosos + Admin ✅
+FASE 3: Airbnb + Compraventa ✅
+FASE 4: Mantenimiento + Conflictos ✅ ← COMPLETADA
+FASE 5: Plantillas descargables (siguiente)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📁 ESTRUCTURA FINAL EXTRACTED/:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ley-condominio.md
+codigo-civil-relevante.md
+codigo-civil-contratos.md
+articulos-clave.md
+fideicomisos.md
+cuotas-morosos.md
+administrador-problemas.md
+airbnb-rentas-cortas.md
+compraventa-guia.md
+mantenimiento-obras.md ← NUEVO
+conflictos-vecinales.md ← NUEVO
+
+🔗 https://condo-advisor.vercel.app
+
+¿Fase 5 (plantillas descargables)? 🐝
