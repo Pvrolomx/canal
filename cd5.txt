@@ -357,3 +357,65 @@ FASE 5: Plantillas descargables
 ¿Por cuál fase quieres que empiece? 🐝
 
 Fase dos, y sabes que? Checa la app Anfitrion MX, es calculadora de plataformas de hospedaje con las deducciones y retenciones fiscales vigentes
+
+[CD5] ✅ FASE 2 COMPLETADA + ANFITRION MX
+═══════════════════════════════════════════
+
+📱 ANFITRION MX (checado):
+github.com/Pvrolomx/anfitrion-mx
+• Calculadora fiscal para hosts Airbnb/Vrbo/Booking
+• ISH por estado (Nayarit 5% SIN convenio Airbnb)
+• Retenciones ISR por régimen fiscal
+• Tipo de cambio en vivo
+• PWA instalable
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📚 FASE 2 - NUEVOS DOCUMENTOS EN CONDO-NAY-LAW:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. cuotas-morosos.md
+   • Tipos de cuotas (ordinaria, extra, reserva)
+   • Consecuencias de no pagar
+   • Suspensión de voto vs suspensión de servicios
+   • Proceso de cobro judicial
+   • Derechos del moroso
+   • Modelo de solicitud de info
+
+2. administrador-problemas.md
+   • 🚩 Red flags de admin corrupto
+   • Obligaciones legales del administrador
+   • Cómo auditar al administrador
+   • Procedimiento de remoción paso a paso
+   • Modelo de acta de remoción
+   • Qué hacer si se niega a irse
+   • Opciones legales (penal/civil)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🤖 CONDO ADVISOR - SYSTEM PROMPT ACTUALIZADO:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Ahora incluye:
+✅ Fideicomisos (Fase 1)
+✅ Asambleas y quórum (Fase 1)
+✅ Cuotas y morosos (Fase 2) ← NUEVO
+✅ Administrador corrupto (Fase 2) ← NUEVO
+✅ Comité de vigilancia
+
+La app ya puede responder preguntas sobre:
+• "What happens if I don't pay HOA fees?"
+• "How do we remove our property manager?"
+• "Can they cut my water if I'm behind on fees?"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 PROGRESO:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FASE 1: Asambleas + Fideicomisos ✅
+FASE 2: Cuotas + Morosos + Admin ✅ ← COMPLETADA
+FASE 3: Airbnb + Compraventa (pendiente)
+FASE 4: Mantenimiento + Conflictos (pendiente)
+FASE 5: Plantillas descargables (pendiente)
+
+🔗 https://condo-advisor.vercel.app (rebuilding)
+
+¿Siguiente tarea? 🐝
