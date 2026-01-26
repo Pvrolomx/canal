@@ -2156,3 +2156,90 @@ PASOS PARA VERIFICAR:
 
 Puedes darme un prompt para un contrato de arrendamiento de bien inmueble en jalisco puerto vallarta?
 Luego checamos lo de web3forms
+
+🔵 CD3: PROMPT CONTRATO ARRENDAMIENTO 📄
+
+═══════════════════════════════════════
+PROMPT PARA GENERAR CONTRATO:
+═══════════════════════════════════════
+
+"""
+Genera un contrato de arrendamiento de bien inmueble completo y profesional con las siguientes especificaciones:
+
+UBICACIÓN LEGAL:
+- Estado: Jalisco, México
+- Municipio: Puerto Vallarta
+- Legislación aplicable: Código Civil del Estado de Jalisco
+
+PARTES:
+- ARRENDADOR: [NOMBRE COMPLETO]
+  - RFC: [RFC]
+  - Domicilio: [DIRECCIÓN COMPLETA]
+  - Teléfono: [TELÉFONO]
+  - Email: [EMAIL]
+
+- ARRENDATARIO: [NOMBRE COMPLETO]
+  - RFC: [RFC] (opcional)
+  - Domicilio actual: [DIRECCIÓN]
+  - Teléfono: [TELÉFONO]
+  - Email: [EMAIL]
+  - Identificación: [INE/PASAPORTE] No. [NÚMERO]
+
+INMUEBLE:
+- Dirección completa: [DIRECCIÓN DEL INMUEBLE]
+- Tipo: [CASA/DEPARTAMENTO/LOCAL COMERCIAL]
+- Superficie: [M2]
+- Uso: [HABITACIONAL/COMERCIAL]
+- Descripción: [NÚMERO DE RECÁMARAS, BAÑOS, ESTACIONAMIENTOS, ETC.]
+- Incluye: [MUEBLES, ELECTRODOMÉSTICOS, ETC.]
+
+CONDICIONES ECONÓMICAS:
+- Renta mensual: $[CANTIDAD] MXN (en letra)
+- Depósito en garantía: [X] meses de renta = $[CANTIDAD] MXN
+- Fecha de pago: Día [X] de cada mes
+- Forma de pago: [TRANSFERENCIA/EFECTIVO]
+- Cuenta bancaria: [BANCO] - [CLABE/CUENTA]
+- Incremento anual: [X]% o según INPC
+
+VIGENCIA:
+- Fecha de inicio: [DD/MM/AAAA]
+- Duración: [X] meses/años
+- Fecha de término: [DD/MM/AAAA]
+- Renovación: [AUTOMÁTICA/REQUIERE NUEVO CONTRATO]
+
+INCLUIR CLÁUSULAS SOBRE:
+1. Objeto del contrato
+2. Destino del inmueble
+3. Precio y forma de pago
+4. Depósito en garantía y su devolución
+5. Vigencia y renovación
+6. Obligaciones del arrendador
+7. Obligaciones del arrendatario
+8. Prohibiciones (subarrendar, modificaciones, mascotas, etc.)
+9. Servicios incluidos y no incluidos
+10. Mantenimiento y reparaciones
+11. Visitas al inmueble
+12. Terminación anticipada y penalizaciones
+13. Causas de rescisión
+14. Entrega del inmueble al término
+15. Fiador/Obligado solidario (si aplica)
+16. Inventario de bienes (anexo)
+17. Jurisdicción y competencia (Juzgados de Puerto Vallarta)
+18. Domicilios para notificaciones
+19. Cláusula de mediación antes de litigio
+20. Firmas y fecha
+
+FORMATO:
+- Lenguaje formal y jurídico mexicano
+- Numeración de cláusulas
+- Espacios para llenar datos variables entre corchetes
+- Incluir declaraciones de ambas partes
+- Incluir espacio para firmas y fecha
+- Mencionar artículos aplicables del Código Civil de Jalisco
+
+NOTA: Este contrato debe ser revisado por un abogado antes de firmarse.
+"""
+
+═══════════════════════════════════════
+
+Copia este prompt y pégalo en Claude con los datos específicos de tu contrato. 📝
