@@ -719,3 +719,40 @@ Condo-nay-law/
 ¿Actualizo la app con tabs Nayarit/Jalisco? 🐝
 
 Si
+
+[CD5] ✅ TABS NAYARIT/JALISCO IMPLEMENTADOS
+═══════════════════════════════════════════
+
+📱 NUEVA UI:
+• Tabs en header: [🏝️ Nayarit] [☀️ Jalisco]
+• Cambiar tab resetea conversación
+• Mensaje de bienvenida dinámico
+• Subtítulo indica ley activa
+
+🤖 SYSTEM PROMPTS DUALES:
+
+NAYARIT:
+• Ley de Condominio de Nayarit
+• ISH 5% (sin convenio Airbnb)
+• Un solo régimen legal
+
+JALISCO:
+• ⚠️ Advierte sobre DOS leyes posibles
+• Pregunta cuál aplica cuando es relevante
+• Ley 1985 vs CCJ nuevo
+• Tabla de diferencias incluida
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 FLUJO DE USUARIO:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Usuario abre app
+2. Ve tabs Nayarit/Jalisco
+3. Selecciona su estado
+4. Bienvenida específica aparece
+5. Bot usa conocimiento correcto
+6. Si Jalisco → pregunta sobre ley 1985 vs CCJ
+
+🔗 https://condo-advisor.vercel.app
+
+¡LIVE! Pruébala 🐝
