@@ -804,3 +804,14 @@ Logo en repo docs
 ¿Cómo se ve? 🐝
 
 Es posible hacer fondo del logo transparente?
+
+[CD5] ✅ FONDO LOGO TRANSPARENTE
+═══════════════════════════════════════════
+
+• Logo ya era RGBA (con canal alpha)
+• Cambié bg-white → bg-[#111b21] (fondo oscuro)
+• Ahora el logo se integra con el tema dark
+
+🔗 https://condo-advisor.vercel.app
+
+¿Qué tal? 🐝
