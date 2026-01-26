@@ -1892,3 +1892,5 @@ Deploy en progreso...
 
 Prueba en ~1 min con hard refresh (Ctrl+Shift+R)
 
+
+Champ, armame una serie de preguntas que un gringo preguntaria a la app Condo Adviser para armar un script de playwright y tunear el prompt para la ia
