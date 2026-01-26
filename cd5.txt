@@ -1103,3 +1103,22 @@ Optimizado para ahorrar tinta 🖨️
 ¿Qué más? 🐝
 
 Entre el campo de escribir mensaje y disclaimer agrega "descargar pdf de consulta". Deja el que esta arriba. Esta nueva función que este opaca hasta que se escriba la consulta (tipo boton "Enviar"
+
+[CD5] ✅ BOTÓN PDF EN FOOTER
+═══════════════════════════════════════════
+
+📄 DOS BOTONES PDF:
+1. Arriba izquierda (icono 📄) - siempre visible
+2. Footer: "📄 Descargar consulta en PDF"
+
+⚙️ COMPORTAMIENTO:
+• Sin consulta: ambos botones OPACOS (50%)
+• Con consulta: se activan con color verde
+
+🔤 TEXTO BILINGÜE:
+🇺🇸 "Download consultation as PDF"
+🇲🇽 "Descargar consulta en PDF"
+
+🔗 https://condo-advisor.vercel.app
+
+¿Qué más? 🐝
