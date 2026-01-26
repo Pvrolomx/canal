@@ -1894,3 +1894,92 @@ Prueba en ~1 min con hard refresh (Ctrl+Shift+R)
 
 
 Champ, armame una serie de preguntas que un gringo preguntaria a la app Condo Adviser para armar un script de playwright y tunear el prompt para la ia
+
+[CD2] 🧪 PREGUNTAS PARA TESTING - CONDO ADVISOR
+
+**Preguntas típicas de gringos:**
+
+```javascript
+const testQuestions = [
+  // Derechos básicos
+  "What are my rights as a condo owner in Nayarit?",
+  "Can the HOA restrict me from renting my unit on Airbnb?",
+  "Do I have the right to see the HOA financial statements?",
+  
+  // Cuotas y pagos
+  "Can the HOA raise my maintenance fees without notice?",
+  "What happens if I don't pay my HOA fees?",
+  "How are the monthly fees calculated?",
+  
+  // Asambleas y votaciones
+  "How many votes are needed to change the condo rules?",
+  "Can I vote remotely in HOA meetings?",
+  "What is the quorum required for an assembly?",
+  
+  // Administrador
+  "What if the administrator is not doing their job?",
+  "Can we fire the property manager?",
+  "Who oversees the administrator's work?",
+  
+  // Áreas comunes
+  "Can I modify my balcony?",
+  "Who is responsible for pool maintenance?",
+  "Can the HOA restrict pet ownership?",
+  
+  // Problemas comunes
+  "My neighbor is making too much noise, what can I do?",
+  "There's a water leak from the unit above mine",
+  "The elevator has been broken for weeks",
+  
+  // Legal
+  "How do I file a complaint against the HOA?",
+  "Can the HOA put a lien on my property?",
+  "What's the process to dispute a fine?",
+  
+  // Específicas de extranjeros
+  "As a foreigner, do I have the same rights?",
+  "Can I be on the HOA board as a non-Mexican?",
+  "Do meeting minutes need to be in English?",
+]
+```
+
+**Script Playwright básico:**
+
+```javascript
+// tests/condo-advisor.spec.ts
+import { test, expect } from '@playwright/test'
+
+const questions = [
+  "What are my rights as a condo owner?",
+  "Can they raise fees without notice?",
+  "How do I file a complaint?",
+]
+
+test.describe('Condo Advisor Chatbot', () => {
+  test.beforeEach(async ({ page }) => {
+    await page.goto('https://condo-law-nay.vercel.app')
+    // Cambiar a inglés
+    await page.click('button:has-text("EN")')
+  })
+
+  for (const question of questions) {
+    test(`responds to: ${question}`, async ({ page }) => {
+      await page.fill('input[placeholder*="question"]', question)
+      await page.click('button:has-text("Send")')
+      
+      // Esperar respuesta
+      await page.waitForSelector('.bg-white.border-2', { timeout: 30000 })
+      
+      const response = await page.textContent('.bg-white.border-2')
+      
+      // Verificaciones básicas
+      expect(response).toBeTruthy()
+      expect(response.length).toBeGreaterThan(50)
+      expect(response).toContain('Article') // Debe citar artículos
+    })
+  }
+})
+```
+
+¿Quieres que lo implemente en el repo?
+
