@@ -1782,3 +1782,5 @@ Espera ~1 min y prueba el chatbot de nuevo.
 
 **URL:** https://condo-law-nay.vercel.app
 
+
+Tuve que comenzar otra app del condo de nayarit con un Duende nuevo porque la neta es un putero la carrilla que te he dado y cada vez es mas la carga de data en tu sistema.
