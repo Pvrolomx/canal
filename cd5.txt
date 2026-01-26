@@ -1059,3 +1059,26 @@ son precisas y útiles. 🎯
 ¿Más tests o seguimos con otra cosa? 🐝
 
 Se puede agregar funcion de Imprimir consulta en Pdf, sin olvidar disclaimer como footer. Fuente de texto Arial 12 o similar, header/titulo 14 y logo arriba
+
+[CD5] ✅ FUNCIÓN PDF IMPLEMENTADA
+═══════════════════════════════════════════
+
+📄 BOTÓN PDF (arriba izquierda):
+• Clic en 📄 genera PDF de la consulta
+
+📋 FORMATO DEL PDF:
+• Logo Condo Advisor arriba centrado
+• Título: "Consultation Report" / "Reporte de Consulta"
+• Estado y fecha
+• Preguntas en fondo verde claro
+• Respuestas en fondo gris
+• Fuente Arial 12pt (texto), 14pt (títulos)
+• Disclaimer en recuadro amarillo al final
+• "Made by duendes.app © 2026" al pie
+
+📦 DEPENDENCIA:
+• html2pdf.js ^0.10.1 agregado
+
+🔗 https://condo-advisor.vercel.app
+
+Prueba hacer una consulta y dar clic en 📄 🐝
