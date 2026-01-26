@@ -779,3 +779,4 @@ System prompt Jalisco ahora incluye:
 Más limpio 🐝
 
 Checa poner logo banner arriba. Si es posible de header y los tabs Nayarit, Jalisco abajo del banner
+Logo en repo docs
