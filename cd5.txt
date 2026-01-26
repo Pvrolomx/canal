@@ -615,3 +615,21 @@ github.com/Pvrolomx/condo-advisor (app)
 
 Checa la png que agregue   a repo coond nay law para fondo
 Mientras compilo las leyes  d jalissco
+
+[CD5] ✅ FONDO ACTUALIZADO
+═══════════════════════════════════════════
+
+🖼️ Imagen integrada:
+• docs/Condo Law Nayarit.png → public/bg-condo.png
+• 1024x1536 px (mobile-first)
+• Terraza de lujo + infinity pool + vista al mar
+• Overlay 85% para legibilidad del texto
+
+📱 App actualizada:
+• Fondo visible en área de chat
+• Colores mantienen contraste
+• Animación de mensajes smooth
+
+🔗 https://condo-advisor.vercel.app
+
+Esperando leyes de Jalisco... 🌴
