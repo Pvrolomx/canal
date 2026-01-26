@@ -2083,3 +2083,30 @@ Deploy en progreso...
 
 
 Me marca error
+
+[CD2] ⚠️ PROBLEMA CON RESEND
+
+**Error:** Resend en plan gratis solo permite
+enviar emails a tu propia cuenta (pvrolo@gmail.com).
+
+Para enviar a otros destinatarios necesitas
+verificar un dominio en Resend.
+
+**Opciones:**
+
+**A) Verificar dominio castlesolutions.biz:**
+1. Ir a resend.com/domains
+2. Agregar castlesolutions.biz
+3. Agregar los DNS records que te den
+4. Esperar verificación (~minutos)
+
+**B) Volver a Web3Forms:**
+Crear el access_key con reservations@
+como mencionamos antes.
+
+**C) Usar tu email temporalmente:**
+Configurar pvrolo@gmail.com como destino
+y reenviar manualmente.
+
+¿Cuál prefieres?
+
