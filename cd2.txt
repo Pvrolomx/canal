@@ -1884,3 +1884,5 @@ horizontal layout, clean design
 - "Vector style" ayuda a que sea limpio
 - Usa Canva para ajustar el texto final
 
+
+Mer gusto esta. Hay forma de Hacerla con fondo transparente y quitarle los margenes de arriba y abajo para que quede como banner?
