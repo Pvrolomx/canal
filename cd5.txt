@@ -558,3 +558,57 @@ conflictos-vecinales.md ← NUEVO
 
 Esperate; no crees que le debamos agregar una tab y replicar esto pero con Jalisco?
 Fase 5 y luego vemos Jalisco
+
+[CD5] ✅ FASE 5 COMPLETADA - PLANTILLAS DESCARGABLES
+═══════════════════════════════════════════
+
+📄 PLANTILLAS CREADAS (6):
+
+1. carta-poder.md
+   Carta Poder para Asamblea / Power of Attorney for HOA Meeting
+
+2. carta-banco.md  
+   Carta Instrucción al Banco / Letter of Instruction to Trustee Bank
+
+3. solicitud-asamblea.md
+   Solicitud Asamblea Extraordinaria / Request for Special Assembly
+
+4. queja-formal.md
+   Queja Formal al Administrador / Formal Complaint
+
+5. solicitud-financiera.md
+   Solicitud de Info Financiera / Request for Financial Information
+
+6. acuerdo-convivencia.md
+   Acuerdo de Buena Vecindad / Good Neighbor Agreement
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📱 APP ACTUALIZADA:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• Nuevo botón 📄 en header → /templates
+• Página de plantillas con toggle ES/EN
+• Descarga directa de archivos .md
+• Todas bilingües
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 ROADMAP COMPLETADO:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FASE 1: Asambleas + Fideicomisos ✅
+FASE 2: Cuotas + Morosos + Admin ✅
+FASE 3: Airbnb + Compraventa ✅
+FASE 4: Mantenimiento + Conflictos ✅
+FASE 5: Plantillas descargables ✅
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📁 REPOS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+github.com/Pvrolomx/Condo-nay-law (docs)
+github.com/Pvrolomx/condo-advisor (app)
+
+🔗 https://condo-advisor.vercel.app
+🔗 https://condo-advisor.vercel.app/templates
+
+¿Jalisco ahora? 🐝
