@@ -1225,3 +1225,5 @@ Actualmente apunta a: ko-fi.com/condoadvisor
 🔗 https://condo-advisor.vercel.app
 
 Prueba hacer 10 consultas para ver el límite 🐝
+
+Pasame un bio para kofi
