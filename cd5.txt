@@ -1252,3 +1252,4 @@ Le dejo Tip $5? Es default
 Page intro - Intro video - Feed agrego algo?
 Creo que deberiamos subirla como subdominio de duendes.app. Your take
 Ya quedó (ya he registrado otros 5, asi que ya tengo la ruta)
+Inclusive me dijeron que puedo adelantarme con un subdominio y esperar la coinfiguracion de vercel
