@@ -1771,3 +1771,14 @@ O pásame la que usas en oráculo y la configuro.
 
 
 Va en dos partes    parte 2.- wxHKlBLZKB7l5GuNgwtdqiZw2t6hFVmIiTuVEOj4gprZe6M5eaJRkSE6RQMygVf6Q2zxto87ItaD3uOI_cC5fQ-u40bMwAA
+
+[CD2] ✅ API KEY CONFIGURADA
+
+**Parte 1 + Parte 2:** Recibidas ✅
+**Env var:** Configurada en Vercel ✅
+**Redeploy:** En progreso...
+
+Espera ~1 min y prueba el chatbot de nuevo.
+
+**URL:** https://condo-law-nay.vercel.app
+
