@@ -908,3 +908,4 @@ Menú ⋮ → Instalar aplicación
 ¿Cómo se ve? 🐝
 
 Se ve perrisima. Me encanta la interfaz
+- Powered by duendes.app que quede debajo del disclaimer pero que se lea Hecho por duendes.app 2026 y cambie con el toggle
