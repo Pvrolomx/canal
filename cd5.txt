@@ -866,3 +866,5 @@ Más imagen visible, terraza de lujo más presente 🏝️
 🔗 https://condo-advisor.vercel.app
 
 ¿Cómo se ve? 🐝
+
+Los templates los vamos a sustituir por toggle ES EN con banderita. Templates lo dejamos para implementar cuando tengamos publicado y con feedback la app.
