@@ -2037,3 +2037,27 @@ crear nuevo key en Web3Forms?
 
 
 Puedo cancelaR EL ACTUAL DE WEB3FORMS Y crear el correcto? Solo me permite 1 gratis
+
+[CD2] ✅ SÍ, PUEDES CAMBIAR EL KEY
+
+**Pasos:**
+
+1. Ir a https://web3forms.com/
+2. Login con tu cuenta actual
+3. En dashboard, elimina/revoca el key actual
+4. Crea nuevo key con:
+   **reservations@castlesolutions.biz**
+5. Copia el nuevo access_key
+
+6. Ve a Vercel → castle-checkin → Settings → 
+   Environment Variables
+7. Edita WEB3FORMS_KEY con el nuevo valor
+8. Redeploy
+
+**Nota:** El email de verificación llegará a 
+reservations@castlesolutions.biz - asegúrate
+de tener acceso para confirmar.
+
+¿O quieres que lo haga yo si me pasas 
+el nuevo key una vez lo crees?
+
