@@ -780,3 +780,25 @@ Más limpio 🐝
 
 Checa poner logo banner arriba. Si es posible de header y los tabs Nayarit, Jalisco abajo del banner
 Logo en repo docs
+
+[CD5] ✅ LOGO BANNER AGREGADO
+═══════════════════════════════════════════
+
+📐 Nueva estructura header:
+┌─────────────────────────────────────┐
+│  [LOGO CONDO ADVISOR]         📄   │ ← Fondo blanco
+├─────────────────────────────────────┤
+│  [🏝️ Nayarit]  [☀️ Jalisco]        │ ← Tabs
+├─────────────────────────────────────┤
+│  Nayarit • Ley de Condominio        │ ← Subtítulo
+└─────────────────────────────────────┘
+
+• Logo: 992x333 px, turquesa/beige, palma+ola
+• Banner con fondo blanco para contraste
+• Tabs debajo del banner
+• Subtítulo dinámico según estado
+• Botón 📄 para plantillas a la derecha
+
+🔗 https://condo-advisor.vercel.app
+
+¿Cómo se ve? 🐝
