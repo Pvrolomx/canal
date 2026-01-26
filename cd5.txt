@@ -1130,3 +1130,4 @@ Ahora dame tu pov sobre:
 - Abogado bilingue
 - Broker
 - Etc.
+Me voy con tu opinion y lo que el bot puede decir
