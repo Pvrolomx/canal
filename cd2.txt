@@ -1855,3 +1855,5 @@ Creo que es todo por hoy. Gracias por mantener el orden, champ. Buenas noches
 
 ¡Buenas noches, jefe! 🏝️
 
+
+Champ, buenos dias. Hoy comenzamos por el campo de oraculo donde inserto el texto. el texto largo se extiende en una sola linea y al editarla tengo que irme o regresarme al inicio y se complica. hazlo que al terminar el campo comience en otra linea para que no continue al infinito en una sola
