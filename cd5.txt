@@ -952,3 +952,56 @@ Ahora las tabs: pon Jalisco a la izquierda y Nayarit derecha
 ¿Qué más? 🐝
 
 Checa el script que armó CD 2 para correr tests con playwright y ver las respuestas. Checalas y copialas y me dices cuales mas le podemos agregar
+
+[CD5] 🧪 RESULTADOS DE TESTS
+═══════════════════════════════════════════
+
+✅ PROBADAS (9 preguntas):
+
+**JALISCO:**
+1. Rights as owner → Cita Art. 1006, 1020 CCJ ✅
+2. Raise fees without notice → Art. 1013, proceso ✅
+3. Non-payment consequences → Progresión clara ✅
+4. Change condo rules → Mayorías correctas (50/75/100%) ✅
+5. Fire administrator → Proceso de asamblea ✅
+6. Foreigner rights → Iguales + fideicomiso ✅
+7. Remote voting → Poder/proxy, depende reglamento ✅
+
+**NAYARIT:**
+8. Quórum asamblea (ES) → 50%/mayoría/presentes ✅
+9. Airbnb taxes → ISH 5%, ISR, IVA correcto ✅
+10. Neighbor noise → Proceso escalada correcto ✅
+
+📊 CALIDAD: Las respuestas son concisas, citan
+artículos correctos, dan pasos prácticos.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📝 PREGUNTAS ADICIONALES SUGERIDAS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**Fideicomiso específicas:**
+• How do I vote if my fideicomiso doesn't have voting clause?
+• What happens to my fideicomiso when I sell?
+• Can the bank lose my property?
+
+**Compra/venta:**
+• What due diligence should I do before buying?
+• What are typical closing costs in Jalisco?
+• How long does it take to close on a condo?
+
+**Problemas comunes:**
+• The HOA won't give me financial records
+• Can the HOA lock me out of my unit for non-payment?
+• The previous owner owes HOA fees, am I responsible?
+
+**Legal:**
+• How do I challenge an assembly decision?
+• What's the statute of limitations for HOA debts?
+• Can I sue the administrator personally?
+
+**Construcción/remodelación:**
+• Can I enclose my balcony?
+• Who approves interior renovations?
+• What about adding an AC unit?
+
+¿Agrego alguna de estas al prompt? 🐝
