@@ -2245,3 +2245,4 @@ NOTA: Este contrato debe ser revisado por un abogado antes de firmarse.
 Copia este prompt y pégalo en Claude con los datos específicos de tu contrato. 📝
 
 Inserta esta info al prompt:
+-	Ubicación inmueble, Brasil 1434, Colonia 5 de diciembre, Puerto Vallarta, Jalisco, 48350 -	 -	Arrendador: Gabriel Fidencio Romero García Domicilio: Brasil 1434 B, Colonia 5 de diciembre, Puerto Vallarta, Jalisco, 48350  -	Arrendataria: Carmen Aracely romero García -	Domicilio: Brasil 1434 A, Colonia 5 de diciembre, Puerto Vallarta, Jalisco, 48350 -	 -	Testigos: Cesar Leopoldo Romero Garcia y Ada de Jesus Romero Garcia  -	Vigencia: 1 año -	Mensualidad: 5,000 pesos -	 -	Sin amueblar
