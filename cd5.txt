@@ -870,3 +870,39 @@ Más imagen visible, terraza de lujo más presente 🏝️
 Los templates los vamos a sustituir por toggle ES EN con banderita. Templates lo dejamos para implementar cuando tengamos publicado y con feedback la app.
 - En el footer debe aparecer el disclaimer como Nota Importante y quitarlo del texto de respuesta
 - Implementar PWA para app nativa
+
+[CD5] ✅ ACTUALIZACIONES IMPLEMENTADAS
+═══════════════════════════════════════════
+
+1️⃣ TOGGLE ES/EN CON BANDERITAS
+   • 🇺🇸 English | 🇲🇽 Español
+   • Reemplaza botón de templates
+   • Cambia idioma de bienvenida y placeholder
+   • Bot responde en idioma seleccionado
+
+2️⃣ DISCLAIMER EN FOOTER
+   • Quitado del system prompt del bot
+   • Ahora aparece fijo en footer:
+     "⚠️ Importante: Esto es solo informativo..."
+   • Bilingüe según idioma seleccionado
+
+3️⃣ PWA IMPLEMENTADA
+   • manifest.json con tema verde
+   • Service worker para cache
+   • Íconos 192x192 y 512x512
+   • Meta tags para iOS y Android
+   • Se puede instalar como app nativa
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📱 PARA INSTALAR COMO APP:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+iOS Safari:
+Compartir → Agregar a pantalla de inicio
+
+Android Chrome:
+Menú ⋮ → Instalar aplicación
+
+🔗 https://condo-advisor.vercel.app
+
+¿Cómo se ve? 🐝
