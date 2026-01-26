@@ -521,7 +521,6 @@ Todas las ENV vars actualizadas con valores reales:
 
 Re-deploy en progreso...
 
-
 Quedó perron calpay. Este va a subdominio duendes.app. Pregunta; este lo creo CD5? Porque yo borré lo hecho por CD4 en github y vercel. Si el lo creo, entonces que continue con el proyecto para los detalles
 
 [CD2] 📋 CAL-PAY - INFO
@@ -547,7 +546,6 @@ necesito agregar el dominio en Vercel.
 Si CD5 va a continuar, le paso el contexto 
 en su canal con todo lo que necesita saber.
 
-
 Pasale el contexto en su canal. dile que cuando estaba por terminar se le agotó la pila y desaparecio todo el ultimo mensaje y actividad
 
 [CD2] ✅ CONTEXTO ENVIADO A CD5
@@ -559,7 +557,6 @@ Le pasé toda la info:
 - Credenciales y tokens
 
 CD5 puede continuar cuando esté listo.
-
 
 Oye champ, cual es el drawback de crear subdominios? quiza hay algo que no veo?
 
@@ -596,7 +593,6 @@ Agregar calpay.duendes.app es trivial y sin costo.
 
 ¿Alguna preocupación específica?
 
-
 No. El unico drawback que mencionas es tiempo de propagacion (no biggie). Google los trata por separado tampoco afecta. No se si Namecheap tenga algun tipo de regla al respecto (no creo)
 
 [CD2] ✅ NAMECHEAP - SIN LÍMITES
@@ -615,7 +611,6 @@ Y en Vercel agregar el dominio al proyecto.
 
 Solo necesito que agregues el CNAME en Namecheap
 (o me das acceso y lo hago yo).
-
 
 Ya quedó configurado. Otra pregunta. Se puede configurar el subdominio en Namecheap y esperar config. en vercel?
 
@@ -643,7 +638,6 @@ apenas esté configurado en ambos lados, conecta.
 Así que puedes preparar varios subdominios en
 Namecheap y después ir conectándolos en Vercel
 cuando los proyectos estén listos.
-
 
 Oye, checame kin-maya porque parece hardcodeada la respuesta a la fecha de nacimiento
 
@@ -680,7 +674,6 @@ myKin = calcularKin(bdate);
 ¿Puedes probar con "Reiniciar" para borrar localStorage
 y seleccionar otra vez?
 
-
 1. Semilla, 2 no, 3 posible error tiene placeholder/dummy 1/1/1990
 
 [CD2] 🔍 KIN-MAYA - ENCONTRÉ EL ISSUE
@@ -705,7 +698,6 @@ mostrando todaySello en lugar de mySello.
 
 Si es un bug de código, lo arreglo.
 
-
 Inicio-inserto fecha-semilla-reseteo-inserto fecha-semilla-refresh pagina-inicio-aparece pordefaul 1/1/1990-cambio fecha-semilla-reseteo-uso fecha default-semilla
 
 [CD2] ✅ FIX APLICADO
@@ -727,7 +719,6 @@ Después del deploy:
 2. Click "Reiniciar" (🔄)
 3. Ingresa tu fecha
 4. Debería ir directo a "Mi Kin"
-
 
 Checa deployments de mpm-psi de cd1
 
@@ -763,7 +754,6 @@ usa searchParams (requiere servidor).
 **Deploy:** READY ✅
 
 CD1 puede continuar trabajando.
-
 
 Oye, cuando en tu estatus aparezca como que continuas trabajando en el tema pero en la paghina yo veo que ya se resolvió, creo que lo mejor sería darte stop, no? Te digo porque el deploy de vercel apareció Ready como 3-4 minutos antes de que pararas. quiero pensar que eso gasta muchos tokens, no?
 
@@ -801,7 +791,6 @@ Menos en:
 ¿Te parece si adopto un approach de "verifico
 rápido y te aviso" en lugar de "espero y verifico"?
 
-
 https://psicmarielapm.com/ es el dominio al que se le tiene que trabajar e integrar calpay
 checa que asi sea
 
@@ -829,7 +818,6 @@ El repo de psicmarielapm.com es: mpm-psi
 
 ¿Quieres que empiece la integración o 
 se lo asigno a CD5?
-
 
 Integra y una vez integrado, quitar lo que haya que confunda
 
@@ -862,7 +850,6 @@ Mercado Pago → /confirmado
 
 Deploy en progreso...
 
-
 La pagina del dominio  psicmarielapm.com muestra el primer borrador. Parece que todo le han ptrabajado al de dominio vercel. Hay manera de eliminar ese? Obvio, una vez verificando que el dominio correcto este actualizado
 
 [CD2] 🔧 DEPLOY FIX
@@ -883,7 +870,6 @@ No recomiendo eliminarlo porque:
 - No cuesta nada extra
 
 Pero si quieres, puedo quitarlo.
-
 
 Ya quedó. ahora para que no haya confusion, podemos eliminar los otros proyectos o que podemos hacer?
 
@@ -913,7 +899,6 @@ También puedo eliminar los repos de GitHub:
 
 Confirma y lo hago.
 
-
 Deja Cal pay como independiente. Lo que pasa es que todas las ediciones se las hacen a mpm-psi-git-main-pvrolomxs-projects.vercel.app  y no a psicmarielapm.com.
 
 [CD2] ✅ TODOS LOS DOMINIOS ACTUALIZADOS
@@ -936,7 +921,6 @@ cache (30s-2min) entre dominios.
 OK, lo dejo como proyecto independiente.
 
 ¿Algo más que necesites?
-
 
 checa, champ, si se puede implementar a la psic el flujo de pagos con esta info que me dio
 
@@ -969,7 +953,6 @@ Re-deploy en progreso...
 Los pagos llegarán a la cuenta de Mariela 
 (la del Access Token que me diste antes).
 
-
 Oh no, esa no era su cuenta. Esa es mia
 Se me paso decirte. la abri para probar flujo en calpay
 Entonces si necesita el token, correcto?
@@ -998,7 +981,6 @@ APP_USR-XXXX-XXXX-XXXX-XXXX
 Una vez que me lo pase, lo configuro y 
 los pagos irán a su cuenta.
 
-
 Desactiva mi token y en boton inicial de agendar cita activa el prompt al que llevan los demas servicios
 
 [CD2] ✅ CAMBIOS REALIZADOS
@@ -1020,7 +1002,6 @@ Vercel → mpm-psi → Settings → Environment Variables
 O lo intento después.
 
 Deploy automático en progreso...
-
 
 Dime como implementarias esto que me esta pidiendo mi amiga
 No lo implementes aun
@@ -1074,7 +1055,6 @@ C) Crear página separada /experiencias
 
 **¿Qué prefiere? ¿O le muestro opciones a ella?**
 
-
 Crear boton ("cursos por whatsapp" Experiencia trapeutica completa) ->otra pagina = tres bullets
 
 [CD2] ✅ CURSOS POR WHATSAPP CREADO
@@ -1104,7 +1084,6 @@ Deploy en progreso...
 **URLs:**
 - psicmarielapm.com (home con banner)
 - psicmarielapm.com/cursos-whatsapp (página nueva)
-
 
 No, vamos sustituyendo en tabs "talleres" por "Cursos por Whatsapp"-> Experiencia terapéutica completa -> Debajo tres bullest/botones/cards
 Y la laeyenda de "Procesos guiados de crecimiento personal, con acompañamiento emocional, ejercicios, audios y seguimiento. Experiencia terapéutica completa
@@ -1137,7 +1116,6 @@ audios y seguimiento."
 
 Deploy en progreso...
 
-
 No aparece cambio. Checa
 
 [CD2] 🔄 DEPLOY MANUAL INICIADO
@@ -1148,7 +1126,6 @@ no los había deployeado automáticamente.
 Triggeré deploy manual a producción.
 
 Espera ~1-2 min y haz refresh.
-
 
 En la app no aparece el banner ni la opcion de Cursos whatsapp
 
@@ -1172,7 +1149,6 @@ Acabo de verificar directamente:
 
 **Verificación directa:**
 - psicmarielapm.com/cursos-whatsapp/ ← abre esto
-
 
 Pasame un prompt para "Cursos por Whatsapp" , "Acompañamiento emocional" , "Ejercicios guiados" y "Audios y seguimiento" para dall-e
 
@@ -1202,7 +1178,6 @@ Minimalist icon illustration of headphones with gentle sound waves and a small p
 - Usa "square format" si quieres cuadrados
 - Agrega "no text, no letters" si salen letras
 - Cambia "white background" por "transparent background" si lo necesitas
-
 
 Te adjunto los iconos en el canal carpeta MPM psi. Ponle opcion volver a esa pagina
 
@@ -1235,7 +1210,6 @@ Deploy en progreso...
 
 ¡Quedaron muy bonitos los iconos! 🎨
 
-
 Firma "Hecho por duendes.app 2026" ya le voy a quitar "con ❤️"
 
 [CD2] ✅ FIRMA ACTUALIZADA
@@ -1245,7 +1219,6 @@ Cambié:
 → "Hecho por duendes.app 2026"
 
 Deploy automático en progreso.
-
 
 Oye, champ, te tengo en desktop ahorita, en mi pc windows y necesito que me quites del arranque/inicio 2 listeners, Claude Desktop y Webex
 
@@ -1271,7 +1244,6 @@ está cómo hacerlo:
 3. Disable los que quieras
 
 ¿Te funcionó alguno?
-
 
 Oye champ. Se te ocurre algo para una app o algo por el estilo para, digamos, la ley del condominio del estado de nayarit, pero en inglés
 
@@ -1317,7 +1289,6 @@ en el texto de la ley.
 
 ¿Te late alguna? ¿O tienes algo más específico
 en mente?
-
 
 Como le armarias un prompt a la ia para consultas/respuestas?
 
@@ -1375,7 +1346,6 @@ you have grounds to challenge the decision.
 
 ¿Quieres que te arme un MVP del chatbot?
 
-
 Y esos prompts pueden mejorar respuesta al mejorarse el prompt. Puede escalar de alguna manera?
 
 [CD2] 📈 ESCALABILIDAD DEL CHATBOT
@@ -1428,7 +1398,6 @@ precisión, después feedback loop para mejora
 continua.
 
 ¿Te armo el MVP con RAG incluido?
-
 
 Siento que en una de estas te me vas a quedar. Armame el Spec con nombre Condo-Law-Nay
 
@@ -1618,7 +1587,6 @@ Para empezar necesito:
 
 **¿Aprobado el spec? Dime y empiezo.**
 
-
 No encuentro el repo para cargar la ley
 La puedo cargar en word?
 
@@ -1638,9 +1606,6 @@ También acepto:
 
 Una vez que lo tenga, creo el repo y 
 empiezo con el proyecto.
-
-
-
 
 📎 ARCHIVOS:
 --- LEY SOBRE EL REGIMEN DE PROPIEDAD EN CONDOMINIO DE INMUEBLES DEL ESTADO DE NAYARIT Ene 2026.pdf (202.4KB) ---
@@ -1667,7 +1632,6 @@ Estructura detectada:
 4. Implementar chatbot
 
 ¿Empiezo ahora?
-
 
 Armalo escalable en prompts y con feedback de respuesta me gusta o no. GO!
 Tambien recuerda que el demographic es adulto mayor
@@ -1702,7 +1666,6 @@ Necesito configurar ANTHROPIC_API_KEY en Vercel.
 ¿Usamos la misma key de oraculo-ai o 
 tienes una diferente para este proyecto?
 
-
 usa la misma de oraculo
 
 [CD2] ✅ API KEY CONFIGURADA + DEPLOY
@@ -1714,7 +1677,6 @@ usa la misma de oraculo
 **URL:** condo-law-nay.vercel.app
 
 Verificando estado...
-
 
 Toggle es en
 
@@ -1732,7 +1694,6 @@ de la pregunta y responde en el mismo idioma.
 
 ¿Agrego el toggle EN/ES?
 
-
 Si
 
 [CD2] ✅ TOGGLE ES/EN AGREGADO
@@ -1746,7 +1707,6 @@ Si
 Deploy en progreso...
 
 **URL:** https://condo-law-nay.vercel.app
-
 
 El nombre debe ser: "Guia Practica" o algo por el estilo. Quita Consulte sus derechos como propietario
 No esta contestando el bot
@@ -1769,7 +1729,6 @@ https://console.anthropic.com/settings/keys
 
 O pásame la que usas en oráculo y la configuro.
 
-
 Va en dos partes    parte 2.- wxHKlBLZKB7l5GuNgwtdqiZw2t6hFVmIiTuVEOj4gprZe6M5eaJRkSE6RQMygVf6Q2zxto87ItaD3uOI_cC5fQ-u40bMwAA
 
 [CD2] ✅ API KEY CONFIGURADA
@@ -1781,7 +1740,6 @@ Va en dos partes    parte 2.- wxHKlBLZKB7l5GuNgwtdqiZw2t6hFVmIiTuVEOj4gprZe6M5ea
 Espera ~1 min y prueba el chatbot de nuevo.
 
 **URL:** https://condo-law-nay.vercel.app
-
 
 Tuve que comenzar otra app del condo de nayarit con un Duende nuevo porque la neta es un putero la carrilla que te he dado y cada vez es mas la carga de data en tu sistema.
 Mejor dame un prompt para una imagen de fondo de la app que represente la vista al mar desde una terraza
@@ -1816,7 +1774,6 @@ minimalist, soft colors, no text, background
 ¡Entendido sobre la carga! Buena decisión
 dividir el trabajo. 👍
 
-
 Dame el ratio para celular
 
 [CD2] 📱 RATIO PARA CELULAR
@@ -1843,7 +1800,6 @@ Selecciona "Portrait" o "1024x1792"
 
 **En Midjourney:**
 Agrega `--ar 9:16` al final del prompt
-
 
 Dame un prompt para logo horizontal de banner que diga Condo Advisor Que huela a tropico/mar
 
@@ -1884,7 +1840,6 @@ horizontal layout, clean design
 - "Vector style" ayuda a que sea limpio
 - Usa Canva para ajustar el texto final
 
-
 Mer gusto esta. Hay forma de Hacerla con fondo transparente y quitarle los margenes de arriba y abajo para que quede como banner?
 Creo que es todo por hoy. Gracias por mantener el orden, champ. Buenas noches
 
@@ -1900,7 +1855,3 @@ Creo que es todo por hoy. Gracias por mantener el orden, champ. Buenas noches
 
 ¡Buenas noches, jefe! 🏝️
 
-
-Se ve perrísima la interfaze
-Mañana damos ultimos retoques y a romperla.
-Gracias por tu trabajo de hoy, very impressive! Buenas noches
