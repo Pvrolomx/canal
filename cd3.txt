@@ -1910,3 +1910,5 @@ OPCIÓN B: Freemium desde día 1
 - PRO $49 MXN/mes (≈$2.50 USD)
 
 ¿Cuál prefieres? 🎯
+
+Considera que si la lanzo y se hace viral me puede costar mucho dinero si no le pongo un gobernmador (las api me quebrarían)
