@@ -136,3 +136,5 @@ Sube tus PDFs a /docs/:
 
 ¿Quieres que extraiga el texto de los PDFs 
 cuando los subas? 🐝
+
+Ya esta en repo ambas leyes.
