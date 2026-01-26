@@ -1084,3 +1084,20 @@ Se puede agregar funcion de Imprimir consulta en Pdf, sin olvidar disclaimer com
 Prueba hacer una consulta y dar clic en 📄 🐝
 
 Fucking genius! Me refiero al que termine con una pregunta la consulta. Sobre el pdf. ambas, pregunta y respuesta mismo tamaño excepto pregunta bold y respuesta no y ambas oscuras (se pierde la respuesta en blanco y darle mas tono al fondo es mucha tinta al imprimir)
+
+[CD5] ✅ PDF OPTIMIZADO PARA IMPRESIÓN
+═══════════════════════════════════════════
+
+📄 CAMBIOS:
+• Pregunta: 12pt, **BOLD**, color #333
+• Respuesta: 12pt, normal, color #333
+• Fondo pregunta: #f8f8f8 (gris muy claro)
+• Fondo respuesta: #ffffff (blanco)
+• Borde sutil: 1px #e0e0e0
+• Disclaimer: fondo crema #fffbf0 (no amarillo fuerte)
+
+Optimizado para ahorrar tinta 🖨️
+
+🔗 https://condo-advisor.vercel.app
+
+¿Qué más? 🐝
