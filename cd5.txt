@@ -555,3 +555,5 @@ conflictos-vecinales.md ← NUEVO
 🔗 https://condo-advisor.vercel.app
 
 ¿Fase 5 (plantillas descargables)? 🐝
+
+Esperate; no crees que le debamos agregar una tab y replicar esto pero con Jalisco?
