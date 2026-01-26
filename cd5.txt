@@ -663,3 +663,57 @@ Burbujas: 80% + blur(10px)
 
 Ahora si. Checa en repo condo nay law CCJ ene 226 y Condominium Law of Jalisco 1985 old. 1.- En el CCJ el titulo sexto es donde viene todo lo referente al condominio; y saca tambien lo mismo que del codigo de nayarit (contratos compraventa, promesa, AC, etc.). 2.- Te postee la laey de condominio vieja porque algunos condos en jalisco aun siguen sujetos a esa ley porque no han hecho la asamblea que los sujete a la nueva ley (no es en automatico, deben hacer la transicion mediante asamblea de acuerdo a la ley que los rige (la antigua)
 Dime si tienes alguna pregunta o duda, sino, GO!
+
+[CD5] ✅ JALISCO - DOCUMENTOS EXTRAÍDOS
+═══════════════════════════════════════════
+
+📚 extracted-jalisco/:
+
+1. ccj-condominios.md
+   • Código Civil de Jalisco - Título Sexto
+   • Arts. 1001-1048: Definiciones, constitución, derechos
+   • Asamblea, administrador, comité de vigilancia
+   • Quórum y mayorías
+   • Extinción del régimen
+
+2. ley-condominio-1985.md ⚠️ IMPORTANTE
+   • Ley anterior (Decreto 12006)
+   • Algunos condos TODAVÍA operan bajo esta ley
+   • Si no han hecho asamblea de transición → aplica 1985
+   • Incluye tabla comparativa vs CCJ nuevo
+
+3. ccj-contratos.md
+   • Promesa de compraventa (Arts. 1835-1837)
+   • Compraventa de inmuebles (Arts. 1850-1908)
+   • Asociaciones civiles (Arts. 173-185)
+   • Tabla de costos de cierre Jalisco
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚠️ DIFERENCIA CLAVE JALISCO:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Dos regímenes legales posibles:
+• LEY 1985 (si no han migrado)
+• CCJ NUEVO (si hicieron asamblea de transición)
+
+El bot debe PREGUNTAR: "¿Tu condominio opera bajo la ley de 1985 o ya adoptó el nuevo régimen del CCJ?"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📁 ESTRUCTURA ACTUAL DEL REPO:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Condo-nay-law/
+├── docs/ (PDFs originales)
+├── extracted/ (Nayarit)
+│   ├── ley-condominio.md
+│   ├── codigo-civil-relevante.md
+│   ├── fideicomisos.md
+│   ├── cuotas-morosos.md
+│   └── ... (11 archivos)
+├── extracted-jalisco/ ← NUEVO
+│   ├── ccj-condominios.md
+│   ├── ley-condominio-1985.md
+│   └── ccj-contratos.md
+└── plantillas/
+
+¿Actualizo la app con tabs Nayarit/Jalisco? 🐝
