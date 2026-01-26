@@ -1983,3 +1983,5 @@ test.describe('Condo Advisor Chatbot', () => {
 
 ¿Quieres que lo implemente en el repo?
 
+
+No solo queria las preguntas comunes y si me laten
