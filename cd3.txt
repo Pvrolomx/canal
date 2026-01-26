@@ -2155,3 +2155,4 @@ PASOS PARA VERIFICAR:
 ¿Tienes nueva access key? 🔑
 
 Puedes darme un prompt para un contrato de arrendamiento de bien inmueble en jalisco puerto vallarta?
+Luego checamos lo de web3forms
