@@ -1250,3 +1250,4 @@ Tengo a Anfitrion Mx conectada a Stripe, conecto cuenta nueva (CA)?
 Y si llega a 50 ya no pueden donar?
 Le dejo Tip $5? Es default
 Page intro - Intro video - Feed agrego algo?
+Creo que deberiamos subirla como subdominio de duendes.app. Your take
