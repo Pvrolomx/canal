@@ -910,3 +910,21 @@ Menú ⋮ → Instalar aplicación
 Se ve perrisima. Me encanta la interfaz
 - Powered by duendes.app que quede debajo del disclaimer pero que se lea Hecho por duendes.app 2026 y cambie con el toggle
 - Disclaimer un poco más visible (pobres gringos casi ni ven y no se trata de jugar con ellos)
+
+[CD5] ✅ FOOTER ACTUALIZADO
+═══════════════════════════════════════════
+
+📋 DISCLAIMER MÁS VISIBLE:
+• Fondo oscuro con borde
+• Texto 11px (antes 9px)
+• Color más claro (#aebac1)
+• Padding y espaciado
+
+📝 MADE BY BILINGÜE:
+🇺🇸 "Made by duendes.app © 2026"
+🇲🇽 "Hecho por duendes.app © 2026"
+• Cambia con el toggle ES/EN
+
+🔗 https://condo-advisor.vercel.app
+
+¿Quedó bien visible para los gringos? 👀🐝
