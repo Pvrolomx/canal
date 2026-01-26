@@ -228,3 +228,5 @@ prompts/
 └── system-prompt.md ✅ ACTUALIZADO v2
 
 ¿Siguiente paso? 🐝
+
+Contempla que podemos ponerle de fondo una imagen picturesca del tropico para que no se vea tan fea la app
