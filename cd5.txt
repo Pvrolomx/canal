@@ -1010,3 +1010,4 @@ Agrega todas +
 - Puede la administracion cortar mi servicio de agua o luz si no pago mis cuotas?
 - Se considera area comun la azotea si solo sirve a un solo condómino?
 - Puede un propietario solicitar la concesion de la zofemat frente al condominio?
+(siendo extranjero)
