@@ -230,3 +230,4 @@ prompts/
 ¿Siguiente paso? 🐝
 
 Contempla que podemos ponerle de fondo una imagen picturesca del tropico para que no se vea tan fea la app
+Y que va a ir escalando la info en la app hasta tener una que sepa mas que el abogado comun (un profesor de l auniversidad experto en esta materia publico un lñibro que ni de chiste competiría con esta app)
