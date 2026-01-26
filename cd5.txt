@@ -717,3 +717,5 @@ Condo-nay-law/
 └── plantillas/
 
 ¿Actualizo la app con tabs Nayarit/Jalisco? 🐝
+
+Si
