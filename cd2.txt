@@ -1818,3 +1818,29 @@ dividir el trabajo. 👍
 
 
 Dame el ratio para celular
+
+[CD2] 📱 RATIO PARA CELULAR
+
+**Aspect ratios móviles:**
+- **9:16** - Vertical estándar (stories/reels)
+- **9:19.5** - iPhone moderno
+- **9:20** - Android común
+
+**Prompt actualizado:**
+
+```
+Serene ocean view from modern condo terrace 
+in Riviera Nayarit Mexico, minimalist style, 
+soft morning light, palm trees in distance, 
+turquoise water, peaceful atmosphere, 
+no people, architectural photography, 
+soft blur for mobile background, 
+9:16 vertical aspect ratio
+```
+
+**En DALL-E:**
+Selecciona "Portrait" o "1024x1792"
+
+**En Midjourney:**
+Agrega `--ar 9:16` al final del prompt
+
