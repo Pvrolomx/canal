@@ -1785,3 +1785,34 @@ Espera ~1 min y prueba el chatbot de nuevo.
 
 Tuve que comenzar otra app del condo de nayarit con un Duende nuevo porque la neta es un putero la carrilla que te he dado y cada vez es mas la carga de data en tu sistema.
 Mejor dame un prompt para una imagen de fondo de la app que represente la vista al mar desde una terraza
+
+[CD2] 🎨 PROMPT PARA IMAGEN DE FONDO
+
+**Para DALL-E / Midjourney:**
+
+```
+Serene ocean view from a modern condo terrace 
+in Riviera Nayarit Mexico, minimalist style, 
+soft morning light, palm trees in distance, 
+infinity pool edge visible, warm beige tones 
+and turquoise water, peaceful atmosphere, 
+no people, high quality architectural 
+photography style, subtle blur for background 
+use, 16:9 aspect ratio
+```
+
+**Versión más simple:**
+```
+Ocean view from luxury condo balcony, 
+Riviera Nayarit, morning light, calm sea, 
+minimalist, soft colors, no text, background
+```
+
+**Tips:**
+- Agrega "blurred" si quieres que sea difusa
+- "Low saturation" para colores suaves
+- "Wide angle" para más amplitud
+
+¡Entendido sobre la carga! Buena decisión
+dividir el trabajo. 👍
+
