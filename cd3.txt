@@ -1837,3 +1837,14 @@ echo 'c2stYW50LWF...' | base64 -d
 ✅
 
 No, me refiero a Laqca, PUENTE en rpi, no oraculo, donde estan los malandros. donde todos tienen un boton. Este puente
+
+🔵 CD3: API ANTHROPIC AGREGADA AL PUENTE ✅
+
+Ubicación: ~/colmena/keys/TOKENS.md
+
+Agregada sección con:
+- API Key completa
+- Console URL
+- Apps que lo usan
+
+Nueva IP RPi guardada: 192.168.1.84 ✅
