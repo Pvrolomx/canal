@@ -1877,3 +1877,18 @@ Deploy en progreso...
 
 
 Deja veo al escribir. Veamos si me voy al final del campo y si me continua al infinito o si se vuelve una nueva. No champ, continúa igual. Checalo
+
+[CD2] 🔧 FIX WORD WRAP
+
+Agregué estilos adicionales al textarea:
+- whitespace-pre-wrap
+- break-words
+- wordWrap: break-word
+
+Esto fuerza que el texto haga wrap 
+al llegar al borde del campo.
+
+Deploy en progreso...
+
+Prueba en ~1 min con hard refresh (Ctrl+Shift+R)
+
