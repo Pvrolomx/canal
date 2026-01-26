@@ -419,3 +419,5 @@ FASE 5: Plantillas descargables (pendiente)
 🔗 https://condo-advisor.vercel.app (rebuilding)
 
 ¿Siguiente tarea? 🐝
+
+Continua fase 3
