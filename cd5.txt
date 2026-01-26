@@ -183,3 +183,5 @@ LISTO PARA:
 • RAG custom (usar extracted/*.md)
 
 ¿Siguiente paso? 🐝
+
+Del Codigo civil lo imnportante son los contratos de compraventa, las promesas de compraventa. las Asociaciones Civiles. Y parte del prompt para los extranjeros es , y no esta en el codigo civil ni del condominio es que si su propiedad esta bajo regimen de fideicomiso, para votar en asamblea debe estar a lo que su fideicomiso disponga. Regularmente el fideicomiso dice que el poder para concurrir a una asamblea de condóminos esta inserto en su escritura y que puede delegar ese poder mediante carta poder a un tercero, pero si no se encuentra esa clausula en su escritura/fideicomiso, entonces tendrá que pedir al banco (fiduciario) mediante carta instruccion, un poder para asistir a la asamblea, para el fideicomisario /propietario o un tercero que el fideico0misario designe
