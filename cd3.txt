@@ -2089,3 +2089,4 @@ Deploy: https://kin-maya.vercel.app
 ¿Qué cambios quieres hacer?
 
 Esa no es porque la anterior tenia la imagen de fondo
+Rregresa a donde tenia la imagen de fondo y partimos de ahi. No se la pongas porque entonces nos perderiamos. busca cual version tenia la imagen de fondo ultima
