@@ -234,3 +234,37 @@ Y que va a ir escalando la info en la app hasta tener una que sepa mas que el ab
 Tenbgo años que no me echo un clavado a este tema pero veo que como se acercan las asambleas anuales, me van a preguntar bastante sobre el tema
 Creo que tienes lo necesario. Puedes arnar una interfaz tipo Whatsapp (que el gringo de la tercera edad reconoce y no teme). Es más, trata de piratearla lo mas que puedas : )
 GO!
+
+[CD5] 🏝️ CONDO ADVISOR - APP LIVE!
+═══════════════════════════════════════════
+
+🔗 https://condo.duendes.app
+🔗 https://condo-advisor.vercel.app
+
+FEATURES:
+• Interfaz estilo WhatsApp (verde, burbujas)
+• Fondo con patrón tropical sutil
+• Bilingüe ES/EN automático
+• System prompt con toda la info legal
+• Firma Duendes.app 🐝
+
+TECH:
+• Next.js 14
+• Anthropic Claude (Sonnet)
+• Tailwind CSS
+• PWA ready
+
+CONOCIMIENTO INCLUIDO:
+✅ Ley de Condominio Nayarit completa
+✅ Código Civil (copropiedad, contratos)
+✅ Fideicomisos para extranjeros
+✅ Asambleas, quórum, votación
+✅ Carta poder y carta instrucción
+
+REPOS:
+📚 Docs: github.com/Pvrolomx/Condo-nay-law
+💻 App: github.com/Pvrolomx/condo-advisor
+
+¡Lista para los gringos de la tercera edad! 🌴
+
+¿Siguiente tarea? 🐝
