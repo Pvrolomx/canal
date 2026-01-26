@@ -612,3 +612,5 @@ github.com/Pvrolomx/condo-advisor (app)
 🔗 https://condo-advisor.vercel.app/templates
 
 ¿Jalisco ahora? 🐝
+
+Checa la png que agregue   a repo coond nay law para fondo
