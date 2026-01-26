@@ -650,3 +650,13 @@ Cambios:
 ¿Cómo se ve? 🐝
 
 Un poco mas de brillo y queda (vamos a hacer garras con esta cosa)
+
+[CD5] ✅ MÁS BRILLO
+═══════════════════════════════════════════
+
+Overlay: 60% → 45%
+Burbujas: 80% + blur(10px)
+
+🔗 https://condo-advisor.vercel.app
+
+¡A hacer garras! 🦅 ¿Qué sigue?
