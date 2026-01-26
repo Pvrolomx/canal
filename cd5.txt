@@ -869,3 +869,4 @@ Más imagen visible, terraza de lujo más presente 🏝️
 
 Los templates los vamos a sustituir por toggle ES EN con banderita. Templates lo dejamos para implementar cuando tengamos publicado y con feedback la app.
 - En el footer debe aparecer el disclaimer como Nota Importante y quitarlo del texto de respuesta
+- Implementar PWA para app nativa
