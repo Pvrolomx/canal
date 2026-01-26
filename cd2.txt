@@ -1844,3 +1844,5 @@ Selecciona "Portrait" o "1024x1792"
 **En Midjourney:**
 Agrega `--ar 9:16` al final del prompt
 
+
+Dame un prompt para logo horizontal de banner que diga Condo Advisor Que huela a tropico/mar
