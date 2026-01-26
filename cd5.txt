@@ -1057,3 +1057,5 @@ El bot está bien entrenado. Las respuestas
 son precisas y útiles. 🎯
 
 ¿Más tests o seguimos con otra cosa? 🐝
+
+Se puede agregar funcion de Imprimir consulta en Pdf, sin olvidar disclaimer como footer. Fuente de texto Arial 12 o similar, header/titulo 14 y logo arriba
