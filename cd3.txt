@@ -2072,3 +2072,18 @@ La app sigue mostrando:
 ¡Lista para lanzar! 🚀
 
 Vuelve a la version anterior y entonces hacemos cambios. Solo regresa a la anterior porque necesito ver exactamente lo hecho
+
+🔵 CD3: VERSIÓN ANTERIOR RESTAURADA ✅
+
+Restauré la versión del commit:
+d20669c58b23598c3bbdb1454b646f558845bc4e
+"Update footer signature"
+
+Esta versión tiene:
+✅ Botón "Pedir interpretación" (usa API Claude)
+✅ Compatibilidad (usa API Claude)
+✅ Todo lo demás igual
+
+Deploy: https://kin-maya.vercel.app
+
+¿Qué cambios quieres hacer?
