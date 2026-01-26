@@ -2112,3 +2112,44 @@ Deploy: https://kin-maya.vercel.app
 ¿Qué cambios quieres hacer desde aquí?
 
 Hazme una verificacion de castle-checkin porque cancele web23forms y luego lo reahibilte pero ahora no llegan emails
+
+🔵 CD3: VERIFICACIÓN CASTLE-CHECKIN 🏰
+
+═══════════════════════════════════════
+CONFIGURACIÓN ACTUAL:
+═══════════════════════════════════════
+URL: castle-checkin.vercel.app
+Commit: 5eec28e (revert: back to Web3Forms)
+
+Access Key: 1f3be572-2fa2-46a0-b8b5-820679ae7a08
+Email TO: reservations@castlesolutions.biz
+
+═══════════════════════════════════════
+POSIBLES PROBLEMAS:
+═══════════════════════════════════════
+
+1️⃣ ACCESS KEY INVÁLIDA
+   → Si cancelaste y rehabilitaste Web3Forms
+   → Puede que te dieron una NUEVA access key
+   → Verificar en: https://web3forms.com/
+
+2️⃣ EMAIL NO VERIFICADO
+   → Web3Forms requiere verificar el email TO
+   → Revisar spam/promociones por email de verificación
+   → O configurar nuevo email y verificarlo
+
+3️⃣ CUENTA DESACTIVADA
+   → Revisar dashboard de Web3Forms
+   → Puede estar en estado "paused" o "canceled"
+
+═══════════════════════════════════════
+PASOS PARA VERIFICAR:
+═══════════════════════════════════════
+
+1. Ve a https://web3forms.com/
+2. Inicia sesión
+3. Revisa si la access key es la misma
+4. Revisa si el email está verificado
+5. Manda email de prueba desde dashboard
+
+¿Tienes nueva access key? 🔑
