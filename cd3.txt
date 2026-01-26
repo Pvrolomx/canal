@@ -2243,3 +2243,5 @@ NOTA: Este contrato debe ser revisado por un abogado antes de firmarse.
 ═══════════════════════════════════════
 
 Copia este prompt y pégalo en Claude con los datos específicos de tu contrato. 📝
+
+Inserta esta info al prompt:
