@@ -1970,3 +1970,5 @@ CUANDO QUIERAS AGREGAR AI:
 - Costo único, no recurrente
 
 ¿Quito los botones de AI? 🔧
+
+Pre generar te refieres a que solo habria 260 interpretaciones?
