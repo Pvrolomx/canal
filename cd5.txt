@@ -950,3 +950,5 @@ Ahora las tabs: pon Jalisco a la izquierda y Nayarit derecha
 🔗 https://condo-advisor.vercel.app
 
 ¿Qué más? 🐝
+
+Checa el script que armó CD 2 para correr tests con playwright y ver las respuestas. Checalas y copialas y me dices cuales mas le podemos agregar
