@@ -1835,3 +1835,5 @@ Para decodificar:
 echo 'c2stYW50LWF...' | base64 -d
 
 ✅
+
+No, me refiero a Laqca, PUENTE en rpi, no oraculo, donde estan los malandros. donde todos tienen un boton. Este puente
