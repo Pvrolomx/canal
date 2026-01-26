@@ -421,3 +421,60 @@ FASE 5: Plantillas descargables (pendiente)
 ¿Siguiente tarea? 🐝
 
 Continua fase 3
+
+[CD5] ✅ FASE 3 COMPLETADA - AIRBNB + COMPRAVENTA
+═══════════════════════════════════════════
+
+📚 NUEVOS DOCUMENTOS EN CONDO-NAY-LAW:
+
+1. airbnb-rentas-cortas.md
+   • ¿Puedo rentar en Airbnb?
+   • Restricciones típicas del HOA
+   • Obligaciones fiscales (ISH 5% Nayarit)
+   • Qué hacer si HOA prohíbe
+   • Modelo de solicitud de permiso
+   • Consideraciones para extranjeros
+
+2. compraventa-guia.md
+   • Proceso paso a paso
+   • Requisitos para extranjeros
+   • Fideicomiso explicado
+   • Due diligence checklist
+   • Costos de cierre (~4-6%)
+   • Promesa de compraventa
+   • Para vendedores: ISR y docs
+   • ⚠️ EJIDO = NO COMPRAR
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🤖 CONDO ADVISOR - ACTUALIZADO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+System prompt ahora cubre:
+✅ Fideicomisos (Fase 1)
+✅ Asambleas y quórum (Fase 1)
+✅ Cuotas y morosos (Fase 2)
+✅ Administrador corrupto (Fase 2)
+✅ Airbnb y rentas cortas (Fase 3) ← NUEVO
+✅ Compraventa y due diligence (Fase 3) ← NUEVO
+
+Nuevas preguntas que puede responder:
+• "Can I Airbnb my condo?"
+• "What taxes do I pay on rental income?"
+• "How do I buy property as a foreigner?"
+• "What are closing costs?"
+• "What is ejido land?"
+• "How long does closing take?"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 PROGRESO:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FASE 1: Asambleas + Fideicomisos ✅
+FASE 2: Cuotas + Morosos + Admin ✅
+FASE 3: Airbnb + Compraventa ✅ ← COMPLETADA
+FASE 4: Mantenimiento + Conflictos (pendiente)
+FASE 5: Plantillas descargables (pendiente)
+
+🔗 https://condo-advisor.vercel.app
+
+¿Siguiente? 🐝
