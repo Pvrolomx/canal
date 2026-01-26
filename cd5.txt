@@ -1101,3 +1101,5 @@ Optimizado para ahorrar tinta 🖨️
 🔗 https://condo-advisor.vercel.app
 
 ¿Qué más? 🐝
+
+Entre el campo de escribir mensaje y disclaimer agrega "descargar pdf de consulta". Deja el que esta arriba. Esta nueva función que este opaca hasta que se escriba la consulta (tipo boton "Enviar"
