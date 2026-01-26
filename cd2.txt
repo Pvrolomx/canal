@@ -2113,3 +2113,12 @@ y reenviar manualmente.
 
 <form action="https://api.web3forms.com/submit" method="POST">   <input type="hidden" name="access_key" value="abe0e307-3bfd-4a79-8adf-d22c38e9c8c6">   <input type="text" name="name" required>   <input type="email" name="email" required>   <textarea name="message" required></textarea>   <button type="submit">Submit Form</button> </form>
 abe0e307-3bfd-4a79-8adf-d22c38e9c8c6   insertale esta key porque la otra no vale ya
+
+[CD2] ✅ WEB3FORMS KEY ACTUALIZADA
+
+**Nueva key:** abe0e307-3bfd-4a79-8adf-d22c38e9c8c6
+**Configurada en Vercel:** ✅
+**Redeploy:** En progreso
+
+Prueba en ~30 seg.
+
