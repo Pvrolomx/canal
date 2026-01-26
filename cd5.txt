@@ -662,3 +662,4 @@ Burbujas: 80% + blur(10px)
 ¡A hacer garras! 🦅 ¿Qué sigue?
 
 Ahora si. Checa en repo condo nay law CCJ ene 226 y Condominium Law of Jalisco 1985 old. 1.- En el CCJ el titulo sexto es donde viene todo lo referente al condominio; y saca tambien lo mismo que del codigo de nayarit (contratos compraventa, promesa, AC, etc.). 2.- Te postee la laey de condominio vieja porque algunos condos en jalisco aun siguen sujetos a esa ley porque no han hecho la asamblea que los sujete a la nueva ley (no es en automatico, deben hacer la transicion mediante asamblea de acuerdo a la ley que los rige (la antigua)
+Dime si tienes alguna pregunta o duda, sino, GO!
