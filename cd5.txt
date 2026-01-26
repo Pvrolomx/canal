@@ -139,3 +139,47 @@ cuando los subas? 🐝
 
 Ya esta en repo ambas leyes.
 comenzamos con esas
+
+[CD5] 📄 TEXTOS EXTRAÍDOS Y ORGANIZADOS
+═══════════════════════════════════════════
+
+✅ PDFs procesados:
+• Ley del Condominio (34 págs, 83K chars)
+• Código Civil (437 págs, 1M chars)
+
+✅ Archivos creados en /extracted/:
+
+1. ley-condominio.md
+   → Texto completo de la ley
+   → Listo para RAG/embeddings
+
+2. codigo-civil-relevante.md
+   → Capítulo VI: De la Copropiedad
+   → Arts. 922-963 (lo relevante)
+
+3. articulos-clave.md ⭐
+   → Referencia rápida
+   → Tablas de quórum
+   → Tipos de mayorías
+   → Reglas de asambleas
+   → Funciones del administrador
+
+ESTRUCTURA FINAL:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Condo-nay-law/
+├── docs/
+│   ├── CCN ene 2026.pdf
+│   └── Ley del Condominio nayarit Ene 2026.pdf
+├── extracted/
+│   ├── ley-condominio.md ✅
+│   ├── codigo-civil-relevante.md ✅
+│   └── articulos-clave.md ✅ (nuevo)
+└── prompts/
+    └── system-prompt.md ✅
+
+LISTO PARA:
+• OpenAI Assistants (subir PDFs + system prompt)
+• Claude Projects (subir .md + system prompt)
+• RAG custom (usar extracted/*.md)
+
+¿Siguiente paso? 🐝
