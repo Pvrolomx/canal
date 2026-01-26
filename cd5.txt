@@ -802,3 +802,5 @@ Logo en repo docs
 🔗 https://condo-advisor.vercel.app
 
 ¿Cómo se ve? 🐝
+
+Es posible hacer fondo del logo transparente?
