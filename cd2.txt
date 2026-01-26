@@ -1886,3 +1886,4 @@ horizontal layout, clean design
 
 
 Mer gusto esta. Hay forma de Hacerla con fondo transparente y quitarle los margenes de arriba y abajo para que quede como banner?
+Creo que es todo por hoy. Gracias por mantener el orden, champ. Buenas noches
