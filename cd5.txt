@@ -1011,3 +1011,4 @@ Agrega todas +
 - Se considera area comun la azotea si solo sirve a un solo condómino?
 - Puede un propietario solicitar la concesion de la zofemat frente al condominio?
 (siendo extranjero)
+Puedes no solo agregar estas preguntas sino tambien correrlas? Hay manera de ver el resultado de la prueba de playwrigth
