@@ -101,3 +101,5 @@ URLs ACTUALES:
 • https://calpay.duendes.app ⏳ (esperando DNS)
 
 ¿Siguiente tarea? 🐝
+
+Que preguntas harias para armar un prompt o fortalecerlo para una IA de api de anthropic o openai sobre la ley del codominio en nayarit. como fortalecerías sus respuestas?
