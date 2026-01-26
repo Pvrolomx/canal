@@ -909,3 +909,4 @@ Menú ⋮ → Instalar aplicación
 
 Se ve perrisima. Me encanta la interfaz
 - Powered by duendes.app que quede debajo del disclaimer pero que se lea Hecho por duendes.app 2026 y cambie con el toggle
+- Disclaimer un poco más visible (pobres gringos casi ni ven y no se trata de jugar con ellos)
