@@ -635,3 +635,16 @@ Mientras compilo las leyes  d jalissco
 Esperando leyes de Jalisco... 🌴
 
 La pusiste muy opaca; dale poco mas brillo y poca transparencia  a la burbuja de texto para ver que tal
+
+[CD5] ✅ AJUSTES DE OPACIDAD
+═══════════════════════════════════════════
+
+Cambios:
+• Overlay fondo: 85% → 60% (se ve más la imagen)
+• Burbujas usuario: 85% transparencia + blur
+• Burbujas asistente: 85% transparencia + blur
+• Backdrop-filter blur(8px) para efecto glass
+
+🔗 https://condo-advisor.vercel.app
+
+¿Cómo se ve? 🐝
