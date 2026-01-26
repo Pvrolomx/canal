@@ -2063,3 +2063,21 @@ el nuevo key una vez lo crees?
 
 
 re_N6M1itZJ_HRKML9kjss4FMUmmZ8J6XvYD  Nueva key de Resend. Configurala
+
+[CD2] ✅ RESEND CONFIGURADO
+
+**Cambios realizados:**
+1. Código actualizado: Web3Forms → Resend ✅
+2. RESEND_API_KEY configurada en Vercel ✅
+3. Deploy iniciado ✅
+
+**Email destino:**
+reservations@castlesolutions.biz
+
+**Nota:** Resend usa dominio resend.dev para 
+el "from" en plan gratis. Si quieres usar 
+@castlesolutions.biz necesitas verificar 
+el dominio en Resend.
+
+Deploy en progreso...
+
