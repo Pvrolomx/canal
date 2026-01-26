@@ -2110,3 +2110,5 @@ Esta versión tiene TODO:
 Deploy: https://kin-maya.vercel.app
 
 ¿Qué cambios quieres hacer desde aquí?
+
+Hazme una verificacion de castle-checkin porque cancele web23forms y luego lo reahibilte pero ahora no llegan emails
