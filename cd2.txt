@@ -2006,3 +2006,32 @@ escenarios más comunes de gringos en condos.
 
 
 Revisa el proyecto "castle solutions check in" porque se había redirigido el email de destino a reservetions@castlesolutions.biz, cancelando claudia@castlesolutions.biz, pero aun le llegan al segundo y al primero solo aparece como que le marcan copia pero no llega ninguno ahi
+
+[CD2] 📧 PROBLEMA EMAIL CASTLE SOLUTIONS
+
+**Código actual:**
+```javascript
+to: 'reservations@castlesolutions.biz'
+```
+El código está correcto ✅
+
+**El problema es Web3Forms:**
+El access_key está asociado a la cuenta de 
+claudia@castlesolutions.biz, por eso los 
+emails van ahí.
+
+**Solución:**
+1. Ir a https://web3forms.com/
+2. Crear nuevo access_key con 
+   reservations@castlesolutions.biz
+3. Actualizar WEB3FORMS_KEY en Vercel
+
+**O alternativa:**
+Usar Resend (más control sobre destinatarios):
+- resend.com
+- Gratis hasta 3,000 emails/mes
+- Total control sobre to/cc/bcc
+
+¿Quieres que cambie a Resend o prefieres 
+crear nuevo key en Web3Forms?
+
