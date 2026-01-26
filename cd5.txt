@@ -107,3 +107,32 @@ Es para extranjeros principalmente pero debe ser es en. Tengo la ley y solo debo
 Lo que mas les interesa son las asambleas de condóminos. Los cuerpos de gobierno. Quorum etc.
 Ya tengo codigo civil y ley del condominio, arma un repo Condo-nay-law y la publico ahi
 Recuerda que el demographic es gringo de la tercera edad
+
+[CD5] 📚 REPO CONDO-NAY-LAW CREADO
+═══════════════════════════════════════════
+
+✅ https://github.com/Pvrolomx/Condo-nay-law
+
+ESTRUCTURA:
+├── README.md (documentación completa)
+├── prompts/
+│   └── system-prompt.md (listo para usar)
+├── docs/
+│   └── README.md (aquí subes los PDFs)
+└── extracted/
+    └── README.md (para versiones .md)
+
+SYSTEM PROMPT INCLUYE:
+• Bilingüe ES/EN
+• Enfocado en: Asambleas, Quórum, Gobierno
+• Tabla de equivalencias legal ES→EN
+• Ejemplos de respuestas
+• Instrucciones para OpenAI y Anthropic
+
+SIGUIENTE PASO:
+Sube tus PDFs a /docs/:
+• ley-condominio-nayarit.pdf
+• codigo-civil-nayarit.pdf
+
+¿Quieres que extraiga el texto de los PDFs 
+cuando los subas? 🐝
