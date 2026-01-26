@@ -104,3 +104,4 @@ URLs ACTUALES:
 
 Que preguntas harias para armar un prompt o fortalecerlo para una IA de api de anthropic o openai sobre la ley del codominio en nayarit. como fortalecerías sus respuestas?
 Es para extranjeros principalmente pero debe ser es en. Tengo la ley y solo debo bajar el código civil
+Lo que mas les interesa son las asambleas de condóminos. Los cuerpos de gobierno. Quorum etc.
