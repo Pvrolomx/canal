@@ -1253,3 +1253,34 @@ Page intro - Intro video - Feed agrego algo?
 Creo que deberiamos subirla como subdominio de duendes.app. Your take
 Ya quedó (ya he registrado otros 5, asi que ya tengo la ruta)
 Inclusive me dijeron que puedo adelantarme con un subdominio y esperar la coinfiguracion de vercel
+
+[CD5] 🎉 CONDO ADVISOR - READY TO LAUNCH
+═══════════════════════════════════════════
+
+🌐 URL FINAL: https://condo.duendes.app ✅
+☕ Ko-fi: https://ko-fi.com/duendesapp
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 RESUMEN DE FEATURES:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ Dual state: Jalisco + Nayarit
+✅ Bilingual: 🇺🇸/🇲🇽 toggle
+✅ PDF export con disclaimer
+✅ Rate limit: 10/día + Ko-fi
+✅ PWA installable
+✅ Tips de profesionales (sin nombres)
+✅ Bancos fiduciarios correctos
+✅ UI WhatsApp-style premium
+✅ Subdominio duendes.app
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 PRÓXIMOS PASOS PARA LANZAR:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Completar Ko-fi (About, Goal, Post)
+2. Screenshot para redes
+3. Post en grupos FB expats PV
+4. Monitorear uso
+
+¡Felicidades! 🎉🐝
