@@ -758,3 +758,22 @@ JALISCO:
 ¡LIVE! Pruébala 🐝
 
 Sabes que, vamos a quitar la ley vieja de jalisco; eso va a confundir. Amenos que el usuario pregunte por esa ley el bot hará mnencion de la misma, porque esta mencionando que hay tres tipos de asambleas y actualmenter solo hay ordinaria y extraordinaria, a menos que se me escape algo
+
+[CD5] ✅ JALISCO SIMPLIFICADO
+═══════════════════════════════════════════
+
+Cambios:
+• Quitada mención de ley 1985 en bienvenida
+• Bot usa SOLO CCJ (Código Civil de Jalisco) como default
+• Ley 1985 solo se menciona si el usuario pregunta
+• Corregido: Solo 2 tipos de asamblea (Ordinaria + Extraordinaria)
+
+System prompt Jalisco ahora incluye:
+• Arts. 1017-1019 CCJ (Asambleas)
+• Art. 1020 CCJ (Administrador)
+• Art. 1024 CCJ (Comité de Vigilancia)
+• Arts. 1835-1837, 1908 CCJ (Contratos)
+
+🔗 https://condo-advisor.vercel.app
+
+Más limpio 🐝
