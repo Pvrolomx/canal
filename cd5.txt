@@ -1227,3 +1227,4 @@ Actualmente apunta a: ko-fi.com/condoadvisor
 Prueba hacer 10 consultas para ver el límite 🐝
 
 Pasame un bio para kofi
+Stripe se queda con cuento de cada donacion?
