@@ -777,3 +777,5 @@ System prompt Jalisco ahora incluye:
 🔗 https://condo-advisor.vercel.app
 
 Más limpio 🐝
+
+Checa poner logo banner arriba. Si es posible de header y los tabs Nayarit, Jalisco abajo del banner
