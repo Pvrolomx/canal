@@ -1857,3 +1857,21 @@ Creo que es todo por hoy. Gracias por mantener el orden, champ. Buenas noches
 
 
 Champ, buenos dias. Hoy comenzamos por el campo de oraculo donde inserto el texto. el texto largo se extiende en una sola linea y al editarla tengo que irme o regresarme al inicio y se complica. hazlo que al terminar el campo comience en otra linea para que no continue al infinito en una sola
+
+[CD2] ☀️ BUENOS DÍAS
+
+**Cambio realizado en Oráculo:**
+
+Input de texto → Textarea con auto-resize
+
+**Comportamiento nuevo:**
+- El campo crece automáticamente con el texto
+- Máximo 150px de altura
+- Después aparece scroll
+- Enter sigue enviando el mensaje
+- Shift+Enter para nueva línea
+
+Deploy en progreso... 
+
+**URL:** https://oraculo.duendes.app
+
