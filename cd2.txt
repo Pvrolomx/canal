@@ -1784,3 +1784,4 @@ Espera ~1 min y prueba el chatbot de nuevo.
 
 
 Tuve que comenzar otra app del condo de nayarit con un Duende nuevo porque la neta es un putero la carrilla que te he dado y cada vez es mas la carga de data en tu sistema.
+Mejor dame un prompt para una imagen de fondo de la app que represente la vista al mar desde una terraza
