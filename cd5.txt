@@ -1131,3 +1131,35 @@ Ahora dame tu pov sobre:
 - Broker
 - Etc.
 Me voy con tu opinion y lo que el bot puede decir
+
+[CD5] ✅ TIPS DE PROFESIONALES AGREGADOS
+═══════════════════════════════════════════
+
+El bot ahora puede dar consejos sobre cómo
+elegir profesionales SIN recomendar nombres.
+
+📋 CATEGORÍAS:
+• Notario - experiencia, volumen, tiempos
+• Abogado - especialidad, referencias, colegio
+• Contador - extranjeros, SAT, ISR/IVA
+• Fiduciario - bancos principales, costos
+• Broker - no obligatorio, qué verificar
+
+🧪 TESTS PASARON:
+"Do you know a good notary?"
+→ Tips sin nombres ✅
+
+"¿Recomiendas abogado?"
+→ Consejos en español ✅
+
+💬 EJEMPLO DE RESPUESTA:
+"I can't recommend specific notaries, 
+but here's what to look for...
+• Real estate experience
+• Fideicomiso volume
+• Upfront fee transparency
+• Timeline estimates"
+
+🔗 https://condo-advisor.vercel.app
+
+¿Qué más? 🐝
