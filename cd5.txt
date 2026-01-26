@@ -1229,3 +1229,20 @@ Prueba hacer 10 consultas para ver el límite 🐝
 Pasame un bio para kofi
 Stripe se queda con cuento de cada donacion?
 Tengo a Anfitrion Mx conectada a Stripe, conecto cuenta nueva (CA)?
+
+[CD5] ✅ KO-FI CONECTADO
+═══════════════════════════════════════════
+
+☕ URL: ko-fi.com/duendesapp
+✅ Código actualizado con URL real
+
+📋 PENDIENTES PARA TU KO-FI:
+• Expandir About (usa bio Opción 3)
+• Set a Goal: "$50/month for AI costs"
+• Agregar Page Intro
+• Subir screenshots a Gallery
+
+🔗 App: https://condo-advisor.vercel.app
+☕ Ko-fi: https://ko-fi.com/duendesapp
+
+¡Listo para recibir cafés! ☕🐝
