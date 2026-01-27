@@ -629,3 +629,5 @@ Corregiste los hosts en Namecheap?
 Si ya los corregiste, espera 5-10 min y verifica en SendGrid.
 
 VERIFICO AHORA SI YA PROPAGARON...
+
+Ya los corregi y ya no me marcó error
