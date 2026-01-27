@@ -239,3 +239,58 @@ Puedo hacerlo en ~30 min con:
 - Ejemplo de uso
 
 La opcion de resend es que solo puedes usar un solo correo y ya (version gratis). La opcion A es compleja?
+
+[CD6] ✅ OPCIÓN A NO ES COMPLEJA
+
+La Opción A (SMTP directo) es simple:
+
+REQUISITOS:
+1. Cuenta Gmail (o cualquier email)
+2. App Password de Gmail (no tu password normal)
+3. Next.js API route
+
+CÓDIGO COMPLETO (~40 líneas):
+
+```javascript
+// /api/send-email/route.ts
+import nodemailer from 'nodemailer';
+
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_APP_PASSWORD
+  }
+});
+
+export async function POST(req) {
+  const { to, subject, body, from } = await req.json();
+  
+  await transporter.sendMail({
+    from: process.env.EMAIL_USER,
+    to,
+    subject,
+    html: body,
+    replyTo: from
+  });
+  
+  return Response.json({ success: true });
+}
+```
+
+LIMITACIONES GMAIL:
+- 500 emails/día (cuenta normal)
+- 2000 emails/día (Google Workspace)
+
+ALTERNATIVAS SMTP GRATIS:
+- Mailgun: 5000/mes gratis
+- SendGrid: 100/día gratis
+- Brevo (ex-Sendinblue): 300/día gratis
+
+¿Quieres que implemente esto ahora?
+- Creo repo 'email-service'
+- API endpoint funcional
+- Ejemplo de uso desde formulario
+- Deploy en Vercel
+
+Tiempo: ~20 min
