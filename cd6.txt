@@ -773,3 +773,4 @@ ls -la ~/repos/
 O si prefieres, conéctame al RPi por CD6 y lo hago yo.
 
 Si tienes
+Estas en Desktop y tienes DC y acceso al rpi (pvrolo 192.168.1.84). ya ingresaste; por cierto, la Key de de SAendgrid debe ir en una carpeta de Keys o tokens en la rpi
