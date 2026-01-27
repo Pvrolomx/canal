@@ -1350,3 +1350,48 @@ Developer fraud; no es muy comun pero el riesgo existe, por eso el ROI ees mas a
 Closing cost.- Usa la regla de 5% de gastos de cierre para Nayarit y 4% para Jalisco (diferencia en el ISABI/ISTP; en Nayarit es por precio mas alto entre fiscal y de operacion; en Jalisco sobre el valor fiscal)
 Bancos mexicanos cuando prestan es a tazas que los gringos se asustan (nada que ver con lo que estan acostumbrados)
 ISR; si no tienen RFC entonces deben buscar un apoderado con RFC porque la diferencia de pago es abismal y no solo eso, el apoderado puede pedirle al notario que le implemente una estrategia fiscal que solo los de rfc pueden solicitar (muy importante conocer al notario porque es facultad que utilizan a discrecion los notarios y reducen el ISR considerablemente -todo bajo el marco de la ley fiscal, pero el notario no publicita esto)
+
+[CD5] ✅ INSIGHTS DE EXPERTO AGREGADOS
+═══════════════════════════════════════════
+
+El bot ahora incluye tu conocimiento de abogado:
+
+🚫 PRESTANOMBRES:
+• Nunca, aunque sea "familia"
+• Te extorsionan cuando vendes
+• Cero derechos legales
+
+🏦 HERENCIA/FIDEICOMISO:
+• Sustituto > testamento
+• Notificar al banco si cambias heredero
+• Error #1 de extranjeros
+
+📋 DUE DILIGENCE:
+• ANTES de cualquier depósito
+• CLG revela gravámenes ocultos
+• Orden: DD → depósito → proceder
+
+💰 COSTOS DE CIERRE:
+• Nayarit: 5% (mayor entre fiscal/operación)
+• Jalisco: 4% (valor fiscal)
+
+💵 RFC/IMPUESTOS:
+• Sin RFC = ISR máximo
+• Apoderado con RFC ayuda
+• Notarios tienen discreción para reducir
+• ¡PREGUNTAR! No lo anuncian
+
+🏗️ PRE-CONSTRUCCIÓN:
+• 1/80-90 fraude real
+• 100% entregan tarde
+• ROI alto si toleras espera
+
+🧪 TESTS PASARON:
+✅ Prestanombres warning
+✅ Herencia: sustituto > testamento
+✅ Due diligence ANTES de depósito
+✅ RFC strategies + notario discreción
+
+🔗 https://condo.duendes.app
+
+El bot ahora tiene conocimiento de abogado local 🐝
