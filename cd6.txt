@@ -456,3 +456,5 @@ REGISTROS DNS QUE TE PEDIRÁ:
 
 ¿Tienes acceso al DNS de castlesolutions.biz?
 Si sí, avísame cuando tengas el API key y empiezo.
+
+El dominio es mx, el email es biz
