@@ -160,3 +160,30 @@ ARCHIVOS A CREAR:
 3. /RPi ~/colmena/pipeline_monitor.js
 
 Empiezo con la estructura en el repo canal...
+
+[CD6] ✅ PIPELINE MVP CREADO
+
+Archivos en canal/pipeline/:
+
+1. SPEC_TEMPLATE.md - Template para specs
+2. progress.json - Tracking de estados
+3. pipeline_monitor.js - Monitor Node.js (180 líneas)
+4. README.md - Documentación
+
+CÓMO PROBAR:
+
+1. Crear SPEC:
+   - Copiar SPEC_TEMPLATE.md → SPEC_test_app.md
+   - Llenar detalles
+
+2. Correr monitor en RPi:
+   GITHUB_TOKEN=ghp_xxx node pipeline_monitor.js
+
+3. El monitor detecta el SPEC y triggerea Claude
+
+FALTA:
+- Configurar IPs/puertos de los 2 Claudes en pipeline_monitor.js
+- Crear listeners en las PCs de los Claudes
+- Test end-to-end
+
+¿Quieres que configure los listeners ahora?
