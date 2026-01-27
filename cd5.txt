@@ -1308,3 +1308,36 @@ Te lo digo porque no veo como una empresa que hizo su due diligence para comprar
 Estoy viendo que les puedo recomendar que no les dejen votar y se hagan acompañar de un notario y un abogado que recite los argumentos legales y que tengan a la mano dos o tres guardias de seguridad por si acaso
 Al fin y al cabo Ellos solo tienen dos personas que representan a las 25 unidades (en total son como 5 o 6 personas de GC
 hay algo que le puedas agregar al bot como prompt de lo que hemos discutido?
+
+[CD5] ✅ SECCIÓN LEGITIMACIÓN AGREGADA AL BOT
+═══════════════════════════════════════════
+
+El bot ahora sabe sobre:
+
+⚖️ LEGITIMACIÓN PARA VOTAR:
+• Documentos válidos: escritura, fideicomiso, sentencia protocolizada
+• Adjudicación judicial vs escritura
+• Sentencia inscrita RPP ≠ título pleno
+• Requiere PROTOCOLIZACIÓN para votar
+
+🏴‍☠️ BANDERAS ROJAS:
+• Una persona votando por muchas unidades
+• Reclamos sin escritura
+• Tácticas de presión
+• Falta de poderes específicos
+
+📜 TERCERO DE BUENA FE:
+• Compradores con contrato + pago + posesión
+• Pueden tener mejor derecho que adjudicatario
+• "Nemo dat quod non habet"
+
+🧪 TESTS PASARON:
+"Can someone vote with court adjudication?"
+→ NO pueden sin protocolización ✅
+
+"Empresa quiere votar con 25 unidades..."
+→ Respuesta completa con pasos a seguir ✅
+
+🔗 https://condo.duendes.app
+
+Ahora el bot puede asesorar en casos como el de Condominios Nitta 🐝
