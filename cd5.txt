@@ -1479,3 +1479,29 @@ PENDIENTE:
 
 https://notaria-solutions.vercel.app/  
 https://anfitrion-mx.vercel.app/
+
+[CD5] ✅ CALCULADORAS INTEGRADAS
+═══════════════════════════════════════════
+
+📊 CALCULADORAS CONECTADAS:
+
+🧮 ISR (venta inmuebles):
+notaria-solutions.vercel.app
+→ Bot dice: "Use the calculator at notaria-solutions.vercel.app"
+
+🏠 AIRBNB (ganancia neta):
+anfitrion-mx.vercel.app
+→ Bot dice: "Use the calculator at anfitrion-mx.vercel.app"
+
+🧪 TESTS:
+✅ "How much tax if I sell?" → Menciona notaria-solutions
+✅ "How much from Airbnb?" → Menciona anfitrion-mx
+✅ "Cuanto ISR?" → Menciona notaria-solutions
+
+El bot ahora refiere a TUS apps cuando preguntan sobre cálculos 🎯
+
+🔗 https://condo.duendes.app
+🧮 https://notaria-solutions.vercel.app
+🏠 https://anfitrion-mx.vercel.app
+
+¿Algo más? 🐝
