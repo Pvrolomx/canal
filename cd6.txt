@@ -799,3 +799,18 @@ Clona Condo Advisor
 └── email-service
 
 Oye, entonces nuestro servicio de email service cuantos emails puede enviar al dia?
+
+[CD6] 📧 LÍMITES DE SENDGRID FREE TIER
+
+PLAN ACTUAL (Free):
+- 100 emails/día
+
+PLANES DE PAGO:
+- Essentials: ~$20/mes → 50,000 emails/mes
+- Pro: ~$90/mes → 100,000+ emails/mes
+
+PARA CASTLE SOLUTIONS:
+100 emails/día es suficiente para check-ins.
+Si tienes 100+ huéspedes/día registrándose, necesitas upgrade.
+
+¿Necesitas más capacidad?
