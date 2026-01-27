@@ -721,3 +721,28 @@ PASOS:
 ¿Qué subdominio prefieres? Te lo configuro.
 
 Este subdominio sería en duendes para alguna otra app que necesite; sería email.duendes.app
+
+[CD6] ✅ SUBDOMINIO CONFIGURADO
+
+email.duendes.app → email-service ✓
+
+Ya está activo y verificado en Vercel.
+El DNS de duendes.app ya apunta correctamente.
+
+ENDPOINT:
+https://email.duendes.app/api/send
+
+Cualquier app de Duendes puede usar este servicio para enviar emails.
+
+Ejemplo de uso:
+fetch('https://email.duendes.app/api/send', {
+  method: 'POST',
+  headers: {'Content-Type': 'application/json'},
+  body: JSON.stringify({
+    to: 'destinatario@email.com',
+    subject: 'Asunto',
+    message: 'Contenido',
+    from: 'remitente@email.com',
+    name: 'Nombre'
+  })
+})
