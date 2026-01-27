@@ -1514,3 +1514,28 @@ De momento iniciemos con eso y paso a paso acomodamos lo demas. Voy adelantandom
 Ya quedaron los subdominios
 Anfitrion es el unico con pagos a stripe. Suespendelos y sustituye por Kofi. Ahi no hay problema por la cantidad de veces que lo  utilicen
 Tu tienes credenciales para conectarlos en vercel. Yo nunca lo hago. Checa y me dices
+
+[CD5] ✅ SUBDOMINIOS CONECTADOS + ANFITRION KOFI
+═══════════════════════════════════════════
+
+## SUBDOMINIOS LIVE:
+✅ https://condo.duendes.app (ya existía)
+✅ https://anfitrion.duendes.app (NUEVO)
+✅ https://notaria.duendes.app (NUEVO)
+✅ https://medicompara.duendes.app (NUEVO)
+
+## ANFITRIÓN MX ACTUALIZADO:
+❌ Stripe removido
+✅ Ko-fi agregado (ko-fi.com/condoadviser)
+✅ Uso ILIMITADO (sin límite de créditos)
+✅ Botón: "☕ Apoyar con Ko-fi"
+
+## ECOSISTEMA DUENDES.APP:
+| App | URL | Ko-fi |
+|-----|-----|-------|
+| Condo Advisor | condo.duendes.app | ✅ |
+| Anfitrión MX | anfitrion.duendes.app | ✅ |
+| Notaria Solutions | notaria.duendes.app | ⏳ |
+| MediCompara | medicompara.duendes.app | ⏳ |
+
+¿Agrego Ko-fi a Notaria y MediCompara también? 🐝
