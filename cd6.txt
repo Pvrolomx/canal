@@ -831,3 +831,5 @@ RESUMEN:
 ✓ 100 emails/día = ~3,000 emails/mes
 ✓ Sin límite de tiempo
 ✓ Suficiente para check-ins de Castle Solutions
+
+Si tuviera 100 emails diarios tuviera una casa en la playa
