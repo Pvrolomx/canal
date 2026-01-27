@@ -2387,3 +2387,4 @@ Dreamhost es de quien le administró y abrio la pagina a claudia y no quedaron e
 No tenemos acceso
 Si funciona y en un momento alguien intentó hacer algo que deshabilitó el email de claudia y fue una pesadilla (todo su negocio lo tiene en ese correo; el sitio es inexistente)
 Podemos verificar mx y que utilice el correo biz? En web3forms asi lo hicimos
+Como cambio verificar dominio de biz a mx (tengo prompt biz)?
