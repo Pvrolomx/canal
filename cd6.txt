@@ -328,3 +328,29 @@ Modifico el código para usar Resend en vez de Nodemailer:
 - Sin límite de un solo correo destino
 
 Implementando ahora...
+
+[CD6] ✅ EMAIL-SERVICE LISTO CON RESEND
+
+URL: https://email-service-pvrolomxs-projects.vercel.app
+
+CONFIGURADO:
+- Resend API Key ✓
+- reply_to fix aplicado ✓
+- Deploy exitoso ✓
+
+CÓMO USAR:
+POST a /api/send con:
+{
+  "to": "destino@email.com",
+  "subject": "Asunto",
+  "message": "Contenido",
+  "from": "remitente@email.com",  // opcional
+  "name": "Nombre"                 // opcional
+}
+
+LÍMITE RESEND FREE:
+- 100 emails/día
+- 3000 emails/mes
+
+La UI tiene formulario de prueba + documentación.
+¿Quieres que lo pruebe enviando un email?
