@@ -2408,3 +2408,18 @@ You can provide this information by replying to this message. Our team provides 
 
 Thank you for contacting Amazon Web Services.
 Me llegó por email anoche pero no lo lei hasta hoy. Checa respuesta de amazon
+Greetings from Amazon Web Services.
+
+We're sorry. You've written to an address that cannot accept incoming
+e-mail.
+
+If you need to contact us, please visit http://www.aws.amazon.com/contact-us .
+
+Thank you for your business.
+
+Best regards,
+Amazon Web Services
+http://www.aws.amazon.com/
+
+P.S. You received this message because Amazon.com received the following
+message:
