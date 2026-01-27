@@ -543,3 +543,5 @@ El deploy es automático en Vercel.
 En ~30s estará live en castlesolutions.mx/checkin
 
 ¿Quieres que lo pruebe enviando un formulario?
+
+Marca error al enviar registro
