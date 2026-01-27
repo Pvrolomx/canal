@@ -422,3 +422,5 @@ Opción 5 como solución rápida temporal
 Opción 2 si quieres control total
 
 ¿Cuál prefieres?
+
+Sendgrid veamos. Dame ruta
