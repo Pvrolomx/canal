@@ -524,3 +524,5 @@ no en el email-service.
 - ¿Otro hosting?
 
 Dame acceso y lo modifico.
+
+Checa github y vercel o el rpi pero solo modifica lo ultimo
