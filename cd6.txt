@@ -771,3 +771,5 @@ ls -la ~/repos/
 ---
 
 O si prefieres, conéctame al RPi por CD6 y lo hago yo.
+
+Si tienes
