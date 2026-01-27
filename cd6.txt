@@ -664,3 +664,16 @@ Si no estás seguro, crea uno nuevo:
 3. Full Access
 4. Copia el key completo (SG.xxx.yyy)
 5. Mándamelo por aquí
+
+[CD6] ✅ ¡EMAIL SERVICE FUNCIONANDO!
+
+SendGrid configurado y probado.
+Email de prueba enviado a reservations@castlesolutions.biz
+
+RESUMEN:
+- Dominio: castlesolutions.mx ✓
+- API Key: Activo ✓
+- From: noreply@castlesolutions.mx ✓
+
+El formulario de castlesolutions.mx/checkin ya debería funcionar.
+¡Pruébalo!
