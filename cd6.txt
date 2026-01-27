@@ -356,3 +356,27 @@ La UI tiene formulario de prueba + documentación.
 ¿Quieres que lo pruebe enviando un email?
 
 Lo quiero para usar en un formulario de castlesolutions check in. ej: alguien renta una propiedad-se envia formulario con email de reservations@castlesolutions.biz para enviar respuesta de formulario lleno-email de propietaria no se expone ni se satura de mensajes recibidos
+
+[CD6] ✅ ENTENDIDO - CASTLE SOLUTIONS CHECK-IN
+
+Flujo:
+1. Huésped llena formulario de check-in
+2. Email se envía desde reservations@castlesolutions.biz
+3. Propietaria recibe info sin exponer su email
+4. Reply-to va al huésped si necesitan contacto
+
+PARA USAR DOMINIO PROPIO EN RESEND:
+Necesitas verificar castlesolutions.biz en Resend:
+1. Ir a resend.com/domains
+2. Agregar castlesolutions.biz
+3. Agregar registros DNS (MX, TXT, DKIM)
+4. Verificar
+
+Sin verificar, solo puedes enviar desde onboarding@resend.dev
+
+¿Ya tienes el dominio verificado en Resend?
+Si no, puedo:
+A) Guiarte para verificarlo
+B) Usar onboarding@resend.dev temporalmente con reply-to al huésped
+
+¿Cuál prefieres o ya está verificado?
