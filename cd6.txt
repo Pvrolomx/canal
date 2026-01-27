@@ -506,3 +506,21 @@ Solo necesito:
 
 Debo mnodificar; no es claudia, es reservations@castlesolutions.biz
 Que se debe modificar?
+
+[CD6] ✅ NADA QUE MODIFICAR EN BACKEND
+
+El email-service ya acepta cualquier destinatario.
+Solo cambia el 'to' en el formulario:
+
+ANTES: to: 'claudia@castlesolutions.biz'
+AHORA: to: 'reservations@castlesolutions.biz'
+
+El cambio es en el formulario de castlesolutions.mx/checkin
+no en el email-service.
+
+¿Dónde está el código del formulario?
+- ¿Es un repo en GitHub?
+- ¿Está en Vercel?
+- ¿Otro hosting?
+
+Dame acceso y lo modifico.
