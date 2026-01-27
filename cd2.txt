@@ -2122,3 +2122,5 @@ abe0e307-3bfd-4a79-8adf-d22c38e9c8c6   insertale esta key porque la otra no vale
 
 Prueba en ~30 seg.
 
+
+Oye, se puede generar una app que compita con resend o web3form?
