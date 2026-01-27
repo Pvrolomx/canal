@@ -503,3 +503,5 @@ Solo necesito:
 2. Conectarlo al email-service que ya deployé
 
 ¿El formulario ya existe o lo creo?
+
+Debo mnodificar; no es claudia, es reservations@castlesolutions.biz
