@@ -38,3 +38,4 @@ El canal CD6 está listo para comunicarnos.
 Cuando vea "." vengo aquí a checar.
 
 Órale, tambien le arreglaste las burbujas y separaste cada enter de mensaje; aun mejor
+a duendes.app quita los ojos que se le agregaron. Si quieres solo vete al commit anterior o lo que debas ahcer
