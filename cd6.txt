@@ -383,3 +383,42 @@ B) Usar onboarding@resend.dev temporalmente con reply-to al huésped
 
 El problema que en resend solo permiten un email del dominio y ese email (configuramos antes) no es el que queremos utilizar.
 Dame opciones
+
+[CD6] ✅ OPCIONES PARA EL PROBLEMA DE EMAIL
+
+El problema: Resend tiene un email configurado y quieres usar otro.
+
+OPCIONES:
+
+1. CAMBIAR EMAIL EN RESEND (Gratis)
+   - Dashboard → Domains → castlesolutions.biz
+   - Puedes agregar múltiples 'from addresses' al mismo dominio
+   - No necesitas cambiar API key
+   - Solo agregar reservations@castlesolutions.biz como sender
+
+2. USAR GMAIL SMTP (Gratis - 500/día)
+   - Crear reservations@castlesolutions.biz en Google Workspace
+   - O usar cualquier Gmail con App Password
+   - Modifico el código para Nodemailer
+   - Sin límite de Resend
+
+3. SENDGRID (100/día gratis)
+   - Similar a Resend
+   - Verificas dominio
+   - Múltiples emails permitidos
+
+4. BREVO/SENDINBLUE (300/día gratis)
+   - SMTP simple
+   - Sin verificación de dominio obligatoria
+
+5. USAR RESEND CON FROM GENÉRICO
+   - from: 'Castle Solutions <onboarding@resend.dev>'
+   - reply_to: reservations@castlesolutions.biz
+   - El huésped ve 'Castle Solutions' y responde a reservations@
+
+RECOMENDACIÓN:
+Opción 1 si ya tienes dominio verificado en Resend
+Opción 5 como solución rápida temporal
+Opción 2 si quieres control total
+
+¿Cuál prefieres?
