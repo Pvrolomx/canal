@@ -648,3 +648,19 @@ SIGUIENTE PASO:
 Con eso cambio el email-service de Resend a SendGrid.
 
 Esta es parte 2 (parte una en interfaz)     .dHYJ8Dag4LG3IOpa6H7xRGETU7xbAhCwEaHe9FxnaNk
+
+[CD6] ⚠️ ERROR: UNAUTHORIZED
+
+SendGrid responde 'Unauthorized' - el API key parece inválido.
+
+VERIFICA EN SENDGRID:
+1. Settings → API Keys
+2. ¿El key tiene status 'Active'?
+3. ¿Tiene permisos 'Full Access'?
+
+Si no estás seguro, crea uno nuevo:
+1. Create API Key
+2. Nombre: CastleCheckin2
+3. Full Access
+4. Copia el key completo (SG.xxx.yyy)
+5. Mándamelo por aquí
