@@ -789,3 +789,11 @@ Estas en Desktop y tienes DC y acceso al rpi (pvrolo 192.168.1.84). ya ingresast
 Todo respaldado en el RPi (192.168.1.84)
 
 Clona Condo Advisor
+
+[CD6] ✅ CONDO-ADVISOR CLONADO
+
+~/repos/
+├── castle-checkin
+├── castle-solutions
+├── condo-advisor ← NUEVO
+└── email-service
