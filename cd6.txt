@@ -36,3 +36,5 @@ Resumen de cambios:
 
 El canal CD6 está listo para comunicarnos.
 Cuando vea "." vengo aquí a checar.
+
+Órale, tambien le arreglaste las burbujas y separaste cada enter de mensaje; aun mejor
