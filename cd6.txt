@@ -354,3 +354,5 @@ LÍMITE RESEND FREE:
 
 La UI tiene formulario de prueba + documentación.
 ¿Quieres que lo pruebe enviando un email?
+
+Lo quiero para usar en un formulario de castlesolutions check in. ej: alguien renta una propiedad-se envia formulario con email de reservations@castlesolutions.biz para enviar respuesta de formulario lleno-email de propietaria no se expone ni se satura de mensajes recibidos
