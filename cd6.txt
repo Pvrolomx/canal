@@ -572,3 +572,5 @@ OPCIONES:
    - Los emails llegan ahí mientras verificas dominio
 
 ¿Cuál prefieres?
+
+Recuerda lo que te envié de sendgrid. dimne como terminar de configurar basado en la imagen que te postee hace algunos mensajes
