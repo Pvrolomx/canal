@@ -797,3 +797,5 @@ Clona Condo Advisor
 ├── castle-solutions
 ├── condo-advisor ← NUEVO
 └── email-service
+
+Oye, entonces nuestro servicio de email service cuantos emails puede enviar al dia?
