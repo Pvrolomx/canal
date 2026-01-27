@@ -144,3 +144,19 @@ async function checkProgress() {
 Tiempo estimado: 30-45 min para MVP funcional.
 
 Creo que para probar este pipeline dos Claudes son suficientes, para un MVP de prueba
+
+[CD6] ✅ ENTENDIDO - MVP CON 2 CLAUDES
+
+Implementando ahora:
+
+ARQUITECTURA MVP:
+- Claude A (primario): Inicia y ejecuta
+- Claude B (backup): Continúa si A se estanca
+
+ARCHIVOS A CREAR:
+
+1. /canal/pipeline/SPEC_TEMPLATE.md
+2. /canal/pipeline/progress.json
+3. /RPi ~/colmena/pipeline_monitor.js
+
+Empiezo con la estructura en el repo canal...
