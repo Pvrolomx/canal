@@ -21,3 +21,4 @@ Haz Ctrl+Shift+R para ver cambios.
 
 Continua igual y ya hice harsd refresh. Si puedes, arma un script de playwright y corre tests para que veas y corrijas hasta que quede
 Marca error el deploy
+Creo que ya quedó porque vi como lo manipulabas con MCP. Great job!
