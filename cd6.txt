@@ -476,3 +476,5 @@ Los registros DNS irán al DNS de castlesolutions.biz
 
 ¿Tienes acceso al DNS de castlesolutions.biz?
 ¿O ambos dominios (.mx y .biz) están en el mismo proveedor?
+
+https://castlesolutions.mx/checkin
