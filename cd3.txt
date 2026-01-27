@@ -2290,3 +2290,5 @@ Me gusta el disclaimer aun cuando esta mejor que los contratos que arman algunos
 El disclaimer es importante - aunque esté bien redactado, siempre es bueno que un abogado lo revise por si hay algo específico de tu situación que deba ajustarse.
 
 ¿Algo más? ¿Web3Forms?
+
+Quiero ver primero si es doable que los ojos vayan a cada lado de DUENDES de manera simetrica, y si es posible, entonces sustituirlos por unos diseñados mediante prompt a dall-e con los colores del diseño de la pagina
