@@ -2167,3 +2167,36 @@ un wrapper bonito sobre Amazon SES:
 
 Lo quiero solo para nosotros por el momento; para usar reservations@castlesolutions.biz 100 veces al mes max por ahora
 Pero escalable
+
+[CD2] 📧 SOLUCIÓN PROPIA CON AMAZON SES
+
+**Para 100 emails/mes:**
+- Amazon SES = GRATIS (62,000/mes gratis si tienes EC2, sino $0.10/1000)
+- Total: ~$0.01/mes 😄
+
+**Lo que necesitas:**
+
+1. **Cuenta AWS** (¿tienes?)
+2. **Verificar dominio** castlesolutions.biz en SES
+3. **Crear API key** de SES
+
+**Implementación:**
+- Cambio castle-checkin para usar SES directo
+- Sin intermediarios (Web3Forms/Resend)
+- Control total sobre from/to/cc/bcc
+- Escalable a millones
+
+**Pasos si tienes AWS:**
+1. Me pasas las credenciales SES
+2. Actualizo el código
+3. Listo
+
+**Si no tienes AWS:**
+1. Crear cuenta (tarjeta requerida pero no cobra)
+2. Ir a SES → Verify domain
+3. Agregar DNS records
+4. Crear SMTP credentials
+5. Me las pasas
+
+¿Tienes cuenta AWS?
+
