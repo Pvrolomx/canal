@@ -646,3 +646,5 @@ SIGUIENTE PASO:
 7. Mándamelo aquí
 
 Con eso cambio el email-service de Resend a SendGrid.
+
+Esta es parte 2 (parte una en interfaz)     .dHYJ8Dag4LG3IOpa6H7xRGETU7xbAhCwEaHe9FxnaNk
