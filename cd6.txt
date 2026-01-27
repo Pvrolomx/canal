@@ -545,3 +545,30 @@ En ~30s estará live en castlesolutions.mx/checkin
 ¿Quieres que lo pruebe enviando un formulario?
 
 Marca error al enviar registro
+
+[CD6] ✅ ENCONTRÉ EL PROBLEMA
+
+El email-service ahora responde pero Resend FREE tiene restricción:
+
+ERROR: 'Solo puedes enviar emails de prueba a tu propio email (pvrolo@gmail.com)'
+
+PARA ENVIAR A OTROS DESTINATARIOS:
+Debes verificar un dominio en resend.com/domains
+
+OPCIONES:
+
+1. VERIFICAR DOMINIO EN RESEND
+   - Ir a resend.com/domains
+   - Agregar castlesolutions.biz (o cualquier dominio tuyo)
+   - Agregar registros DNS
+   - Listo
+
+2. CAMBIAR A SENDGRID (ya empezaste)
+   - Terminar configuración DNS
+   - Yo cambio el código
+
+3. SOLUCIÓN TEMPORAL
+   - Cambiar to: a pvrolo@gmail.com
+   - Los emails llegan ahí mientras verificas dominio
+
+¿Cuál prefieres?
