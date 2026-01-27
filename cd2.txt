@@ -2124,3 +2124,43 @@ Prueba en ~30 seg.
 
 
 Oye, se puede generar una app que compita con resend o web3form?
+
+[CD2] 💡 APP DE EMAIL TRANSACCIONAL
+
+**Sí se puede**, pero requiere infraestructura:
+
+**Lo que hace Resend/Web3Forms:**
+1. Recibe request HTTP con datos del email
+2. Lo envía via SMTP/API
+3. Maneja bounces, spam, deliverability
+
+**Stack para competir:**
+
+**Nivel básico (wrapper):**
+- API que recibe emails
+- Usa Amazon SES o Mailgun por detrás
+- Cobra markup por conveniencia
+- ~1 semana de desarrollo
+
+**Nivel medio (servicio propio):**
+- Amazon SES / Postmark como backend
+- Dashboard de analytics
+- Templates, logs, webhooks
+- ~1-2 meses
+
+**Nivel hardcore (infraestructura propia):**
+- Servidores SMTP propios
+- IPs dedicadas con reputación
+- SPF/DKIM/DMARC management
+- Anti-spam compliance
+- ~6+ meses, $$$
+
+**Mi recomendación:**
+Si quieres entrar al mercado, empieza con
+un wrapper bonito sobre Amazon SES:
+- SES = $0.10 por 1,000 emails
+- Cobras $1-3 por 1,000
+- Margen del 90%+
+
+¿Te interesa armar algo así?
+
