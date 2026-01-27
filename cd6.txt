@@ -479,3 +479,27 @@ Los registros DNS irán al DNS de castlesolutions.biz
 
 https://castlesolutions.mx/checkin
 Aqui esta la pagina donde se muestra el formulario. El email le tiene que llegar a claudia@castlesolutions.biz; si no hay alternativa dime (no going around this, period)
+
+[CD6] ✅ ¡ESTO ES SIMPLE!
+
+No necesitas verificar dominio para RECIBIR emails.
+Solo necesitas verificar para ENVIAR desde ese dominio.
+
+FLUJO CORRECTO:
+1. Huésped llena formulario en castlesolutions.mx/checkin
+2. Email se envía A: claudia@castlesolutions.biz
+3. FROM: 'Castle Solutions <onboarding@resend.dev>'
+4. REPLY-TO: email del huésped (para que Claudia responda directo)
+
+CON RESEND QUE YA TENEMOS:
+- to: claudia@castlesolutions.biz ✓
+- from: Castle Solutions <onboarding@resend.dev> ✓
+- reply_to: email del huésped ✓
+
+NO HAY PROBLEMA. Ya funciona.
+
+Solo necesito:
+1. Ver el formulario actual en castlesolutions.mx/checkin
+2. Conectarlo al email-service que ya deployé
+
+¿El formulario ya existe o lo creo?
