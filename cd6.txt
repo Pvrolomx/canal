@@ -382,3 +382,4 @@ B) Usar onboarding@resend.dev temporalmente con reply-to al huésped
 ¿Cuál prefieres o ya está verificado?
 
 El problema que en resend solo permiten un email del dominio y ese email (configuramos antes) no es el que queremos utilizar.
+Dame opciones
