@@ -1,0 +1,18 @@
+{
+  "spec_id": null,
+  "spec_name": null,
+  "status": "IDLE",
+  "stages": {
+    "SPEC_READ": { "completed": false, "timestamp": null, "agent": null },
+    "REPO_CREATED": { "completed": false, "timestamp": null, "agent": null },
+    "CODE_PUSHED": { "completed": false, "timestamp": null, "agent": null },
+    "VERCEL_CONFIGURED": { "completed": false, "timestamp": null, "agent": null },
+    "DEPLOYED": { "completed": false, "timestamp": null, "agent": null },
+    "VERIFIED": { "completed": false, "timestamp": null, "agent": null }
+  },
+  "current_agent": null,
+  "last_update": null,
+  "repo_url": null,
+  "deploy_url": null,
+  "errors": []
+}
