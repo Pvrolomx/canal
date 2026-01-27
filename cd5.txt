@@ -1505,3 +1505,5 @@ El bot ahora refiere a TUS apps cuando preguntan sobre cálculos 🎯
 🏠 https://anfitrion-mx.vercel.app
 
 ¿Algo más? 🐝
+
+Tu POV; dame pros and cons de subir Condo Advisor a su propio dominio (no lo tengo aun)  y tener subdominio de las apps (todas mias) como Calculadoras (por separado las de ISR e ISABI de Notaria Solutions, y anfitrion mx, y medicompara (puedes checarla) y hacerlo hibrido; pedir donaciones y poner limites a algunos usos por las apis
