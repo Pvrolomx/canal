@@ -2385,3 +2385,4 @@ Checa image.png en canal
 Oye, la pagina/hosting es castlesolutions.mx pero el email de la empresa es claudia@castlesolutions.biz (terminacion biz)
 Dreamhost es de quien le administró y abrio la pagina a claudia y no quedaron ebuenos terminos por lo que no hay manera de pedirle nada a esa persona
 No tenemos acceso
+Si funciona y en un momento alguien intentó hacer algo que deshabilitó el email de claudia y fue una pesadilla (todo su negocio lo tiene en ese correo; el sitio es inexistente)
