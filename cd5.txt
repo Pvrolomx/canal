@@ -1633,3 +1633,16 @@ El iconito de PV cambialo de palmera a un seahorse y el de RN a una cruz huichol
 Dela PV Palmeta y usa Ola para nayarit
 Dame otra lista de dolores de gringos
 Que no hayamos cubierto
+- Escritura y Fideicomiso es practicamente lo mismo. La escritura es el genero y el fideicomiso la especie; ej. Escritura que contiene compraventa, donación, poder, fideicomiso, etc. El Contrato Privado puede o no ser firmado ante notario. Es recomendable hacerlo por si hay litigio en un futuro. Aprovechando, los contratos digitales pueden ser controvertidos en juicio por carecer de firma facsímil, por eso los contratos inmobiliarios (ofertas) se estipula al final que todos los contratos enviados por email o firmados por docusign deberán remitirse en original a las partes en determinado tiempo (el 90% de las veces no se hace)
+
+- Testamento; si lo único que tienen es un condominio y una cuenta de banco (90% de los casos) no es necesario un testamento ya que ambos están cubiertos al designarse un beneficiario en caso de fallecimiento del titular sin necesidad de juicio sucesorio. Un testamento extranjero debe seguir el procedimiento de su país de origen y al final pedirle al juez mediante mecanismos de cooperación internacional que se ejecute aquí; es mas barato otorgar uno aquí en Mexico y le evitan muchísimo dolor a los herederos
+
+- Predial.- Opcion de pago en línea pero deben validar físicamente con el comprobante de pago; might as well pago presencial el primer mes del año. Que sucede si no paga? Le cobran recargos pero no le embargan la propiedad
+
+- Fideicomiso: que sucede si no paga? No le embargan la propiedad pero últimamente los bancos están aplicando las multas por no pagar a tiempo. Algunos notifican al cliente algunos no. No es un sistema confiable, asi que si es posible, intenten registrar una tarjeta de crédito para pago automatico cada alño
+
+- Servicios: do not ever assume you are talking to a knowleadgable person; no importa si es en el banco, CFE, Telmex, etc. Recomiendo pagar a un gestor si es posible, sino tomarlo como a Mexican experience. Lo mismo con migración (ooootro rollo).
+
+- Esto no lo escucharon de mi, pero si tienen una llc o lld en US, pueden comprar propiedad aquí en mexico (a través de fideicomiso) y declarar como deducible los gastos de los viajes aquí; solo asegurarse que toda la familia o amigos visitantes recurrentes sean parte de la LLC y se toma como viaje de negocios y levantan un acta de cada viaje (investiga un poco y veras)
+
+Mas un poco mas adelante
