@@ -1419,3 +1419,60 @@ Good morning, Champ. Checa lo siguiente:
 Veamos primero esto
 Trata de responder por aqui
 Ambaas calculadoras son de la app de nosotros (Notaria Solutions) checalas. La de airbnb tambien es de nosotros (Anfitrion MX). Si, agrega disclaimer contrable
+
+[CD5] ✅ TODOS LOS PUNTOS IMPLEMENTADOS
+═══════════════════════════════════════════
+
+## NUEVOS FEATURES AGREGADOS:
+
+🏠 PROPIETARIOS AUSENTES:
+• Necesitas "ojos en el terreno"
+• Property managers = pesadilla común
+• Mejor: familiar + persona local confiable
+
+📋 LEER BYLAWS ANTES DE COMPRAR:
+• Mascotas, niños, restricciones Airbnb
+• Brokers omiten información
+• "No sabía" no es defensa
+
+⚠️ SPECIAL ASSESSMENTS:
+• Pedir actas de asambleas pasadas
+• Revelan: reparaciones, demandas, laudos
+• Broker solo dice "cuotas = $X"
+
+💸 WIRE TRANSFERS EN MÉXICO:
+• IP extranjera = bloqueo de cuenta
+• "Cliente premium" no ayuda
+• Solución: transferir ANTES de viajar
+
+🏛️ PROFECO/CONDUSEF:
+• "Caritas bonitas" sin resultados
+• Mejor: abogado privado
+
+📜 ESCRITURAS:
+• Boilerplate del banco
+• Doble filtro (notario + banco)
+• Checar registro 2 meses después POR EMAIL
+
+💰 ISABI:
+• Nayarit: 2% fijo (mayor entre fiscal/operación)
+• Jalisco: escala progresiva (más favorable)
+
+📝 DISCLAIMER ACTUALIZADO:
+• Ahora incluye "fiscal o contable"
+• EN: "tax or accounting advice"
+• ES: "asesoría fiscal o contable"
+
+🧪 TESTS PASARON:
+✅ Absentee ownership advice
+✅ Bylaws/Airbnb restrictions
+✅ Wire transfer warnings
+✅ Special assessments red flags
+✅ ISABI Nayarit vs Jalisco
+
+🔗 https://condo.duendes.app
+
+PENDIENTE:
+• URLs de Notaria Solutions y Anfitrión MX para calculadoras
+
+¿Qué sigue? 🐝
