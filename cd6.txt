@@ -6,3 +6,15 @@
 Muy bine. Ahora todos los mensajes que te escriba serán por este canal y tus respuestas deberían ser por aqui tambien.
 Cuando veas un punto . en tu interfaz vienes aqui. El punto es como un trigger para checar este canal
 Tarea; checa la caja de texto aqui y mira si puedes modificarle la funcion que por el momento hace que la linea del texto se vaya al infinito sin continuar en el siguiente renglon cuando llega al final de la caja
+
+[CD6] ✅ TEXTAREA CON WORD-WRAP
+
+Cambios:
+- Input → Textarea
+- Word-wrap activado
+- Enter envía mensaje
+- Shift+Enter = nueva línea
+- Max altura: 120px
+
+Deploy en progreso (~30s).
+Haz Ctrl+Shift+R para ver cambios.
