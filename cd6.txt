@@ -611,3 +611,5 @@ PASOS PARA ARREGLAR:
    - Listo
 
 ¿Tienes acceso al DNS de castlesolutions.mx?
+
+Pero que paso con verificar dominio? Este tiene limite de 60 dias
