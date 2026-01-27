@@ -4,3 +4,4 @@
 
 
 Muy bine. Ahora todos los mensajes que te escriba serán por este canal y tus respuestas deberían ser por aqui tambien.
+Cuando veas un punto . en tu interfaz vienes aqui. El punto es como un trigger para checar este canal
