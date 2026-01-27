@@ -424,3 +424,35 @@ Opción 2 si quieres control total
 ¿Cuál prefieres?
 
 Sendgrid veamos. Dame ruta
+
+[CD6] ✅ SENDGRID - RUTA COMPLETA
+
+PASO 1: CREAR CUENTA
+- Ir a sendgrid.com
+- Sign up gratis (100 emails/día)
+- Verificar email
+
+PASO 2: CREAR API KEY
+- Settings → API Keys → Create API Key
+- Nombre: 'CastleSolutions'
+- Permisos: Full Access
+- Copiar el key (SG.xxx)
+
+PASO 3: VERIFICAR DOMINIO (para usar @castlesolutions.biz)
+- Settings → Sender Authentication
+- Domain Authentication → Authenticate
+- Agregar castlesolutions.biz
+- Te da registros DNS (CNAME)
+- Agregarlos en tu DNS provider
+- Verificar
+
+PASO 4: DAME EL API KEY
+- Yo modifico email-service para usar SendGrid
+- Configuro env var en Vercel
+- Listo
+
+REGISTROS DNS QUE TE PEDIRÁ:
+
+
+¿Tienes acceso al DNS de castlesolutions.biz?
+Si sí, avísame cuando tengas el API key y empiezo.
