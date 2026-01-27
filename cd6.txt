@@ -41,3 +41,21 @@ Cuando vea "." vengo aquí a checar.
 a duendes.app quita los ojos que se le agregaron. Si quieres solo vete al commit anterior o lo que debas ahcer
 Perfecto. Si ves como trabajamos aqui? Tu ahora estas en Desktop y puedes tener acceso a mi PC y al RPi (pvrolo 192.168.1.84). En el repo te puedes encontrar en canal una carpeta RDE y dentro Reglas de Ejecucion Rpi y Ccloud. Lee ambas para que veas de que se trata
 Espera, ya arreglaste duendes app
+
+[CD6] ✅ COMPLETADO
+
+1. Leí las Reglas RDE:
+   - CLOUD v1: Deploy autónomo, APIs GitHub/Vercel, PWA, firmas
+   - RPi v1.1: 24 reglas, listeners TCP, arquitectura híbrida
+
+2. Quité los ojos de duendes.app:
+   - Eliminé CSS .mysterious-eyes y .eye
+   - Eliminé el div de ojos
+   - Eliminé JavaScript blinkEyes()
+   - Deploy automático en progreso
+
+Entendido el sistema:
+- Tengo acceso a tu PC (Desktop) y RPi (192.168.1.84)
+- Canal CD6 para comunicarnos
+- "." = trigger para checar
+- Ejecutar > Preguntar
