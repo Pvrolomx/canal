@@ -2390,3 +2390,4 @@ Podemos verificar mx y que utilice el correo biz? En web3forms asi lo hicimos
 Como cambio verificar dominio de biz a mx (tengo prompt biz)?
 Ya quedó: "Successfully submitted request for production access. It may take up to 24 hours to review the details of your request."
 De momento nos esperamos a que aprueben y si tiene algun check in Claudia que use google forms
+Amigo, maña
