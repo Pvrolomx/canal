@@ -719,3 +719,5 @@ PASOS:
 3. El formulario seguirá funcionando, solo cambio la URL del fetch
 
 ¿Qué subdominio prefieres? Te lo configuro.
+
+Este subdominio sería en duendes para alguna otra app que necesite; sería email.duendes.app
