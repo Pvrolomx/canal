@@ -237,3 +237,5 @@ Puedo hacerlo en ~30 min con:
 - API endpoint
 - SMTP config
 - Ejemplo de uso
+
+La opcion de resend es que solo puedes usar un solo correo y ya (version gratis). La opcion A es compleja?
