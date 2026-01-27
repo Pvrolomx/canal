@@ -700,3 +700,22 @@ El servicio es tuyo, sin límites de terceros (solo los de SendGrid: 100/día en
 ¿Algo más que ajustar?
 
 Podemos poner subdominio a ES sin afectar flujo?
+
+[CD6] ✅ SÍ, PODEMOS PONER SUBDOMINIO
+
+Opciones:
+
+1. email.castlesolutions.mx
+2. api.castlesolutions.mx
+3. mail.castlesolutions.mx
+
+PASOS:
+1. En Namecheap agregar CNAME:
+   Host: email (o el que elijas)
+   Value: cname.vercel-dns.com
+
+2. En Vercel agregar dominio al proyecto email-service
+
+3. El formulario seguirá funcionando, solo cambio la URL del fetch
+
+¿Qué subdominio prefieres? Te lo configuro.
