@@ -1511,3 +1511,4 @@ https://medicompara.vercel.app/
 Checa medicompara
 Anfitrion MX tiene stripe. Creo que KoFi sería mejor para iniciar y si despega implementamos stripe (que al cabo no usa APIs de Anthropic). Se hace push/commit en cada cambio?
 De momento iniciemos con eso y paso a paso acomodamos lo demas. Voy adelantandome y generar subdominios en Namecheap para los que no tienen aun
+Ya quedaron los subdominios
