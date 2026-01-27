@@ -2352,3 +2352,31 @@ Básicamente **gratis** para siempre 😄
 
 
 Solo puedo usar castlesolutions como email (claudia@castle.... reservations@castle...)?
+
+[CD2] 📧 DOMINIOS EN SES
+
+**Puedes verificar MÚLTIPLES dominios:**
+- castlesolutions.biz ✓
+- duendes.app ✓
+- cualquierotro.com ✓
+
+**Cada dominio verificado te permite usar:**
+- cualquier@castlesolutions.biz
+- otro@castlesolutions.biz
+- reservations@castlesolutions.biz
+- claudia@castlesolutions.biz
+- etc.
+
+**También puedes verificar emails individuales:**
+- pvrolo@gmail.com (sin verificar dominio)
+- Útil para pruebas
+
+**Resumen:**
+1. Verificas dominio castlesolutions.biz
+2. Puedes enviar DESDE cualquier @castlesolutions.biz
+3. Puedes enviar A cualquier email del mundo
+4. Si quieres otro dominio, lo verificas también
+
+¿Quieres agregar más dominios además de 
+castlesolutions.biz?
+
