@@ -315,3 +315,5 @@ Necesito configurar env vars en Vercel:
 
 ¿Tienes un Gmail con App Password que quieras usar?
 O puedo usar el email de Resend que ya tienes.
+
+Tiene que ser gmail?
