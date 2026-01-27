@@ -613,3 +613,19 @@ PASOS PARA ARREGLAR:
 ¿Tienes acceso al DNS de castlesolutions.mx?
 
 Pero que paso con verificar dominio? Este tiene limite de 60 dias
+
+[CD6] ✅ TIENES RAZÓN - SINGLE SENDER = 60 DÍAS
+
+Single Sender es temporal (para probar).
+Domain Authentication es permanente.
+
+ESTADO ACTUAL DE TUS DNS:
+Corregiste los hosts en Namecheap?
+- em6330 (sin .castlesolutions.mx)
+- s1._domainkey
+- s2._domainkey  
+- _dmarc
+
+Si ya los corregiste, espera 5-10 min y verifica en SendGrid.
+
+VERIFICO AHORA SI YA PROPAGARON...
