@@ -679,3 +679,22 @@ El formulario de castlesolutions.mx/checkin ya debería funcionar.
 ¡Pruébalo!
 
 Ya recibió Claudia su email. Entonces Utilizaste el Email Service que tu creaste?
+
+[CD6] ✅ SÍ, USAMOS EMAIL-SERVICE
+
+Flujo completo:
+
+1. Huésped llena formulario en castlesolutions.mx/checkin
+2. Formulario hace POST a email-service-pvrolomxs-projects.vercel.app/api/send
+3. Email-service usa SendGrid para enviar
+4. Email llega a reservations@castlesolutions.biz
+
+STACK:
+- Frontend: castle-checkin (Next.js en Vercel)
+- Backend: email-service (Next.js en Vercel)
+- Email Provider: SendGrid (dominio castlesolutions.mx verificado)
+
+Ya no dependes de Web3Forms ni Resend.
+El servicio es tuyo, sin límites de terceros (solo los de SendGrid: 100/día en free tier).
+
+¿Algo más que ajustar?
