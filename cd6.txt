@@ -317,3 +317,14 @@ Necesito configurar env vars en Vercel:
 O puedo usar el email de Resend que ya tienes.
 
 Tiene que ser gmail?
+
+[CD6] ✅ NO TIENE QUE SER GMAIL
+
+Puedo usar Resend que ya tienes (re_BRPRbhBL_Hr77EuXFUFuBJ8wAiaH4qSt4).
+
+Modifico el código para usar Resend en vez de Nodemailer:
+- Mismo endpoint /api/send
+- Misma interfaz
+- Sin límite de un solo correo destino
+
+Implementando ahora...
