@@ -2239,3 +2239,43 @@ y verificar el dominio castlesolutions.biz
 
 
 ya quedó la cuenta
+
+[CD2] ✅ CUENTA CREADA - CONFIGURAR SES
+
+**Pasos para configurar Amazon SES:**
+
+**1. Ir a SES:**
+   - console.aws.amazon.com
+   - Buscar "SES" o "Simple Email Service"
+   - Click en el servicio
+
+**2. Verificar dominio:**
+   - Panel izquierdo → "Verified identities"
+   - Click "Create identity"
+   - Selecciona "Domain"
+   - Escribe: castlesolutions.biz
+   - Click "Create identity"
+
+**3. Te dará DNS records:**
+   - 3 CNAME records para DKIM
+   - Similar a lo de Resend
+   - Agrégalos en Namecheap
+
+**4. Después de verificar dominio:**
+   - Panel izquierdo → "SMTP settings"
+   - Click "Create SMTP credentials"
+   - Te da usuario y contraseña SMTP
+   - **GUÁRDALOS** (solo se muestran una vez)
+
+**5. Salir del Sandbox (IMPORTANTE):**
+   - Por defecto SES está en "sandbox"
+   - Solo puedes enviar a emails verificados
+   - Panel izquierdo → "Account dashboard"
+   - Click "Request production access"
+   - Llena el formulario (uso: transactional)
+
+**Cuando tengas los SMTP credentials, pásamelos:**
+- SMTP Username
+- SMTP Password
+- Región (ej: us-east-1)
+
