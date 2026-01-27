@@ -574,3 +574,40 @@ OPCIONES:
 ¿Cuál prefieres?
 
 Recuerda lo que te envié de sendgrid. dimne como terminar de configurar basado en la imagen que te postee hace algunos mensajes
+
+[CD6] ✅ SENDGRID - CÓMO ARREGLAR
+
+La imagen mostró registros DNS inválidos porque pusiste:
+❌ https://castlesolutions.mx/checkin
+
+Deberías haber puesto:
+✅ castlesolutions.mx
+
+PASOS PARA ARREGLAR:
+
+1. EN SENDGRID:
+   - Settings → Sender Authentication
+   - Elimina la configuración actual
+   - Click 'Authenticate Your Domain'
+   - Pon SOLO: castlesolutions.mx (sin https, sin /checkin)
+
+2. TE DARÁ REGISTROS COMO:
+   Type    Host                              Value
+   CNAME   em1234.castlesolutions.mx         u1234.wl.sendgrid.net
+   CNAME   s1._domainkey.castlesolutions.mx  s1.domainkey...
+   CNAME   s2._domainkey.castlesolutions.mx  s2.domainkey...
+   TXT     _dmarc.castlesolutions.mx         v=DMARC1; p=none;
+
+3. EN TU DNS (GoDaddy, Namecheap, etc):
+   - Agrega esos 4 registros
+   - Espera 5-10 min
+
+4. EN SENDGRID:
+   - Click 'Verify'
+   - Si pasa, dame el API key
+
+5. YO:
+   - Cambio email-service de Resend a SendGrid
+   - Listo
+
+¿Tienes acceso al DNS de castlesolutions.mx?
