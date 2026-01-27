@@ -2334,3 +2334,4 @@ A single mysterious glowing eye on pure black background (#0a0a0f). The eye has 
 ¿Quieres que genere la imagen con ese prompt o prefieres ajustarlo?
 
 Puedes utilizar este ojo inverso para que sea en ambos lados? Que ambos ojos queden al lado pero por encima de la palabra duendes
+Champ, mañana contoinuamos. Gracias por todo. antes que te retires apaga rpi, plis. Descansa, champ
