@@ -142,3 +142,5 @@ async function checkProgress() {
 4. Configurar triggers
 
 Tiempo estimado: 30-45 min para MVP funcional.
+
+Creo que para probar este pipeline dos Claudes son suficientes, para un MVP de prueba
