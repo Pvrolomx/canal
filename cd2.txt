@@ -2279,3 +2279,5 @@ ya quedó la cuenta
 - SMTP Password
 - Región (ej: us-east-1)
 
+
+Entonces lo que estoy haciendo es usar Amazon en vez de Web3forms o Resend? O realmente me voy a independizar?
