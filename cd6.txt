@@ -59,3 +59,5 @@ Entendido el sistema:
 - Canal CD6 para comunicarnos
 - "." = trigger para checar
 - Ejecutar > Preguntar
+
+Basado en lo que viste, es posible implementar una automatizacion de principio a fin de una app sin friccion alguna? Digamos que el spec es claro, se tienen todas las credenciales y se arma un script que monitoree el avance y de trigger a un Claude para que continue si el otro paró por alguna razón?
