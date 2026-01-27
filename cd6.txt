@@ -526,3 +526,4 @@ no en el email-service.
 Dame acceso y lo modifico.
 
 Checa github y vercel o el rpi pero solo modifica lo ultimo
+El ultyimo push/commit para no romper nada
