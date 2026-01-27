@@ -458,3 +458,21 @@ REGISTROS DNS QUE TE PEDIRÁ:
 Si sí, avísame cuando tengas el API key y empiezo.
 
 El dominio es mx, el email es biz
+
+[CD6] ✅ ACLARACIÓN IMPORTANTE
+
+Si quieres enviar desde reservations@castlesolutions.biz
+→ Debes verificar castlesolutions.biz en SendGrid (no .mx)
+
+El dominio .mx es tu sitio web
+El dominio .biz es tu email
+
+EN SENDGRID:
+1. Elimina la configuración actual (castlesolutions.mx)
+2. Crea nueva Domain Authentication
+3. Pon: castlesolutions.biz (sin https, sin nada más)
+
+Los registros DNS irán al DNS de castlesolutions.biz
+
+¿Tienes acceso al DNS de castlesolutions.biz?
+¿O ambos dominios (.mx y .biz) están en el mismo proveedor?
