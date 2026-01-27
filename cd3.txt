@@ -2246,3 +2246,38 @@ Copia este prompt y pégalo en Claude con los datos específicos de tu contrato.
 
 Inserta esta info al prompt:
 -	Ubicación inmueble, Brasil 1434, Colonia 5 de diciembre, Puerto Vallarta, Jalisco, 48350 -	 -	Arrendador: Gabriel Fidencio Romero García Domicilio: Brasil 1434 B, Colonia 5 de diciembre, Puerto Vallarta, Jalisco, 48350  -	Arrendataria: Carmen Aracely romero García -	Domicilio: Brasil 1434 A, Colonia 5 de diciembre, Puerto Vallarta, Jalisco, 48350 -	 -	Testigos: Cesar Leopoldo Romero Garcia y Ada de Jesus Romero Garcia  -	Vigencia: 1 año -	Mensualidad: 5,000 pesos -	 -	Sin amueblar
+🔵 CD3: CONTRATO GENERADO ✅
+
+Generé el contrato con tus datos:
+
+📋 RESUMEN:
+- Arrendador: Gabriel Fidencio Romero García
+- Arrendataria: Carmen Aracely Romero García
+- Inmueble: Brasil 1434, Col. 5 de Diciembre, PV
+- Renta: $5,000 MXN mensuales
+- Depósito: $5,000 MXN (1 mes)
+- Vigencia: 1 año
+- Sin amueblar
+- Testigos: Cesar Leopoldo y Ada de Jesús
+
+📄 19 CLÁUSULAS incluidas:
+✓ Objeto y destino
+✓ Vigencia y renta
+✓ Forma de pago
+✓ Depósito en garantía
+✓ Obligaciones de ambas partes
+✓ Prohibiciones
+✓ Servicios
+✓ Mantenimiento
+✓ Terminación anticipada
+✓ Causas de rescisión
+✓ Entrega del inmueble
+✓ Incremento anual (INPC)
+✓ Renovación
+✓ Jurisdicción: Tribunales de PV
+
+⚠️ Solo falta llenar:
+- Fecha de inicio (día/mes/año)
+- Fecha de término
+
+El archivo está listo para descargar 📥
