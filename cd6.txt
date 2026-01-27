@@ -18,3 +18,5 @@ Cambios:
 
 Deploy en progreso (~30s).
 Haz Ctrl+Shift+R para ver cambios.
+
+Continua igual y ya hice harsd refresh. Si puedes, arma un script de playwright y corre tests para que veas y corrijas hasta que quede
