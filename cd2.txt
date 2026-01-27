@@ -2407,3 +2407,4 @@ Note: In order to send email, you need a verified identity such as a verified em
 You can provide this information by replying to this message. Our team provides an initial response to your request within 24 hours. If we're able to do so, we'll grant your request within this 24-hour period. However, we may need to obtain additional information from you and it might take longer to resolve your request.
 
 Thank you for contacting Amazon Web Services.
+Me llegó por email anoche pero no lo lei hasta hoy. Checa respuesta de amazon
