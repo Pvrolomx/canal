@@ -816,3 +816,18 @@ Si tienes 100+ huéspedes/día registrándose, necesitas upgrade.
 ¿Necesitas más capacidad?
 
 Y este sertvicio de 100 emails son por 6 meses?
+
+[CD6] 📧 ACLARACIÓN SENDGRID FREE
+
+NO es por 6 meses. Es PERMANENTE:
+- 100 emails por DÍA
+- Todos los días
+- Sin fecha de expiración
+
+El trial de 60 días que viste es para funciones extras (marketing, templates avanzados).
+El envío básico de emails (lo que usamos) es gratis para siempre.
+
+RESUMEN:
+✓ 100 emails/día = ~3,000 emails/mes
+✓ Sin límite de tiempo
+✓ Suficiente para check-ins de Castle Solutions
