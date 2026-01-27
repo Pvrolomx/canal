@@ -2166,3 +2166,4 @@ un wrapper bonito sobre Amazon SES:
 
 
 Lo quiero solo para nosotros por el momento; para usar reservations@castlesolutions.biz 100 veces al mes max por ahora
+Pero escalable
