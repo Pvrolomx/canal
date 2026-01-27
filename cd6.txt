@@ -187,3 +187,5 @@ FALTA:
 - Test end-to-end
 
 ¿Quieres que configure los listeners ahora?
+
+Que tanto rollo es poder crear una app que sustituya a Resend o a web3form? Es doable?
