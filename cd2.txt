@@ -2202,3 +2202,38 @@ Pero escalable
 
 
 No tengo, dime como crearla
+
+[CD2] 🔧 CREAR CUENTA AWS
+
+**Pasos:**
+
+**1. Ir a:** https://aws.amazon.com
+   - Click "Create an AWS Account"
+
+**2. Datos requeridos:**
+   - Email (usa uno que revises)
+   - Contraseña
+   - Nombre de cuenta (ej: "CastleSolutions")
+
+**3. Información de contacto:**
+   - Selecciona "Personal" o "Business"
+   - Llena dirección, teléfono
+
+**4. Método de pago:**
+   - Tarjeta de crédito/débito
+   - AWS hace cargo de $1 USD temporal (se devuelve)
+   - NO te cobran si no pasas del free tier
+
+**5. Verificación:**
+   - Te llaman o envían SMS con código
+
+**6. Plan de soporte:**
+   - Selecciona "Basic (Free)"
+
+**7. Listo!**
+   - Entra a la consola: console.aws.amazon.com
+
+**Después de crear la cuenta:**
+Avísame y te guío para configurar SES
+y verificar el dominio castlesolutions.biz
+
