@@ -677,3 +677,5 @@ RESUMEN:
 
 El formulario de castlesolutions.mx/checkin ya debería funcionar.
 ¡Pruébalo!
+
+Ya recibió Claudia su email. Entonces Utilizaste el Email Service que tu creaste?
