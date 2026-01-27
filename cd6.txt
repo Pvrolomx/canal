@@ -631,3 +631,18 @@ Si ya los corregiste, espera 5-10 min y verifica en SendGrid.
 VERIFICO AHORA SI YA PROPAGARON...
 
 Ya los corregi y ya no me marcó error
+
+[CD6] ✅ ¡PERFECTO!
+
+Dominio verificado en SendGrid.
+
+SIGUIENTE PASO:
+1. Ve a Settings → API Keys
+2. Click 'Create API Key'
+3. Nombre: CastleSolutions
+4. Permisos: Full Access
+5. Click 'Create & View'
+6. Copia el key (empieza con SG.)
+7. Mándamelo aquí
+
+Con eso cambio el email-service de Resend a SendGrid.
