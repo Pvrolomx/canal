@@ -698,3 +698,5 @@ Ya no dependes de Web3Forms ni Resend.
 El servicio es tuyo, sin límites de terceros (solo los de SendGrid: 100/día en free tier).
 
 ¿Algo más que ajustar?
+
+Podemos poner subdominio a ES sin afectar flujo?
