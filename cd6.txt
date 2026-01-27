@@ -749,3 +749,25 @@ fetch('https://email.duendes.app/api/send', {
 
 Oye, podrias clonar Email Service en el Rpi para que no se nos vaya a perder o llevar control? Tambien Condo Services
 Condo Advisor
+
+[CD6] 📦 CLONAR EN RPI
+
+No tengo SSH desde aquí. Ejecuta esto en el RPi:
+
+cd ~/repos
+
+# Email Service
+git clone https://github.com/Pvrolomx/email-service.git
+
+# Castle Checkin (formulario)
+git clone https://github.com/Pvrolomx/castle-checkin.git
+
+# Castle Solutions (website principal)
+git clone https://github.com/Pvrolomx/castle-solutions.git
+
+# Verificar
+ls -la ~/repos/
+
+---
+
+O si prefieres, conéctame al RPi por CD6 y lo hago yo.
