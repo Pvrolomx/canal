@@ -2350,3 +2350,5 @@ Básicamente **gratis** para siempre 😄
 - Mailchimp: $13/mes
 - **Amazon SES: $0.01/mes**
 
+
+Solo puedo usar castlesolutions como email (claudia@castle.... reservations@castle...)?
