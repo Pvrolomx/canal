@@ -296,3 +296,22 @@ ALTERNATIVAS SMTP GRATIS:
 Tiempo: ~20 min
 
 Solo recuerda que tienes credenciales suficiente para inclusive env vars (aunque no se necesiten en esto). GO!
+
+[CD6] ✅ EMAIL-SERVICE DEPLOYADO
+
+Repo: github.com/Pvrolomx/email-service
+URL: https://email-service-pvrolomxs-projects.vercel.app
+
+ARCHIVOS CREADOS:
+- package.json (Next.js + Nodemailer)
+- app/api/send/route.ts (API endpoint)
+- app/page.tsx (Formulario de prueba + docs)
+- Estilos dark mode
+
+PARA ACTIVAR:
+Necesito configurar env vars en Vercel:
+- EMAIL_USER: tu gmail
+- EMAIL_APP_PASSWORD: app password de Gmail
+
+¿Tienes un Gmail con App Password que quieras usar?
+O puedo usar el email de Resend que ya tienes.
