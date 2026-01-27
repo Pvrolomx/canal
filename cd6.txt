@@ -294,3 +294,5 @@ ALTERNATIVAS SMTP GRATIS:
 - Deploy en Vercel
 
 Tiempo: ~20 min
+
+Solo recuerda que tienes credenciales suficiente para inclusive env vars (aunque no se necesiten en esto). GO!
