@@ -527,3 +527,19 @@ Dame acceso y lo modifico.
 
 Checa github y vercel o el rpi pero solo modifica lo ultimo
 El ultyimo push/commit para no romper nada
+
+[CD6] ✅ FORMULARIO ACTUALIZADO
+
+Repo: Pvrolomx/castle-checkin
+Commit: cd87a37
+
+CAMBIO:
+- Web3Forms → email-service propio
+- to: reservations@castlesolutions.biz ✓
+- from: Castle Solutions (via Resend)
+- reply_to: email del huésped ✓
+
+El deploy es automático en Vercel.
+En ~30s estará live en castlesolutions.mx/checkin
+
+¿Quieres que lo pruebe enviando un formulario?
