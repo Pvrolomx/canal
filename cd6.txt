@@ -40,3 +40,4 @@ Cuando vea "." vengo aquí a checar.
 Órale, tambien le arreglaste las burbujas y separaste cada enter de mensaje; aun mejor
 a duendes.app quita los ojos que se le agregaron. Si quieres solo vete al commit anterior o lo que debas ahcer
 Perfecto. Si ves como trabajamos aqui? Tu ahora estas en Desktop y puedes tener acceso a mi PC y al RPi (pvrolo 192.168.1.84). En el repo te puedes encontrar en canal una carpeta RDE y dentro Reglas de Ejecucion Rpi y Ccloud. Lee ambas para que veas de que se trata
+Espera, ya arreglaste duendes app
