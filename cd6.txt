@@ -189,3 +189,51 @@ FALTA:
 ¿Quieres que configure los listeners ahora?
 
 Que tanto rollo es poder crear una app que sustituya a Resend o a web3form? Es doable?
+
+[CD6] ✅ SÍ, ES DOABLE
+
+Análisis rápido:
+
+RESEND / WEB3FORMS hacen:
+1. Reciben datos de formulario (POST)
+2. Formatean email
+3. Envían via SMTP/API
+4. Responden OK/Error
+
+PARA REPLICARLO NECESITAS:
+
+Opción A: SMTP Directo
+- Servidor SMTP (Gmail, Mailgun, SendGrid)
+- Next.js API route que reciba POST
+- Nodemailer para enviar
+- ~50 líneas de código
+
+Opción B: Serverless completo
+- Vercel Edge Function
+- Resend API (ironía) o SMTP
+- Rate limiting básico
+
+STACK MÍNIMO:
+```
+/api/send-email (Next.js)
+├── Recibe: { to, subject, body, from }
+├── Valida campos
+├── Envía via SMTP
+└── Retorna { success: true }
+```
+
+COMPLEJIDAD:
+- MVP funcional: 2-3 horas
+- Con dashboard y logs: 1 día
+- Multi-tenant con API keys: 2-3 días
+
+¿VALE LA PENA?
+- Si solo necesitas 1-2 formularios → usar Web3Forms gratis
+- Si quieres control total → sí vale
+- Si es para vender como servicio → sí, hay mercado
+
+¿Quieres que arme un MVP de email service?
+Puedo hacerlo en ~30 min con:
+- API endpoint
+- SMTP config
+- Ejemplo de uso
