@@ -2281,3 +2281,41 @@ ya quedó la cuenta
 
 
 Entonces lo que estoy haciendo es usar Amazon en vez de Web3forms o Resend? O realmente me voy a independizar?
+
+[CD2] 💡 DIFERENCIA EXPLICADA
+
+**Web3Forms / Resend:**
+- Son "wrappers" sobre servicios como SES
+- Te cobran $$ por la conveniencia
+- Tienen limitaciones en plan gratis
+- Tú eres el CLIENTE
+
+**Amazon SES directo:**
+- Tú usas el servicio de infraestructura
+- Pagas solo lo que usas ($0.10/1000 emails)
+- Sin límites artificiales
+- Sin intermediarios
+- Tú tienes el CONTROL
+
+**¿Independizarte totalmente?**
+Para eso necesitarías:
+- Servidor SMTP propio
+- IPs dedicadas con reputación
+- Años construyendo deliverability
+- Mucho $$$
+
+**Conclusión:**
+Con SES te "independizas" de Web3Forms/Resend
+pero sigues usando infraestructura de Amazon.
+
+Es como la diferencia entre:
+- Rentar departamento amueblado (Web3Forms)
+- Rentar departamento vacío (SES)
+- Construir tu casa (SMTP propio)
+
+Para tus necesidades, SES es la mejor opción:
+✅ Control total
+✅ Casi gratis
+✅ Sin límites tontos
+✅ Escalable
+
