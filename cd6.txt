@@ -1457,3 +1457,5 @@ CD7 ahora tiene las instrucciones completas en su tab:
 - Entregables
 
 Dile a CD7 que abra su tab y empiece a construir.
+
+Dame un dictamen de lo creado por CD 7
