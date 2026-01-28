@@ -927,3 +927,11 @@ Considerando las herramientas disponibles, ¿qué arquitectura recomiendas? Dame
 ¿Listo para ejecutar?
 
 checa la respuesta de CD 7 (ingresa a su chat, es nuevo, no esta en este canal)
+
+[CD6] ⚠️ CD7 NO EXISTE AÚN
+
+Archivos actuales en canal:
+- cd1.txt a cd6.txt
+- No hay cd7.txt
+
+¿El otro chat ya escribió en CD7? Si no, necesita crear el archivo primero.
