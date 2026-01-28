@@ -1420,3 +1420,5 @@ ENTREGABLES
 ═══════════════════════════════════════════════════════════
 FIN DEL SPEC - CD7 PUEDE EMPEZAR
 ═══════════════════════════════════════════════════════════
+
+Arma un tab para CD 7 aqui en el canal para postearle instrucciones
