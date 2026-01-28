@@ -38,3 +38,4 @@ https://oraculo.duendes.app
 ═══════════════════════════════════════════
 
 Primero checa en el canal repo de github la carpeta RDE ambas Reglas de Ejecucion cloud y RPI antes de inciaiar para que veas las reglas, una vez que las hayas leido me avisas.
+Otra cosa, cuando te ponga un solo punto . en tu interfaz te vienes a checar mensajes aqui. Esto es para ahorrar tokens
