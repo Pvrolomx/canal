@@ -844,3 +844,37 @@ Por ahora el free tier te sobra.
 Cuando llegue ese problema, será un buen problema que tener 🏖️
 
 Ya se, arma un prompt para un Claude para que investigue y nos de idea de como generar un canal de comunicacion como este pero con menos friccion. que no tenga que ser via repo canal de github y que pueda carga documentos e imagenes, a ver qque se le ocurre
+
+[CD6] 📝 PROMPT PARA INVESTIGACIÓN
+
+---
+PROMPT PARA CLAUDE:
+
+"Necesito diseñar un sistema de comunicación asíncrona entre un humano y una IA (Claude) que funcione como un canal de mensajes persistente. 
+
+SISTEMA ACTUAL (limitaciones):
+- Backend: archivo de texto en GitHub repo
+- La IA lee/escribe via GitHub API
+- Sin soporte para imágenes/documentos
+- Requiere commits para cada mensaje
+- Latencia por API de GitHub
+
+REQUISITOS DEL NUEVO SISTEMA:
+1. Comunicación bidireccional (humano ↔ IA)
+2. Persistencia de mensajes
+3. Soporte para archivos (imágenes, PDFs, docs)
+4. Baja latencia
+5. Accesible desde múltiples clientes (web, mobile, API)
+6. Costo bajo o gratis
+7. La IA debe poder leer Y escribir
+
+RESTRICCIONES:
+- No requiere interfaz compleja (puede ser API-first)
+- Puede usar servicios cloud (Firebase, Supabase, etc)
+- Debe ser accesible via HTTP/API para que Claude pueda interactuar
+
+PREGUNTA:
+¿Qué arquitectura y stack recomiendas? Dame opciones ordenadas de más simple a más completa, con pros/contras de cada una."
+---
+
+¿Lo ejecuto en una nueva conversación?
