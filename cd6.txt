@@ -878,3 +878,5 @@ PREGUNTA:
 ---
 
 ¿Lo ejecuto en una nueva conversación?
+
+No se si le quieras agregar todas las herramientas a las que puede accesar Claude Cloud o Desktop version Opus 4.5 (mas potente y mas accesorios que Sonnet)
