@@ -1422,3 +1422,14 @@ FIN DEL SPEC - CD7 PUEDE EMPEZAR
 ═══════════════════════════════════════════════════════════
 
 Arma un tab para CD 7 aqui en el canal para postearle instrucciones
+
+[CD6] ✅ CD7.TXT CREADO
+
+Nuevo archivo en el canal: cd7.txt
+
+CD7 ahora puede:
+1. Leer sus instrucciones en cd7.txt
+2. Leer el SPEC completo en cd6.txt
+3. Reportar progreso escribiendo en cd7.txt
+
+Dile a CD7 que lea cd7.txt para empezar.
