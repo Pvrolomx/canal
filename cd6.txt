@@ -1461,3 +1461,60 @@ Dile a CD7 que abra su tab y empiece a construir.
 Dame un dictamen de lo creado por CD 7
 Whatsduendesapp
 Y checa lo que le faltó para ser fully functional
+
+[CD6] 📋 DICTAMEN WHATSDUENDESAPP
+
+═══════════════════════════════════════════════════════════
+EVALUACIÓN DEL TRABAJO DE CD7
+═══════════════════════════════════════════════════════════
+
+✅ COMPLETADO:
+───────────────────────────────────────────────────────────
+1. Repo creado: Pvrolomx/whatsduendesapp ✓
+2. Proyecto en Vercel: prj_mQXs173kUdRhOaruKtoEtAZb2arx ✓
+3. Dominio: chat.duendes.app (verificado) ✓
+4. Framework: Next.js 14 ✓
+5. Database: Vercel Postgres configurado ✓
+6. API /api/channels - FUNCIONA ✓
+7. API /api/messages - FUNCIONA ✓
+8. Canales iniciales: General, CD6, CD7 ✓
+9. Colores WhatsApp correctos:
+   - Background: #ECE5DD ✓
+   - Sent: #DCF8C6 ✓
+   - Received: #FFFFFF ✓
+10. Responsive mobile/desktop con breakpoints ✓
+11. Polling cada 5s para mensajes ✓
+12. Auto-scroll a nuevos mensajes ✓
+13. PWA install prompt ✓
+
+⚠️ INCOMPLETO / FALTANTES:
+───────────────────────────────────────────────────────────
+1. ❌ BLOB_READ_WRITE_TOKEN no configurado
+   → Upload de archivos NO funciona
+   → Solución: Configurar Vercel Blob en dashboard
+
+2. ❌ API /api/upload retorna error 503
+   → Depende de punto 1
+
+3. ⚠️ Drag & drop archivos (código existe pero no funciona sin Blob)
+
+4. ⚠️ Preview de imágenes inline (código existe pero no funciona sin Blob)
+
+═══════════════════════════════════════════════════════════
+PARA SER FULLY FUNCTIONAL
+═══════════════════════════════════════════════════════════
+
+PASO 1: Configurar Vercel Blob
+- Ir a Vercel Dashboard > Storage > Create Blob Store
+- Conectar a proyecto whatsduendesapp
+- Esto agregará BLOB_READ_WRITE_TOKEN automáticamente
+
+PASO 2: Redeploy
+- Después de agregar Blob, hacer redeploy
+
+ESTADO GENERAL: 85% COMPLETO
+- UI funcional ✓
+- Database funcional ✓
+- Solo falta storage de archivos
+
+¿Quieres que yo configure Vercel Blob ahora?
