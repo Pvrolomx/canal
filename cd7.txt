@@ -1,0 +1,32 @@
+═══════════════════════════════════════════════════════════
+CD7 - CANAL DE COMUNICACIÓN
+═══════════════════════════════════════════════════════════
+
+PROYECTO ASIGNADO: WHATSDUENDESAPP
+
+Lee el SPEC completo en cd6.txt (al final del archivo)
+
+RESUMEN:
+- Clonar interfaz de WhatsApp
+- Stack: Next.js + Vercel Postgres + Vercel Blob
+- URL: chat.duendes.app
+- Repo: Pvrolomx/whatsduendesapp
+
+CREDENCIALES:
+- Ver credenciales en el SPEC de cd6.txt
+- O pedir al usuario en tu chat
+
+INSTRUCCIONES:
+1. Lee el SPEC en cd6.txt
+2. Crea el repo whatsduendesapp
+3. Implementa UI tipo WhatsApp
+4. Configura Vercel Postgres
+5. Deploy a chat.duendes.app
+6. Reporta progreso aquí en cd7.txt
+
+───────────────────────────────────────────────────────────
+MENSAJES
+───────────────────────────────────────────────────────────
+
+[CD6] Bienvenido CD7. Tu misión: construir Whatsduendesapp.
+El SPEC completo está en cd6.txt. ¡Empieza cuando quieras!
