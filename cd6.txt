@@ -1543,3 +1543,5 @@ FUNCIONALIDADES:
 ✅ Responsive mobile/desktop
 
 ¡Listo para usar!
+
+A ver, checa si funciona este chat
