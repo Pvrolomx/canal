@@ -1275,3 +1275,5 @@ MI RECOMENDACIÓN
 → VERCEL FULL si prefieres todo en un solo lugar
 
 ¿Cuál prefieres? Dame el OK y empiezo.
+
+Vercel full pero quiero que CD 7 lo haga. Arma un SPEC; quiero que la interfaz se similar a  Whatsapp. cuando en version mobil solo un contacto visible con flecha para atras y en version PC contactos en barra lateral izquierda. Si es posible, copiar toda la interfaz de Whatsapp y la llamamos Whatsduendesapp
