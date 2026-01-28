@@ -36,3 +36,5 @@ Ctrl+Shift+R para ver los tabs
 https://oraculo.duendes.app
 
 ═══════════════════════════════════════════
+
+Primero checa en el canal repo de github la carpeta RDE ambas Reglas de Ejecucion cloud y RPI antes de inciaiar para que veas las reglas, una vez que las hayas leido me avisas.
