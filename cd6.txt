@@ -1277,3 +1277,146 @@ MI RECOMENDACIÓN
 ¿Cuál prefieres? Dame el OK y empiezo.
 
 Vercel full pero quiero que CD 7 lo haga. Arma un SPEC; quiero que la interfaz se similar a  Whatsapp. cuando en version mobil solo un contacto visible con flecha para atras y en version PC contactos en barra lateral izquierda. Si es posible, copiar toda la interfaz de Whatsapp y la llamamos Whatsduendesapp
+
+[CD6] 📋 SPEC PARA CD7 - WHATSDUENDESAPP
+
+═══════════════════════════════════════════════════════════
+WHATSDUENDESAPP - ESPECIFICACIÓN TÉCNICA
+═══════════════════════════════════════════════════════════
+
+OBJETIVO:
+Sistema de comunicación tipo WhatsApp para canal humano ↔ IA
+
+NOMBRE: Whatsduendesapp
+URL: chat.duendes.app (o whats.duendes.app)
+
+───────────────────────────────────────────────────────────
+STACK TÉCNICO
+───────────────────────────────────────────────────────────
+- Framework: Next.js 14 (App Router)
+- Database: Vercel Postgres
+- Storage: Vercel Blob (archivos/imágenes)
+- Deploy: Vercel (MCP disponible)
+- Styling: Tailwind CSS
+
+───────────────────────────────────────────────────────────
+UI/UX - CLONAR WHATSAPP
+───────────────────────────────────────────────────────────
+
+MOBILE (< 768px):
+┌─────────────────────┐
+│ ← Contacto Name     │  ← Header con flecha atrás
+├─────────────────────┤
+│                     │
+│  💬 Mensaje 1       │  ← Burbujas de chat
+│         Mensaje 2 💬│  ← Verde = enviado, Gris = recibido
+│  💬 Mensaje 3       │
+│                     │
+├─────────────────────┤
+│ [    Escribe...   ] │  ← Input + botón enviar
+│ 📎  📷         ➤   │  ← Adjuntar, foto, enviar
+└─────────────────────┘
+
+DESKTOP (≥ 768px):
+┌────────────┬────────────────────────────────────┐
+│ CONTACTOS  │  Nombre del Chat                   │
+├────────────┤────────────────────────────────────│
+│ > CD6 🟢   │                                    │
+│   CD7      │   💬 Mensaje de IA                 │
+│   General  │              Mi mensaje 💬         │
+│   Pruebas  │   💬 Otro mensaje                  │
+│            │                                    │
+│            ├────────────────────────────────────│
+│            │ [    Escribe...    ] 📎 📷  ➤     │
+└────────────┴────────────────────────────────────┘
+
+COLORES (estilo WhatsApp):
+- Header: #075E54 (verde oscuro)
+- Mensaje enviado: #DCF8C6 (verde claro)
+- Mensaje recibido: #FFFFFF (blanco)
+- Background: #ECE5DD (gris beige)
+- Input bar: #F0F0F0
+
+───────────────────────────────────────────────────────────
+DATABASE SCHEMA (Vercel Postgres)
+───────────────────────────────────────────────────────────
+
+CREATE TABLE channels (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(50) NOT NULL,
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE messages (
+  id SERIAL PRIMARY KEY,
+  channel_id INTEGER REFERENCES channels(id),
+  sender VARCHAR(50) NOT NULL,  -- "human" o "claude"
+  content TEXT NOT NULL,
+  attachments JSONB,  -- [{url, type, name}]
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE files (
+  id SERIAL PRIMARY KEY,
+  message_id INTEGER REFERENCES messages(id),
+  blob_url TEXT NOT NULL,
+  filename VARCHAR(255),
+  mimetype VARCHAR(100),
+  size INTEGER,
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
+───────────────────────────────────────────────────────────
+API ENDPOINTS
+───────────────────────────────────────────────────────────
+
+GET  /api/channels
+POST /api/channels { name }
+
+GET  /api/messages?channel=cd6&limit=50&before=timestamp
+POST /api/messages { channel, sender, content, attachments? }
+
+POST /api/upload (multipart/form-data)
+     → Returns { url, filename, size }
+
+GET  /api/poll?channel=cd6&after=timestamp
+     → Para polling de nuevos mensajes
+
+───────────────────────────────────────────────────────────
+FEATURES REQUERIDOS
+───────────────────────────────────────────────────────────
+
+✓ Responsive (mobile-first como WhatsApp)
+✓ Lista de contactos/canales en sidebar (desktop)
+✓ Vista de chat único (mobile)
+✓ Burbujas de mensaje con timestamp
+✓ Indicador de mensaje leído (✓✓)
+✓ Upload de archivos (drag & drop)
+✓ Preview de imágenes inline
+✓ Scroll infinito hacia arriba (historial)
+✓ Auto-scroll a nuevos mensajes
+✓ Polling cada 5s para nuevos mensajes
+✓ Emoji picker (opcional)
+✓ Notificación de "escribiendo..." (opcional)
+
+───────────────────────────────────────────────────────────
+CREDENCIALES PARA CD7
+───────────────────────────────────────────────────────────
+
+GitHub: Pvrolomx
+Vercel Team: team_xmFW0blsjqFI5lwt29wBPi8Q
+Vercel Token: HYf0IXRmK0bDeSDI13eonHrv
+
+───────────────────────────────────────────────────────────
+ENTREGABLES
+───────────────────────────────────────────────────────────
+
+1. Repo: Pvrolomx/whatsduendesapp
+2. Deploy: chat.duendes.app
+3. Vercel Postgres configurado
+4. Vercel Blob configurado
+5. Canales iniciales: General, CD6, CD7
+
+═══════════════════════════════════════════════════════════
+FIN DEL SPEC - CD7 PUEDE EMPEZAR
+═══════════════════════════════════════════════════════════
