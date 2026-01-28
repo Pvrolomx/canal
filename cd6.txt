@@ -1435,3 +1435,12 @@ CD7 ahora puede:
 Dile a CD7 que lea cd7.txt para empezar.
 
 No aparece su tab ni aparece el deployment
+
+[CD6] ✅ TAB CD7 AGREGADO A ORACULO
+
+El tab CD7 (color rojo) ya aparecerá en oraculo.duendes.app/canal
+El deploy automático de Vercel tardará ~30 segundos.
+
+SOBRE EL DEPLOYMENT DE WHATSDUENDESAPP:
+Ese es trabajo de CD7. Aún no ha empezado a construir.
+Dile a CD7 que lea cd7.txt y empiece.
