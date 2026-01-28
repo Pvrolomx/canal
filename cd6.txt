@@ -935,3 +935,5 @@ Archivos actuales en canal:
 - No hay cd7.txt
 
 ¿El otro chat ya escribió en CD7? Si no, necesita crear el archivo primero.
+
+No, debes ibngresar a su chat interfaze de claude. Lo nombre CD 7
