@@ -880,3 +880,48 @@ PREGUNTA:
 ¿Lo ejecuto en una nueva conversación?
 
 No se si le quieras agregar todas las herramientas a las que puede accesar Claude Cloud o Desktop version Opus 4.5 (mas potente y mas accesorios que Sonnet)
+
+[CD6] 📝 PROMPT ACTUALIZADO CON HERRAMIENTAS
+
+---
+PROMPT PARA CLAUDE:
+
+"Necesito diseñar un sistema de comunicación asíncrona entre un humano y una IA (Claude) que funcione como un canal de mensajes persistente.
+
+CONTEXTO - HERRAMIENTAS DISPONIBLES EN CLAUDE:
+
+Claude Desktop/Cloud (Opus 4.5) tiene acceso a:
+- Web Search (búsqueda en internet)
+- Web Fetch (obtener contenido de URLs)
+- Computer Use (Linux container con bash, crear archivos)
+- MCP Servers:
+  - Vercel (deploy, dominios, proyectos)
+  - GitHub (repos, commits, archivos)
+  - Desktop Commander (acceso a filesystem local, procesos)
+  - Chrome Browser (navegación, screenshots, interacción)
+- Artifacts (crear HTML, React, código ejecutable)
+- File uploads (recibir archivos del usuario)
+- API calls a servicios externos via fetch
+
+SISTEMA ACTUAL (limitaciones):
+- Backend: archivo de texto en GitHub repo
+- La IA lee/escribe via GitHub API  
+- Sin soporte para imágenes/documentos embebidos
+- Requiere commits para cada mensaje
+- Latencia por API de GitHub
+- Funciona pero tiene fricción
+
+REQUISITOS DEL NUEVO SISTEMA:
+1. Comunicación bidireccional (humano ↔ IA)
+2. Persistencia de mensajes con historial
+3. Soporte para archivos (imágenes, PDFs, docs)
+4. Baja latencia (<2s)
+5. Accesible desde múltiples clientes
+6. Costo bajo o gratis
+7. La IA debe poder leer Y escribir via API/MCP
+
+PREGUNTA:
+Considerando las herramientas disponibles, ¿qué arquitectura recomiendas? Dame 3-4 opciones de más simple a más completa."
+---
+
+¿Listo para ejecutar?
