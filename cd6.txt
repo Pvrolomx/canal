@@ -1221,3 +1221,57 @@ MI OPINIÓN:
 ¿Cuál quieres que construyamos?
 
 Que secesita para supabase y Vercel full?
+
+[CD6] 📋 REQUISITOS PARA CADA OPCIÓN
+
+═══════════════════════════════════════
+OPCIÓN 2: SUPABASE (1 hora)
+═══════════════════════════════════════
+
+NECESITAS:
+1. Cuenta en supabase.com (gratis)
+2. Crear proyecto nuevo
+3. Obtener URL y API Key
+
+YO HAGO:
+- Crear tablas (messages, channels, files)
+- API endpoints en Vercel
+- UI web simple
+- Conectar con tu MCP
+
+LÍMITES FREE:
+- 500MB base de datos
+- 5GB archivos
+- 50,000 requests/mes
+- 2 proyectos
+
+═══════════════════════════════════════
+OPCIÓN 4: VERCEL FULL (3 horas)
+═══════════════════════════════════════
+
+NECESITAS:
+1. Tu cuenta Vercel (ya la tienes ✓)
+2. Vercel Postgres ($0 hasta 256MB)
+3. Vercel Blob ($0 hasta 1GB)
+
+YO HAGO:
+- Proyecto Next.js completo
+- Base de datos Postgres
+- Storage para archivos
+- UI completa con React
+- Deploy automático
+- API REST completa
+
+LÍMITES FREE:
+- 256MB Postgres
+- 1GB Blob storage
+- Hobby plan limits
+
+═══════════════════════════════════════
+MI RECOMENDACIÓN
+═══════════════════════════════════════
+
+→ SUPABASE si quieres más storage gratis (5GB)
+→ VERCEL FULL si prefieres todo en un solo lugar
+
+¿Cuál prefieres? Dame el OK y empiezo.
