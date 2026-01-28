@@ -1460,3 +1460,4 @@ Dile a CD7 que abra su tab y empiece a construir.
 
 Dame un dictamen de lo creado por CD 7
 Whatsduendesapp
+Y checa lo que le faltó para ser fully functional
