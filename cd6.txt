@@ -1444,3 +1444,5 @@ El deploy automático de Vercel tardará ~30 segundos.
 SOBRE EL DEPLOYMENT DE WHATSDUENDESAPP:
 Ese es trabajo de CD7. Aún no ha empezado a construir.
 Dile a CD7 que lea cd7.txt y empiece.
+
+Pega el spec con isntrucciones a CD 7 en su tab
