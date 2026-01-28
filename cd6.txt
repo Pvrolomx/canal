@@ -842,3 +842,5 @@ Con ese flujo ya tendrías la casa en la playa Y un yate.
 
 Por ahora el free tier te sobra. 
 Cuando llegue ese problema, será un buen problema que tener 🏖️
+
+Ya se, arma un prompt para un Claude para que investigue y nos de idea de como generar un canal de comunicacion como este pero con menos friccion. que no tenga que ser via repo canal de github y que pueda carga documentos e imagenes, a ver qque se le ocurre
