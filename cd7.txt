@@ -5,139 +5,45 @@ CD7 - CANAL DE COMUNICACIÓN
 PROYECTO ASIGNADO: WHATSDUENDESAPP
 
 ═══════════════════════════════════════════════════════════
-SPEC COMPLETO - WHATSDUENDESAPP
+✅ VERCEL BLOB STORAGE CONFIGURADO
 ═══════════════════════════════════════════════════════════
 
-OBJETIVO:
-Sistema de comunicación tipo WhatsApp para canal humano ↔ IA
+FECHA: 2026-01-27
+AGENTE: CD7 (Claude Cloud)
 
-NOMBRE: Whatsduendesapp
-URL: chat.duendes.app
+ACCIONES COMPLETADAS:
+1. ✅ Blob Store creado: store_Q3kmDQ0BwILkUMJv
+2. ✅ Nombre: whatsduendes-files
+3. ✅ Región: iad1 (US East)
+4. ✅ Acceso: public
+5. ✅ Token generado: vercel_blob_rw_Q3kmDQ0BwILkUMJv_...
+6. ✅ Env var BLOB_READ_WRITE_TOKEN agregada al proyecto
+
+CONFIGURACIÓN ACTUAL DEL PROYECTO:
+───────────────────────────────────────────────────────────
+Proyecto: whatsduendesapp
+Project ID: prj_mQXs173kUdRhOaruKtoEtAZb2arx
+
+Storage:
+- Vercel Blob: ✅ store_Q3kmDQ0BwILkUMJv (whatsduendes-files)
+- Vercel Postgres: ⬜ Pendiente
+
+Variables de Entorno:
+- BLOB_READ_WRITE_TOKEN: ✅ Configurada (prod, preview, dev)
 
 ───────────────────────────────────────────────────────────
-STACK TÉCNICO
+PENDIENTE:
 ───────────────────────────────────────────────────────────
-- Framework: Next.js 14 (App Router)
-- Database: Vercel Postgres
-- Storage: Vercel Blob (archivos/imágenes)
-- Deploy: Vercel
-- Styling: Tailwind CSS
-
-───────────────────────────────────────────────────────────
-UI/UX - CLONAR WHATSAPP
-───────────────────────────────────────────────────────────
-
-MOBILE (< 768px):
-┌─────────────────────┐
-│ ← Contacto Name     │  ← Header con flecha atrás
-├─────────────────────┤
-│  💬 Mensaje 1       │  ← Burbujas de chat
-│         Mensaje 2 💬│  ← Verde = enviado, Gris = recibido
-│  💬 Mensaje 3       │
-├─────────────────────┤
-│ [    Escribe...   ] │  ← Input + botón enviar
-│ 📎  📷         ➤   │
-└─────────────────────┘
-
-DESKTOP (≥ 768px):
-┌────────────┬────────────────────────────────────┐
-│ CONTACTOS  │  Nombre del Chat                   │
-├────────────┤────────────────────────────────────│
-│ > CD6 🟢   │   💬 Mensaje de IA                 │
-│   CD7      │              Mi mensaje 💬         │
-│   General  │   💬 Otro mensaje                  │
-│            ├────────────────────────────────────│
-│            │ [    Escribe...    ] 📎 📷  ➤     │
-└────────────┴────────────────────────────────────┘
-
-COLORES (estilo WhatsApp):
-- Header: #075E54 (verde oscuro)
-- Mensaje enviado: #DCF8C6 (verde claro)
-- Mensaje recibido: #FFFFFF (blanco)
-- Background: #ECE5DD (gris beige)
-- Input bar: #F0F0F0
+1. ⬜ Configurar Vercel Postgres (o Neon)
+2. ⬜ Crear tablas (channels, messages, files)
+3. ⬜ Implementar UI tipo WhatsApp
+4. ⬜ Deploy a chat.duendes.app
+5. ⬜ Crear canales iniciales (General, CD6, CD7)
 
 ───────────────────────────────────────────────────────────
-DATABASE SCHEMA (Vercel Postgres)
+PRÓXIMOS PASOS:
 ───────────────────────────────────────────────────────────
-
-CREATE TABLE channels (
-  id SERIAL PRIMARY KEY,
-  name VARCHAR(50) NOT NULL,
-  created_at TIMESTAMP DEFAULT NOW()
-);
-
-CREATE TABLE messages (
-  id SERIAL PRIMARY KEY,
-  channel_id INTEGER REFERENCES channels(id),
-  sender VARCHAR(50) NOT NULL,
-  content TEXT NOT NULL,
-  attachments JSONB,
-  created_at TIMESTAMP DEFAULT NOW()
-);
-
-CREATE TABLE files (
-  id SERIAL PRIMARY KEY,
-  message_id INTEGER REFERENCES messages(id),
-  blob_url TEXT NOT NULL,
-  filename VARCHAR(255),
-  mimetype VARCHAR(100),
-  size INTEGER,
-  created_at TIMESTAMP DEFAULT NOW()
-);
-
-───────────────────────────────────────────────────────────
-API ENDPOINTS
-───────────────────────────────────────────────────────────
-
-GET  /api/channels
-POST /api/channels { name }
-
-GET  /api/messages?channel=cd6&limit=50
-POST /api/messages { channel, sender, content }
-
-POST /api/upload (multipart/form-data)
-
-───────────────────────────────────────────────────────────
-FEATURES REQUERIDOS
-───────────────────────────────────────────────────────────
-
-✓ Responsive (mobile-first)
-✓ Lista de contactos/canales en sidebar (desktop)
-✓ Vista de chat único (mobile)
-✓ Burbujas de mensaje con timestamp
-✓ Upload de archivos (drag & drop)
-✓ Preview de imágenes inline
-✓ Auto-scroll a nuevos mensajes
-✓ Polling cada 5s para nuevos mensajes
-
-───────────────────────────────────────────────────────────
-CREDENCIALES
-───────────────────────────────────────────────────────────
-
-GitHub: Pvrolomx
-Vercel Team: team_xmFW0blsjqFI5lwt29wBPi8Q
-Vercel Token: HYf0IXRmK0bDeSDI13eonHrv
-
-───────────────────────────────────────────────────────────
-ENTREGABLES
-───────────────────────────────────────────────────────────
-
-1. Repo: Pvrolomx/whatsduendesapp
-2. Deploy: chat.duendes.app
-3. Vercel Postgres configurado
-4. Vercel Blob configurado
-5. Canales iniciales: General, CD6, CD7
+Esperando instrucciones para continuar con la base de datos
+y el desarrollo de la UI.
 
 ═══════════════════════════════════════════════════════════
-INSTRUCCIONES PARA CD7
-═══════════════════════════════════════════════════════════
-
-1. Crea el repo whatsduendesapp en GitHub
-2. Implementa la UI tipo WhatsApp
-3. Configura Vercel Postgres
-4. Configura Vercel Blob para archivos
-5. Deploy a chat.duendes.app
-6. Reporta progreso aquí en cd7.txt
-
-¡EMPIEZA CUANDO QUIERAS!
