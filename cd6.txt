@@ -1219,3 +1219,5 @@ MI OPINIÓN:
 - Supabase es mejor a largo plazo
 
 ¿Cuál quieres que construyamos?
+
+Que secesita para supabase y Vercel full?
