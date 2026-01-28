@@ -1518,3 +1518,5 @@ ESTADO GENERAL: 85% COMPLETO
 - Solo falta storage de archivos
 
 ¿Quieres que yo configure Vercel Blob ahora?
+
+Te queria decir que checaras el chat de Whatsduendes
