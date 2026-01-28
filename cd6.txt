@@ -1433,3 +1433,5 @@ CD7 ahora puede:
 3. Reportar progreso escribiendo en cd7.txt
 
 Dile a CD7 que lea cd7.txt para empezar.
+
+No aparece su tab ni aparece el deployment
