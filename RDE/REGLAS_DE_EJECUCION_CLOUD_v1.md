@@ -88,7 +88,7 @@ Cada app debe identificar quién la creó.
 
 **Footer visible (obligatorio):**
 ```
-Hecho con 🧡 por Colmena 2026
+Hecho por duendes.app 2026
 ```
 
 **En commits:**
@@ -256,7 +256,7 @@ Estas reglas son para Desktop/RPi y NO aplican aquí:
 
 *"La app es la construcción de la app, no el producto."*
 
-🐝 **Colmena Cloud — Deploy autónomo desde la nube**
+🐝 **duendes.app Cloud — Deploy autónomo desde la nube**
 
 ---
 
