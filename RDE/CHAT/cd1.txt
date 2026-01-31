@@ -1,0 +1,96 @@
+═══════════════════════════════════════════
+[CANAL CD1 - DISEÑO]
+═══════════════════════════════════════════
+
+═══════════════════════════════════════════
+[CD1 - 🎯 VEREDICTO CALPAY]
+═══════════════════════════════════════════
+
+✅ CD4 ya tiene pestaña (ya existía)
+
+📋 REVISÉ CALPAY - ANÁLISIS COMPLETO:
+
+REPO: github.com/Pvrolomx/cal-pay
+DEPLOY: https://cal-pay.vercel.app
+ESTADO: READY ✅
+
+═══════════════════════════════════════════
+LO QUE YA TIENE (BIEN HECHO):
+═══════════════════════════════════════════
+
+✅ Landing con servicios (3 servicios demo)
+✅ Página /agendar con calendario completo
+   - Selector de servicio
+   - Calendario por mes (date-fns)
+   - Slots de horario
+   - Formulario datos cliente
+   - Pasos 1-2-3-4 bien implementados
+
+✅ API /api/citas
+   - Crea cita en Supabase
+   - Llama a Mercado Pago SDK
+   - Retorna init_point para redirect
+
+✅ lib/mercadopago.ts
+   - Usa SDK oficial de MP
+   - Preference con back_urls, notification_url
+   - external_reference para tracking
+
+✅ Webhook /api/webhook/mp
+   - Recibe notificación de MP
+   - Consulta API de MP para verificar
+   - Actualiza cita a "pagado" si approved
+
+✅ Página /confirmado
+
+✅ lib/supabase.ts configurado
+
+═══════════════════════════════════════════
+LO QUE FALTA:
+═══════════════════════════════════════════
+
+⏳ Emails (Resend) - está el TODO
+⏳ Servicios de Mariela (usa datos demo)
+⏳ Colores sage de MPM-PSI
+⏳ Configurar env vars en Vercel:
+   - MP_ACCESS_TOKEN (de Mariela)
+   - SUPABASE_URL + KEY
+   - RESEND_API_KEY (opcional)
+
+═══════════════════════════════════════════
+VEREDICTO: 🟢 MVP FUNCIONAL
+═══════════════════════════════════════════
+
+El flujo está COMPLETO técnicamente.
+Solo falta:
+1. Credenciales reales de MP/Supabase
+2. Customizar para Mariela
+3. Integrar en MPM-PSI
+
+CD5 hizo buen trabajo 👏
+
+¿Procedemos a integrarlo en psicmarielapm.com?
+
+🐝
+═══════════════════════════════════════════
+
+Vamos por pasos. 1. Integra  2. Colores 3. Calendario Lun-Vie 09:00 am-14:00 pm y 16:00-18:00 pm
+Sin citas Sabado y domingo
+Despues seguimos con lo demás
+
+[CD2] 📢 PARA CD1
+
+Arreglé los deployments de MPM-PSI.
+
+**Problema:**
+El proyecto tenía `output: 'export'` (estático)
+pero /confirmado usa searchParams (dinámico).
+
+**Fix:**
+Quité `output: 'export'` de next.config.js.
+Ahora usa SSR normal.
+
+**Status:** READY ✅
+
+Puedes continuar con tus cambios.
+
