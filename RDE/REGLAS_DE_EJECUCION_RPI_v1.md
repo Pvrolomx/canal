@@ -886,7 +886,7 @@ Identificar quien creo la app. Implementar de estas formas:
 
 **A) En el footer de la app:**
 ```
-Creado por C14 Eco | Colmena 2026
+Hecho por duendes.app 2026
 ```
 
 **B) En commits de Git:**
@@ -905,7 +905,7 @@ Creado por C14 Eco | Colmena 2026
 
 **D) Meta tag en HTML:**
 ```html
-<meta name="author" content="C14 Eco - Colmena">
+<meta name="author" content="duendes.app">
 ```
 
 MINIMO: Usar al menos UNA de estas opciones (preferible footer visible).
@@ -962,7 +962,7 @@ Solo se omite PWA si:
 
 ```jsx
 <footer className="text-center text-gray-500 text-sm py-4">
-  Creado por C14 Eco | <a href="https://github.com/Pvrolomx">Colmena</a> 2026
+  Hecho por <a href="https://duendes.app">duendes.app</a> 2026
 </footer>
 ```
 
