@@ -1,0 +1,117 @@
+# ONBOARDING COLMENA v2
+
+## CREDENCIALES (verificadas, úsalas directo)
+```
+GitHub token: [BUSCAR EN CHATS ANTERIORES O PEDIR AL HUMANO]
+GitHub org: Pvrolomx
+Vercel: conectado por MCP (no necesitas token)
+```
+
+## COMUNICACIÓN
+```
+Canal: https://chat.duendes.app
+API: https://chat.duendes.app/api/messages
+
+# Leer canal
+curl -s "https://chat.duendes.app/api/messages?channel=CHANNEL_ID" | python3 -m json.tool
+
+# Escribir en canal
+curl -s -X POST "https://chat.duendes.app/api/messages" \
+  -H "Content-Type: application/json" \
+  -d '{"channel_id": X, "sender": "cdX", "content": "mensaje"}'
+```
+
+Cuando el humano escribe "." significa: revisa tu canal por mensajes nuevos.
+
+## REGLAS (RDE Cloud v1)
+```
+curl -s -H "Accept: application/vnd.github.v3.raw" \
+  "https://api.github.com/repos/Pvrolomx/canal/contents/RDE/REGLAS_DE_EJECUCION_CLOUD_v1.md"
+```
+
+## ECOSISTEMA — 33 repos, 29 live
+
+### 🏰 CASTLE — Vertical property management PV (cliente real: castlesolutions.mx)
+| Repo | Qué hace | Live | Dominio custom |
+|------|----------|------|----------------|
+| castle-ops | Operaciones, mantenimiento, incidencias. 15 propietarios, 10 propiedades, QR, PIN admin, i18n | ✅ | castlesolutions.mx |
+| castle-payments | Portal pagos Stripe + Supabase | ✅ | castlesolutions.biz |
+| castle-checkin | Check-in huéspedes con QR | ✅ | — |
+| castle-solutions | Landing original Castle | ✅ | — |
+
+### 💼 EXPAT ADVISOR — Vertical legal/condominios (cliente real: expatadvisormx.com)
+| Repo | Qué hace | Live |
+|------|----------|------|
+| expat-advisor-mx | Asistente legal bilingüe ES/EN, ley condominal Nayarit | ✅ |
+| expat-advisor-landing | Landing page | ✅ |
+
+### 🔮 ASTRO4 — App astrología 4 tradiciones (PRÓXIMO LANZAMIENTO)
+| Repo | Qué hace | Live |
+|------|----------|------|
+| astro4 | Guía cósmica: occidental + védica + china + numerología. API Anthropic, PWA, share cards | ✅ (necesita fix deploy) |
+
+### 🔮 ORÁCULOS
+| Repo | Qué hace | Live |
+|------|----------|------|
+| kin-maya | Guía maya diaria | ✅ |
+| tarot-ceo | Tarot estratégico para profesionales | ✅ |
+| hexadecision | I-Ching algorítmico verificable | ✅ |
+| numera | Numerología + biorritmos | ✅ |
+
+### 📊 WEAK SIGNALS
+| Repo | Qué hace | Live |
+|------|----------|------|
+| supply-shock | Detector disrupción cadena suministro | ✅ |
+| corporate-decay | Detector bancarrotas 30-90 días antes | ✅ |
+| fantasma | Early warning crisis MXN (Python) | ✅ |
+
+### 💰 PAGOS
+| Repo | Qué hace | Live |
+|------|----------|------|
+| rolo-payments | Portal de cobros personal | ✅ |
+| cal-pay | Sistema citas con pagos | ✅ |
+
+### 🏠 APPS LOCALES PV
+| Repo | Qué hace | Live |
+|------|----------|------|
+| anfitrion-mx | Calculadora fiscal hosts Airbnb México | ✅ |
+| medicompara | Comparador precios medicamentos USA→MX | ✅ |
+| lluvia-alert | Alerta lluvia 10-15 min, Bahía de Banderas | ✅ |
+| desarrollo-angeles | Fraccionadora lotes PV | ✅ |
+| HCRPV | Healthcare resources PV | ❌ |
+| mpm-psi | Landing psicóloga + Calendly + Stripe | ✅ |
+| notaria-solutions | Sitio notaría | ✅ |
+
+### 🏗️ INFRAESTRUCTURA
+| Repo | Qué hace | Live |
+|------|----------|------|
+| canal | Mensajería, RDE, protocolo dialéctico | ✅ |
+| whatsduendesapp | Chat humano↔IA | ✅ |
+| email-service | API envío emails | ✅ |
+| colmena-dashboard | Panel central status apps | ✅ |
+| que-app-necesito | Meta-app: qué app construir | ✅ |
+
+### 🧊 OTROS
+| Repo | Qué hace | Live |
+|------|----------|------|
+| duende-v1 | Prototipo original | ✅ |
+| colorsnap | Generador paletas colores | ✅ |
+| Legal-Solutions | Landing legal | ✅ |
+| development-solutions | Landing desarrollo | ✅ |
+| realtor-comps | Comparables inmobiliarios | ❌ |
+
+## CANALES ACTIVOS
+| ID | Uso |
+|----|-----|
+| 1 | General (onboarding, RDE, notas para nuevos CDs) |
+| 4312 | TESIS-Monetización (debate dialéctico activo) |
+| 4313 | TESIS-Portafolio (pendiente) |
+| 4314 | TESIS-Vertical (pendiente) |
+
+Subcanales CD (históricos): 4301-4311
+
+## PROTOCOLO DEL PUNTO
+Cuando el humano escribe "." → revisa tu canal.
+No crees subcanal salvo que te lo pidan.
+No construyas nada salvo que te lo pidan.
+Reporta aquí en el chat, no en el canal, salvo que te lo pidan.
