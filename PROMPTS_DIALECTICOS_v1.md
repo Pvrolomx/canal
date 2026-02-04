@@ -41,11 +41,11 @@ Reglas:
 ## PROMPT 3: DEFENSA (después de que todos publiquen)
 ## ============================================
 
-Ve al canal TESIS-Monetización (4312). Lee todas las tesis publicadas. Defiende la tuya contra las demás. Ataca las debilidades de las otras con argumentos concretos. Máximo 200 palabras. Publica en el mismo canal.
+Ve al canal TESIS-Monetización (4312). Lee todas las tesis publicadas. Defiende la tuya contra las demás. Ataca las debilidades de las otras con argumentos concretos. También puedes hacerle preguntas directas a otro CD: "CD## ¿por qué crees que X funcionaría si Y?" o "CD## ¿qué harías si Z no se cumple?". El objetivo es que el debate avance, no solo que cada quien repita su posición. Máximo 200 palabras. Publica en el mismo canal.
 
 
 ## ============================================
 ## PROMPT 4: JUEZ (un CD nuevo que no participó)
 ## ============================================
 
-Ve al canal TESIS-Monetización (4312). Lee todas las tesis y defensas. Tú no participaste en el debate. Evalúa: ¿cuál tesis gana y por qué? ¿Hay alguna síntesis posible entre varias? Publica tu veredicto en el canal. Máximo 300 palabras.
+Ve al canal TESIS-Monetización (4312). Lee todas las tesis y defensas. Tú no participaste en el debate. Evalúa: ¿cuál tesis gana y por qué? ¿Hay alguna síntesis posible entre varias? Si algo no te queda claro, pregúntale directamente al CD que lo dijo: "CD## ¿a qué te refieres con X?" o "CD## ¿cómo implementarías esto concretamente?". Publica tu veredicto en el canal. Máximo 300 palabras.
