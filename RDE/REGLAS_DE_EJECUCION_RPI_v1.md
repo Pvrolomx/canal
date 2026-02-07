@@ -1158,3 +1158,89 @@ El cuello de botella humano para configuración queda **ELIMINADO**.
 — C17 Apex, Colmena 2026
 
 🚨🚨🚨
+
+
+---
+
+## REGLA #25: DESARROLLO EN LA NUBE, SYNC AL RPi (OBLIGATORIO)
+**Agregado:** 7 Febrero 2026 por CD37
+
+### PROBLEMA QUE RESUELVE
+
+Desarrollar directo en la RPi via SSH desde Windows causa:
+- Encoding roto (UTF-16 LE con BOM, emojis corruptos)
+- PowerShell destroza heredocs, comillas anidadas, scripts inline
+- Horas perdidas en transferencia de archivos que deberian tomar minutos
+- Desgaste innecesario del contexto del duende en problemas de plomeria
+
+### LA REGLA
+
+**TODO desarrollo de codigo se hace en la nube. El RPi solo recibe via git pull.**
+
+```
+FLUJO OBLIGATORIO:
+1. Escribir/editar codigo en Container Claude (UTF-8 nativo, sin problemas)
+2. Push a GitHub via API (base64 encoded, curl PUT)
+3. SSH al RPi: git checkout main && git pull origin main
+4. Verificar: node -c archivo.js (o lo que aplique)
+
+PROHIBIDO:
+- Crear/editar archivos directamente en RPi via SSH heredocs
+- Concatenar archivos con cmd /c type para SSH
+- Usar sed/awk para ediciones complejas via SSH
+- Python scripts inline via SSH con comillas anidadas
+- Cualquier metodo que pase contenido de archivos por el pipe SSH de PowerShell
+```
+
+### POR QUE
+
+| Metodo | Resultado | Tiempo |
+|--------|-----------|--------|
+| SSH heredoc desde PowerShell | Encoding roto | +2 hrs debug |
+| SCP desde Windows | UTF-16 LE con BOM | +1 hr debug |
+| Container -> GitHub API -> git pull | Perfecto, UTF-8 limpio | 2 minutos |
+
+### COMO HACER EL PUSH DESDE CONTAINER CLAUDE
+
+```bash
+# 1. Obtener SHA del archivo actual
+SHA=$(curl -s -H "Authorization: token TOKEN" \
+  "https://api.github.com/repos/Pvrolomx/REPO/contents/path/archivo.js" | \
+  python3 -c "import sys,json; print(json.load(sys.stdin)['sha'])")
+
+# 2. Subir archivo nuevo (base64)
+B64=$(base64 /home/claude/archivo.js | tr -d '\n')
+curl -s -X PUT \
+  -H "Authorization: token TOKEN" \
+  -H "Content-Type: application/json" \
+  "https://api.github.com/repos/Pvrolomx/REPO/contents/path/archivo.js" \
+  -d "{\"message\":\"update archivo\",\"content\":\"$B64\",\"sha\":\"$SHA\"}"
+
+# 3. Pull en RPi
+ssh pvrolo@192.168.1.84 "cd /home/pvrolo/repos/REPO && git checkout main && git pull origin main"
+```
+
+### TOKEN GITHUB
+
+Buscar token vigente en: /home/pvrolo/colmena/keys/TOKENS.md (seccion GITHUB PAT)
+
+### EXCEPCIONES
+
+Solo se permite editar directo en RPi cuando:
+- Es un cambio de UNA linea (sed simple sin caracteres especiales)
+- Es un archivo de configuracion (.env, config simple)
+- No hay acceso a container Claude ni a GitHub API
+- El Arquitecto lo autoriza explicitamente
+
+### LECCION APRENDIDA (CD37, Mi-Circulo)
+
+Sesion de ~4 horas. El motor numerology.js (389 lineas, emojis, acentos) se intento transferir por:
+1. SCP directo -> UTF-16 corrupto
+2. iconv fix -> emojis rotos
+3. Base64 via SSH heredoc -> PowerShell destruye sintaxis
+4. Python inline via SSH -> PowerShell parsea mal parentesis
+5. Container -> GitHub API -> git pull -> PERFECTO en 2 minutos
+
+No repitas este error. Usa la nube desde el inicio.
+
+---
