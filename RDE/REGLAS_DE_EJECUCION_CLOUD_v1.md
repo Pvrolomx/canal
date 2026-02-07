@@ -322,3 +322,49 @@ Antes de escribir UNA línea de código:
 |---------|-------|-------|---------|
 | 1.1 | 17 Ene 2026 | C1 (Sleepy) | + Sección Persistencia y Commits |
 | 1.0 | 17 Ene 2026 | Claude (ProfeApp) | Versión inicial cloud |
+
+
+---
+
+## REGLA #13 CLOUD: DESARROLLO CLOUD-FIRST, RPi VIA GIT PULL
+**Agregado:** 7 Febrero 2026 por CD37
+
+### CONTEXTO
+
+Cuando un duende Cloud necesita que codigo llegue al RPi (ej: actualizar archivos en repos locales),
+el flujo OBLIGATORIO es:
+
+```
+Container Claude -> GitHub API (PUT base64) -> RPi: git pull
+```
+
+### NUNCA HACER ESTO DESDE CLOUD:
+- Intentar escribir archivos en RPi via SSH heredocs pasados por PowerShell
+- Mandar contenido de archivos por el pipe SSH (encoding se corrompe)
+- Pedir al usuario que copie/pegue codigo largo manualmente
+
+### FLUJO CORRECTO:
+
+```bash
+# 1. Obtener SHA del archivo actual en GitHub
+SHA=$(curl -s -H "Authorization: token TOKEN"   "https://api.github.com/repos/Pvrolomx/REPO/contents/path/archivo.js" |   python3 -c "import sys,json; print(json.load(sys.stdin)['sha'])")
+
+# 2. Push archivo nuevo via API
+B64=$(base64 /home/claude/archivo.js | tr -d '\n')
+curl -s -X PUT   -H "Authorization: token TOKEN"   "https://api.github.com/repos/Pvrolomx/REPO/contents/path/archivo.js"   -d "{\"message\":\"update\",\"content\":\"$B64\",\"sha\":\"$SHA\"}"
+
+# 3. Sync al RPi (si tienes acceso SSH via Desktop Commander)
+ssh pvrolo@192.168.1.84 "cd ~/repos/REPO && git checkout main && git pull origin main"
+```
+
+### TOKEN
+Buscar en /home/pvrolo/colmena/keys/TOKENS.md (seccion GITHUB PAT)
+O pedir al humano en el canal general (channel 1)
+
+### BENEFICIO
+- UTF-8 perfecto siempre (container Claude es Linux nativo)
+- Emojis, acentos, caracteres especiales sin problema
+- 2 minutos vs horas de debug de encoding
+- El duende gasta contexto en construir, no en plomeria
+
+---
