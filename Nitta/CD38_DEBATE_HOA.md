@@ -1,3 +1,12 @@
+# CD38 — DEBATE HOA: ¿PUEDE CASALS VOTAR EN LA ASAMBLEA DE NITTA?
+
+## Condominio NITTA, Nuevo Vallarta, Nayarit
+## Debate completo: Ronda 1 + Ronda 2
+
+---
+
+# RONDA 1 — ALEGATOS INICIALES
+
 ═══════════════════════════════════════════════
 🔴 ALEGATO DEL LIC. ARTURO MENDOZA
    Abogado de Grupo Inmobiliario Casals, S.A. de C.V.
@@ -119,3 +128,84 @@ Si se permitiera votar a Casals con las 21 unidades que reclama de un total de 5
 *Lic. Patricia Guzmán*
 *Abogada del grupo de condóminos opositores*
 *8 de febrero de 2026*
+
+---
+
+# RONDA 2 — CONTRARRÉPLICAS
+
+═══════════════════════════════════════════════
+🔴 CONTRARRÉPLICA DEL LIC. ARTURO MENDOZA
+   Ronda 2 — Respuesta al alegato de la Lic. Guzmán
+═══════════════════════════════════════════════
+
+**Señor presidente, señores condóminos:**
+
+El alegato de la Lic. Guzmán es hábil en su construcción, pero se desmorona al confrontarlo con la realidad jurídica. Respondo punto por punto.
+
+---
+
+**1. "El RPP habla por sí mismo" — No: el RPP refleja un estado registral obsoleto.**
+
+El RPP de Bucerías no ha sido actualizado, eso es todo. ¿Desde cuándo un retraso burocrático extingue derechos reales nacidos de resolución judicial? El RPP no *crea* propiedad; la *publica*. Si el registro no se ha actualizado, lo que existe es una omisión administrativa, no la inexistencia del derecho. Aceptar la tesis contraria significaría que cualquier adjudicatario pierde su propiedad mientras un registrador no procese la inscripción. El absurdo se refuta solo.
+
+**2. "Cesionario de crédito ≠ propietario" — Correcto en 2018, falso en 2022.**
+
+La Lic. Guzmán congela la situación en la cesión y pretende que nunca avanzó. La secuencia real: Casals adquirió derechos de crédito (paso 1), ejecutó la hipoteca en el expediente 1392/2010 (paso 2), y **obtuvo adjudicación judicial en remate** (paso 3). La cesión fue el vehículo; el título actual es la adjudicación. Decir que Casals "solo es cesionario" es como decir que quien compró un terreno, construyó y habita una casa "solo es comprador de terreno baldío". La realidad jurídica evolucionó.
+
+**3. La distinción Sección II-C vs. Sección I-A — Correcta pero irrelevante.**
+
+Reconozco que la anotación de 2018 en Sección II, Serie C es medida cautelar, no traslado de dominio. La Lic. Guzmán tiene razón técnica ahí. Pero esa anotación no es el título de Casals: **el título es el auto de adjudicación**. La falta de inscripción en Sección I-A es un trámite pendiente, no un defecto del título. El derecho real nació con la adjudicación; la inscripción es el paso administrativo siguiente. Confundir publicidad con existencia es el error central del alegato contrario.
+
+**4. "El condominio es tercero" — ¿Tercero de buena fe que sabe todo?**
+
+La protección del artículo 3009 del Código Civil Federal tutela a **terceros de buena fe** que desconocen la situación real. Pregunto: ¿puede esta asamblea afirmar que desconoce que Casals posee y opera 21 unidades desde hace casi cuatro años? La buena fe registral exige ignorancia legítima de la realidad extraregistral. Aquí no hay ignorancia: hay conocimiento pleno. Los condóminos de NITTA conviven con la posesión de Casals desde abril de 2022.
+
+**5. "El 41% genera conflicto de interés" — El porcentaje no extingue derechos.**
+
+Este argumento es el más revelador porque abandona el terreno jurídico y entra al político. La ley no dice "si tienes muchas unidades, no puedes votar". El artículo 27, fracción VII, prevé protección específica cuando un condómino supera el 50% — prueba de que el legislador contempló la concentración y la reguló. Si Casals tiene 41%, está *debajo* de ese umbral. Negarle votos porque su bloque es "grande" no es defender la ley: es confiscar derechos por conveniencia. Si 21 departamentos legítimamente adquiridos generan 41% de votos, así lo diseñó el régimen condominal.
+
+---
+
+**Protesto lo necesario.**
+
+*Lic. Arturo Mendoza*
+*8 de febrero de 2026*
+
+---
+
+═══════════════════════════════════════════════
+🔵 CONTRARRÉPLICA DE LA LIC. PATRICIA GUZMÁN
+   Ronda 2 — Respuesta al alegato del Lic. Mendoza
+═══════════════════════════════════════════════
+
+**Señor presidente, señores condóminos:**
+
+El Lic. Mendoza construyó un alegato hábil pero con fisuras estructurales que paso a evidenciar punto por punto.
+
+---
+
+## I. SOBRE LA "FUERZA DE ESCRITURA PÚBLICA" DEL ART. 531 CPCDF
+
+El colega invoca el artículo 531 para sostener que la adjudicación equivale a escritura pública. Pero omite un paso esencial: ese artículo opera *entre las partes del juicio ejecutivo* — Casals y Hogares Sólidos. Para que el auto de adjudicación surta efectos de escritura pública frente a terceros, la legislación procesal y notarial exige su **protocolización ante notario público**. Pregunto directamente: ¿Casals protocolizó la adjudicación? No hay evidencia alguna en el expediente. Sin protocolización no hay instrumento inscribible. Sin inscripción, no hay oponibilidad frente a este condominio. La cadena se rompe en el primer eslabón.
+
+## II. SOBRE "PROPIETARIA" VS. "PROPIETARIA INSCRITA"
+
+El Lic. Mendoza argumenta que leer "propietario" como "propietario inscrito" añade una condición inexistente. Incurre en un error de método interpretativo. La ley no se lee artículo por artículo en aislamiento. El artículo 2, fracción IV, define al condómino; el artículo 11 del *mismo ordenamiento* exige que los traslados de dominio se inscriban en el RPP. La interpretación sistemática —obligatoria conforme a la hermenéutica jurídica— requiere leer ambas disposiciones en conjunto: ser "propietario" en el régimen de condominio de Nayarit significa ser propietario con título inscrito, porque la propia ley lo demanda como condición de oponibilidad dentro de ese régimen. No es que el legislador olvidó incluirlo; lo incluyó tres artículos más adelante.
+
+## III. SOBRE LA SUPUESTA INEQUIDAD REGISTRAL
+
+El argumento más audaz del Lic. Mendoza es el de equidad: que otros condóminos tampoco tienen inscripción perfecta. Pero equipara situaciones radicalmente distintas. Los compradores extranjeros de buena fe tienen **contratos de compraventa perfeccionados** y fideicomisos en trámite — es decir, actos traslativos consensuados entre partes que voluntariamente transmitieron dominio. Casals tiene una **adjudicación forzosa en remate**, derivada de una ejecución hipotecaria que está siendo impugnada por amparo. Son cadenas de título de naturaleza jurídica opuesta. Además, el argumento es autodestructivo: si la irregularidad registral de uno justificara la de otro, el RPP perdería toda función. La solución correcta es que *todos* regularicen — no que nadie lo haga.
+
+## IV. SOBRE LOS AMPAROS Y LA AUSENCIA DE SUSPENSIÓN
+
+El Lic. Mendoza tiene razón técnica: no existe suspensión expresa que prohíba a Casals votar. Pero la ausencia de suspensión no equivale a la ausencia de riesgo. El principio de prudencia procesal aconseja no crear situaciones jurídicas irreversibles sobre títulos impugnados. Si esta asamblea adopta acuerdos con los votos de Casals — nombramiento de administrador, cuotas extraordinarias, obras — y posteriormente el amparo 752/2022-X revierte la adjudicación, ¿quién responde por la nulidad de esos acuerdos? ¿Quién indemniza a los condóminos afectados? El Lic. Mendoza no responde porque no puede. El riesgo es real, cuantificable e innecesario.
+
+## V. SOBRE LA INSCRIPCIÓN "DECLARATIVA"
+
+Concedo el punto teórico: en México la inscripción registral es declarativa, no constitutiva. Pero esa distinción opera *entre las partes del acto*. Frente a **terceros** — y los condóminos de NITTA somos terceros que no fuimos parte del expediente 1392/2010 — la inscripción es **constitutiva de oponibilidad**. Los artículos 3009 a 3011 del Código Civil Federal son categóricos: el registro protege los derechos de terceros de buena fe. El RPP de Bucerías dice Hogares Sólidos. Punto. Hasta que diga Casals, esta asamblea no tiene obligación jurídica de reconocerle calidad alguna.
+
+---
+
+**CONCLUSIÓN:** El Lic. Mendoza presenta argumentos procesalmente ingeniosos pero registralmente insuficientes. No exhibió protocolización notarial. No exhibió inscripción en Sección I, Serie A. No explicó quién asume el riesgo si la adjudicación se revierte. El RPP — la prueba que el propio Casals aportó al amparo — sigue diciendo lo mismo: **el propietario es Hogares Sólidos**. Mientras eso no cambie, Casals no vota.
+
+*Lic. Patricia Guzmán — 8 de febrero de 2026*
