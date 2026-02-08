@@ -62,3 +62,60 @@ A la fecha, no existe suspensión alguna que ordene a Casals abstenerse de ejerc
 *Lic. Arturo Mendoza*
 *Abogado de Grupo Inmobiliario Casals, S.A. de C.V.*
 *8 de febrero de 2026*
+---
+
+═══════════════════════════════════════════════
+🔵 ALEGATO DE LA LIC. PATRICIA GUZMÁN
+   Abogada del grupo de condóminos opositores
+   Ronda 1 — Asamblea de Condóminos NITTA
+═══════════════════════════════════════════════
+
+**Señores condóminos, señor presidente de asamblea:**
+
+Comparezco en representación del grupo de condóminos propietarios del Condominio NITTA, quienes adquirieron sus departamentos de buena fe, para oponerme al voto de Grupo Inmobiliario Casals, S.A. de C.V. en esta asamblea. Mi oposición no es caprichosa ni obstruccionista: se funda en el Registro Público de la Propiedad, en la propia documentación de Casals y en la Ley de Condominio de Nayarit.
+
+---
+
+## I. EL REGISTRO PÚBLICO DE LA PROPIEDAD DICE QUE EL DUEÑO ES HOGARES SÓLIDOS — NO CASALS
+
+Esta es la prueba central y no admite evasión retórica. El certificado de gravámenes expedido por el RPP de Bucerías el 27 de septiembre de 2022 establece con claridad meridiana que las unidades del condominio NITTA se encuentran registradas a favor de **Hogares Sólidos, S.A. de C.V.**, inscrito en el **Libro 406, Sección I, Serie A, Partida 24**. No existe asiento alguno en la Sección I-A que registre traslación de dominio a favor de Casals.
+
+Lo notable es que este certificado no fue obtenido por nosotros: fue el **propio Casals** quien lo exhibió en el amparo 752/2022-X ante el Juzgado 3° de Distrito del 24° Circuito en Nayarit. Si su propia prueba dice que no es propietario registrado, ¿con qué base pretende votar como condómino?
+
+## II. CASALS ADQUIRIÓ UN CRÉDITO, NO UNA PROPIEDAD
+
+La certificación de la Dirección del Notariado de Nayarit, expedida por el Lic. Juan Francisco Rodríguez Torres el 26 de septiembre de 2022, identifica a Casals como *"cesionario del contrato de cesión onerosa de derechos de crédito y derechos litigiosos"* celebrado con Banco Mercantil del Norte, División Fiduciaria, fusionante de Banco Interacciones.
+
+El lenguaje es inequívoco: **derechos de crédito y derechos litigiosos**. Casals se subrogó en la posición de acreedor hipotecario que tenía Banorte/Interacciones frente a Hogares Sólidos. No adquirió el inmueble; adquirió el derecho a cobrar un crédito garantizado con hipoteca. Esa condición de acreedor no lo convierte en propietario, y mucho menos en condómino.
+
+## III. LA LEY DE CONDOMINIO DE NAYARIT EXIGE INSCRIPCIÓN REGISTRAL
+
+El artículo 11 de la Ley que Regula el Régimen de Propiedad en Condominio de Nayarit es terminante: *"los contratos de traslación de dominio y demás actos que afecten la propiedad o el dominio de estos inmuebles deberán inscribirse en el Registro Público de la Propiedad."*
+
+El artículo 2, fracción IV, define al condómino como la persona que es *"propietaria y legítima poseedora"*. Ambos requisitos son copulativos. Casals podrá alegar posesión material, pero sin inscripción registral de la traslación de dominio, la propiedad no le es oponible a terceros — y los condóminos de NITTA somos terceros, protegidos por los artículos 3009 a 3011 del Código Civil Federal. El RPP existe precisamente para protegernos: si dice que el dueño es Hogares Sólidos, no estamos obligados a reconocer a quien no aparece en él.
+
+## IV. UNA ANOTACIÓN DE DEMANDA NO ES TRASLADO DE DOMINIO
+
+Anticipando que Casals invoque su inscripción del 24 de mayo de 2018, preciso: lo que inscribió fue una **anotación de demanda** en el Libro 14, **Sección II, Serie C**, Partida 35, relativa al cambio de acreedor en el expediente 1392/2010. La Sección II, Serie C del RPP corresponde a **anotaciones preventivas y medidas cautelares**. La Sección I, Serie A corresponde a **traslados de dominio**. Son secciones registrales con efectos jurídicos radicalmente distintos. Confundir una anotación cautelar con un título de propiedad inscrito sería un error de derecho registral elemental.
+
+## V. LA ADJUDICACIÓN SUB-JÚDICE NO PUEDE FUNDAR UN VOTO
+
+El amparo 752/2022-X, radicado ante el Juzgado 3° de Distrito del 24° Circuito en Nayarit, impugna la ejecución hipotecaria, el remate y la adjudicación de la que Casals pretende derivar derechos. Mientras estos procedimientos estén pendientes, la adjudicación está sujeta a ser revocada. Permitir que Casals vote con base en un título cuya validez está siendo disputada judicialmente sería prematuro y generaría consecuencias irreversibles: los acuerdos de asamblea adoptados con sus votos serían susceptibles de impugnación si la adjudicación se revierte.
+
+## VI. EL CONFLICTO DE INTERÉS ESTRUCTURAL ES EVIDENTE
+
+Si se permitiera votar a Casals con las 21 unidades que reclama de un total de 51, concentraría aproximadamente el **41% del indiviso**. Con ese porcentaje podría dominar toda asamblea ordinaria por mayoría simple, bloquear cualquier acuerdo que requiera el 75% previsto en el artículo 28, fracción IV, y designar un administrador afín a sus intereses comerciales. El artículo 27, fracción VII, protege contra concentración superior al 50%, pero un bloque del 41% evade esa protección formal mientras logra el mismo control efectivo. Los condóminos que compraron de buena fe quedarían a merced de un litigante que ni siquiera está inscrito como propietario.
+
+---
+
+**RESPUESTA ANTICIPADA AL ARGUMENTO MÁS FUERTE DE CASALS:** Sé que la contraparte argumentará que la adjudicación judicial tiene fuerza de escritura pública y que la inscripción registral es declarativa, no constitutiva. Respondo: incluso aceptando que la inscripción no cree el derecho real entre las partes del juicio, la oponibilidad frente a terceros sí requiere inscripción. El condominio NITTA y sus condóminos no fuimos parte del expediente 1392/2010; somos terceros. Y el artículo 11 de la Ley de Condominio de Nayarit no es una sugerencia: es una obligación. Si Casals quiere votar, que inscriba primero su adjudicación. Hasta entonces, el RPP habla por sí mismo.
+
+---
+
+**PETICIÓN:** Solicito que esta asamblea **niegue** el voto a Grupo Inmobiliario Casals, S.A. de C.V., requiriéndole que, para ser reconocido como condómino, acredite la inscripción de su título de propiedad en la Sección I, Serie A del Registro Público de la Propiedad de Bucerías, en cumplimiento del artículo 11 de la Ley de Condominio de Nayarit.
+
+**Protesto lo necesario.**
+
+*Lic. Patricia Guzmán*
+*Abogada del grupo de condóminos opositores*
+*8 de febrero de 2026*
