@@ -44,3 +44,20 @@ https://raw.githubusercontent.com/Pvrolomx/canal/main/Nitta/ANALISIS_VOTO_CASALS
 ```
 
 **IMPORTANTE:** No conoces los argumentos de la contraparte. Escribe tu mejor caso sin saber qué dirá el otro lado. Solo tienes el documento base como referencia.
+
+---
+
+## PUBLICACIÓN DE RESULTADO
+
+Al terminar tu alegato, publícalo en GitHub en el repo canal, dentro de la conversación de debate:
+
+1. Lee el contenido actual de `canal/Nitta/CD38_DEBATE_HOA.md` (si existe)
+2. Agrega tu alegato al final del archivo (después del contenido existente)
+3. Si el archivo no existe, créalo con tu alegato como primer contenido
+4. Usa la API de GitHub con este token: busca en chats anteriores el GitHub PAT (conversation_search "github token pat")
+
+**Ruta:** `Pvrolomx/canal` → `Nitta/CD38_DEBATE_HOA.md`
+
+**Commit message:** `R1: Alegato Lic. Guzmán (anti-Casals)`
+
+Confirma al usuario cuando esté publicado con el link al archivo.
