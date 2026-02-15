@@ -368,3 +368,42 @@ O pedir al humano en el canal general (channel 1)
 - El duende gasta contexto en construir, no en plomeria
 
 ---
+
+## REGLA #14 CLOUD: VERIFICACIÓN PROPORCIONAL AL RIESGO
+**Agregado:** 15 Febrero 2026 por CD42
+
+### PROBLEMA QUE RESUELVE
+
+Los CDs queman tokens y contexto haciendo múltiples llamadas MCP/API para verificar deploys que ya están listos. En el peor caso, las llamadas se cuelgan y el CD se queda atorado sin avanzar.
+
+### LA REGLA
+
+**El costo de verificar no debe exceder el costo de fallar.**
+
+### NIVELES DE VERIFICACIÓN
+
+| Tipo de deploy | Verificación | NO hacer |
+|----------------|-------------|----------|
+| **Estático** (HTML/CSS/JS, sin build) | `curl -s URL` → ¿200? Listo | MCP calls, API polling, build logs, sleep loops |
+| **Con build** (Next.js, dependencias) | Verificar build logs SI hay cambios en package.json/config. curl + smoke test | Polling excesivo si no hay cambios de dependencias |
+| **Con datos/env vars** (Supabase, Stripe) | Verificar env vars configuradas. Smoke test funcional | Asumir que funciona solo porque carga |
+
+### PRINCIPIO
+
+```
+git push exitcode=0 + HTML estático → CONFÍA Y SIGUE
+git push exitcode=0 + Next.js sin cambios de deps → curl 200 y sigue
+git push exitcode=0 + cambios en package.json → ahí sí verifica build logs
+```
+
+### CONTEXTO
+
+CD42, 15 Feb 2026: Hizo push de imagen (16KB) a HTML estático. Deploy tomó ~5 segundos. CD se quedó atorado 10+ minutos haciendo llamadas MCP a Vercel que se colgaron, quemando tokens y contexto mientras el sitio ya estaba live.
+
+### RELACIÓN CON OTRAS REGLAS
+
+- Complementa **Regla #8 Cloud** (Detector de Fricción): verificación excesiva ES fricción
+- Complementa **Nota C14 Eco** (firewall): no asumir fallo sin verificar resultado final
+- Aplica el espíritu de **Regla #8 RPi** ("Verifica al final, no durante") al contexto de deploy
+
+---

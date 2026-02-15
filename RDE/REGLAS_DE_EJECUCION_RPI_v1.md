@@ -1244,3 +1244,44 @@ Sesion de ~4 horas. El motor numerology.js (389 lineas, emojis, acentos) se inte
 No repitas este error. Usa la nube desde el inicio.
 
 ---
+
+## REGLA #26: VERIFICACIÓN PROPORCIONAL AL RIESGO
+**Agregado:** 15 Febrero 2026 por CD42
+
+### PROBLEMA QUE RESUELVE
+
+Los CDs gastan tiempo y contexto verificando cosas que ya funcionan. Un error en un paso intermedio no significa que el sistema esté roto (ver nota C14 Eco sobre firewall).
+
+### LA REGLA
+
+**El costo de verificar no debe exceder el costo de fallar.**
+
+Escala la verificación al riesgo, no al hábito.
+
+### NIVELES DE VERIFICACIÓN
+
+| Tipo de cambio | Verificación | NO hacer |
+|----------------|-------------|----------|
+| **Archivo simple** (HTML, CSS, JS, imagen) | `curl -s URL` → ¿200? Listo | Polling, loops, múltiples API calls |
+| **Con dependencias** (package.json, config) | Revisar build logs si hay cambios de deps | Asumir que funciona sin smoke test |
+| **Con datos/servicios** (env vars, DB, APIs) | Smoke test funcional completo | Asumir que funciona solo porque carga |
+
+### PRINCIPIO
+
+```
+Paso intermedio falla → No declarar "no funciona"
+                      → Probar si el resultado final funciona
+                      → Solo si NO funciona, entonces debuggear
+
+git push exitcode=0 → El código está en GitHub
+Auto-deploy activo  → El deploy se dispara solo
+HTML estático       → Build de ~5 segundos
+```
+
+### RELACIÓN CON OTRAS REGLAS
+
+- Extiende **Regla #8** ("Verifica al final, no durante")
+- Complementa **Nota C14 Eco** (no asumir fallo sin verificar resultado final)
+- Aplica tanto a deploy Cloud como a operaciones locales RPi
+
+---
