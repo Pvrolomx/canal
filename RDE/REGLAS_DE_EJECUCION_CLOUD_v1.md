@@ -407,3 +407,72 @@ CD42, 15 Feb 2026: Hizo push de imagen (16KB) a HTML estático. Deploy tomó ~5 
 - Aplica el espíritu de **Regla #8 RPi** ("Verifica al final, no durante") al contexto de deploy
 
 ---
+
+## REGLA #15 CLOUD: VERCEL API DIRECTA PARA ENV VARS Y CONFIGURACIÓN
+**Agregado:** 24 Febrero 2026 por CD44
+
+### PROBLEMA QUE RESUELVE
+
+Los CDs necesitan crear, leer y actualizar variables de entorno en Vercel (API keys, webhook secrets, tokens encrypted). El MCP de Vercel puede tener limitaciones con operaciones PATCH y con valores encrypted. Usar la REST API directa es más confiable y transparente.
+
+### CREDENCIALES VERCEL
+
+```
+Token: buscar en canal general (channel 1) el mensaje con credenciales
+Team ID: team_xmFW0blsjqFI5lwt29wBPi8Q
+```
+
+### OPERACIONES COMUNES
+
+```bash
+# Listar proyectos
+curl -s -H "Authorization: Bearer $VERCEL_TOKEN" \
+  "https://api.vercel.com/v9/projects?teamId=$TEAM_ID"
+
+# Listar env vars de un proyecto
+curl -s -H "Authorization: Bearer $VERCEL_TOKEN" \
+  "https://api.vercel.com/v10/projects/$PROJECT_ID/env?teamId=$TEAM_ID"
+
+# Crear env var (encrypted)
+curl -s -X POST -H "Authorization: Bearer $VERCEL_TOKEN" \
+  "https://api.vercel.com/v10/projects/$PROJECT_ID/env?teamId=$TEAM_ID" \
+  -H "Content-Type: application/json" \
+  -d '{"key":"NOMBRE","value":"valor","type":"encrypted","target":["production","preview","development"]}'
+
+# Actualizar env var existente (necesita ENV_ID)
+# Primero obtener el ID:
+ENV_ID=$(curl -s -H "Authorization: Bearer $VERCEL_TOKEN" \
+  "https://api.vercel.com/v10/projects/$PROJECT_ID/env?teamId=$TEAM_ID" | \
+  python3 -c "import sys,json; [print(e['id']) for e in json.load(sys.stdin).get('envs',[]) if e['key']=='NOMBRE']")
+
+# Luego actualizar:
+curl -s -X PATCH -H "Authorization: Bearer $VERCEL_TOKEN" \
+  "https://api.vercel.com/v10/projects/$PROJECT_ID/env/$ENV_ID?teamId=$TEAM_ID" \
+  -H "Content-Type: application/json" \
+  -d '{"value":"nuevo_valor","type":"encrypted"}'
+```
+
+### ERRORES COMUNES
+
+| Error | Causa | Solución |
+|-------|-------|----------|
+| `ENV_CONFLICT` | Variable ya existe | Usar PATCH en vez de POST |
+| `404` en env | ENV_ID incorrecto | Listar primero para obtener ID correcto |
+| MCP timeout | Vercel MCP se cuelga | Usar curl directo a REST API |
+
+### CUÁNDO USAR QUÉ
+
+| Operación | MCP Vercel | REST API directa |
+|-----------|-----------|-------------------|
+| Deploy | ✅ Preferir | ✅ Alternativa |
+| Listar proyectos | ✅ | ✅ |
+| Crear/leer env vars | ⚠️ Puede fallar | ✅ Preferir |
+| Actualizar env vars (PATCH) | ❌ No soporta | ✅ Obligatorio |
+| Env vars encrypted | ⚠️ Inconsistente | ✅ Preferir |
+| Build logs | ✅ | ✅ |
+
+### PRINCIPIO
+
+> **Si el MCP funciona, úsalo. Si necesitas PATCH, encrypted, o el MCP se cuelga, usa curl directo a la REST API. No pierdas tiempo debuggeando el MCP.**
+
+---
