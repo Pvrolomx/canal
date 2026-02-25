@@ -471,8 +471,20 @@ curl -s -X PATCH -H "Authorization: Bearer $VERCEL_TOKEN" \
 | Env vars encrypted | ⚠️ Inconsistente | ✅ Preferir |
 | Build logs | ✅ | ✅ |
 
+### FETCH DE CONTENIDO DESPLEGADO
+
+| Necesitas | Método | NO hacer |
+|-----------|--------|----------|
+| Ver source code del proyecto | `git clone` / `git pull` del repo | `Vercel:web_fetch_vercel_url` que se cuelga |
+| Ver página live (HTML renderizado) | `curl -s https://dominio.com` | Múltiples intentos con MCP si el primero falla |
+| Comparar cambios recientes | `git pull` + `git diff` | Fetch repetido de páginas completas |
+
+**Contexto:** CD44, 25 Feb 2026 — Durante QA de astro4, intentó fetch de app.html vía `Vercel:web_fetch_vercel_url`. La llamada se colgó sin respuesta. Se resolvió con `git pull` + `git diff` que trajo los cambios en segundos.
+
 ### PRINCIPIO
 
 > **Si el MCP funciona, úsalo. Si necesitas PATCH, encrypted, o el MCP se cuelga, usa curl directo a la REST API. No pierdas tiempo debuggeando el MCP.**
+
+> **El repo en GitHub ES la fuente de verdad. Si necesitas inspeccionar código, clona el repo — no intentes extraerlo de la página desplegada.**
 
 ---
