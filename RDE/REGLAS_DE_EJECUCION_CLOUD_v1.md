@@ -18,7 +18,7 @@ App perfecta emerge NATURALMENTE como consecuencia.
 
 ---
 
-## 📋 LAS 12 REGLAS CLOUD
+## 📋 LAS 15 REGLAS CLOUD
 
 ### BLOQUE 1: EJECUCIÓN (Reglas 1-4)
 
