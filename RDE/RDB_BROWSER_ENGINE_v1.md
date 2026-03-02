@@ -426,3 +426,35 @@ El Browser Engine + Claude in Chrome + API Directa son tres herramientas complem
 — Arquitecto, Colmena 2026
 
 🐝 Sistema Colmena — Browser Edition
+
+---
+
+## ADDENDUM: Capa 1b — Browser Engine como Orquestador Multi-IA (2 Mar 2026)
+
+### Descubrimiento
+
+El Browser Engine (Puppeteer + Stealth) puede navegar a ChatGPT, Gemini, Copilot y otras IAs en modo headless, enviar prompts, extraer respuestas y cruzarlas — todo sin Chrome Extension y sin intervención humana.
+
+### Implicación: "El Duende es la API" confirmado con datos
+
+| Método | Costo | Tiempo | Datos |
+|--------|-------|--------|-------|
+| API de Anthropic | $$ por token | 6-20s | Inventados |
+| Puppeteer → tier gratis de IAs | **$0** | 100-160s | **Reales** |
+
+### Script de referencia
+
+`C:\Users\pvrol\browser-duendes\debate-multiai-capa1.js`
+
+### IAs probadas headless (sin login)
+
+| IA | Funciona headless? | Notas |
+|----|-------------------|-------|
+| ChatGPT | ✅ Sí | Requiere selector `#prompt-textarea` |
+| Gemini | ✅ Sí | `div[contenteditable="true"]` |
+| Copilot | ⚠️ Parcial | Input no estándar, requiere más trabajo |
+| DeepSeek | ✅ Sí (vía Chrome) | Probado con extensión, no headless aún |
+
+### Caso de estudio completo
+
+Ver: `RDE/CASO_ESTUDIO_DEBATE_TACOS.md`
