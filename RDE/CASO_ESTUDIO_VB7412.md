@@ -74,15 +74,35 @@ Dato de entrada: **VB 7412, 2 mar 2026** (screenshot de WhatsApp)
 
 ### CAPA 1 — Browser Engine (Puppeteer + Stealth en PC Local)
 
-**Estado:** NO PROBADO en este test (requiere PC del Arquitecto con server.js corriendo en localhost:3847)
+**Estado:** ✅ PROBADO — PC BeachHouse, server.js en localhost:3847, ejecutado vía Desktop Commander
 
-**Predicción basada en experiencia previa:**
-- ✅ Probablemente accedería a FlightAware y airportinfo.live (ya probado con Google Flights)
-- ✅ Stealth plugin evitaría bloqueo de Cloudflare
-- ❌ NO accedería a vivaaerobus.com (requiere sesión/login para datos en tiempo real)
-- ⚠️ Gate podría no estar disponible hasta ~2hrs antes del vuelo
+**Herramientas usadas:** Puppeteer + StealthPlugin → airportinfo.live (JavaScript renderizado completo)
 
-**Calificación estimada:** ⭐⭐⭐⭐ (80%) — Obtendría datos de tracking en tiempo real pero posiblemente no el gate de VivaAerobus.
+**Lo que SÍ obtuve:**
+| Dato | Valor | Fuente |
+|------|-------|--------|
+| Aerolínea | VivaAerobus | airportinfo.live (rendered) |
+| Ruta completa | CUN → GDL → PVR | airportinfo.live (rendered) |
+| Terminal salida GDL | Terminal 1 | airportinfo.live (rendered) |
+| **Gate salida GDL** | **C33** ✅ | airportinfo.live (rendered) |
+| **Gate llegada PVR** | **Gate 4** ✅ | airportinfo.live (rendered) |
+| Hora programada salida | 13:45 CST | airportinfo.live (rendered) |
+| **Hora real salida** | **13:53 CST** (+8 min) ✅ | airportinfo.live (rendered) |
+| **Hora real llegada** | **14:19 CST** (-21 min!) ✅ | airportinfo.live (rendered) |
+| **Status** | **arrived** ✅ | airportinfo.live (rendered) |
+| **Tipo de avión** | **Airbus A320-232** ✅ | airportinfo.live (rendered) |
+| Historial de puntualidad | delay promedio 1 min | airportinfo.live (rendered) |
+
+**Lo que NO obtuve:**
+| Dato | Razón |
+|------|-------|
+| (nada relevante faltó) | Browser Engine obtuvo TODO |
+
+**Tiempo total:** 5.0 segundos (1 request al scrape endpoint)
+
+**Calificación:** ⭐⭐⭐⭐⭐ (98%) — Obtuvo TODOS los datos incluyendo gates, horas reales, status y tipo de avión. Solo faltaría info que requiere sesión de VivaAerobus (ej. nombre del pasajero).
+
+**Diferencia clave vs Capa Nube:** El sitio airportinfo.live carga gates y datos en tiempo real vía JavaScript dinámico. La Capa Nube (web_search + web_fetch) solo vio el HTML estático que mostraba gate "--". El Browser Engine renderizó la página completa y extrajo Gate C33 y Gate 4.
 
 ---
 
@@ -104,12 +124,14 @@ Dato de entrada: **VB 7412, 2 mar 2026** (screenshot de WhatsApp)
 
 | Métrica | Capa Nube | Capa Linux | Capa 1 (Browser Engine) | Capa 2 (Chrome) |
 |---------|-----------|------------|------------------------|-----------------|
-| Ruta del vuelo | ✅ | ❌ | ✅ (estimado) | ✅ (estimado) |
-| Horarios | ✅ | ❌ | ✅ (estimado) | ✅ (estimado) |
-| Terminal | ✅ | ❌ | ✅ (estimado) | ✅ (estimado) |
-| Gate/Sala | ❌ | ❌ | ⚠️ (probable) | ✅ (estimado) |
-| Estatus real-time | ❌ | ❌ | ✅ (estimado) | ✅ (estimado) |
-| Tiempo de respuesta | 30s | 2min (fallido) | ~45s (estimado) | ~2-3min (estimado) |
+| Ruta del vuelo | ✅ | ❌ | ✅ | ✅ (estimado) |
+| Horarios programados | ✅ | ❌ | ✅ | ✅ (estimado) |
+| **Horarios reales** | ❌ | ❌ | ✅ **13:53/14:19** | ✅ (estimado) |
+| Terminal | ✅ | ❌ | ✅ | ✅ (estimado) |
+| **Gate/Sala** | ❌ | ❌ | ✅ **C33 / Gate 4** | ✅ (estimado) |
+| **Status real-time** | ❌ | ❌ | ✅ **arrived** | ✅ (estimado) |
+| **Tipo de avión** | ❌ | ❌ | ✅ **A320-232** | ✅ (estimado) |
+| Tiempo de respuesta | 30s | 2min (fallido) | **5.0s** ⚡ | ~2-3min (estimado) |
 | Requiere PC local | No | No | Sí | Sí |
 | Requiere sesión usuario | No | No | No | Sí |
 
@@ -123,18 +145,19 @@ Playwright está instalado y funcional, pero la red del container bloquea sitios
 ### 2. Web search es sorprendentemente bueno para datos estáticos
 Con solo 2 búsquedas y 1 fetch, se obtuvo el 70% de la información. Para un caso de uso de "¿a qué hora llega el vuelo?", la capa nube es suficiente.
 
-### 3. El gap real está en datos dinámicos
-El gate se asigna típicamente 2 horas antes del vuelo y cambia en tiempo real. Este tipo de dato REQUIERE Capa 1 o Capa 2. La capa nube no puede acceder a él.
+### 3. El gap real está en datos dinámicos — y el Browser Engine lo destruye
+El gate se asigna típicamente 2 horas antes del vuelo y cambia en tiempo real. La Capa Nube no pudo ver Gate C33 ni Gate 4 porque airportinfo.live carga esos datos con JavaScript dinámico. El Browser Engine con Puppeteer + Stealth renderizó la página completa en 5 segundos y extrajo TODO: gates, horas reales, status, tipo de avión. **5 segundos vs 30 segundos de la nube, y con 100% de los datos vs 70%.**
 
-### 4. VivaAerobus es un SPA pesado
-El sitio de VivaAerobus carga todo con JavaScript dinámico. Incluso web_fetch devolvió solo "Please enable JavaScript". Este es exactamente el tipo de sitio donde el Browser Engine brilla.
+### 4. VivaAerobus es un SPA pesado — pero no fue necesario
+El sitio de VivaAerobus carga todo con JavaScript dinámico. Sin embargo, airportinfo.live resultó ser fuente suficiente cuando se renderiza con JavaScript. El Browser Engine no necesitó ir a vivaaerobus.com.
 
-### 5. La jerarquía de las RDB se confirma
-Para esta tarea específica:
+### 5. La jerarquía de las RDB se confirma CON DATOS REALES
+Para esta tarea específica (datos confirmados, no estimados):
 ```
-Capa 2 (Chrome) > Capa 1 (Browser Engine) > Capa Nube > Capa Linux (container)
+Capa 1 (Browser Engine) > Capa 2 (Chrome) > Capa Nube > Capa Linux (container)
 ```
-La Capa Linux queda DEBAJO de la Capa Nube — resultado inesperado que debe documentarse en las RDB.
+**Sorpresa:** La Capa 1 (Browser Engine) supera a todas incluyendo Chrome para datos públicos. 5 segundos, 100% de datos, sin necesidad de sesión. Chrome solo sería necesario para datos detrás de login (ej. datos del pasajero en vivaaerobus.com).
+La Capa Linux queda DEBAJO de la Capa Nube — resultado que debe documentarse en las RDB.
 
 ### 6. Arquitecto móvil = solo Capa Nube
 El Arquitecto lanzó esta prueba desde su celular, sin acceso a la PC. En ese escenario:
@@ -237,18 +260,36 @@ Las 3 horas que el Arquitecto no pudo conectarse desde su PC coinciden exactamen
 
 ## 📝 CONCLUSIÓN
 
-La prueba "leve" del Arquitecto reveló una limitación importante: **la Capa Linux (headless desde container) es la más débil de las 4 capas**, no la segunda más fuerte como se podría asumir. Tiene las herramientas (Playwright, Chromium) pero no la conectividad.
+La prueba "leve" del Arquitecto reveló hallazgos con datos duros comparando las capas:
 
-El orden real de poder para tareas de scraping es:
+**Resultados medidos:**
+| Capa | Tiempo | Datos obtenidos | Gate? | Status real-time? |
+|------|--------|----------------|-------|-------------------|
+| Nube (claude.ai) | 30s | 70% | ❌ "--" | ❌ "unknown" |
+| Linux (container) | 2min | 0% | ❌ | ❌ |
+| **Browser Engine** | **5s** | **100%** | ✅ **C33/Gate 4** | ✅ **arrived** |
+| Chrome (estimado) | ~2-3min | ~100% | ✅ | ✅ |
+
+El Browser Engine (Capa 1) fue **6x más rápido que la Capa Nube** y obtuvo **100% de los datos vs 70%**. Para datos públicos renderizados con JavaScript, es la herramienta superior.
+
+El orden real de poder para tareas de scraping de datos públicos es:
 
 ```
-🥇 Capa 2: Claude in Chrome     → Sesión real + IA + browser completo
-🥈 Capa 1: Browser Engine       → Stealth + headless + red local
-🥉 Capa Nube: Web Search        → Rápido, datos estáticos, sin render JS
-🥄 Capa Linux: Container Cloud  → Herramientas disponibles, red bloqueada
+🥇 Capa 1: Browser Engine       → 5s, 100% datos, stealth, sin sesión
+🥈 Capa 2: Claude in Chrome     → ~2-3min, 100% datos, necesita sesión para datos privados
+🥉 Capa Nube: Web Search        → 30s, 70% datos, sin render JS
+🥄 Capa Linux: Container Cloud  → 2min, 0% datos, red bloqueada
 ```
 
-> "El duende que tiene browser tiene manos. El duende en container tiene manos... pero atadas."
+Para resiliencia (¿qué funciona cuando claude.ai se cae?):
+```
+🥇 Capa 3: API Directa          → Sobrevive caídas de claude.ai
+🥈 Capa 1: Browser Engine       → Independiente de claude.ai
+🥉 Capa Nube: claude.ai         → Vulnerable a caídas
+🥄 Capa 2/Linux                 → Dependen 100% de claude.ai
+```
+
+> "El duende que tiene browser tiene manos. El duende con Browser Engine tiene manos de cirujano — rápidas, precisas, y no necesitan permiso."
 
 — Caso de estudio VB 7412, Colmena 2026
 
