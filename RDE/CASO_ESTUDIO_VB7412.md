@@ -2,7 +2,8 @@
 ## Prueba comparativa de capas browser — 2 Marzo 2026
 
 **Objetivo:** Obtener gate/sala de embarque del vuelo VB 7412 (VivaAerobus) del 2 de marzo 2026.
-**Contexto:** Prueba solicitada por el Arquitecto desde WhatsApp (screenshot del vuelo). Prueba "leve" para medir capacidades reales.
+**Contexto:** Prueba solicitada por el Arquitecto **desde celular** (screenshot de WhatsApp enviado a Claude vía móvil). El Arquitecto NO tenía acceso a su PC en ese momento — lo que significa que las Capas 1 (Browser Engine) y 2 (Claude in Chrome) NO estaban disponibles. La única herramienta funcional era la Capa Nube.
+**Implicación clave:** Cuando el Arquitecto está móvil, la Capa Nube es su ÚNICO recurso. Esto le da peso extra tanto a sus limitaciones como a sus fortalezas.
 
 ---
 
@@ -134,6 +135,15 @@ Para esta tarea específica:
 Capa 2 (Chrome) > Capa 1 (Browser Engine) > Capa Nube > Capa Linux (container)
 ```
 La Capa Linux queda DEBAJO de la Capa Nube — resultado inesperado que debe documentarse en las RDB.
+
+### 6. Arquitecto móvil = solo Capa Nube
+El Arquitecto lanzó esta prueba desde su celular, sin acceso a la PC. En ese escenario:
+- Capa 1 (Browser Engine) → **NO DISPONIBLE** (requiere PC con server.js)
+- Capa 2 (Claude in Chrome) → **NO DISPONIBLE** (requiere Chrome desktop)
+- Capa Linux (container) → Disponible pero inútil (red bloqueada)
+- Capa Nube → **ÚNICO RECURSO FUNCIONAL**
+
+**Implicación para Colmena:** Se necesita considerar el escenario "Arquitecto móvil" como caso de uso frecuente. La Capa Nube debe optimizarse al máximo para estos momentos, ya que es la única línea de defensa. Posible solución futura: un duende persistente con Browser Engine corriendo en RPi que pueda ser activado desde el celular vía chat.duendes.app.
 
 ---
 
