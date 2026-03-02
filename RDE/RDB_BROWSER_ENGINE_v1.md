@@ -12,6 +12,7 @@
 | Versión | Fecha | Cambios |
 |---------|-------|---------|
 | 1.0 | 1 Mar 2026 | Documento inicial. Browser Engine, Claude in Chrome, Colmena Debate Engine |
+| 1.1 | 2 Mar 2026 | Sección "El Duende es la API". Debate multi-IA vía browser. Tier web > tier API. |
 
 ---
 
@@ -311,6 +312,97 @@ const DUENDES = [
 - **Regla #25 (Desarrollo en nube):** El Debate Engine corre desde container Claude. No necesita PC local.
 
 ---
+
+
+---
+
+## 🧠 PRINCIPIO FUNDAMENTAL: EL DUENDE ES LA API
+
+### El concepto
+
+Cuando un duende tiene Claude in Chrome, **él mismo ES la API de cada IA**. No necesita endpoint, no necesita key, no necesita créditos. El browser reemplaza al SDK.
+
+| Método tradicional | Método browser |
+|---|---|
+| `fetch('api.openai.com', {headers: {Authorization: 'Bearer sk-...'}})` | `navigate('chat.openai.com')` → `type(prompt)` → `read_page()` |
+| Requiere API key | Requiere sesión web activa del Arquitecto |
+| Paga por token | Gratis (tier web de cada IA) |
+| Modelo recortado (API tier) | Modelo completo (web tier) |
+
+### Por qué el tier web es SUPERIOR al tier API
+
+Las IAs dan sus mejores modelos en la interfaz web, no en la API:
+
+| IA | Web (gratis) | API (pagado) |
+|---|---|---|
+| ChatGPT | GPT-4o completo | GPT-4o (con rate limits y costo/token) |
+| DeepSeek | R1 razonamiento completo | R1 (mismo pero $$$) |
+| Gemini | 2.0 Flash / 2.5 Pro | 2.0 Flash ($0.075/1M tokens) |
+| Grok | Grok-3 | Grok-3 (API limitada, waitlist) |
+| Copilot | GPT-4o + Bing + DALL-E | N/A directo |
+| Claude | Opus 4.5 (con Pro) | Opus ($15/1M tokens) |
+
+**Conclusión:** Un duende con browser accede a más poder de cómputo que un duende con $100 en créditos API.
+
+### Flujo de debate multi-IA vía browser
+
+```
+DUENDE (Claude in Chrome)
+    │
+    ├── Tab 1: chat.openai.com    → GPT-4o opina
+    ├── Tab 2: chat.deepseek.com  → R1 critica a GPT
+    ├── Tab 3: gemini.google.com  → Gemini critica a ambos
+    ├── Tab 4: grok.com           → Grok da perspectiva X/Twitter
+    │
+    └── SÍNTESIS: El duende (Claude) consolida todo
+```
+
+Cada IA recibe:
+1. El tema original
+2. Lo que dijeron las otras IAs
+3. Instrucción de criticar con datos
+
+El duende orquestador NO opina en las rondas intermedias — solo transporta. Opina AL FINAL en la síntesis.
+
+### Operativa técnica paso a paso
+
+```
+Para cada IA:
+1. tabs_create_mcp             → Nueva pestaña
+2. navigate(url)               → Ir al chat de la IA
+3. computer(wait, 3)           → Esperar carga
+4. find("message input")       → Encontrar caja de texto
+5. computer(type, prompt)      → Escribir el prompt
+6. computer(key, "Enter")      → Enviar
+7. computer(wait, 15-30)       → Esperar respuesta (varía por IA)
+8. get_page_text               → Leer respuesta completa
+9. Guardar respuesta en variable
+
+Para cross-posting:
+10. navigate(tab siguiente IA)
+11. Repetir 4-8 pero el prompt incluye respuestas previas
+
+Para síntesis:
+12. El duende (Claude) sintetiza sin browser — es su propia respuesta
+```
+
+### Requisitos para el duende activador
+
+- ✅ Claude in Chrome conectado y funcional
+- ✅ Arquitecto con sesión activa en al menos 2 IAs web
+- ✅ Arquitecto disponible para resolver CAPTCHAs si aparecen
+- ❌ NO necesita API keys de ninguna IA externa
+- ❌ NO necesita créditos de ninguna IA externa
+- ❌ NO necesita Desktop Commander ni Browser Engine (Puppeteer)
+
+### Limitaciones
+
+1. **Velocidad:** ~2-3 min por IA (navigate + type + wait + read) vs 10s por API. Un debate de 3 IAs × 2 rondas toma ~20-30 min.
+2. **Rate limits web:** Algunas IAs limitan mensajes/hora en tier free (ChatGPT: ~40/3hrs, DeepSeek: variable)
+3. **UI changes:** Si una IA cambia su interfaz, los selectores del duende pueden fallar. Adaptarse con `find()` + `screenshot`.
+4. **CAPTCHAs:** El Arquitecto debe resolverlos. El duende pausa y avisa.
+
+
 
 ## 💡 PRÓXIMOS PASOS
 
