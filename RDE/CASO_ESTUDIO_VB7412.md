@@ -147,19 +147,91 @@ El Arquitecto lanzó esta prueba desde su celular, sin acceso a la PC. En ese es
 
 ---
 
+## 🚨 HALLAZGO CRÍTICO: CAÍDA MASIVA 2 MARZO 2026
+
+### Contexto
+Durante la misma fecha de esta prueba (2 marzo 2026), ocurrió una **caída masiva simultánea** de los 3 principales servicios de IA:
+
+| Servicio | Estado | Duración |
+|----------|--------|----------|
+| **Claude (Anthropic)** | claude.ai, apps, Claude Code — CAÍDOS | ~4+ horas (desde 5:49 AM MX) |
+| **ChatGPT (OpenAI)** | Reportes de caída | Se recuperó antes que Claude |
+| **Gemini (Google)** | Reportes de caída | Se recuperó antes que Claude |
+
+### Timeline de la caída de Claude
+```
+11:49 UTC — Anthropic detecta errores elevados en claude.ai, console y Claude Code
+12:21 UTC — Identifican que la API core funciona, el problema es la interfaz web y autenticación
+13:22 UTC — Identifican el problema, comienzan a implementar fix
+~15:00 UTC — Servicio restaurado completamente
+```
+
+**Causa:** Problema en la infraestructura de autenticación (login/logout), NO en los modelos de IA.
+**Demanda:** Anthropic reportó "demanda sin precedentes" durante la semana previa, con registros diarios récord y usuarios free subiendo 60% desde enero.
+
+### EL DATO CLAVE: LA API SOBREVIVIÓ
+
+**Mientras claude.ai estuvo caído 4+ horas, la API (api.anthropic.com) siguió funcionando sin interrupciones.**
+
+Esto significa:
+
+| Capa | Estado durante la caída |
+|------|----------------------|
+| Capa Nube (claude.ai) | ❌ CAÍDA TOTAL — login fallaba, chats no cargaban |
+| Capa 2 (Claude in Chrome) | ❌ CAÍDA — depende de claude.ai |
+| Capa Linux (container) | ❌ CAÍDA — depende de claude.ai |
+| Capa 1 (Browser Engine) | ⚠️ PARCIAL — scraping sí, pero no podía orquestar vía claude.ai |
+| **Capa 3 (API Directa)** | ✅ **FUNCIONANDO** — el Debate Engine habría seguido operando |
+
+### Implicación para Colmena
+
+**La Capa 3 (API Directa) es la más resiliente de todas las capas.** No depende de la interfaz web, no depende de autenticación de usuario, no depende de login. Solo necesita el API key y un runtime (Node.js).
+
+**Plan de continuidad operativa propuesto:**
+```
+Escenario: claude.ai se cae
+    │
+    ├── Arquitecto en PC → Activa Debate Engine local (colmena-debate.js)
+    │                       Usa API directa, no necesita claude.ai
+    │
+    └── Arquitecto en celular → chat.duendes.app → RPi → API de Anthropic
+                                 Duende persistente ejecuta tareas vía API
+                                 (requiere implementar seguridad en chat.duendes.app)
+```
+
+**Jerarquía de resiliencia actualizada:**
+```
+🥇 Capa 3: API Directa        → Sobrevive caídas de claude.ai
+🥈 Capa 1: Browser Engine      → Independiente pero no puede orquestar sin API/claude.ai
+🥉 Capa Nube: claude.ai        → Vulnerable a caídas de infraestructura
+🥄 Capa 2: Claude in Chrome    → Depende 100% de claude.ai
+🥄 Capa Linux: Container       → Depende 100% de claude.ai + red restringida
+```
+
+> **Nota:** Esta jerarquía es de RESILIENCIA, no de capacidad. Para capacidad de scraping/navegación, la jerarquía sigue siendo Chrome > Browser Engine > Nube > Container. Pero cuando se trata de "¿qué sigue funcionando cuando todo se cae?", la API gana.
+
+### Conexión con la prueba VB7412
+
+Las 3 horas que el Arquitecto no pudo conectarse desde su PC coinciden exactamente con esta caída. El Arquitecto se conectó desde celular ~3 horas después, cuando el servicio comenzó a restaurarse parcialmente. Si hubiera existido un duende con API directa en la RPi accesible desde chat.duendes.app, el Arquitecto podría haber seguido trabajando sin esperar la restauración de claude.ai.
+
+---
+
 ## ⚠️ ACTUALIZACIÓN SUGERIDA PARA RDB v1.1
 
 ### Agregar a sección "LIMITACIONES CONOCIDAS":
 
 > **7. El container cloud de Claude tiene red restringida.** Playwright/Puppeteer están disponibles pero muchos sitios (aviación, finanzas, redes sociales) son inaccesibles por restricciones de red del container. Para scraping desde cloud, usar la API de web_search/web_fetch como primera opción. Para scraping completo, usar Browser Engine en PC local.
 
-### Actualizar tabla "CUÁNDO USAR QUÉ":
+> **8. Cuando claude.ai se cae, la API sigue viva.** Confirmado el 2 marzo 2026: caída de 4+ horas en claude.ai mientras api.anthropic.com operaba sin problemas. Tener un mecanismo de fallback vía API Directa es crítico para continuidad operativa.
+
+### Agregar a sección "CUÁNDO USAR QUÉ":
 
 | Tarea | Herramienta | Razón |
 |-------|-------------|-------|
 | Consultar vuelos (datos básicos) | Web Search (Capa Nube) | Horarios, rutas, terminal — suficiente |
 | Consultar vuelos (gate real-time) | Claude in Chrome | Requiere sesión + datos dinámicos |
 | Scraping desde container cloud | ❌ NO VIABLE | Red restringida, usar web_search en su lugar |
+| **Fallback durante caída claude.ai** | **API Directa (Capa 3)** | **Única capa que sobrevive caídas de infraestructura web** |
 
 ---
 
