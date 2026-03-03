@@ -123,4 +123,56 @@ Pregúntate: **¿El Arquitecto está aquí?** Eso decide todo.
 
 ---
 
-🐝 Sistema Colmena — Browser Decision Guide v1.0
+## PROTOCOLO: DEBATE MULTI-IA CON CLAUDE IN CHROME (v1)
+
+**Fecha:** 3 marzo 2026 — Probado en caso real (servidumbre Amapas, $400K USD)
+
+### Qué es
+Claude in Chrome navega ChatGPT, DeepSeek, Gemini (u otras IAs) en tabs del grupo MCP, pega prompts con roles distintos, y cosecha respuestas para sintetizar un debate con voces genuinamente diferentes.
+
+### Flujo operativo
+
+**Ciclo 1 — Siembra:**
+1. Arquitecto abre tabs de cada IA en el grupo MCP de Claude
+2. Claude arma prompts con contexto y rol asignado, los pega en cada tab
+3. Arquitecto da click enviar en cada una
+4. Desconexión (o descanso)
+
+**Ciclo 2 — Cosecha:**
+1. Arquitecto reconecta Claude in Chrome
+2. Claude lee respuestas de las 3+ IAs usando get_page_text o javascript_tool
+3. Claude sintetiza y arma repreguntas si el debate continúa
+4. Claude pega repreguntas, Arquitecto da click enviar
+5. Desconexión
+
+**Ciclo 3 — Cierre:**
+1. Reconexión final
+2. Claude lee respuestas finales
+3. Claude arma documento de síntesis con posiciones encontradas
+
+### Reglas técnicas
+- **NUNCA usar wait largos** — causa desconexión de la extensión
+- Claude pega prompt → se mueve a siguiente tab → pega → siguiente. No espera en ninguna.
+- Para pegar en ChatGPT: usar JavaScript clipboard event (form_input + Enter no funciona confiablemente)
+- Para DeepSeek: form_input funciona bien
+- Para Gemini: usar type + click en botón Send (form_input no soporta el div editable)
+- Arquitecto ve en qué fase está Claude y puede dar click enviar en paralelo
+
+### División de trabajo
+| Tarea | Quién |
+|---|---|
+| Armar prompts con contexto | Claude |
+| Pegar prompts en cada IA | Claude |
+| Click enviar | Arquitecto |
+| Resolver CAPTCHAs | Arquitecto |
+| Reconectar extensión | Arquitecto |
+| Leer respuestas | Claude |
+| Sintetizar debate | Claude |
+| Decisión final | Arquitecto |
+
+### Nada es estático
+Este protocolo se actualizará según la experiencia. Si mañana algo cambia, se cambia y listo.
+
+---
+
+🐝 Sistema Colmena — Browser Decision Guide v1.1 (actualizada 3 marzo 2026)
