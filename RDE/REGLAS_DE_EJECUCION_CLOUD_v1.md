@@ -488,3 +488,82 @@ curl -s -X PATCH -H "Authorization: Bearer $VERCEL_TOKEN" \
 > **El repo en GitHub ES la fuente de verdad. Si necesitas inspeccionar código, clona el repo — no intentes extraerlo de la página desplegada.**
 
 ---
+
+---
+
+## APENDICE PWA: INSTALACION AUTOMATICA (Agregado 20 Mar 2026)
+
+### PROBLEMA
+El manifest.json y Service Worker NO son suficientes para que Chrome
+muestre el prompt de instalacion en Android. Chrome requiere 2 visitas
+con 5+ minutos entre ellas. Muchos usuarios nunca ven el prompt.
+
+### SOLUCION: Boton de Instalacion Manual (OBLIGATORIO)
+
+```javascript
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    document.getElementById('install-btn').classList.remove('hidden');
+});
+function installApp() {
+    if (!deferredPrompt) return;
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then(r => {
+        if (r.outcome === 'accepted') document.getElementById('install-btn').classList.add('hidden');
+        deferredPrompt = null;
+    });
+}
+window.addEventListener('appinstalled', () => {
+    document.getElementById('install-btn').classList.add('hidden');
+});
+```
+
+HTML:
+```html
+<button id="install-btn" onclick="installApp()" class="hidden">Instalar App</button>
+```
+
+### SERVICE WORKER: NETWORK-FIRST (OBLIGATORIO)
+
+NUNCA cache-first para HTML/API. Causa que updates no se vean.
+Aprendido con fantasma.duendes.app el 20-Mar-2026.
+
+```javascript
+const CACHE_NAME = 'app-v2';
+self.addEventListener('fetch', event => {
+    if (event.request.url.includes('/api/') || event.request.url.endsWith('/')) {
+        event.respondWith(
+            fetch(event.request).then(resp => {
+                caches.open(CACHE_NAME).then(c => c.put(event.request, resp.clone()));
+                return resp;
+            }).catch(() => caches.match(event.request))
+        );
+    } else {
+        event.respondWith(caches.match(event.request).then(r => r || fetch(event.request)));
+    }
+});
+self.addEventListener('activate', event => {
+    event.waitUntil(caches.keys().then(n => Promise.all(n.filter(x => x !== CACHE_NAME).map(x => caches.delete(x)))));
+    self.clients.claim();
+});
+```
+
+### SI CACHE VIEJO BLOQUEA UPDATES
+```javascript
+navigator.serviceWorker.getRegistrations().then(r => r.forEach(x => x.unregister()));
+caches.keys().then(n => n.forEach(x => caches.delete(x)));
+```
+
+### MANIFEST CRITICO
+- display: "standalone" (NO "browser")
+- purpose: "any maskable" en iconos
+- start_url: "/" presente
+- name + short_name ambos
+
+### CHECKLIST PWA ACTUALIZADO
+- [ ] manifest.json con display:standalone + iconos maskable
+- [ ] SW con network-first para HTML/API
+- [ ] Boton "Instalar App" con beforeinstallprompt
+- [ ] CACHE_NAME versionado
