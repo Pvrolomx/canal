@@ -90,6 +90,12 @@ Cada app debe identificar quién la creó.
 ```
 Hecho por duendes.app 2026
 ```
+ó
+```
+Hecho por Colmena 2026
+```
+
+Según el branding del proyecto. Ambas firmas son válidas.
 
 **En commits:**
 ```
