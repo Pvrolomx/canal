@@ -327,6 +327,7 @@ Antes de escribir UNA línea de código:
 | Versión | Fecha | Autor | Cambios |
 |---------|-------|-------|---------|
 | 1.1 | 17 Ene 2026 | C1 (Sleepy) | + Sección Persistencia y Commits |
+| 1.6 | 12 Abr 2026 | CD (QA Anfitrión) | + Regla #16: QA Paralelo — misma fuente |
 | 1.0 | 17 Ene 2026 | Claude (ProfeApp) | Versión inicial cloud |
 
 
@@ -573,3 +574,65 @@ caches.keys().then(n => n.forEach(x => caches.delete(x)));
 - [ ] SW con network-first para HTML/API
 - [ ] Boton "Instalar App" con beforeinstallprompt
 - [ ] CACHE_NAME versionado
+
+---
+
+## REGLA #16 CLOUD: QA PARALELO — TODOS VERIFICAN LA MISMA FUENTE
+**Agregado:** 12 Abril 2026 por CD (QA Anfitrión)
+
+### PROBLEMA QUE RESUELVE
+
+Cuando múltiples duendes corren QA en paralelo, uno puede verificar en el REPO (via `git clone`) mientras otro verifica en PRODUCCIÓN (via `curl` a la URL live). Como puede haber commits no deployeados, cache de Vercel, o timing diferente, reportan resultados diferentes — causando falsos positivos y confusión.
+
+**Ejemplo real:** Duende A reportó "FREEZE en tarifa $0" usando Browser Engine con CDP. Duendes B y C reportaron "PASS, calcula $0" usando Playwright. Diferencia de metodología = divergencia de resultados.
+
+### LA REGLA
+
+**Antes de empezar QA paralelo, el coordinador define UNA fuente de verdad:**
+
+| Opción | Cuándo usar | Cómo sincronizar |
+|--------|-------------|------------------|
+| **REPO** | QA de código, lógica, estructura | Todos usan `git pull` del **mismo SHA** (especificar en handoff) |
+| **PRODUCCIÓN** | QA de UX, funcionalidad live, integración | Todos usan la **misma URL** en el **mismo momento** |
+
+### NUNCA MEZCLAR
+
+```
+❌ Duende A verifica en repo + Duende B verifica en producción
+   → Resultados incomparables, falsos positivos garantizados
+
+✅ Todos verifican repo (SHA: abc123)
+   → Resultados comparables, divergencias son reales
+
+✅ Todos verifican producción (URL: https://app.com)
+   → Resultados comparables, divergencias son reales
+```
+
+### FORMATO DE HANDOFF PARA QA PARALELO
+
+```markdown
+## QA PARALELO — [NOMBRE APP]
+**Fuente de verdad:** [REPO | PRODUCCIÓN]
+**SHA (si repo):** [commit hash]
+**URL (si prod):** [URL exacta]
+**Timestamp inicio:** [hora]
+**Duendes asignados:** A, B, C
+**Tests a ejecutar:** [lista numerada idéntica para todos]
+**Formato de reporte:** [template estandarizado]
+```
+
+### CÓMO INTERPRETAR DIVERGENCIAS
+
+| Patrón | Significado | Acción |
+|--------|-------------|--------|
+| **3/3 coinciden** | Resultado confiable | Aceptar como verdad |
+| **2/1 divergen** | Probable falso positivo del outlier | Investigar metodología del outlier |
+| **1/1/1 divergen** | Test ambiguo o bug intermitente | Rediseñar el test o investigar race condition |
+
+### RELACIÓN CON OTRAS REGLAS
+
+- Complementa **Regla #15** ("El repo en GitHub ES la fuente de verdad")
+- Complementa **Regla #14** (Verificación proporcional al riesgo)
+- Aplica el principio de **Regla #9** (Smoke test) a contexto multi-duende
+
+---
