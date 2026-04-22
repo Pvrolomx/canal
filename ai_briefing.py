@@ -3,7 +3,7 @@ from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 
 TOKENS_FILE = os.path.expanduser("~/colmena/keys/TOKENS.md")
-BOT_TOKEN = ""
+BOT_TOKEN = "8498803967:AAEeq_jSQwOiWDXWLBYXXpzep18MVrCebj8"
 CHAT_ID = "6392026932"
 
 def load_tokens():
@@ -17,7 +17,7 @@ def load_tokens():
                             BOT_TOKEN = part.strip().strip('"').strip("'")
     except:
         pass
-    BOT_TOKEN = BOT_TOKEN or os.environ.get("BOT_TOKEN", "")
+    BOT_TOKEN = BOT_TOKEN or os.environ.get("BOT_TOKEN", "8498803967:AAEeq_jSQwOiWDXWLBYXXpzep18MVrCebj8")
 
 FEEDS = [
     ("Anthropic", "https://raw.githubusercontent.com/taobojlen/anthropic-rss-feed/main/anthropic_news_rss.xml"),
