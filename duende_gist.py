@@ -153,7 +153,7 @@ def save_email_to_supabase(tokens, email_data, draft):
             "status": "pendiente_aprobacion",
             "created_at": datetime.now(timezone.utc).isoformat()
         }
-        result = sb.table("email_inbox").insert(record).execute()
+        result = sb.table("colmena_email_inbox").insert(record).execute()
         return result.data[0]["id"] if result.data else None
     except Exception as e:
         print(f"Error Supabase: {e}")
