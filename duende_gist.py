@@ -1,9 +1,9 @@
 """
-DUENDE GIST/LARSON - v2
-- Monitorea: Carrie Larson, Mark Gist, Cinthia Valero (solo Gist/Larson)
-- Distingue expedientes Cinthia por keywords en asunto/cuerpo
-- Recordatorio automatico si Cinthia no responde en 3 dias
-- Borradores via Claude API -> Supabase -> Telegram para aprobacion
+DUENDE GIST/LARSON - v3
+- Monitorea IMAP: Carrie, Mark, Cinthia (solo Gist keywords)
+- Genera borradores via Claude -> Supabase -> Telegram
+- Envia correos aprobados via SMTP y registra ROLO_SENT
+- Recordatorio automatico 3 dias sin respuesta Cinthia
 """
 import imaplib, email, json, os, requests, time, smtplib
 from email.header import decode_header
@@ -35,21 +35,25 @@ EXPEDIENTE_GIST = {
     "nombre": "GIST_LARSON",
     "fideicomiso": "2110850-1",
     "condominio": "El Dorado",
-    "banco": "Santander -> Banorte"
 }
 
-# Keywords para identificar que un correo de Cinthia es del expediente Gist
 GIST_KEYWORDS = ["2110850", "El Dorado", "Gist", "Larson", "dorado"]
 
-# Remitentes directos del expediente (siempre Gist/Larson)
 DIRECT_SENDERS = {
     "carrie.larson@gmail.com": "Carrie Larson",
     "gistme@gmail.com": "Mark Gist",
 }
 
-# Cinthia — solo si el correo tiene keywords de Gist
 CINTHIA_EMAIL = "cvalero@santander.com.mx"
 CINTHIA_NAME = "Cinthia Montserrat Valero Cruz"
+
+# Destinatarios para envios salientes por expediente
+REPLY_TO = {
+    "carrie.larson@gmail.com": "carrie.larson@gmail.com",
+    "gistme@gmail.com": "gistme@gmail.com",
+    "cvalero@santander.com.mx": "cvalero@santander.com.mx",
+    "SISTEMA_REMINDER": "cvalero@santander.com.mx",
+}
 
 SYSTEM_PROMPT = """Eres el asistente legal de Rolando "Rolo" Romero Garcia,
 abogado expat en Puerto Vallarta (Expat Advisor MX, pvrolomx@yahoo.com.mx).
@@ -59,7 +63,7 @@ TU UNICA FUNCION: redactar borradores de respuesta para el expediente Gist/Larso
 EXPEDIENTE — GIST / LARSON / EL DORADO:
 - Fideicomiso: 2110850-1
 - Condominio: El Dorado, Puerto Vallarta
-- Banco actual: Santander (en tramite — contacto: Cinthia Montserrat Valero Cruz, cvalero@santander.com.mx)
+- Banco actual: Santander (contacto: Cinthia Montserrat Valero Cruz, cvalero@santander.com.mx)
 - Banco destino: Banorte (SOLO cuando Santander autorice todo)
 - Tramite: reconocimiento sustituto beneficiario + sustitucion Santander -> Banorte
 
@@ -68,7 +72,7 @@ PARTES:
 - Mark Elliott Gist (gistme@gmail.com) — co-beneficiario, renuncio como sustituto
   fideicomisario — YA FIRMO carta de renuncia (abril 23, 2026)
 - Cinthia Montserrat Valero Cruz (cvalero@santander.com.mx) — Especialista
-  Fiduciario Santander, Torre Midtown Guadalajara — interlocutora con el banco
+  Fiduciario Santander, Torre Midtown Guadalajara
 
 FLUJO DEL TRAMITE (orden estricto):
 1. Documentos completos (cartas, IDs, correcciones)
@@ -78,16 +82,16 @@ FLUJO DEL TRAMITE (orden estricto):
 5. Banorte revisa -> firma notarial final
 
 ESTILO POR DESTINATARIO:
-- Carrie / Mark: ingles, conciso, directo, americano
-- Cinthia: espanol, profesional, formal pero cordial
-- Rolo firma: "Best regards, / Rolo" (en ingles) o "Saludos, / Rolo" (en espanol)
+- Carrie / Mark: ingles, conciso, directo
+- Cinthia: espanol, profesional, cordial
+- Firma: "Best regards, / Rolo" (ingles) o "Saludos, / Rolo" (espanol)
 
 REGLAS:
 - NUNCA envies — solo redacta el borrador
 - Si te falta informacion: [ROLO: verificar X]
 - Si hay adjuntos: [ROLO: revisar adjunto antes de aprobar]
 
-FORMATO DE RESPUESTA:
+FORMATO:
 CONTEXTO: [una linea — quien escribe, sobre que, que propones]
 ---
 [borrador listo para enviar]
@@ -95,9 +99,8 @@ CONTEXTO: [una linea — quien escribe, sobre que, que propones]
 
 REMINDER_PROMPT = """Eres el asistente legal de Rolo Romero, abogado expat en Puerto Vallarta.
 
-Redacta un recordatorio cordial pero firme en espanol para Cinthia Montserrat Valero Cruz 
-(Especialista Fiduciario, Santander Guadalajara) sobre el expediente del Fideicomiso 2110850-1 
-(El Dorado, beneficiarios Gist/Larson).
+Redacta un recordatorio cordial pero firme en espanol para Cinthia Montserrat Valero Cruz
+(Especialista Fiduciario, Santander Guadalajara) sobre el Fideicomiso 2110850-1 (El Dorado, Gist/Larson).
 
 Han pasado 3 dias sin respuesta. El recordatorio debe:
 - Ser breve (maximo 5 lineas)
@@ -113,7 +116,6 @@ CONTEXTO: Recordatorio 3 dias sin respuesta de Cinthia — Fideicomiso 2110850-1
 
 # ── HELPERS ──────────────────────────────────────────────────────────────────
 def is_gist_email(subject, body):
-    """Determina si un correo de Cinthia pertenece al expediente Gist/Larson"""
     text = (subject + " " + body).lower()
     return any(kw.lower() in text for kw in GIST_KEYWORDS)
 
@@ -144,6 +146,9 @@ def get_body(msg):
             pass
     return body[:3000]
 
+def get_supabase(tokens):
+    return create_client(tokens["SUPABASE_URL"], tokens["SUPABASE_KEY"])
+
 # ── IMAP ─────────────────────────────────────────────────────────────────────
 def fetch_new_emails(tokens):
     emails = []
@@ -152,7 +157,6 @@ def fetch_new_emails(tokens):
         mail.login(tokens["YAHOO_EMAIL"], tokens["YAHOO_APP_PASSWORD"])
         mail.select("INBOX")
 
-        # Correos directos Carrie y Mark
         for sender_email, sender_name in DIRECT_SENDERS.items():
             status, data = mail.search(None, "UNSEEN", f'FROM "{sender_email}"')
             if status != "OK": continue
@@ -176,7 +180,6 @@ def fetch_new_emails(tokens):
                 })
                 print(f"  Nuevo de {sender_name}: {subject[:50]}")
 
-        # Correos de Cinthia — solo si son del expediente Gist
         status, data = mail.search(None, "UNSEEN", f'FROM "{CINTHIA_EMAIL}"')
         if status == "OK":
             for msg_id in data[0].split()[-5:]:
@@ -186,7 +189,7 @@ def fetch_new_emails(tokens):
                 subject = decode_subject(msg.get("Subject", ""))
                 body = get_body(msg)
                 if not is_gist_email(subject, body):
-                    print(f"  Cinthia (ignorado - otro expediente): {subject[:50]}")
+                    print(f"  Cinthia ignorado (otro expediente): {subject[:40]}")
                     continue
                 has_att = any(p.get_filename() for p in msg.walk() if p.get_filename())
                 emails.append({
@@ -207,10 +210,108 @@ def fetch_new_emails(tokens):
         print(f"Error IMAP: {e}")
     return emails
 
-# ── SUPABASE ─────────────────────────────────────────────────────────────────
-def get_supabase(tokens):
-    return create_client(tokens["SUPABASE_URL"], tokens["SUPABASE_KEY"])
+# ── SMTP — ENVIO APROBADO ─────────────────────────────────────────────────────
+def send_approved_emails(tokens):
+    """Busca borradores aprobados en Supabase y los envia via SMTP"""
+    try:
+        sb = get_supabase(tokens)
+        result = sb.table("colmena_email_inbox")\
+            .select("*")\
+            .eq("status", "aprobado")\
+            .eq("expediente", "GIST_LARSON")\
+            .execute()
 
+        if not result.data:
+            return
+
+        print(f"  Correos aprobados para enviar: {len(result.data)}")
+
+        smtp = smtplib.SMTP_SSL(
+            tokens.get("YAHOO_SMTP_HOST", "smtp.mail.yahoo.com"),
+            int(tokens.get("YAHOO_SMTP_PORT", 465))
+        )
+        smtp.login(tokens["YAHOO_EMAIL"], tokens["YAHOO_APP_PASSWORD"])
+
+        for record in result.data:
+            try:
+                # Extraer borrador — quitar la linea CONTEXTO
+                draft_lines = record["draft"].split("\n")
+                body_lines = []
+                skip = True
+                for line in draft_lines:
+                    if line.strip() == "---":
+                        skip = False
+                        continue
+                    if not skip:
+                        body_lines.append(line)
+                body_text = "\n".join(body_lines).strip()
+
+                # Destinatario
+                to_email = REPLY_TO.get(record["sender"], record["sender"])
+
+                # Asunto — Re: si es respuesta, subject original si es reminder
+                if record["sender"] == "SISTEMA_REMINDER":
+                    subject = f"Fideicomiso 2110850-1 El Dorado — Seguimiento"
+                else:
+                    orig_subject = record.get("subject", "")
+                    subject = orig_subject if orig_subject.startswith("Re:") else f"Re: {orig_subject}"
+
+                # Armar mensaje
+                msg = MIMEMultipart()
+                msg["From"] = tokens["YAHOO_EMAIL"]
+                msg["To"] = to_email
+                msg["Subject"] = subject
+                msg.attach(MIMEText(body_text, "plain", "utf-8"))
+
+                smtp.sendmail(tokens["YAHOO_EMAIL"], to_email, msg.as_string())
+                print(f"  Enviado a {to_email}: {subject[:50]}")
+
+                # Registrar como ROLO_SENT en Supabase
+                sent_record = {
+                    "expediente": "GIST_LARSON",
+                    "fideicomiso": EXPEDIENTE_GIST["fideicomiso"],
+                    "sender": "ROLO_SENT",
+                    "from_header": tokens["YAHOO_EMAIL"],
+                    "subject": subject,
+                    "date_received": datetime.now(timezone.utc).isoformat(),
+                    "body": body_text,
+                    "has_attachment": False,
+                    "draft": "",
+                    "status": "enviado",
+                    "created_at": datetime.now(timezone.utc).isoformat()
+                }
+                sb.table("colmena_email_inbox").insert(sent_record).execute()
+
+                # Marcar original como enviado
+                sb.table("colmena_email_inbox")\
+                    .update({"status": "enviado"})\
+                    .eq("id", record["id"])\
+                    .execute()
+
+                # Notificar Telegram
+                notify_telegram(
+                    tokens,
+                    f"Enviado a {to_email}",
+                    subject,
+                    f"CONTEXTO: Correo enviado exitosamente\n---\n{body_text[:300]}",
+                    record["id"],
+                    is_sent=True
+                )
+                time.sleep(1)
+
+            except Exception as e:
+                print(f"  Error enviando correo ID {record['id']}: {e}")
+                sb.table("colmena_email_inbox")\
+                    .update({"status": f"error_envio: {str(e)[:100]}"})\
+                    .eq("id", record["id"])\
+                    .execute()
+
+        smtp.quit()
+
+    except Exception as e:
+        print(f"Error SMTP: {e}")
+
+# ── SUPABASE ─────────────────────────────────────────────────────────────────
 def save_email(tokens, email_data, draft):
     try:
         sb = get_supabase(tokens)
@@ -234,12 +335,10 @@ def save_email(tokens, email_data, draft):
         return None
 
 def check_cinthia_reminder(tokens):
-    """Verifica si han pasado 3 dias sin respuesta de Cinthia en expediente Gist"""
     try:
         sb = get_supabase(tokens)
         cutoff = (datetime.now(timezone.utc) - timedelta(days=3)).isoformat()
 
-        # Buscar el ultimo correo enviado A Cinthia sobre Gist
         sent = sb.table("colmena_email_inbox")\
             .select("*")\
             .eq("expediente", "GIST_LARSON")\
@@ -255,7 +354,6 @@ def check_cinthia_reminder(tokens):
 
         last_sent = sent.data[0]
 
-        # Verificar si Cinthia respondio despues de ese envio
         response = sb.table("colmena_email_inbox")\
             .select("id")\
             .eq("expediente", "GIST_LARSON")\
@@ -265,9 +363,8 @@ def check_cinthia_reminder(tokens):
             .execute()
 
         if not response.data:
-            print(f"  ALERTA: Sin respuesta de Cinthia desde {last_sent['created_at'][:10]}")
+            print(f"  ALERTA: Sin respuesta Cinthia desde {last_sent['created_at'][:10]}")
             return True
-
         return False
     except Exception as e:
         print(f"Error check reminder: {e}")
@@ -277,7 +374,6 @@ def check_cinthia_reminder(tokens):
 def generate_draft(tokens, email_data=None, is_reminder=False):
     try:
         system = REMINDER_PROMPT if is_reminder else SYSTEM_PROMPT
-
         if is_reminder:
             user_content = "Genera el recordatorio para Cinthia — 3 dias sin respuesta."
         else:
@@ -313,10 +409,13 @@ Genera el borrador de respuesta para Rolo."""
         return f"[ERROR generando borrador: {e}]"
 
 # ── TELEGRAM ──────────────────────────────────────────────────────────────────
-def notify_telegram(tokens, sender_name, subject, draft, record_id, is_reminder=False):
+def notify_telegram(tokens, sender_name, subject, draft, record_id,
+                    is_reminder=False, is_sent=False):
     try:
-        if is_reminder:
-            header = "⏰ *RECORDATORIO — CINTHIA SIN RESPUESTA (3 dias)*\nExpediente: Gist/Larson — Fideicomiso 2110850-1"
+        if is_sent:
+            header = f"✅ *ENVIADO — Gist/Larson*\nPara: {sender_name}"
+        elif is_reminder:
+            header = "⏰ *RECORDATORIO — CINTHIA 3 DIAS SIN RESPUESTA*\nFideicomiso 2110850-1"
         else:
             att = " 📎" if "adjunto" in draft.lower() else ""
             header = f"📬 *DUENDE GIST/LARSON*\nDe: *{sender_name}*{att}\nAsunto: {subject}"
@@ -326,7 +425,10 @@ def notify_telegram(tokens, sender_name, subject, draft, record_id, is_reminder=
 {draft[:900]}
 
 ---
-ID: {record_id} | Aprobar: cambia status a 'aprobado' en Supabase"""
+ID Supabase: {record_id}"""
+
+        if not is_sent:
+            msg += "\nPara aprobar: cambia status a *aprobado* en tabla colmena_email_inbox"
 
         requests.post(
             f"https://api.telegram.org/bot{tokens['BOT_TOKEN']}/sendMessage",
@@ -339,17 +441,21 @@ ID: {record_id} | Aprobar: cambia status a 'aprobado' en Supabase"""
 
 # ── MAIN ──────────────────────────────────────────────────────────────────────
 def run():
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] Duende Gist/Larson v2 iniciando...")
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] Duende Gist/Larson v3 iniciando...")
     tokens = load_tokens()
 
     if not tokens.get("YAHOO_APP_PASSWORD"):
         print("ERROR: No se pudieron cargar tokens")
         return
 
-    # 1. Revisar correos nuevos
+    # 1. Enviar correos aprobados
+    print("  Revisando aprobados para enviar...")
+    send_approved_emails(tokens)
+
+    # 2. Revisar correos nuevos
     print("  Revisando correos nuevos...")
     emails = fetch_new_emails(tokens)
-    print(f"  Total correos nuevos del expediente: {len(emails)}")
+    print(f"  Total nuevos del expediente: {len(emails)}")
 
     for em in emails:
         draft = generate_draft(tokens, em)
@@ -357,7 +463,7 @@ def run():
         notify_telegram(tokens, em["sender_name"], em["subject"], draft, record_id)
         time.sleep(2)
 
-    # 2. Verificar recordatorio Cinthia
+    # 3. Verificar recordatorio Cinthia
     print("  Verificando recordatorio Cinthia...")
     if check_cinthia_reminder(tokens):
         draft = generate_draft(tokens, is_reminder=True)
@@ -368,7 +474,7 @@ def run():
             "from_header": "Duende Gist/Larson",
             "subject": "RECORDATORIO: Sin respuesta Cinthia 3 dias",
             "date_received": datetime.now(timezone.utc).isoformat(),
-            "body": "Recordatorio automatico generado por el duende",
+            "body": "Recordatorio automatico",
             "has_attachment": False,
             "draft": draft,
             "status": "pendiente_aprobacion",
@@ -381,8 +487,8 @@ def run():
         except Exception as e:
             print(f"Error guardando reminder: {e}")
             record_id = None
-
-        notify_telegram(tokens, CINTHIA_NAME, "Sin respuesta 3 dias", draft, record_id, is_reminder=True)
+        notify_telegram(tokens, CINTHIA_NAME, "Sin respuesta 3 dias",
+                       draft, record_id, is_reminder=True)
 
     print(f"[{datetime.now().strftime('%H:%M:%S')}] Listo.")
 
