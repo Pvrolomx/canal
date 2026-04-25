@@ -427,12 +427,22 @@ def notify_telegram(tokens, sender_name, subject, draft, record_id,
 ---
 ID Supabase: {record_id}"""
 
-        if not is_sent:
-            msg += "\nPara aprobar: cambia status a *aprobado* en tabla colmena_email_inbox"
-
+        payload = {
+            "chat_id": tokens["CHAT_ID"],
+            "text": msg,
+            "parse_mode": "Markdown"
+        }
+        # Agregar botones solo si es borrador pendiente
+        if not is_sent and record_id:
+            payload["reply_markup"] = {
+                "inline_keyboard": [[
+                    {"text": "✅ Aprobar y Enviar", "callback_data": f"aprobar:{record_id}"},
+                    {"text": "❌ Cancelar", "callback_data": f"cancelar:{record_id}"}
+                ]]
+            }
         requests.post(
             f"https://api.telegram.org/bot{tokens['BOT_TOKEN']}/sendMessage",
-            json={"chat_id": tokens["CHAT_ID"], "text": msg, "parse_mode": "Markdown"},
+            json=payload,
             timeout=10
         )
         print(f"  Telegram OK")
