@@ -1,10 +1,9 @@
 """
-DUENDE BOT - Telegram webhook handler
-Corre como servicio en el RPi en puerto 8443
-Recibe callbacks de botones inline y ejecuta acciones
+DUENDE BOT - v2 (Long Polling - sin webhook ni HTTPS)
+Escucha callbacks de botones Telegram via polling
+Corre como servicio permanente en el RPi
 """
-from http.server import HTTPServer, BaseHTTPRequestHandler
-import json, os, requests, smtplib, threading
+import os, requests, smtplib, time, json
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from datetime import datetime, timezone
@@ -27,6 +26,8 @@ def load_tokens():
     return t
 
 TOKENS = load_tokens()
+BOT_TOKEN = TOKENS["BOT_TOKEN"]
+CHAT_ID = TOKENS["CHAT_ID"]
 
 REPLY_TO = {
     "carrie.larson@gmail.com": "carrie.larson@gmail.com",
@@ -40,43 +41,25 @@ def get_supabase():
 
 def answer_callback(callback_query_id, text):
     requests.post(
-        f"https://api.telegram.org/bot{TOKENS['BOT_TOKEN']}/answerCallbackQuery",
+        f"https://api.telegram.org/bot{BOT_TOKEN}/answerCallbackQuery",
         json={"callback_query_id": callback_query_id, "text": text},
         timeout=5
     )
 
-def send_telegram(text, reply_markup=None):
-    payload = {
-        "chat_id": TOKENS["CHAT_ID"],
-        "text": text,
-        "parse_mode": "Markdown"
-    }
-    if reply_markup:
-        payload["reply_markup"] = reply_markup
+def edit_message(chat_id, message_id, text):
     requests.post(
-        f"https://api.telegram.org/bot{TOKENS['BOT_TOKEN']}/sendMessage",
-        json=payload, timeout=10
-    )
-
-def edit_telegram_message(chat_id, message_id, text):
-    requests.post(
-        f"https://api.telegram.org/bot{TOKENS['BOT_TOKEN']}/editMessageText",
-        json={
-            "chat_id": chat_id,
-            "message_id": message_id,
-            "text": text,
-            "parse_mode": "Markdown"
-        },
+        f"https://api.telegram.org/bot{BOT_TOKEN}/editMessageText",
+        json={"chat_id": chat_id, "message_id": message_id,
+              "text": text, "parse_mode": "Markdown"},
         timeout=10
     )
 
 def send_email_smtp(record):
-    """Envia el correo aprobado via SMTP Yahoo"""
     try:
-        draft_lines = record["draft"].split("\n")
-        body_lines = []
-        skip = True
-        for line in draft_lines:
+        # Extraer cuerpo del borrador (despues de ---)
+        lines = record["draft"].split("\n")
+        body_lines, skip = [], True
+        for line in lines:
             if line.strip() == "---":
                 skip = False
                 continue
@@ -86,13 +69,13 @@ def send_email_smtp(record):
 
         to_email = REPLY_TO.get(record["sender"], record["sender"])
 
-        orig_subject = record.get("subject", "")
+        orig = record.get("subject", "")
         if record["sender"] == "SISTEMA_REMINDER":
             subject = "Fideicomiso 2110850-1 El Dorado — Seguimiento"
-        elif orig_subject.startswith("Re:"):
-            subject = orig_subject
+        elif orig.startswith("Re:"):
+            subject = orig
         else:
-            subject = f"Re: {orig_subject}"
+            subject = f"Re: {orig}"
 
         msg = MIMEMultipart()
         msg["From"] = TOKENS["YAHOO_EMAIL"]
@@ -127,110 +110,113 @@ def send_email_smtp(record):
         # Marcar original como enviado
         sb.table("colmena_email_inbox")\
             .update({"status": "enviado"})\
-            .eq("id", record["id"])\
-            .execute()
+            .eq("id", record["id"]).execute()
 
         return True, to_email, subject
 
     except Exception as e:
         return False, str(e), ""
 
-def handle_approve(record_id, callback_query_id, chat_id, message_id):
-    """Procesa aprobacion de borrador"""
+def handle_approve(record_id, cq_id, chat_id, message_id):
     try:
         sb = get_supabase()
         result = sb.table("colmena_email_inbox")\
             .select("*").eq("id", record_id).execute()
 
         if not result.data:
-            answer_callback(callback_query_id, "❌ Registro no encontrado")
+            answer_callback(cq_id, "Error: registro no encontrado")
             return
 
         record = result.data[0]
 
         if record["status"] != "pendiente_aprobacion":
-            answer_callback(callback_query_id, f"⚠️ Ya procesado: {record['status']}")
+            answer_callback(cq_id, f"Ya procesado: {record['status']}")
             return
 
-        answer_callback(callback_query_id, "⏳ Enviando...")
-
+        answer_callback(cq_id, "Enviando...")
         ok, to_or_err, subject = send_email_smtp(record)
 
         if ok:
-            edit_telegram_message(
-                chat_id, message_id,
-                f"✅ *ENVIADO — Gist/Larson*\nPara: {to_or_err}\nAsunto: {subject}\nID: {record_id}"
-            )
+            edit_message(chat_id, message_id,
+                f"✅ *ENVIADO — Gist/Larson*\nPara: {to_or_err}\nAsunto: {subject}\nID: {record_id}")
+            print(f"  Enviado: {to_or_err} — {subject[:40]}")
         else:
-            answer_callback(callback_query_id, f"❌ Error: {to_or_err}")
-            sb.table("colmena_email_inbox")\
+            answer_callback(cq_id, f"Error al enviar: {to_or_err[:80]}")
+            get_supabase().table("colmena_email_inbox")\
                 .update({"status": f"error: {str(to_or_err)[:80]}"})\
                 .eq("id", record_id).execute()
 
     except Exception as e:
-        answer_callback(callback_query_id, f"❌ Error: {e}")
+        answer_callback(cq_id, f"Error: {e}")
+        print(f"Error handle_approve: {e}")
 
-def handle_cancel(record_id, callback_query_id, chat_id, message_id):
-    """Cancela el borrador"""
+def handle_cancel(record_id, cq_id, chat_id, message_id):
     try:
-        sb = get_supabase()
-        sb.table("colmena_email_inbox")\
+        get_supabase().table("colmena_email_inbox")\
             .update({"status": "cancelado"})\
             .eq("id", record_id).execute()
-        answer_callback(callback_query_id, "🚫 Cancelado")
-        edit_telegram_message(chat_id, message_id, f"🚫 *CANCELADO* — ID: {record_id}")
+        answer_callback(cq_id, "Cancelado")
+        edit_message(chat_id, message_id, f"🚫 *CANCELADO* — ID: {record_id}")
+        print(f"  Cancelado ID: {record_id}")
     except Exception as e:
-        answer_callback(callback_query_id, f"❌ Error: {e}")
+        answer_callback(cq_id, f"Error: {e}")
 
-class WebhookHandler(BaseHTTPRequestHandler):
-    def do_POST(self):
-        length = int(self.headers.get("Content-Length", 0))
-        body = json.loads(self.rfile.read(length))
+def get_updates(offset=None):
+    params = {"timeout": 30, "allowed_updates": ["callback_query"]}
+    if offset:
+        params["offset"] = offset
+    try:
+        r = requests.get(
+            f"https://api.telegram.org/bot{BOT_TOKEN}/getUpdates",
+            params=params, timeout=35
+        )
+        return r.json().get("result", [])
+    except:
+        return []
 
-        self.send_response(200)
-        self.end_headers()
-        self.wfile.write(b"OK")
+def run():
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] Duende Bot v2 iniciando (polling)...")
+    offset = None
 
-        # Procesar en thread para no bloquear
-        threading.Thread(target=self.process_update, args=(body,)).start()
-
-    def process_update(self, body):
+    while True:
         try:
-            if "callback_query" not in body:
-                return
+            updates = get_updates(offset)
+            for update in updates:
+                offset = update["update_id"] + 1
 
-            cq = body["callback_query"]
-            data = cq.get("data", "")
-            cq_id = cq["id"]
-            chat_id = cq["message"]["chat"]["id"]
-            message_id = cq["message"]["message_id"]
+                if "callback_query" not in update:
+                    continue
 
-            # Verificar que es Rolo
-            if str(chat_id) != str(TOKENS.get("CHAT_ID", "")):
-                answer_callback(cq_id, "⛔ No autorizado")
-                return
+                cq = update["callback_query"]
+                data = cq.get("data", "")
+                cq_id = cq["id"]
+                chat_id = str(cq["message"]["chat"]["id"])
+                message_id = cq["message"]["message_id"]
 
-            # Parsear accion y record_id
-            # Formato: "aprobar:123" o "cancelar:123"
-            if ":" not in data:
-                return
+                # Verificar que es Rolo
+                if chat_id != str(CHAT_ID):
+                    answer_callback(cq_id, "No autorizado")
+                    continue
 
-            action, record_id = data.split(":", 1)
-            record_id = int(record_id)
+                if ":" not in data:
+                    continue
 
-            if action == "aprobar":
-                handle_approve(record_id, cq_id, chat_id, message_id)
-            elif action == "cancelar":
-                handle_cancel(record_id, cq_id, chat_id, message_id)
+                action, record_id = data.split(":", 1)
+                record_id = int(record_id)
 
+                print(f"  Callback: {action} ID:{record_id}")
+
+                if action == "aprobar":
+                    handle_approve(record_id, cq_id, chat_id, message_id)
+                elif action == "cancelar":
+                    handle_cancel(record_id, cq_id, chat_id, message_id)
+
+        except KeyboardInterrupt:
+            print("Bot detenido")
+            break
         except Exception as e:
-            print(f"Error procesando update: {e}")
-
-    def log_message(self, format, *args):
-        pass  # Silenciar logs HTTP
+            print(f"Error polling: {e}")
+            time.sleep(5)
 
 if __name__ == "__main__":
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] Duende Bot iniciando en puerto 8444...")
-    server = HTTPServer(("0.0.0.0", 8444), WebhookHandler)
-    print("Listo — escuchando callbacks de Telegram")
-    server.serve_forever()
+    run()
