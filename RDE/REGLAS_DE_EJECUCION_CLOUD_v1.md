@@ -1,8 +1,8 @@
 # 🐝 REGLAS DE EJECUCIÓN - COLMENA CLOUD v1
 ## Sistema de Deploy Autónomo desde la Nube
 
-> **Versión:** 1.0  
-> **Fecha:** 17 Enero 2026  
+> **Versión:** 2.0  
+> **Fecha:** 17 Mayo 2026  
 > **Contexto:** Claudes operando desde claude.ai (sin acceso a RPi/Desktop)  
 > **Basado en:** REGLAS_DE_EJECUCION_RPI_v1 + experiencia C16, C17, C14 Cloud
 
@@ -22,10 +22,10 @@ App perfecta emerge NATURALMENTE como consecuencia.
 
 ### BLOQUE 1: EJECUCIÓN (Reglas 1-4)
 
-#### 1. EJECUTA, NO PREGUNTES
-Si tienes duda, toma la decisión y sigue.  
-Preguntar = fricción = tiempo perdido.  
-Es más fácil pedir perdón que permiso.
+#### 1. EJECUTA, NO PREGUNTES ⚠️ CONTEXTO REQUERIDO
+**En sesiones con jerarquía Senior/Junior/Supervisor:** el Junior NO ejecuta sin ✅ del Senior. Preguntar al Senior no es fricción — es el protocolo.  
+**En sesiones de duende solitario:** si tienes duda, toma la decisión y sigue. Es más fácil pedir perdón que permiso.  
+**Ver:** `METODOLOGIA/METODOLOGIA_COLMENA_v1.md` — Protocolo Senior/Junior/Supervisor.
 
 #### 2. ESCRIBE COMPLETO, NO PARCIAL
 Un archivo se escribe entero de una vez.  
@@ -37,10 +37,10 @@ No pierdas tiempo debuggeando en MVP.
 Borra y rehaz desde cero.  
 **Excepción:** Apps en producción con usuarios reales.
 
-#### 4. UN PASE
-Lo que salga en primer intento, se queda.  
-Iteras solo si el usuario lo pide.  
-Bonito y rápido no pelean. Perfeccionismo sí.
+#### 4. UN PASE ⚠️ CONTEXTO REQUERIDO
+**En sesiones con jerarquía Senior/Junior/Supervisor:** el Junior propone, el Senior revisa, se itera hasta el ✅. El primer intento no se pushea automáticamente.  
+**En sesiones de duende solitario:** lo que salga en primer intento se queda. Iteras solo si el usuario lo pide.  
+**Ver:** `METODOLOGIA/METODOLOGIA_COLMENA_v1.md` — flujo de aprobación.
 
 ---
 
@@ -83,19 +83,21 @@ Antes de dar URL como completada:
 
 ### BLOQUE 4: ESTÁNDARES (Reglas 10-12)
 
-#### 10. FIRMA DEL AGENTE
-Cada app debe identificar quién la creó.
+#### 10. FIRMA DEL AGENTE — JERARQUÍA DE BRANDING
+Cada app debe identificar quién la creó. Usar la marca según este orden de prioridad:
+
+| Prioridad | Marca | Cuándo usar |
+|-----------|-------|-------------|
+| 1 | **Expat Advisor MX (EA)** | Apps de práctica legal, fideicomiso, inmigración |
+| 2 | **Castle Solutions (CS)** | Apps de property management, vacation rentals |
+| 3 | **La Colmena** | Herramientas internas de orquestación IA |
+| 4 | **duendes.app** | Prototipos públicos genéricos sin marca específica |
 
 **Footer visible (obligatorio):**
 ```
-Hecho por duendes.app 2026
+Expat Advisor MX · expatadvisormx.com
 ```
-ó
-```
-Hecho por Colmena 2026
-```
-
-Según el branding del proyecto. Ambas firmas son válidas.
+ó según la marca que aplique.
 
 **En commits:**
 ```
@@ -327,6 +329,7 @@ Antes de escribir UNA línea de código:
 | Versión | Fecha | Autor | Cambios |
 |---------|-------|-------|---------|
 | 1.1 | 17 Ene 2026 | C1 (Sleepy) | + Sección Persistencia y Commits |
+| 2.0 | 17 May 2026 | CD Senior | Reglas 1/4 con contexto jerarquía, branding EA/CS/Colmena/duendes.app |
 | 1.6 | 12 Abr 2026 | CD (QA Anfitrión) | + Regla #16: QA Paralelo — misma fuente |
 | 1.0 | 17 Ene 2026 | Claude (ProfeApp) | Versión inicial cloud |
 
@@ -634,5 +637,20 @@ Cuando múltiples duendes corren QA en paralelo, uno puede verificar en el REPO 
 - Complementa **Regla #15** ("El repo en GitHub ES la fuente de verdad")
 - Complementa **Regla #14** (Verificación proporcional al riesgo)
 - Aplica el principio de **Regla #9** (Smoke test) a contexto multi-duende
+
+---
+
+---
+
+## REFERENCIA — METODOLOGÍA COLMENA
+**Ver:** `canal/METODOLOGIA/METODOLOGIA_COLMENA_v1.md`
+
+Este documento (RDE) cubre **cómo ejecutar**.
+La Metodología cubre **cómo pensar y orquestar**:
+- Protocolo Senior/Junior/Supervisor
+- Cuándo aplica "ejecuta sin preguntar" vs "muestra antes del push"
+- Rotación de modelos Opus→Sonnet
+- Pipeline jurídico vs pipeline de apps
+- Criterios de validación por dominio
 
 ---
