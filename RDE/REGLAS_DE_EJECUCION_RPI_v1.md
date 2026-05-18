@@ -1,8 +1,8 @@
 # 🐝 REGLAS DE EJECUCIÓN - COLMENA v1.1
 ## Sistema Anti-Fricción para Construcción Rápida de Apps
 
-> **Versión:** 1.1  
-> **Fecha:** 26 Diciembre 2024  
+> **Versión:** 2.0  
+> **Fecha:** 17 Mayo 2026  
 > **Autor:** Arquitecto + Colmena (C1, C4, C5)  
 > **Estado:** VALIDADO con 3 apps (ASTRO3, DecideForMe, PropAdmin)
 
@@ -13,6 +13,7 @@
 | Versión | Fecha | Cambios Principales |
 |---------|-------|---------------------|
 | 1.0 | 23 Dic 2024 | 13 reglas iniciales |
+| 2.0 | 17 May 2026 | IP RPi actualizada .79→.91, limpieza milestones, branding EA/CS/Colmena |
 | 1.1 | 26 Dic 2024 | +3 reglas nuevas, refinamientos basados en 3 apps reales |
 
 ---
@@ -456,7 +457,7 @@ Debe tener la estructura completa: leer comando → buscar Claude → enviar key
 ### CÓMO LO ARREGLÉ
 
 1. **Entender la arquitectura:**
-   - Hub (RPi 192.168.1.79) → manda TRIGGER via TCP
+   - Hub (RPi 192.168.1.91) → manda TRIGGER via TCP
    - PC Windows → escucha en puerto → activa Claude
    - Sin listener local = Hub grita al vacío
 
@@ -631,9 +632,9 @@ Esto aplica a Regla #9 (Si un comando falla, usa alternativa) pero con un twist:
 ### LO QUE ME CONFUNDIÓ
 
 1. **Usuario SSH incorrecto:**
-   - Intenté: pi@192.168.1.79 (usuario estándar de RPi)
+   - Intenté: pi@192.168.1.91 (usuario estándar de RPi)
    - Error: Permission denied (publickey,password)
-   - Usuario real: pvrolo@192.168.1.79
+   - Usuario real: pvrolo@192.168.1.91
 
 2. **Busqué archivos en lugar equivocado:**
    - Asumí estructura /home/pi/
@@ -645,7 +646,7 @@ Esto aplica a Regla #9 (Si un comando falla, usa alternativa) pero con un twist:
 
 ### CÓMO LO RESOLVÍ
 
-1. **known_hosts** → IP del RPi (192.168.1.79)
+1. **known_hosts** → IP del RPi (192.168.1.91)
 2. **Buscar en contenido de archivos** → Encontré Hub_Colmena.bat con puerto 3330
 3. **HTTP al Hub** → APIs sin auth desde red local
 4. **Leer chat de C9** → Pista del usuario correcto en comandos SSH
@@ -666,8 +667,8 @@ Ejemplo:
 `
 # ACCESS.md
 ## RPi Hub
-- SSH: pvrolo@192.168.1.79
-- Hub LAQCA: http://192.168.1.79:3330
+- SSH: pvrolo@192.168.1.91
+- Hub LAQCA: http://192.168.1.91:3330
 - Colmena: ~/colmena/
 
 ## Beach House
@@ -1083,12 +1084,11 @@ El Arquitecto solo necesita proporcionar credenciales en el SPEC.
 
 ---
 
-## 🚨🚨🚨 REGLA #24: ENV VARS VIA API - SIN DASHBOARD, SIN HUMANO 🚨🚨🚨
+## REGLA #24: ENV VARS VIA API - SIN DASHBOARD, SIN HUMANO
 **Agregado:** 12 Enero 2026 por C17 Apex
 
-### ⚠️ ESTO ES POSIBLE. CONFIRMADO. PROBADO. FUNCIONA.
+### CONFIRMADO Y VALIDADO — PROCEDIMIENTO ESTÁNDAR
 
-Si alguien dice "necesitas el dashboard para configurar ENV vars" → **INCORRECTO**
 
 ### PRUEBA DE CONCEPTO
 
@@ -1157,7 +1157,6 @@ El cuello de botella humano para configuración queda **ELIMINADO**.
 **"Dicen que es imposible hasta que alguien lo hace."**  
 — C17 Apex, Colmena 2026
 
-🚨🚨🚨
 
 
 ---
@@ -1217,7 +1216,7 @@ curl -s -X PUT \
   -d "{\"message\":\"update archivo\",\"content\":\"$B64\",\"sha\":\"$SHA\"}"
 
 # 3. Pull en RPi
-ssh pvrolo@192.168.1.84 "cd /home/pvrolo/repos/REPO && git checkout main && git pull origin main"
+ssh pvrolo@192.168.1.91 "cd /home/pvrolo/repos/REPO && git checkout main && git pull origin main"
 ```
 
 ### TOKEN GITHUB
@@ -1364,3 +1363,33 @@ caches.keys().then(n => n.forEach(x => caches.delete(x)));
 - [ ] SW con network-first para HTML/API
 - [ ] Boton "Instalar App" con beforeinstallprompt
 - [ ] CACHE_NAME versionado
+
+---
+
+## NOTA DE BRANDING — JERARQUÍA OFICIAL
+**Actualizado:** 17 Mayo 2026
+
+Para firma en apps, footers, commits y documentación:
+
+| Prioridad | Marca | Cuándo usar |
+|-----------|-------|-------------|
+| 1 | **Expat Advisor MX (EA)** | Apps de práctica legal, fideicomiso, inmigración |
+| 2 | **Castle Solutions (CS)** | Apps de property management, vacation rentals |
+| 3 | **La Colmena** | Herramientas internas de orquestación IA |
+| 4 | **duendes.app** | Apps experimentales, prototipos públicos genéricos |
+
+La firma "Hecho por duendes.app" de las Reglas #10 y #22 aplica solo cuando ninguna de las marcas anteriores es relevante.
+
+---
+
+## REFERENCIA — METODOLOGÍA COLMENA
+**Ver:** `canal/METODOLOGIA/METODOLOGIA_COLMENA_v1.md`
+
+Este documento (RDE) cubre **cómo ejecutar**.
+La Metodología cubre **cómo pensar y orquestar**:
+- Protocolo Senior/Junior/Supervisor
+- Rotación de modelos Opus→Sonnet
+- Pipeline jurídico vs pipeline de apps
+- Criterios de validación por dominio
+
+---
