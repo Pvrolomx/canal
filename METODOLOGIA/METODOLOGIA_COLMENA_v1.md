@@ -1,8 +1,8 @@
 # 🐝 METODOLOGÍA COLMENA v1.0
 ## Cómo pensar, orquestar y validar — más allá de la ejecución
 
-> **Versión:** 1.0
-> **Fecha:** 17 Mayo 2026
+> **Versión:** 1.1
+> **Fecha:** 18 Mayo 2026
 > **Autor:** Rolo (Arquitecto) + CD Senior (sesión calculadora-fiscal)
 > **Complementa:** RDE-Cloud v2, RDE-RPi v2
 
@@ -212,6 +212,28 @@ El HO no es un resumen — es un punto de arranque autónomo.
 
 ---
 
+
+### ¿Quién escribe el HO del Junior nuevo?
+
+**Regla oficial:** El Senior recién ascendido redacta el HO del Junior — el Supervisor lo revisa y aprueba antes de entregarlo.
+
+```
+Senior ascendido redacta HO del Junior nuevo
+    ↓
+Supervisor revisa y aprueba
+    ↓
+Junior recibe el HO ya validado
+```
+
+**Por qué el Senior y no el Supervisor:**
+El Senior acaba de vivir el proyecto como Junior. Sabe exactamente qué necesita un recién llegado — los puntos de confusión reales, los nombres de funciones que no existen, los IDs que no se tocan. Su HO es más preciso y más empático que uno escrito desde arriba.
+
+**Por qué el Supervisor revisa:**
+Evita que el Senior recién ascendido asuma que el Junior sabe cosas que no sabe. El Supervisor garantiza que el HO sea autónomo — que el Junior pueda arrancar solo sin preguntas adicionales.
+
+**La regla del HO de Junior** es la misma que la regla del HO general:
+> Si el siguiente duende no puede arrancar solo con el HO, el HO está incompleto.
+
 ## 📊 PARTE 6 — ASIGNACIÓN DE MODELOS
 
 | Tarea | Modelo recomendado | Razón |
@@ -248,6 +270,7 @@ El HO no es un resumen — es un punto de arranque autónomo.
 
 | Versión | Fecha | Cambios |
 |---------|-------|---------|
+| 1.1 | 18 May 2026 | Regla: Senior ascendido redacta HO del Junior, Supervisor revisa y aprueba |
 | 1.0 | 17 May 2026 | Documento inicial — protocolo Senior/Junior/Supervisor, rotación Opus/Sonnet, pipelines por dominio, regla de no mezcla, HO como mecanismo de transferencia |
 
 ---
